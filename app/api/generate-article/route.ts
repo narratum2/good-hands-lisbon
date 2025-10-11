@@ -67,7 +67,7 @@ async function generateArticleContent(params: ArticlePrompt) {
   const userPrompt = `Write a comprehensive blog article about: "${topic}"
 
 Category: ${category}
-Target Keywords: ${targetKeywords.join(', ')}
+Target Keywords: ${targetKeywords ? targetKeywords.join(', ') : 'beauty, luxury, Lisbon'}
 Tone: ${tone}
 
 Article Requirements:
@@ -165,7 +165,7 @@ Format as JSON with these fields:
       ` : ''}
     `,
     metaDescription: `Expert guide to ${topic.toLowerCase()} in Lisbon. Professional advice from Good Hands beauty concierge. Book your perfect ${category} experience today.`,
-    keywords: [topic.toLowerCase(), category, 'lisbon beauty', ...targetKeywords],
+    keywords: [topic.toLowerCase(), category, 'lisbon beauty', ...(targetKeywords || [])],
     category,
     estimatedReadTime: '5 min read',
     callToAction: includeCallToAction ? `Book your ${category} experience with Good Hands today` : null,

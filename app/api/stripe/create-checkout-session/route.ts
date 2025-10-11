@@ -20,7 +20,7 @@ export async function POST(request: NextRequest) {
     // Dynamically import Stripe to avoid build errors if not configured
     const Stripe = (await import('stripe')).default
     const stripe = new Stripe(stripeSecretKey, {
-      apiVersion: '2023-10-16',
+      apiVersion: '2024-11-20.acacia',
     })
 
     const session = await stripe.checkout.sessions.create({

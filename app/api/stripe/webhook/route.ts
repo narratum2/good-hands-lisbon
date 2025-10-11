@@ -20,7 +20,7 @@ export async function POST(request: NextRequest) {
 
     const Stripe = (await import('stripe')).default
     const stripe = new Stripe(stripeSecretKey, {
-      apiVersion: '2023-10-16',
+      apiVersion: '2024-11-20.acacia',
     })
 
     // Verify webhook signature
