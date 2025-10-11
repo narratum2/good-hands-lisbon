@@ -712,3 +712,4 @@ Ready to elevate your grooming routine? [Book a consultation](#booking) with Goo
 *Last updated: October 11, 2025*  
 *Questions about men's grooming in Lisbon? [Contact us](mailto:hello@goodhands.com)*
 
+

@@ -774,3 +774,4 @@ Ready to build your Lisbon beauty routine? [Contact Good Hands](#booking) and we
 *Last updated: October 11, 2025*  
 *Digital nomad in Lisbon? [Let's connect](mailto:hello@goodhands.com)*
 
+

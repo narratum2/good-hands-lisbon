@@ -587,3 +587,4 @@ Ready to plan your Lisbon wedding beauty? [Contact Good Hands](#booking) and we'
 *Last updated: October 11, 2025*  
 *Getting married in Lisbon? [Let's talk](mailto:hello@goodhands.com)*
 
+

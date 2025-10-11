@@ -380,3 +380,4 @@ _Date: October 11, 2025_
 _Status: Ready for photographer brief_  
 _Budget: €2,000-4,000 (professional editorial shoot)_
 
+

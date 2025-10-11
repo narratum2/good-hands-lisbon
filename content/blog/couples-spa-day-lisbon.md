@@ -777,3 +777,4 @@ Ready to design your perfect couples' spa day in Lisbon? [Contact Good Hands](#b
 *Last updated: October 11, 2025*  
 *Planning a romantic escape? [We're here to help](mailto:hello@goodhands.com)*
 
+

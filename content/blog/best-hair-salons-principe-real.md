@@ -379,3 +379,4 @@ Ready to find your perfect stylist? [Book a consultation](#booking) with Good Ha
 *Last updated: October 11, 2025*  
 *Have a salon recommendation? [Contact us](mailto:hello@goodhands.com)*
 
+
