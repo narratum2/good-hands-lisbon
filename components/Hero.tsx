@@ -5,38 +5,40 @@ import Image from 'next/image'
 
 export default function Hero() {
   return (
-    <section className="relative flex items-center justify-center overflow-hidden" style={{ height: 'calc(100vh - 80px)', marginTop: '80px' }}>
+    <section className="relative flex items-center justify-center overflow-hidden" style={{ height: 'calc(100vh - 80px)', marginTop: '80px', minHeight: '500px' }}>
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
           src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=2574&auto=format&fit=crop"
           alt="Luxury beauty salon in Lisbon"
           fill
-          className="object-cover"
+          className="object-cover object-center"
           priority
+          sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/15 to-black/45" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container-custom text-center text-white px-6">
+      <div className="relative z-10 container-custom text-center text-white px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: [0.4, 0, 0.2, 1] }}
+          className="max-w-4xl mx-auto"
         >
-          <h1 className="font-serif font-normal mb-8 text-balance" style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', lineHeight: '1.1', letterSpacing: '-0.02em' }}>
+          <h1 className="font-serif font-normal mb-6 md:mb-8 text-balance px-2" style={{ fontSize: 'clamp(2rem, 8vw, 4.5rem)', lineHeight: '1.15', letterSpacing: '-0.02em' }}>
             Lisbon's Premier Beauty Concierge
           </h1>
-          <p className="text-lg md:text-xl mb-10 text-white/90 max-w-2xl mx-auto font-light" style={{ lineHeight: '1.7' }}>
-            We navigate Lisbon's beauty scene for you.<br />
-            Expert matching. Perfect results. Every time.
+          <p className="text-base md:text-lg lg:text-xl mb-8 md:mb-10 text-white/90 max-w-2xl mx-auto font-light px-4" style={{ lineHeight: '1.7' }}>
+            We navigate Lisbon's beauty scene for you.<br className="hidden sm:inline" />
+            <span className="inline sm:hidden"> </span>Expert matching. Perfect results. Every time.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="#services" className="btn-gold">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4 max-w-md sm:max-w-none mx-auto">
+            <a href="#services" className="btn-gold w-full sm:w-auto">
               Explore Services
             </a>
-            <a href="#booking" className="btn-secondary" style={{ borderColor: 'white', color: 'white' }}>
+            <a href="#booking" className="btn-secondary w-full sm:w-auto" style={{ borderColor: 'white', color: 'white' }}>
               Book Now
             </a>
           </div>
