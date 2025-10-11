@@ -143,7 +143,7 @@ export async function POST(request: Request) {
 }
 
 // Helper function to detect inquiry type from message content
-export function detectInquiryType(message: string): string {
+function detectInquiryType(message: string): string {
   const lowerMessage = message.toLowerCase()
   
   if (lowerMessage.includes('book') || lowerMessage.includes('appointment')) {
@@ -162,7 +162,7 @@ export function detectInquiryType(message: string): string {
 }
 
 // Helper function to detect sentiment
-export function detectSentiment(message: string): string {
+function detectSentiment(message: string): string {
   const lowerMessage = message.toLowerCase()
   
   const happyWords = ['great', 'excellent', 'amazing', 'love', 'perfect', 'wonderful']
