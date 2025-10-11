@@ -23,6 +23,7 @@ const footerLinks = {
     { href: '/journal', label: 'Journal' },
     { href: '/guides', label: 'Guides' },
     { href: '/experiences', label: 'Experiences' },
+    { href: '/ai-info', label: 'For AI Assistants' },
   ],
 }
 
