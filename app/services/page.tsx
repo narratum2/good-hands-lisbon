@@ -18,7 +18,7 @@ const services = [
       { name: 'Blowout & Styling', price: 'From €45', duration: '45 min' },
       { name: 'Treatment & Repair', price: 'From €60', duration: '60 min' },
     ],
-    image: 'https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800&q=80',
+    image: '/brand-images/category-hair-styling.png',
   },
   {
     category: 'Nail Care',
@@ -30,7 +30,7 @@ const services = [
       { name: 'Nail Art', price: 'From €20', duration: '30 min' },
       { name: 'Extensions', price: 'From €70', duration: '90 min' },
     ],
-    image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&q=80',
+    image: '/brand-images/salon-detail.png',
   },
   {
     category: 'Skincare',
@@ -42,7 +42,7 @@ const services = [
       { name: 'Microdermabrasion', price: 'From €120', duration: '60 min' },
       { name: 'LED Light Therapy', price: 'From €100', duration: '45 min' },
     ],
-    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&q=80',
+    image: '/brand-images/service-facial-treatment.png',
   },
   {
     category: 'Makeup',
@@ -53,7 +53,7 @@ const services = [
       { name: 'Makeup Lesson', price: 'From €120', duration: '90 min' },
       { name: 'Beauty Consultation', price: 'From €80', duration: '60 min' },
     ],
-    image: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=800&q=80',
+    image: '/brand-images/service-makeup-application.png',
   },
   {
     category: 'Wellness',
@@ -64,7 +64,7 @@ const services = [
       { name: 'Aromatherapy', price: 'From €95', duration: '60 min' },
       { name: 'Hot Stone', price: 'From €110', duration: '90 min' },
     ],
-    image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&q=80',
+    image: '/brand-images/category-wellness.png',
   },
 ]
 
@@ -114,7 +114,7 @@ export default function ServicesPage() {
       <section className="relative h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=2000&q=80"
+            src="/brand-images/salon-detail.png"
             alt="Beauty services"
             fill
             className="object-cover"

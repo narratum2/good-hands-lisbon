@@ -9,7 +9,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=2574&auto=format&fit=crop"
+          src="/brand-images/hero-salon-interior.png"
           alt="Luxury beauty salon in Lisbon"
           fill
           className="object-cover object-center"

@@ -8,7 +8,7 @@ const services = [
   {
     title: 'Premium Hair Styling',
     description: 'We match you with Lisbon\'s best hair colorists and stylists—no more trial and error',
-    image: 'https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800&q=80',
+    image: '/brand-images/category-hair-styling.png',
     price: 'From €105',
     priceNote: 'Includes concierge service',
     duration: '90 min',
@@ -17,7 +17,7 @@ const services = [
   {
     title: 'Luxury Nail Care',
     description: 'Perfectly curated nail technicians who understand exactly what you want',
-    image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&q=80',
+    image: '/brand-images/category-makeup.png',
     price: 'From €60',
     priceNote: 'Includes concierge service',
     duration: '60 min',
@@ -26,7 +26,7 @@ const services = [
   {
     title: 'Advanced Skincare',
     description: 'We connect you with skincare experts who truly understand your skin',
-    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&q=80',
+    image: '/brand-images/service-facial-treatment.png',
     price: 'From €125',
     priceNote: 'Includes concierge service',
     duration: '75 min',
@@ -35,7 +35,7 @@ const services = [
   {
     title: 'Professional Makeup',
     description: 'Your personal beauty concierge finds the perfect makeup artist for your event',
-    image: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=800&q=80',
+    image: '/brand-images/service-makeup-application.png',
     price: 'From €92',
     priceNote: 'Includes concierge service',
     duration: '45 min',
