@@ -26,10 +26,10 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif mb-6 text-balance">
-            Beauty in Good Hands
+            Finding the Right Beauty Professional Shouldn't Be This Hard
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-porcelain/90 max-w-2xl mx-auto text-balance">
-            Curated beauty experiences in Lisbon\'s most elegant neighborhoods
+            We navigate Lisbon's beauty scene for you. Expert concierge service that matches you with the perfect professionals—every time.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

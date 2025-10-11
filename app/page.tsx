@@ -1,5 +1,6 @@
 import Hero from '@/components/Hero'
 import SearchBar from '@/components/SearchBar'
+import ValueProposition from '@/components/ValueProposition'
 import CategoriesRow from '@/components/CategoriesRow'
 import Services from '@/components/Services'
 import ExperiencesPreview from '@/components/ExperiencesPreview'
@@ -14,6 +15,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <ValueProposition />
       <SearchBar />
       <CategoriesRow />
       <Services />

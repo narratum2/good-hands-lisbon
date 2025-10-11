@@ -1,9 +1,11 @@
 'use client'
 
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
 
 export default function SearchBar() {
+  const router = useRouter()
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedCategory, setSelectedCategory] = useState('all')
 
@@ -18,8 +20,15 @@ export default function SearchBar() {
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault()
-    console.log('Search:', { searchTerm, selectedCategory })
-    // Implement search logic or navigation
+    
+    // Build query parameters
+    const params = new URLSearchParams()
+    if (searchTerm) params.set('q', searchTerm)
+    if (selectedCategory && selectedCategory !== 'all') params.set('category', selectedCategory)
+    
+    // Navigate to services page with search parameters
+    const queryString = params.toString()
+    router.push(`/services${queryString ? `?${queryString}` : ''}`)
   }
 
   return (
