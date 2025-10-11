@@ -10,7 +10,7 @@ const products = [
     image: 'https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=800&q=80',
     price: '€32',
     stylistName: 'Maria, Senior Stylist',
-    quote: 'My go-to for texture without weight. Perfect for Lisbon's humidity—gives that lived-in, effortless look.',
+    quote: 'My go-to for texture without weight. Perfect for Lisbon\'s humidity—gives that lived-in, effortless look.',
     category: 'Hair',
   },
   {
@@ -19,7 +19,7 @@ const products = [
     image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&q=80',
     price: '€48',
     stylistName: 'Ana, Color Specialist',
-    quote: 'The scent alone is worth it—bergamot and jasmine. But it's perfect for Lisbon's hard water which can leave buildup.',
+    quote: 'The scent alone is worth it—bergamot and jasmine. But it\'s perfect for Lisbon\'s hard water which can leave buildup.',
     category: 'Hair',
   },
   {
@@ -28,7 +28,7 @@ const products = [
     image: 'https://images.unsplash.com/photo-1556228578-dd3a24bef846?w=800&q=80',
     price: '€40',
     stylistName: 'Sofia, Esthetician',
-    quote: 'Works beautifully with Lisbon's sun. Cleanses without stripping—your skin will thank you after long summer days.',
+    quote: 'Works beautifully with Lisbon\'s sun. Cleanses without stripping—your skin will thank you after long summer days.',
     category: 'Skincare',
   },
   {
