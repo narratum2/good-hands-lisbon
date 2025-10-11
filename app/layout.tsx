@@ -1,9 +1,26 @@
 import type { Metadata } from 'next'
+import { Inter, Playfair_Display } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Grain from '@/components/Grain'
 import AIDiscoveryTracker from '@/components/AIDiscoveryTracker'
+
+// Configure Inter font
+const inter = Inter({ 
+  subsets: ['latin'],
+  variable: '--font-sans',
+  display: 'swap',
+})
+
+// Configure Playfair Display font
+const playfair = Playfair_Display({ 
+  subsets: ['latin'],
+  variable: '--font-serif',
+  weight: ['400', '500', '600', '700'],
+  style: ['normal', 'italic'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: 'Good Hands — Luxury Beauty Concierge Lisbon | Vetted Professionals',
@@ -53,9 +70,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className={`${inter.variable} ${playfair.variable} scroll-smooth`}>
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/brand-assets/logo/logo-icon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/brand-assets/logo/logo-icon.svg" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

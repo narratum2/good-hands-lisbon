@@ -34,8 +34,13 @@ export default function Navbar() {
       <div className="container-custom">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-serif font-semibold text-ink focus-visible-ring">
-            Good Hands
+          <Link href="/" className="flex flex-col items-start focus-visible-ring group">
+            <span className="text-2xl font-serif font-semibold text-ink tracking-tight group-hover:text-gold transition-colors">
+              Good Hands
+            </span>
+            <svg width="80" height="4" viewBox="0 0 80 4" className="mt-0.5">
+              <path d="M 0 2 Q 40 4, 80 2" stroke="#d4af37" strokeWidth="2" strokeLinecap="round" fill="none"/>
+            </svg>
           </Link>
 
           {/* Desktop Navigation */}
