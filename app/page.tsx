@@ -1,32 +1,48 @@
-import Hero from '@/components/Hero'
+import HeroModern from '@/components/HeroModern'
 import SearchBar from '@/components/SearchBar'
 import ValueProposition from '@/components/ValueProposition'
-import CategoriesRow from '@/components/CategoriesRow'
 import Services from '@/components/Services'
+import CategoriesRow from '@/components/CategoriesRow'
 import ExperiencesPreview from '@/components/ExperiencesPreview'
-import JournalPreview from '@/components/JournalPreview'
 import GuidesPreview from '@/components/GuidesPreview'
+import JournalPreview from '@/components/JournalPreview'
 import Lookbook from '@/components/Lookbook'
+import FAQExpanded from '@/components/FAQExpanded'
 import ReviewsSnippet from '@/components/ReviewsSnippet'
-import FAQ from '@/components/FAQ'
 import BookingForm from '@/components/BookingForm'
+import ParallaxSection from '@/components/ParallaxSection'
 
 export default function Home() {
   return (
     <>
-      <Hero />
-      <ValueProposition />
+      <HeroModern />
+      
+      <ParallaxSection speed={0.3}>
+        <ValueProposition />
+      </ParallaxSection>
+      
       <SearchBar />
+      
+      <ParallaxSection speed={0.2}>
+        <Services />
+      </ParallaxSection>
+      
       <CategoriesRow />
-      <Services />
-      <ExperiencesPreview />
-      <JournalPreview />
+      
+      <ParallaxSection speed={0.4}>
+        <ExperiencesPreview />
+      </ParallaxSection>
+      
       <GuidesPreview />
+      
+      <ParallaxSection speed={0.3}>
+        <JournalPreview />
+      </ParallaxSection>
+      
       <Lookbook />
       <ReviewsSnippet />
-      <FAQ />
+      <FAQExpanded />
       <BookingForm />
     </>
   )
 }
-
