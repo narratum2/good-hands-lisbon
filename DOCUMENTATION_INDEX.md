@@ -3,21 +3,25 @@
 **Complete guide to all project documentation**  
 **Use this to find the right document for any task**
 
+> **📌 UPDATE (Oct 11, 2025):** Documentation has been consolidated from 131+ files to ~15 essential files.  
+> See **`DOCUMENTATION.md`** for the complete consolidation plan and file organization.
+
 ---
 
 ## 🚨 START HERE
 
 ### New to the Project?
-→ **`START_HERE.md`** - Your entry point (5 min read)
+→ **`README.md`** - Project overview (5 min read)  
+→ **`START_HERE.md`** - Your entry point based on role (10 min read)
 
 ### Part of Engineering, Content, or Design Team?
 → **`TEAM_STATUS_DASHBOARD.md`** - Check this FIRST, ALWAYS (5 min read, update daily)
 
 ### Solo AI or General Work?
-→ **`AI_HANDOFF_GUIDE.md`** - Complete project guide (20 min read)
+→ **`PROJECT_OVERVIEW.md`** - Complete project guide (20 min read)
 
-### Want the Big Picture?
-→ **`PROJECT_OVERVIEW.md`** - Architecture, integrations, deployment (15 min read)
+### Want Documentation Overview?
+→ **`DOCUMENTATION.md`** - Complete index with consolidation details (10 min read)
 
 ---
 
