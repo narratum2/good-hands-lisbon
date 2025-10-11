@@ -372,7 +372,7 @@
     inset: 0;
     display: flex;
     align-items: center;
-    justify-center;
+    justify-content: center;
     background: rgba(26, 26, 26, 0.7);
     backdrop-filter: blur(8px);
     z-index: var(--z-modal-backdrop);
@@ -535,27 +535,45 @@
 
   /* Editorial blockquote */
   .editorial-quote {
-    @apply border-l-4 border-gold pl-6 py-4 my-8 italic text-xl text-harbor;
+    border-left: 4px solid var(--gold);
+    padding-left: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-style: italic;
+    font-size: 1.25rem;
+    color: var(--gray-dark);
   }
 
   /* Large numbers/stats */
   .stat-number {
-    @apply text-6xl md:text-7xl font-serif text-gold leading-none;
+    font-size: clamp(3.5rem, 7vw, 4.5rem);
+    font-family: var(--font-serif);
+    color: var(--gold);
+    line-height: 1;
   }
 
   /* Editorial article styles */
   .editorial-content {
-    @apply text-lg text-harbor leading-relaxed;
+    font-size: 1.125rem;
+    color: var(--gray-dark);
+    line-height: 1.7;
   }
 
   .editorial-content .lead-paragraph {
-    @apply text-2xl leading-relaxed text-ink mb-8 font-light;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: var(--black);
+    margin-bottom: 32px;
+    font-weight: 300;
   }
 
   /* Drop Cap - Magazine Style */
   .editorial-content .drop-cap::first-letter,
   .drop-cap::first-letter {
-    @apply font-serif text-ink;
+    font-family: var(--font-serif);
+    color: var(--black);
     font-size: 4.5em;
     line-height: 0.85;
     float: left;
@@ -564,65 +582,106 @@
   }
 
   .editorial-content h2 {
-    @apply text-3xl md:text-4xl font-serif text-ink mt-12 mb-6 first:mt-0;
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-family: var(--font-serif);
+    color: var(--black);
+    margin-top: 48px;
+    margin-bottom: 24px;
+  }
+
+  .editorial-content h2:first-of-type {
+    margin-top: 0;
   }
 
   .editorial-content h3 {
-    @apply text-2xl font-serif text-ink mt-8 mb-4;
+    font-size: 1.5rem;
+    font-family: var(--font-serif);
+    color: var(--black);
+    margin-top: 32px;
+    margin-bottom: 16px;
   }
 
   .editorial-content p {
-    @apply mb-6;
+    margin-bottom: 24px;
   }
 
   .editorial-content ul {
-    @apply my-6 space-y-3;
+    margin-top: 24px;
+    margin-bottom: 24px;
   }
 
   .editorial-content li {
-    @apply pl-6 relative;
+    padding-left: 24px;
+    position: relative;
+    margin-bottom: 12px;
   }
 
   .editorial-content li::before {
     content: '—';
-    @apply absolute left-0 text-gold;
+    position: absolute;
+    left: 0;
+    color: var(--gold);
   }
 
   .editorial-content blockquote {
-    @apply editorial-quote;
+    border-left: 4px solid var(--gold);
+    padding-left: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-style: italic;
+    font-size: 1.25rem;
+    color: var(--gray-dark);
   }
 
   .editorial-content .cta-section {
-    @apply bg-shell p-8 my-12 text-center;
-    border-radius: 0; /* Editorial sharp corners */
+    background: var(--off-white);
+    padding: 32px;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    text-align: center;
   }
 
   .editorial-content .cta-section h3 {
-    @apply text-3xl font-serif mb-4 mt-0;
+    font-size: 1.875rem;
+    font-family: var(--font-serif);
+    margin-bottom: 16px;
+    margin-top: 0;
   }
 
   .editorial-content .timeline p {
-    @apply border-l-2 border-gold pl-4 mb-4;
+    border-left: 2px solid var(--gold);
+    padding-left: 16px;
+    margin-bottom: 16px;
   }
 
   /* Prose enhancements for article content */
   .prose {
-    @apply text-harbor;
+    color: var(--gray-dark);
   }
 
   .prose h2 {
-    @apply font-serif text-ink;
+    font-family: var(--font-serif);
+    color: var(--black);
   }
 
   .prose h3 {
-    @apply font-serif text-ink;
+    font-family: var(--font-serif);
+    color: var(--black);
   }
 
   .prose a {
-    @apply text-gold hover:text-gold-dark transition-colors;
+    color: var(--gold);
+    transition: color 300ms ease;
+  }
+
+  .prose a:hover {
+    color: var(--gold-dark);
   }
 
   .prose strong {
-    @apply text-ink font-semibold;
+    color: var(--black);
+    font-weight: 600;
   }
 }
