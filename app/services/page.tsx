@@ -202,8 +202,8 @@ export default function ServicesPage() {
             <p className="text-harbor mb-6">
               We couldn't find any services matching your search. Try different keywords or browse all services.
             </p>
-            <button onClick={clearFilters} className="btn-primary">
-              View All Services
+            <button onClick={clearFilters} className="btn-gold">
+              Discover All Services
             </button>
           </div>
         </section>
@@ -252,13 +252,13 @@ export default function ServicesPage() {
       <section className="section-padding bg-ink text-white text-center">
         <div className="container-custom">
           <h2 className="text-4xl md:text-5xl font-serif mb-6">
-            Ready to Book Your Experience?
+            Ready to Reserve Your Session?
           </h2>
           <p className="text-xl text-porcelain/80 mb-8 max-w-2xl mx-auto">
-            Let us help you find the perfect service and professional for your needs
+            We'll match you with the perfect professional for your needs
           </p>
-          <Link href="/#booking" className="btn-primary">
-            Book Now
+          <Link href="/#booking" className="btn-gold">
+            Reserve Your Experience
           </Link>
         </div>
       </section>

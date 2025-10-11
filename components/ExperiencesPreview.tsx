@@ -91,8 +91,8 @@ export default function ExperiencesPreview() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-center"
         >
-          <Link href="/experiences" className="btn-secondary">
-            Explore All Experiences
+          <Link href="/experiences" className="btn-gold">
+            Explore Premium Experiences
           </Link>
         </motion.div>
       </div>

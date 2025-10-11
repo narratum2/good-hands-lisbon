@@ -114,8 +114,8 @@ export default function Services() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-center mt-12"
         >
-          <Link href="/services" className="btn-primary">
-            View All Services
+          <Link href="/services" className="btn-gold">
+            Discover All Services
           </Link>
         </motion.div>
       </div>
