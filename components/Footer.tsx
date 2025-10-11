@@ -5,6 +5,7 @@ import Link from 'next/link'
 const footerLinks = {
   services: [
     { href: '/services', label: 'All Services' },
+    { href: '/partnerships', label: 'Hotel Partnerships' },
     { href: '/premium/weddings', label: 'Weddings' },
     { href: '/premium/retreats', label: 'Retreats' },
     { href: '/premium/corporate', label: 'Corporate' },
