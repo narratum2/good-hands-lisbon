@@ -11,7 +11,7 @@ const articles = [
   {
     title: 'The Art of Portuguese Beauty Rituals',
     excerpt: 'Discover centuries-old beauty traditions from Portugal that modern experts still swear by. From olive oil treatments to rose water tonics.',
-    image: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=800&q=80',
+    image: '/brand-images/blog-portuguese-beauty.png',
     date: 'October 1, 2025',
     category: 'Traditions',
     author: 'Maria Silva',
@@ -20,7 +20,7 @@ const articles = [
   {
     title: 'Wedding Beauty Timeline: 6 Months to I Do',
     excerpt: 'A comprehensive guide to preparing your beauty routine for the big day, from skin prep to finding the perfect hairstyle.',
-    image: 'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=800&q=80',
+    image: '/brand-images/blog-wedding-timeline.png',
     date: 'September 28, 2025',
     category: 'Weddings',
     author: 'Sofia Martins',
@@ -29,7 +29,7 @@ const articles = [
   {
     title: "Lisbon\'s Hidden Beauty Gems",
     excerpt: "Our editors share their favorite under-the-radar salons and spas across the city that locals don\'t want you to know about.",
-    image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&q=80',
+    image: '/brand-images/blog-lisbon-guide.png',
     date: 'September 25, 2025',
     category: 'City Guide',
     author: 'Good Hands Team',
@@ -38,7 +38,7 @@ const articles = [
   {
     title: 'Summer Skincare in Mediterranean Climate',
     excerpt: 'How to adjust your skincare routine for Lisbon summers. Expert tips from our favorite dermatologists and estheticians.',
-    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&q=80',
+    image: '/brand-images/service-facial-treatment.png',
     date: 'September 20, 2025',
     category: 'Skincare',
     author: 'Dr. Ana Costa',
@@ -47,7 +47,7 @@ const articles = [
   {
     title: 'The New Wave of Portuguese Nail Art',
     excerpt: 'Meet the artists bringing Portuguese azulejo tiles and traditional motifs to modern nail design.',
-    image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&q=80',
+    image: '/brand-images/salon-detail.png',
     date: 'September 15, 2025',
     category: 'Nails',
     author: 'Beatriz Santos',
@@ -56,7 +56,7 @@ const articles = [
   {
     title: 'Finding Your Signature Scent in Lisbon',
     excerpt: 'A guide to the city\'s best perfumeries and fragrance consultants for creating a custom scent.',
-    image: 'https://images.unsplash.com/photo-1541643600914-78b084683601?w=800&q=80',
+    image: '/brand-images/beauty-moment.png',
     date: 'September 10, 2025',
     category: 'Fragrance',
     author: 'Maria Silva',
