@@ -3,6 +3,7 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Grain from '@/components/Grain'
+import AIDiscoveryTracker from '@/components/AIDiscoveryTracker'
 
 export const metadata: Metadata = {
   title: 'Good Hands — Luxury Beauty Concierge Lisbon | Vetted Professionals',
@@ -192,6 +193,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <AIDiscoveryTracker />
         <Grain />
         <Navbar />
         <main className="min-h-screen">{children}</main>
