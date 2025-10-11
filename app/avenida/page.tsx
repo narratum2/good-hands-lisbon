@@ -4,8 +4,8 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Avenida da Liberdade Beauty Guide — Good Hands',
-  description: 'Ultra-luxury beauty on Lisbon&apos;s grandest boulevard. Premium spas, designer salons, and five-star hotel services.',
-  keywords: ['avenida liberdade beauty', 'luxury lisbon spa', 'five star salon lisbon', 'premium beauty portugal'],
+  description: 'Luxury beauty services on Avenida da Liberdade, Lisbon\'s grand boulevard. International brands, flagship salons, executive grooming.',
+  keywords: ['avenida beauty', 'luxury salon lisbon', 'avenida da liberdade spa', 'executive grooming lisbon'],
 }
 
 export default function AvenidaPage() {
@@ -15,8 +15,8 @@ export default function AvenidaPage() {
       <section className="relative h-[70vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image 
-            src="https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=2000&q=80" 
-            alt="Avenida da Liberdade" 
+            src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=2000&q=80" 
+            alt="Avenida da Liberdade Lisbon" 
             fill 
             className="object-cover" 
             priority 
@@ -26,7 +26,7 @@ export default function AvenidaPage() {
         <div className="relative z-10 text-center text-white container-custom">
           <h1 className="text-5xl md:text-7xl font-serif mb-4">Avenida da Liberdade</h1>
           <p className="text-xl md:text-2xl text-porcelain/90 max-w-2xl mx-auto">
-            Where luxury fashion meets world-class beauty
+            Lisbon&apos;s grand boulevard of luxury beauty
           </p>
         </div>
       </section>
@@ -34,19 +34,19 @@ export default function AvenidaPage() {
       {/* Neighborhood Overview */}
       <section className="section-padding bg-white">
         <div className="container-custom max-w-4xl">
-          <h2 className="text-4xl md:text-5xl font-serif mb-8">Lisbon&apos;s Grand Boulevard</h2>
+          <h2 className="text-4xl md:text-5xl font-serif mb-8">Lisbon&apos;s Champs-Élysées</h2>
           
           <div className="prose prose-lg max-w-none text-harbor space-y-6">
             <p className="text-xl leading-relaxed">
-              Avenida da Liberdade is Lisbon&apos;s answer to the Champs-Élysées—a magnificent tree-lined boulevard stretching 1.5 kilometers from Restauradores to Praça Marquês de Pombal. Built in 1879, this grand avenue epitomizes European elegance with its wide sidewalks, fountains, and Art Deco buildings.
+              Avenida da Liberdade is Lisbon&apos;s most prestigious address—a tree-lined boulevard connecting Marquês de Pombal square to Restauradores, modeled after Paris&apos;s Champs-Élysées. Built in the 1880s, this wide avenue represents Lisbon at its most cosmopolitan: luxury hotels (Four Seasons, Tivoli), international flagship stores, corporate headquarters, and upscale dining.
             </p>
             
             <p>
-              Today, Avenida is Lisbon&apos;s luxury axis. International fashion houses (Louis Vuitton, Prada, Burberry) occupy street-level boutiques. Five-star hotels (Tivoli, Four Seasons Ritz, Avenida Palace) tower above. And hidden within these establishments are some of Portugal&apos;s most exceptional beauty and wellness spaces.
+              The avenue exudes sophistication. Jacaranda trees provide shade over mosaic pavements. Art Deco and Belle Époque buildings house high-end retail. Business professionals walk briskly to meetings while tourists window-shop designer boutiques. It&apos;s Lisbon&apos;s statement that "we&apos;re a European capital city with global standards."
             </p>
 
             <p>
-              For beauty services, Avenida represents the pinnacle of luxury. This is where you find hotel spas with international reputations, salons using exclusive product lines, and professionals trained at the world&apos;s best academies. Expect impeccable service, premium pricing, and an atmosphere of refined sophistication.
+              For beauty services, Avenida da Liberdade represents international luxury. Expect flagship salons from global brands, hotel spas with worldwide reputations, and professionals trained in London, Paris, or New York. If you want recognizable names, cutting-edge technology, and premium everything, this is your destination. Prices reflect the prestige—typically 20-30% higher than other neighborhoods, but you&apos;re paying for guaranteed international standards.
             </p>
           </div>
         </div>
@@ -59,26 +59,26 @@ export default function AvenidaPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg p-6">
-              <div className="text-4xl mb-4">⭐</div>
-              <h3 className="text-xl font-serif mb-3">Five-Star Standards</h3>
+              <div className="text-4xl mb-4">🌟</div>
+              <h3 className="text-xl font-serif mb-3">International Standards</h3>
               <p className="text-harbor">
-                Hotel spas and premium salons with international luxury standards. The highest service levels in Lisbon, bar none.
+                Flagship locations of brands you know from London, Paris, New York. Consistent quality wherever you&apos;ve experienced them before.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <div className="text-4xl mb-4">🌍</div>
-              <h3 className="text-xl font-serif mb-3">International Expertise</h3>
+              <div className="text-4xl mb-4">💼</div>
+              <h3 className="text-xl font-serif mb-3">Executive Convenience</h3>
               <p className="text-harbor">
-                Professionals trained in Paris, London, New York. Many are transplants from international luxury markets who chose Lisbon.
+                Perfect for business travelers staying at Avenida&apos;s luxury hotels or professionals working in nearby offices. Premium efficiency.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <div className="text-4xl mb-4">💎</div>
-              <h3 className="text-xl font-serif mb-3">Exclusive Products</h3>
+              <div className="text-4xl mb-4">🔬</div>
+              <h3 className="text-xl font-serif mb-3">Latest Technology</h3>
               <p className="text-harbor">
-                Access to premium brands not available elsewhere in Lisbon. La Mer, Valmont, Augustinus Bader, ESPA, and other luxury lines.
+                First to offer new treatments—RF microneedling, cutting-edge lasers, advanced skincare technology. Investment in latest equipment.
               </p>
             </div>
           </div>
@@ -92,35 +92,35 @@ export default function AvenidaPage() {
           
           <div className="space-y-6">
             <div className="border-b border-harbor/10 pb-6">
-              <h3 className="text-xl font-semibold mb-2">Five-Star Hotel Spas</h3>
+              <h3 className="text-xl font-semibold mb-2">Luxury Hotel Spas</h3>
               <p className="text-harbor mb-3">
-                The Four Seasons Ritz Peninsula Spa by ESPA and Tivoli Spa set Lisbon&apos;s luxury wellness standards. Expect signature treatments, thermal experiences, private suites, and the kind of service that makes you feel like royalty. These aren&apos;t just spas—they&apos;re destinations.
+                Four Seasons Spa, Tivoli Avenida Spa, and other hotel wellness centers offering full spa experiences. Expect international product lines (La Prairie, Valmont), extensive facilities (saunas, pools, relaxation lounges), and therapists trained to global luxury standards. Day passes often available for non-guests.
               </p>
               <p className="text-sm text-gold">From €150 • Includes expert concierge matching</p>
             </div>
 
             <div className="border-b border-harbor/10 pb-6">
-              <h3 className="text-xl font-semibold mb-2">Designer Hair Salons</h3>
+              <h3 className="text-xl font-semibold mb-2">International Hair Salon Chains</h3>
               <p className="text-harbor mb-3">
-                International salon brands and Portuguese upscale establishments. Advanced color correction, celebrity-level styling, keratin systems, and luxury hair extensions. These stylists work with Lisbon&apos;s elite and visiting celebrities.
+                Flagship locations of international brands with stylists trained in London, Paris, or Milan academies. Advanced color techniques, precision cutting, and brand-consistent service. Perfect if you want the same experience you had in another city.
               </p>
-              <p className="text-sm text-gold">From €120 • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">From €110 • Includes expert concierge matching</p>
             </div>
 
             <div className="border-b border-harbor/10 pb-6">
-              <h3 className="text-xl font-semibold mb-2">Medical Aesthetics</h3>
+              <h3 className="text-xl font-semibold mb-2">Medical Aesthetics Clinics</h3>
               <p className="text-harbor mb-3">
-                Avenida hosts Lisbon&apos;s premier medical aesthetic clinics—dermatologists, plastic surgeons, and medical spas offering injectables, laser treatments, and advanced skincare. All with medical credentials and luxury clinic environments.
+                Doctor-supervised aesthetic medicine—Botox, fillers, laser treatments, body contouring. Avenida houses Lisbon&apos;s premier medical aesthetic practices with board-certified dermatologists and plastic surgeons.
               </p>
               <p className="text-sm text-gold">Consultation required • Includes expert concierge matching</p>
             </div>
 
             <div className="pb-6">
-              <h3 className="text-xl font-semibold mb-2">VIP Personal Services</h3>
+              <h3 className="text-xl font-semibold mb-2">Executive Grooming Lounges</h3>
               <p className="text-harbor mb-3">
-                Private beauty services in hotel suites or homes. Mobile hair stylists, makeup artists, and aestheticians for high-profile clients, weddings, or those preferring ultimate privacy and convenience.
+                High-end men&apos;s grooming spaces designed for business professionals—precision haircuts, hot towel shaves, express manicures, shoe shines. Leather chairs, whiskey bars, financial news on screens. Efficiency meets luxury.
               </p>
-              <p className="text-sm text-gold">From €200 • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">From €60 • Includes expert concierge matching</p>
             </div>
           </div>
         </div>
@@ -133,30 +133,30 @@ export default function AvenidaPage() {
           
           <div className="space-y-6">
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">🥂 Luxury Amenities</h3>
+              <h3 className="font-semibold text-lg mb-3">🏢 Corporate-Level Professionalism</h3>
               <p className="text-harbor">
-                Champagne service, luxury lounges, premium robes and slippers, gourmet refreshments, and impeccable attention to every detail. The experience rivals top international spa destinations.
+                Avenida beauty businesses operate like international corporations—consistent standards, quality control, staff training programs, and accountability. You&apos;re a valued client, not just a neighborhood regular.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">🔒 Privacy & Discretion</h3>
+              <h3 className="font-semibold text-lg mb-3">⚡ Premium Efficiency</h3>
               <p className="text-harbor">
-                Private treatment rooms, discreet entrances, and professional confidentiality. Avenida spas understand high-profile clients—celebrities, executives, and those who value absolute privacy.
+                Time is money on Avenida. Appointments start precisely on schedule, services move efficiently without feeling rushed, and booking systems are digital and streamlined. Perfect for business travelers.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">🎯 Personalization</h3>
+              <h3 className="font-semibold text-lg mb-3">🌍 Multicultural Clientele</h3>
               <p className="text-harbor">
-                Bespoke treatments tailored to your specific needs. Consultations with specialists, custom product blending, and services designed around your goals—not just menu items.
+                International business travelers, expats, diplomats, and wealthy tourists. Staff speak multiple languages fluently and understand diverse beauty standards and preferences.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">⏱️ Extended Appointments</h3>
+              <h3 className="font-semibold text-lg mb-3">💳 Transparent Luxury Pricing</h3>
               <p className="text-harbor">
-                No rushing. Appointments include consultation time, treatment time, and relaxation time. A 90-minute massage truly takes 90 minutes—plus before and after care.
+                Expensive, yes—but prices are clearly listed, include everything, and match what you&apos;d pay at the same brand in London or Paris. No surprises, no ambiguity, full transparency.
               </p>
             </div>
           </div>
@@ -170,29 +170,29 @@ export default function AvenidaPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-xl font-semibold mb-4">Public Transport</h3>
+              <h3 className="text-xl font-semibold mb-4">Metro</h3>
               <ul className="space-y-3 text-harbor">
-                <li><strong>Metro:</strong> Avenida (Blue Line), Restauradores (Blue), Marquês de Pombal (Yellow & Blue)</li>
-                <li><strong>Buses:</strong> 736, 744, 783 run along Avenida</li>
-                <li><strong>Elevador da Glória:</strong> Funicular from Restauradores</li>
-                <li><strong>Walking:</strong> 10 min from Rossio, 15 from Príncipe Real</li>
+                <li><strong>Marquês de Pombal:</strong> Yellow & Blue Lines (north end)</li>
+                <li><strong>Avenida:</strong> Blue Line (mid-avenue)</li>
+                <li><strong>Restauradores:</strong> Blue Line (south end)</li>
+                <li><strong>All within walking distance</strong> of avenue addresses</li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold mb-4">By Car & Valet</h3>
+              <h3 className="text-xl font-semibold mb-4">Other Transport</h3>
               <ul className="space-y-3 text-harbor">
-                <li>Uber/taxi drops at hotel entrances</li>
-                <li>Five-star hotels offer valet parking</li>
-                <li>Public parking: El Corte Inglés, Marquês de Pombal</li>
-                <li>Most luxury venues validate parking</li>
+                <li><strong>Walking:</strong> Central location, walkable from Baixa (10 min)</li>
+                <li><strong>Uber/Taxi:</strong> Always available, quick pickup</li>
+                <li><strong>Hotel Proximity:</strong> Many within steps of salons</li>
+                <li><strong>Parking:</strong> Underground garages available (expensive)</li>
               </ul>
             </div>
           </div>
 
           <div className="mt-8 bg-gold/10 rounded-lg p-6">
             <p className="text-harbor">
-              <strong>💡 Pro Tip:</strong> If staying at an Avenida hotel, book spa appointments through your concierge for potential guest discounts and priority booking. Many hotels offer half-day or full-day spa packages that include multiple treatments at better value than à la carte.
+              <strong>💡 Pro Tip:</strong> Book morning appointments (9-11am) before the avenue gets busy. Combine with breakfast at one of the grand hotel cafés—turn your beauty appointment into a luxurious morning ritual.
             </p>
           </div>
         </div>
@@ -205,42 +205,34 @@ export default function AvenidaPage() {
           
           <div className="space-y-4">
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🛍️</span>
+              <span className="text-2xl">🏨</span>
               <div>
-                <h4 className="font-semibold mb-1">Luxury Shopping</h4>
-                <p className="text-harbor text-sm">International fashion houses line the boulevard—Louis Vuitton, Gucci, Prada, Burberry</p>
+                <h4 className="font-semibold mb-1">Four Seasons Hotel Ritz</h4>
+                <p className="text-harbor text-sm">Afternoon tea, Michelin-starred dining, luxury shopping arcade</p>
               </div>
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🏨</span>
+              <span className="text-2xl">🛍️</span>
               <div>
-                <h4 className="font-semibold mb-1">Five-Star Hotels</h4>
-                <p className="text-harbor text-sm">Four Seasons Ritz, Tivoli Avenida, Avenida Palace—architectural landmarks with world-class service</p>
+                <h4 className="font-semibold mb-1">Designer Boutiques</h4>
+                <p className="text-harbor text-sm">Louis Vuitton, Prada, Gucci flagship stores lining the avenue</p>
               </div>
             </div>
 
             <div className="flex gap-4 items-start">
               <span className="text-2xl">🌳</span>
               <div>
-                <h4 className="font-semibold mb-1">Jardim Amália Rodrigues</h4>
-                <p className="text-harbor text-sm">Central garden promenade with fountains, sculptures, and shaded walking paths</p>
-              </div>
-            </div>
-
-            <div className="flex gap-4 items-start">
-              <span className="text-2xl">🏛️</span>
-              <div>
-                <h4 className="font-semibold mb-1">El Corte Inglés</h4>
-                <p className="text-harbor text-sm">Upscale department store with international brands, gourmet food hall, rooftop restaurant</p>
+                <h4 className="font-semibold mb-1">Eduardo VII Park</h4>
+                <p className="text-harbor text-sm">Formal gardens at avenue&apos;s north end, panoramic city views from top</p>
               </div>
             </div>
 
             <div className="flex gap-4 items-start">
               <span className="text-2xl">🍽️</span>
               <div>
-                <h4 className="font-semibold mb-1">Michelin-Starred Dining</h4>
-                <p className="text-harbor text-sm">Eleven (Michelin star), Varanda Restaurant, and numerous fine dining options</p>
+                <h4 className="font-semibold mb-1">Cervejaria Ribadouro</h4>
+                <p className="text-harbor text-sm">Traditional seafood restaurant, Lisbon institution since 1947</p>
               </div>
             </div>
 
@@ -248,7 +240,15 @@ export default function AvenidaPage() {
               <span className="text-2xl">🎭</span>
               <div>
                 <h4 className="font-semibold mb-1">Teatro Tivoli BBVA</h4>
-                <p className="text-harbor text-sm">Historic theater hosting musicals, concerts, and performances</p>
+                <p className="text-harbor text-sm">Major theater hosting musicals, concerts, and performances</p>
+              </div>
+            </div>
+
+            <div className="flex gap-4 items-start">
+              <span className="text-2xl">☕</span>
+              <div>
+                <h4 className="font-semibold mb-1">Café Versailles</h4>
+                <p className="text-harbor text-sm">Art Deco café serving traditional Portuguese pastries since 1922</p>
               </div>
             </div>
           </div>
@@ -279,30 +279,30 @@ export default function AvenidaPage() {
           
           <div className="space-y-6">
             <div>
-              <h3 className="font-semibold mb-2">Is Avenida significantly more expensive?</h3>
+              <h3 className="font-semibold mb-2">Is Avenida really that much more expensive?</h3>
               <p className="text-harbor">
-                Yes—expect 25-40% higher prices than Baixa and 15-20% higher than Chiado. However, you&apos;re accessing international luxury standards, exclusive products, and five-star hotel spas. The experience matches the premium pricing.
+                Yes—typically 20-30% premium over other neighborhoods. You&apos;re paying for international brand names, prime real estate, advanced technology, and hotel-level service standards. Worth it for consistency and luxury.
               </p>
             </div>
 
             <div>
-              <h3 className="font-semibold mb-2">Do I need to be a hotel guest?</h3>
+              <h3 className="font-semibold mb-2">Can I use hotel spas if I&apos;m not a guest?</h3>
               <p className="text-harbor">
-                No—most hotel spas welcome outside guests for treatments. Some offer day passes including spa access. Booking through Good Hands ensures acceptance even during busy periods.
+                Most hotel spas welcome day guests for treatments, though you may pay slightly more than hotel guests. Some require advance booking or have limited availability for non-guests.
               </p>
             </div>
 
             <div>
-              <h3 className="font-semibold mb-2">What&apos;s the dress code?</h3>
+              <h3 className="font-semibold mb-2">Are Avenida salons better than neighborhood ones?</h3>
               <p className="text-harbor">
-                Smart casual at minimum. Avenida establishments maintain upscale atmospheres. You wouldn&apos;t wear gym clothes to the Ritz—same applies for beauty appointments. Think business casual or chic leisure wear.
+                Not necessarily "better"—but different. More consistent, international standards, latest equipment. Neighborhood salons may have more skilled individual stylists but less brand consistency and amenities.
               </p>
             </div>
 
             <div>
-              <h3 className="font-semibold mb-2">How far in advance should I book?</h3>
+              <h3 className="font-semibold mb-2">What should I wear to Avenida salons?</h3>
               <p className="text-harbor">
-                2-4 weeks for Avenida&apos;s top professionals and hotel spas, especially weekends and holidays. Popular therapists book out months ahead. Good Hands can help navigate availability and sometimes access preferred time slots.
+                Smart casual at minimum. Avenida has a more formal atmosphere than other neighborhoods—think business attire or upscale leisurewear. You&apos;ll feel out of place in beachwear or athletic clothes.
               </p>
             </div>
           </div>
@@ -314,7 +314,7 @@ export default function AvenidaPage() {
         <div className="container-custom">
           <h2 className="text-4xl md:text-5xl font-serif mb-6">Book Your Avenida Experience</h2>
           <p className="text-xl text-porcelain/80 mb-8 max-w-2xl mx-auto">
-            Experience Lisbon&apos;s most luxurious beauty services on the city&apos;s grandest boulevard
+            Let us match you with luxury beauty services on Lisbon&apos;s most prestigious boulevard
           </p>
           <Link href="/#booking" className="btn-primary">Book Now</Link>
           <p className="text-sm text-porcelain/60 mt-6">

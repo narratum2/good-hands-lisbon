@@ -49,7 +49,7 @@ export async function POST(request: NextRequest) {
     }
 
     const stripe = new Stripe(stripeSecretKey, {
-      apiVersion: '2024-11-20.acacia',
+      apiVersion: '2025-09-30.clover',
     })
 
     // Verify webhook signature
@@ -94,7 +94,7 @@ export async function POST(request: NextRequest) {
       }
 
       case 'customer.subscription.created': {
-        const subscription = event.data.object as Stripe.Subscription
+        const subscription = event.data.object as any
         console.log('🆕 Subscription created:', subscription.id)
         
         // Get customer details
@@ -114,7 +114,7 @@ export async function POST(request: NextRequest) {
       }
 
       case 'customer.subscription.updated': {
-        const subscription = event.data.object as Stripe.Subscription
+        const subscription = event.data.object as any
         console.log('🔄 Subscription updated:', subscription.id)
         
         // Send update to Make.com to update Notion
@@ -129,7 +129,7 @@ export async function POST(request: NextRequest) {
       }
 
       case 'customer.subscription.deleted': {
-        const subscription = event.data.object as Stripe.Subscription
+        const subscription = event.data.object as any
         console.log('❌ Subscription cancelled:', subscription.id)
         
         // Send to Make.com to update Notion and send cancellation email

@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
     // Dynamically import Stripe
     const Stripe = (await import('stripe')).default
     const stripe = new Stripe(stripeSecretKey, {
-      apiVersion: '2024-11-20.acacia',
+      apiVersion: '2025-09-30.clover',
     })
 
     // Create Stripe Checkout Session

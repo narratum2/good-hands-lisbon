@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
     }
 
     const stripe = new Stripe(stripeSecretKey, {
-      apiVersion: '2024-11-20.acacia',
+      apiVersion: '2025-09-30.clover',
     })
 
     try {
@@ -31,6 +31,7 @@ export async function POST(request: NextRequest) {
         code: code,
         active: true,
         limit: 1,
+        expand: ['data.coupon'],
       })
 
       if (promotionCodes.data.length === 0) {
@@ -43,7 +44,7 @@ export async function POST(request: NextRequest) {
         )
       }
 
-      const promotionCode = promotionCodes.data[0]
+      const promotionCode: any = promotionCodes.data[0]
       const coupon = promotionCode.coupon
 
       // Check if coupon is valid
@@ -169,7 +170,7 @@ export async function GET() {
     }
 
     const stripe = new Stripe(stripeSecretKey, {
-      apiVersion: '2024-11-20.acacia',
+      apiVersion: '2025-09-30.clover',
     })
 
     const coupons = await stripe.coupons.list({

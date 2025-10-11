@@ -84,7 +84,7 @@ async function testStripeIntegration() {
 
     const Stripe = (await import('stripe')).default
     const stripe = new Stripe(stripeSecretKey, {
-      apiVersion: '2024-11-20.acacia',
+      apiVersion: '2025-09-30.clover',
     })
 
     // Try to list products
@@ -117,7 +117,7 @@ async function testNotionIntegration() {
 
     // Try to list databases
     const response = await notion.search({
-      filter: { property: 'object', value: 'database' },
+      filter: { property: 'object', value: 'page' } as any,
       page_size: 10,
     })
 

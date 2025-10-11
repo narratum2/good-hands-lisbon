@@ -4,8 +4,8 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Belém Beauty Guide — Good Hands',
-  description: 'Luxury beauty services in historic Belém. Riverside elegance meets Portuguese heritage along the Tagus.',
-  keywords: ['belem beauty', 'belem spa', 'riverside lisbon salon', 'historic belem wellness'],
+  description: 'Beauty services in Belém, Lisbon\'s waterfront cultural district. Peaceful salons near monuments, authentic local atmosphere.',
+  keywords: ['belem beauty', 'belem salon', 'waterfront beauty lisbon', 'belem spa'],
 }
 
 export default function BelemPage() {
@@ -15,7 +15,7 @@ export default function BelemPage() {
       <section className="relative h-[70vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image 
-            src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=2000&q=80" 
+            src="https://images.unsplash.com/photo-1585208798174-6cedd86e019a?w=2000&q=80" 
             alt="Belém Lisbon" 
             fill 
             className="object-cover" 
@@ -26,7 +26,7 @@ export default function BelemPage() {
         <div className="relative z-10 text-center text-white container-custom">
           <h1 className="text-5xl md:text-7xl font-serif mb-4">Belém</h1>
           <p className="text-xl md:text-2xl text-porcelain/90 max-w-2xl mx-auto">
-            Where Portuguese heritage meets riverside serenity
+            Waterfront serenity meets authentic beauty experiences
           </p>
         </div>
       </section>
@@ -34,19 +34,19 @@ export default function BelemPage() {
       {/* Neighborhood Overview */}
       <section className="section-padding bg-white">
         <div className="container-custom max-w-4xl">
-          <h2 className="text-4xl md:text-5xl font-serif mb-8">Lisbon&apos;s Historic Waterfront</h2>
+          <h2 className="text-4xl md:text-5xl font-serif mb-8">Lisbon&apos;s Cultural Waterfront</h2>
           
           <div className="prose prose-lg max-w-none text-harbor space-y-6">
             <p className="text-xl leading-relaxed">
-              Belém is where Lisbon meets history, grandeur, and the Tagus River. This riverside district launched Portugal&apos;s Age of Discovery—from here, explorers set sail for unknown worlds. Today, Belém combines UNESCO World Heritage monuments with waterfront parks, museums, and a more relaxed pace than central Lisbon.
+              Belém sits where the Tagus River meets the Atlantic Ocean, a historic waterfront district synonymous with Portugal&apos;s Age of Discovery. From here, navigators like Vasco da Gama departed to explore new worlds. Today, Belém remains expansive and open—wide riverside promenades, monumental architecture, and gardens that feel worlds away from central Lisbon&apos;s density.
             </p>
             
             <p>
-              The neighborhood stretches along the river for over 2 kilometers, anchored by the Jerónimos Monastery and Belém Tower. Wide promenades, expansive gardens, and river breezes create an open, airy atmosphere. It&apos;s where Lisbon families spend Sunday afternoons and tourists queue for pastéis de nata.
+              Unlike the compact neighborhoods of Alfama or Chiado, Belém spreads horizontally along the river. Iconic monuments—Jerónimos Monastery, Belém Tower, Padrão dos Descobrimentos—draw thousands of tourists daily, yet residential streets remain remarkably peaceful. Locals live here for the quality of life: proximity to green spaces, river views, fresh air, and community feel.
             </p>
 
             <p>
-              For beauty services, Belém offers a unique proposition: combine cultural sightseeing with luxury pampering. Spa experiences here emphasize relaxation and escape—treatments with river views, wellness centers in historic buildings, and a slower, more indulgent pace. Perfect for those wanting beauty as part of a full-day Belém experience.
+              For beauty services, Belém offers a refreshing alternative to downtown&apos;s bustle. Salons here cater primarily to Portuguese residents, not tourists. Expect authentic neighborhood atmospheres, professionals who know their regular clients by name, and prices 10-20% lower than central Lisbon. If you value tranquility and local authenticity over trendiness, Belém delivers.
             </p>
           </div>
         </div>
@@ -60,25 +60,25 @@ export default function BelemPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg p-6">
               <div className="text-4xl mb-4">🌊</div>
-              <h3 className="text-xl font-serif mb-3">Riverside Serenity</h3>
+              <h3 className="text-xl font-serif mb-3">Peaceful Atmosphere</h3>
               <p className="text-harbor">
-                Spa treatments with Tagus River views. The waterfront location adds natural tranquility to every beauty experience.
+                Escape central Lisbon&apos;s crowds. Belém&apos;s residential streets offer calm, unhurried beauty experiences with river breeze ambiance.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <div className="text-4xl mb-4">🏛️</div>
-              <h3 className="text-xl font-serif mb-3">Historic Settings</h3>
+              <div className="text-4xl mb-4">🏡</div>
+              <h3 className="text-xl font-serif mb-3">Authentic & Local</h3>
               <p className="text-harbor">
-                Beauty services in buildings with Portuguese heritage. Experience wellness in spaces that honor Lisbon&apos;s architectural legacy.
+                Salons serve neighborhood residents, not tourists. You&apos;ll experience genuine Portuguese hospitality and local salon culture.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <div className="text-4xl mb-4">🌳</div>
-              <h3 className="text-xl font-serif mb-3">Full-Day Experiences</h3>
+              <div className="text-4xl mb-4">💰</div>
+              <h3 className="text-xl font-serif mb-3">Better Value</h3>
               <p className="text-harbor">
-                Combine beauty appointments with monuments, museums, and riverside walks. Make a complete day of your Belém visit.
+                Typically 10-20% less expensive than Chiado or Príncipe Real while maintaining excellent quality and service standards.
               </p>
             </div>
           </div>
@@ -92,35 +92,35 @@ export default function BelemPage() {
           
           <div className="space-y-6">
             <div className="border-b border-harbor/10 pb-6">
-              <h3 className="text-xl font-semibold mb-2">Luxury Spa Experiences</h3>
+              <h3 className="text-xl font-semibold mb-2">Traditional Portuguese Salons</h3>
               <p className="text-harbor mb-3">
-                Belém&apos;s spas prioritize comprehensive wellness. Expect extended treatment times, luxurious facilities, and holistic approaches. Many offer packages combining massage, facials, and hydrotherapy. Some spa spaces overlook the river—treatments with a view.
+                Family-run establishments, many operating for decades. Stylists know traditional Portuguese techniques alongside modern trends. Expect warm personal service, unhurried appointments, and professionals who treat you like a neighbor, not a transaction.
               </p>
-              <p className="text-sm text-gold">From €95 • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">From €65 • Includes expert concierge matching</p>
             </div>
 
             <div className="border-b border-harbor/10 pb-6">
-              <h3 className="text-xl font-semibold mb-2">Couples & Group Services</h3>
+              <h3 className="text-xl font-semibold mb-2">Neighborhood Nail Salons</h3>
               <p className="text-harbor mb-3">
-                Belém is popular for couples&apos; spa days and group celebrations. Many wellness centers offer dual treatment rooms, friend packages, and private spa areas. Perfect for anniversaries, pre-wedding pampering, or girlfriend getaway days.
+                Small, intimate nail studios with regular clientele. Perfect for relaxed manicures and pedicures while enjoying genuine conversation. Less polished than trendy downtown spots, but often more skilled and attentive.
               </p>
-              <p className="text-sm text-gold">From €180/couple • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">From €35 • Includes expert concierge matching</p>
             </div>
 
             <div className="border-b border-harbor/10 pb-6">
-              <h3 className="text-xl font-semibold mb-2">Natural & Organic Treatments</h3>
+              <h3 className="text-xl font-semibold mb-2">Esthetics & Skincare</h3>
               <p className="text-harbor mb-3">
-                Belém&apos;s wellness centers emphasize natural Portuguese ingredients—sea minerals from the Atlantic, olive oil from Alentejo, herbs from local gardens. Treatments feel connected to Portugal&apos;s landscape and traditions.
+                Independent estheticians working in peaceful treatment rooms. Belém professionals often have long waiting lists of loyal clients who appreciate their skill and the neighborhood&apos;s tranquil setting for facials and treatments.
               </p>
-              <p className="text-sm text-gold">From €85 • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">From €80 • Includes expert concierge matching</p>
             </div>
 
             <div className="pb-6">
-              <h3 className="text-xl font-semibold mb-2">Post-Sightseeing Treatments</h3>
+              <h3 className="text-xl font-semibold mb-2">Spa & Wellness Centers</h3>
               <p className="text-harbor mb-3">
-                After walking Belém&apos;s monuments, treat tired feet to luxury pedicures or soothe legs with therapeutic massage. Many visitors schedule afternoon spa appointments following morning cultural tours.
+                Several wellness centers near the waterfront offer massage, body treatments, and holistic services. The riverside location enhances relaxation—many treatment rooms have river or garden views.
               </p>
-              <p className="text-sm text-gold">From €60 • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">From €75 • Includes expert concierge matching</p>
             </div>
           </div>
         </div>
@@ -129,34 +129,34 @@ export default function BelemPage() {
       {/* The Belém Experience */}
       <section className="section-padding bg-shell">
         <div className="container-custom max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-serif mb-8">What to Expect in Belém Wellness Centers</h2>
+          <h2 className="text-3xl md:text-4xl font-serif mb-8">What to Expect in Belém Salons</h2>
           
           <div className="space-y-6">
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">🧘 Extended Time</h3>
+              <h3 className="font-semibold text-lg mb-3">👵 Generational Expertise</h3>
               <p className="text-harbor">
-                Belém appointments run longer than downtown salons. Expect thorough consultations, extended massage times, and no sense of rushing. This is where you come to truly disconnect.
+                Many Belém professionals learned from their mothers or mentors who&apos;ve worked in the neighborhood for 30+ years. They bring accumulated knowledge and traditional Portuguese beauty wisdom.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">🌅 Natural Light & Views</h3>
+              <h3 className="font-semibold text-lg mb-3">⏰ Unhurried Service</h3>
               <p className="text-harbor">
-                Many treatment rooms feature windows overlooking the Tagus. Natural light, river breezes (in outdoor spaces), and connection to the waterfront enhance the wellness experience.
+                Belém&apos;s pace is slower than central Lisbon. Appointments aren&apos;t rushed, conversation flows naturally, and there&apos;s time for coffee and genuine connection. European salon culture as it used to be everywhere.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">🍃 Holistic Philosophy</h3>
+              <h3 className="font-semibold text-lg mb-3">🗣️ Portuguese Atmosphere</h3>
               <p className="text-harbor">
-                Belém wellness centers often integrate Portuguese healing traditions—aromatherapy with local herbs, thalassotherapy using Atlantic seawater, treatments inspired by ancestral practices.
+                While professionals speak English, the salon atmosphere is authentically Portuguese. You might hear fado playing softly, smell traditional soap, and witness the warmth of neighborhood relationships.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">👥 Perfect for Couples</h3>
+              <h3 className="font-semibold text-lg mb-3">💚 Neighborhood Loyalty</h3>
               <p className="text-harbor">
-                More couple-friendly than Chiado&apos;s individual-focused salons. Many spaces designed for shared experiences—dual massage rooms, couples&apos; relaxation areas, romantic post-treatment spaces.
+                Belém clients are loyal—they&apos;ve been seeing the same stylist for years. This creates a referral-based business model where quality matters more than marketing. If you&apos;re accepted, you&apos;re in good hands.
               </p>
             </div>
           </div>
@@ -172,27 +172,27 @@ export default function BelemPage() {
             <div>
               <h3 className="text-xl font-semibold mb-4">Public Transport</h3>
               <ul className="space-y-3 text-harbor">
-                <li><strong>Tram 15E:</strong> From Praça da Figueira or Cais do Sodré (~25 min)</li>
+                <li><strong>Tram 15:</strong> From Praça da Figueira/Comércio (25 min)</li>
                 <li><strong>Train:</strong> Cascais line to Belém station</li>
-                <li><strong>Buses:</strong> 714, 727, 728, 729, 751</li>
-                <li><strong>River ferry:</strong> From Trafaria (scenic route)</li>
+                <li><strong>Buses:</strong> 727, 28, 729, 714 from various points</li>
+                <li><strong>E-Tram (15E):</strong> Modern tram, frequent, comfortable</li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold mb-4">By Car & Bike</h3>
+              <h3 className="text-xl font-semibold mb-4">Other Options</h3>
               <ul className="space-y-3 text-harbor">
-                <li>20-30 minutes from downtown by car</li>
-                <li>Ample parking near monuments (paid)</li>
-                <li>Bike path along entire waterfront</li>
-                <li>Uber/taxi readily available (€10-15 from center)</li>
+                <li><strong>Cycling:</strong> Dedicated bike path along river (beautiful ride)</li>
+                <li><strong>Walking:</strong> 45 min from central Lisbon (scenic waterfront route)</li>
+                <li><strong>Uber/Taxi:</strong> 10-15 min from downtown (€8-12)</li>
+                <li><strong>Parking:</strong> Easier than central Lisbon, often free on residential streets</li>
               </ul>
             </div>
           </div>
 
           <div className="mt-8 bg-gold/10 rounded-lg p-6">
             <p className="text-harbor">
-              <strong>💡 Pro Tip:</strong> Schedule spa appointments for late afternoon (4pm-6pm) after visiting monuments. Morning tours, lunch at a riverside restaurant, then wellness treatments as the day winds down. Perfect rhythm for a complete Belém day.
+              <strong>💡 Pro Tip:</strong> Combine your beauty appointment with a morning at Belém&apos;s monuments, then have lunch at one of the riverside restaurants. Make a full day of it—the neighborhood rewards slower exploration.
             </p>
           </div>
         </div>
@@ -208,15 +208,15 @@ export default function BelemPage() {
               <span className="text-2xl">🏰</span>
               <div>
                 <h4 className="font-semibold mb-1">Jerónimos Monastery</h4>
-                <p className="text-harbor text-sm">UNESCO World Heritage masterpiece of Manueline architecture, Portugal&apos;s most visited monument</p>
+                <p className="text-harbor text-sm">UNESCO World Heritage Site, magnificent Manueline architecture, Vasco da Gama&apos;s tomb</p>
               </div>
             </div>
 
             <div className="flex gap-4 items-start">
               <span className="text-2xl">🗼</span>
               <div>
-                <h4 className="font-semibold mb-1">Belém Tower</h4>
-                <p className="text-harbor text-sm">Iconic fortified tower from 1519, symbol of Portugal&apos;s Age of Discovery</p>
+                <h4 className="font-semibold mb-1">Belém Tower (Torre de Belém)</h4>
+                <p className="text-harbor text-sm">Iconic 16th-century fortress, symbol of Portugal&apos;s Age of Discovery</p>
               </div>
             </div>
 
@@ -224,7 +224,7 @@ export default function BelemPage() {
               <span className="text-2xl">🥐</span>
               <div>
                 <h4 className="font-semibold mb-1">Pastéis de Belém</h4>
-                <p className="text-harbor text-sm">Original pastéis de nata since 1837 using secret monastery recipe (expect queues)</p>
+                <p className="text-harbor text-sm">Original pastéis de nata since 1837, secret recipe, long lines but worth it</p>
               </div>
             </div>
 
@@ -232,23 +232,31 @@ export default function BelemPage() {
               <span className="text-2xl">🎨</span>
               <div>
                 <h4 className="font-semibold mb-1">MAAT - Museum of Art, Architecture and Technology</h4>
-                <p className="text-harbor text-sm">Stunning contemporary museum with riverside terrace and innovative exhibitions</p>
+                <p className="text-harbor text-sm">Stunning contemporary museum with riverside location and innovative exhibitions</p>
+              </div>
+            </div>
+
+            <div className="flex gap-4 items-start">
+              <span className="text-2xl">⛲</span>
+              <div>
+                <h4 className="font-semibold mb-1">Padrão dos Descobrimentos</h4>
+                <p className="text-harbor text-sm">Monument to Portuguese discoveries, rooftop viewing platform</p>
+              </div>
+            </div>
+
+            <div className="flex gap-4 items-start">
+              <span className="text-2xl">🌳</span>
+              <div>
+                <h4 className="font-semibold mb-1">Jardim da Praça do Império</h4>
+                <p className="text-harbor text-sm">Beautiful formal gardens with fountain, perfect for post-salon relaxation</p>
               </div>
             </div>
 
             <div className="flex gap-4 items-start">
               <span className="text-2xl">🚢</span>
               <div>
-                <h4 className="font-semibold mb-1">Monument to the Discoveries</h4>
-                <p className="text-harbor text-sm">Dramatic monument honoring Portuguese explorers, climb to top for panoramic views</p>
-              </div>
-            </div>
-
-            <div className="flex gap-4 items-start">
-              <span className="text-2xl">🍽️</span>
-              <div>
-                <h4 className="font-semibold mb-1">Darwin&apos;s Café</h4>
-                <p className="text-harbor text-sm">Modern riverside restaurant with terrace dining and contemporary Portuguese cuisine</p>
+                <h4 className="font-semibold mb-1">Doca de Santo Amaro</h4>
+                <p className="text-harbor text-sm">Marina with restaurants, bars, and waterfront dining with sunset views</p>
               </div>
             </div>
           </div>
@@ -281,28 +289,28 @@ export default function BelemPage() {
             <div>
               <h3 className="font-semibold mb-2">Is Belém too far from central Lisbon?</h3>
               <p className="text-harbor">
-                It&apos;s 6km west of Baixa—about 25 minutes by tram or 20 by car. Most visitors spend half or full days in Belém anyway for the monuments, so beauty appointments integrate seamlessly into sightseeing plans.
+                It&apos;s 6km from downtown—15 minutes by tram or train, 25 minutes by scenic Tram 15. The journey is part of the experience. If you&apos;re visiting Belém&apos;s monuments anyway, it&apos;s perfectly convenient.
               </p>
             </div>
 
             <div>
-              <h3 className="font-semibold mb-2">Are Belém spas more expensive?</h3>
+              <h3 className="font-semibold mb-2">Do Belém salons speak English?</h3>
               <p className="text-harbor">
-                Slightly higher than Baixa but comparable to Chiado. Treatments run 10-15% more due to longer appointment times, luxury facilities, and waterfront locations. The extended experience justifies the premium.
+                Most professionals speak functional English, though it may not be as fluent as central Lisbon. Good Hands ensures communication won&apos;t be a barrier—we match you with English-speaking professionals.
               </p>
             </div>
 
             <div>
-              <h3 className="font-semibold mb-2">Can I do Belém monuments and a spa in one day?</h3>
+              <h3 className="font-semibold mb-2">Are Belém salons as good as downtown?</h3>
               <p className="text-harbor">
-                Absolutely—that&apos;s the perfect Belém day! Morning monuments and museums (3-4 hours), leisurely riverside lunch (1-2 hours), afternoon spa treatments (2-3 hours). You&apos;ll leave relaxed and culturally enriched.
+                Quality is excellent—sometimes better. Belém professionals have loyal clientele precisely because of their skill. They may lack trendy aesthetics, but technical expertise is often superior due to experience.
               </p>
             </div>
 
             <div>
-              <h3 className="font-semibold mb-2">Is Belém good for couples&apos; spa days?</h3>
+              <h3 className="font-semibold mb-2">Can I combine beauty services with sightseeing?</h3>
               <p className="text-harbor">
-                Belém is Lisbon&apos;s best neighborhood for couples&apos; wellness. More romantic atmosphere than downtown, better facilities for shared experiences, and the riverside setting creates natural ambiance. Many couples celebrate anniversaries here.
+                Absolutely! This is Belém&apos;s advantage. Book a morning at monuments, lunch, then a 2pm beauty appointment. Or reverse: salon first, then explore when you look and feel your best. Make a full day of it.
               </p>
             </div>
           </div>
@@ -314,7 +322,7 @@ export default function BelemPage() {
         <div className="container-custom">
           <h2 className="text-4xl md:text-5xl font-serif mb-6">Book Your Belém Experience</h2>
           <p className="text-xl text-porcelain/80 mb-8 max-w-2xl mx-auto">
-            Let us create your perfect Belém day—culture, cuisine, and wellness by the Tagus
+            Let us match you with trusted beauty professionals in Lisbon&apos;s most peaceful waterfront neighborhood
           </p>
           <Link href="/#booking" className="btn-primary">Book Now</Link>
           <p className="text-sm text-porcelain/60 mt-6">
