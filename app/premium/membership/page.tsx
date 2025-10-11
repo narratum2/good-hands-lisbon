@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { Check, Star, Crown, Sparkles } from 'lucide-react'
+import MembershipButton from '@/components/MembershipButton'
 
 export const metadata: Metadata = {
   title: 'Membership — Good Hands',
@@ -154,15 +155,7 @@ export default function MembershipPage() {
                 </ul>
               </div>
 
-              <button
-                onClick={() => {
-                  // Will integrate with Stripe
-                  alert('Stripe integration coming soon! You will need to set up your Stripe account first.')
-                }}
-                className="w-full btn-primary"
-              >
-                Choose Gold
-              </button>
+              <MembershipButton tier="gold" />
 
               <p className="text-center text-sm text-harbor mt-4">
                 Save €180+ per year on regular services
@@ -203,15 +196,7 @@ export default function MembershipPage() {
                 </ul>
               </div>
 
-              <button
-                onClick={() => {
-                  // Will integrate with Stripe
-                  alert('Stripe integration coming soon! You will need to set up your Stripe account first.')
-                }}
-                className="w-full bg-gold text-ink font-semibold px-8 py-4 rounded-sm hover:bg-gold/90 transition-all focus-visible-ring"
-              >
-                Choose Platinum
-              </button>
+              <MembershipButton tier="platinum" />
 
               <p className="text-center text-sm text-porcelain/70 mt-4">
                 Save €500+ per year + exclusive perks worth €1000+
