@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 import { Search, X } from 'lucide-react'
+import CuratedProducts from '@/components/CuratedProducts'
 
 const services = [
   {
@@ -247,6 +248,9 @@ export default function ServicesPage() {
           </div>
         </section>
       )))}
+
+      {/* Curated Products */}
+      <CuratedProducts />
 
       {/* CTA */}
       <section className="section-padding bg-ink text-white text-center">
