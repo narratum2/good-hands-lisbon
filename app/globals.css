@@ -375,6 +375,17 @@
     @apply text-2xl leading-relaxed text-ink mb-8 font-light;
   }
 
+  /* Drop Cap - Magazine Style */
+  .editorial-content .drop-cap::first-letter,
+  .drop-cap::first-letter {
+    @apply font-serif text-ink;
+    font-size: 4.5em;
+    line-height: 0.85;
+    float: left;
+    margin: 0.1em 0.15em 0 0;
+    font-weight: 600;
+  }
+
   .editorial-content h2 {
     @apply text-3xl md:text-4xl font-serif text-ink mt-12 mb-6 first:mt-0;
   }
@@ -405,7 +416,8 @@
   }
 
   .editorial-content .cta-section {
-    @apply bg-shell rounded-lg p-8 my-12 text-center;
+    @apply bg-shell p-8 my-12 text-center;
+    border-radius: 0; /* Editorial sharp corners */
   }
 
   .editorial-content .cta-section h3 {
