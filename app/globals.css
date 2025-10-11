@@ -70,8 +70,181 @@
   .focus-visible-ring {
     @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2;
   }
+
+  /* Boutique-inspired animations */
+  .fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  .fade-in-left {
+    animation: fadeInLeft 0.8s ease-out forwards;
+  }
+
+  .fade-in-right {
+    animation: fadeInRight 0.8s ease-out forwards;
+  }
+
+  .scale-in {
+    animation: scaleIn 0.6s ease-out forwards;
+  }
+
+  .image-reveal {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .image-reveal::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, #fafaf9 0%, transparent 100%);
+    animation: imageReveal 1.2s ease-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes imageReveal {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+
+  /* Smooth scrolling enhancements */
+  .smooth-scroll {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+  }
+
+  /* Editorial blockquote */
+  .editorial-quote {
+    @apply border-l-4 border-gold pl-6 py-4 my-8 italic text-xl text-harbor;
+  }
+
+  /* Large numbers/stats */
+  .stat-number {
+    @apply text-6xl md:text-7xl font-serif text-gold leading-none;
+  }
+
+  /* Editorial article styles */
+  .editorial-content {
+    @apply text-lg text-harbor leading-relaxed;
+  }
+
+  .editorial-content .lead-paragraph {
+    @apply text-2xl leading-relaxed text-ink mb-8 font-light;
+  }
+
+  .editorial-content h2 {
+    @apply text-3xl md:text-4xl font-serif text-ink mt-12 mb-6 first:mt-0;
+  }
+
+  .editorial-content h3 {
+    @apply text-2xl font-serif text-ink mt-8 mb-4;
+  }
+
+  .editorial-content p {
+    @apply mb-6;
+  }
+
+  .editorial-content ul {
+    @apply my-6 space-y-3;
+  }
+
+  .editorial-content li {
+    @apply pl-6 relative;
+  }
+
+  .editorial-content li::before {
+    content: '—';
+    @apply absolute left-0 text-gold;
+  }
+
+  .editorial-content blockquote {
+    @apply editorial-quote;
+  }
+
+  .editorial-content .cta-section {
+    @apply bg-shell rounded-lg p-8 my-12 text-center;
+  }
+
+  .editorial-content .cta-section h3 {
+    @apply text-3xl font-serif mb-4 mt-0;
+  }
+
+  .editorial-content .timeline p {
+    @apply border-l-2 border-gold pl-4 mb-4;
+  }
+
+  /* Prose enhancements for article content */
+  .prose {
+    @apply text-harbor;
+  }
+
+  .prose h2 {
+    @apply font-serif text-ink;
+  }
+
+  .prose h3 {
+    @apply font-serif text-ink;
+  }
+
+  .prose a {
+    @apply text-gold hover:text-gold-dark transition-colors;
+  }
+
+  .prose strong {
+    @apply text-ink font-semibold;
+  }
 }
 
-/* Google Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+/* Google Fonts Import - Add more weights for editorial feel */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap');
 
