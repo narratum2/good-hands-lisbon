@@ -9,9 +9,9 @@ interface ArticleContentProps {
 
 export default function ArticleContent({ content }: ArticleContentProps) {
   return (
-    <ReactMarkdown
-      className="editorial-content prose prose-lg max-w-none"
-      components={{
+    <div className="editorial-content prose prose-lg max-w-none">
+      <ReactMarkdown
+        components={{
         // Custom components for better styling
         h2: ({ children }) => (
           <h2 className="text-3xl font-serif text-ink mt-12 mb-4">{children}</h2>
@@ -50,9 +50,10 @@ export default function ArticleContent({ content }: ArticleContentProps) {
           </Link>
         ),
       }}
-    >
-      {content}
-    </ReactMarkdown>
+      >
+        {content}
+      </ReactMarkdown>
+    </div>
   )
 }
 
