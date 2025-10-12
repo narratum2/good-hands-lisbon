@@ -78,7 +78,7 @@ export default function ValueProposition() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-center mt-16"
+          className="text-center mt-16 relative z-10"
         >
           <div className="bg-gold/10 border-2 border-gold rounded-lg p-8 max-w-3xl mx-auto">
             <h3 className="text-2xl md:text-3xl font-serif mb-4">

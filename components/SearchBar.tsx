@@ -32,7 +32,7 @@ export default function SearchBar() {
   }
 
   return (
-    <section id="search" className="section-padding bg-shell">
+    <section id="search" className="section-padding bg-white">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Hotel Partnerships | Good Hands Beauty Concierge',
@@ -9,15 +10,28 @@ export const metadata: Metadata = {
 
 export default function PartnershipsPage() {
   return (
-    <div className="bg-porcelain">
+    <div className="bg-porcelain pt-20">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-sand via-gold to-sand py-32 overflow-hidden">
+      <section className="relative h-[70vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/brand-images/hero-salon-interior.png"
+            alt="Luxury hotel beauty concierge services - Good Hands partnerships in Lisbon"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-sand/90 via-gold/80 to-sand/90" />
+        </div>
+
+        {/* Content */}
         <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto text-center text-white">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif mb-6">
               Elevate Your Guest Experience
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl mb-8 text-white/95 max-w-2xl mx-auto">
               Partner with Good Hands to offer your guests exclusive access to Lisbon's finest beauty professionals—without hiring additional staff.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

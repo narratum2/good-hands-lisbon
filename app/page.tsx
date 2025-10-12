@@ -11,7 +11,7 @@ import FAQExpanded from '@/components/FAQExpanded'
 import ReviewsSnippet from '@/components/ReviewsSnippet'
 import BookingForm from '@/components/BookingForm'
 import ParallaxSection from '@/components/ParallaxSection'
-import CuratedProducts from '@/components/CuratedProducts'
+// import CuratedProducts from '@/components/CuratedProducts' // TODO: Re-enable when shop is ready
 
 export default function Home() {
   return (
@@ -40,7 +40,8 @@ export default function Home() {
         <JournalPreview />
       </ParallaxSection>
       
-      <CuratedProducts />
+      {/* <CuratedProducts /> */}
+      {/* TODO: Re-enable when full shop is ready - currently has placeholder product images */}
       
       <Lookbook />
       <ReviewsSnippet />
