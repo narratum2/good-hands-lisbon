@@ -26,9 +26,16 @@
     --white: #ffffff;      /* Primary background */
     --off-white: #f5f5f5;  /* Subtle backgrounds */
     --gold: #c9a961;       /* Accents - USE VERY SPARINGLY */
+    --gold-light: #e5d4a8; /* Lighter gold for backgrounds */
+    --gold-dark: #b08d45;  /* Darker gold for contrast */
     --gray-light: #e5e5e5; /* Borders */
     --gray-medium: #999999;/* Secondary text */
     --gray-dark: #4a4a4a;  /* Tertiary text */
+    
+    /* Sage Green Accents */
+    --sage: #a8b5a0;       /* Primary sage */
+    --sage-light: #c4d4bc; /* Light sage backgrounds */
+    --sage-dark: #8a9882;  /* Dark sage for text */
     
     /* Z-Index System */
     --z-base: 1;

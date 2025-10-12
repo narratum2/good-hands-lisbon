@@ -14,7 +14,8 @@ const config: Config = {
         'off-white': '#f5f5f5',
         gold: {
           DEFAULT: '#c9a961',
-          dark: '#b89748',
+          light: '#e5d4a8',
+          dark: '#b08d45',
         },
         'gray-light': '#e5e5e5',
         'gray-medium': '#999999',
@@ -31,10 +32,12 @@ const config: Config = {
           darker: '#e7e5e4',
         },
         sage: {
-          DEFAULT: '#a8b5a5',
-          light: '#b8c9a8',
-          dark: '#7d9268',
+          DEFAULT: '#a8b5a0',
+          light: '#c4d4bc',
+          dark: '#8a9882',
         },
+        shell: '#ede8e0',
+        harbor: '#5a6d7c',
       },
       fontFamily: {
         sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
