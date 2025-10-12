@@ -9,15 +9,15 @@ const faqs = [
     questions: [
       {
         q: 'What is Good Hands?',
-        a: 'Good Hands is Lisbon\'s premier beauty concierge service. We match you with personally vetted beauty professionals—hair stylists, nail technicians, estheticians, makeup artists, and wellness practitioners. Think of us as your trusted insider who knows every great professional in the city and saves you from trial-and-error disappointments.'
+        a: 'We connect you with the best beauty professionals in Lisbon. Hair, nails, skin, makeup, wellness. Every person in our network has been tested by us personally. No trial and error. No disappointments. Just people who are genuinely good at what they do.'
       },
       {
-        q: 'How does Good Hands work?',
-        a: 'Simple: 1) Tell us what you need through our booking form. 2) We match you with the perfect professional based on your preferences, location, and budget. 3) We handle all coordination and booking. 4) You show up and enjoy a perfect experience. We confirm everything within 24 hours.'
+        q: 'How does it work?',
+        a: 'Tell us what you need. We match you with the right person. We handle the booking. You show up. That\'s it. We confirm everything within 24 hours.'
       },
       {
-        q: 'How is this different from booking directly?',
-        a: 'We eliminate the guesswork. Instead of scrolling through hundreds of salons with uncertain quality, reading conflicting reviews, and risking a bad experience, we match you with professionals we\'ve personally vetted. Our concierge service is included in every booking—you get expert matching, coordination, and support.'
+        q: 'Why not just book directly?',
+        a: 'Because three hours of Instagram scrolling and contradictory reviews is exhausting. We\'ve already done that work. Everyone in our network has been tested personally. No guessing. No hoping for the best. Just someone who knows what they\'re doing.'
       },
       {
         q: 'Do you work with AI assistants like ChatGPT or Claude?',
@@ -30,11 +30,11 @@ const faqs = [
     questions: [
       {
         q: 'How much does it cost?',
-        a: 'Our prices include both the service and our concierge fee. Hair styling starts at €105, nail care at €65, skincare at €95, makeup at €85, and wellness at €80. All prices include expert matching, booking coordination, and follow-up support. No hidden fees, no surprises.'
+        a: 'Hair starts at €105. Nails at €65. Skincare at €95. Makeup at €85. Wellness at €80. That includes the service and our concierge fee. No hidden costs. What you see is what you pay.'
       },
       {
-        q: 'Is the concierge service fee worth it?',
-        a: 'Absolutely. Consider this: one bad haircut or poor nail experience costs €40-80 plus your time and disappointment. Our clients tell us they\'ve wasted hundreds of euros on wrong choices. We eliminate that risk. Plus, we save you hours of research and uncertainty. Most clients say we\'re worth it after just one perfect match.'
+        q: 'Is the concierge fee worth it?',
+        a: 'One bad haircut costs €60 plus the stress of fixing it. One disappointing facial is €80 you\'ll never get back. We eliminate that risk. Most people tell us we paid for ourselves after the first booking.'
       },
       {
         q: 'Can I book same-day appointments?',
@@ -58,8 +58,8 @@ const faqs = [
         a: 'Rigorously. We personally visit every salon, review certifications, check hygiene standards, test services, read customer feedback, and conduct interviews. Only about 1 in 5 professionals we evaluate make it onto our platform. We prioritize skill, cleanliness, communication, and professionalism.'
       },
       {
-        q: 'What if I\'m not satisfied with the service?',
-        a: 'Tell us immediately. We follow up after every appointment. If something wasn\'t right, we\'ll work with you to make it better—whether that means a complimentary redo, a different professional, or a refund. Your satisfaction is our reputation.'
+        q: 'What if something goes wrong?',
+        a: 'Tell us. We follow up after every appointment. If it wasn\'t right, we fix it. Different professional, complimentary redo, or refund. Your call.'
       },
       {
         q: 'Do professionals speak English?',

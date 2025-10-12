@@ -97,15 +97,15 @@ export default function BookingForm() {
         >
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif mb-4">
-              Book Your Experience
+              Let's Book You
             </h2>
             <p className="text-harbor text-lg mb-4">
-              Tell us what you need, and we\'ll take care of the rest
+              Tell us what you need. We'll handle the rest.
             </p>
             <div className="inline-flex items-center gap-2 bg-gold/10 px-6 py-3 rounded-lg">
               <span className="text-2xl">✨</span>
               <p className="text-sm font-medium text-gold">
-                Expert concierge matching & coordination included with every booking
+                Concierge service included
               </p>
             </div>
           </div>

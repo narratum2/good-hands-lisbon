@@ -26,7 +26,7 @@ export default function PrincipeRealPage() {
         <div className="relative z-10 text-center text-white container-custom">
           <h1 className="text-5xl md:text-7xl font-serif mb-4">Príncipe Real</h1>
           <p className="text-xl md:text-2xl text-porcelain/90 max-w-2xl mx-auto">
-            Bohemian elegance meets cutting-edge beauty expertise
+            Where artists, free spirits, and the best colorists in Lisbon all hang out
           </p>
         </div>
       </section>
@@ -38,15 +38,15 @@ export default function PrincipeRealPage() {
           
           <div className="prose prose-lg max-w-none text-harbor space-y-6">
             <p className="text-xl leading-relaxed">
-              Príncipe Real is Lisbon&apos;s bohemian soul—a sophisticated neighborhood where 19th-century mansions house contemporary art galleries, independent boutiques, and some of the city&apos;s most progressive beauty spaces. Named after Dom Pedro V (the "Prince Royal"), the area centers around a stunning garden with a century-old cedar tree providing natural shade.
+              Príncipe Real is where Lisbon keeps its interesting people. The neighborhood wraps around a garden with a massive old cedar tree, surrounded by 19th-century mansions that now house galleries, wine bars, and some genuinely excellent hair salons.
             </p>
             
             <p>
-              This is Lisbon&apos;s LGBTQ+ hub and creative epicenter, attracting artists, designers, and free spirits. The neighborhood&apos;s streets—São Marçal, Dom Pedro V, and Escola Politécnica—are lined with antique shops, concept stores, and innovative businesses that prioritize individuality over mass appeal.
+              This is the city's LGBTQ+ heart and creative center. Artists, designers, people who dress well. The streets are lined with antique shops, concept stores, and businesses run by people who actually care what they're doing. Not corporate. Not generic.
             </p>
 
             <p>
-              For beauty services, Príncipe Real represents Lisbon&apos;s avant-garde. Expect trend-forward hair color, holistic wellness studios, gender-neutral salons, and practitioners who embrace unconventional techniques. This is where you come for bold transformations, not conservative updates.
+              For beauty, Príncipe Real is where you find the colorists everyone wants. The stylists who trained in Paris or London and came back. Gender-neutral salons. Holistic wellness people who aren't selling snake oil. If you want something boring and safe, go somewhere else. This neighborhood is for people who know what they want.
             </p>
           </div>
         </div>
@@ -60,25 +60,25 @@ export default function PrincipeRealPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg p-6">
               <div className="text-4xl mb-4">🎨</div>
-              <h3 className="text-xl font-serif mb-3">Trend-Forward Expertise</h3>
+              <h3 className="text-xl font-serif mb-3">Actually Good Colorists</h3>
               <p className="text-harbor">
-                Stylists and artists who push boundaries. If you want the latest techniques from Paris, London, or Seoul, Príncipe Real delivers.
+                The stylists here trained in Paris, London, Seoul. They know what's happening before it shows up on Instagram. If you want cutting-edge color or a bold cut, this is your neighborhood.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
               <div className="text-4xl mb-4">🌿</div>
-              <h3 className="text-xl font-serif mb-3">Holistic Wellness</h3>
+              <h3 className="text-xl font-serif mb-3">Wellness That Works</h3>
               <p className="text-harbor">
-                Leading neighborhood for alternative therapies—Reiki, acupuncture, aromatherapy, and natural beauty treatments.
+                Reiki, acupuncture, aromatherapy, natural facials. The practitioners here know their stuff and don't make ridiculous claims. Holistic beauty without the nonsense.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
               <div className="text-4xl mb-4">🏳️‍🌈</div>
-              <h3 className="text-xl font-serif mb-3">Inclusive & Welcoming</h3>
+              <h3 className="text-xl font-serif mb-3">Everyone's Welcome</h3>
               <p className="text-harbor">
-                Gender-neutral salons, LGBTQ+-owned businesses, and a culture of acceptance. Everyone is welcome, exactly as they are.
+                Gender-neutral salons. LGBTQ+-owned businesses. A neighborhood that figured out inclusivity years ago. Show up as yourself.
               </p>
             </div>
           </div>
@@ -92,11 +92,11 @@ export default function PrincipeRealPage() {
           
           <div className="space-y-6">
             <div className="border-b border-harbor/10 pb-6">
-              <h3 className="text-xl font-semibold mb-2">Avant-Garde Hair Studios</h3>
+              <h3 className="text-xl font-semibold mb-2">Hair Color That Actually Looks Good</h3>
               <p className="text-harbor mb-3">
-                Príncipe Real&apos;s hair stylists are Lisbon&apos;s color specialists—vivid fashion colors, seamless balayage, precision pixie cuts, and gender-neutral styling. Many stylists have international training and follow global trends obsessively. Expect consultations that feel like creative collaborations.
+                The colorists here are Lisbon's best. Fashion colors, perfect balayage, precision cuts. They trained internationally and know what they're doing. Book a consultation and they'll tell you honestly whether your Pinterest idea will actually work with your hair.
               </p>
-              <p className="text-sm text-gold">From €90 • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">From €90 • Includes our concierge service</p>
             </div>
 
             <div className="border-b border-harbor/10 pb-6">

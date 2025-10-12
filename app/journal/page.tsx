@@ -9,9 +9,27 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    title: 'Bridal Hair Trends 2026: What Lisbon Brides Are Choosing',
+    excerpt: 'From modern updos to romantic waves, the hairstyles dominating Portuguese weddings.',
+    image: '/brand-images/blog-bridal-hair.png',
+    date: 'October 8, 2025',
+    category: 'Weddings',
+    author: 'Sofia Martins',
+    slug: 'bridal-hair-trends-2026',
+  },
+  {
+    title: 'Wellness Rituals: How Lisbon Lives Well',
+    excerpt: 'The daily practices that keep Lisboetas balanced, beautiful, and centered.',
+    image: '/brand-images/hero-wellness-scene.png',
+    date: 'October 5, 2025',
+    category: 'Wellness',
+    author: 'Teresa Alves',
+    slug: 'wellness-rituals-lisbon',
+  },
+  {
     title: 'The Art of Portuguese Beauty Rituals',
-    excerpt: 'Discover centuries-old beauty traditions from Portugal that modern experts still swear by. From olive oil treatments to rose water tonics.',
-    image: '/brand-images/blog-portuguese-beauty.png',
+    excerpt: 'Discover centuries-old beauty traditions from Portugal that modern experts still swear by.',
+    image: '/brand-images/service-makeup-application.png',
     date: 'October 1, 2025',
     category: 'Traditions',
     author: 'Maria Silva',
@@ -19,7 +37,7 @@ const articles = [
   },
   {
     title: 'Wedding Beauty Timeline: 6 Months to I Do',
-    excerpt: 'A comprehensive guide to preparing your beauty routine for the big day, from skin prep to finding the perfect hairstyle.',
+    excerpt: 'A comprehensive guide to preparing your beauty routine for the big day.',
     image: '/brand-images/blog-wedding-timeline.png',
     date: 'September 28, 2025',
     category: 'Weddings',
@@ -28,8 +46,8 @@ const articles = [
   },
   {
     title: "Lisbon\'s Hidden Beauty Gems",
-    excerpt: "Our editors share their favorite under-the-radar salons and spas across the city that locals don\'t want you to know about.",
-    image: '/brand-images/blog-lisbon-guide.png',
+    excerpt: "Under-the-radar salons and spas that locals treasure.",
+    image: '/brand-images/hero-salon-interior.png',
     date: 'September 25, 2025',
     category: 'City Guide',
     author: 'Good Hands Team',
@@ -37,7 +55,7 @@ const articles = [
   },
   {
     title: 'Summer Skincare in Mediterranean Climate',
-    excerpt: 'How to adjust your skincare routine for Lisbon summers. Expert tips from our favorite dermatologists and estheticians.',
+    excerpt: 'How to adjust your skincare routine for Lisbon summers with expert tips from dermatologists.',
     image: '/brand-images/service-facial-treatment.png',
     date: 'September 20, 2025',
     category: 'Skincare',
@@ -46,21 +64,12 @@ const articles = [
   },
   {
     title: 'The New Wave of Portuguese Nail Art',
-    excerpt: 'Meet the artists bringing Portuguese azulejo tiles and traditional motifs to modern nail design.',
-    image: '/brand-images/salon-detail.png',
+    excerpt: 'Meet the artists bringing contemporary Portuguese design to nails.',
+    image: '/brand-images/service-nail-art.png',
     date: 'September 15, 2025',
-    category: 'Nails',
-    author: 'Beatriz Santos',
+    category: 'Nail Art',
+    author: 'Catarina Silva',
     slug: 'portuguese-nail-art',
-  },
-  {
-    title: 'Finding Your Signature Scent in Lisbon',
-    excerpt: 'A guide to the city\'s best perfumeries and fragrance consultants for creating a custom scent.',
-    image: '/brand-images/beauty-moment.png',
-    date: 'September 10, 2025',
-    category: 'Fragrance',
-    author: 'Maria Silva',
-    slug: 'signature-scent-lisbon',
   },
 ]
 

@@ -122,12 +122,12 @@ export default function ServicesPage() {
           <div className="absolute inset-0 bg-ink/50" />
         </div>
         <div className="relative z-10 text-center text-white container-custom">
-          <h1 className="text-5xl md:text-6xl font-serif mb-4">Our Services</h1>
+          <h1 className="text-5xl md:text-6xl font-serif mb-4">What We Book</h1>
           <p className="text-xl md:text-2xl text-porcelain/90 max-w-2xl mx-auto">
-            Premium beauty experiences with expert concierge matching
+            Hair, skin, nails, makeup, wellness. Whatever you need, we know the right person.
           </p>
           <p className="text-lg text-gold mt-2">
-            All prices include concierge service & coordination
+            All prices include our concierge service
           </p>
         </div>
       </section>
@@ -201,10 +201,10 @@ export default function ServicesPage() {
             <div className="text-6xl mb-4">🔍</div>
             <h2 className="text-3xl font-serif mb-4">No Services Found</h2>
             <p className="text-harbor mb-6">
-              We couldn't find any services matching your search. Try different keywords or browse all services.
+              Try different words, or just browse everything. We probably have what you're looking for.
             </p>
             <button onClick={clearFilters} className="btn-gold">
-              Discover All Services
+              Show Everything
             </button>
           </div>
         </section>
@@ -256,13 +256,13 @@ export default function ServicesPage() {
       <section className="section-padding bg-ink text-white text-center">
         <div className="container-custom">
           <h2 className="text-4xl md:text-5xl font-serif mb-6">
-            Ready to Reserve Your Session?
+            Ready to Book?
           </h2>
           <p className="text-xl text-porcelain/80 mb-8 max-w-2xl mx-auto">
-            We'll match you with the perfect professional for your needs
+            Tell us what you want. We'll handle the rest.
           </p>
           <Link href="/#booking" className="btn-gold">
-            Reserve Your Experience
+            Make a Booking
           </Link>
         </div>
       </section>
