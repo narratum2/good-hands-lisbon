@@ -4,22 +4,38 @@ import { motion } from 'framer-motion'
 
 const problems = [
   {
-    icon: '😰',
+    icon: (
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    ),
     problem: 'Wasted time on bad experiences',
     solution: 'We only work with vetted, top-rated professionals',
   },
   {
-    icon: '🤔',
+    icon: (
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    ),
     problem: 'Overwhelming choices, no guidance',
     solution: 'Personal concierge matches you with the perfect fit',
   },
   {
-    icon: '❌',
+    icon: (
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+      </svg>
+    ),
     problem: 'Language barriers and miscommunication',
     solution: 'We handle all communication and ensure clarity',
   },
   {
-    icon: '📅',
+    icon: (
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    ),
     problem: 'Booking hassles and no-shows',
     solution: 'Seamless booking, confirmed appointments, guaranteed service',
   },
@@ -58,7 +74,7 @@ export default function ValueProposition() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow"
             >
-              <div className="text-4xl mb-4">{item.icon}</div>
+              <div className="text-gold mb-4">{item.icon}</div>
               <div className="space-y-3">
                 <div>
                   <p className="text-sm text-harbor uppercase tracking-wide mb-1">The Problem:</p>

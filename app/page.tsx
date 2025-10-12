@@ -18,10 +18,6 @@ export default function Home() {
     <>
       <HeroModern />
       
-      <ParallaxSection speed={0.3}>
-        <ValueProposition />
-      </ParallaxSection>
-      
       <SearchBar />
       
       <ParallaxSection speed={0.2}>
@@ -45,6 +41,11 @@ export default function Home() {
       
       <Lookbook />
       <ReviewsSnippet />
+      
+      <ParallaxSection speed={0.3}>
+        <ValueProposition />
+      </ParallaxSection>
+      
       <FAQExpanded />
       <BookingForm />
     </>
