@@ -14,7 +14,7 @@ export default function FindingCalmInChiado() {
       author="Maria Santos"
       date="2024-10-11"
       readTime="8 min read"
-      heroImage="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=2000&q=80"
+      heroImage="/brand-images/category-wellness.png"
     >
       {/* Drop Cap First Paragraph */}
       <p className="drop-cap">

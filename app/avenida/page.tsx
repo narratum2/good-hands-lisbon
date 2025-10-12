@@ -15,8 +15,8 @@ export default function AvenidaPage() {
       <section className="relative h-[70vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image 
-            src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=2000&q=80" 
-            alt="Avenida da Liberdade Lisbon" 
+            src="/brand-images/salon-detail.png" 
+            alt="Avenida da Liberdade Lisbon - luxury beauty services on prestigious boulevard" 
             fill 
             className="object-cover" 
             priority 

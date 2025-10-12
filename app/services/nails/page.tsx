@@ -61,8 +61,8 @@ export default function NailServicesPage() {
       <section className="relative h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=2000&q=80"
-            alt="Nail care services in Lisbon"
+            src="/brand-images/salon-detail.png"
+            alt="Luxury nail care and manicure services in Lisbon - Good Hands concierge"
             fill
             className="object-cover"
             priority

@@ -61,8 +61,8 @@ export default function WellnessServicesPage() {
       <section className="relative h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=2000&q=80"
-            alt="Wellness and massage services in Lisbon"
+            src="/brand-images/category-wellness.png"
+            alt="Wellness spa and massage experiences in Lisbon - Good Hands luxury concierge"
             fill
             className="object-cover"
             priority

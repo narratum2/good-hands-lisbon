@@ -15,8 +15,8 @@ export default function PrincipeRealPage() {
       <section className="relative h-[70vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image 
-            src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=2000&q=80" 
-            alt="Príncipe Real Lisbon" 
+            src="/brand-images/category-hair-styling.png" 
+            alt="Príncipe Real Lisbon - trendy upscale beauty in garden district" 
             fill 
             className="object-cover" 
             priority 

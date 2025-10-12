@@ -61,8 +61,8 @@ export default function MakeupServicesPage() {
       <section className="relative h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=2000&q=80"
-            alt="Makeup services in Lisbon"
+            src="/brand-images/category-makeup.png"
+            alt="Professional makeup artists for events and weddings in Lisbon - Good Hands"
             fill
             className="object-cover"
             priority

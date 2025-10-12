@@ -289,8 +289,8 @@ export default function AboutPage() {
             <div className="relative">
               <div className="relative h-[500px] rounded-lg overflow-hidden shadow-2xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1585208798174-6cedd86e1b5a?w=800&q=80"
-                  alt="Lisbon cityscape"
+                  src="/brand-images/blog-lisbon-guide.png"
+                  alt="Lisbon cityscape - Good Hands beauty concierge connecting you with top professionals"
                   fill
                   className="object-cover"
                 />

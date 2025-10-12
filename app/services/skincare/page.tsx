@@ -61,8 +61,8 @@ export default function SkincareServicesPage() {
       <section className="relative h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=2000&q=80"
-            alt="Skincare and facial services in Lisbon"
+            src="/brand-images/service-facial-treatment.png"
+            alt="Advanced skincare and facial treatments in Lisbon - Good Hands beauty concierge"
             fill
             className="object-cover"
             priority

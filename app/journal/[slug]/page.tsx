@@ -47,7 +47,7 @@ const articles: { [key: string]: any } = {
         <p>Book a consultation with one of our traditional beauty experts to learn which rituals work best for your skin and hair type.</p>
       </div>
     `,
-    image: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1200&q=80',
+    image: '/brand-images/service-makeup-application.png',
     date: 'October 1, 2025',
     category: 'Traditions',
     author: 'Maria Silva',
@@ -157,7 +157,7 @@ const articles: { [key: string]: any } = {
         <p>Our wedding packages handle every detail of your beauty timeline, from first consultation to final touch-up. <a href="/#booking">Learn more about our wedding services →</a></p>
       </div>
     `,
-    image: 'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=1200&q=80',
+    image: '/brand-images/blog-wedding-timeline.png',
     date: 'September 28, 2025',
     category: 'Weddings',
     author: 'Sofia Martins',
@@ -230,7 +230,7 @@ const articles: { [key: string]: any } = {
         <p>Let us open doors to Lisbon's most exclusive and under-the-radar beauty experiences. <a href="/#booking">Book a consultation →</a></p>
       </div>
     `,
-    image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200&q=80',
+    image: '/brand-images/hero-salon-interior.png',
     date: 'September 25, 2025',
     category: 'City Guide',
     author: 'Good Hands Team',

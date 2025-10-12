@@ -69,6 +69,29 @@ Then check:
 
 ---
 
+## 🤖 FOR BACKGROUND AI AGENTS / AUTOMATION
+
+**NEW! AI Agent System Active:**
+
+1. **`AI_AGENTS_MASTER_CONTROL.md`** ⭐ (Central dashboard)
+   - Real-time system status
+   - All agent activities
+   - Control commands
+
+2. **`AI_AGENTS_QUICK_REFERENCE.md`** (Quick commands)
+   - Fast access to agent controls
+   - Common tasks
+   - Status checks
+
+3. **`AI_MARKDOWN_CLASSIFICATION_REPORT.md`** (Full analysis)
+   - Complete documentation review
+   - Quality assessment
+   - Recommendations
+
+**Background agents are working 24/7 to maintain documentation quality!**
+
+---
+
 ## 🎯 QUICK PROJECT SUMMARY
 
 **What:** Luxury beauty concierge service in Lisbon  
@@ -105,6 +128,13 @@ Then check:
 ---
 
 ## 📁 KEY FILES LOCATIONS
+
+**AI Agent System:** 🤖 NEW!
+- `AI_AGENTS_MASTER_CONTROL.md` ⭐ - Central control dashboard
+- `AI_AGENTS_QUICK_REFERENCE.md` - Quick commands
+- `AI_MARKDOWN_CLASSIFICATION_REPORT.md` - Full analysis
+- `AI_BACKGROUND_AGENTS_CONTROLLER.md` - Agent activities
+- `AI_CONTINUOUS_MONITORING_SYSTEM.md` - Automation details
 
 **Team Coordination:**
 - `TEAM_STATUS_DASHBOARD.md` 🚨
@@ -175,8 +205,10 @@ Then check:
 
 **Document Navigation:**
 - 👥 Team member? → `TEAM_STATUS_DASHBOARD.md`
+- 🤖 Background AI Agent? → `AI_AGENTS_MASTER_CONTROL.md` ⭐
 - 🤖 Solo AI? → `AI_HANDOFF_GUIDE.md`
+- 📊 Check system status? → `AI_AGENTS_QUICK_REFERENCE.md`
 - ❓ Lost? → Read this file again
 
-**Last Updated:** January 11, 2025
+**Last Updated:** October 11, 2025
 

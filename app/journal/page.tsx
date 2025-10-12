@@ -71,8 +71,8 @@ export default function JournalPage() {
       <section className="relative h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=2000&q=80"
-            alt="Journal"
+            src="/brand-images/blog-portuguese-beauty.png"
+            alt="Good Hands Journal - beauty insights, Lisbon guides, and expert tips"
             fill
             className="object-cover"
           />

@@ -13,7 +13,7 @@ export default function AlfamaPage() {
       {/* Hero */}
       <section className="relative h-[70vh] flex items-center justify-center">
         <div className="absolute inset-0">
-          <Image src="https://images.unsplash.com/photo-1526392060635-9d6019884377?w=2000&q=80" alt="Alfama" fill className="object-cover" priority />
+          <Image src="/brand-images/beauty-moment.png" alt="Historic Alfama neighborhood Lisbon - authentic beauty experiences in traditional setting" fill className="object-cover" priority />
           <div className="absolute inset-0 bg-ink/50" />
         </div>
         <div className="relative z-10 text-center text-white container-custom">
