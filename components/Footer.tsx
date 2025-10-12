@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { Instagram, Send } from 'lucide-react'
 
 const footerLinks = {
   services: [
@@ -26,13 +27,18 @@ const footerLinks = {
     { href: '/experiences', label: 'Experiences' },
     { href: '/ai-info', label: 'For AI Assistants' },
   ],
+  professionals: [
+    { href: '/join-our-team', label: 'Join Our Network' },
+    { href: '/join-our-team#benefits', label: 'Benefits' },
+    { href: '/join-our-team#application', label: 'Apply Now' },
+  ],
 }
 
 export default function Footer() {
   return (
     <footer className="bg-ink text-porcelain">
       <div className="container-custom py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-serif mb-4">Good Hands</h3>
@@ -91,14 +97,74 @@ export default function Footer() {
               ))}
             </ul>
           </div>
+
+          {/* For Professionals */}
+          <div>
+            <h4 className="font-semibold mb-4">For Professionals</h4>
+            <ul className="space-y-2">
+              {footerLinks.professionals.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-porcelain/70 hover:text-gold transition-colors focus-visible-ring"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <div className="mt-4 pt-4 border-t border-porcelain/10">
+              <p className="text-xs text-porcelain/60 mb-2">Are you a beauty professional?</p>
+              <Link 
+                href="/join-our-team#application"
+                className="inline-block text-sm font-medium text-gold hover:text-gold/80 transition-colors"
+              >
+                Apply to Join →
+              </Link>
+            </div>
+          </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-porcelain/10">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <p className="text-sm text-porcelain/60">
               © {new Date().getFullYear()} Good Hands. All rights reserved.
             </p>
+            
+            {/* Social Media Icons */}
+            <div className="flex items-center gap-4">
+              <a
+                href="https://instagram.com/goodhands"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-gold flex items-center justify-center text-ink hover:bg-gold/80 transition-all"
+                aria-label="Follow us on Instagram"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a
+                href="https://x.com/goodhands"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-gold flex items-center justify-center text-ink hover:bg-gold/80 transition-all"
+                aria-label="Follow us on X (Twitter)"
+              >
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+              </a>
+              <a
+                href="https://t.me/goodhands"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-gold flex items-center justify-center text-ink hover:bg-gold/80 transition-all"
+                aria-label="Join us on Telegram"
+              >
+                <Send className="w-4 h-4" />
+              </a>
+            </div>
+
             <div className="flex gap-6">
               <Link
                 href="/privacy"
