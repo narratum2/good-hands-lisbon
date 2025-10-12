@@ -247,7 +247,7 @@ export default function PartnershipsPage() {
             </h2>
             <div className="space-y-8">
               <div className="flex gap-6 items-start">
-                <div className="flex-shrink-0 w-12 h-12 bg-sand text-white rounded-full flex items-center justify-center text-xl font-bold">
+                <div className="flex-shrink-0 w-12 h-12 bg-gold text-ink rounded-full flex items-center justify-center text-xl font-bold">
                   1
                 </div>
                 <div>
@@ -259,7 +259,7 @@ export default function PartnershipsPage() {
               </div>
 
               <div className="flex gap-6 items-start">
-                <div className="flex-shrink-0 w-12 h-12 bg-sand text-white rounded-full flex items-center justify-center text-xl font-bold">
+                <div className="flex-shrink-0 w-12 h-12 bg-gold text-ink rounded-full flex items-center justify-center text-xl font-bold">
                   2
                 </div>
                 <div>
@@ -271,7 +271,7 @@ export default function PartnershipsPage() {
               </div>
 
               <div className="flex gap-6 items-start">
-                <div className="flex-shrink-0 w-12 h-12 bg-sand text-white rounded-full flex items-center justify-center text-xl font-bold">
+                <div className="flex-shrink-0 w-12 h-12 bg-gold text-ink rounded-full flex items-center justify-center text-xl font-bold">
                   3
                 </div>
                 <div>
@@ -283,7 +283,7 @@ export default function PartnershipsPage() {
               </div>
 
               <div className="flex gap-6 items-start">
-                <div className="flex-shrink-0 w-12 h-12 bg-sand text-white rounded-full flex items-center justify-center text-xl font-bold">
+                <div className="flex-shrink-0 w-12 h-12 bg-gold text-ink rounded-full flex items-center justify-center text-xl font-bold">
                   4
                 </div>
                 <div>
@@ -295,7 +295,7 @@ export default function PartnershipsPage() {
               </div>
 
               <div className="flex gap-6 items-start">
-                <div className="flex-shrink-0 w-12 h-12 bg-sand text-white rounded-full flex items-center justify-center text-xl font-bold">
+                <div className="flex-shrink-0 w-12 h-12 bg-gold text-ink rounded-full flex items-center justify-center text-xl font-bold">
                   5
                 </div>
                 <div>
@@ -413,59 +413,94 @@ export default function PartnershipsPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-shell">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-4xl font-serif text-ink mb-12 text-center">
+            <h2 className="text-4xl md:text-5xl font-serif text-ink mb-12 text-center">
               Partnership FAQ
             </h2>
-            <div className="space-y-6">
-              <details className="group">
-                <summary className="flex justify-between items-center cursor-pointer p-4 bg-porcelain rounded-lg font-semibold text-ink">
-                  What does it cost to partner with Good Hands?
-                  <span className="group-open:rotate-180 transition-transform">▼</span>
+            <div className="space-y-4">
+              <details className="group bg-white rounded-lg shadow-sm overflow-hidden">
+                <summary className="flex justify-between items-center cursor-pointer p-6 hover:bg-ink/5 transition-colors">
+                  <span className="font-medium text-ink text-lg">What does it cost to partner with Good Hands?</span>
+                  <svg
+                    className="w-5 h-5 text-gold transition-transform group-open:rotate-180"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
                 </summary>
-                <div className="p-4 text-harbor">
+                <div className="px-6 pb-6 text-harbor leading-relaxed">
                   There are zero upfront costs. We operate on a commission-based model (10-15% of booking value). You only pay when your guests book services, and we handle all payment processing.
                 </div>
               </details>
 
-              <details className="group">
-                <summary className="flex justify-between items-center cursor-pointer p-4 bg-porcelain rounded-lg font-semibold text-ink">
-                  How quickly can we get started?
-                  <span className="group-open:rotate-180 transition-transform">▼</span>
+              <details className="group bg-white rounded-lg shadow-sm overflow-hidden">
+                <summary className="flex justify-between items-center cursor-pointer p-6 hover:bg-ink/5 transition-colors">
+                  <span className="font-medium text-ink text-lg">How quickly can we get started?</span>
+                  <svg
+                    className="w-5 h-5 text-gold transition-transform group-open:rotate-180"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
                 </summary>
-                <div className="p-4 text-harbor">
+                <div className="px-6 pb-6 text-harbor leading-relaxed">
                   Most partnerships are live within 1-2 weeks. We'll schedule an onboarding call, create your custom booking process, and train your concierge team. Then you're ready to offer the service.
                 </div>
               </details>
 
-              <details className="group">
-                <summary className="flex justify-between items-center cursor-pointer p-4 bg-porcelain rounded-lg font-semibold text-ink">
-                  Do you work with all types of properties?
-                  <span className="group-open:rotate-180 transition-transform">▼</span>
+              <details className="group bg-white rounded-lg shadow-sm overflow-hidden">
+                <summary className="flex justify-between items-center cursor-pointer p-6 hover:bg-ink/5 transition-colors">
+                  <span className="font-medium text-ink text-lg">Do you work with all types of properties?</span>
+                  <svg
+                    className="w-5 h-5 text-gold transition-transform group-open:rotate-180"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
                 </summary>
-                <div className="p-4 text-harbor">
+                <div className="px-6 pb-6 text-harbor leading-relaxed">
                   We primarily partner with 4-5 star hotels, luxury boutique properties, and high-end vacation rentals in Lisbon. If your property values exceptional guest experiences, we'd love to talk.
                 </div>
               </details>
 
-              <details className="group">
-                <summary className="flex justify-between items-center cursor-pointer p-4 bg-porcelain rounded-lg font-semibold text-ink">
-                  What if a guest isn't satisfied?
-                  <span className="group-open:rotate-180 transition-transform">▼</span>
+              <details className="group bg-white rounded-lg shadow-sm overflow-hidden">
+                <summary className="flex justify-between items-center cursor-pointer p-6 hover:bg-ink/5 transition-colors">
+                  <span className="font-medium text-ink text-lg">What if a guest isn't satisfied?</span>
+                  <svg
+                    className="w-5 h-5 text-gold transition-transform group-open:rotate-180"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
                 </summary>
-                <div className="p-4 text-harbor">
+                <div className="px-6 pb-6 text-harbor leading-relaxed">
                   We guarantee guest satisfaction. If any guest is unhappy, we'll remake the service or provide a full refund—at no cost to your property. Your reputation is our priority.
                 </div>
               </details>
 
-              <details className="group">
-                <summary className="flex justify-between items-center cursor-pointer p-4 bg-porcelain rounded-lg font-semibold text-ink">
-                  Can we customize the service for our brand?
-                  <span className="group-open:rotate-180 transition-transform">▼</span>
+              <details className="group bg-white rounded-lg shadow-sm overflow-hidden">
+                <summary className="flex justify-between items-center cursor-pointer p-6 hover:bg-ink/5 transition-colors">
+                  <span className="font-medium text-ink text-lg">Can we customize the service for our brand?</span>
+                  <svg
+                    className="w-5 h-5 text-gold transition-transform group-open:rotate-180"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
                 </summary>
-                <div className="p-4 text-harbor">
+                <div className="px-6 pb-6 text-harbor leading-relaxed">
                   Absolutely! We offer white-label options including branded materials, custom service menus, and co-branded communications. The service can seamlessly reflect your property's identity.
                 </div>
               </details>
