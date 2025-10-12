@@ -11,12 +11,16 @@ import FAQExpanded from '@/components/FAQExpanded'
 import ReviewsSnippet from '@/components/ReviewsSnippet'
 import BookingForm from '@/components/BookingForm'
 import ParallaxSection from '@/components/ParallaxSection'
-// import CuratedProducts from '@/components/CuratedProducts' // TODO: Re-enable when shop is ready
+import CuratedProducts from '@/components/CuratedProducts'
 
 export default function Home() {
   return (
     <>
       <HeroModern />
+      
+      <ParallaxSection speed={0.3}>
+        <ValueProposition />
+      </ParallaxSection>
       
       <SearchBar />
       
@@ -36,16 +40,10 @@ export default function Home() {
         <JournalPreview />
       </ParallaxSection>
       
-      {/* <CuratedProducts /> */}
-      {/* TODO: Re-enable when full shop is ready - currently has placeholder product images */}
+      <CuratedProducts />
       
       <Lookbook />
       <ReviewsSnippet />
-      
-      <ParallaxSection speed={0.3}>
-        <ValueProposition />
-      </ParallaxSection>
-      
       <FAQExpanded />
       <BookingForm />
     </>

@@ -28,11 +28,11 @@ export default function HeroModern() {
           className="max-w-4xl mx-auto"
         >
           <h1 className="font-serif font-normal mb-6 md:mb-8 text-balance px-2" style={{ fontSize: 'clamp(2rem, 8vw, 4.5rem)', lineHeight: '1.15', letterSpacing: '-0.02em' }}>
-            Your Beauty Concierge in Lisbon
+            Lisbon's Premier Beauty Concierge
           </h1>
           <p className="text-base md:text-lg lg:text-xl mb-8 md:mb-10 text-white/90 max-w-2xl mx-auto font-light px-4" style={{ lineHeight: '1.7' }}>
-            Finding the right person for your hair, skin, or nails shouldn't be a gamble.<br className="hidden sm:inline" />
-            <span className="inline sm:hidden"> </span>We know everyone worth knowing, and we'll introduce you.
+            We navigate Lisbon's beauty scene for you.<br className="hidden sm:inline" />
+            <span className="inline sm:hidden"> </span>Expert matching. Perfect results. Every time.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4 max-w-md sm:max-w-none mx-auto">
             <a href="#booking" className="btn-gold w-full sm:w-auto">

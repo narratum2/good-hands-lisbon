@@ -19,12 +19,15 @@ export default function AboutPage() {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-serif mb-8 text-ink leading-tight">
-            Beauty Should Not Be<br />
-            <span className="text-gold">a Gamble</span>
+            Beauty Should Be a<br />
+            <span className="text-gold">Trusted Experience,</span><br />
+            Not a Gamble
           </h1>
           
           <p className="text-xl md:text-2xl text-harbor leading-relaxed max-w-3xl mx-auto mb-12">
-            Lisbon has incredible talent. Finding it should not take hours of research, crossed fingers, and hoping for the best. We know who is actually good, and we are here to make introductions.
+            In a city of endless options, we don't add to the noise—we cut through it. 
+            Good Hands exists because excellence shouldn't require insider knowledge, 
+            and trust shouldn't be earned through disappointment.
           </p>
 
           <div className="inline-flex items-center gap-2 text-harbor/60 text-sm">
@@ -48,24 +51,41 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <span className="text-sm uppercase tracking-wider text-gold font-medium mb-4 block">The Challenge</span>
             <h2 className="text-4xl md:text-5xl font-serif mb-6">
-              Finding Beauty Services<br />Should Not Feel Like This
+              Finding Beauty Services<br />Shouldn't Feel Like This
             </h2>
           </div>
 
-          <div className="prose prose-lg max-w-3xl mx-auto mb-16 text-harbor">
-            <p className="text-xl">
-              You know the pattern: Three hours on Instagram. Conflicting reviews. A Portuguese website you cannot quite translate. The growing certainty that you are about to pay €150 for a haircut you might hate.
-            </p>
-            <p className="text-xl">
-              It is exhausting. And it is why we exist.
-            </p>
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <div className="text-center">
+              <div className="text-6xl mb-4 opacity-40">😰</div>
+              <h3 className="text-xl font-serif mb-2">Overwhelming Choice</h3>
+              <p className="text-harbor text-sm">
+                Hundreds of salons, countless reviews, no way to know who's actually good
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="text-6xl mb-4 opacity-40">⏰</div>
+              <h3 className="text-xl font-serif mb-2">Hours Wasted</h3>
+              <p className="text-harbor text-sm">
+                Scrolling, comparing, reading reviews, still uncertain if it's the right choice
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="text-6xl mb-4 opacity-40">💸</div>
+              <h3 className="text-xl font-serif mb-2">Expensive Mistakes</h3>
+              <p className="text-harbor text-sm">
+                Bad haircuts. Poor service. Wasted money. The cost of trial and error adds up
+              </p>
+            </div>
           </div>
 
           <div className="bg-ink text-white rounded-2xl p-10 md:p-16 text-center">
             <p className="text-2xl md:text-3xl font-serif italic mb-6 leading-relaxed">
-              Lisbon has world-class beauty professionals. The problem is not finding them on a map, it is knowing who is actually worth your time.
+              "We realized that the beauty industry's biggest problem 
+              wasn't a lack of talented professionals—<br />
+              <span className="text-gold">it was the impossibility of finding them with confidence.</span>"
             </p>
-            <p className="text-porcelain/70">That is what we do.</p>
+            <p className="text-porcelain/70">— The Good Hands founding principle</p>
           </div>
         </div>
       </section>
@@ -74,46 +94,123 @@ export default function AboutPage() {
       <section className="section-padding bg-gradient-to-br from-shell to-porcelain">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-16">
-            <span className="text-sm uppercase tracking-wider text-gold font-medium mb-4 block">What We Do</span>
+            <span className="text-sm uppercase tracking-wider text-gold font-medium mb-4 block">Our Solution</span>
             <h2 className="text-4xl md:text-5xl font-serif mb-6">
-              We Know Everyone Worth Knowing
+              We're Your Trusted Insider
             </h2>
             <p className="text-xl text-harbor max-w-2xl mx-auto">
-              Years of relationships. Personal testing. Honest assessments. When we recommend someone, it is because we would book them ourselves.
+              Think of us as that friend who knows everyone, has tried everything, 
+              and only recommends places they genuinely love
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <Sparkles className="w-10 h-10 text-gold mb-4" />
-              <h3 className="text-2xl font-serif mb-3">We Test Everyone</h3>
-              <p className="text-harbor">
-                Before anyone joins our network, we visit them. Try their services. Check their space. Talk to their clients. If we would not book them for ourselves or our closest friends, they do not make the cut. Most do not.
+              <h3 className="text-2xl font-serif mb-3">Rigorous Vetting</h3>
+              <p className="text-harbor mb-4">
+                We personally visit, test, and evaluate every professional. Portfolio review, 
+                hygiene standards, client interviews, trial services. Only 1 in 5 make it onto our platform.
               </p>
+              <ul className="space-y-2 text-sm text-harbor">
+                <li className="flex items-start gap-2">
+                  <span className="text-gold mt-1">•</span>
+                  <span>In-person salon visits and hygiene audits</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-gold mt-1">•</span>
+                  <span>Portfolio and certification verification</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-gold mt-1">•</span>
+                  <span>Trial services by our team</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-gold mt-1">•</span>
+                  <span>Ongoing quality monitoring</span>
+                </li>
+              </ul>
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <Heart className="w-10 h-10 text-gold mb-4" />
-              <h3 className="text-2xl font-serif mb-3">Then We Match You</h3>
-              <p className="text-harbor">
-                Sofia specializes in curly hair. Ricardo is brilliant with color but only works weekday mornings. Ana has the gentlest touch for sensitive skin. We know this because we have worked with them for years. Tell us what you need, and we will introduce you to the right person.
+              <h3 className="text-2xl font-serif mb-3">Personal Matching</h3>
+              <p className="text-harbor mb-4">
+                Not every great professional is right for every client. We match based on 
+                your style, preferences, budget, and what you actually want—not just what's available.
               </p>
+              <ul className="space-y-2 text-sm text-harbor">
+                <li className="flex items-start gap-2">
+                  <span className="text-gold mt-1">•</span>
+                  <span>Style preference analysis</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-gold mt-1">•</span>
+                  <span>Specialized needs (curly hair, sensitive skin, etc.)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-gold mt-1">•</span>
+                  <span>Language and communication style</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-gold mt-1">•</span>
+                  <span>Location and schedule convenience</span>
+                </li>
+              </ul>
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <Shield className="w-10 h-10 text-gold mb-4" />
-              <h3 className="text-2xl font-serif mb-3">If Something Goes Wrong</h3>
-              <p className="text-harbor">
-                It will not. But if it does, we handle it. No forms, no runaround. Just tell us what happened and we will make it right. Our reputation depends on your experience, so we do not mess around.
+              <h3 className="text-2xl font-serif mb-3">Quality Guarantee</h3>
+              <p className="text-harbor mb-4">
+                If something isn't right, we make it right. No arguments, no hassles. 
+                Your satisfaction is our reputation, and we protect it fiercely.
               </p>
+              <ul className="space-y-2 text-sm text-harbor">
+                <li className="flex items-start gap-2">
+                  <span className="text-gold mt-1">•</span>
+                  <span>Post-service follow-up on every booking</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-gold mt-1">•</span>
+                  <span>Immediate resolution for any issues</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-gold mt-1">•</span>
+                  <span>Complimentary redo or refund guarantee</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-gold mt-1">•</span>
+                  <span>24/7 concierge support</span>
+                </li>
+              </ul>
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <Users className="w-10 h-10 text-gold mb-4" />
-              <h3 className="text-2xl font-serif mb-3">We Handle Everything</h3>
-              <p className="text-harbor">
-                Booking, directions, translations, confirmations, reminders. All the coordination that usually eats up your afternoon. You tell us when and what you want. We arrange it. You show up.
+              <h3 className="text-2xl font-serif mb-3">End-to-End Care</h3>
+              <p className="text-harbor mb-4">
+                From your first inquiry to following up after your appointment, 
+                we handle everything. You just show up and enjoy the experience.
               </p>
+              <ul className="space-y-2 text-sm text-harbor">
+                <li className="flex items-start gap-2">
+                  <span className="text-gold mt-1">•</span>
+                  <span>Professional matching and booking coordination</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-gold mt-1">•</span>
+                  <span>Appointment reminders and directions</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-gold mt-1">•</span>
+                  <span>Portuguese-English communication bridge</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-gold mt-1">•</span>
+                  <span>Flexible rescheduling and cancellations</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -123,19 +220,44 @@ export default function AboutPage() {
       <section className="section-padding bg-ink text-white">
         <div className="container-custom max-w-4xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif mb-6">What We Actually Believe</h2>
+            <h2 className="text-4xl md:text-5xl font-serif mb-6">What We Believe</h2>
           </div>
 
-          <div className="prose prose-lg prose-invert mx-auto">
-            <p className="text-xl leading-relaxed">
-              Finding someone good should not require connections or three hours of research. Excellence should not be a secret. Quality should be the baseline, not a gamble.
-            </p>
-            <p className="text-xl leading-relaxed mt-6">
-              We started Good Hands because we were tired of seeing people waste time and money on disappointing experiences. Lisbon has world-class talent. You just need to know where to look. Now you do.
-            </p>
-            <p className="text-xl leading-relaxed text-gold mt-8 font-serif italic">
-              The beauty industry should not feel like roulette. It should feel like having a friend who knows everyone.
-            </p>
+          <div className="space-y-8">
+            <div className="border-l-4 border-gold pl-6 py-2">
+              <p className="text-xl md:text-2xl leading-relaxed">
+                We believe <strong className="text-gold">excellence should be accessible</strong>, 
+                not hidden behind insider networks
+              </p>
+            </div>
+
+            <div className="border-l-4 border-gold pl-6 py-2">
+              <p className="text-xl md:text-2xl leading-relaxed">
+                We believe <strong className="text-gold">trust is earned</strong> through 
+                transparency, not marketing promises
+              </p>
+            </div>
+
+            <div className="border-l-4 border-gold pl-6 py-2">
+              <p className="text-xl md:text-2xl leading-relaxed">
+                We believe <strong className="text-gold">quality costs money</strong>, 
+                but shouldn't cost you disappointment
+              </p>
+            </div>
+
+            <div className="border-l-4 border-gold pl-6 py-2">
+              <p className="text-xl md:text-2xl leading-relaxed">
+                We believe <strong className="text-gold">beauty is personal</strong>, 
+                and matching matters more than marketing
+              </p>
+            </div>
+
+            <div className="border-l-4 border-gold pl-6 py-2">
+              <p className="text-xl md:text-2xl leading-relaxed">
+                We believe <strong className="text-gold">your time is valuable</strong>, 
+                and research shouldn't be your second job
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -151,21 +273,24 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-lg text-harbor leading-relaxed">
                 <p>
-                  Lisbon is having a moment. Stylists from Paris, estheticians from Milan, makeup artists from London. The talent is here, and it is exceptional.
+                  Lisbon is experiencing a renaissance. World-class talent is pouring into the city—hair stylists 
+                  from Paris, estheticians from Milan, makeup artists from London. The quality is here.
                 </p>
                 <p>
-                  But unless you speak Portuguese and know someone who knows someone, good luck finding them. Instagram does not help when half the posts are in another language. Reviews do not help when you do not know what to look for.
+                  But if you don't speak Portuguese, don't have local connections, or just moved here? 
+                  You'd never know where to find them. That's the problem we solve.
                 </p>
                 <p>
-                  We built Good Hands because we love this city and got tired of watching people struggle. Whether you've lived here for years or just arrived, you deserve access to the good stuff without spending your weekends doing detective work.
+                  We're locals who love this city and want everyone—residents, expats, visitors—to experience 
+                  the best of Lisbon's beauty scene without the frustration of figuring it out alone.
                 </p>
               </div>
             </div>
             <div className="relative">
               <div className="relative h-[500px] rounded-lg overflow-hidden shadow-2xl">
                 <Image
-                  src="/brand-images/blog-lisbon-guide.png"
-                  alt="Lisbon cityscape - Good Hands beauty concierge connecting you with top professionals"
+                  src="https://images.unsplash.com/photo-1585208798174-6cedd86e1b5a?w=800&q=80"
+                  alt="Lisbon cityscape"
                   fill
                   className="object-cover"
                 />
@@ -188,30 +313,31 @@ export default function AboutPage() {
       <section className="section-padding bg-shell">
         <div className="container-custom max-w-4xl">
           <h2 className="text-4xl md:text-5xl font-serif mb-12 text-center">
-            How We Are Different
+            How We're Different
           </h2>
 
           <div className="space-y-8">
             <div className="bg-white p-8 rounded-lg">
-              <h3 className="text-2xl font-serif mb-3">We Are Not a Marketplace</h3>
+              <h3 className="text-2xl font-serif mb-3">We're Not a Marketplace</h3>
               <p className="text-harbor">
-                Anyone with a credit card can get listed on a marketplace. Not here. We are curators. Every professional in our network earned their spot by actually being good at what they do.
+                We don't list everyone who pays us. We're curators, not a directory. 
+                Every professional earns their place through quality, not a subscription fee.
               </p>
             </div>
 
             <div className="bg-white p-8 rounded-lg">
-              <h3 className="text-2xl font-serif mb-3">We Are Not Passive Tech</h3>
+              <h3 className="text-2xl font-serif mb-3">We're Not Passive Tech</h3>
               <p className="text-harbor">
                 Yes, we use AI. But a human reviews every booking, makes every match, 
-                and follows up personally. Technology enables us—it does not replace us.
+                and follows up personally. Technology enables us—it doesn't replace us.
               </p>
             </div>
 
             <div className="bg-white p-8 rounded-lg">
-              <h3 className="text-2xl font-serif mb-3">We Do Not Scale at the Expense of Quality</h3>
+              <h3 className="text-2xl font-serif mb-3">We Don't Scale at the Expense of Quality</h3>
               <p className="text-harbor">
-                We could add 1,000 salons tomorrow. We will not. Growth is good; 
-                quality dilution is not. We only expand when we can maintain our standards.
+                We could add 1,000 salons tomorrow. We won't. Growth is good; 
+                quality dilution isn't. We only expand when we can maintain our standards.
               </p>
             </div>
 
@@ -238,7 +364,7 @@ export default function AboutPage() {
               <div className="text-5xl mb-4">🌍</div>
               <h3 className="text-xl font-serif mb-3">Travelers & Visitors</h3>
               <p className="text-harbor">
-                You are in Lisbon for a week or a month. You want a great haircut, 
+                You're in Lisbon for a week or a month. You want a great haircut, 
                 not a research project. We handle everything before you land.
               </p>
             </div>
@@ -247,8 +373,8 @@ export default function AboutPage() {
               <div className="text-5xl mb-4">🏠</div>
               <h3 className="text-xl font-serif mb-3">Expats & New Residents</h3>
               <p className="text-harbor">
-                You just moved here. Finding a trusted hairstylist should not take six months 
-                of trial and error. We are your instant beauty network.
+                You just moved here. Finding a trusted hairstylist shouldn't take six months 
+                of trial and error. We're your instant beauty network.
               </p>
             </div>
 
@@ -264,8 +390,8 @@ export default function AboutPage() {
 
           <div className="mt-12 text-center bg-gradient-to-r from-ink via-harbor to-ink text-white rounded-lg p-10">
             <p className="text-2xl font-serif italic mb-4">
-              If you value your time, appreciate quality, and believe beauty should be trusted—
-              Good Hands was built for you.
+              "If you value your time, appreciate quality, and believe beauty should be trusted—
+              Good Hands was built for you."
             </p>
           </div>
         </div>
@@ -278,7 +404,7 @@ export default function AboutPage() {
             Experience the Difference
           </h2>
           <p className="text-xl text-harbor mb-8 leading-relaxed">
-            Join hundreds of clients who have stopped gambling with their beauty and started trusting Good Hands
+            Join hundreds of clients who've stopped gambling with their beauty and started trusting Good Hands
           </p>
           <Link href="/#booking" className="btn-gold text-lg px-10 py-4 inline-block">
             Book Your First Experience

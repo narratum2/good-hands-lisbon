@@ -94,10 +94,19 @@ export default function ServicesPage() {
     // Filter by search term
     if (searchTerm) {
       const term = searchTerm.toLowerCase()
-      filtered = filtered.filter(cat => 
-        cat.category.toLowerCase().includes(term) ||
-        cat.services.some(service => service.name.toLowerCase().includes(term))
-      )
+      
+      // List of location terms to ignore (since all services are in Lisbon)
+      const locationTerms = ['lisbon', 'lisboa', 'portugal', 'porto', 'cascais', 'sintra']
+      const isLocationSearch = locationTerms.some(loc => term.includes(loc))
+      
+      // If searching for location only, show all results
+      // Otherwise filter by category or service name
+      if (!isLocationSearch) {
+        filtered = filtered.filter(cat => 
+          cat.category.toLowerCase().includes(term) ||
+          cat.services.some(service => service.name.toLowerCase().includes(term))
+        )
+      }
     }
 
     setFilteredServices(filtered)
@@ -122,12 +131,12 @@ export default function ServicesPage() {
           <div className="absolute inset-0 bg-ink/50" />
         </div>
         <div className="relative z-10 text-center text-white container-custom">
-          <h1 className="text-5xl md:text-6xl font-serif mb-4">What We Book</h1>
+          <h1 className="text-5xl md:text-6xl font-serif mb-4">Our Services</h1>
           <p className="text-xl md:text-2xl text-porcelain/90 max-w-2xl mx-auto">
-            Hair, skin, nails, makeup, wellness. Whatever you need, we know the right person.
+            Premium beauty experiences with expert concierge matching
           </p>
           <p className="text-lg text-gold mt-2">
-            All prices include our concierge service
+            All prices include concierge service & coordination
           </p>
         </div>
       </section>
@@ -201,10 +210,10 @@ export default function ServicesPage() {
             <div className="text-6xl mb-4">🔍</div>
             <h2 className="text-3xl font-serif mb-4">No Services Found</h2>
             <p className="text-harbor mb-6">
-              Try different words, or just browse everything. We probably have what you're looking for.
+              We couldn't find any services matching your search. Try different keywords or browse all services.
             </p>
             <button onClick={clearFilters} className="btn-gold">
-              Show Everything
+              Discover All Services
             </button>
           </div>
         </section>
@@ -256,13 +265,13 @@ export default function ServicesPage() {
       <section className="section-padding bg-ink text-white text-center">
         <div className="container-custom">
           <h2 className="text-4xl md:text-5xl font-serif mb-6">
-            Ready to Book?
+            Ready to Reserve Your Session?
           </h2>
           <p className="text-xl text-porcelain/80 mb-8 max-w-2xl mx-auto">
-            Tell us what you want. We'll handle the rest.
+            We'll match you with the perfect professional for your needs
           </p>
           <Link href="/#booking" className="btn-gold">
-            Make a Booking
+            Reserve Your Experience
           </Link>
         </div>
       </section>

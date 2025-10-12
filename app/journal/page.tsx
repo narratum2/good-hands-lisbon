@@ -9,6 +9,33 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    title: 'Global Beauty Exploration: Why Local Matters',
+    excerpt: 'The case for seeking authentic beauty experiences while traveling and how Good Hands is expanding worldwide.',
+    image: '/brand-images/blog-global-beauty.png',
+    date: 'October 12, 2025',
+    category: 'Global Exploration',
+    author: 'Good Hands Editorial Team',
+    slug: 'global-beauty-exploration',
+  },
+  {
+    title: 'Yucatan Wellness: Ancient Mayan Beauty Secrets',
+    excerpt: 'Discovering holistic beauty practices in the Yucatan Peninsula, from cenote rituals to Mayan herbal medicine.',
+    image: '/brand-images/blog-yucatan-wellness.png',
+    date: 'October 11, 2025',
+    category: 'Global Exploration',
+    author: 'Isabella Torres',
+    slug: 'yucatan-wellness-beauty',
+  },
+  {
+    title: 'Mexico City Beauty Scene: Where Tradition Meets Innovation',
+    excerpt: 'Exploring the vibrant beauty culture of CDMX, from pre-Hispanic rituals to cutting-edge aesthetics.',
+    image: '/brand-images/blog-mexico-city.png',
+    date: 'October 10, 2025',
+    category: 'Global Exploration',
+    author: 'Isabella Torres',
+    slug: 'mexico-city-beauty-scene',
+  },
+  {
     title: 'Bridal Hair Trends 2026: What Lisbon Brides Are Choosing',
     excerpt: 'From modern updos to romantic waves, the hairstyles dominating Portuguese weddings.',
     image: '/brand-images/blog-bridal-hair.png',
@@ -90,7 +117,7 @@ export default function JournalPage() {
         <div className="relative z-10 text-center text-white container-custom">
           <h1 className="text-5xl md:text-6xl font-serif mb-4">The Journal</h1>
           <p className="text-xl md:text-2xl text-porcelain/90 max-w-2xl mx-auto">
-            Beauty insights, city guides, and stories from Lisbon
+            Beauty insights, city guides, and stories from around the world
           </p>
         </div>
       </section>
