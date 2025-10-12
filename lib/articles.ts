@@ -194,7 +194,7 @@ These places don't speak much English. They don't have credit card machines. The
     date: 'September 25, 2025',
     category: 'City Guide',
     author: 'Good Hands Team',
-    authorBio: 'Our editorial team knows Lisbon's beauty scene inside and out.',
+    authorBio: 'Our editorial team knows Lisbon\'s beauty scene inside and out.',
     readTime: '4 min read',
     tags: ['Lisbon Guide', 'Hidden Gems', 'Local Favorites'],
   },
