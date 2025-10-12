@@ -6,6 +6,13 @@ import Link from 'next/link'
 
 const experiences = [
   {
+    title: 'Coastal Photoshoots',
+    description: 'Hair and makeup styling for your seaside photo session',
+    image: '/brand-images/experience-bridal-beauty.png',
+    tag: 'Photography',
+    href: '/premium/photoshoots',
+  },
+  {
     title: 'Bridal Beauty Journey',
     description: 'Complete wedding day preparation with trials, treatments, and day-of styling',
     image: '/brand-images/experience-bridal-beauty.png',
@@ -18,13 +25,6 @@ const experiences = [
     image: '/brand-images/experience-wellness-retreat.png',
     tag: 'Retreat',
     href: '/premium/retreats',
-  },
-  {
-    title: 'Corporate Wellness',
-    description: 'Team building through beauty and wellness experiences',
-    image: '/brand-images/experience-corporate-wellness.png',
-    tag: 'Corporate',
-    href: '/premium/corporate',
   },
 ]
 
@@ -40,10 +40,10 @@ export default function ExperiencesPreview() {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-serif mb-4">
-            Premium Experiences
+            Special Occasions
           </h2>
           <p className="text-harbor text-lg max-w-2xl mx-auto">
-            Elevated multi-service packages for life\'s special moments
+            Weddings, photoshoots, retreats. We handle all the beauty coordination.
           </p>
         </motion.div>
 

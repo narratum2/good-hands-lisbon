@@ -1,11 +1,8 @@
-import { Metadata } from 'next'
+'use client'
+
+import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-
-export const metadata: Metadata = {
-  title: 'Journal — Good Hands',
-  description: 'Beauty insights, Lisbon city guides, expert advice, and editorial stories from the Good Hands team.',
-}
 
 const articles = [
   {
@@ -101,6 +98,14 @@ const articles = [
 ]
 
 export default function JournalPage() {
+  const [visibleArticles, setVisibleArticles] = useState(6) // Show 6 articles initially (1 featured + 5 in grid)
+
+  const loadMore = () => {
+    setVisibleArticles(prev => Math.min(prev + 6, articles.length))
+  }
+
+  const articlesToShow = articles.slice(1, visibleArticles) // Skip first (featured) and show up to visibleArticles
+
   return (
     <div className="pt-20">
       {/* Hero */}
@@ -120,6 +125,22 @@ export default function JournalPage() {
           <p className="text-xl md:text-2xl text-porcelain/90 max-w-2xl mx-auto leading-relaxed">
             Beauty insights, city guides, and stories from around the world
           </p>
+          
+          {/* Quick scannable highlights */}
+          <div className="flex flex-wrap justify-center gap-6 mt-8 text-sm">
+            <div className="flex items-center gap-2">
+              <span className="text-gold text-xl">✓</span>
+              <span>Expert beauty advice</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-gold text-xl">✓</span>
+              <span>Local Lisbon guides</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-gold text-xl">✓</span>
+              <span>Global beauty exploration</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -162,7 +183,7 @@ export default function JournalPage() {
         <div className="container-custom">
           <h2 className="text-3xl font-serif mb-12">Latest Articles</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {articles.slice(1).map((article) => (
+            {articlesToShow.map((article) => (
               <Link
                 key={article.slug}
                 href={`/journal/${article.slug}`}
@@ -192,6 +213,21 @@ export default function JournalPage() {
               </Link>
             ))}
           </div>
+
+          {/* Load More Button */}
+          {visibleArticles < articles.length && (
+            <div className="text-center mt-12">
+              <button
+                onClick={loadMore}
+                className="btn-gold px-8 py-4 text-lg"
+              >
+                Continue Reading — Load More Articles
+              </button>
+              <p className="text-sm text-harbor mt-4">
+                Showing {visibleArticles} of {articles.length} articles
+              </p>
+            </div>
+          )}
         </div>
       </section>
     </div>

@@ -12,12 +12,12 @@ const services = [
     category: 'Hair Styling',
     slug: 'hair',
     services: [
-      { name: 'Precision Cut', price: 'From €80', duration: '60 min' },
-      { name: 'Color & Highlights', price: 'From €120', duration: '120 min' },
-      { name: 'Balayage', price: 'From €180', duration: '180 min' },
-      { name: 'Blowout & Styling', price: 'From €45', duration: '45 min' },
-      { name: 'Treatment & Repair', price: 'From €60', duration: '60 min' },
-      { name: 'Photoshoot Hair Styling', price: 'From €100', duration: '75 min' },
+      { name: 'Precision Cut', price: 'From €110', duration: '60 min' },
+      { name: 'Color & Highlights', price: 'From €165', duration: '120 min' },
+      { name: 'Balayage', price: 'From €245', duration: '180 min' },
+      { name: 'Blowout & Styling', price: 'From €65', duration: '45 min' },
+      { name: 'Treatment & Repair', price: 'From €85', duration: '60 min' },
+      { name: 'Photoshoot Hair Styling', price: 'From €135', duration: '75 min' },
     ],
     image: '/brand-images/category-hair-styling.png',
   },
@@ -25,11 +25,11 @@ const services = [
     category: 'Nail Care',
     slug: 'nails',
     services: [
-      { name: 'Classic Manicure', price: 'From €35', duration: '45 min' },
-      { name: 'Gel Manicure', price: 'From €45', duration: '60 min' },
-      { name: 'Luxury Pedicure', price: 'From €55', duration: '75 min' },
-      { name: 'Nail Art', price: 'From €20', duration: '30 min' },
-      { name: 'Extensions', price: 'From €70', duration: '90 min' },
+      { name: 'Classic Manicure', price: 'From €50', duration: '45 min' },
+      { name: 'Gel Manicure', price: 'From €65', duration: '60 min' },
+      { name: 'Luxury Pedicure', price: 'From €75', duration: '75 min' },
+      { name: 'Nail Art', price: 'From €30', duration: '30 min' },
+      { name: 'Extensions', price: 'From €95', duration: '90 min' },
     ],
     image: '/brand-images/salon-detail.png',
   },
@@ -37,11 +37,11 @@ const services = [
     category: 'Skincare',
     slug: 'skincare',
     services: [
-      { name: 'Signature Facial', price: 'From €95', duration: '75 min' },
-      { name: 'Anti-Aging Treatment', price: 'From €140', duration: '90 min' },
-      { name: 'Deep Cleanse', price: 'From €85', duration: '60 min' },
-      { name: 'Microdermabrasion', price: 'From €120', duration: '60 min' },
-      { name: 'LED Light Therapy', price: 'From €100', duration: '45 min' },
+      { name: 'Signature Facial', price: 'From €130', duration: '75 min' },
+      { name: 'Anti-Aging Treatment', price: 'From €190', duration: '90 min' },
+      { name: 'Deep Cleanse', price: 'From €115', duration: '60 min' },
+      { name: 'Microdermabrasion', price: 'From €165', duration: '60 min' },
+      { name: 'LED Light Therapy', price: 'From €135', duration: '45 min' },
     ],
     image: '/brand-images/service-facial-treatment.png',
   },
@@ -49,11 +49,11 @@ const services = [
     category: 'Makeup',
     slug: 'makeup',
     services: [
-      { name: 'Event Makeup', price: 'From €70', duration: '45 min' },
-      { name: 'Bridal Makeup', price: 'From €150', duration: '90 min' },
-      { name: 'Makeup Lesson', price: 'From €120', duration: '90 min' },
-      { name: 'Beauty Consultation', price: 'From €80', duration: '60 min' },
-      { name: 'Photoshoot & Editorial Makeup', price: 'From €150', duration: '60 min' },
+      { name: 'Event Makeup', price: 'From €95', duration: '45 min' },
+      { name: 'Bridal Makeup', price: 'From €200', duration: '90 min' },
+      { name: 'Makeup Lesson', price: 'From €165', duration: '90 min' },
+      { name: 'Beauty Consultation', price: 'From €110', duration: '60 min' },
+      { name: 'Photoshoot & Editorial Makeup', price: 'From €200', duration: '60 min' },
     ],
     image: '/brand-images/service-makeup-application.png',
   },
@@ -61,10 +61,10 @@ const services = [
     category: 'Wellness',
     slug: 'wellness',
     services: [
-      { name: 'Swedish Massage', price: 'From €90', duration: '60 min' },
-      { name: 'Deep Tissue', price: 'From €100', duration: '75 min' },
-      { name: 'Aromatherapy', price: 'From €95', duration: '60 min' },
-      { name: 'Hot Stone', price: 'From €110', duration: '90 min' },
+      { name: 'Swedish Massage', price: 'From €120', duration: '60 min' },
+      { name: 'Deep Tissue', price: 'From €135', duration: '75 min' },
+      { name: 'Aromatherapy', price: 'From €130', duration: '60 min' },
+      { name: 'Hot Stone', price: 'From €150', duration: '90 min' },
     ],
     image: '/brand-images/category-wellness.png',
   },
@@ -137,9 +137,22 @@ export default function ServicesPage() {
           <p className="text-xl md:text-2xl text-porcelain/90 max-w-2xl mx-auto">
             Premium beauty experiences with expert concierge matching
           </p>
-          <p className="text-lg text-gold mt-2">
-            All prices include concierge service & coordination
-          </p>
+          
+          {/* Quick scannable highlights */}
+          <div className="flex flex-wrap justify-center gap-6 mt-8 text-sm">
+            <div className="flex items-center gap-2">
+              <span className="text-gold text-xl">✓</span>
+              <span>Vetted professionals only</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-gold text-xl">✓</span>
+              <span>All prices include concierge</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-gold text-xl">✓</span>
+              <span>We match you perfectly</span>
+            </div>
+          </div>
         </div>
       </section>
 

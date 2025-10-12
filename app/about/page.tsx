@@ -55,7 +55,7 @@ export default function AboutPage() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div className="text-center">
               <div className="text-6xl mb-4 opacity-40">😰</div>
               <h3 className="text-xl font-serif mb-2">Overwhelming Choice</h3>
@@ -77,6 +77,14 @@ export default function AboutPage() {
                 Bad haircuts. Poor service. Wasted money. The cost of trial and error adds up
               </p>
             </div>
+          </div>
+
+          {/* Quick Scannable Summary */}
+          <div className="bg-gold/5 border-l-4 border-gold p-6 mb-16">
+            <p className="text-sm uppercase tracking-wider text-gold mb-3 font-medium">TL;DR</p>
+            <p className="text-lg text-ink leading-relaxed">
+              <strong>Finding quality beauty services in Lisbon is overwhelming.</strong> We solve this by personally vetting every professional and matching you with the perfect one—saving you hours of research and costly mistakes.
+            </p>
           </div>
 
           <div className="bg-ink text-white rounded-2xl p-10 md:p-16 text-center">

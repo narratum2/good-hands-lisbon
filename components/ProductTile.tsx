@@ -74,13 +74,16 @@ export default function ProductTile({
             </footer>
           </blockquote>
 
-          {/* Price */}
-          <div className="flex items-center justify-between">
+          {/* Price & CTA */}
+          <div className="flex items-center justify-between mb-4">
             <span className="text-lg font-medium text-ink">{price}</span>
-            <span className="text-gold group-hover:translate-x-1 transition-transform inline-block text-xl">
-              →
-            </span>
+            <span className="text-xs text-harbor uppercase tracking-wide">In Stock</span>
           </div>
+          
+          {/* Shop Now Button */}
+          <button className="w-full btn-gold py-3 text-center font-medium hover:bg-gold/90 transition-all">
+            Shop Now
+          </button>
         </div>
       </Link>
     </motion.div>

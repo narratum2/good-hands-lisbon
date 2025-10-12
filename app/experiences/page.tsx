@@ -54,6 +54,21 @@ const experiences = [
     priceFrom: '€500',
   },
   {
+    title: 'Coastal Photoshoots',
+    slug: 'photoshoots',
+    description: 'Professional beauty styling for your seaside photo session',
+    features: [
+      'Hair & makeup for photoshoots',
+      'Coastal locations (Cascais, Sintra, Cabo da Roca)',
+      'On-location styling service',
+      'Touch-ups between shots',
+      'Waterproof, camera-ready products',
+      'Coordination with photographer',
+    ],
+    image: '/brand-images/experience-bridal-beauty.png',
+    priceFrom: '€300',
+  },
+  {
     title: 'Good Hands Membership',
     slug: 'membership',
     description: 'Exclusive access and priority booking year-round',
