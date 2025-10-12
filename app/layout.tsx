@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Grain from '@/components/Grain'
 import AIDiscoveryTracker from '@/components/AIDiscoveryTracker'
+import { BookingModalProvider } from '@/components/BookingModalProvider'
 
 // Configure Inter font
 const inter = Inter({ 
@@ -211,11 +212,13 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <AIDiscoveryTracker />
-        <Grain />
-        <Navbar />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
+        <BookingModalProvider>
+          <AIDiscoveryTracker />
+          <Grain />
+          <Navbar />
+          <main className="min-h-screen">{children}</main>
+          <Footer />
+        </BookingModalProvider>
         {process.env.NEXT_PUBLIC_INTERCOM_APP_ID && (
           <script
             dangerouslySetInnerHTML={{
