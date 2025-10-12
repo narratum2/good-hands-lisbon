@@ -9,13 +9,11 @@ image: "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=1200&q=80
 keywords: ["lisbon beauty seasonal", "lisbon climate skincare", "beauty tips portugal", "summer skincare lisbon", "winter beauty lisbon"]
 ---
 
-# Seasonal Beauty Guide: Lisbon's Climate & Your Skincare Routine
+# Seasonal Beauty Guide for Lisbon's Climate
 
-**Last Updated:** January 15, 2025
+Lisbon's climate is specific. Mediterranean sun, Atlantic wind, 300+ days of sunshine, but also unexpected humidity. Your skincare routine from London or New York won't work here.
 
-Lisbon isn&apos;t just another European city—it&apos;s a Mediterranean paradise with 300 days of sunshine, Atlantic breezes, and microclimates that can shift neighborhood to neighborhood. This unique environment significantly affects your hair, skin, and makeup needs throughout the year.
-
-Whether you&apos;re a Lisbon resident adapting your routine seasonally or a visitor wondering what beauty products to pack, this guide provides expert recommendations from Good Hands&apos; network of local beauty professionals who understand exactly how this climate behaves.
+This guide breaks down what your hair, skin, and makeup actually need in each season. Based on advice from local professionals who deal with this climate every day.
 
 ---
 
@@ -32,30 +30,16 @@ Whether you&apos;re a Lisbon resident adapting your routine seasonally or a visi
 
 ---
 
-## Understanding Lisbon&apos;s Unique Climate {#climate}
+## Lisbon's Climate Is Weird
 
-### The Mediterranean-Atlantic Mix
+Mediterranean meets Atlantic. Hot dry summers (2,800+ hours of sun) but persistent wind. Humidity sits at 60-80% year-round, higher near the river. UV index hits 8-10 in summer but drops to 2-4 in winter.
 
-Lisbon sits at the confluence of two climate influences:
-- **Mediterranean:** Hot, dry summers with 2,800+ hours of annual sunshine
-- **Atlantic:** Moderate temperatures, occasional rain, and persistent breeze
+Summers are bone-dry. October through March brings rain. Temperature swings from 8°C in winter to 35°C peaks in summer.
 
-This combination creates beauty challenges you won&apos;t face in inland European cities or purely tropical climates.
+**Neighborhood differences matter:**
+Alfama is more humid, sheltered from wind. Belém gets salt air and stronger wind. Avenida has urban heat. Sintra is 5-10°C cooler with fog.
 
-### Key Climate Characteristics:
-
-**Humidity:** 60-80% year-round (higher near the Tagus River)
-**Sun Intensity:** UV Index 8-10 in summer, 2-4 in winter
-**Wind:** Persistent Atlantic nortada winds, especially summer afternoons
-**Temperature Range:** 8°C (winter lows) to 35°C (summer peaks)
-**Rainfall:** Concentrated October-March; summers are bone-dry
-
-### Neighborhood Microclimates:
-
-- **Alfama/Mouraria:** Higher humidity, more sheltered from wind
-- **Belém/Waterfront:** Windier, salt air exposure
-- **Avenida/Centro:** Urban heat island effect, drier
-- **Sintra:** 5-10°C cooler, much higher humidity, frequent fog
+Your routine needs to adjust for where you live, not just the season.
 
 ---
 

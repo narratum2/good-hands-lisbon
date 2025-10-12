@@ -1,10 +1,8 @@
-# Your Complete Wedding Beauty Timeline for Lisbon
+# Wedding Beauty Timeline for Lisbon
 
-**Published:** January 11, 2025 | **Category:** Weddings | **Read Time:** 10 min
+Destination wedding in Lisbon? Your beauty timeline needs to account for travel, climate, and local service quality.
 
-![Bridal beauty preparation in Lisbon](https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&q=80)
-
-Planning a destination wedding in Lisbon? Your beauty timeline needs to account for travel, climate, and local service quality. This comprehensive guide ensures you look absolutely stunning on your big day.
+This guide ensures you look stunning on your wedding day.
 
 ## 12 Months Before: The Planning Phase
 

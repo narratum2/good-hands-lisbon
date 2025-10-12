@@ -1,33 +1,23 @@
-# 🤖 AI HANDOFF GUIDE - Good Hands Complete System Documentation
+# AI Handoff Guide — Good Hands
 
-**For: Any AI taking over this project**  
-**Purpose: Understand everything instantly and continue seamlessly**  
-**Last Updated:** January 11, 2025  
-**Project Status:** Production-ready, fully functional  
-**⚠️ IMPORTANT: If you're part of the Engineering, Content, or Design team, READ `TEAM_STATUS_DASHBOARD.md` FIRST!**
+**For:** Any AI taking over this project  
+**Updated:** January 11, 2025  
+**Status:** Production-ready
+
+**⚠️ If you're Engineering, Content, or Design team, read `TEAM_STATUS_DASHBOARD.md` first.**
 
 ---
 
-## 📋 QUICK START (Read This First)
+## Quick Start
 
-### **What is Good Hands?**
-A luxury beauty concierge service in Lisbon that solves the problem: "Finding the right beauty professional is too hard and time-consuming."
+**What is Good Hands?**
+Luxury beauty concierge in Lisbon. We match clients with vetted professionals. Problem solved: "Finding the right beauty professional is too hard."
 
-**Business Model:**
-- We match clients with vetted beauty professionals
-- We charge market rate + concierge fee (25-30% markup)
-- Clients pay for expert matching, not just the service
-- High margins (97%+), low fixed costs (~€190/mo)
+**Business model:**
+Market rate + 25-30% concierge fee. High margins (97%+), low fixed costs (~€190/month).
 
-**Tech Stack:**
-- Frontend: Next.js 14, TypeScript, Tailwind CSS
-- Database: Supabase (PostgreSQL)
-- Payments: Stripe
-- Automation: Make.com
-- Operations: Slack
-- Admin: Notion
-- AI: Claude (Anthropic)
-- Deployment: Vercel
+**Tech:**
+Next.js 14, TypeScript, Tailwind, Supabase, Stripe, Make.com, Vercel.
 
 ---
 
