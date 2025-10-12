@@ -255,18 +255,24 @@ export default function FAQExpanded() {
         </div>
 
         {/* Still have questions CTA */}
-        <div className="mt-12 text-center bg-gradient-to-br from-ink to-harbor text-white rounded-lg p-8">
-          <h3 className="text-2xl font-serif mb-3">Still have questions?</h3>
-          <p className="text-porcelain/90 mb-6">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mt-16 text-center bg-gradient-to-br from-ink to-harbor text-white rounded-lg p-12 md:p-16"
+        >
+          <h3 className="text-3xl md:text-4xl font-serif mb-4">Still have questions?</h3>
+          <p className="text-porcelain/90 text-lg mb-8 max-w-2xl mx-auto">
             Our concierge team is here to help. Get in touch and we'll answer within 24 hours.
           </p>
           <a
             href="mailto:hello@goodhands.com"
-            className="inline-block px-8 py-3 bg-gold text-ink font-semibold rounded-full hover:bg-gold/90 transition-colors"
+            className="btn-gold text-lg"
           >
             Contact Us
           </a>
-        </div>
+        </motion.div>
 
         {/* Schema markup for AI/SEO */}
         <script

@@ -108,7 +108,7 @@ export default function ValueProposition() {
             </ul>
             <a
               href="#booking"
-              className="inline-block px-8 py-4 bg-ink text-porcelain rounded-sm font-medium hover:bg-ink-light transition-all focus-visible-ring"
+              className="btn-primary text-lg"
             >
               Book Your First Service
             </a>

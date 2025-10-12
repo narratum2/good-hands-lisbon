@@ -86,7 +86,7 @@ export default function BookingForm() {
   }
 
   return (
-    <section id="booking" className="section-padding bg-white">
+    <section id="booking" className="section-padding bg-white scroll-mt-20">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -96,7 +96,7 @@ export default function BookingForm() {
           className="max-w-3xl mx-auto"
         >
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-serif mb-4">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif mb-4">
               Book Your Experience
             </h2>
             <p className="text-harbor text-lg mb-4">
