@@ -84,7 +84,7 @@ export default function SearchBar() {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="px-8 py-3 bg-ink text-white rounded-sm font-medium hover:bg-ink-light transition-all focus-visible-ring"
+                className="btn-primary md:w-auto whitespace-nowrap"
               >
                 Search
               </button>

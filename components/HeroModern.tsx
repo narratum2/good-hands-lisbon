@@ -38,7 +38,7 @@ export default function HeroModern() {
             <a href="#booking" className="btn-gold w-full sm:w-auto">
               Book Your Experience
             </a>
-            <a href="/services" className="btn-secondary w-full sm:w-auto" style={{ borderColor: 'white', color: 'white' }}>
+            <a href="/services" className="btn-secondary w-full sm:w-auto btn-secondary-light">
               Explore Services
             </a>
           </div>

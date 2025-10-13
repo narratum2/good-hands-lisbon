@@ -81,7 +81,7 @@ export default function ProductTile({
           </div>
           
           {/* Shop Now Button */}
-          <button className="w-full btn-gold py-3 text-center font-medium hover:bg-gold/90 transition-all">
+          <button className="btn-gold w-full">
             Shop Now
           </button>
         </div>
