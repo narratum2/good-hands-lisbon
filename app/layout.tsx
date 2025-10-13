@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter, Playfair_Display } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -76,17 +77,6 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/brand-assets/logo/logo-icon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/brand-assets/logo/logo-icon.svg" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZGDMVGP040"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-ZGDMVGP040');
-            `,
-          }}
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -224,6 +214,21 @@ export default function RootLayout({
         />
       </head>
       <body>
+        {/* Google Analytics - G-ZGDMVGP040 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-ZGDMVGP040"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-ZGDMVGP040', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
         <GoogleAnalytics GA_MEASUREMENT_ID="G-ZGDMVGP040" />
         <BookingModalProvider>
           <AIDiscoveryTracker />
