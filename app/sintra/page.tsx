@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import NeighborhoodMap from '@/components/NeighborhoodMap'
 
 export const metadata: Metadata = {
   title: 'Sintra Beauty Guide — Good Hands',
@@ -331,6 +332,9 @@ export default function SintraPage() {
           </div>
         </div>
       </section>
+
+      {/* Interactive Map */}
+      <NeighborhoodMap neighborhood="Sintra" />
 
       {/* CTA */}
       <section className="section-padding bg-ink text-white text-center">

@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import NeighborhoodMap from '@/components/NeighborhoodMap'
 
 export const metadata: Metadata = {
   title: 'Príncipe Real Beauty Guide — Good Hands',
@@ -308,6 +309,9 @@ export default function PrincipeRealPage() {
           </div>
         </div>
       </section>
+
+      {/* Interactive Map */}
+      <NeighborhoodMap neighborhood="Príncipe Real" />
 
       {/* CTA */}
       <section className="section-padding bg-ink text-white text-center">
