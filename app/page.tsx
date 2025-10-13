@@ -12,12 +12,16 @@ import TestimonialsEnhanced from '@/components/TestimonialsEnhanced'
 import FullWidthImageBreak from '@/components/FullWidthImageBreak'
 import BookingForm from '@/components/BookingForm'
 import ParallaxSection from '@/components/ParallaxSection'
+import TrustSignals from '@/components/TrustSignals'
 // import CuratedProducts from '@/components/CuratedProducts' // REMOVED: Product store disabled for now
 
 export default function Home() {
   return (
     <>
       <HeroModern />
+      
+      {/* Trust Signals - Stats & Partner Badges */}
+      <TrustSignals />
       
       <ParallaxSection speed={0.15}>
         <ValueProposition />
