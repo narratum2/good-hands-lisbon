@@ -50,6 +50,11 @@
     @apply border-gray-light;
   }
 
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px; /* Account for fixed navbar */
+  }
+
   body {
     @apply bg-white text-black antialiased;
     font-family: var(--font-sans);
