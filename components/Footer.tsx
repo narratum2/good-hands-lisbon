@@ -126,8 +126,13 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Email Newsletter Widget */}
+        <div className="mt-12 max-w-md mx-auto">
+          <EmailCaptureWidget />
+        </div>
+
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-porcelain/10">
+        <div className="pt-8 border-t border-porcelain/10 mt-12">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <p className="text-sm text-porcelain/60">
               © {new Date().getFullYear()} Good Hands. All rights reserved.
