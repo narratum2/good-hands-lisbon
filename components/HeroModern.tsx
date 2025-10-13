@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function HeroModern() {
   return (
-    <section className="relative flex items-center justify-center overflow-hidden" style={{ height: 'calc(100vh - 80px)', marginTop: '80px', minHeight: '500px' }}>
+    <section className="relative flex items-center justify-center overflow-hidden" style={{ height: 'calc(100vh - 80px)', marginTop: '80px', minHeight: '400px' }}>
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image

@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Sparkles, Heart, Shield, Users, Instagram, Send } from 'lucide-react'
 import PullQuote from '@/components/PullQuote'
+import SocialMedia from '@/components/SocialMedia'
 
 export const metadata: Metadata = {
   title: 'About — Good Hands',
@@ -478,6 +479,19 @@ export default function AboutPage() {
               hello@goodhands.com
             </a>
           </p>
+        </div>
+      </section>
+
+      {/* Social Media */}
+      <section className="section-padding bg-shell">
+        <div className="container-custom">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-serif mb-4">Connect With Us</h2>
+            <p className="text-harbor text-lg mb-8">
+              Follow our journey and discover beauty insights from Lisbon and around the world
+            </p>
+            <SocialMedia />
+          </div>
         </div>
       </section>
     </div>

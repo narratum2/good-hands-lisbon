@@ -30,7 +30,7 @@
     --gold-dark: #b08d45;  /* Darker gold for contrast */
     --gray-light: #e5e5e5; /* Borders */
     --gray-medium: #999999;/* Secondary text */
-    --gray-dark: #4a4a4a;  /* Tertiary text */
+    --gray-dark: #2d2d2d;  /* Tertiary text - DARKENED for better readability */
     
     /* Sage Green Accents */
     --sage: #a8b5a0;       /* Primary sage */
@@ -68,43 +68,44 @@
     -webkit-touch-callout: none;
   }
 
-  /* Typography Hierarchy - Sophisticated & Light */
+  /* Typography Hierarchy - Improved Readability */
   h1 {
     @apply font-serif text-black;
-    font-size: clamp(2rem, 8vw, 4rem); /* Mobile: 32px → Desktop: 64px */
-    font-weight: 400;
-    line-height: 1.15;
-    letter-spacing: -0.02em;
+    font-size: clamp(2.25rem, 6vw, 3.5rem); /* Mobile: 36px → Desktop: 56px (more controlled) */
+    font-weight: 500; /* Increased from 400 for better readability */
+    line-height: 1.25; /* Increased from 1.15 for breathing room */
+    letter-spacing: -0.01em; /* Less aggressive than -0.02em */
     margin-bottom: var(--spacing-xl);
   }
 
   @media (max-width: 768px) {
     h1 {
-      line-height: 1.2;
+      line-height: 1.3; /* Even more space on mobile */
       margin-bottom: var(--spacing-lg);
     }
   }
 
   h2 {
     @apply font-sans text-black;
-    font-size: clamp(1.5rem, 5vw, 2.5rem); /* Mobile: 24px → Desktop: 40px */
+    font-size: clamp(1.75rem, 4vw, 2.25rem); /* Mobile: 28px → Desktop: 36px (more controlled) */
     font-weight: 500;
-    line-height: 1.25;
+    line-height: 1.35; /* Increased from 1.25 */
     letter-spacing: -0.01em;
     margin-bottom: var(--spacing-lg);
   }
 
   @media (max-width: 768px) {
     h2 {
+      line-height: 1.4; /* More space on mobile */
       margin-bottom: var(--spacing-md);
     }
   }
 
   h3 {
     @apply font-sans text-black;
-    font-size: clamp(1.25rem, 4vw, 1.75rem); /* Mobile: 20px → Desktop: 28px */
+    font-size: clamp(1.25rem, 3vw, 1.625rem); /* Mobile: 20px → Desktop: 26px (more controlled) */
     font-weight: 500;
-    line-height: 1.3;
+    line-height: 1.4; /* Increased from 1.3 */
     margin-bottom: var(--spacing-lg);
   }
 
@@ -143,7 +144,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.7;
-    color: var(--gray-dark);
+    color: #2d2d2d; /* Darkened for better contrast (was var(--gray-dark): #4a4a4a) */
     margin-bottom: var(--spacing-lg);
     max-width: 70ch; /* Optimal readability */
   }
@@ -196,7 +197,7 @@
   @media (max-width: 768px) {
     .btn-primary {
       padding: 14px 24px;
-      font-size: 12px;
+      font-size: 13px; /* Keep at 13px minimum, don't reduce to 12px */
       width: 100%;
       max-width: 100%;
     }
@@ -246,7 +247,7 @@
   @media (max-width: 768px) {
     .btn-secondary {
       padding: 14px 24px;
-      font-size: 12px;
+      font-size: 13px; /* Keep at 13px minimum */
       width: 100%;
       max-width: 100%;
     }
@@ -303,7 +304,7 @@
   @media (max-width: 768px) {
     .btn-gold {
       padding: 14px 24px;
-      font-size: 12px;
+      font-size: 13px; /* Keep at 13px minimum */
       width: 100%;
       max-width: 100%;
     }
@@ -355,7 +356,7 @@
   @media (max-width: 768px) {
     .btn-dark {
       padding: 14px 24px;
-      font-size: 12px;
+      font-size: 13px; /* Keep at 13px minimum */
       width: 100%;
       max-width: 100%;
     }
