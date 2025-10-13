@@ -23,8 +23,8 @@ export default function ParallaxSection({
   const y = useTransform(scrollYProgress, [0, 1], ['0%', `${speed * 100}%`])
 
   return (
-    <div ref={ref} className={className}>
-      <motion.div style={{ y }}>
+    <div ref={ref} className={`${className} relative`}>
+      <motion.div style={{ y }} className="relative z-10">
         {children}
       </motion.div>
     </div>

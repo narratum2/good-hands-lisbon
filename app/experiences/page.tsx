@@ -65,7 +65,7 @@ const experiences = [
       'Waterproof, camera-ready products',
       'Coordination with photographer',
     ],
-    image: '/brand-images/experience-bridal-beauty.png',
+    image: '/brand-images/experience-photoshoot.png',
     priceFrom: '€300',
   },
   {
@@ -80,7 +80,7 @@ const experiences = [
       'Personal beauty concierge',
       'Birthday gift package',
     ],
-    image: '/brand-images/service-makeup-application.png',
+    image: '/brand-images/experience-membership-vip.png',
     priceFrom: '€200/month',
   },
 ]
@@ -158,7 +158,7 @@ export default function ExperiencesPage() {
           <p className="text-xl text-porcelain/80 mb-8 max-w-2xl mx-auto">
             Not sure which package is right for you? Let\'s design something perfect together.
           </p>
-          <Link href="/#booking" className="btn-primary">
+          <Link href="/#booking" className="btn-gold">
             Schedule a Consultation
           </Link>
         </div>
