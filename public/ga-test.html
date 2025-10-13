@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GA4 Test Page - Good Hands</title>
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZGDMVGP040"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZGDMVGP040', {
+      page_path: window.location.pathname,
+    });
+    
+    // Log for debugging
+    console.log('✅ GA4 gtag function initialized');
+    console.log('📊 Tracking ID: G-ZGDMVGP040');
+  </script>
+  
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .box {
+      background: #f5f5f5;
+      border-left: 4px solid #0066cc;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    button {
+      background: #0066cc;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 5px;
+    }
+    button:hover {
+      background: #0052a3;
+    }
+    .success {
+      background: #d4edda;
+      border-left-color: #28a745;
+      color: #155724;
+    }
+    #eventLog {
+      background: #f8f9fa;
+      border: 1px solid #dee2e6;
+      padding: 15px;
+      margin-top: 20px;
+      max-height: 300px;
+      overflow-y: auto;
+      font-family: monospace;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧪 Google Analytics 4 Test Page</h1>
+  
+  <div class="box">
+    <h2>Test Information</h2>
+    <p><strong>Measurement ID:</strong> G-ZGDMVGP040</p>
+    <p><strong>Purpose:</strong> Verify GA4 implementation is working</p>
+    <p><strong>Site:</strong> good-hands-apualr0k5-narratums-projects.vercel.app</p>
+  </div>
+
+  <div class="box success">
+    <h3>✅ Page View Tracked</h3>
+    <p>This page automatically sends a <code>page_view</code> event when loaded.</p>
+    <p>Check your browser's Developer Tools → Network tab for requests to:</p>
+    <ul>
+      <li><code>gtag/js?id=G-ZGDMVGP040</code></li>
+      <li><code>collect?v=2&tid=G-ZGDMVGP040</code></li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h3>🧪 Test Custom Events</h3>
+    <p>Click these buttons to send test events to Google Analytics:</p>
+    
+    <button onclick="testEvent('button_click', 'Test Button 1')">Test Event 1</button>
+    <button onclick="testEvent('cta_click', 'Book Now Test')">Test Event 2</button>
+    <button onclick="testEvent('test_event', 'Manual Test')">Test Event 3</button>
+  </div>
+
+  <div class="box">
+    <h3>📊 Event Log</h3>
+    <div id="eventLog">Waiting for events...</div>
+  </div>
+
+  <div class="box">
+    <h3>🔍 Verification Steps</h3>
+    <ol>
+      <li>Open Browser Developer Tools (F12)</li>
+      <li>Go to Network tab</li>
+      <li>Reload this page</li>
+      <li>Look for requests to <code>google-analytics.com</code> or <code>googletagmanager.com</code></li>
+      <li>Click test buttons above and watch for new network requests</li>
+      <li>Check Real-time report in GA4 dashboard</li>
+    </ol>
+  </div>
+
+  <script>
+    const log = document.getElementById('eventLog');
+    
+    function logMessage(message) {
+      const timestamp = new Date().toLocaleTimeString();
+      log.innerHTML += `[${timestamp}] ${message}\n`;
+      log.scrollTop = log.scrollHeight;
+      console.log(message);
+    }
+
+    // Log initial page load
+    logMessage('✅ Page loaded');
+    logMessage('📊 GA4 Measurement ID: G-ZGDMVGP040');
+    
+    // Check if gtag is available
+    if (typeof gtag === 'function') {
+      logMessage('✅ gtag function is available');
+    } else {
+      logMessage('❌ gtag function NOT available');
+    }
+
+    // Check dataLayer
+    if (window.dataLayer && Array.isArray(window.dataLayer)) {
+      logMessage(`✅ dataLayer exists with ${window.dataLayer.length} items`);
+    } else {
+      logMessage('❌ dataLayer NOT found');
+    }
+
+    function testEvent(eventName, eventLabel) {
+      if (typeof gtag === 'function') {
+        gtag('event', eventName, {
+          'event_category': 'test',
+          'event_label': eventLabel,
+          'value': 1
+        });
+        logMessage(`✅ Sent event: ${eventName} (${eventLabel})`);
+        logMessage('   Check Network tab for new "collect" request');
+      } else {
+        logMessage('❌ Cannot send event - gtag not available');
+      }
+    }
+
+    // Auto-test after 2 seconds
+    setTimeout(() => {
+      logMessage('🤖 Running auto-test...');
+      testEvent('auto_test', 'Automatic Test Event');
+    }, 2000);
+  </script>
+</body>
+</html>
+
