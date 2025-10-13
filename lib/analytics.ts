@@ -20,6 +20,10 @@ export type EventNames =
   | 'map_clicked'
   | 'phone_clicked'
   | 'email_clicked'
+  | 'exit_intent_shown'
+  | 'exit_intent_closed'
+  | 'exit_intent_cta_clicked'
+  | 'sticky_cta_clicked'
 
 interface EventParams {
   [key: string]: string | number | boolean | undefined

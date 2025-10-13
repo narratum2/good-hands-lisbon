@@ -8,6 +8,8 @@ import Grain from '@/components/Grain'
 import AIDiscoveryTracker from '@/components/AIDiscoveryTracker'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
 import { BookingModalProvider } from '@/components/BookingModalProvider'
+import ExitIntentPopup from '@/components/ExitIntentPopup'
+import StickyMobileCTA from '@/components/StickyMobileCTA'
 
 // Configure Inter font
 const inter = Inter({ 
@@ -218,6 +220,8 @@ export default function RootLayout({
         <GoogleAnalytics GA_MEASUREMENT_ID="G-ZGDMVGP040" />
         <BookingModalProvider>
           <AIDiscoveryTracker />
+          <ExitIntentPopup />
+          <StickyMobileCTA />
           <Grain />
           <Navbar />
           <main className="min-h-screen">{children}</main>
