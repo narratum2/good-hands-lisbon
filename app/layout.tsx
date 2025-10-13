@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Grain from '@/components/Grain'
 import AIDiscoveryTracker from '@/components/AIDiscoveryTracker'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 import { BookingModalProvider } from '@/components/BookingModalProvider'
 
 // Configure Inter font
@@ -212,6 +213,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <GoogleAnalytics GA_MEASUREMENT_ID="G-ZGDMVGP040" />
         <BookingModalProvider>
           <AIDiscoveryTracker />
           <Grain />

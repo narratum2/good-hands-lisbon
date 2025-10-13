@@ -12,7 +12,7 @@ import TestimonialsEnhanced from '@/components/TestimonialsEnhanced'
 import FullWidthImageBreak from '@/components/FullWidthImageBreak'
 import BookingForm from '@/components/BookingForm'
 import ParallaxSection from '@/components/ParallaxSection'
-import CuratedProducts from '@/components/CuratedProducts'
+// import CuratedProducts from '@/components/CuratedProducts' // REMOVED: Product store disabled for now
 
 export default function Home() {
   return (
@@ -49,7 +49,8 @@ export default function Home() {
         <JournalPreview />
       </ParallaxSection>
       
-      <CuratedProducts />
+      {/* REMOVED: Product store section - Code preserved in components/CuratedProducts.tsx */}
+      {/* <CuratedProducts /> */}
       
       <Lookbook />
       
