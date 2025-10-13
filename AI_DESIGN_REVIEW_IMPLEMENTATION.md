@@ -965,3 +965,4 @@ import { slideUp } from '@/lib/motion-variants'
 **Status:** Ready for implementation  
 **Priority:** High (improves maintainability and consistency)
 
+

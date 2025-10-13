@@ -92,7 +92,7 @@ export default function AboutPage() {
           <PullQuote
             quote="We realized that the beauty industry's biggest problem wasn't a lack of talented professionals—it was the impossibility of finding them with confidence."
             author="The Good Hands founding principle"
-            variant="sage"
+            backgroundColor="sage"
           />
         </div>
       </section>

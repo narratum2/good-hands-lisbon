@@ -76,6 +76,17 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/brand-assets/logo/logo-icon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/brand-assets/logo/logo-icon.svg" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZGDMVGP040"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-ZGDMVGP040');
+            `,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

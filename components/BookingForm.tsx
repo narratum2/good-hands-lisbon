@@ -362,157 +362,158 @@ export default function BookingForm() {
               </AnimatePresence>
             ) : (
               /* Desktop: All fields at once */
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-2">
-                  Full Name *
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="input-field"
-                />
-              </div>
+              <>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium mb-2">
+                      Full Name *
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required
+                      className="input-field"
+                    />
+                  </div>
 
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">
-                  Email Address *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="input-field"
-                />
-              </div>
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium mb-2">
+                      Email Address *
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                      className="input-field"
+                    />
+                  </div>
 
-              <div>
-                <label htmlFor="phone" className="block text-sm font-medium mb-2">
-                  Phone Number *
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  required
-                  className="input-field"
-                />
-              </div>
+                  <div>
+                    <label htmlFor="phone" className="block text-sm font-medium mb-2">
+                      Phone Number *
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      required
+                      className="input-field"
+                    />
+                  </div>
 
-              <div>
-                <label htmlFor="service" className="block text-sm font-medium mb-2">
-                  Service Type *
-                </label>
-                <select
-                  id="service"
-                  name="service"
-                  value={formData.service}
-                  onChange={handleChange}
-                  required
-                  className="input-field"
-                >
-                  <option value="">Select a service</option>
-                  <option value="hair">Hair Styling</option>
-                  <option value="nails">Nail Care</option>
-                  <option value="skincare">Skincare</option>
-                  <option value="makeup">Makeup</option>
-                  <option value="wellness">Wellness</option>
-                  <option value="wedding">Wedding Package</option>
-                  <option value="retreat">Retreat Package</option>
-                  <option value="corporate">Corporate Package</option>
-                </select>
-              </div>
+                  <div>
+                    <label htmlFor="service" className="block text-sm font-medium mb-2">
+                      Service Type *
+                    </label>
+                    <select
+                      id="service"
+                      name="service"
+                      value={formData.service}
+                      onChange={handleChange}
+                      required
+                      className="input-field"
+                    >
+                      <option value="">Select a service</option>
+                      <option value="hair">Hair Styling</option>
+                      <option value="nails">Nail Care</option>
+                      <option value="skincare">Skincare</option>
+                      <option value="makeup">Makeup</option>
+                      <option value="wellness">Wellness</option>
+                      <option value="wedding">Wedding Package</option>
+                      <option value="retreat">Retreat Package</option>
+                      <option value="corporate">Corporate Package</option>
+                    </select>
+                  </div>
 
-              <div>
-                <label htmlFor="neighborhood" className="block text-sm font-medium mb-2">
-                  Preferred Neighborhood
-                </label>
-                <select
-                  id="neighborhood"
-                  name="neighborhood"
-                  value={formData.neighborhood}
-                  onChange={handleChange}
-                  className="input-field"
-                >
-                  <option value="">Select a neighborhood</option>
-                  <option value="chiado">Chiado</option>
-                  <option value="principe-real">Príncipe Real</option>
-                  <option value="baixa">Baixa</option>
-                  <option value="avenida">Avenida</option>
-                  <option value="alfama">Alfama</option>
-                  <option value="belem">Belém</option>
-                  <option value="sintra">Sintra</option>
-                  <option value="cascais">Cascais</option>
-                </select>
-              </div>
+                  <div>
+                    <label htmlFor="neighborhood" className="block text-sm font-medium mb-2">
+                      Preferred Neighborhood
+                    </label>
+                    <select
+                      id="neighborhood"
+                      name="neighborhood"
+                      value={formData.neighborhood}
+                      onChange={handleChange}
+                      className="input-field"
+                    >
+                      <option value="">Select a neighborhood</option>
+                      <option value="chiado">Chiado</option>
+                      <option value="principe-real">Príncipe Real</option>
+                      <option value="baixa">Baixa</option>
+                      <option value="avenida">Avenida</option>
+                      <option value="alfama">Alfama</option>
+                      <option value="belem">Belém</option>
+                      <option value="sintra">Sintra</option>
+                      <option value="cascais">Cascais</option>
+                    </select>
+                  </div>
 
-              <div>
-                <label htmlFor="date" className="block text-sm font-medium mb-2">
-                  Preferred Date *
-                </label>
-                <input
-                  type="date"
-                  id="date"
-                  name="date"
-                  value={formData.date}
-                  onChange={handleChange}
-                  required
-                  className="input-field"
-                  min={new Date().toISOString().split('T')[0]}
-                />
-              </div>
+                  <div>
+                    <label htmlFor="date" className="block text-sm font-medium mb-2">
+                      Preferred Date *
+                    </label>
+                    <input
+                      type="date"
+                      id="date"
+                      name="date"
+                      value={formData.date}
+                      onChange={handleChange}
+                      required
+                      className="input-field"
+                      min={new Date().toISOString().split('T')[0]}
+                    />
+                  </div>
 
-              <div>
-                <label htmlFor="time" className="block text-sm font-medium mb-2">
-                  Preferred Time *
-                </label>
-                <select
-                  id="time"
-                  name="time"
-                  value={formData.time}
-                  onChange={handleChange}
-                  required
-                  className="input-field"
-                >
-                  <option value="">Select a time</option>
-                  <option value="09:00">9:00 AM</option>
-                  <option value="10:00">10:00 AM</option>
-                  <option value="11:00">11:00 AM</option>
-                  <option value="12:00">12:00 PM</option>
-                  <option value="13:00">1:00 PM</option>
-                  <option value="14:00">2:00 PM</option>
-                  <option value="15:00">3:00 PM</option>
-                  <option value="16:00">4:00 PM</option>
-                  <option value="17:00">5:00 PM</option>
-                  <option value="18:00">6:00 PM</option>
-                </select>
-              </div>
-            </div>
+                  <div>
+                    <label htmlFor="time" className="block text-sm font-medium mb-2">
+                      Preferred Time *
+                    </label>
+                    <select
+                      id="time"
+                      name="time"
+                      value={formData.time}
+                      onChange={handleChange}
+                      required
+                      className="input-field"
+                    >
+                      <option value="">Select a time</option>
+                      <option value="09:00">9:00 AM</option>
+                      <option value="10:00">10:00 AM</option>
+                      <option value="11:00">11:00 AM</option>
+                      <option value="12:00">12:00 PM</option>
+                      <option value="13:00">1:00 PM</option>
+                      <option value="14:00">2:00 PM</option>
+                      <option value="15:00">3:00 PM</option>
+                      <option value="16:00">4:00 PM</option>
+                      <option value="17:00">5:00 PM</option>
+                      <option value="18:00">6:00 PM</option>
+                    </select>
+                  </div>
+                </div>
 
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2">
-                  Additional Details
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  rows={4}
-                  className="input-field resize-none"
-                  placeholder="Tell us more about what you\'re looking for..."
-                />
-              </div>
-            </div>
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium mb-2">
+                    Additional Details
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    rows={4}
+                    className="input-field resize-none"
+                    placeholder="Tell us more about what you\'re looking for..."
+                  />
+                </div>
+              </>
             )}
 
             {/* Mobile: Navigation buttons */}
