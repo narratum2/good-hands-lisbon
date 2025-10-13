@@ -46,9 +46,9 @@ After adding the domain:
 
 ### Production Deployments
 ```
-Latest:  https://good-hands-3erz7v15f-narratums-projects.vercel.app
-Ready:   https://good-hands-6gk6h2wu1-narratums-projects.vercel.app
-Ready:   https://good-hands-gd42nszlb-narratums-projects.vercel.app
+Latest:  https://good-hands-apualr0k5-narratums-projects.vercel.app
+Previous: https://good-hands-3erz7v15f-narratums-projects.vercel.app
+Previous: https://good-hands-6gk6h2wu1-narratums-projects.vercel.app
 ```
 
 ### Custom Domain (After Setup)

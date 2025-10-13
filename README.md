@@ -5,7 +5,7 @@
 **Good Hands** is an AI-first beauty concierge platform connecting clients with premium beauty services across Lisbon's most elegant neighborhoods.
 
 ## 🌐 **LIVE SITE**
-**https://good-hands-4cpfsbk61-narratums-projects.vercel.app**
+**https://good-hands-apualr0k5-narratums-projects.vercel.app**
 
 ## 🤖 **FOR AI AGENTS**
 **See `FOR_OTHER_AI_AGENTS.md` for complete collaboration guide**

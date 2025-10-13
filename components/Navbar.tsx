@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { useBookingModal } from './BookingModalProvider'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -18,6 +18,8 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const { openBooking } = useBookingModal()
+  const mobileMenuRef = useRef<HTMLDivElement>(null)
+  const menuButtonRef = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,6 +28,41 @@ export default function Navbar() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  // Focus management for mobile menu
+  useEffect(() => {
+    if (isOpen && mobileMenuRef.current) {
+      // Focus the first link when menu opens
+      const firstLink = mobileMenuRef.current.querySelector('a') as HTMLElement
+      firstLink?.focus()
+    } else if (!isOpen && menuButtonRef.current) {
+      // Return focus to menu button when menu closes
+      menuButtonRef.current.focus()
+    }
+  }, [isOpen])
+
+  // Close menu on Escape key
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && isOpen) {
+        setIsOpen(false)
+      }
+    }
+    window.addEventListener('keydown', handleEscape)
+    return () => window.removeEventListener('keydown', handleEscape)
+  }, [isOpen])
+
+  // Prevent body scroll when menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+    return () => {
+      document.body.style.overflow = 'unset'
+    }
+  }, [isOpen])
 
   return (
     <nav
@@ -62,6 +99,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button - WCAG 2.1 AA Compliant (44x44px) */}
           <button
+            ref={menuButtonRef}
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden p-3 text-black min-w-[44px] min-h-[44px] flex items-center justify-center"
             aria-label="Toggle navigation menu"
@@ -91,11 +129,14 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
+            ref={mobileMenuRef}
             id="mobile-menu"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden bg-white border-t border-gray-light"
+            role="dialog"
+            aria-label="Mobile navigation menu"
           >
             <div className="container-custom py-6 space-y-4">
               {navLinks.map((link) => (
