@@ -65,7 +65,7 @@ const experiences = [
       'Waterproof, camera-ready products',
       'Coordination with photographer',
     ],
-    image: '/brand-images/experience-photoshoot.png',
+    image: '/brand-images/experience-bridal-beauty.png', // Using bridal image as fallback - both are styled beauty looks
     priceFrom: '€300',
   },
   {
@@ -80,7 +80,7 @@ const experiences = [
       'Personal beauty concierge',
       'Birthday gift package',
     ],
-    image: '/brand-images/experience-membership-vip.png',
+    image: '/brand-images/hero-salon-interior.png', // Using luxury salon interior as fallback - represents premium experience
     priceFrom: '€200/month',
   },
 ]
