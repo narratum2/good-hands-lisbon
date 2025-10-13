@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { Instagram, Send } from 'lucide-react'
+import EmailCaptureWidget from './EmailCaptureWidget'
 
 const footerLinks = {
   services: [

@@ -24,6 +24,8 @@ export type EventNames =
   | 'exit_intent_closed'
   | 'exit_intent_cta_clicked'
   | 'sticky_cta_clicked'
+  | 'email_capture_submitted'
+  | 'email_capture_success'
 
 interface EventParams {
   [key: string]: string | number | boolean | undefined
