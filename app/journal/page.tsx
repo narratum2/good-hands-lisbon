@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import FullWidthImageBreak from '@/components/FullWidthImageBreak'
 
 const articles = [
   {
@@ -177,6 +178,14 @@ export default function JournalPage() {
           </Link>
         </div>
       </section>
+
+      {/* Visual Break - Full Width Image */}
+      <FullWidthImageBreak
+        image="/brand-images/blog-portuguese-beauty.png"
+        alt="Exploring beauty culture around the world"
+        height="medium"
+        parallax={true}
+      />
 
       {/* Articles Grid */}
       <section className="section-padding bg-shell">

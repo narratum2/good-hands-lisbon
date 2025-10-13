@@ -8,7 +8,8 @@ import GuidesPreview from '@/components/GuidesPreview'
 import JournalPreview from '@/components/JournalPreview'
 import Lookbook from '@/components/Lookbook'
 import FAQExpanded from '@/components/FAQExpanded'
-import ReviewsSnippet from '@/components/ReviewsSnippet'
+import TestimonialsEnhanced from '@/components/TestimonialsEnhanced'
+import FullWidthImageBreak from '@/components/FullWidthImageBreak'
 import BookingForm from '@/components/BookingForm'
 import ParallaxSection from '@/components/ParallaxSection'
 import CuratedProducts from '@/components/CuratedProducts'
@@ -28,6 +29,14 @@ export default function Home() {
         <Services />
       </ParallaxSection>
       
+      {/* Visual Break - Full Width Image */}
+      <FullWidthImageBreak
+        image="/brand-images/salon-detail.png"
+        alt="Luxury beauty salon in Lisbon"
+        height="medium"
+        parallax={true}
+      />
+      
       <CategoriesRow />
       
       <ParallaxSection speed={0.2}>
@@ -43,7 +52,10 @@ export default function Home() {
       <CuratedProducts />
       
       <Lookbook />
-      <ReviewsSnippet />
+      
+      {/* Enhanced Testimonials with Sage Background */}
+      <TestimonialsEnhanced />
+      
       <FAQExpanded />
       <BookingForm />
     </>

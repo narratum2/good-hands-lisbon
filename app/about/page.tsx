@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Sparkles, Heart, Shield, Users, Instagram, Send } from 'lucide-react'
+import PullQuote from '@/components/PullQuote'
 
 export const metadata: Metadata = {
   title: 'About — Good Hands',
@@ -87,14 +88,11 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="bg-ink text-white rounded-2xl p-10 md:p-16 text-center">
-            <p className="text-2xl md:text-3xl font-serif italic mb-6 leading-relaxed">
-              "We realized that the beauty industry's biggest problem 
-              wasn't a lack of talented professionals—<br />
-              <span className="text-gold">it was the impossibility of finding them with confidence.</span>"
-            </p>
-            <p className="text-porcelain/70">— The Good Hands founding principle</p>
-          </div>
+          <PullQuote
+            quote="We realized that the beauty industry's biggest problem wasn't a lack of talented professionals—it was the impossibility of finding them with confidence."
+            author="The Good Hands founding principle"
+            variant="sage"
+          />
         </div>
       </section>
 
