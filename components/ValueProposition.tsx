@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 const problems = [
   {
@@ -100,17 +101,25 @@ export default function ValueProposition() {
               How It Actually Works
             </h3>
             <p className="text-lg text-harbor mb-6">
-              We have spent years building relationships with the best professionals in Lisbon. We know who is brilliant with color, who specializes in curly hair, who has the lightest touch for facials. You tell us what you need, and we make the introduction.
+              We have spent years building relationships with the best professionals in Lisbon. We know who is brilliant with <Link href="/services" className="text-gold hover:underline">color</Link>, who specializes in <Link href="/services" className="text-gold hover:underline">curly hair</Link>, who has the lightest touch for <Link href="/blog/lisbon-spa-wellness-guide" className="text-gold hover:underline">facials</Link>. You tell us what you need, and we make the introduction.
             </p>
             <p className="text-lg text-harbor mb-6">
-              No endless scrolling. No taking chances. Just straightforward access to people who are genuinely good at what they do. We book it, we coordinate it, we make sure it happens exactly as planned. If something goes wrong (it will not), we handle it.
+              No endless scrolling. No taking chances. Just straightforward access to people who are genuinely good at what they do. We book it, we coordinate it, we make sure it happens exactly as planned. If something goes wrong (it will not), we handle it. <Link href="/how-it-works" className="text-gold hover:underline font-medium">Learn exactly how our process works →</Link>
             </p>
-            <a
-              href="#booking"
-              className="btn-primary text-lg"
-            >
-              Make Your First Booking
-            </a>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="#booking"
+                className="btn-primary text-lg"
+              >
+                Make Your First Booking
+              </a>
+              <Link
+                href="/about"
+                className="btn-secondary text-lg"
+              >
+                About Good Hands
+              </Link>
+            </div>
           </div>
         </motion.div>
       </div>
