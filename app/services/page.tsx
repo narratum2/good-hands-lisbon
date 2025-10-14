@@ -374,6 +374,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Service Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -400,6 +401,31 @@ export default function ServicesPage() {
                 }))
               ),
             },
+          }),
+        }}
+      />
+      
+      {/* Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://good-hands-apualr0k5-narratums-projects.vercel.app',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Services',
+                item: 'https://good-hands-apualr0k5-narratums-projects.vercel.app/services',
+              },
+            ],
           }),
         }}
       />

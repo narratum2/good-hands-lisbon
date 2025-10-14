@@ -124,7 +124,7 @@ export default function MensGroomingBlog() {
             <li>Traditional shave experience</li>
             <li>Full facial treatment</li>
             <li>Manicure & pedicure</li>
-            <li><60-min massage</li>
+            <li>60-min massage</li>
           </ul>
 
           <h2>Corporate Grooming Services</h2>
