@@ -4,9 +4,9 @@ import Link from 'next/link'
 import NeighborhoodMap from '@/components/NeighborhoodMap'
 
 export const metadata: Metadata = {
-  title: 'Belém Beauty Guide — Good Hands',
-  description: 'Beauty services in Belém, Lisbon\'s waterfront cultural district. Peaceful salons near monuments, authentic local atmosphere.',
-  keywords: ['belem beauty', 'belem salon', 'waterfront beauty lisbon', 'belem spa'],
+  title: 'Best Beauty Services in Belém Lisbon — Waterfront Salons & Local Spas | Good Hands',
+  description: 'Belém beauty near Lisbon\'s iconic waterfront monuments. Peaceful salons, authentic Portuguese atmosphere, family-run businesses. Perfect before/after visiting Tower of Belém & Jerónimos Monastery.',
+  keywords: ['belem beauty', 'belem salon', 'waterfront beauty lisbon', 'belem spa', 'torre de belem beauty', 'jeronimos beauty', 'peaceful salon lisbon'],
 }
 
 export default function BelemPage() {

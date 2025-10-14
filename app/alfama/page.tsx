@@ -4,8 +4,9 @@ import Link from 'next/link'
 import NeighborhoodMap from '@/components/NeighborhoodMap'
 
 export const metadata: Metadata = {
-  title: 'Alfama Beauty Guide — Good Hands',
-  description: 'Authentic beauty experiences in historic Alfama. Traditional treatments in Lisbon\'s oldest neighborhood.',
+  title: 'Best Beauty Services in Alfama Lisbon — Historic Salons & Traditional Spas | Good Hands',
+  description: 'Authentic beauty in historic Alfama. Boutique salons in restored buildings, traditional Portuguese treatments, intimate wellness experiences. Lisbon\'s oldest neighborhood\'s hidden beauty gems.',
+  keywords: ['alfama beauty', 'alfama salon', 'historic lisbon spa', 'traditional beauty lisbon', 'boutique salon alfama', 'portuguese beauty treatments', 'alfama wellness'],
 }
 
 export default function AlfamaPage() {

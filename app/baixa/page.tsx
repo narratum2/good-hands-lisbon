@@ -4,9 +4,9 @@ import Link from 'next/link'
 import NeighborhoodMap from '@/components/NeighborhoodMap'
 
 export const metadata: Metadata = {
-  title: 'Baixa Beauty Guide — Good Hands',
-  description: 'Beauty services in Baixa, Lisbon\'s downtown district. Central location, accessible salons, and convenient beauty experiences.',
-  keywords: ['baixa beauty', 'downtown lisbon salon', 'baixa spa', 'central lisbon beauty'],
+  title: 'Best Beauty Services in Baixa Lisbon — Central Hair & Spa Salons | Good Hands',
+  description: 'Downtown Baixa beauty salons perfect for tourists and business professionals. Convenient central location for haircuts, express spa treatments, manicures. English-speaking professionals.',
+  keywords: ['baixa beauty', 'downtown lisbon salon', 'baixa spa', 'central lisbon beauty', 'tourist beauty services lisbon', 'business beauty lisbon', 'express salon baixa'],
 }
 
 export default function BaixaPage() {

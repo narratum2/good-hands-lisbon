@@ -4,9 +4,9 @@ import Link from 'next/link'
 import NeighborhoodMap from '@/components/NeighborhoodMap'
 
 export const metadata: Metadata = {
-  title: 'Sintra Beauty Guide — Good Hands',
-  description: 'Beauty services in Sintra, Portugal\'s fairy-tale mountain town. Romantic settings, boutique spas, and enchanted beauty experiences.',
-  keywords: ['sintra beauty', 'sintra spa', 'sintra wellness', 'romantic beauty portugal'],
+  title: 'Best Beauty & Wellness in Sintra Portugal — Romantic Spas & Mountain Retreats | Good Hands',
+  description: 'Sintra\'s enchanting beauty: boutique spas in historic palaces, holistic wellness retreats, romantic couple treatments. Portugal\'s magical mountain town for rejuvenation, meditation & pampering.',
+  keywords: ['sintra beauty', 'sintra spa', 'sintra wellness', 'romantic beauty portugal', 'sintra retreat', 'palace spa sintra', 'couples massage sintra', 'wellness retreat portugal'],
 }
 
 export default function SintraPage() {

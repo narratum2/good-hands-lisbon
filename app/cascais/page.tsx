@@ -4,9 +4,9 @@ import Link from 'next/link'
 import NeighborhoodMap from '@/components/NeighborhoodMap'
 
 export const metadata: Metadata = {
-  title: 'Cascais Beauty Guide — Good Hands',
-  description: 'Beauty services in Cascais, Portugal\'s coastal resort town. Beach-ready treatments, resort spas, and seaside luxury.',
-  keywords: ['cascais beauty', 'cascais salon', 'estoril spa', 'beach beauty portugal'],
+  title: 'Best Beauty Services in Cascais Portugal — Resort Spas & Beach Beauty | Good Hands',
+  description: 'Cascais & Estoril resort beauty: luxury spas, beach-ready treatments, pre-wedding services. Portugal\'s coastal chic destination for hair, nails, wellness & photoshoot-ready beauty.',
+  keywords: ['cascais beauty', 'cascais salon', 'estoril spa', 'beach beauty portugal', 'resort spa cascais', 'wedding beauty cascais', 'luxury spa estoril', 'photoshoot makeup cascais'],
 }
 
 export default function CascaisPage() {

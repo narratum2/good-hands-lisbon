@@ -4,9 +4,9 @@ import Link from 'next/link'
 import NeighborhoodMap from '@/components/NeighborhoodMap'
 
 export const metadata: Metadata = {
-  title: 'Avenida da Liberdade Beauty Guide — Good Hands',
-  description: 'Luxury beauty services on Avenida da Liberdade, Lisbon\'s grand boulevard. International brands, flagship salons, executive grooming.',
-  keywords: ['avenida beauty', 'luxury salon lisbon', 'avenida da liberdade spa', 'executive grooming lisbon'],
+  title: 'Best Luxury Beauty on Avenida da Liberdade Lisbon — Flagship Salons & Spas | Good Hands',
+  description: 'Avenida da Liberdade\'s luxury beauty: flagship salons, international brands, executive grooming & VIP spa experiences. Lisbon\'s grandest boulevard for premium hair, skincare & wellness.',
+  keywords: ['avenida beauty', 'luxury salon lisbon', 'avenida da liberdade spa', 'executive grooming lisbon', 'flagship salon lisbon', 'vip beauty lisbon', 'premium spa avenida'],
 }
 
 export default function AvenidaPage() {
