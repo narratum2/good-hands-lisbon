@@ -4,9 +4,9 @@ import Link from 'next/link'
 import NeighborhoodMap from '@/components/NeighborhoodMap'
 
 export const metadata: Metadata = {
-  title: 'Chiado Beauty Guide — Good Hands',
-  description: 'Luxury beauty services in Chiado, Lisbon\'s most elegant neighborhood. Historic charm meets modern expertise.',
-  keywords: ['chiado beauty', 'chiado salon', 'chiado spa', 'luxury beauty lisbon'],
+  title: 'Best Beauty Services in Chiado Lisbon — Hair, Spa, Makeup | Good Hands',
+  description: 'Discover Chiado\'s top-rated beauty salons, spas, and makeup artists. Lisbon\'s most elegant neighborhood for luxury hair styling, facials, and wellness. Vetted professionals, perfect matching.',
+  keywords: ['chiado beauty', 'chiado salon', 'chiado spa', 'luxury beauty lisbon', 'chiado hair salon', 'chiado makeup artist'],
 }
 
 export default function ChiadoPage() {

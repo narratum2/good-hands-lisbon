@@ -3,8 +3,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Premium Experiences — Good Hands',
-  description: 'Elevated multi-service beauty packages for weddings, retreats, corporate events, and exclusive memberships.',
+  title: 'Premium Beauty Experiences Lisbon — Weddings, Retreats, Corporate | Good Hands',
+  description: 'Exclusive beauty packages for destination weddings, wellness retreats, corporate events, and photoshoots in Lisbon. Complete coordination, vetted professionals, perfect results guaranteed.',
 }
 
 const experiences = [

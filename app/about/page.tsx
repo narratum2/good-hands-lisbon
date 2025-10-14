@@ -6,8 +6,8 @@ import PullQuote from '@/components/PullQuote'
 import SocialMedia from '@/components/SocialMedia'
 
 export const metadata: Metadata = {
-  title: 'About — Good Hands',
-  description: 'We believe beauty should be a trusted experience, not a gamble. Discover the philosophy behind Lisbon\'s most discerning beauty concierge.',
+  title: 'About Good Hands — Lisbon\'s Premier Beauty Concierge Service',
+  description: 'Meet the team behind Lisbon\'s most trusted beauty concierge. We match you with vetted professionals for hair, spa, makeup, and wellness. No trial-and-error—just perfect experiences every time.',
 }
 
 export default function AboutPage() {
