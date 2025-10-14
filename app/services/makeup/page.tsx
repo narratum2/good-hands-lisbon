@@ -4,9 +4,9 @@ import Link from 'next/link'
 import { Palette, Sparkles, Clock, MapPin } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Makeup Services in Lisbon — Good Hands',
-  description: 'Professional makeup artists in Lisbon. Bridal makeup, event makeup, makeup lessons, and editorial looks. Expert concierge matching with vetted artists.',
-  keywords: ['makeup artist lisbon', 'bridal makeup lisbon', 'event makeup lisbon', 'makeup lesson lisbon'],
+  title: 'Professional Makeup Artists Lisbon — Bridal, Events, Lessons | Good Hands',
+  description: 'Top makeup artists in Lisbon for weddings (€150+), special events (€70+), editorial shoots, and personalized lessons. Portfolio-vetted professionals with premium products. On-location available.',
+  keywords: ['makeup artist lisbon', 'bridal makeup lisbon', 'event makeup lisbon', 'makeup lesson lisbon', 'wedding makeup artist', 'mua lisbon', 'makeup artist portugal'],
 }
 
 const makeupServices = [
@@ -356,6 +356,89 @@ export default function MakeupServicesPage() {
           </p>
         </div>
       </section>
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Should I do my own makeup or hire a professional?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Hire a professional if: it's your wedding/major event, you'll be photographed professionally, you want to learn new techniques, or you simply want to feel pampered. DIY if: you're skilled and confident, budget is extremely tight, or you genuinely prefer your own hand.",
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How long does professional makeup last?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'With proper application and quality products: 8-12 hours easily. Bridal makeup is designed to last 12-16 hours. Touch-ups may be needed for lipstick after eating/drinking, but base and eyes should stay put.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Will I look like myself?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Yes—unless you specifically request dramatic transformation. Professional makeup enhances your features, doesn't mask them. You should look like the best, most polished version of yourself.",
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can the artist use my own makeup products?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "For lessons, yes—that's often the point. For events/bridal, most artists prefer their professional kit (better products, hygiene control, full color range). Discuss beforehand if you have specific products you want incorporated.",
+                },
+              },
+              {
+                '@type': 'Question',
+                name: "What if I don't like the makeup during application?",
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Speak up immediately! Good artists want your feedback during the process. It's much easier to adjust while they're working than after completion. They're professionals—they can handle critique.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
+      
+      {/* Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://good-hands-apualr0k5-narratums-projects.vercel.app',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Services',
+                item: 'https://good-hands-apualr0k5-narratums-projects.vercel.app/services',
+              },
+              {
+                '@type': 'ListItem',
+                position: 3,
+                name: 'Makeup Services',
+                item: 'https://good-hands-apualr0k5-narratums-projects.vercel.app/services/makeup',
+              },
+            ],
+          }),
+        }}
+      />
     </div>
   )
 }

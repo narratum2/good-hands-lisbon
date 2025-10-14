@@ -4,9 +4,9 @@ import Link from 'next/link'
 import { Heart, Sparkles, Clock, MapPin } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Wellness & Massage Services in Lisbon — Good Hands',
-  description: 'Professional massage and wellness services in Lisbon. Swedish, deep tissue, aromatherapy, hot stone massage. Expert concierge matching with licensed therapists.',
-  keywords: ['massage lisbon', 'spa lisbon', 'wellness lisbon', 'swedish massage lisbon', 'deep tissue lisbon'],
+  title: 'Best Massage & Spa Services in Lisbon — Swedish, Deep Tissue & More | Good Hands',
+  description: 'Top massage therapists in Lisbon for Swedish (€90+), deep tissue (€100+), hot stone, aromatherapy & couples massage. Licensed therapists in luxury spas. Book your wellness escape.',
+  keywords: ['massage lisbon', 'spa lisbon', 'wellness lisbon', 'swedish massage lisbon', 'deep tissue lisbon', 'couples massage lisbon', 'best spa lisbon', 'hot stone massage', 'massage therapist portugal'],
 }
 
 const wellnessServices = [
@@ -371,6 +371,89 @@ export default function WellnessServicesPage() {
           </p>
         </div>
       </section>
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'How much should I undress?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "To your comfort level. Most people undress completely or down to underwear—you're draped with sheets throughout and only the area being worked on is ever exposed. More clothing = more limited access to muscles.",
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Will deep tissue massage hurt?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'It can be intense ("good pain"), but shouldn\'t be unbearable. Communicate if pressure is too much. Temporary soreness 24-48 hours after is normal as muscles release. That\'s different from injury pain.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How often should I get massage?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'For general wellness: monthly. For chronic pain: weekly or biweekly until improved, then monthly maintenance. For stress management: every 2-3 weeks provides consistent benefits. For special occasions: as desired.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can I request a male or female therapist?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Absolutely. Gender preference is common and never questioned. Simply mention it when booking with Good Hands.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: "What's the difference between massage and physiotherapy?",
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Massage focuses on relaxation and general muscle tension. Physiotherapy addresses specific injuries with therapeutic exercises and rehabilitation. For injury recovery, combine both—ask your doctor which to prioritize.',
+                },
+              },
+            ],
+          }),
+        }}
+      />
+      
+      {/* Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://good-hands-apualr0k5-narratums-projects.vercel.app',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Services',
+                item: 'https://good-hands-apualr0k5-narratums-projects.vercel.app/services',
+              },
+              {
+                '@type': 'ListItem',
+                position: 3,
+                name: 'Wellness & Massage',
+                item: 'https://good-hands-apualr0k5-narratums-projects.vercel.app/services/wellness',
+              },
+            ],
+          }),
+        }}
+      />
     </div>
   )
 }

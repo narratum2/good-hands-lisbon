@@ -265,6 +265,46 @@ export default function LisbonSpaWellnessGuideBlog() {
         </div>
       </section>
 
+      {/* Article Schema for AI Discovery */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: 'Complete Spa & Wellness Guide for Lisbon',
+            description: 'Comprehensive guide to spa and wellness services in Lisbon. Expert recommendations for massage therapy, holistic treatments, and luxury wellness experiences.',
+            author: {
+              '@type': 'Organization',
+              name: 'Good Hands',
+              url: 'https://good-hands-apualr0k5-narratums-projects.vercel.app',
+            },
+            publisher: {
+              '@type': 'Organization',
+              name: 'Good Hands',
+              logo: {
+                '@type': 'ImageObject',
+                url: 'https://good-hands-apualr0k5-narratums-projects.vercel.app/brand-assets/logo/logo-icon.svg',
+              },
+            },
+            datePublished: '2025-01-15',
+            dateModified: '2025-01-15',
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id': 'https://good-hands-apualr0k5-narratums-projects.vercel.app/blog/lisbon-spa-wellness-guide',
+            },
+            image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1200&q=80',
+            keywords: ['spa lisbon', 'massage lisbon', 'wellness lisbon', 'aromatherapy', 'deep tissue massage', 'Swedish massage', 'hot stone therapy'],
+            about: [
+              { '@type': 'Thing', name: 'Spa Services' },
+              { '@type': 'Thing', name: 'Massage Therapy' },
+              { '@type': 'Thing', name: 'Wellness Tourism' },
+              { '@type': 'Place', name: 'Lisbon, Portugal' },
+            ],
+          }),
+        }}
+      />
+
       {/* Breadcrumb Schema */}
       <script
         type="application/ld+json"

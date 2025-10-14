@@ -4,9 +4,9 @@ import Link from 'next/link'
 import { Heart, Sparkles, Clock, MapPin } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Nail Care Services in Lisbon — Good Hands',
-  description: 'Luxury nail salons in Lisbon. Manicures, pedicures, gel, nail art, and extensions. Expert concierge matching with vetted professionals.',
-  keywords: ['nail salon lisbon', 'manicure lisbon', 'pedicure lisbon', 'gel nails lisbon', 'nail art lisbon'],
+  title: 'Best Nail Salons in Lisbon — Manicures, Pedicures, Gel & Nail Art | Good Hands',
+  description: 'Top nail salons in Lisbon for classic manicures (€35+), gel polish (€45+), luxury pedicures (€55+), nail art & extensions. Hygiene-certified technicians. Prime locations.',
+  keywords: ['nail salon lisbon', 'manicure lisbon', 'pedicure lisbon', 'gel nails lisbon', 'nail art lisbon', 'best nail salon chiado', 'nail extensions lisbon', 'gel manicure portugal'],
 }
 
 const nailServices = [
@@ -310,6 +310,89 @@ export default function NailServicesPage() {
           </p>
         </div>
       </section>
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'How long does gel polish really last in Lisbon?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Typically 2-3 weeks, though Lisbon's humidity and sun can affect longevity. Proper application and quality products (which all our salons use) make a huge difference. Swimming and beach activities may reduce wear time.",
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Are the tools really clean?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. We only partner with salons that use autoclave sterilization for metal tools and dispose of single-use items (files, buffers) after each client. If you have concerns, you can bring your own tools.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: "Can I get nail art if I don't speak Portuguese?",
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Absolutely! All our technicians speak English. You can show inspiration photos and clearly communicate your design preferences. Many salons also have design catalogs to browse.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: "What's the difference between a regular and spa pedicure?",
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Spa pedicures include extended treatments like longer massage, exfoliating masks, paraffin wax, and premium products. Regular pedicures focus on nail care and polish. Both include essential foot care.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can I bring my own polish color?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Yes, most salons allow this. Just mention it when booking. However, our salons stock extensive color ranges from premium brands, so you'll likely find what you want.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
+      
+      {/* Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://good-hands-apualr0k5-narratums-projects.vercel.app',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Services',
+                item: 'https://good-hands-apualr0k5-narratums-projects.vercel.app/services',
+              },
+              {
+                '@type': 'ListItem',
+                position: 3,
+                name: 'Nail Care',
+                item: 'https://good-hands-apualr0k5-narratums-projects.vercel.app/services/nails',
+              },
+            ],
+          }),
+        }}
+      />
     </div>
   )
 }

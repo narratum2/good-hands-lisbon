@@ -10,6 +10,7 @@ import GoogleAnalytics from '@/components/GoogleAnalytics'
 import { BookingModalProvider } from '@/components/BookingModalProvider'
 import ExitIntentPopup from '@/components/ExitIntentPopup'
 import StickyMobileCTA from '@/components/StickyMobileCTA'
+import { getOrganizationSchema, SEO_TEMPLATES } from '@/lib/seo-config'
 
 // Configure Inter font
 const inter = Inter({ 
@@ -28,16 +29,16 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'Good Hands — Luxury Beauty Concierge Lisbon | Vetted Professionals',
-  description: 'Lisbon\'s premier luxury beauty concierge service. We match you with personally vetted hair stylists, spa therapists, and beauty professionals. Eliminate trial-and-error—trusted by Four Seasons, Tivoli, and luxury hotels. Serving Chiado, Alfama, Príncipe Real, Belém, Cascais.',
-  keywords: 'luxury beauty concierge Lisbon, beauty services Lisbon, hair stylist Lisbon, spa treatments Lisbon, hotel guest beauty services, personalized beauty Lisbon, beauty professional Lisbon, Chiado beauty, Alfama spa, Príncipe Real salon',
+  title: SEO_TEMPLATES.home.title,
+  description: SEO_TEMPLATES.home.description,
+  keywords: SEO_TEMPLATES.home.keywords,
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://goodhands.com',
     siteName: 'Good Hands',
-    title: 'Good Hands — Luxury Beauty Concierge Lisbon',
-    description: 'Premier beauty concierge matching you with Lisbon\'s top vetted professionals. Eliminate trial-and-error. Trusted by luxury hotels.',
+    title: SEO_TEMPLATES.home.title,
+    description: SEO_TEMPLATES.home.description,
     images: [
       {
         url: '/api/og',
@@ -49,8 +50,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Good Hands — Luxury Beauty Concierge Lisbon',
-    description: 'Premier beauty concierge matching you with Lisbon\'s top vetted professionals.',
+    title: SEO_TEMPLATES.home.title,
+    description: SEO_TEMPLATES.home.description,
     images: ['/api/og'],
   },
   robots: {
@@ -79,98 +80,11 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/brand-assets/logo/logo-icon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/brand-assets/logo/logo-icon.svg" />
+        {/* Organization Schema - Centralized from lib/seo-config.ts */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'BeautySalon',
-              '@id': 'https://goodhands.com/#organization',
-              name: 'Good Hands',
-              alternateName: ['Good Hands Lisbon', 'Good Hands Beauty Concierge', 'Good Hands Portugal'],
-              description: 'Premier luxury beauty concierge service in Lisbon. We match discerning clients with personally vetted hair stylists, spa therapists, makeup artists, and beauty professionals. We eliminate the trial-and-error of finding quality beauty services by providing expert curation, personalized matching, and white-glove booking coordination. Trusted by Four Seasons, Tivoli, and luxury hotels since 2024.',
-              url: 'https://goodhands.com',
-              logo: 'https://goodhands.com/logo.png',
-              image: 'https://goodhands.com/hero-image.jpg',
-              telephone: '+351-XXX-XXX-XXX',
-              email: 'concierge@goodhands.com',
-              priceRange: '€€€',
-              sameAs: [
-                'https://instagram.com/goodhands',
-                'https://facebook.com/goodhands',
-                'https://linkedin.com/company/goodhands',
-              ],
-              address: {
-                '@type': 'PostalAddress',
-                addressLocality: 'Lisbon',
-                addressRegion: 'Lisbon',
-                addressCountry: 'PT',
-              },
-              geo: {
-                '@type': 'GeoCoordinates',
-                latitude: '38.7223',
-                longitude: '-9.1393',
-              },
-              areaServed: [
-                { '@type': 'City', name: 'Lisbon', '@id': 'https://en.wikipedia.org/wiki/Lisbon' },
-                { '@type': 'Neighborhood', name: 'Chiado' },
-                { '@type': 'Neighborhood', name: 'Príncipe Real' },
-                { '@type': 'Neighborhood', name: 'Alfama' },
-                { '@type': 'Neighborhood', name: 'Belém' },
-                { '@type': 'Neighborhood', name: 'Baixa' },
-                { '@type': 'Neighborhood', name: 'Avenida da Liberdade' },
-                { '@type': 'City', name: 'Cascais' },
-                { '@type': 'City', name: 'Sintra' },
-              ],
-              aggregateRating: {
-                '@type': 'AggregateRating',
-                ratingValue: '4.9',
-                reviewCount: '127',
-                bestRating: '5',
-                worstRating: '1',
-              },
-              hasOfferCatalog: {
-                '@type': 'OfferCatalog',
-                name: 'Beauty Services',
-                itemListElement: [
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Service',
-                      name: 'Premium Hair Styling',
-                      description: 'Expert hair colorists and stylists matched to your style preferences',
-                      serviceType: 'Hair Styling & Coloring',
-                    },
-                    price: '105.00',
-                    priceCurrency: 'EUR',
-                  },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Service',
-                      name: 'Luxury Spa Treatments',
-                      description: 'Curated massage and facial treatments',
-                      serviceType: 'Spa & Wellness',
-                    },
-                    price: '95.00',
-                    priceCurrency: 'EUR',
-                  },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Service',
-                      name: 'Professional Makeup',
-                      description: 'Special occasion and bridal makeup artists',
-                      serviceType: 'Makeup Artistry',
-                    },
-                    price: '85.00',
-                    priceCurrency: 'EUR',
-                  },
-                ],
-              },
-              knowsAbout: ['Beauty Services', 'Hair Styling', 'Spa Treatments', 'Makeup Artistry', 'Concierge Services', 'Luxury Hospitality', 'Lisbon Tourism'],
-              slogan: 'Your Personal Beauty Concierge in Lisbon',
-            }),
+            __html: JSON.stringify(getOrganizationSchema()),
           }}
         />
         <script

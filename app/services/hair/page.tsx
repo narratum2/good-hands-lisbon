@@ -4,9 +4,9 @@ import Link from 'next/link'
 import { Scissors, Sparkles, Clock, MapPin } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Hair Styling Services in Lisbon — Good Hands',
-  description: 'Expert hair stylists in Lisbon. Precision cuts, color, balayage, and treatments. Expert concierge matching with vetted professionals.',
-  keywords: ['hair salon lisbon', 'hair stylist lisbon', 'balayage lisbon', 'hair color lisbon', 'haircut lisbon'],
+  title: 'Best Hair Salons in Lisbon — Cuts, Color, Balayage | Good Hands',
+  description: 'Top hair stylists in Lisbon for precision cuts (€80+), balayage (€180+), color treatments, and bridal hair. English-speaking professionals in Chiado, Príncipe Real & more. Expert matching included.',
+  keywords: ['hair salon lisbon', 'hair stylist lisbon', 'balayage lisbon', 'hair color lisbon', 'haircut lisbon', 'best hairdresser lisbon', 'hair salon chiado', 'bridal hair lisbon'],
 }
 
 const hairServices = [
@@ -325,7 +325,7 @@ export default function HairServicesPage() {
         </div>
       </section>
 
-      {/* Schema Markup */}
+      {/* Service Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -351,6 +351,90 @@ export default function HairServicesPage() {
                 },
               })),
             },
+          }),
+        }}
+      />
+      
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'How do I know which stylist is right for me?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'When you book, tell us about your hair type, desired style, and any concerns. We match you with stylists who specialize in what you need. You can also request to see their portfolio before confirming.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can I get balayage if I have dark hair?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Absolutely! Balayage works beautifully on all hair colors. For very dark hair, the process may take longer and prices may vary. We'll discuss options during consultation.",
+                },
+              },
+              {
+                '@type': 'Question',
+                name: "What if I don't speak Portuguese?",
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'All our stylists speak English fluently. Many also speak Spanish, French, or Italian. We ensure you can communicate your vision clearly.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Should I wash my hair before my appointment?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "For cuts, come with clean, dry hair if possible. For color services, it's often better to have hair that hasn't been washed for 24 hours—but we'll specify when you book.",
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Do you offer mobile hair services?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes! Many of our stylists offer mobile services for an additional fee. Perfect for bridal parties, special events, or if you prefer the convenience of your accommodation.',
+                },
+              },
+            ],
+          }),
+        }}
+      />
+      
+      {/* Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://good-hands-apualr0k5-narratums-projects.vercel.app',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Services',
+                item: 'https://good-hands-apualr0k5-narratums-projects.vercel.app/services',
+              },
+              {
+                '@type': 'ListItem',
+                position: 3,
+                name: 'Hair Styling',
+                item: 'https://good-hands-apualr0k5-narratums-projects.vercel.app/services/hair',
+              },
+            ],
           }),
         }}
       />

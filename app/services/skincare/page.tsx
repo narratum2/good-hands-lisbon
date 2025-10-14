@@ -4,9 +4,9 @@ import Link from 'next/link'
 import { Sparkles, Heart, Clock, MapPin } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Skincare & Facial Services in Lisbon — Good Hands',
-  description: 'Expert facial treatments and skincare services in Lisbon. HydraFacials, chemical peels, LED therapy, and customized treatments. Vetted estheticians matched to your skin needs.',
-  keywords: ['facial lisbon', 'skincare lisbon', 'hydrafacial lisbon', 'chemical peel lisbon', 'esthetician lisbon'],
+  title: 'Best Facials & Skincare in Lisbon — HydraFacial, Peels, LED Therapy | Good Hands',
+  description: 'Top estheticians in Lisbon for signature facials (€95+), HydraFacials (€140+), chemical peels, anti-aging treatments & LED therapy. Licensed professionals, customized skincare.',
+  keywords: ['facial lisbon', 'skincare lisbon', 'hydrafacial lisbon', 'chemical peel lisbon', 'esthetician lisbon', 'best facial lisbon', 'anti aging facial', 'led light therapy lisbon'],
 }
 
 const skincareServices = [
@@ -340,6 +340,89 @@ export default function SkincareServicesPage() {
           </p>
         </div>
       </section>
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'How often should I get facials?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'For general maintenance: monthly. For specific concerns (acne, aging, hyperpigmentation): every 2-3 weeks initially, then monthly. Your esthetician will recommend a personalized schedule.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Will chemical peels damage my skin?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'When performed by licensed professionals using appropriate strengths for your skin type, chemical peels are safe and effective. They cause controlled exfoliation, not damage. Always follow aftercare instructions.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can I wear makeup after a facial?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'After basic facials: Yes, immediately. After peels or aggressive treatments: Wait 24-48 hours or as instructed. Schedule facials before important events with buffer time.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Do I need to do anything special before my appointment?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Arrive with clean face. Stop retinol 2-3 days before peels. Avoid sun exposure before and after. Inform esthetician of all products you're using and any medications.",
+                },
+              },
+              {
+                '@type': 'Question',
+                name: "What's the difference between a spa facial and medical facial?",
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Spa facials focus on relaxation with gentler products. Medical/clinical facials use stronger active ingredients, advanced technologies, and target specific skin concerns. We offer both depending on your needs.',
+                },
+              },
+            ],
+          }),
+        }}
+      />
+      
+      {/* Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://good-hands-apualr0k5-narratums-projects.vercel.app',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Services',
+                item: 'https://good-hands-apualr0k5-narratums-projects.vercel.app/services',
+              },
+              {
+                '@type': 'ListItem',
+                position: 3,
+                name: 'Skincare & Facials',
+                item: 'https://good-hands-apualr0k5-narratums-projects.vercel.app/services/skincare',
+              },
+            ],
+          }),
+        }}
+      />
     </div>
   )
 }
