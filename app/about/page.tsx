@@ -48,7 +48,7 @@ export default function AboutPage() {
       {/* Mission Statement - Scroll Triggered */}
       <section className="section-padding bg-white relative">
         <div className="container-custom max-w-4xl text-center">
-          <div className="opacity-0 transform translate-y-8" data-scroll-trigger>
+          <div className="transform translate-y-8" data-scroll-trigger>
             <h2 className="text-4xl md:text-6xl font-serif mb-8 text-ink">
               We realized the problem wasn&apos;t a lack of talent
             </h2>
@@ -64,7 +64,7 @@ export default function AboutPage() {
       <section className="section-padding bg-shell">
         <div className="container-custom max-w-6xl">
           <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="opacity-0 transform translate-x-8" data-scroll-trigger>
+            <div className="transform translate-x-8" data-scroll-trigger>
               <h2 className="text-4xl md:text-5xl font-serif mb-6">
                 The Problem
               </h2>
@@ -75,7 +75,7 @@ export default function AboutPage() {
                 <p className="text-xl text-ink font-medium">Again.</p>
               </div>
             </div>
-            <div className="opacity-0 transform translate-x-8" data-scroll-trigger data-delay="0.2s">
+            <div className="transform translate-x-8" data-scroll-trigger data-delay="0.2s">
               <div className="relative h-96 rounded-lg overflow-hidden shadow-2xl">
                 <Image
                   src="/brand-images/hero-salon-interior.png"
@@ -93,7 +93,7 @@ export default function AboutPage() {
       {/* The Solution - Full Width */}
       <section className="section-padding bg-gradient-to-r from-gold/5 via-white to-gold/5">
         <div className="container-custom max-w-4xl text-center">
-          <div className="opacity-0 transform translate-y-8" data-scroll-trigger>
+          <div className="transform translate-y-8" data-scroll-trigger>
             <h2 className="text-5xl md:text-6xl font-serif mb-8 text-ink">
               There is a better way.
             </h2>
@@ -102,7 +102,7 @@ export default function AboutPage() {
             </p>
             
             <div className="grid md:grid-cols-3 gap-8 mt-16">
-              <div className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.1s">
+              <div className="transform translate-y-8" data-scroll-trigger data-delay="0.1s">
                 <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Shield className="w-8 h-8 text-gold" />
                 </div>
@@ -110,7 +110,7 @@ export default function AboutPage() {
                 <p className="text-harbor">Every professional tested by us personally</p>
               </div>
               
-              <div className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.2s">
+              <div className="transform translate-y-8" data-scroll-trigger data-delay="0.2s">
                 <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Heart className="w-8 h-8 text-gold" />
                 </div>
@@ -118,7 +118,7 @@ export default function AboutPage() {
                 <p className="text-harbor">Perfect pairing based on your exact needs</p>
               </div>
               
-              <div className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.3s">
+              <div className="transform translate-y-8" data-scroll-trigger data-delay="0.3s">
                 <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Sparkles className="w-8 h-8 text-gold" />
                 </div>
@@ -142,13 +142,13 @@ export default function AboutPage() {
         </div>
         
         <div className="relative z-10 container-custom max-w-4xl text-center px-4">
-          <div className="opacity-0 transform translate-y-8" data-scroll-trigger>
+          <div className="transform translate-y-8" data-scroll-trigger>
             <h2 className="text-4xl md:text-5xl font-serif mb-12">
               Our Story
             </h2>
             
             <div className="space-y-12 text-lg leading-relaxed">
-              <div className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.2s">
+              <div className="transform translate-y-8" data-scroll-trigger data-delay="0.2s">
                 <p className="text-2xl mb-6">
                   We started Good Hands after one too many beauty disasters.
                 </p>
@@ -158,14 +158,14 @@ export default function AboutPage() {
                 </p>
               </div>
               
-              <div className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.4s">
+              <div className="transform translate-y-8" data-scroll-trigger data-delay="0.4s">
                 <p className="text-white/80">
                   So we spent two years building relationships. Testing every salon. 
                   Meeting every talented professional. Learning who excels at what.
                 </p>
               </div>
               
-              <div className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.6s">
+              <div className="transform translate-y-8" data-scroll-trigger data-delay="0.6s">
                 <p className="text-2xl text-gold">
                   Now we share that knowledge with you.
                 </p>
@@ -238,23 +238,23 @@ export default function AboutPage() {
       {/* Why Lisbon - Large Text Block */}
       <section className="section-padding bg-shell">
         <div className="container-custom max-w-4xl text-center">
-          <div className="opacity-0 transform translate-y-8" data-scroll-trigger>
+          <div className="transform translate-y-8" data-scroll-trigger>
             <h2 className="text-4xl md:text-5xl font-serif mb-12">
               Why Lisbon Deserves This Service
             </h2>
             
             <div className="text-left space-y-8 text-lg text-harbor leading-relaxed">
-              <p className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.1s">
+              <p className="transform translate-y-8" data-scroll-trigger data-delay="0.1s">
                 Lisbon is experiencing a renaissance. World-class talent is pouring into the city—hair stylists 
                 from Paris, estheticians from Milan, makeup artists from London. The quality is here.
               </p>
               
-              <p className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.2s">
+              <p className="transform translate-y-8" data-scroll-trigger data-delay="0.2s">
                 But if you don&apos;t speak Portuguese, don&apos;t have local connections, or just moved here? 
                 You&apos;d never know where to find them. That&apos;s the problem we solve.
               </p>
               
-              <p className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.3s">
+              <p className="transform translate-y-8" data-scroll-trigger data-delay="0.3s">
                 We&apos;re locals who love this city and want everyone—residents, expats, visitors—to experience 
                 the best of Lisbon&apos;s beauty scene without the frustration of figuring it out alone.
               </p>
@@ -267,22 +267,22 @@ export default function AboutPage() {
       <section className="section-padding bg-white">
         <div className="container-custom max-w-6xl">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div className="opacity-0 transform translate-y-8" data-scroll-trigger>
+            <div className="transform translate-y-8" data-scroll-trigger>
               <div className="text-5xl md:text-6xl font-serif text-gold mb-2">150+</div>
               <p className="text-harbor">Vetted Professionals</p>
             </div>
             
-            <div className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.1s">
+            <div className="transform translate-y-8" data-scroll-trigger data-delay="0.1s">
               <div className="text-5xl md:text-6xl font-serif text-gold mb-2">8</div>
               <p className="text-harbor">Neighborhoods</p>
             </div>
             
-            <div className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.2s">
+            <div className="transform translate-y-8" data-scroll-trigger data-delay="0.2s">
               <div className="text-5xl md:text-6xl font-serif text-gold mb-2">500+</div>
               <p className="text-harbor">Happy Clients</p>
             </div>
             
-            <div className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.3s">
+            <div className="transform translate-y-8" data-scroll-trigger data-delay="0.3s">
               <div className="text-5xl md:text-6xl font-serif text-gold mb-2">4.9</div>
               <p className="text-harbor">Average Rating</p>
             </div>
@@ -293,13 +293,13 @@ export default function AboutPage() {
       {/* How We're Different - Large Statement */}
       <section className="section-padding bg-gradient-to-b from-ink to-ink/90 text-white">
         <div className="container-custom max-w-4xl text-center">
-          <div className="opacity-0 transform translate-y-8" data-scroll-trigger>
+          <div className="transform translate-y-8" data-scroll-trigger>
             <h2 className="text-4xl md:text-5xl font-serif mb-16">
               How We&apos;re Different
             </h2>
             
             <div className="space-y-16">
-              <div className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.1s">
+              <div className="transform translate-y-8" data-scroll-trigger data-delay="0.1s">
                 <h3 className="text-3xl font-serif mb-6 text-gold">We&apos;re Not a Marketplace</h3>
                 <p className="text-xl text-white/90 leading-relaxed">
                   We don&apos;t list everyone who pays us. We&apos;re curators, not a directory. 
@@ -307,7 +307,7 @@ export default function AboutPage() {
                 </p>
               </div>
               
-              <div className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.2s">
+              <div className="transform translate-y-8" data-scroll-trigger data-delay="0.2s">
                 <h3 className="text-3xl font-serif mb-6 text-gold">We&apos;re Not Passive Tech</h3>
                 <p className="text-xl text-white/90 leading-relaxed">
                   Yes, we use AI. But a human reviews every booking, makes every match, 
@@ -315,7 +315,7 @@ export default function AboutPage() {
                 </p>
               </div>
               
-              <div className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.3s">
+              <div className="transform translate-y-8" data-scroll-trigger data-delay="0.3s">
                 <h3 className="text-3xl font-serif mb-6 text-gold">We Put Clients First</h3>
                 <p className="text-xl text-white/90 leading-relaxed">
                   Our fee is included upfront. We never recommend based on who pays us more. 
@@ -370,7 +370,7 @@ export default function AboutPage() {
       {/* Final CTA - Full Width Impact */}
       <section className="section-padding bg-gradient-to-r from-gold via-gold-dark to-gold text-white">
         <div className="container-custom max-w-3xl text-center">
-          <div className="opacity-0 transform translate-y-8" data-scroll-trigger>
+          <div className="transform translate-y-8" data-scroll-trigger>
             <h2 className="text-4xl md:text-5xl font-serif mb-8">
               Experience the Difference
             </h2>
