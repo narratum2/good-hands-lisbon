@@ -6,14 +6,10 @@ import CategoriesRow from '@/components/CategoriesRow'
 import ExperiencesPreview from '@/components/ExperiencesPreview'
 import GuidesPreview from '@/components/GuidesPreview'
 import JournalPreview from '@/components/JournalPreview'
-import Lookbook from '@/components/Lookbook'
 import FAQExpanded from '@/components/FAQExpanded'
 import TestimonialsEnhanced from '@/components/TestimonialsEnhanced'
-import FullWidthImageBreak from '@/components/FullWidthImageBreak'
 import BookingForm from '@/components/BookingForm'
-import ParallaxSection from '@/components/ParallaxSection'
 import TrustSignals from '@/components/TrustSignals'
-// import CuratedProducts from '@/components/CuratedProducts' // REMOVED: Product store disabled for now
 
 export default function Home() {
   return (
@@ -23,45 +19,25 @@ export default function Home() {
       {/* Trust Signals - Stats & Partner Badges */}
       <TrustSignals />
       
-      <ParallaxSection speed={0.15}>
-        <ValueProposition />
-      </ParallaxSection>
+      {/* Simplified - No parallax for better performance and readability */}
+      <ValueProposition />
       
       <SearchBar />
       
-      <ParallaxSection speed={0.1}>
-        <Services />
-      </ParallaxSection>
-      
-      {/* Visual Break - Full Width Image */}
-      <FullWidthImageBreak
-        image="/brand-images/salon-detail.png"
-        alt="Luxury beauty salon in Lisbon"
-        height="medium"
-        parallax={true}
-      />
+      <Services />
       
       <CategoriesRow />
       
-      <ParallaxSection speed={0.2}>
-        <ExperiencesPreview />
-      </ParallaxSection>
+      <ExperiencesPreview />
+      
+      <TestimonialsEnhanced />
       
       <GuidesPreview />
       
-      <ParallaxSection speed={0.15}>
-        <JournalPreview />
-      </ParallaxSection>
-      
-      {/* REMOVED: Product store section - Code preserved in components/CuratedProducts.tsx */}
-      {/* <CuratedProducts /> */}
-      
-      <Lookbook />
-      
-      {/* Enhanced Testimonials with Sage Background */}
-      <TestimonialsEnhanced />
+      <JournalPreview />
       
       <FAQExpanded />
+      
       <BookingForm />
     </>
   )
