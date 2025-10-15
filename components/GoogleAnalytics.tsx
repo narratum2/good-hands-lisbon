@@ -1,6 +1,31 @@
+'use client'
+
 import Script from 'next/script'
+import { useEffect } from 'react'
+import { usePathname, useSearchParams } from 'next/navigation'
+
+declare global {
+  interface Window {
+    gtag: (command: string, ...args: any[]) => void
+    dataLayer: any[]
+  }
+}
 
 export default function GoogleAnalytics({ GA_MEASUREMENT_ID }: { GA_MEASUREMENT_ID: string }) {
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
+
+  useEffect(() => {
+    if (pathname) {
+      // Track pageview on route change
+      if (typeof window.gtag !== 'undefined') {
+        window.gtag('config', GA_MEASUREMENT_ID, {
+          page_path: pathname + (searchParams?.toString() ? `?${searchParams.toString()}` : ''),
+        })
+      }
+    }
+  }, [pathname, searchParams, GA_MEASUREMENT_ID])
+
   return (
     <>
       <Script
@@ -10,12 +35,13 @@ export default function GoogleAnalytics({ GA_MEASUREMENT_ID }: { GA_MEASUREMENT_
       <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
+          function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
-
           gtag('config', '${GA_MEASUREMENT_ID}', {
-            page_path: window.location.pathname
+            page_path: window.location.pathname,
+            send_page_view: true
           });
+          console.log('GA4 initialized with ID: ${GA_MEASUREMENT_ID}');
         `}
       </Script>
     </>
