@@ -2,25 +2,26 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import { Clock, MessageCircle, Globe, CheckCircle } from 'lucide-react'
 
 const problems = [
   {
-    icon: '⏰',
+    Icon: Clock,
     problem: 'Hours wasted researching',
     solution: 'We have vetted 150+ professionals personally',
   },
   {
-    icon: '🤔',
+    Icon: MessageCircle,
     problem: 'Conflicting reviews everywhere',
     solution: 'Expert matching based on your exact needs',
   },
   {
-    icon: '🗣️',
+    Icon: Globe,
     problem: 'Language barriers',
     solution: 'Book in English, perfect Portuguese communication',
   },
   {
-    icon: '✓',
+    Icon: CheckCircle,
     problem: 'Unreliable bookings',
     solution: 'Confirmed appointments with real follow-up',
   },
@@ -49,30 +50,35 @@ export default function ValueProposition() {
           </p>
         </motion.div>
 
-        {/* Problem/Solution Grid - Simplified */}
+        {/* Problem/Solution Grid - Clean with Icons */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-16">
-          {problems.map((item, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-shell rounded-lg p-8 border border-gray-light/20 hover:border-gold/30 transition-colors"
-            >
-              <div className="text-4xl mb-4">{item.icon}</div>
-              <div className="space-y-3">
-                <div>
-                  <p className="text-sm text-harbor uppercase tracking-wider mb-1">The Problem</p>
-                  <p className="text-lg font-medium text-ink">{item.problem}</p>
+          {problems.map((item, index) => {
+            const IconComponent = item.Icon
+            return (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="bg-shell rounded-lg p-8 border border-gray-light/20 hover:border-gold/30 transition-colors"
+              >
+                <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mb-4">
+                  <IconComponent className="w-6 h-6 text-gold" />
                 </div>
-                <div>
-                  <p className="text-sm text-gold uppercase tracking-wider mb-1">Our Solution</p>
-                  <p className="text-base text-harbor leading-relaxed">{item.solution}</p>
+                <div className="space-y-3">
+                  <div>
+                    <p className="text-sm text-harbor uppercase tracking-wider mb-1">The Problem</p>
+                    <p className="text-lg font-medium text-ink">{item.problem}</p>
+                  </div>
+                  <div>
+                    <p className="text-sm text-gold uppercase tracking-wider mb-1">Our Solution</p>
+                    <p className="text-base text-harbor leading-relaxed">{item.solution}</p>
+                  </div>
                 </div>
-              </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            )
+          })}
         </div>
 
         {/* How It Works CTA - Simplified */}
