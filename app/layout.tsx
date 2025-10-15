@@ -9,8 +9,7 @@ import Grain from '@/components/Grain'
 import AIDiscoveryTracker from '@/components/AIDiscoveryTracker'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
 import { BookingModalProvider } from '@/components/BookingModalProvider'
-import ExitIntentPopup from '@/components/ExitIntentPopup'
-import StickyMobileCTA from '@/components/StickyMobileCTA'
+import SmartAssistant from '@/components/SmartAssistant'
 import { getOrganizationSchema, SEO_TEMPLATES } from '@/lib/seo-config'
 
 // Configure Inter font
@@ -149,8 +148,7 @@ export default function RootLayout({
         <GoogleAnalytics GA_MEASUREMENT_ID="G-ZGDMVGP040" />
         <BookingModalProvider>
           <AIDiscoveryTracker />
-          <ExitIntentPopup />
-          <StickyMobileCTA />
+          <SmartAssistant />
           <Grain />
           <Navbar />
           <main className="min-h-screen">{children}</main>
