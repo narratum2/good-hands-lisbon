@@ -15,15 +15,29 @@ interface Message {
 export default function SmartAssistant() {
   const [isOpen, setIsOpen] = useState(false)
   const [isMinimized, setIsMinimized] = useState(false)
+  const [inputMessage, setInputMessage] = useState('')
+  const [isSending, setIsSending] = useState(false)
+  const [userId] = useState(() => {
+    // Generate unique user ID
+    if (typeof window !== 'undefined') {
+      let id = localStorage.getItem('goodhands_user_id')
+      if (!id) {
+        id = `user_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`
+        localStorage.setItem('goodhands_user_id', id)
+      }
+      return id
+    }
+    return 'anonymous'
+  })
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,
       type: 'assistant',
-      content: "👋 Hi! I'm your Good Hands beauty concierge. Looking for something specific?",
+      content: "👋 Hi! I'm your Good Hands beauty concierge. How can I help you today?",
       actions: [
-        { label: '💇 Book Hair', href: '/book?service=hair' },
-        { label: '💅 Book Nails', href: '/book?service=nails' },
-        { label: '✨ Book Spa', href: '/book?service=skincare' },
+        { label: '📅 Book Now', href: '/book' },
+        { label: '💬 Ask a Question', href: '#' },
+        { label: '📞 Contact Us', href: '/about' },
       ],
     },
   ])
@@ -79,6 +93,80 @@ export default function SmartAssistant() {
   const handleMinimize = () => {
     setIsMinimized(true)
     setTimeout(() => setIsOpen(false), 300)
+  }
+
+  const handleSendMessage = async () => {
+    if (!inputMessage.trim() || isSending) return
+
+    const userMessage: Message = {
+      id: Date.now(),
+      type: 'user',
+      content: inputMessage
+    }
+
+    setMessages(prev => [...prev, userMessage])
+    setInputMessage('')
+    setIsSending(true)
+
+    try {
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: inputMessage,
+          userId,
+          userName: '', // Can be filled from booking data later
+          userEmail: ''
+        })
+      })
+
+      const data = await response.json()
+
+      if (data.reply) {
+        const assistantMessage: Message = {
+          id: Date.now() + 1,
+          type: 'assistant',
+          content: data.reply,
+          actions: getActionsForMessage(inputMessage)
+        }
+        setMessages(prev => [...prev, assistantMessage])
+      }
+    } catch (error) {
+      console.error('Chat error:', error)
+      const errorMessage: Message = {
+        id: Date.now() + 1,
+        type: 'assistant',
+        content: "Sorry, I'm having trouble connecting. Please email us at hello@goodhands.com or use our booking page."
+      }
+      setMessages(prev => [...prev, errorMessage])
+    } finally {
+      setIsSending(false)
+    }
+  }
+
+  const getActionsForMessage = (message: string): Array<{ label: string; href: string }> => {
+    const lowerMessage = message.toLowerCase()
+    
+    if (lowerMessage.includes('book') || lowerMessage.includes('appointment')) {
+      return [{ label: '📅 Book Now', href: '/book' }]
+    }
+    
+    if (lowerMessage.includes('hair')) {
+      return [{ label: '💇 Book Hair Service', href: '/book?service=hair' }]
+    }
+    
+    if (lowerMessage.includes('nail')) {
+      return [{ label: '💅 Book Nail Service', href: '/book?service=nails' }]
+    }
+    
+    if (lowerMessage.includes('spa') || lowerMessage.includes('massage')) {
+      return [{ label: '✨ Book Spa Service', href: '/book?service=wellness' }]
+    }
+    
+    return [
+      { label: '📅 Book Service', href: '/book' },
+      { label: '📞 Contact Us', href: '/about' }
+    ]
   }
 
   return (
@@ -199,38 +287,44 @@ export default function SmartAssistant() {
               ))}
             </div>
 
-            {/* Quick Actions Footer */}
+            {/* Chat Input */}
             <div className="border-t border-gray-light/20 p-4 bg-white">
+              <div className="flex gap-2 mb-3">
+                <input
+                  type="text"
+                  value={inputMessage}
+                  onChange={(e) => setInputMessage(e.target.value)}
+                  onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
+                  placeholder="Type your question..."
+                  className="flex-1 px-4 py-2 border border-gray-light/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent text-sm"
+                  disabled={isSending}
+                />
+                <button
+                  onClick={handleSendMessage}
+                  disabled={!inputMessage.trim() || isSending}
+                  className="px-4 py-2 bg-gold text-white rounded-lg hover:bg-gold-dark transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {isSending ? '...' : '→'}
+                </button>
+              </div>
+              
+              {/* Quick Actions */}
               <div className="grid grid-cols-2 gap-2">
                 <Link
                   href="/book"
                   onClick={() => setHasInteracted(true)}
-                  className="flex items-center justify-center gap-2 px-4 py-3 bg-gold text-white rounded-lg text-sm font-medium hover:bg-gold-dark transition-colors"
+                  className="flex items-center justify-center gap-2 px-3 py-2 bg-gold/10 hover:bg-gold/20 text-gold rounded-lg text-xs font-medium transition-colors"
                 >
-                  <Calendar className="w-4 h-4" />
+                  <Calendar className="w-3 h-3" />
                   Book Now
                 </Link>
-                <button
-                  onClick={() => {
-                    setMessages((prev) => [
-                      ...prev,
-                      {
-                        id: Date.now(),
-                        type: 'assistant',
-                        content: "Great! What service are you interested in? 💁‍♀️",
-                        actions: [
-                          { label: 'Hair Services', href: '/services/hair' },
-                          { label: 'Nail Services', href: '/services/nails' },
-                          { label: 'Spa & Wellness', href: '/services/wellness' },
-                        ],
-                      },
-                    ])
-                  }}
-                  className="flex items-center justify-center gap-2 px-4 py-3 bg-shell text-ink rounded-lg text-sm font-medium hover:bg-gray-light/30 transition-colors"
+                <Link
+                  href="/services"
+                  className="flex items-center justify-center gap-2 px-3 py-2 bg-shell hover:bg-gray-light/30 text-ink rounded-lg text-xs font-medium transition-colors"
                 >
-                  <MessageCircle className="w-4 h-4" />
-                  Ask Me
-                </button>
+                  <MessageCircle className="w-3 h-3" />
+                  Services
+                </Link>
               </div>
             </div>
           </motion.div>
