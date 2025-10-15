@@ -19,7 +19,7 @@ export default function AboutPage() {
         </div>
         
         <div className="relative z-10 text-center container-custom px-4 max-w-5xl">
-          <div className="opacity-0 animate-fade-in" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
+          <div className="animate-fade-in" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
             <h1 className="text-5xl md:text-7xl font-serif mb-8 text-ink leading-tight">
               Beauty Should Be
               <br />
@@ -29,7 +29,7 @@ export default function AboutPage() {
               We built Good Hands because finding exceptional beauty services in Lisbon 
               shouldn&apos;t be a challenge.
             </p>
-            <div className="opacity-0 animate-fade-in" style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}>
+            <div className="animate-fade-in" style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}>
               <Link href="/book" className="btn-gold text-lg px-12 py-4 inline-block">
                 Experience the Difference
               </Link>
