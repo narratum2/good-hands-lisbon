@@ -1,8 +1,7 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Sparkles, Heart, Shield, Users, Instagram, Send } from 'lucide-react'
-import PullQuote from '@/components/PullQuote'
+import { Sparkles, Heart, Shield, Users } from 'lucide-react'
 import SocialMedia from '@/components/SocialMedia'
 
 export const metadata: Metadata = {
@@ -13,423 +12,389 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="pt-20">
-      {/* Hero - Brand Philosophy */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-shell via-porcelain to-white">
-        <div className="container-custom max-w-5xl text-center py-20">
-          <div className="inline-block mb-6">
-            <span className="text-sm uppercase tracking-wider text-gold font-medium">Our Philosophy</span>
-          </div>
-          
-          <h1 className="text-5xl md:text-7xl font-serif mb-8 text-ink leading-tight">
-            Beauty Should Be a<br />
-            <span className="text-gold">Trusted Experience,</span><br />
-            Not a Gamble
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-harbor leading-relaxed max-w-3xl mx-auto mb-12">
-            In a city of endless options, we don't add to the noise—we cut through it. 
-            Good Hands exists because excellence shouldn't require insider knowledge, 
-            and trust shouldn't be earned through disappointment.
-          </p>
-
-          <div className="inline-flex items-center gap-2 text-harbor/60 text-sm">
-            <div className="w-12 h-px bg-gold"></div>
-            <span>Est. 2024, Lisbon</span>
-            <div className="w-12 h-px bg-gold"></div>
+      {/* Apple-style Hero - Full Screen */}
+      <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-shell to-white overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/20 to-white/60" />
+        </div>
+        
+        <div className="relative z-10 text-center container-custom px-4 max-w-5xl">
+          <div className="opacity-0 animate-fade-in" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
+            <h1 className="text-5xl md:text-7xl font-serif mb-8 text-ink leading-tight">
+              Beauty Should Be
+              <br />
+              <span className="text-gold">Trusted</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-harbor max-w-3xl mx-auto mb-12 leading-relaxed">
+              We built Good Hands because finding exceptional beauty services in Lisbon 
+              shouldn&apos;t be a challenge.
+            </p>
+            <div className="opacity-0 animate-fade-in" style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}>
+              <Link href="/book" className="btn-gold text-lg px-12 py-4 inline-block">
+                Experience the Difference
+              </Link>
+            </div>
           </div>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-harbor/30 rounded-full flex justify-center pt-2">
-            <div className="w-1 h-3 bg-gold rounded-full"></div>
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-harbor/60 animate-bounce">
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+        </div>
+      </section>
+
+      {/* Mission Statement - Scroll Triggered */}
+      <section className="section-padding bg-white relative">
+        <div className="container-custom max-w-4xl text-center">
+          <div className="opacity-0 transform translate-y-8" data-scroll-trigger>
+            <h2 className="text-4xl md:text-6xl font-serif mb-8 text-ink">
+              We realized the problem wasn&apos;t a lack of talent
+            </h2>
+            <p className="text-2xl text-harbor leading-relaxed mb-12">
+              It was the impossibility of finding them with confidence.
+            </p>
+            <div className="w-24 h-1 bg-gold mx-auto"></div>
           </div>
         </div>
       </section>
 
-      {/* The Problem We Solve */}
-      <section className="section-padding bg-white">
-        <div className="container-custom max-w-4xl">
-          <div className="text-center mb-16">
-            <span className="text-sm uppercase tracking-wider text-gold font-medium mb-4 block">The Challenge</span>
-            <h2 className="text-4xl md:text-5xl font-serif mb-6">
-              Finding Beauty Services<br />Shouldn't Feel Like This
+      {/* Visual Story - Split Screen */}
+      <section className="section-padding bg-shell">
+        <div className="container-custom max-w-6xl">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="opacity-0 transform translate-x-8" data-scroll-trigger>
+              <h2 className="text-4xl md:text-5xl font-serif mb-6">
+                The Problem
+              </h2>
+              <div className="space-y-6 text-lg text-harbor leading-relaxed">
+                <p>Three hours scrolling through Instagram.</p>
+                <p>Fifteen reviews that contradict each other.</p>
+                <p>A growing sense you&apos;re about to make an expensive mistake.</p>
+                <p className="text-xl text-ink font-medium">Again.</p>
+              </div>
+            </div>
+            <div className="opacity-0 transform translate-x-8" data-scroll-trigger data-delay="0.2s">
+              <div className="relative h-96 rounded-lg overflow-hidden shadow-2xl">
+                <Image
+                  src="/brand-images/hero-salon-interior.png"
+                  alt="Frustrated person researching beauty services"
+                  fill
+                  className="object-cover grayscale"
+                />
+                <div className="absolute inset-0 bg-ink/20" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* The Solution - Full Width */}
+      <section className="section-padding bg-gradient-to-r from-gold/5 via-white to-gold/5">
+        <div className="container-custom max-w-4xl text-center">
+          <div className="opacity-0 transform translate-y-8" data-scroll-trigger>
+            <h2 className="text-5xl md:text-6xl font-serif mb-8 text-ink">
+              There is a better way.
             </h2>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <div className="text-center">
-              <div className="text-6xl mb-4 opacity-40">😰</div>
-              <h3 className="text-xl font-serif mb-2">Overwhelming Choice</h3>
-              <p className="text-harbor text-sm">
-                Hundreds of salons, countless reviews, no way to know who's actually good
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="text-6xl mb-4 opacity-40">⏰</div>
-              <h3 className="text-xl font-serif mb-2">Hours Wasted</h3>
-              <p className="text-harbor text-sm">
-                Scrolling, comparing, reading reviews, still uncertain if it's the right choice
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="text-6xl mb-4 opacity-40">💸</div>
-              <h3 className="text-xl font-serif mb-2">Expensive Mistakes</h3>
-              <p className="text-harbor text-sm">
-                Bad haircuts. Poor service. Wasted money. The cost of trial and error adds up
-              </p>
-            </div>
-          </div>
-
-          {/* Quick Scannable Summary */}
-          <div className="bg-gold/5 border-l-4 border-gold p-6 mb-16">
-            <p className="text-sm uppercase tracking-wider text-gold mb-3 font-medium">TL;DR</p>
-            <p className="text-lg text-ink leading-relaxed">
-              <strong>Finding quality beauty services in Lisbon is overwhelming.</strong> We solve this by personally vetting every professional and matching you with the perfect one—saving you hours of research and costly mistakes.
+            <p className="text-2xl text-harbor mb-12 leading-relaxed">
+              We are that friend who knows everyone.
             </p>
+            
+            <div className="grid md:grid-cols-3 gap-8 mt-16">
+              <div className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.1s">
+                <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Shield className="w-8 h-8 text-gold" />
+                </div>
+                <h3 className="text-xl font-serif mb-3">Vetted</h3>
+                <p className="text-harbor">Every professional tested by us personally</p>
+              </div>
+              
+              <div className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.2s">
+                <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Heart className="w-8 h-8 text-gold" />
+                </div>
+                <h3 className="text-xl font-serif mb-3">Matched</h3>
+                <p className="text-harbor">Perfect pairing based on your exact needs</p>
+              </div>
+              
+              <div className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.3s">
+                <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Sparkles className="w-8 h-8 text-gold" />
+                </div>
+                <h3 className="text-xl font-serif mb-3">Coordinated</h3>
+                <p className="text-harbor">We handle everything. You just show up.</p>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <PullQuote
-            quote="We realized that the beauty industry's biggest problem wasn't a lack of talented professionals—it was the impossibility of finding them with confidence."
-            author="The Good Hands founding principle"
-            backgroundColor="sage"
+      {/* Our Story - Parallax Effect */}
+      <section className="relative min-h-screen flex items-center justify-center bg-ink text-white overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/brand-images/hero-salon-interior.png"
+            alt="Good Hands story"
+            fill
+            className="object-cover opacity-20"
           />
         </div>
+        
+        <div className="relative z-10 container-custom max-w-4xl text-center px-4">
+          <div className="opacity-0 transform translate-y-8" data-scroll-trigger>
+            <h2 className="text-4xl md:text-5xl font-serif mb-12">
+              Our Story
+            </h2>
+            
+            <div className="space-y-12 text-lg leading-relaxed">
+              <div className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.2s">
+                <p className="text-2xl mb-6">
+                  We started Good Hands after one too many beauty disasters.
+                </p>
+                <p className="text-white/80">
+                  Moving to Lisbon, we discovered incredible talent everywhere—but finding it? 
+                  Nearly impossible without local connections.
+                </p>
+              </div>
+              
+              <div className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.4s">
+                <p className="text-white/80">
+                  So we spent two years building relationships. Testing every salon. 
+                  Meeting every talented professional. Learning who excels at what.
+                </p>
+              </div>
+              
+              <div className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.6s">
+                <p className="text-2xl text-gold">
+                  Now we share that knowledge with you.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      {/* Our Solution - Brand Promise */}
-      <section className="section-padding bg-gradient-to-br from-shell to-porcelain">
+      {/* Values - Interactive Cards */}
+      <section className="section-padding bg-white">
         <div className="container-custom max-w-6xl">
-          <div className="text-center mb-16">
-            <span className="text-sm uppercase tracking-wider text-gold font-medium mb-4 block">Our Solution</span>
-            <h2 className="text-4xl md:text-5xl font-serif mb-6">
-              We're Your Trusted Insider
+          <div className="text-center mb-16 opacity-0 transform translate-y-8" data-scroll-trigger>
+            <h2 className="text-4xl md:text-5xl font-serif mb-4">
+              What We Believe
             </h2>
-            <p className="text-xl text-harbor max-w-2xl mx-auto">
-              Think of us as that friend who knows everyone, has tried everything, 
-              and only recommends places they genuinely love
+            <p className="text-xl text-harbor">
+              Our core values guide every recommendation
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <Sparkles className="w-10 h-10 text-gold mb-4" />
-              <h3 className="text-2xl font-serif mb-3">Rigorous Vetting</h3>
-              <p className="text-harbor mb-4">
-                We personally visit, test, and evaluate every professional. Portfolio review, 
-                hygiene standards, client interviews, trial services. Only 1 in 5 make it onto our platform.
-              </p>
-              <ul className="space-y-2 text-sm text-harbor">
-                <li className="flex items-start gap-2">
-                  <span className="text-gold mt-1">•</span>
-                  <span>In-person salon visits and hygiene audits</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-gold mt-1">•</span>
-                  <span>Portfolio and certification verification</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-gold mt-1">•</span>
-                  <span>Trial services by our team</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-gold mt-1">•</span>
-                  <span>Ongoing quality monitoring</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <Heart className="w-10 h-10 text-gold mb-4" />
-              <h3 className="text-2xl font-serif mb-3">Personal Matching</h3>
-              <p className="text-harbor mb-4">
-                Not every great professional is right for every client. We match based on 
-                your style, preferences, budget, and what you actually want—not just what's available.
-              </p>
-              <ul className="space-y-2 text-sm text-harbor">
-                <li className="flex items-start gap-2">
-                  <span className="text-gold mt-1">•</span>
-                  <span>Style preference analysis</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-gold mt-1">•</span>
-                  <span>Specialized needs (curly hair, sensitive skin, etc.)</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-gold mt-1">•</span>
-                  <span>Language and communication style</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-gold mt-1">•</span>
-                  <span>Location and schedule convenience</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <Shield className="w-10 h-10 text-gold mb-4" />
-              <h3 className="text-2xl font-serif mb-3">Quality Guarantee</h3>
-              <p className="text-harbor mb-4">
-                If something isn't right, we make it right. No arguments, no hassles. 
-                Your satisfaction is our reputation, and we protect it fiercely.
-              </p>
-              <ul className="space-y-2 text-sm text-harbor">
-                <li className="flex items-start gap-2">
-                  <span className="text-gold mt-1">•</span>
-                  <span>Post-service follow-up on every booking</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-gold mt-1">•</span>
-                  <span>Immediate resolution for any issues</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-gold mt-1">•</span>
-                  <span>Complimentary redo or refund guarantee</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-gold mt-1">•</span>
-                  <span>24/7 concierge support</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <Users className="w-10 h-10 text-gold mb-4" />
-              <h3 className="text-2xl font-serif mb-3">End-to-End Care</h3>
-              <p className="text-harbor mb-4">
-                From your first inquiry to following up after your appointment, 
-                we handle everything. You just show up and enjoy the experience.
-              </p>
-              <ul className="space-y-2 text-sm text-harbor">
-                <li className="flex items-start gap-2">
-                  <span className="text-gold mt-1">•</span>
-                  <span>Professional matching and booking coordination</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-gold mt-1">•</span>
-                  <span>Appointment reminders and directions</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-gold mt-1">•</span>
-                  <span>Portuguese-English communication bridge</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-gold mt-1">•</span>
-                  <span>Flexible rescheduling and cancellations</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Brand Manifesto */}
-      <section className="section-padding bg-ink text-white">
-        <div className="container-custom max-w-4xl">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif mb-6">What We Believe</h2>
-          </div>
-
-          <div className="space-y-8">
-            <div className="border-l-4 border-gold pl-6 py-2">
-              <p className="text-xl md:text-2xl leading-relaxed">
-                We believe <strong className="text-gold">excellence should be accessible</strong>, 
-                not hidden behind insider networks
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="group p-8 rounded-lg hover:bg-shell transition-all duration-300 opacity-0 transform translate-y-8" data-scroll-trigger>
+              <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-gold/20 transition-colors">
+                <Sparkles className="w-6 h-6 text-gold" />
+              </div>
+              <h3 className="text-2xl font-serif mb-4">Excellence should be accessible</h3>
+              <p className="text-harbor leading-relaxed">
+                Not hidden behind insider networks or language barriers. 
+                Quality beauty services should be available to everyone in Lisbon.
               </p>
             </div>
 
-            <div className="border-l-4 border-gold pl-6 py-2">
-              <p className="text-xl md:text-2xl leading-relaxed">
-                We believe <strong className="text-gold">trust is earned</strong> through 
-                transparency, not marketing promises
+            <div className="group p-8 rounded-lg hover:bg-shell transition-all duration-300 opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.1s">
+              <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-gold/20 transition-colors">
+                <Shield className="w-6 h-6 text-gold" />
+              </div>
+              <h3 className="text-2xl font-serif mb-4">Trust is earned through transparency</h3>
+              <p className="text-harbor leading-relaxed">
+                Not marketing promises. We test every professional personally 
+                and stand behind every recommendation.
               </p>
             </div>
 
-            <div className="border-l-4 border-gold pl-6 py-2">
-              <p className="text-xl md:text-2xl leading-relaxed">
-                We believe <strong className="text-gold">quality costs money</strong>, 
-                but shouldn't cost you disappointment
+            <div className="group p-8 rounded-lg hover:bg-shell transition-all duration-300 opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.2s">
+              <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-gold/20 transition-colors">
+                <Heart className="w-6 h-6 text-gold" />
+              </div>
+              <h3 className="text-2xl font-serif mb-4">Beauty is personal</h3>
+              <p className="text-harbor leading-relaxed">
+                Matching matters more than marketing. We listen to what you need 
+                and connect you with someone who truly gets it.
               </p>
             </div>
 
-            <div className="border-l-4 border-gold pl-6 py-2">
-              <p className="text-xl md:text-2xl leading-relaxed">
-                We believe <strong className="text-gold">beauty is personal</strong>, 
-                and matching matters more than marketing
-              </p>
-            </div>
-
-            <div className="border-l-4 border-gold pl-6 py-2">
-              <p className="text-xl md:text-2xl leading-relaxed">
-                We believe <strong className="text-gold">your time is valuable</strong>, 
-                and research shouldn't be your second job
+            <div className="group p-8 rounded-lg hover:bg-shell transition-all duration-300 opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.3s">
+              <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-gold/20 transition-colors">
+                <Users className="w-6 h-6 text-gold" />
+              </div>
+              <h3 className="text-2xl font-serif mb-4">Your time is valuable</h3>
+              <p className="text-harbor leading-relaxed">
+                Research shouldn&apos;t be your second job. We&apos;ve done the work 
+                so you can focus on what matters to you.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Why Lisbon */}
+      {/* Why Lisbon - Large Text Block */}
+      <section className="section-padding bg-shell">
+        <div className="container-custom max-w-4xl text-center">
+          <div className="opacity-0 transform translate-y-8" data-scroll-trigger>
+            <h2 className="text-4xl md:text-5xl font-serif mb-12">
+              Why Lisbon Deserves This Service
+            </h2>
+            
+            <div className="text-left space-y-8 text-lg text-harbor leading-relaxed">
+              <p className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.1s">
+                Lisbon is experiencing a renaissance. World-class talent is pouring into the city—hair stylists 
+                from Paris, estheticians from Milan, makeup artists from London. The quality is here.
+              </p>
+              
+              <p className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.2s">
+                But if you don&apos;t speak Portuguese, don&apos;t have local connections, or just moved here? 
+                You&apos;d never know where to find them. That&apos;s the problem we solve.
+              </p>
+              
+              <p className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.3s">
+                We&apos;re locals who love this city and want everyone—residents, expats, visitors—to experience 
+                the best of Lisbon&apos;s beauty scene without the frustration of figuring it out alone.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats - Visual Impact */}
       <section className="section-padding bg-white">
         <div className="container-custom max-w-6xl">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <span className="text-sm uppercase tracking-wider text-gold font-medium mb-4 block">Why Lisbon</span>
-              <h2 className="text-4xl md:text-5xl font-serif mb-6">
-                A City That Deserves This Service
-              </h2>
-              <div className="space-y-4 text-lg text-harbor leading-relaxed">
-                <p>
-                  Lisbon is experiencing a renaissance. World-class talent is pouring into the city—hair stylists 
-                  from Paris, estheticians from Milan, makeup artists from London. The quality is here.
-                </p>
-                <p>
-                  But if you don't speak Portuguese, don't have local connections, or just moved here? 
-                  You'd never know where to find them. That's the problem we solve.
-                </p>
-                <p>
-                  We're locals who love this city and want everyone—residents, expats, visitors—to experience 
-                  the best of Lisbon's beauty scene without the frustration of figuring it out alone.
-                </p>
-              </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div className="opacity-0 transform translate-y-8" data-scroll-trigger>
+              <div className="text-5xl md:text-6xl font-serif text-gold mb-2">150+</div>
+              <p className="text-harbor">Vetted Professionals</p>
             </div>
-            <div className="relative">
-              <div className="relative h-[500px] rounded-lg overflow-hidden shadow-2xl">
-                <Image
-                  src="https://images.unsplash.com/photo-1585208798174-6cedd86e1b5a?w=800&q=80"
-                  alt="Lisbon cityscape"
-                  fill
-                  className="object-cover"
-                />
+            
+            <div className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.1s">
+              <div className="text-5xl md:text-6xl font-serif text-gold mb-2">8</div>
+              <p className="text-harbor">Neighborhoods</p>
+            </div>
+            
+            <div className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.2s">
+              <div className="text-5xl md:text-6xl font-serif text-gold mb-2">500+</div>
+              <p className="text-harbor">Happy Clients</p>
+            </div>
+            
+            <div className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.3s">
+              <div className="text-5xl md:text-6xl font-serif text-gold mb-2">4.9</div>
+              <p className="text-harbor">Average Rating</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How We're Different - Large Statement */}
+      <section className="section-padding bg-gradient-to-b from-ink to-ink/90 text-white">
+        <div className="container-custom max-w-4xl text-center">
+          <div className="opacity-0 transform translate-y-8" data-scroll-trigger>
+            <h2 className="text-4xl md:text-5xl font-serif mb-16">
+              How We&apos;re Different
+            </h2>
+            
+            <div className="space-y-16">
+              <div className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.1s">
+                <h3 className="text-3xl font-serif mb-6 text-gold">We&apos;re Not a Marketplace</h3>
+                <p className="text-xl text-white/90 leading-relaxed">
+                  We don&apos;t list everyone who pays us. We&apos;re curators, not a directory. 
+                  Every professional earns their place through quality, not a subscription fee.
+                </p>
               </div>
-              {/* Floating stats */}
-              <div className="absolute -bottom-6 -left-6 bg-gold text-ink p-6 rounded-lg shadow-xl">
-                <div className="text-4xl font-serif font-bold">500+</div>
-                <div className="text-sm">Vetted Professionals</div>
+              
+              <div className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.2s">
+                <h3 className="text-3xl font-serif mb-6 text-gold">We&apos;re Not Passive Tech</h3>
+                <p className="text-xl text-white/90 leading-relaxed">
+                  Yes, we use AI. But a human reviews every booking, makes every match, 
+                  and follows up personally. Technology enables us—it doesn&apos;t replace us.
+                </p>
               </div>
-              <div className="absolute -top-6 -right-6 bg-white p-6 rounded-lg shadow-xl">
-                <div className="text-4xl font-serif font-bold text-gold">8</div>
-                <div className="text-sm text-ink">Neighborhoods</div>
+              
+              <div className="opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.3s">
+                <h3 className="text-3xl font-serif mb-6 text-gold">We Put Clients First</h3>
+                <p className="text-xl text-white/90 leading-relaxed">
+                  Our fee is included upfront. We never recommend based on who pays us more. 
+                  Your perfect match is our only metric.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* How We're Different */}
-      <section className="section-padding bg-shell">
-        <div className="container-custom max-w-4xl">
-          <h2 className="text-4xl md:text-5xl font-serif mb-12 text-center">
-            How We're Different
-          </h2>
-
-          <div className="space-y-8">
-            <div className="bg-white p-8 rounded-lg">
-              <h3 className="text-2xl font-serif mb-3">We're Not a Marketplace</h3>
-              <p className="text-harbor">
-                We don't list everyone who pays us. We're curators, not a directory. 
-                Every professional earns their place through quality, not a subscription fee.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg">
-              <h3 className="text-2xl font-serif mb-3">We're Not Passive Tech</h3>
-              <p className="text-harbor">
-                Yes, we use AI. But a human reviews every booking, makes every match, 
-                and follows up personally. Technology enables us—it doesn't replace us.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg">
-              <h3 className="text-2xl font-serif mb-3">We Don't Scale at the Expense of Quality</h3>
-              <p className="text-harbor">
-                We could add 1,000 salons tomorrow. We won't. Growth is good; 
-                quality dilution isn't. We only expand when we can maintain our standards.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg">
-              <h3 className="text-2xl font-serif mb-3">We Put Clients First, Not Commissions</h3>
-              <p className="text-harbor">
-                Our fee is included upfront. We never recommend based on who pays us more. 
-                Your perfect match is our only metric.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* For Whom */}
+      {/* Who We Serve - Visual Grid */}
       <section className="section-padding bg-white">
-        <div className="container-custom max-w-5xl">
-          <h2 className="text-4xl md:text-5xl font-serif mb-12 text-center">
-            Who Good Hands Is For
-          </h2>
+        <div className="container-custom max-w-6xl">
+          <div className="text-center mb-16 opacity-0 transform translate-y-8" data-scroll-trigger>
+            <h2 className="text-4xl md:text-5xl font-serif mb-4">
+              Who Good Hands Is For
+            </h2>
+          </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="text-5xl mb-4">🌍</div>
-              <h3 className="text-xl font-serif mb-3">Travelers & Visitors</h3>
-              <p className="text-harbor">
-                You're in Lisbon for a week or a month. You want a great haircut, 
-                not a research project. We handle everything before you land.
+            <div className="text-center group opacity-0 transform translate-y-8" data-scroll-trigger>
+              <div className="text-6xl mb-6 group-hover:scale-110 transition-transform">🌍</div>
+              <h3 className="text-2xl font-serif mb-4">Travelers</h3>
+              <p className="text-harbor leading-relaxed">
+                In Lisbon for a week or month? Want a great experience, not a research project. 
+                We handle everything before you land.
               </p>
             </div>
 
-            <div className="text-center">
-              <div className="text-5xl mb-4">🏠</div>
-              <h3 className="text-xl font-serif mb-3">Expats & New Residents</h3>
-              <p className="text-harbor">
-                You just moved here. Finding a trusted hairstylist shouldn't take six months 
-                of trial and error. We're your instant beauty network.
+            <div className="text-center group opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.1s">
+              <div className="text-6xl mb-6 group-hover:scale-110 transition-transform">🏠</div>
+              <h3 className="text-2xl font-serif mb-4">New Residents</h3>
+              <p className="text-harbor leading-relaxed">
+                Just moved here? Finding trusted professionals shouldn&apos;t take six months 
+                of trial and error. We&apos;re your instant beauty network.
               </p>
             </div>
 
-            <div className="text-center">
-              <div className="text-5xl mb-4">⭐</div>
-              <h3 className="text-xl font-serif mb-3">Lisbon Locals</h3>
-              <p className="text-harbor">
-                Even if you live here, you don't know every great salon in every neighborhood. 
-                We do. Let us introduce you to professionals you didn't know existed.
+            <div className="text-center group opacity-0 transform translate-y-8" data-scroll-trigger data-delay="0.2s">
+              <div className="text-6xl mb-6 group-hover:scale-110 transition-transform">⭐</div>
+              <h3 className="text-2xl font-serif mb-4">Lisbon Locals</h3>
+              <p className="text-harbor leading-relaxed">
+                Even locals don&apos;t know every great salon in every neighborhood. 
+                We do. Let us introduce you to professionals you didn&apos;t know existed.
               </p>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div className="mt-12 text-center bg-gradient-to-r from-ink via-harbor to-ink text-white rounded-lg p-10">
-            <p className="text-2xl font-serif italic mb-4">
-              "If you value your time, appreciate quality, and believe beauty should be trusted—
-              Good Hands was built for you."
+      {/* Final CTA - Full Width Impact */}
+      <section className="section-padding bg-gradient-to-r from-gold via-gold-dark to-gold text-white">
+        <div className="container-custom max-w-3xl text-center">
+          <div className="opacity-0 transform translate-y-8" data-scroll-trigger>
+            <h2 className="text-4xl md:text-5xl font-serif mb-8">
+              Experience the Difference
+            </h2>
+            <p className="text-xl text-white/90 mb-12 leading-relaxed">
+              Join hundreds of clients who&apos;ve stopped gambling with their beauty 
+              and started trusting Good Hands
+            </p>
+            <Link href="/book" className="inline-block bg-white text-gold px-12 py-4 text-lg font-semibold rounded hover:bg-white/90 transition-colors">
+              Book Your First Experience
+            </Link>
+            <p className="text-sm text-white/70 mt-6">
+              First-time clients: Share your preferences, we&apos;ll match you perfectly
             </p>
           </div>
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="section-padding bg-gradient-to-br from-gold/10 via-shell to-porcelain">
-        <div className="container-custom max-w-3xl text-center">
-          <h2 className="text-4xl md:text-5xl font-serif mb-6">
-            Experience the Difference
-          </h2>
-          <p className="text-xl text-harbor mb-8 leading-relaxed">
-            Join hundreds of clients who've stopped gambling with their beauty and started trusting Good Hands
-          </p>
-          <Link href="/book" className="btn-gold text-lg px-10 py-4 inline-block">
-            Book Your First Experience
-          </Link>
-          <p className="text-sm text-harbor/60 mt-6">
-            First-time clients: Share your preferences, we'll match you perfectly
-          </p>
-        </div>
-      </section>
-
-
-      {/* Social Media */}
+      {/* Social Media - Single Section */}
       <section className="section-padding bg-shell">
         <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-3xl mx-auto text-center opacity-0 transform translate-y-8" data-scroll-trigger>
             <h2 className="text-3xl md:text-4xl font-serif mb-4">Connect With Us</h2>
             <p className="text-harbor text-lg mb-8">
-              Follow our journey and discover beauty insights from Lisbon and around the world
+              Follow our journey and discover beauty insights from Lisbon
             </p>
             <SocialMedia />
           </div>
@@ -458,6 +423,36 @@ export default function AboutPage() {
               },
             ],
           }),
+        }}
+      />
+
+      {/* Scroll Animation Script */}
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            document.addEventListener('DOMContentLoaded', function() {
+              const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+              };
+
+              const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                  if (entry.isIntersecting) {
+                    const delay = entry.target.getAttribute('data-delay') || '0s';
+                    entry.target.style.transitionDelay = delay;
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0) translateX(0)';
+                  }
+                });
+              }, observerOptions);
+
+              document.querySelectorAll('[data-scroll-trigger]').forEach(function(el) {
+                el.style.transition = 'all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1)';
+                observer.observe(el);
+              });
+            });
+          `,
         }}
       />
     </div>
