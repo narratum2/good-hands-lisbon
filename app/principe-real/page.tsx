@@ -22,7 +22,7 @@ export default function PrincipeRealPage() {
             className="object-cover" 
             priority 
           />
-          <div className="absolute inset-0 bg-ink/50" />
+          <div className="absolute inset-0 bg-ink/80" />
         </div>
         <div className="relative z-10 text-center text-white container-custom">
           <h1 className="text-5xl md:text-7xl font-serif mb-4">Príncipe Real</h1>
