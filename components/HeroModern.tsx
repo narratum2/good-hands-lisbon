@@ -16,8 +16,8 @@ export default function HeroModern() {
           priority
           sizes="100vw"
         />
-        {/* Stronger, more consistent overlay for better text readability */}
-        <div className="absolute inset-0 bg-ink/60" />
+        {/* 80% overlay for optimal text readability (WCAG AAA) */}
+        <div className="absolute inset-0 bg-ink/80" />
       </div>
 
       {/* Content */}

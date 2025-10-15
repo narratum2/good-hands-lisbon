@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
-import { useBookingModal } from './BookingModalProvider'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const navLinks = [
@@ -17,7 +16,6 @@ const navLinks = [
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
-  const { openBooking } = useBookingModal()
   const mobileMenuRef = useRef<HTMLDivElement>(null)
   const menuButtonRef = useRef<HTMLButtonElement>(null)
 
@@ -92,9 +90,9 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <button onClick={openBooking} className="btn-primary">
+            <Link href="/book" className="btn-primary">
               Book Now
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button - WCAG 2.1 AA Compliant (44x44px) */}
@@ -150,15 +148,13 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <button
-                onClick={() => {
-                  setIsOpen(false)
-                  openBooking()
-                }}
+              <Link
+                href="/book"
+                onClick={() => setIsOpen(false)}
                 className="block btn-primary text-center mt-6 w-full"
               >
                 Book Now
-              </button>
+              </Link>
             </div>
           </motion.div>
         )}
