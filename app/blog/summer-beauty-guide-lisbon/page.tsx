@@ -420,7 +420,7 @@ export default function SummerBeautyGuideBlog() {
             <li><strong>Book appointments early</strong> — Summer is busy season for salons</li>
             <li><strong>Listen to your skin</strong> — Adjust routine based on what's working</li>
             <li><strong>Take breaks from makeup</strong> — Let skin breathe on weekend mornings</li>
-            <li><strong>Wear hats & sunglasses</strong> — Prevention > correction</li>
+            <li><strong>Wear hats &amp; sunglasses</strong> — Prevention &gt; correction</li>
           </ol>
 
           <h2>Good Hands Summer Beauty Packages</h2>

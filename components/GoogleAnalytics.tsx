@@ -4,10 +4,17 @@ import Script from 'next/script'
 import { useEffect } from 'react'
 import { usePathname, useSearchParams } from 'next/navigation'
 
+interface EventParams {
+  [key: string]: string | number | boolean | undefined
+}
+
 declare global {
   interface Window {
-    gtag: (command: string, ...args: any[]) => void
-    dataLayer: any[]
+    gtag: (
+      command: string,
+      ...args: (string | Date | EventParams)[]
+    ) => void
+    dataLayer: unknown[]
   }
 }
 

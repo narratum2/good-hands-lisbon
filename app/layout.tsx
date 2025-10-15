@@ -131,6 +131,20 @@ export default function RootLayout({
       </head>
       <body>
         {/* Google Analytics - G-ZGDMVGP040 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-ZGDMVGP040"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-ZGDMVGP040', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
         <GoogleAnalytics GA_MEASUREMENT_ID="G-ZGDMVGP040" />
         <BookingModalProvider>
           <AIDiscoveryTracker />
