@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Heart, Sparkles, Clock, MapPin } from 'lucide-react'
+import RelatedServices from '@/components/RelatedServices'
 
 export const metadata: Metadata = {
   title: 'Best Massage & Spa Services in Lisbon — Swedish, Deep Tissue & More | Good Hands',
@@ -353,6 +354,9 @@ export default function WellnessServicesPage() {
           </div>
         </div>
       </section>
+
+      {/* Related Services */}
+      <RelatedServices currentService="wellness" />
 
       {/* CTA */}
       <section className="section-padding bg-ink text-white text-center">

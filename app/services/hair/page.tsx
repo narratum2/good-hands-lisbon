@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Scissors, Sparkles, Clock, MapPin } from 'lucide-react'
+import RelatedServices from '@/components/RelatedServices'
 
 export const metadata: Metadata = {
   title: 'Best Hair Salons in Lisbon — Cuts, Color, Balayage | Good Hands',
@@ -306,6 +307,9 @@ export default function HairServicesPage() {
           </div>
         </div>
       </section>
+
+      {/* Related Services */}
+      <RelatedServices currentService="hair" />
 
       {/* CTA */}
       <section className="section-padding bg-ink text-white text-center">
