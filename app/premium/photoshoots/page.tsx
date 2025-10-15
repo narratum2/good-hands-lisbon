@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import BookingForm from '@/components/BookingForm'
 
 export const metadata: Metadata = {
   title: 'Coastal Photoshoot Beauty Services — Good Hands',
@@ -399,7 +398,14 @@ export default function PhotoshootsPage() {
                 Camera-ready hair and makeup. We come to your location. You look incredible.
               </p>
             </div>
-            <BookingForm />
+            <div className="text-center">
+              <Link 
+                href="/book?service=wedding" 
+                className="btn-gold text-lg px-12 py-4 inline-block"
+              >
+                Book Photoshoot Beauty Service
+              </Link>
+            </div>
           </div>
         </div>
       </section>
