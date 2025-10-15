@@ -90,7 +90,7 @@ const articles = [
   {
     title: 'The New Wave of Portuguese Nail Art',
     excerpt: 'Meet the artists bringing contemporary Portuguese design to nails.',
-    image: '/brand-images/service-nail-art.png',
+    image: '/brand-images/service-nails-professional.png',
     date: 'September 15, 2025',
     category: 'Nail Art',
     author: 'Catarina Silva',

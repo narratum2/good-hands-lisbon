@@ -385,7 +385,7 @@ These designs last 2-3 weeks with proper care:
 ## Why It Matters
 
 This isn't just nail art. It's a new design movement emerging from Lisbon—one that respects tradition while pushing forward. It's thoughtful, it's beautiful, and it's distinctly Portuguese.`,
-    image: '/brand-images/service-nail-art.png',
+    image: '/brand-images/service-nails-professional.png',
     date: 'September 15, 2025',
     category: 'Nail Art',
     author: 'Catarina Silva',

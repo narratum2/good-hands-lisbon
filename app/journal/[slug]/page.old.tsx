@@ -486,7 +486,7 @@ const articles: { [key: string]: any } = {
         <p>We work with Lisbon's best nail artists who specialize in Portuguese-inspired designs. <a href="/book">Reserve your appointment →</a></p>
       </div>
     `,
-    image: '/brand-images/service-nail-art.png',
+    image: '/brand-images/service-nails-professional.png',
     date: 'September 15, 2025',
     category: 'Nail Art',
     author: 'Catarina Silva',
