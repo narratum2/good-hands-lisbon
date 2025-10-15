@@ -1,9 +1,10 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
-import { ArrowLeft, ArrowRight, CheckCircle, Calendar, MapPin, User, Mail, Phone, MessageSquare } from 'lucide-react'
+import { useSearchParams } from 'next/navigation'
+import { ArrowLeft, ArrowRight, CheckCircle, Calendar, MapPin, User, Mail, Phone, MessageSquare, Loader2, AlertCircle } from 'lucide-react'
 
 interface BookingData {
   service: string
@@ -16,24 +17,26 @@ interface BookingData {
   message: string
 }
 
+const STORAGE_KEY = 'goodhands_booking_draft'
+
 const services = [
-  { id: 'hair', name: 'Hair Styling', icon: '💇', description: 'Color, cuts, styling' },
-  { id: 'nails', name: 'Nails', icon: '💅', description: 'Manicures, pedicures, art' },
-  { id: 'skincare', name: 'Skincare', icon: '✨', description: 'Facials, treatments' },
-  { id: 'makeup', name: 'Makeup', icon: '💄', description: 'Events, weddings, lessons' },
-  { id: 'wellness', name: 'Wellness', icon: '🧘', description: 'Massage, spa, relaxation' },
-  { id: 'wedding', name: 'Wedding Package', icon: '👰', description: 'Complete bridal experience' },
+  { id: 'hair', name: 'Hair Styling', description: 'Color, cuts, styling', duration: '90 min', price: 'From €105' },
+  { id: 'nails', name: 'Nails', description: 'Manicures, pedicures, art', duration: '60 min', price: 'From €60' },
+  { id: 'skincare', name: 'Skincare', description: 'Facials, treatments', duration: '75 min', price: 'From €125' },
+  { id: 'makeup', name: 'Makeup', description: 'Events, weddings, lessons', duration: '45 min', price: 'From €92' },
+  { id: 'wellness', name: 'Wellness', description: 'Massage, spa, relaxation', duration: '60 min', price: 'From €120' },
+  { id: 'wedding', name: 'Wedding Package', description: 'Complete bridal experience', duration: 'Custom', price: 'From €800' },
 ]
 
 const neighborhoods = [
-  { id: 'chiado', name: 'Chiado', description: 'Historic elegance' },
-  { id: 'principe-real', name: 'Príncipe Real', description: 'Bohemian charm' },
-  { id: 'baixa', name: 'Baixa', description: 'Grand boulevards' },
-  { id: 'avenida', name: 'Avenida', description: 'Upscale district' },
-  { id: 'alfama', name: 'Alfama', description: 'Ancient streets' },
-  { id: 'belem', name: 'Belém', description: 'Riverside beauty' },
-  { id: 'cascais', name: 'Cascais', description: 'Coastal elegance' },
-  { id: 'sintra', name: 'Sintra', description: 'Enchanted hills' },
+  { id: 'chiado', name: 'Chiado', description: 'Historic elegance', recommended: ['hair', 'makeup'] },
+  { id: 'principe-real', name: 'Príncipe Real', description: 'Bohemian charm', recommended: ['wellness', 'skincare'] },
+  { id: 'baixa', name: 'Baixa', description: 'Grand boulevards', recommended: ['hair', 'nails'] },
+  { id: 'avenida', name: 'Avenida', description: 'Upscale district', recommended: ['skincare', 'makeup'] },
+  { id: 'alfama', name: 'Alfama', description: 'Ancient streets', recommended: ['wellness'] },
+  { id: 'belem', name: 'Belém', description: 'Riverside beauty', recommended: ['wellness', 'spa'] },
+  { id: 'cascais', name: 'Cascais', description: 'Coastal elegance', recommended: ['wellness', 'wedding'] },
+  { id: 'sintra', name: 'Sintra', description: 'Enchanted hills', recommended: ['wellness', 'wedding'] },
 ]
 
 const timeSlots = [
@@ -41,9 +44,13 @@ const timeSlots = [
 ]
 
 export default function BookingPage() {
+  const searchParams = useSearchParams()
   const [step, setStep] = useState(1)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitError, setSubmitError] = useState<string | null>(null)
+  const [bookingRef, setBookingRef] = useState<string>('')
   const [bookingData, setBookingData] = useState<BookingData>({
-    service: '',
+    service: searchParams?.get('service') || '',
     date: '',
     time: '',
     neighborhood: '',
@@ -52,11 +59,87 @@ export default function BookingPage() {
     phone: '',
     message: '',
   })
+  const [validationErrors, setValidationErrors] = useState<Partial<Record<keyof BookingData, string>>>({})
 
   const totalSteps = 4
 
+  // Load saved draft from localStorage on mount
+  useEffect(() => {
+    const saved = localStorage.getItem(STORAGE_KEY)
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved)
+        // Only restore if less than 24 hours old
+        if (parsed.timestamp && Date.now() - parsed.timestamp < 86400000) {
+          setBookingData(parsed.data)
+        } else {
+          localStorage.removeItem(STORAGE_KEY)
+        }
+      } catch (e) {
+        console.error('Failed to restore booking draft', e)
+      }
+    }
+  }, [])
+
+  // Auto-save to localStorage on data change
+  useEffect(() => {
+    if (bookingData.service || bookingData.name) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({
+        data: bookingData,
+        timestamp: Date.now(),
+      }))
+    }
+  }, [bookingData])
+
+  // Track analytics
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'booking_flow_started', {
+        source: searchParams?.get('utm_source') || 'direct',
+        service_preselected: bookingData.service || 'none',
+      })
+    }
+  }, [])
+
+  const validateEmail = (email: string): boolean => {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    return re.test(email)
+  }
+
+  const validatePhone = (phone: string): boolean => {
+    // Basic validation - accepts +351 format
+    return phone.length >= 9
+  }
+
+  const validateStep4 = (): boolean => {
+    const errors: Partial<Record<keyof BookingData, string>> = {}
+    
+    if (!bookingData.name.trim()) {
+      errors.name = 'Name is required'
+    }
+    if (!validateEmail(bookingData.email)) {
+      errors.email = 'Please enter a valid email address'
+    }
+    if (!validatePhone(bookingData.phone)) {
+      errors.phone = 'Please enter a valid phone number'
+    }
+    
+    setValidationErrors(errors)
+    return Object.keys(errors).length === 0
+  }
+
   const nextStep = () => {
-    if (step < totalSteps) setStep(step + 1)
+    if (step < totalSteps) {
+      setStep(step + 1)
+      
+      // Track step completion
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('event', `booking_step_${step}_completed`, {
+          service: bookingData.service,
+          timestamp: new Date().toISOString(),
+        })
+      }
+    }
   }
 
   const prevStep = () => {
@@ -64,10 +147,77 @@ export default function BookingPage() {
   }
 
   const handleSubmit = async () => {
-    // Submit booking
-    console.log('Booking submitted:', bookingData)
-    setStep(5) // Success screen
+    // Validate before submitting
+    if (!validateStep4()) {
+      return
+    }
+
+    setIsSubmitting(true)
+    setSubmitError(null)
+
+    // Track submission attempt
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'booking_submit_attempted', {
+        service: bookingData.service,
+        date: bookingData.date,
+        location: bookingData.neighborhood,
+      })
+    }
+
+    try {
+      // Capture UTM parameters
+      const utmParams = {
+        utm_source: searchParams?.get('utm_source') || '',
+        utm_medium: searchParams?.get('utm_medium') || '',
+        utm_campaign: searchParams?.get('utm_campaign') || '',
+      }
+
+      const response = await fetch('/api/bookings', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          ...bookingData,
+          ...utmParams,
+        }),
+      })
+
+      if (response.ok) {
+        const data = await response.json()
+        const ref = data.bookingId || `GH-${Date.now().toString().slice(-6)}`
+        setBookingRef(ref)
+        
+        // Clear saved draft
+        localStorage.removeItem(STORAGE_KEY)
+        
+        // Track success
+        if (typeof window !== 'undefined' && window.gtag) {
+          window.gtag('event', 'booking_submit_success', {
+            booking_id: ref,
+            service: bookingData.service,
+            total_time: Date.now(), // Could track from start
+          })
+        }
+        
+        setStep(5) // Success screen
+      } else {
+        throw new Error('Booking submission failed')
+      }
+    } catch (error) {
+      console.error('Booking error:', error)
+      setSubmitError('We couldn\'t process your booking right now. Please try again or contact us directly.')
+      
+      // Track error
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('event', 'booking_submit_error', {
+          error_message: error instanceof Error ? error.message : 'Unknown error',
+        })
+      }
+    } finally {
+      setIsSubmitting(false)
+    }
   }
+
+  const selectedService = services.find(s => s.id === bookingData.service)
 
   return (
     <div className="min-h-screen bg-white pt-20">
@@ -82,7 +232,7 @@ export default function BookingPage() {
             Book Your Experience
           </h1>
           <p className="text-harbor text-lg">
-            Let's find your perfect match in just a few steps
+            Let&apos;s find your perfect match in just 4 quick steps
           </p>
         </div>
       </div>
@@ -136,7 +286,7 @@ export default function BookingPage() {
               >
                 <div className="text-center mb-12">
                   <h2 className="text-3xl font-serif mb-4">What do you need?</h2>
-                  <p className="text-harbor text-lg">Select the service you're looking for</p>
+                  <p className="text-harbor text-lg">Select the service you&apos;re looking for</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -145,17 +295,25 @@ export default function BookingPage() {
                       key={service.id}
                       onClick={() => {
                         setBookingData({ ...bookingData, service: service.id })
-                        nextStep()
+                        setTimeout(() => nextStep(), 200)
                       }}
-                      className={`p-6 rounded-lg border-2 transition-all text-left hover:border-gold hover:shadow-md ${
+                      className={`p-6 rounded-lg border-2 transition-all text-left hover:border-gold hover:shadow-md group ${
                         bookingData.service === service.id
-                          ? 'border-gold bg-gold/5'
+                          ? 'border-gold bg-gold/5 scale-105'
                           : 'border-gray-light/30 bg-white'
                       }`}
                     >
-                      <div className="text-4xl mb-3">{service.icon}</div>
-                      <h3 className="text-xl font-serif mb-2">{service.name}</h3>
-                      <p className="text-sm text-harbor">{service.description}</p>
+                      <div className="flex items-center justify-between mb-3">
+                        <h3 className="text-xl font-serif">{service.name}</h3>
+                        {bookingData.service === service.id && (
+                          <CheckCircle className="w-6 h-6 text-gold" />
+                        )}
+                      </div>
+                      <p className="text-sm text-harbor mb-3">{service.description}</p>
+                      <div className="flex items-center justify-between text-xs text-harbor">
+                        <span>{service.duration}</span>
+                        <span className="text-gold font-medium">{service.price}</span>
+                      </div>
                     </button>
                   ))}
                 </div>
@@ -174,6 +332,11 @@ export default function BookingPage() {
                 <div className="text-center mb-12">
                   <h2 className="text-3xl font-serif mb-4">When works for you?</h2>
                   <p className="text-harbor text-lg">Choose your preferred date and time</p>
+                  {selectedService && (
+                    <p className="text-sm text-gold mt-2">
+                      {selectedService.name} • {selectedService.duration}
+                    </p>
+                  )}
                 </div>
 
                 <div className="bg-shell rounded-lg p-8 mb-8">
@@ -185,7 +348,7 @@ export default function BookingPage() {
                     type="date"
                     value={bookingData.date}
                     onChange={(e) => setBookingData({ ...bookingData, date: e.target.value })}
-                    min={new Date().toISOString().split('T')[0]}
+                    min={new Date(Date.now() + 86400000).toISOString().split('T')[0]} // Tomorrow
                     className="input-field mb-6"
                   />
 
@@ -200,27 +363,30 @@ export default function BookingPage() {
                         className={`p-3 rounded border-2 transition-all ${
                           bookingData.time === time
                             ? 'border-gold bg-gold text-white'
-                            : 'border-gray-light/30 hover:border-gold/50'
+                            : 'border-gray-light/30 hover:border-gold/50 bg-white'
                         }`}
                       >
                         {time}
                       </button>
                     ))}
                   </div>
+                  <p className="text-xs text-harbor mt-4">
+                    ⏰ Subject to availability. We&apos;ll confirm your exact time within 2 hours.
+                  </p>
                 </div>
 
                 <div className="flex gap-4">
-                  <button onClick={prevStep} className="btn-secondary flex-1">
-                    <ArrowLeft className="w-4 h-4 mr-2" />
+                  <button onClick={prevStep} className="btn-secondary flex items-center justify-center gap-2 flex-1">
+                    <ArrowLeft className="w-4 h-4" />
                     Back
                   </button>
                   <button
                     onClick={nextStep}
                     disabled={!bookingData.date || !bookingData.time}
-                    className="btn-gold flex-1 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="btn-gold flex items-center justify-center gap-2 flex-1 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     Continue
-                    <ArrowRight className="w-4 h-4 ml-2" />
+                    <ArrowRight className="w-4 h-4" />
                   </button>
                 </div>
               </motion.div>
@@ -241,32 +407,49 @@ export default function BookingPage() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-                  {neighborhoods.map((neighborhood) => (
-                    <button
-                      key={neighborhood.id}
-                      onClick={() => {
-                        setBookingData({ ...bookingData, neighborhood: neighborhood.id })
-                        nextStep()
-                      }}
-                      className={`p-6 rounded-lg border-2 transition-all text-left hover:border-gold hover:shadow-md ${
-                        bookingData.neighborhood === neighborhood.id
-                          ? 'border-gold bg-gold/5'
-                          : 'border-gray-light/30 bg-white'
-                      }`}
-                    >
-                      <div className="flex items-center gap-3 mb-2">
-                        <MapPin className="w-5 h-5 text-gold" />
-                        <h3 className="text-lg font-serif">{neighborhood.name}</h3>
-                      </div>
-                      <p className="text-sm text-harbor">{neighborhood.description}</p>
-                    </button>
-                  ))}
+                  {neighborhoods.map((neighborhood) => {
+                    const isRecommended = neighborhood.recommended.includes(bookingData.service)
+                    return (
+                      <button
+                        key={neighborhood.id}
+                        onClick={() => {
+                          setBookingData({ ...bookingData, neighborhood: neighborhood.id })
+                        }}
+                        className={`p-6 rounded-lg border-2 transition-all text-left hover:border-gold hover:shadow-md ${
+                          bookingData.neighborhood === neighborhood.id
+                            ? 'border-gold bg-gold/5'
+                            : 'border-gray-light/30 bg-white'
+                        }`}
+                      >
+                        <div className="flex items-center justify-between mb-2">
+                          <div className="flex items-center gap-3">
+                            <MapPin className="w-5 h-5 text-gold" />
+                            <h3 className="text-lg font-serif">{neighborhood.name}</h3>
+                          </div>
+                          {isRecommended && (
+                            <span className="text-xs bg-gold/20 text-gold px-2 py-1 rounded">Recommended</span>
+                          )}
+                        </div>
+                        <p className="text-sm text-harbor">{neighborhood.description}</p>
+                      </button>
+                    )
+                  })}
                 </div>
 
-                <button onClick={prevStep} className="btn-secondary w-full">
-                  <ArrowLeft className="w-4 h-4 mr-2" />
-                  Back
-                </button>
+                <div className="flex gap-4">
+                  <button onClick={prevStep} className="btn-secondary flex items-center justify-center gap-2 flex-1">
+                    <ArrowLeft className="w-4 h-4" />
+                    Back
+                  </button>
+                  <button
+                    onClick={nextStep}
+                    disabled={!bookingData.neighborhood}
+                    className="btn-gold flex items-center justify-center gap-2 flex-1 disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    Continue
+                    <ArrowRight className="w-4 h-4" />
+                  </button>
+                </div>
               </motion.div>
             )}
 
@@ -284,6 +467,17 @@ export default function BookingPage() {
                   <p className="text-harbor text-lg">Just need a few details to confirm your booking</p>
                 </div>
 
+                {/* Error Message */}
+                {submitError && (
+                  <div className="bg-red-50 border-2 border-red-200 rounded-lg p-4 mb-6 flex items-start gap-3">
+                    <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <p className="text-red-900 font-medium mb-1">Booking Error</p>
+                      <p className="text-red-700 text-sm">{submitError}</p>
+                    </div>
+                  </div>
+                )}
+
                 <div className="bg-shell rounded-lg p-8 mb-8 space-y-6">
                   <div>
                     <label className="block text-sm font-medium mb-2 flex items-center gap-2">
@@ -293,24 +487,42 @@ export default function BookingPage() {
                     <input
                       type="text"
                       value={bookingData.name}
-                      onChange={(e) => setBookingData({ ...bookingData, name: e.target.value })}
-                      className="input-field"
+                      onChange={(e) => {
+                        setBookingData({ ...bookingData, name: e.target.value })
+                        setValidationErrors({ ...validationErrors, name: undefined })
+                      }}
+                      className={`input-field ${validationErrors.name ? 'border-red-500' : ''}`}
                       placeholder="John Doe"
                     />
+                    {validationErrors.name && (
+                      <p className="text-red-600 text-sm mt-1">{validationErrors.name}</p>
+                    )}
                   </div>
 
                   <div>
                     <label className="block text-sm font-medium mb-2 flex items-center gap-2">
                       <Mail className="w-4 h-4 text-gold" />
-                      Email *
+                      Email Address *
                     </label>
                     <input
                       type="email"
                       value={bookingData.email}
-                      onChange={(e) => setBookingData({ ...bookingData, email: e.target.value })}
-                      className="input-field"
+                      onChange={(e) => {
+                        setBookingData({ ...bookingData, email: e.target.value })
+                        setValidationErrors({ ...validationErrors, email: undefined })
+                      }}
+                      onBlur={() => {
+                        if (bookingData.email && !validateEmail(bookingData.email)) {
+                          setValidationErrors({ ...validationErrors, email: 'Please enter a valid email address' })
+                        }
+                      }}
+                      className={`input-field ${validationErrors.email ? 'border-red-500' : ''}`}
                       placeholder="john@example.com"
                     />
+                    {validationErrors.email && (
+                      <p className="text-red-600 text-sm mt-1">{validationErrors.email}</p>
+                    )}
+                    <p className="text-xs text-harbor/70 mt-1">We&apos;ll only contact you about this booking</p>
                   </div>
 
                   <div>
@@ -321,10 +533,17 @@ export default function BookingPage() {
                     <input
                       type="tel"
                       value={bookingData.phone}
-                      onChange={(e) => setBookingData({ ...bookingData, phone: e.target.value })}
-                      className="input-field"
+                      onChange={(e) => {
+                        setBookingData({ ...bookingData, phone: e.target.value })
+                        setValidationErrors({ ...validationErrors, phone: undefined })
+                      }}
+                      className={`input-field ${validationErrors.phone ? 'border-red-500' : ''}`}
                       placeholder="+351 912 345 678"
                     />
+                    {validationErrors.phone && (
+                      <p className="text-red-600 text-sm mt-1">{validationErrors.phone}</p>
+                    )}
+                    <p className="text-xs text-harbor/70 mt-1">Format: +351 XXX XXX XXX</p>
                   </div>
 
                   <div>
@@ -340,22 +559,52 @@ export default function BookingPage() {
                       placeholder="Any specific requests or preferences?"
                     />
                   </div>
+
+                  {/* Privacy Reassurance */}
+                  <div className="flex items-start gap-2 text-xs text-harbor/70 bg-white p-3 rounded">
+                    <CheckCircle className="w-4 h-4 text-gold flex-shrink-0 mt-0.5" />
+                    <p>Your data is secure. We use it only to coordinate your booking and will never share it with third parties.</p>
+                  </div>
                 </div>
 
                 <div className="flex gap-4">
-                  <button onClick={prevStep} className="btn-secondary flex-1">
-                    <ArrowLeft className="w-4 h-4 mr-2" />
+                  <button 
+                    onClick={prevStep} 
+                    className="btn-secondary flex items-center justify-center gap-2 flex-1"
+                    disabled={isSubmitting}
+                  >
+                    <ArrowLeft className="w-4 h-4" />
                     Back
                   </button>
                   <button
                     onClick={handleSubmit}
-                    disabled={!bookingData.name || !bookingData.email || !bookingData.phone}
-                    className="btn-gold flex-1 disabled:opacity-50 disabled:cursor-not-allowed"
+                    disabled={isSubmitting || !bookingData.name || !bookingData.email || !bookingData.phone}
+                    className="btn-gold flex items-center justify-center gap-2 flex-1 disabled:opacity-50 disabled:cursor-not-allowed relative"
                   >
-                    Confirm Booking
-                    <CheckCircle className="w-4 h-4 ml-2" />
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 className="w-4 h-4 animate-spin" />
+                        Finding your match...
+                      </>
+                    ) : (
+                      <>
+                        Confirm Booking
+                        <CheckCircle className="w-4 h-4" />
+                      </>
+                    )}
                   </button>
                 </div>
+
+                {submitError && (
+                  <div className="mt-4 text-center">
+                    <button
+                      onClick={() => setSubmitError(null)}
+                      className="text-gold hover:underline text-sm"
+                    >
+                      Dismiss error and try again
+                    </button>
+                  </div>
+                )}
               </motion.div>
             )}
 
@@ -368,34 +617,117 @@ export default function BookingPage() {
                 transition={{ duration: 0.5 }}
                 className="text-center py-12"
               >
-                <div className="w-20 h-20 bg-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                <motion.div
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ delay: 0.2, type: 'spring', damping: 15 }}
+                  className="w-20 h-20 bg-gold rounded-full flex items-center justify-center mx-auto mb-6"
+                >
                   <CheckCircle className="w-12 h-12 text-white" />
+                </motion.div>
+
+                <h2 className="text-4xl font-serif mb-2">Booking Confirmed!</h2>
+                <p className="text-gold font-medium text-lg mb-8">Booking #{bookingRef}</p>
+
+                {/* Booking Summary */}
+                <div className="bg-shell rounded-lg p-8 max-w-md mx-auto mb-8 text-left">
+                  <h3 className="font-serif text-xl mb-4 text-center">Your Booking Details</h3>
+                  <div className="space-y-3 text-sm">
+                    <div className="flex justify-between">
+                      <span className="text-harbor">Service:</span>
+                      <span className="font-medium">{selectedService?.name}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-harbor">Date:</span>
+                      <span className="font-medium">{new Date(bookingData.date).toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-harbor">Time:</span>
+                      <span className="font-medium">{bookingData.time}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-harbor">Location:</span>
+                      <span className="font-medium capitalize">{bookingData.neighborhood.replace('-', ' ')}</span>
+                    </div>
+                  </div>
                 </div>
-                <h2 className="text-4xl font-serif mb-4">Booking Confirmed!</h2>
-                <p className="text-xl text-harbor mb-8 max-w-2xl mx-auto">
-                  We've received your request and will match you with the perfect professional. 
-                  Expect a confirmation email within 2 hours.
-                </p>
-                <div className="bg-shell rounded-lg p-8 max-w-md mx-auto mb-8">
-                  <h3 className="font-serif text-xl mb-4">What's Next?</h3>
-                  <ul className="text-left space-y-3 text-harbor">
+
+                {/* What's Next */}
+                <div className="bg-white rounded-lg p-6 max-w-md mx-auto mb-8 border border-gray-light/20">
+                  <h3 className="font-serif text-lg mb-4">What&apos;s Next?</h3>
+                  <ul className="text-left space-y-3 text-sm text-harbor">
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
-                      <span>We'll review your preferences and find your perfect match</span>
+                      <span>Confirmation email sent to {bookingData.email}</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
-                      <span>You'll receive confirmation with professional details</span>
+                      <span>We&apos;re matching you with the perfect professional (within 2 hours)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
-                      <span>Show up and enjoy your perfect beauty experience</span>
+                      <span>You&apos;ll receive their details and final confirmation</span>
                     </li>
                   </ul>
                 </div>
-                <Link href="/" className="btn-gold inline-block">
-                  Return to Home
-                </Link>
+
+                {/* Next Actions - Beautiful Loop Closure */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto mb-8">
+                  <a
+                    href={`data:text/calendar;charset=utf8,${encodeURIComponent(`BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+SUMMARY:Good Hands - ${selectedService?.name}
+DTSTART:${bookingData.date.replace(/-/g, '')}T${bookingData.time.replace(':', '')}00
+DURATION:PT${selectedService?.duration.split(' ')[0]}M
+DESCRIPTION:Booking ${bookingRef} - ${selectedService?.name} in ${bookingData.neighborhood}
+LOCATION:${bookingData.neighborhood}, Lisbon
+END:VEVENT
+END:VCALENDAR`)}`}
+                    download={`goodhands-booking-${bookingRef}.ics`}
+                    className="btn-gold flex items-center justify-center gap-2"
+                  >
+                    <Calendar className="w-4 h-4" />
+                    Add to Calendar
+                  </a>
+
+                  <Link
+                    href="/book"
+                    onClick={() => {
+                      setStep(1)
+                      setBookingData({
+                        service: '',
+                        date: '',
+                        time: '',
+                        neighborhood: '',
+                        name: bookingData.name, // Preserve contact info
+                        email: bookingData.email,
+                        phone: bookingData.phone,
+                        message: '',
+                      })
+                      setBookingRef('')
+                    }}
+                    className="btn-secondary flex items-center justify-center gap-2"
+                  >
+                    Book Another Service
+                  </Link>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                  <Link href="/services" className="text-harbor hover:text-gold transition-colors text-sm">
+                    ← Browse More Services
+                  </Link>
+                  <Link href="/" className="text-harbor hover:text-gold transition-colors text-sm">
+                    Return to Homepage
+                  </Link>
+                </div>
+
+                <p className="text-xs text-harbor/60 mt-8">
+                  Questions? Contact us at{' '}
+                  <a href="mailto:hello@goodhands.com" className="text-gold hover:underline">
+                    hello@goodhands.com
+                  </a>
+                </p>
               </motion.div>
             )}
           </AnimatePresence>
@@ -404,4 +736,3 @@ export default function BookingPage() {
     </div>
   )
 }
-
