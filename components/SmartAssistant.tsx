@@ -94,9 +94,31 @@ export default function SmartAssistant() {
             whileTap={{ scale: 0.95 }}
             onClick={handleOpen}
             className="fixed bottom-6 right-6 z-50 w-16 h-16 bg-gradient-to-br from-gold to-gold-dark rounded-full shadow-2xl flex items-center justify-center text-white hover:shadow-gold/50 transition-shadow"
-            aria-label="Open assistant"
+            aria-label="Open Good Hands Assistant"
           >
-            <Sparkles className="w-7 h-7" />
+            {/* Sophisticated Cat Mascot */}
+            <svg className="w-9 h-9" viewBox="0 0 32 32" fill="currentColor">
+              {/* Cat head */}
+              <ellipse cx="16" cy="18" rx="8" ry="7" fill="currentColor"/>
+              {/* Cat ears */}
+              <path d="M10 12L12 8L14 12Z M18 12L20 8L22 12Z" fill="currentColor"/>
+              {/* Inner ears */}
+              <path d="M11 11L12 9L13 11Z M19 11L20 9L21 11Z" fill="white" opacity="0.3"/>
+              {/* Eyes */}
+              <ellipse cx="13" cy="16" rx="1.5" ry="2" fill="white"/>
+              <ellipse cx="19" cy="16" rx="1.5" ry="2" fill="white"/>
+              <ellipse cx="13" cy="16.5" rx="0.8" ry="1.2" fill="black"/>
+              <ellipse cx="19" cy="16.5" rx="0.8" ry="1.2" fill="black"/>
+              {/* Nose */}
+              <path d="M16 19L15 20L17 20Z" fill="white" opacity="0.8"/>
+              {/* Mouth */}
+              <path d="M16 21Q14 22 12 21 M16 21Q18 22 20 21" stroke="white" strokeWidth="0.8" fill="none" opacity="0.7"/>
+              {/* Whiskers */}
+              <path d="M8 17L11 17 M21 17L24 17 M8 19L11 19 M21 19L24 19" stroke="white" strokeWidth="0.6" opacity="0.5"/>
+              {/* Bow tie */}
+              <path d="M14 24L16 26L18 24L16 25Z" fill="white" opacity="0.9"/>
+              <circle cx="16" cy="25" r="0.8" fill="white"/>
+            </svg>
             <motion.div
               className="absolute -top-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white"
               animate={{ scale: [1, 1.2, 1] }}
