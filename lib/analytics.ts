@@ -49,8 +49,13 @@ export const trackEvent = (eventName: EventNames, params?: EventParams) => {
   if (typeof window !== 'undefined' && window.gtag) {
     window.gtag('event', eventName, {
       ...params,
-      timestamp: new Date().toISOString(),
-    })
+    timestamp: new Date().toISOString(),
+  })
+    
+    // Also send to Microsoft Clarity if available
+    if (typeof window !== 'undefined' && (window as any).clarity) {
+      (window as any).clarity('set', eventName, params)
+    }
   }
 }
 

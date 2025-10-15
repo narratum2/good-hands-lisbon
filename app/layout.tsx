@@ -145,13 +145,30 @@ export default function RootLayout({
             });
           `}
         </Script>
+        {/* Microsoft Clarity for heatmaps and session recordings */}
+        <Script id="microsoft-clarity" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "nqx8yz9m2i");
+          `}
+        </Script>
         <GoogleAnalytics GA_MEASUREMENT_ID="G-ZGDMVGP040" />
         <BookingModalProvider>
+          {/* Skip to main content - Accessibility */}
+          <a 
+            href="#main-content" 
+            className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-6 focus:py-3 focus:bg-gold focus:text-ink focus:rounded focus:shadow-xl"
+          >
+            Skip to main content
+          </a>
           <AIDiscoveryTracker />
           <SmartAssistant />
           <Grain />
           <Navbar />
-          <main className="min-h-screen">{children}</main>
+          <main id="main-content" className="min-h-screen">{children}</main>
           <Footer />
           <Analytics />
         </BookingModalProvider>
