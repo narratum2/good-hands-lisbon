@@ -443,7 +443,7 @@ export default function HowItWorksPage() {
           <p className="text-xl text-porcelain/80 mb-8 leading-relaxed">
             Tell us what you need, and we'll handle the rest. It's that simple.
           </p>
-          <Link href="/#booking" className="btn-gold text-lg px-10 py-4 inline-block">
+          <Link href="/book" className="btn-gold text-lg px-10 py-4 inline-block">
             Book Your First Experience
           </Link>
           <p className="text-sm text-porcelain/60 mt-6">

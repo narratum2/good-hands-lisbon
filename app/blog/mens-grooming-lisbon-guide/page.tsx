@@ -182,7 +182,7 @@ export default function MensGroomingBlog() {
             <p className="text-harbor mb-6">
               Tell us what you need, and we'll match you with the perfect barber or grooming professional
             </p>
-            <Link href="/#booking" className="btn-gold">
+            <Link href="/book" className="btn-gold">
               Book Men's Grooming
             </Link>
           </div>

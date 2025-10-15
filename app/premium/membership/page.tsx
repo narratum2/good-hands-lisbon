@@ -59,7 +59,7 @@ export default function MembershipPage() {
             <a href="#plans" className="btn-primary">
               View Membership Plans
             </a>
-            <Link href="/#booking" className="btn-secondary bg-white/10 hover:bg-white/20 text-white border-white/30">
+            <Link href="/book" className="btn-secondary bg-white/10 hover:bg-white/20 text-white border-white/30">
               Book One-Time Service
             </Link>
           </div>
@@ -394,7 +394,7 @@ export default function MembershipPage() {
             <a href="#plans" className="btn-primary">
               Choose Your Plan
             </a>
-            <Link href="/#booking" className="btn-secondary bg-white/10 hover:bg-white/20 text-white border-white/30">
+            <Link href="/book" className="btn-secondary bg-white/10 hover:bg-white/20 text-white border-white/30">
               Questions? Contact Us
             </Link>
           </div>

@@ -143,7 +143,7 @@ export default function TestimonialsEnhanced() {
           <p className="text-harbor mb-4">
             Join hundreds of satisfied clients
           </p>
-          <a href="#booking" className="btn-gold">
+          <a href="/book" className="btn-gold">
             Book Your Experience
           </a>
         </motion.div>

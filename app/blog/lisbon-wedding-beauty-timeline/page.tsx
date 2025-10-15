@@ -287,7 +287,7 @@ export default function LisbonWeddingBeautyTimelineBlog() {
             <p className="text-harbor mb-6">
               Ready to look absolutely stunning on your Lisbon wedding day?
             </p>
-            <Link href="/#booking" className="btn-gold">
+            <Link href="/book" className="btn-gold">
               Start Planning Your Wedding Beauty
             </Link>
             <p className="text-sm text-harbor/70 mt-4">

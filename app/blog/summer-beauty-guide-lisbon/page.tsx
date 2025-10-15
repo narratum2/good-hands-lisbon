@@ -466,7 +466,7 @@ export default function SummerBeautyGuideBlog() {
             <p className="text-harbor mb-6">
               Need help navigating Lisbon's summer beauty scene? We'll match you with professionals who understand the climate and your needs.
             </p>
-            <Link href="/#booking" className="btn-gold">
+            <Link href="/book" className="btn-gold">
               Book Now
             </Link>
           </div>

@@ -349,7 +349,7 @@ export default function ServicesPage() {
               Contact our concierge team to coordinate hair, makeup, styling, and photography services for your shoot.
               We handle all logistics and professional coordination so you can focus on creating amazing content.
             </p>
-            <Link href="/#booking" className="btn-gold inline-block">
+            <Link href="/book" className="btn-gold inline-block">
               Book Your Photoshoot Session
             </Link>
           </div>
@@ -368,7 +368,7 @@ export default function ServicesPage() {
           <p className="text-xl text-porcelain/80 mb-8 max-w-2xl mx-auto">
             We'll match you with the perfect professional for your needs
           </p>
-          <Link href="/#booking" className="btn-gold">
+          <Link href="/book" className="btn-gold">
             Reserve Your Experience
           </Link>
         </div>

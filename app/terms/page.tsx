@@ -177,7 +177,7 @@ export default function TermsPage() {
             <p className="text-harbor mb-4">
               We're here to help. Contact our team if you need clarification on anything in these Terms of Service.
             </p>
-            <Link href="/#booking" className="text-gold hover:underline font-medium">
+            <Link href="/book" className="text-gold hover:underline font-medium">
               Get in Touch →
             </Link>
           </section>

@@ -232,7 +232,7 @@ export default function LisbonSpaWellnessGuideBlog() {
             <p className="text-harbor mb-6">
               Tell us what you need—stress relief, pain management, or pure relaxation. We'll match you with the perfect therapist.
             </p>
-            <Link href="/#booking" className="btn-gold">
+            <Link href="/book" className="btn-gold">
               Book Spa & Wellness Services
             </Link>
           </div>

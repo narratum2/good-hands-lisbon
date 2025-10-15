@@ -21,7 +21,7 @@ export default function WeddingsPage() {
             <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto">
               From intimate ceremonies to grand celebrations, we coordinate every beauty detail for you and your entire bridal party
             </p>
-            <Link href="/#booking" className="btn-primary bg-white text-sand hover:bg-porcelain">
+            <Link href="/book" className="btn-primary bg-white text-sand hover:bg-porcelain">
               Plan Your Wedding Beauty
             </Link>
           </div>
@@ -200,7 +200,7 @@ export default function WeddingsPage() {
                   <span>Touch-up kit</span>
                 </li>
               </ul>
-              <Link href="/#booking" className="btn-secondary w-full text-center">
+              <Link href="/book" className="btn-secondary w-full text-center">
                   Book Intimate Package
               </Link>
             </div>
@@ -236,7 +236,7 @@ export default function WeddingsPage() {
                     <span>Pre-wedding spa day option</span>
                 </li>
               </ul>
-              <Link href="/#booking" className="btn-primary w-full text-center">
+              <Link href="/book" className="btn-primary w-full text-center">
                   Book Classic Package
               </Link>
             </div>
@@ -267,7 +267,7 @@ export default function WeddingsPage() {
                     <span>Rehearsal dinner + next-day services</span>
                 </li>
               </ul>
-              <Link href="/#booking" className="btn-secondary w-full text-center">
+              <Link href="/book" className="btn-secondary w-full text-center">
                   Book Luxury Package
               </Link>
               </div>
@@ -396,7 +396,7 @@ export default function WeddingsPage() {
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Let's create a custom package perfect for your special day
           </p>
-          <Link href="/#booking" className="btn-primary bg-gold hover:bg-gold/90">
+          <Link href="/book" className="btn-primary bg-gold hover:bg-gold/90">
             Schedule Your Consultation
           </Link>
         </div>

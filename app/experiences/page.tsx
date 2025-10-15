@@ -158,7 +158,7 @@ export default function ExperiencesPage() {
           <p className="text-xl text-porcelain/80 mb-8 max-w-2xl mx-auto">
             Not sure which package is right for you? Let\'s design something perfect together.
           </p>
-          <Link href="/#booking" className="btn-gold">
+          <Link href="/book" className="btn-gold">
             Schedule a Consultation
           </Link>
         </div>

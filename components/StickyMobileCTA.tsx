@@ -37,7 +37,7 @@ export default function StickyMobileCTA() {
         >
           <div className="bg-white border-t border-harbor/10 shadow-lg px-4 py-3">
             <Link 
-              href="/#booking"
+              href="/book"
               onClick={handleClick}
               className="btn-gold w-full text-center block py-4 text-base font-medium"
             >

@@ -221,7 +221,7 @@ export default function FAQPage() {
               Our concierge team is here to help. Chat with us 24/7 or send us an email.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/#booking" className="btn-primary">
+              <a href="/book" className="btn-primary">
                 Chat With Us
               </a>
               <a href="mailto:concierge@goodhands.com" className="btn-secondary">

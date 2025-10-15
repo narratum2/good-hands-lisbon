@@ -20,7 +20,7 @@ export default function CorporatePage() {
             <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto">
               Elevate your corporate culture with professional beauty services for team events, employee wellness programs, and executive grooming
             </p>
-            <Link href="/#booking" className="btn-primary bg-gold hover:bg-gold/90">
+            <Link href="/book" className="btn-primary bg-gold hover:bg-gold/90">
               Request Corporate Quote
             </Link>
           </div>
@@ -428,7 +428,7 @@ export default function CorporatePage() {
             Let's create a custom corporate beauty program for your team
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/#booking" className="btn-primary bg-gold hover:bg-gold/90">
+            <Link href="/book" className="btn-primary bg-gold hover:bg-gold/90">
             Request Proposal
           </Link>
             <a href="mailto:corporate@goodhands.com" className="btn-secondary border-white text-white hover:bg-white/10">

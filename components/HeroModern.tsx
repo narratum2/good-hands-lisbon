@@ -35,7 +35,7 @@ export default function HeroModern() {
             We match you with Lisbon's finest vetted beauty professionals. No trial-and-error. Just perfect results.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md sm:max-w-none mx-auto">
-            <a href="#booking" className="btn-gold w-full sm:w-auto text-lg px-10 py-4">
+            <a href="/book" className="btn-gold w-full sm:w-auto text-lg px-10 py-4">
               Book Now
             </a>
             <a href="/services" className="btn-secondary w-full sm:w-auto text-lg px-10 py-4" style={{ borderColor: 'white', color: 'white', backgroundColor: 'transparent' }}>

@@ -44,7 +44,7 @@ const articles: { [key: string]: any } = {
 
       <div class="cta-box">
         <h3>Try These Treatments</h3>
-        <p>We work with professionals who actually know Portuguese traditional techniques. <a href="/#booking">Book a consultation →</a></p>
+        <p>We work with professionals who actually know Portuguese traditional techniques. <a href="/book">Book a consultation →</a></p>
       </div>
     `,
     image: '/brand-images/service-makeup-application.png',
@@ -154,7 +154,7 @@ const articles: { [key: string]: any } = {
 
       <div class="cta-box">
         <h3>Getting Married in Lisbon?</h3>
-        <p>We handle all the beauty coordination. First consultation to final touch-up. <a href="/#booking">See wedding packages →</a></p>
+        <p>We handle all the beauty coordination. First consultation to final touch-up. <a href="/book">See wedding packages →</a></p>
       </div>
     `,
     image: '/brand-images/blog-wedding-timeline.png',
@@ -219,7 +219,7 @@ const articles: { [key: string]: any } = {
 
       <div class="cta-box">
         <h3>Want In?</h3>
-        <p>We know these places. We can get you booked. <a href="/#booking">Tell us what you need →</a></p>
+        <p>We know these places. We can get you booked. <a href="/book">Tell us what you need →</a></p>
       </div>
     `,
     image: '/brand-images/hero-salon-interior.png',
@@ -344,7 +344,7 @@ const articles: { [key: string]: any } = {
 
       <div class="cta-box">
         <h3>Book a Summer Skin Consultation</h3>
-        <p>Our partner dermatologists and estheticians create customized summer skincare plans for Lisbon's unique climate. <a href="/#booking">Schedule your consultation →</a></p>
+        <p>Our partner dermatologists and estheticians create customized summer skincare plans for Lisbon's unique climate. <a href="/book">Schedule your consultation →</a></p>
       </div>
     `,
     image: '/brand-images/service-facial-treatment.png',
@@ -483,7 +483,7 @@ const articles: { [key: string]: any } = {
 
       <div class="cta-box">
         <h3>Book a Portuguese Nail Art Session</h3>
-        <p>We work with Lisbon's best nail artists who specialize in Portuguese-inspired designs. <a href="/#booking">Reserve your appointment →</a></p>
+        <p>We work with Lisbon's best nail artists who specialize in Portuguese-inspired designs. <a href="/book">Reserve your appointment →</a></p>
       </div>
     `,
     image: '/brand-images/service-nail-art.png',
@@ -635,7 +635,7 @@ const articles: { [key: string]: any } = {
 
       <div class="cta-box">
         <h3>Experience Wellness, Lisbon Style</h3>
-        <p>Our wellness concierge creates personalized wellness experiences incorporating traditional Portuguese practices and Lisbon's best wellness providers. <a href="/#booking">Learn more →</a></p>
+        <p>Our wellness concierge creates personalized wellness experiences incorporating traditional Portuguese practices and Lisbon's best wellness providers. <a href="/book">Learn more →</a></p>
       </div>
     `,
     image: '/brand-images/hero-wellness-scene.png',
@@ -849,7 +849,7 @@ const articles: { [key: string]: any } = {
 
       <div class="cta-box">
         <h3>Book Your Bridal Hair Consultation</h3>
-        <p>Our bridal specialists work with Lisbon's top hair artists to create your perfect wedding day look. <a href="/#booking">Schedule your trial →</a></p>
+        <p>Our bridal specialists work with Lisbon's top hair artists to create your perfect wedding day look. <a href="/book">Schedule your trial →</a></p>
       </div>
     `,
     image: '/brand-images/blog-bridal-hair.png',
@@ -1056,7 +1056,7 @@ const articles: { [key: string]: any } = {
 
       <div class="cta-box">
         <h3>Explore Mexico City Beauty with Good Hands</h3>
-        <p>Planning a trip to CDMX? Let us connect you with the city's best beauty professionals. We handle booking, translation, and coordination. <a href="/#booking">Book your Mexico City beauty experience →</a></p>
+        <p>Planning a trip to CDMX? Let us connect you with the city's best beauty professionals. We handle booking, translation, and coordination. <a href="/book">Book your Mexico City beauty experience →</a></p>
       </div>
     `,
     image: '/brand-images/blog-mexico-city.png',
@@ -1356,7 +1356,7 @@ const articles: { [key: string]: any } = {
 
       <div class="cta-box">
         <h3>Experience Yucatan Wellness with Good Hands</h3>
-        <p>Planning a trip to the Yucatan? Let us connect you with authentic Mayan beauty traditions and modern wellness practices. We coordinate everything from temazcal ceremonies to beachside spa treatments. <a href="/#booking">Book your Yucatan wellness journey →</a></p>
+        <p>Planning a trip to the Yucatan? Let us connect you with authentic Mayan beauty traditions and modern wellness practices. We coordinate everything from temazcal ceremonies to beachside spa treatments. <a href="/book">Book your Yucatan wellness journey →</a></p>
       </div>
     `,
     image: '/brand-images/blog-yucatan-wellness.png',
@@ -1633,7 +1633,7 @@ const articles: { [key: string]: any } = {
 
       <div class="cta-box">
         <h3>Start Your Global Beauty Journey</h3>
-        <p>Planning travel to Lisbon, Mexico, or beyond? Let Good Hands be your guide to authentic beauty experiences worldwide. We handle all coordination, cultural guidance, and practitioner vetting. <a href="/#booking">Book your consultation →</a></p>
+        <p>Planning travel to Lisbon, Mexico, or beyond? Let Good Hands be your guide to authentic beauty experiences worldwide. We handle all coordination, cultural guidance, and practitioner vetting. <a href="/book">Book your consultation →</a></p>
       </div>
     `,
     image: '/brand-images/blog-global-beauty.png',
@@ -1769,7 +1769,7 @@ export default function ArticlePage({ params }: Props) {
           <p className="text-xl text-white/90 mb-8">
             Let us be your guide to the city's best beauty professionals
           </p>
-          <Link href="/#booking" className="btn-primary bg-gold hover:bg-gold/90">
+          <Link href="/book" className="btn-primary bg-gold hover:bg-gold/90">
             Book Your Experience
           </Link>
         </div>

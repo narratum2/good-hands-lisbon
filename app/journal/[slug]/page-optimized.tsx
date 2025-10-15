@@ -137,7 +137,7 @@ export default function ArticlePage({ params }: PageProps) {
               We work with professionals who actually know these techniques.
             </p>
             <Link
-              href="/#booking"
+              href="/book"
               className="inline-block btn-gold"
             >
               Book a Consultation →
@@ -195,7 +195,7 @@ export default function ArticlePage({ params }: PageProps) {
             Let us be your guide to the city's best beauty professionals
           </p>
           <Link 
-            href="/#booking" 
+            href="/book" 
             className="btn-primary bg-gold hover:bg-gold/90 text-ink font-semibold"
           >
             Book Your Experience

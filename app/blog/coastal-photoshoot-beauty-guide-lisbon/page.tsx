@@ -136,7 +136,7 @@ export default function CoastalPhotoshootBlog() {
             <p className="text-harbor mb-6">
               Tell us about your shoot, and we'll match you with the perfect professional
             </p>
-            <Link href="/#booking" className="btn-gold">
+            <Link href="/book" className="btn-gold">
               Book Photoshoot Styling
             </Link>
           </div>

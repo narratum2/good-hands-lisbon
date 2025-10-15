@@ -518,7 +518,7 @@ export default function CompleteBeautyGuideLisbon() {
               Let Good Hands match you with the perfect beauty professional for your needs. No trial-and-error. No disappointments. Just exceptional results.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/#booking" className="btn-primary">
+              <Link href="/book" className="btn-primary">
                 Book Your Service
               </Link>
               <Link href="/services" className="btn-secondary">

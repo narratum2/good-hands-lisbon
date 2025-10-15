@@ -96,7 +96,7 @@ export default function FindingCalmInChiado() {
           We can connect you with these hidden gems—the places locals trust with their own skin, 
           hair, and well-being. No tourist traps, no disappointments.
         </p>
-        <Link href="/#booking" className="btn-gold">
+        <Link href="/book" className="btn-gold">
           Reserve Your Wellness Session
         </Link>
       </div>

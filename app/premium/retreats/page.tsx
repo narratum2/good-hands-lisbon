@@ -20,7 +20,7 @@ export default function RetreatsPage() {
             <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto">
               Multi-day immersive experiences focused on discovering your authentic beauty, learning professional techniques, and building lasting confidence
             </p>
-            <Link href="/#booking" className="btn-primary bg-white text-sand hover:bg-porcelain">
+            <Link href="/book" className="btn-primary bg-white text-sand hover:bg-porcelain">
               Join Our Next Retreat
             </Link>
           </div>
@@ -199,7 +199,7 @@ export default function RetreatsPage() {
                   </li>
                 </ul>
                 <p className="text-sm text-harbor mb-4">*Accommodation not included</p>
-                <Link href="/#booking" className="btn-secondary w-full text-center">
+                <Link href="/book" className="btn-secondary w-full text-center">
                   Book 3-Day Retreat
                 </Link>
               </div>
@@ -240,7 +240,7 @@ export default function RetreatsPage() {
                   </li>
                 </ul>
                 <p className="text-sm text-harbor mb-4">*All-inclusive experience</p>
-                <Link href="/#booking" className="btn-primary w-full text-center">
+                <Link href="/book" className="btn-primary w-full text-center">
                   Book 5-Day Retreat
                 </Link>
               </div>
@@ -321,7 +321,7 @@ export default function RetreatsPage() {
                   </div>
                   <div className="text-right">
                     <p className="text-sm text-harbor mb-2">5 spots remaining</p>
-                    <Link href="/#booking" className="btn-primary inline-block">
+                    <Link href="/book" className="btn-primary inline-block">
                       Reserve Your Spot
                     </Link>
                   </div>
@@ -337,7 +337,7 @@ export default function RetreatsPage() {
                   </div>
                   <div className="text-right">
                     <p className="text-sm text-harbor mb-2">3 spots remaining</p>
-                    <Link href="/#booking" className="btn-primary inline-block">
+                    <Link href="/book" className="btn-primary inline-block">
                       Reserve Your Spot
                     </Link>
                   </div>
@@ -353,7 +353,7 @@ export default function RetreatsPage() {
                   </div>
                   <div className="text-right">
                     <p className="text-sm text-harbor mb-2">8 spots available</p>
-                    <Link href="/#booking" className="btn-secondary inline-block">
+                    <Link href="/book" className="btn-secondary inline-block">
                       Join Waitlist
                     </Link>
                   </div>
@@ -468,7 +468,7 @@ export default function RetreatsPage() {
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Reserve your spot in our next beauty transformation retreat
           </p>
-          <Link href="/#booking" className="btn-primary bg-gold hover:bg-gold/90">
+          <Link href="/book" className="btn-primary bg-gold hover:bg-gold/90">
             Book Your Retreat Now
           </Link>
         </div>

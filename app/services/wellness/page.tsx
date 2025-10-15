@@ -367,7 +367,7 @@ export default function WellnessServicesPage() {
           <p className="text-xl text-porcelain/80 mb-8 max-w-2xl mx-auto">
             We&apos;ll match you with a licensed massage therapist perfect for your needs
           </p>
-          <Link href="/#booking" className="btn-primary">
+          <Link href="/book" className="btn-primary">
             Book Wellness Service
           </Link>
           <p className="text-sm text-porcelain/60 mt-6">

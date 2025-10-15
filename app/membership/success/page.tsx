@@ -70,7 +70,7 @@ export default function MembershipSuccessPage() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/#booking" className="btn-primary">
+            <Link href="/book" className="btn-primary">
               Book Your First Service
             </Link>
             <Link href="/services" className="btn-secondary">
@@ -80,7 +80,7 @@ export default function MembershipSuccessPage() {
 
           <p className="text-sm text-harbor mt-8">
             Questions about your membership?{' '}
-            <Link href="/#booking" className="text-gold hover:underline">
+            <Link href="/book" className="text-gold hover:underline">
               Contact our concierge team
             </Link>
           </p>

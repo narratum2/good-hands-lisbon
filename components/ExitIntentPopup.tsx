@@ -125,7 +125,7 @@ export default function ExitIntentPopup() {
                 {/* CTAs */}
                 <div className="space-y-3">
                   <Link 
-                    href="/#booking" 
+                    href="/book" 
                     onClick={() => handleCTA('book_now')}
                     className="btn-gold w-full text-center block"
                   >

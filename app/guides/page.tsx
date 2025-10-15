@@ -138,7 +138,7 @@ export default function GuidesPage() {
           <p className="text-xl text-porcelain/80 mb-8 max-w-2xl mx-auto">
             Let our beauty concierge help you find the perfect neighborhood and service
           </p>
-          <Link href="/#booking" className="btn-primary">
+          <Link href="/book" className="btn-primary">
             Get Personalized Recommendations
           </Link>
         </div>

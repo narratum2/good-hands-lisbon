@@ -31,7 +31,7 @@ export default function PhotoshootsPage() {
               Camera-ready hair and makeup for your seaside session. We come to you—Cascais, Sintra, Cabo da Roca, anywhere along the coast.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="#booking" className="btn-primary text-center">
+              <Link href="/book" className="btn-primary text-center">
                 Book Your Photoshoot Styling
               </Link>
               <Link href="#packages" className="btn-secondary text-center">
@@ -138,7 +138,7 @@ export default function PhotoshootsPage() {
                     <span>Coordination with photographer</span>
                   </li>
                 </ul>
-                <Link href="#booking" className="btn-primary w-full text-center block">
+                <Link href="/book" className="btn-primary w-full text-center block">
                   Book Essential
                 </Link>
               </div>
@@ -177,7 +177,7 @@ export default function PhotoshootsPage() {
                     <span>Pre-shoot consultation</span>
                   </li>
                 </ul>
-                <Link href="#booking" className="btn-primary w-full text-center block">
+                <Link href="/book" className="btn-primary w-full text-center block">
                   Book Full Glam
                 </Link>
               </div>
@@ -213,7 +213,7 @@ export default function PhotoshootsPage() {
                     <span>Pre-shoot planning call</span>
                   </li>
                 </ul>
-                <Link href="#booking" className="btn-primary w-full text-center block">
+                <Link href="/book" className="btn-primary w-full text-center block">
                   Book Multi-Look
                 </Link>
               </div>
@@ -413,7 +413,7 @@ export default function PhotoshootsPage() {
           <p className="text-xl text-porcelain/80 mb-8 max-w-2xl mx-auto">
             You're investing in professional photos. Make sure you look as good as the location.
           </p>
-          <Link href="#booking" className="btn-primary">
+          <Link href="/book" className="btn-primary">
             Book Photoshoot Beauty Services
           </Link>
         </div>

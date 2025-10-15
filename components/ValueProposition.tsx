@@ -103,7 +103,7 @@ export default function ValueProposition() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="#booking"
+              href="/book"
               className="btn-gold text-lg px-10 py-4"
             >
               Book Your Service

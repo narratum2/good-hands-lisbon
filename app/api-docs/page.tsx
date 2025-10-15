@@ -194,7 +194,7 @@ Content-Type: application/json
                 <div>General Services: <a href="/services" className="text-gold hover:underline">goodhands.com/services</a></div>
                 <div>Specific Category: <a href="/services?category=hair" className="text-gold hover:underline">goodhands.com/services?category=hair</a></div>
                 <div>Neighborhood: <a href="/chiado" className="text-gold hover:underline">goodhands.com/chiado</a></div>
-                <div>Book Now: <a href="/#booking" className="text-gold hover:underline">goodhands.com/#booking</a></div>
+                <div>Book Now: <a href="/book" className="text-gold hover:underline">goodhands.com/#booking</a></div>
               </div>
             </div>
 
