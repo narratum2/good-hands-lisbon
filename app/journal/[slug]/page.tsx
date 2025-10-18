@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getArticle, getRelatedArticles, getAllArticles } from '@/lib/articles'
 import ArticleContent from '@/components/ArticleContent'
+import { Article, StructuredData } from '@/types/article'
 
 interface PageProps {
   params: {
@@ -17,33 +18,59 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   
   if (!article) {
     return {
-      title: 'Article Not Found',
+      title: 'Article Not Found — Good Hands',
+      description: 'The requested article could not be found.',
+      robots: {
+        index: false,
+        follow: false,
+      },
     }
   }
+
+  const url = `https://goodhands.com/journal/${article.slug}`
+  const ogImage = article.image.startsWith('http') ? article.image : `https://goodhands.com${article.image}`
 
   return {
     title: `${article.title} — Good Hands Journal`,
     description: article.excerpt,
+    keywords: article.tags?.join(', '),
+    authors: [{ name: article.author.name }],
     openGraph: {
       title: article.title,
       description: article.excerpt,
       type: 'article',
+      url,
       publishedTime: article.date,
-      authors: [article.author],
+      authors: [article.author.name],
       images: [
         {
-          url: article.image,
+          url: ogImage,
           width: 1200,
           height: 630,
           alt: article.title,
         },
       ],
+      siteName: 'Good Hands',
     },
     twitter: {
       card: 'summary_large_image',
       title: article.title,
       description: article.excerpt,
-      images: [article.image],
+      images: [ogImage],
+    },
+    alternates: {
+      canonical: url,
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
     },
   }
 }
@@ -57,8 +84,50 @@ export default function ArticlePage({ params }: PageProps) {
 
   const relatedArticles = getRelatedArticles(params.slug, 3)
 
+  // Generate structured data
+  const structuredData: StructuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: article.title,
+    description: article.excerpt,
+    image: article.image.startsWith('http') ? article.image : `https://goodhands.com${article.image}`,
+    datePublished: article.date,
+    author: {
+      '@type': 'Person',
+      name: article.author.name,
+      description: article.author.bio,
+      ...(article.author.social && {
+        sameAs: Object.values(article.author.social).filter(Boolean)
+      }),
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Good Hands',
+      url: 'https://goodhands.com',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://goodhands.com/brand-assets/logo/logo-primary.svg',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://goodhands.com/journal/${article.slug}`,
+    },
+    ...(article.tags && {
+      keywords: article.tags.join(', '),
+    }),
+  }
+
   return (
     <article className="pt-20">
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData),
+        }}
+      />
+
       {/* Hero Image */}
       <div className="relative h-[60vh] min-h-[400px]">
         <Image
@@ -68,6 +137,7 @@ export default function ArticlePage({ params }: PageProps) {
           className="object-cover"
           priority
           sizes="100vw"
+          quality={85}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink/80 to-transparent" />
       </div>
@@ -75,7 +145,7 @@ export default function ArticlePage({ params }: PageProps) {
       {/* Article Header */}
       <header className="bg-white">
         <div className="container-custom max-w-4xl py-12">
-          <div className="flex items-center gap-4 mb-6">
+          <div className="flex items-center gap-4 mb-6 flex-wrap">
             <span className="text-xs uppercase tracking-wider text-gold font-medium">
               {article.category}
             </span>
@@ -98,12 +168,26 @@ export default function ArticlePage({ params }: PageProps) {
 
           {/* Author */}
           <div className="flex items-center gap-4 pt-8 border-t border-harbor/20">
-            <div className="w-12 h-12 rounded-full bg-sand flex items-center justify-center text-white font-bold text-lg">
-              {article.author.charAt(0)}
-            </div>
+            {article.author.avatar ? (
+              <Image
+                src={article.author.avatar}
+                alt={article.author.name}
+                width={48}
+                height={48}
+                className="rounded-full object-cover"
+              />
+            ) : (
+              <div
+                className="w-12 h-12 rounded-full bg-sand flex items-center justify-center text-white font-bold text-lg"
+                role="img"
+                aria-label={`${article.author.name}'s avatar`}
+              >
+                {article.author.name.charAt(0)}
+              </div>
+            )}
             <div>
-              <p className="font-semibold text-ink">{article.author}</p>
-              <p className="text-sm text-harbor">{article.authorBio}</p>
+              <p className="font-semibold text-ink">{article.author.name}</p>
+              <p className="text-sm text-harbor">{article.author.bio}</p>
             </div>
           </div>
 
@@ -113,7 +197,7 @@ export default function ArticlePage({ params }: PageProps) {
               {article.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="px-3 py-1 bg-porcelain text-harbor text-sm rounded-full"
+                  className="px-3 py-1 bg-porcelain text-harbor text-sm rounded-full hover:bg-gold/10 transition-colors"
                 >
                   {tag}
                 </span>
@@ -129,7 +213,7 @@ export default function ArticlePage({ params }: PageProps) {
           <ArticleContent content={article.content} />
 
           {/* CTA Box */}
-          <div className="mt-12 p-8 bg-white rounded-lg border border-gold/20">
+          <div className="mt-12 p-8 bg-white rounded-lg border border-gold/20 shadow-sm">
             <h3 className="text-2xl font-serif text-ink mb-3">
               Try These Treatments
             </h3>
@@ -138,9 +222,10 @@ export default function ArticlePage({ params }: PageProps) {
             </p>
             <Link
               href="/book"
-              className="inline-block btn-gold"
+              className="inline-flex items-center gap-2 text-gold hover:text-gold/80 transition-colors font-medium"
             >
-              Book a Consultation →
+              Book a Consultation
+              <span aria-hidden="true">→</span>
             </Link>
           </div>
         </div>
@@ -148,15 +233,17 @@ export default function ArticlePage({ params }: PageProps) {
 
       {/* Related Articles */}
       {relatedArticles.length > 0 && (
-        <section className="bg-white py-16">
+        <section className="bg-white py-16" aria-labelledby="related-articles">
           <div className="container-custom max-w-6xl">
-            <h2 className="text-3xl font-serif mb-8">Continue Reading</h2>
+            <h2 id="related-articles" className="text-3xl font-serif mb-8">
+              Continue Reading
+            </h2>
             <div className="grid md:grid-cols-3 gap-8">
               {relatedArticles.map((relatedArticle) => (
                 <Link
                   key={relatedArticle.slug}
                   href={`/journal/${relatedArticle.slug}`}
-                  className="group block"
+                  className="group block focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 rounded-lg"
                 >
                   <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
                     <Image
@@ -165,6 +252,8 @@ export default function ArticlePage({ params }: PageProps) {
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                       sizes="(max-width: 768px) 100vw, 33vw"
+                      quality={75}
+                      loading="lazy"
                     />
                   </div>
                   <span className="text-xs uppercase tracking-wider text-gold font-medium block mb-2">
@@ -186,9 +275,9 @@ export default function ArticlePage({ params }: PageProps) {
       )}
 
       {/* CTA Section */}
-      <section className="bg-ink text-white py-16">
+      <section className="bg-ink text-white py-16" aria-labelledby="cta-heading">
         <div className="container-custom max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-serif mb-4">
+          <h2 id="cta-heading" className="text-3xl md:text-4xl font-serif mb-4">
             Ready to Experience Lisbon's Beauty Scene?
           </h2>
           <p className="text-xl text-white/90 mb-8">
@@ -196,40 +285,12 @@ export default function ArticlePage({ params }: PageProps) {
           </p>
           <Link 
             href="/book" 
-            className="btn-primary bg-gold hover:bg-gold/90 text-ink font-semibold"
+            className="inline-block bg-gold hover:bg-gold/90 text-ink font-semibold px-8 py-4 rounded-sm transition-colors focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-ink"
           >
             Book Your Experience
           </Link>
         </div>
       </section>
-
-      {/* Structured Data for SEO */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Article',
-            headline: article.title,
-            description: article.excerpt,
-            image: article.image,
-            datePublished: article.date,
-            author: {
-              '@type': 'Person',
-              name: article.author,
-              description: article.authorBio,
-            },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Good Hands',
-              logo: {
-                '@type': 'ImageObject',
-                url: '/brand-assets/logo/logo-primary.svg',
-              },
-            },
-          }),
-        }}
-      />
     </article>
   )
 }

@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: article.excerpt,
       type: 'article',
       publishedTime: article.date,
-      authors: [article.author],
+      authors: typeof article.author === 'string' ? [article.author] : [article.author.name],
       images: [
         {
           url: article.image,
@@ -99,11 +99,11 @@ export default function ArticlePage({ params }: PageProps) {
           {/* Author */}
           <div className="flex items-center gap-4 pt-8 border-t border-harbor/20">
             <div className="w-12 h-12 rounded-full bg-sand flex items-center justify-center text-white font-bold text-lg">
-              {article.author.charAt(0)}
+              {(typeof article.author === 'string' ? article.author : (article.author as any)?.name || 'A').charAt(0)}
             </div>
             <div>
-              <p className="font-semibold text-ink">{article.author}</p>
-              <p className="text-sm text-harbor">{article.authorBio}</p>
+              <p className="font-semibold text-ink">{typeof article.author === 'string' ? article.author : (article.author as any)?.name || 'Anonymous'}</p>
+              <p className="text-sm text-harbor">Published {article.date}</p>
             </div>
           </div>
 
@@ -216,8 +216,7 @@ export default function ArticlePage({ params }: PageProps) {
             datePublished: article.date,
             author: {
               '@type': 'Person',
-              name: article.author,
-              description: article.authorBio,
+              name: typeof article.author === 'string' ? article.author : (article.author as any)?.name || 'Anonymous',
             },
             publisher: {
               '@type': 'Organization',

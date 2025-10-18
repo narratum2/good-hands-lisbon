@@ -10,6 +10,7 @@ import AIDiscoveryTracker from '@/components/AIDiscoveryTracker'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
 import { BookingModalProvider } from '@/components/BookingModalProvider'
 import SmartAssistant from '@/components/SmartAssistant'
+import OptimizationProvider from '@/components/OptimizationProvider'
 import { getOrganizationSchema, SEO_TEMPLATES } from '@/lib/seo-config'
 
 // Configure Inter font
@@ -156,6 +157,7 @@ export default function RootLayout({
           `}
         </Script>
         <GoogleAnalytics GA_MEASUREMENT_ID="G-ZGDMVGP040" />
+        <OptimizationProvider />
         <BookingModalProvider>
           {/* Skip to main content - Accessibility */}
           <a 
