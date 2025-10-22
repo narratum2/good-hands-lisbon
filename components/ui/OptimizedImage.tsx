@@ -115,3 +115,5 @@ export const AvatarImage = (props: Omit<OptimizedImageProps, 'aspectRatio'>) => 
 export const ArticleImage = (props: Omit<OptimizedImageProps, 'aspectRatio'>) => (
   <OptimizedImage aspectRatio="landscape" {...props} />
 )
+
+

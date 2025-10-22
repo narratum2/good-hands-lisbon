@@ -3,7 +3,7 @@ import { ButtonHTMLAttributes, ReactNode } from 'react'
 import { motion } from 'framer-motion'
 
 interface BaseButtonProps {
-  children: ReactNode
+  children?: ReactNode
   variant?: 'primary' | 'secondary' | 'gold' | 'outline' | 'ghost'
   size?: 'sm' | 'md' | 'lg' | 'xl'
   disabled?: boolean
@@ -12,7 +12,7 @@ interface BaseButtonProps {
   onClick?: () => void
 }
 
-interface ButtonProps extends BaseButtonProps, Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'onClick'> {}
+interface ButtonProps extends BaseButtonProps, Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'onClick' | 'children'> {}
 
 interface LinkButtonProps extends BaseButtonProps {
   href: string
@@ -142,3 +142,5 @@ export const OutlineButton = (props: Omit<ButtonComponentProps, 'variant'>) => (
 export const GhostButton = (props: Omit<ButtonComponentProps, 'variant'>) => (
   <Button variant="ghost" {...props} />
 )
+
+

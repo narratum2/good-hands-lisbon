@@ -113,3 +113,5 @@ export interface StructuredData {
   '@type': string
   [key: string]: any
 }
+
+
