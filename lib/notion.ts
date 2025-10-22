@@ -34,10 +34,10 @@ export async function createCustomerRecord(data: {
 }) {
   try {
     const notion = await getNotionClient()
-    const customersDbId = process.env.NOTION_CUSTOMERS_DB_ID
+    const customersDbId = process.env.NOTION_CUSTOMERS_DATABASE_ID
 
     if (!customersDbId) {
-      console.warn('NOTION_CUSTOMERS_DB_ID not configured')
+      console.warn('NOTION_CUSTOMERS_DATABASE_ID not configured')
       return null
     }
 
@@ -126,10 +126,10 @@ export async function createBookingRecord(data: {
 }) {
   try {
     const notion = await getNotionClient()
-    const bookingsDbId = process.env.NOTION_BOOKINGS_DB_ID
+    const bookingsDbId = process.env.NOTION_BOOKING_DATABASE_ID
 
     if (!bookingsDbId) {
-      console.warn('NOTION_BOOKINGS_DB_ID not configured')
+      console.warn('NOTION_BOOKING_DATABASE_ID not configured')
       return null
     }
 

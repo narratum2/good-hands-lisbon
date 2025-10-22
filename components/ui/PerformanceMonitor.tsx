@@ -33,7 +33,7 @@ export default function PerformanceMonitor() {
     const fidObserver = new PerformanceObserver((list) => {
       const entries = list.getEntries()
       entries.forEach((entry) => {
-        const fid = entry.processingStart - entry.startTime
+        const fid = (entry as any).processingStart - entry.startTime
         metrics.fid = fid
         
         console.log('FID:', metrics.fid)

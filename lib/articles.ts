@@ -167,10 +167,10 @@ export function getRelatedArticles(currentSlug: string, limit: number = 3): Rela
       }
       
       // Tag matches
-      if (currentArticle.tags && article.tags) {
-        const currentTags = currentArticle.tags.map(tag => tag.toLowerCase())
-        const articleTags = article.tags.map(tag => tag.toLowerCase())
-        const commonTags = currentTags.filter(tag => articleTags.includes(tag))
+      if ((currentArticle as any).tags && (article as any).tags) {
+        const currentTags = (currentArticle as any).tags.map((tag: string) => tag.toLowerCase())
+        const articleTags = (article as any).tags.map((tag: string) => tag.toLowerCase())
+        const commonTags = currentTags.filter((tag: string) => articleTags.includes(tag))
         similarity += commonTags.length
       }
       

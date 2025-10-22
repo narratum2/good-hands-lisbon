@@ -10,7 +10,7 @@ export async function POST(request: Request) {
     }
 
     const notionApiKey = process.env.NOTION_API_KEY
-    const chatDbId = process.env.NOTION_CHAT_DB_ID
+    const chatDbId = process.env.NOTION_CHAT_DATABASE_ID || process.env.NOTION_BOOKING_DATABASE_ID
 
     if (!notionApiKey || !chatDbId) {
       console.error('Notion not configured for chat')
@@ -110,7 +110,7 @@ export async function GET(request: Request) {
     }
 
     const notionApiKey = process.env.NOTION_API_KEY
-    const chatDbId = process.env.NOTION_CHAT_DB_ID
+    const chatDbId = process.env.NOTION_CHAT_DATABASE_ID || process.env.NOTION_BOOKING_DATABASE_ID
 
     if (!notionApiKey || !chatDbId) {
       return NextResponse.json({ messages: [] })
