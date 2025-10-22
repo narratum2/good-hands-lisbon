@@ -110,15 +110,13 @@ export default function Button(props: ButtonComponentProps) {
   }
 
   return (
-    <motion.button
-      whileHover={{ scale: disabled ? 1 : 1.02 }}
-      whileTap={{ scale: disabled ? 1 : 0.98 }}
+    <button
       className={buttonClasses}
       disabled={disabled || loading}
       {...(rest as ButtonProps)}
     >
       {buttonContent}
-    </motion.button>
+    </button>
   )
 }
 
