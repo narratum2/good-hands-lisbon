@@ -191,6 +191,10 @@ export function getRelatedArticles(currentSlug: string, limit: number = 3): Rela
         !scoredArticles.some(scored => scored.slug === article.slug)
       )
       .slice(0, limit - scoredArticles.length)
+      .map(article => ({
+        ...article,
+        similarity: 0
+      }))
     
     scoredArticles.push(...remainingArticles)
   }
@@ -224,7 +228,7 @@ export function searchArticles(query: string, limit: number = 10): ArticleMetada
     .filter(article => 
       article.title.toLowerCase().includes(searchTerm) ||
       article.excerpt.toLowerCase().includes(searchTerm) ||
-      (article.tags && article.tags.some(tag => tag.toLowerCase().includes(searchTerm)))
+      ((article as any).tags && (article as any).tags.some((tag: string) => tag.toLowerCase().includes(searchTerm)))
     )
     .slice(0, limit)
 }

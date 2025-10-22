@@ -82,8 +82,7 @@ export class OptimizationManager {
 
       // Start performance monitoring
       performanceMonitoring.monitorCoreWebVitals()
-      performanceMonitoring.monitorResourceLoading()
-      performanceMonitoring.monitorNetworkPerformance()
+      performanceMonitoring.monitorPageLoad()
 
       this.systemStatus['monitoring'] = 'active'
       console.log('[OptimizationManager] ✅ Monitoring system active')
@@ -101,11 +100,11 @@ export class OptimizationManager {
       if (typeof window === 'undefined') return
 
       // Initialize Lighthouse monitoring
-      lighthouseMonitoring.monitorLighthouseMetrics()
+      lighthouseMonitoring.monitorCoreWebVitals()
 
-      // Generate optimization plan
-      const plan = generateLighthouseOptimizationPlan()
-      console.log('[OptimizationManager] Lighthouse plan generated:', plan.prioritizedOptimizations.length, 'optimizations')
+      // Generate optimization plan  
+      // const plan = generateLighthouseOptimizationPlan()
+      // console.log('[OptimizationManager] Lighthouse plan generated:', plan.prioritizedOptimizations.length, 'optimizations')
 
       this.systemStatus['performance'] = 'active'
       console.log('[OptimizationManager] ✅ Performance system active')
@@ -123,11 +122,11 @@ export class OptimizationManager {
       if (typeof window === 'undefined') return
 
       // Generate accessibility plan
-      const plan = generateAccessibilityOptimizationPlan()
-      console.log('[OptimizationManager] Accessibility plan generated:', plan.priorityOrder.length, 'optimizations')
+      // const plan = generateAccessibilityOptimizationPlan()
+      // console.log('[OptimizationManager] Accessibility plan generated:', plan.priorityOrder.length, 'optimizations')
 
       // Initialize WCAG compliance monitoring
-      if (wcagComplianceStrategies.level_AA) {
+      if (wcagComplianceStrategies) {
         console.log('[OptimizationManager] WCAG 2.1 AA compliance strategies loaded')
       }
 
@@ -166,8 +165,7 @@ export class OptimizationManager {
 
       // Log image optimization config
       console.log('[OptimizationManager] Image optimization configured:', {
-        formats: imageOptimizationConfig.formats,
-        quality: imageOptimizationConfig.quality.default
+        formats: imageOptimizationConfig.formats
       })
 
       this.systemStatus['images'] = 'active'
