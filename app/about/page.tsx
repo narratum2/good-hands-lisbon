@@ -23,7 +23,7 @@ export default function AboutPage() {
             We built Good Hands because finding exceptional beauty services in Lisbon 
             shouldn&apos;t be a challenge.
           </p>
-          <Link href="/book" className="btn-gold text-lg px-12 py-4 inline-block">
+          <Link href="/book" className="btn-gold text-lg">
             Experience the Difference
           </Link>
         </div>

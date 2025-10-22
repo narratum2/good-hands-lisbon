@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import TrustBadges from './TrustBadges'
+import LoadingSpinner from './ui/LoadingSpinner'
 
 interface BookingFormData {
   name: string

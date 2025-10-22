@@ -138,7 +138,7 @@ export default function ArticlePage({ params }: PageProps) {
             </p>
             <Link
               href="/book"
-              className="inline-block btn-gold"
+              className="btn-gold"
             >
               Book a Consultation →
             </Link>
@@ -196,7 +196,7 @@ export default function ArticlePage({ params }: PageProps) {
           </p>
           <Link 
             href="/book" 
-            className="btn-primary bg-gold hover:bg-gold/90 text-ink font-semibold"
+            className="btn-gold"
           >
             Book Your Experience
           </Link>

@@ -30,10 +30,10 @@ export default function PhotoshootsPage() {
               Camera-ready hair and makeup for your seaside session. We come to you—Cascais, Sintra, Cabo da Roca, anywhere along the coast.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/book" className="btn-primary text-center">
+              <Link href="/book" className="btn-primary">
                 Book Your Photoshoot Styling
               </Link>
-              <Link href="#packages" className="btn-secondary text-center">
+              <Link href="#packages" className="btn-secondary">
                 View Packages
               </Link>
             </div>
@@ -137,7 +137,7 @@ export default function PhotoshootsPage() {
                     <span>Coordination with photographer</span>
                   </li>
                 </ul>
-                <Link href="/book" className="btn-primary w-full text-center block">
+                <Link href="/book" className="btn-primary w-full">
                   Book Essential
                 </Link>
               </div>
@@ -176,7 +176,7 @@ export default function PhotoshootsPage() {
                     <span>Pre-shoot consultation</span>
                   </li>
                 </ul>
-                <Link href="/book" className="btn-primary w-full text-center block">
+                <Link href="/book" className="btn-primary w-full">
                   Book Full Glam
                 </Link>
               </div>
@@ -212,7 +212,7 @@ export default function PhotoshootsPage() {
                     <span>Pre-shoot planning call</span>
                   </li>
                 </ul>
-                <Link href="/book" className="btn-primary w-full text-center block">
+                <Link href="/book" className="btn-primary w-full">
                   Book Multi-Look
                 </Link>
               </div>
@@ -401,7 +401,7 @@ export default function PhotoshootsPage() {
             <div className="text-center">
               <Link 
                 href="/book?service=wedding" 
-                className="btn-gold text-lg px-12 py-4 inline-block"
+                className="btn-gold text-lg"
               >
                 Book Photoshoot Beauty Service
               </Link>

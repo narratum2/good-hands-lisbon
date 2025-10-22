@@ -228,7 +228,7 @@ export default function JournalPage() {
             <div className="text-center mt-12">
               <button
                 onClick={loadMore}
-                className="btn-gold px-8 py-4 text-lg"
+                className="btn-gold text-lg"
               >
                 Continue Reading — Load More Articles
               </button>

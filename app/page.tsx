@@ -47,7 +47,7 @@ export default function Home() {
           <p className="text-xl text-white/90 mb-12 leading-relaxed">
             Let us match you with the perfect professional in just 4 quick steps
           </p>
-          <Link href="/book" className="inline-block bg-white text-gold px-12 py-4 text-lg font-semibold rounded-lg hover:bg-white/90 transition-colors shadow-xl">
+          <Link href="/book" className="bg-white text-gold px-12 py-4 text-lg font-semibold rounded-lg hover:bg-white/90 transition-colors shadow-xl inline-block">
             Start Booking Now →
           </Link>
           <p className="text-sm text-white/70 mt-6">
