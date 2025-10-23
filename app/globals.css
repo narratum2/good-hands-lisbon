@@ -6,38 +6,39 @@
 
 @layer base {
   :root {
-    /* Typography */
+    /* Typography - Vogue Editorial */
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-serif: 'Playfair Display', Georgia, serif;
     
-    /* 8pt Grid Spacing System */
+    /* 8pt Grid Spacing System - LUXURY SPACING */
     --spacing-xs: 4px;
     --spacing-sm: 8px;
-    --spacing-md: 12px;
-    --spacing-lg: 16px;
-    --spacing-xl: 24px;
-    --spacing-2xl: 32px;
-    --spacing-3xl: 48px;
-    --spacing-4xl: 64px;
-    --spacing-5xl: 96px;
-    --spacing-6xl: 128px;
-    --spacing-7xl: 192px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+    --spacing-3xl: 64px;
+    --spacing-4xl: 96px;
+    --spacing-5xl: 128px;
+    --spacing-6xl: 160px;  /* Increased from 128px */
+    --spacing-7xl: 240px;  /* Increased from 192px */
     
-    /* Color System - Sophisticated Minimal */
-    --black: #1a1a1a;      /* Primary text */
-    --white: #ffffff;      /* Primary background */
-    --off-white: #f5f5f5;  /* Subtle backgrounds */
-    --gold: #c9a961;       /* Accents - USE VERY SPARINGLY */
-    --gold-light: #e5d4a8; /* Lighter gold for backgrounds */
-    --gold-dark: #b08d45;  /* Darker gold for contrast */
-    --gray-light: #e5e5e5; /* Borders */
-    --gray-medium: #999999;/* Secondary text */
-    --gray-dark: #2d2d2d;  /* Tertiary text - DARKENED for better readability */
+    /* Color System - Vogue Luxury Palette */
+    --black: #0a0a0a;      /* Deeper, richer black */
+    --editorial-black: #1a1a1a; /* For UI elements */
+    --white: #ffffff;      /* Pure white */
+    --off-white: #fafaf8;  /* Warmer, softer off-white */
+    --gold: #b8985f;       /* Muted, refined gold */
+    --gold-light: #d4c4a0; /* Lighter gold for backgrounds */
+    --gold-dark: #9a7d4a;  /* Darker gold for contrast */
+    --gray-light: #e8e8e6; /* Warmer gray for borders */
+    --gray-medium: #8a8a8a;/* Refined secondary text */
+    --gray-dark: #2d2d2d;  /* Editorial body text */
     
-    /* Sage Green Accents */
-    --sage: #a8b5a0;       /* Primary sage */
+    /* Sage Green Accents - Muted */
+    --sage: #9ba88f;       /* More muted sage */
     --sage-light: #c4d4bc; /* Light sage backgrounds */
-    --sage-dark: #8a9882;  /* Dark sage for text */
+    --sage-dark: #7a8770;  /* Darker sage for text */
     
     /* Z-Index System */
     --z-base: 1;
@@ -70,44 +71,48 @@
     -webkit-touch-callout: none;
   }
 
-  /* Typography Hierarchy - Improved Readability */
+  /* Typography Hierarchy - VOGUE EDITORIAL */
   h1 {
-    @apply font-serif text-black;
-    font-size: clamp(2.25rem, 6vw, 3.5rem); /* Mobile: 36px → Desktop: 56px (more controlled) */
-    font-weight: 500; /* Increased from 400 for better readability */
-    line-height: 1.25; /* Increased from 1.15 for breathing room */
-    letter-spacing: -0.01em; /* Less aggressive than -0.02em */
-    margin-bottom: var(--spacing-xl);
+    @apply font-serif;
+    color: var(--black);
+    font-size: clamp(3rem, 7vw, 5rem); /* Mobile: 48px → Desktop: 80px - LARGER */
+    font-weight: 400; /* Lighter for elegance */
+    line-height: 1.1; /* Tighter for impact */
+    letter-spacing: -0.02em; /* Tighter for sophistication */
+    margin-bottom: var(--spacing-2xl); /* More space */
   }
 
   @media (max-width: 768px) {
     h1 {
-      line-height: 1.3; /* Even more space on mobile */
-      margin-bottom: var(--spacing-lg);
+      line-height: 1.15;
+      margin-bottom: var(--spacing-xl);
     }
   }
 
   h2 {
-    @apply font-sans text-black;
-    font-size: clamp(1.75rem, 4vw, 2.25rem); /* Mobile: 28px → Desktop: 36px (more controlled) */
-    font-weight: 500;
-    line-height: 1.35; /* Increased from 1.25 */
-    letter-spacing: -0.01em;
-    margin-bottom: var(--spacing-lg);
+    @apply font-serif; /* Changed to serif for editorial feel */
+    color: var(--black);
+    font-size: clamp(2rem, 5vw, 3.5rem); /* Mobile: 32px → Desktop: 56px - LARGER */
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+    margin-bottom: var(--spacing-xl);
   }
 
   @media (max-width: 768px) {
     h2 {
-      line-height: 1.4; /* More space on mobile */
-      margin-bottom: var(--spacing-md);
+      line-height: 1.25;
+      margin-bottom: var(--spacing-lg);
     }
   }
 
   h3 {
-    @apply font-sans text-black;
-    font-size: clamp(1.25rem, 3vw, 1.625rem); /* Mobile: 20px → Desktop: 26px (more controlled) */
+    @apply font-sans;
+    color: var(--black);
+    font-size: clamp(1.5rem, 3.5vw, 2rem); /* Mobile: 24px → Desktop: 32px - LARGER */
     font-weight: 500;
-    line-height: 1.4; /* Increased from 1.3 */
+    line-height: 1.3;
+    letter-spacing: -0.01em;
     margin-bottom: var(--spacing-lg);
   }
 
@@ -143,12 +148,20 @@
   }
 
   p {
-    font-size: 16px;
+    font-size: 17px; /* Slightly larger for luxury feel */
     font-weight: 400;
-    line-height: 1.7;
-    color: #2d2d2d; /* Darkened for better contrast (was var(--gray-dark): #4a4a4a) */
-    margin-bottom: var(--spacing-lg);
-    max-width: 70ch; /* Optimal readability */
+    line-height: 1.8; /* More generous line-height */
+    color: var(--gray-dark);
+    margin-bottom: var(--spacing-xl); /* More space between paragraphs */
+    max-width: 65ch; /* Slightly narrower for better readability */
+  }
+  
+  @media (max-width: 768px) {
+    p {
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: var(--spacing-lg);
+    }
   }
 
   a {
@@ -175,45 +188,45 @@
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
   }
 
-  /* Button System - Consistent & Sophisticated */
+  /* Button System - VOGUE SOPHISTICATION */
   .btn-primary {
     display: inline-block;
-    padding: 14px 32px;
-    background: #1a1a1a;
+    padding: 16px 40px; /* More generous padding */
+    background: var(--black);
     color: #ffffff;
     font-family: var(--font-sans);
-    font-size: 13px;
+    font-size: 12px; /* Smaller, more refined */
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em; /* More spacing for luxury */
     line-height: 1.4;
     border: none;
     border-radius: 0;
-    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1); /* Slower */
     cursor: pointer;
     text-align: center;
-    min-height: 48px;
+    min-height: 52px; /* Slightly taller */
     box-shadow: none;
   }
 
   @media (max-width: 768px) {
     .btn-primary {
-      padding: 14px 24px;
-      font-size: 13px; /* Keep at 13px minimum, don't reduce to 12px */
+      padding: 16px 32px;
+      font-size: 12px;
       width: 100%;
       max-width: 100%;
     }
   }
 
   .btn-primary:hover {
-    background: #000000;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background: var(--editorial-black);
+    transform: translateY(-1px); /* More subtle */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Softer shadow */
   }
 
   .btn-primary:active {
-    transform: translateY(0) scale(0.98);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   .btn-primary:focus {
@@ -287,28 +300,28 @@
 
   .btn-gold {
     display: inline-block;
-    padding: 14px 32px;
+    padding: 16px 40px;
     background: var(--gold);
     color: #ffffff;
     font-family: var(--font-sans);
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
     line-height: 1.4;
     border: none;
     border-radius: 0;
-    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     text-align: center;
-    min-height: 48px;
+    min-height: 52px;
     box-shadow: none;
   }
 
   @media (max-width: 768px) {
     .btn-gold {
-      padding: 14px 24px;
-      font-size: 13px; /* Keep at 13px minimum */
+      padding: 16px 32px;
+      font-size: 12px;
       width: 100%;
       max-width: 100%;
     }
@@ -316,13 +329,13 @@
 
   .btn-gold:hover {
     background: var(--gold-dark);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(201, 169, 97, 0.4);
+    transform: translateY(-1px);
+    box-shadow: 0 12px 24px rgba(184, 152, 95, 0.25);
   }
 
   .btn-gold:active {
-    transform: translateY(0) scale(0.98);
-    box-shadow: 0 2px 6px rgba(201, 169, 97, 0.3);
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(184, 152, 95, 0.2);
   }
 
   .btn-gold:focus {
@@ -468,49 +481,49 @@
     border-color: var(--black);
   }
 
-  /* Layout System - Generous Breathing Room */
+  /* Layout System - LUXURY BREATHING ROOM */
   .section-padding {
-    padding-top: var(--spacing-6xl); /* 128px desktop */
+    padding-top: var(--spacing-6xl); /* 160px desktop - INCREASED */
     padding-bottom: var(--spacing-6xl);
   }
 
   @media (max-width: 1024px) {
     .section-padding {
-      padding-top: var(--spacing-5xl); /* 96px tablet */
+      padding-top: var(--spacing-5xl); /* 128px tablet */
       padding-bottom: var(--spacing-5xl);
     }
   }
 
   @media (max-width: 768px) {
     .section-padding {
-      padding-top: var(--spacing-4xl); /* 64px mobile */
+      padding-top: var(--spacing-4xl); /* 96px mobile */
       padding-bottom: var(--spacing-4xl);
     }
   }
 
   .container-custom {
-    max-width: 1440px;
+    max-width: 1280px; /* Narrower for focus - was 1440px */
     margin: 0 auto;
-    padding-left: var(--spacing-3xl); /* 48px */
+    padding-left: var(--spacing-3xl); /* 64px */
     padding-right: var(--spacing-3xl);
   }
 
   @media (max-width: 1024px) {
     .container-custom {
-      padding-left: var(--spacing-2xl); /* 32px */
+      padding-left: var(--spacing-2xl); /* 48px */
       padding-right: var(--spacing-2xl);
     }
   }
 
   @media (max-width: 768px) {
     .container-custom {
-      padding-left: var(--spacing-xl); /* 24px */
+      padding-left: var(--spacing-xl); /* 32px */
       padding-right: var(--spacing-xl);
     }
   }
 
   .container-narrow {
-    max-width: 1200px;
+    max-width: 1080px; /* Narrower - was 1200px */
     margin: 0 auto;
     padding-left: var(--spacing-3xl);
     padding-right: var(--spacing-3xl);
@@ -522,25 +535,26 @@
     margin-right: auto;
   }
 
-  /* Service Cards - Minimal & Elegant */
+  /* Service Cards - EDITORIAL LUXURY */
   .service-card {
     background: var(--white);
     border: 1px solid var(--gray-light);
     overflow: hidden;
-    transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 600ms cubic-bezier(0.4, 0, 0.2, 1); /* Slower, more luxurious */
   }
 
   .service-card:hover {
-    border-color: var(--gray-medium);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08); /* Very subtle */
+    border-color: var(--black);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12); /* More dramatic but refined */
+    transform: translateY(-4px); /* Subtle lift */
   }
 
   .service-card img {
-    transition: transform 700ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 800ms cubic-bezier(0.4, 0, 0.2, 1); /* Slower zoom */
   }
 
   .service-card:hover img {
-    transform: scale(1.03); /* Minimal zoom */
+    transform: scale(1.05); /* Slightly more zoom */
   }
 
   /* Modal / Overlay System - Proper Z-Index */

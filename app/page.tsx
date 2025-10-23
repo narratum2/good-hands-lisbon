@@ -38,20 +38,21 @@ export default function Home() {
       
       <FAQExpanded />
       
-      {/* Final Booking CTA - Replaces inline form */}
-      <section className="section-padding bg-gradient-to-r from-gold via-gold-dark to-gold text-white">
-        <div className="container-custom max-w-3xl text-center">
-          <h2 className="text-4xl md:text-5xl font-serif mb-8">
-            Ready to Book Your Experience?
+      {/* Final Booking CTA - VOGUE SOPHISTICATION */}
+      <section className="section-padding bg-black text-white">
+        <div className="container-custom max-w-4xl text-center">
+          <h2 className="text-4xl md:text-6xl font-serif mb-8 font-light" style={{ letterSpacing: '-0.02em' }}>
+            Begin Your Experience
           </h2>
-          <p className="text-xl text-white/90 mb-12 leading-relaxed">
-            Let us match you with the perfect professional in just 4 quick steps
+          <p className="text-lg md:text-xl text-white/80 mb-14 leading-relaxed font-light max-w-2xl mx-auto">
+            Let us connect you with the perfect professional. 
+            Seamless booking. Exceptional results.
           </p>
-          <Link href="/book" className="bg-white text-gold px-12 py-4 text-lg font-semibold rounded-lg hover:bg-white/90 transition-colors shadow-xl inline-block">
-            Start Booking Now →
+          <Link href="/book" className="btn-gold inline-block">
+            Book Your Appointment
           </Link>
-          <p className="text-sm text-white/70 mt-6">
-            Takes less than 2 minutes • Confirmation within 2 hours
+          <p className="text-sm text-white/50 mt-8 uppercase tracking-wider" style={{ letterSpacing: '0.15em' }}>
+            Confirmation within 2 hours
           </p>
         </div>
       </section>

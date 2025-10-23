@@ -179,3 +179,4 @@ You've done 90% of the work. This final 10% (setting up Notion database properti
 
 Let's finish strong! 💪
 
+

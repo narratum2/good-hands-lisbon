@@ -215,3 +215,4 @@ If after adding properties, bookings still don't appear:
 
 **Questions?** The detailed guide is in `NOTION_DATABASE_SETUP.md`
 
+

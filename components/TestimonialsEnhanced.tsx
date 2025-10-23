@@ -31,119 +31,69 @@ const reviews = [
 
 export default function TestimonialsEnhanced() {
   return (
-    <section className="section-padding bg-gradient-to-b from-shell via-sage-light to-shell">
+    <section className="section-padding bg-off-white">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          transition={{ duration: 0.8 }}
+          className="text-center mb-20"
         >
-          <p className="text-xs uppercase tracking-wider text-gold font-semibold mb-3">
+          <p className="text-xs uppercase tracking-[0.2em] text-gray-medium font-semibold mb-6">
             Client Stories
           </p>
-          <h2 className="text-4xl md:text-5xl font-serif mb-4 text-ink">
+          <h2 className="text-4xl md:text-6xl font-serif mb-6 font-light" style={{ letterSpacing: '-0.02em' }}>
             Loved by Our Clients
           </h2>
-          <p className="text-harbor text-lg max-w-2xl mx-auto">
+          <p className="text-gray-dark text-lg md:text-xl max-w-2xl mx-auto font-light" style={{ lineHeight: '1.7' }}>
             Real experiences from people who trust Good Hands
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
           {reviews.map((review, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.15 }}
-              whileHover={{
-                y: -8,
-                transition: { duration: 0.3, ease: 'easeOut' },
-              }}
-              className="bg-white rounded-lg p-8 shadow-sm hover:shadow-xl transition-shadow relative"
+              transition={{ duration: 0.8, delay: index * 0.2 }}
+              className="bg-white p-10 md:p-12 border border-gray-light hover:border-black transition-all duration-500 relative group"
             >
-              {/* Large Quote Mark */}
-              <div className="absolute top-6 left-6 text-6xl text-gold/20 font-serif leading-none">
+              {/* Large Editorial Quote Mark */}
+              <div className="absolute top-8 left-8 text-7xl md:text-8xl text-gold/15 font-serif leading-none">
                 "
               </div>
 
-              {/* Avatar Circle */}
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-gold-light to-gold flex items-center justify-center text-3xl mb-4 relative z-10">
-                {review.avatar}
-              </div>
-
-              {/* Stars */}
-              <div className="flex mb-4">
-                {[...Array(review.rating)].map((_, i) => (
-                  <motion.span
-                    key={i}
-                    initial={{ opacity: 0, scale: 0 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: index * 0.15 + i * 0.1 }}
-                    className="text-gold text-xl"
-                  >
-                    ★
-                  </motion.span>
-                ))}
-              </div>
-
-              {/* Quote Text */}
-              <p className="text-ink/90 mb-6 leading-relaxed relative z-10">
+              {/* Quote Text - LARGER, EDITORIAL */}
+              <p className="text-gray-dark mb-8 leading-relaxed relative z-10 text-lg md:text-xl font-light" style={{ lineHeight: '1.7' }}>
                 {review.text}
               </p>
 
-              {/* Service Badge */}
-              <div className="mb-4">
-                <span className="inline-block px-3 py-1 bg-gold/10 text-gold text-xs font-semibold rounded-full">
+              {/* Attribution - Editorial Style */}
+              <div className="border-t border-gray-light pt-6">
+                <p className="font-semibold text-black text-base mb-1">{review.name}</p>
+                <p className="text-gray-medium text-sm uppercase tracking-wider" style={{ letterSpacing: '0.1em' }}>
                   {review.serviceType}
-                </span>
-              </div>
-
-              {/* Attribution */}
-              <div className="border-t border-ink/10 pt-4">
-                <p className="font-semibold text-ink">{review.name}</p>
-                <div className="flex items-center gap-2 text-sm text-harbor mt-1">
-                  <svg
-                    className="w-4 h-4"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                  </svg>
-                  <span>{review.location}</span>
-                </div>
+                </p>
               </div>
             </motion.div>
           ))}
         </div>
 
-        {/* CTA */}
+        {/* Refined CTA */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="text-center mt-12"
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="text-center mt-20"
         >
-          <p className="text-harbor mb-4">
+          <p className="text-gray-dark mb-8 text-lg font-light">
             Join hundreds of satisfied clients
           </p>
-          <a href="/book" className="btn-gold">
+          <a href="/book" className="btn-primary">
             Book Your Experience
           </a>
         </motion.div>
