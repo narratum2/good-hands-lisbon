@@ -67,13 +67,13 @@ export default function TrustSignals() {
               variants={staggerItem}
               className="text-center"
             >
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gold/10 text-gold mb-3">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full mb-4" style={{ backgroundColor: 'var(--gold)/10', color: 'var(--gold)' }}>
                 {signal.icon}
               </div>
-              <div className="text-3xl md:text-4xl font-serif text-ink mb-1">
+              <div className="text-3xl md:text-4xl font-serif font-light mb-2" style={{ color: 'var(--black)' }}>
                 {signal.stat}
               </div>
-              <div className="text-sm text-harbor uppercase tracking-wider">
+              <div className="text-xs uppercase tracking-[0.15em] font-semibold" style={{ color: 'var(--gray-medium)' }}>
                 {signal.label}
               </div>
             </motion.div>
@@ -86,16 +86,17 @@ export default function TrustSignals() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-center"
+          className="text-center pt-8 border-t border-gray-light"
         >
-          <p className="text-xs uppercase tracking-widest text-harbor/60 mb-4">
+          <p className="text-xs uppercase tracking-[0.2em] font-semibold mb-8" style={{ color: 'var(--gray-medium)' }}>
             Trusted by Leading Hotels
           </p>
-          <div className="flex flex-wrap justify-center items-center gap-8">
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 max-w-3xl mx-auto">
             {partners.map((partner, index) => (
               <div
                 key={index}
-                className="text-sm font-medium text-harbor hover:text-gold transition-colors"
+                className="text-lg font-serif font-light transition-colors duration-300"
+                style={{ color: 'var(--gray-dark)' }}
               >
                 {partner}
               </div>
