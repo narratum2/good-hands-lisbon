@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Sparkles, Heart, Shield, Users } from 'lucide-react'
 import Button from '@/components/ui/Button'
-import { OptimizedImage } from '@/components/ui/OptimizedImage'
+import OptimizedImage from '@/components/ui/OptimizedImage'
 
 export const metadata: Metadata = {
   title: 'About Good Hands — Lisbon\'s Premier Beauty Concierge Service',

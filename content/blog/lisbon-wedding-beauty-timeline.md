@@ -1,3 +1,15 @@
+---
+title: "Wedding Beauty Timeline for Lisbon: Complete Planning Guide"
+slug: "lisbon-wedding-beauty-timeline"
+excerpt: "Complete timeline for booking wedding beauty services in Lisbon. From 12 months out to day-of coordination, never miss a critical beauty milestone."
+author: "Good Hands Team"
+date: "2025-10-12"
+category: "Wedding Beauty"
+tags: ["wedding", "bridal beauty", "timeline", "lisbon weddings", "planning"]
+featuredImage: "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=1200&q=80"
+lastUpdated: "2025-10-26"
+---
+
 # Wedding Beauty Timeline for Lisbon
 
 Destination wedding in Lisbon? Your beauty timeline needs to account for travel, climate, and local service quality.
