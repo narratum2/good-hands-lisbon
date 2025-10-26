@@ -39,10 +39,10 @@ export default function HeroModern() {
           </motion.p>
           
           {/* Large, Confident Headline */}
-          <h1 className="font-serif font-light mb-8 md:mb-12 text-white" style={{ fontSize: 'clamp(3rem, 8vw, 5.5rem)', lineHeight: '1.05', letterSpacing: '-0.02em' }}>
-            Where Luxury
+          <h1 className="font-serif font-light mb-8 md:mb-12 text-white" style={{ fontSize: 'clamp(2.5rem, 8vw, 5.5rem)', lineHeight: '1.05', letterSpacing: '-0.02em' }}>
+            The Beauty Concierge
             <br />
-            Meets Precision
+            Lisbon Trusts
           </h1>
           
           {/* Refined Subheading */}

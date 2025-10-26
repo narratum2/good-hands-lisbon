@@ -57,9 +57,9 @@ export default function Services() {
           <p className="text-xs uppercase tracking-[0.2em] text-gray-medium font-semibold mb-6">
             Our Services
           </p>
-          <h2 className="text-4xl md:text-6xl font-serif mb-8 font-light" style={{ letterSpacing: '-0.02em' }}>
-            Stop Wasting Time on the Wrong Professionals
-          </h2>
+               <h2 className="text-4xl md:text-6xl font-serif mb-8 font-light" style={{ letterSpacing: '-0.02em' }}>
+                Discover Exceptional Beauty Services
+              </h2>
           <p className="text-gray-dark text-lg md:text-xl max-w-3xl mx-auto font-light" style={{ lineHeight: '1.7' }}>
             We've vetted hundreds of beauty professionals so you don't have to. Our concierge service ensures perfect matches—every single time.
           </p>

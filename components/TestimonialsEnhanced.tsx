@@ -44,7 +44,7 @@ export default function TestimonialsEnhanced() {
             Client Stories
           </p>
           <h2 className="text-4xl md:text-6xl font-serif mb-6 font-light" style={{ letterSpacing: '-0.02em' }}>
-            Loved by Our Clients
+            What Our Clients Say
           </h2>
           <p className="text-gray-dark text-lg md:text-xl max-w-2xl mx-auto font-light" style={{ lineHeight: '1.7' }}>
             Real experiences from people who trust Good Hands
