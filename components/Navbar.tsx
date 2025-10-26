@@ -72,9 +72,11 @@ export default function Navbar() {
       <div className="container-custom">
         <div className="flex items-center justify-between" style={{ height: '80px' }}>
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <span className="text-xl font-serif font-normal text-black tracking-tight group-hover:text-gold transition-colors duration-300">
-              Good Hands
+          <Link href="/" className="flex items-center gap-2 group focus-visible-ring" aria-label="Good Hands Home">
+            <span className="text-2xl md:text-3xl font-serif font-light transition-colors duration-300" style={{ color: 'var(--black)', letterSpacing: '-0.02em' }}>
+              <span className="group-hover:text-gold transition-colors">Good</span>
+              <span className="mx-1.5" style={{ color: 'var(--gold)' }}>·</span>
+              <span className="group-hover:text-gold transition-colors">Hands</span>
             </span>
           </Link>
 
