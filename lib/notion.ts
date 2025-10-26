@@ -167,11 +167,11 @@ export async function createBookingRecord(data: {
         },
         Status: {
           select: {
-            name: 'Pending',
+            name: 'New',
           },
         },
         ...(data.message && {
-          Notes: {
+          Message: {
             rich_text: [
               {
                 text: {
