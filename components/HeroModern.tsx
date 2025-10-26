@@ -47,8 +47,8 @@ export default function HeroModern() {
           
           {/* Refined Subheading */}
           <p className="text-base md:text-lg mb-12 md:mb-16 text-white/90 max-w-2xl mx-auto font-light" style={{ lineHeight: '1.7', letterSpacing: '0.01em' }}>
-            We connect you with Lisbon's most exceptional beauty professionals. 
-            Vetted expertise. Flawless results. Every time.
+            Lisbon's most exceptional beauty professionals. 
+            Proven expertise. Flawless results. Every time.
           </p>
           
           {/* Minimal, Sophisticated CTAs */}

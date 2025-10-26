@@ -44,7 +44,7 @@ export default function Footer() {
           <div>
             <h3 className="text-2xl font-serif mb-4">Good Hands</h3>
             <p className="text-porcelain/70 text-sm leading-relaxed">
-              Your beauty concierge in Lisbon. We know everyone worth knowing.
+              Where discerning clients meet exceptional professionals.
             </p>
           </div>
 
