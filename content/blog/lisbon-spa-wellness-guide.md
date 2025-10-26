@@ -1,5 +1,6 @@
 ---
 title: "Complete Guide to Spa & Wellness Services in Lisbon"
+slug: "lisbon-spa-wellness-guide"
 excerpt: "From traditional Portuguese treatments to modern wellness experiences, discover Lisbon's best spas, massage therapists, and holistic practitioners. Expert recommendations from Good Hands."
 date: "2025-01-15"
 readTime: "8 min read"

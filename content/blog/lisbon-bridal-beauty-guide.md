@@ -1,5 +1,6 @@
 ---
 title: "Complete Bridal Beauty Guide for Weddings in Lisbon & Portugal"
+slug: "lisbon-bridal-beauty-guide"
 date: "2025-01-11"
 excerpt: "Everything you need to know about planning bridal beauty services in Lisbon and Portugal—from trials to wedding day coordination, timelines, and expert recommendations."
 author: "Good Hands Team"

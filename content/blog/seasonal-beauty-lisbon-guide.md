@@ -1,5 +1,6 @@
 ---
 title: "Seasonal Beauty Guide: Lisbon's Climate & Your Skincare Routine"
+slug: "seasonal-beauty-lisbon-guide"
 excerpt: "How Lisbon's unique Mediterranean climate affects your beauty needs throughout the year. Expert seasonal tips for hair, skin, and makeup from Good Hands professionals."
 date: "2025-01-15"
 readTime: "7 min read"
