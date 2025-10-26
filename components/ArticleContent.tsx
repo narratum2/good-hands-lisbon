@@ -12,22 +12,22 @@ interface ArticleContentProps {
 // Enhanced markdown components with improved typography
 const markdownComponents: any = {
   h1: ({ children }: { children: ReactNode }) => (
-    <TitleText className="mt-16 mb-6 scroll-mt-20" id="article-heading">
+    <h1 className="text-4xl font-serif text-ink mt-16 mb-6 scroll-mt-20">
       {children}
-    </TitleText>
+    </h1>
   ),
   h2: ({ children }: { children: ReactNode }) => (
-    <h2 className="text-3xl md:text-4xl font-serif font-light mt-16 mb-6 scroll-mt-20" style={{ letterSpacing: '-0.01em', color: 'var(--black)' }} id={`heading-${String(children).toLowerCase().replace(/\s+/g, '-')}`}>
+    <h2 className="text-3xl md:text-4xl font-serif font-light mt-16 mb-6 scroll-mt-20" style={{ letterSpacing: '-0.01em', color: 'var(--black)' }}>
       {children}
     </h2>
   ),
   h3: ({ children }: { children: ReactNode }) => (
-    <h3 className="text-xl md:text-2xl font-sans font-medium mt-12 mb-4 scroll-mt-20" style={{ color: 'var(--black)' }} id={`heading-${String(children).toLowerCase().replace(/\s+/g, '-')}`}>
+    <h3 className="text-xl md:text-2xl font-sans font-medium mt-12 mb-4 scroll-mt-20" style={{ color: 'var(--black)' }}>
       {children}
     </h3>
   ),
   p: ({ children }: { children: ReactNode }) => (
-    <BodyText className="mb-6">{children}</BodyText>
+    <p className="text-lg leading-relaxed mb-6" style={{ lineHeight: '1.8', color: 'var(--gray-dark)', maxWidth: '65ch' }}>{children}</p>
   ),
   blockquote: ({ children }: { children: ReactNode }) => (
     <blockquote 

@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useRef } from 'react'
 import React from 'react'
-import { LoadingSpinner } from './LoadingSpinner'
+import LoadingSpinner from './LoadingSpinner'
 
 interface LazyLoadProps {
   children: React.ReactNode
@@ -94,7 +94,7 @@ export function LazyImage({
     <LazyLoad
       fallback={
         <div className={`${aspectClasses[aspectRatio]} ${className} bg-porcelain animate-pulse flex items-center justify-center`}>
-          <LoadingSpinner size="sm" color="harbor" />
+          <LoadingSpinner size="sm" color="ink" />
         </div>
       }
     >

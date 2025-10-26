@@ -44,7 +44,7 @@ export function generateSEOMetadata(config: SEOConfig): Metadata {
     openGraph: {
       title: fullTitle,
       description,
-      type,
+      type: type === 'product' || type === 'service' ? 'website' : type,
       url: fullUrl,
       siteName: 'Good Hands',
       images: [
