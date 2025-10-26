@@ -160,10 +160,19 @@ export async function createBookingRecord(data: {
             },
           },
         }),
-        'Date': {
+        Date: {
           date: {
-            start: `${data.date}T${data.time}:00`,
+            start: data.date,
           },
+        },
+        Time: {
+          rich_text: [
+            {
+              text: {
+                content: data.time,
+              },
+            },
+          ],
         },
         Status: {
           select: {
