@@ -16,21 +16,27 @@ const markdownComponents: any = {
     </h1>
   ),
   h2: ({ children }: { children: ReactNode }) => (
-    <h2 className="text-3xl font-serif text-ink mt-12 mb-4 scroll-mt-20" id={`heading-${String(children).toLowerCase().replace(/\s+/g, '-')}`}>
+    <h2 className="text-3xl md:text-4xl font-serif font-light mt-16 mb-6 scroll-mt-20" style={{ letterSpacing: '-0.01em', color: 'var(--black)' }} id={`heading-${String(children).toLowerCase().replace(/\s+/g, '-')}`}>
       {children}
     </h2>
   ),
   h3: ({ children }: { children: ReactNode }) => (
-    <h3 className="text-2xl font-serif text-ink mt-8 mb-3 scroll-mt-20" id={`heading-${String(children).toLowerCase().replace(/\s+/g, '-')}`}>
+    <h3 className="text-xl md:text-2xl font-sans font-medium mt-12 mb-4 scroll-mt-20" style={{ color: 'var(--black)' }} id={`heading-${String(children).toLowerCase().replace(/\s+/g, '-')}`}>
       {children}
     </h3>
   ),
   p: ({ children }: { children: ReactNode }) => (
-    <p className="text-harbor text-lg leading-relaxed mb-6">{children}</p>
+    <p className="text-lg leading-relaxed mb-6" style={{ lineHeight: '1.8', color: 'var(--gray-dark)', maxWidth: '65ch' }}>{children}</p>
   ),
   blockquote: ({ children }: { children: ReactNode }) => (
     <blockquote 
-      className="border-l-4 border-gold pl-6 italic text-xl text-harbor/80 my-8 bg-porcelain/30 py-4 rounded-r-lg"
+      className="border-l-4 pl-8 italic text-xl my-12 py-4"
+      style={{ 
+        borderColor: 'var(--gold)',
+        color: 'var(--gray-dark)',
+        fontSize: '1.25rem',
+        lineHeight: '1.7'
+      }}
       role="complementary"
       aria-label="Quote"
     >
@@ -87,7 +93,7 @@ const markdownComponents: any = {
 export default function ArticleContent({ content }: ArticleContentProps) {
   return (
     <article 
-      className="editorial-content prose prose-lg max-w-none"
+      className="article-content"
       role="main"
       aria-label="Article content"
     >

@@ -66,10 +66,56 @@
     line-height: 1.7;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* Mobile optimizations */
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-  }
+  /* Mobile optimizations */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+/* Article Content Styles */
+.article-content {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--gray-dark);
+}
+
+.article-content > div > p:first-of-type::first-letter {
+  font-family: var(--font-serif);
+  font-size: 4em;
+  line-height: 0.8;
+  float: left;
+  margin: 0.1em 0.1em 0 0;
+  color: var(--gold);
+  font-weight: 300;
+}
+
+.article-content ul,
+.article-content ol {
+  margin: 24px 0;
+  max-width: 65ch;
+}
+
+.article-content li {
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+.article-content strong {
+  font-weight: 600;
+  color: var(--black);
+}
+
+.article-content a {
+  color: var(--gold);
+  text-decoration: underline;
+  text-decoration-color: var(--gold)/30;
+  text-underline-offset: 2px;
+  transition: all 200ms ease;
+}
+
+.article-content a:hover {
+  color: var(--gold-dark);
+  text-decoration-color: var(--gold-dark);
+}
 
   /* Typography Hierarchy - VOGUE EDITORIAL */
   h1 {

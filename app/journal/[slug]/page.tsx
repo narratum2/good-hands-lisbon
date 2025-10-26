@@ -158,11 +158,11 @@ export default function ArticlePage({ params }: PageProps) {
             )}
           </div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-ink mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-serif font-light mb-8" style={{ letterSpacing: '-0.02em', lineHeight: '1.1', color: 'var(--black)' }}>
             {article.title}
           </h1>
           
-          <p className="text-xl text-harbor mb-8 leading-relaxed">
+          <p className="text-xl font-light mb-8" style={{ lineHeight: '1.7', color: 'var(--gray-dark)', maxWidth: '65ch' }}>
             {article.excerpt}
           </p>
 
@@ -208,8 +208,8 @@ export default function ArticlePage({ params }: PageProps) {
       </header>
 
       {/* Article Content */}
-      <div className="bg-porcelain py-16">
-        <div className="container-custom max-w-3xl">
+      <div className="bg-white py-16">
+        <div className="container-custom" style={{ maxWidth: '680px' }}>
           <ArticleContent content={article.content} />
 
           {/* CTA Box */}
