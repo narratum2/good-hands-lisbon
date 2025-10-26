@@ -80,25 +80,28 @@ export default function TrustSignals() {
           ))}
         </motion.div>
 
-        {/* Partner Badges */}
+        {/* Partner Badges - PROMINENT DISPLAY */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-center pt-8 border-t border-gray-light"
+          className="text-center pt-12 mt-12 border-t-2"
+          style={{ borderColor: 'var(--gold)/20' }}
         >
-          <p className="text-xs uppercase tracking-[0.2em] font-semibold mb-8" style={{ color: 'var(--gray-medium)' }}>
+          <h3 className="text-2xl md:text-3xl font-serif font-light mb-12" style={{ letterSpacing: '-0.01em', color: 'var(--black)' }}>
             Trusted by Leading Hotels
-          </p>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 max-w-3xl mx-auto">
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 max-w-4xl mx-auto">
             {partners.map((partner, index) => (
               <div
                 key={index}
-                className="text-lg font-serif font-light transition-colors duration-300"
-                style={{ color: 'var(--gray-dark)' }}
+                className="text-center p-6 border border-gray-light hover:border-gold transition-all duration-300 hover:shadow-lg"
+                style={{ backgroundColor: 'var(--off-white)' }}
               >
-                {partner}
+                <p className="text-xl md:text-2xl font-serif font-light" style={{ color: 'var(--black)' }}>
+                  {partner}
+                </p>
               </div>
             ))}
           </div>
