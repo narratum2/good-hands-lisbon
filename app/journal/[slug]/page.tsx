@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const url = `https://goodhands.com/journal/${article.slug}`
-  const ogImage = article.image.startsWith('http') ? article.image : `https://goodhands.com${article.image}`
+  const ogImage = article.image?.startsWith('http') ? article.image : `https://goodhands.com${article.image || '/images/default-blog.jpg'}`
 
   return {
     title: `${article.title} — Good Hands Journal`,
@@ -90,7 +90,7 @@ export default function ArticlePage({ params }: PageProps) {
     '@type': 'Article',
     headline: article.title,
     description: article.excerpt,
-    image: article.image.startsWith('http') ? article.image : `https://goodhands.com${article.image}`,
+    image: article.image?.startsWith('http') ? article.image : `https://goodhands.com${article.image || '/images/default-blog.jpg'}`,
     datePublished: article.date,
     author: {
       '@type': 'Person',
@@ -180,9 +180,9 @@ export default function ArticlePage({ params }: PageProps) {
               <div
                 className="w-12 h-12 rounded-full bg-sand flex items-center justify-center text-white font-bold text-lg"
                 role="img"
-                aria-label={`${article.author.name}'s avatar`}
+                aria-label={`${article.author.name || 'Author'}'s avatar`}
               >
-                {article.author.name.charAt(0)}
+                {article.author.name?.charAt(0) || 'A'}
               </div>
             )}
             <div>
@@ -234,11 +234,11 @@ export default function ArticlePage({ params }: PageProps) {
       {/* Related Articles */}
       {relatedArticles.length > 0 && (
         <section className="bg-white py-16" aria-labelledby="related-articles">
-          <div className="container-custom max-w-6xl">
+        <div className="container-custom max-w-6xl">
             <h2 id="related-articles" className="text-3xl font-serif mb-8">
               Continue Reading
             </h2>
-            <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
               {relatedArticles.map((relatedArticle) => (
                 <Link
                   key={relatedArticle.slug}
@@ -269,8 +269,8 @@ export default function ArticlePage({ params }: PageProps) {
                   )}
                 </Link>
               ))}
-            </div>
           </div>
+        </div>
         </section>
       )}
 
