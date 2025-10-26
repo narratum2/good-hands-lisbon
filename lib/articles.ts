@@ -100,13 +100,13 @@ export function getAllArticles(): ArticleMetadata[] {
   const articles: ArticleMetadata[] = []
   
   try {
-    // Load from MDX files
+    // Load from MD/MDX files
     if (fs.existsSync(articlesDirectory)) {
       const fileNames = fs.readdirSync(articlesDirectory)
-      const mdxFiles = fileNames.filter(name => name.endsWith('.mdx'))
+      const mdFiles = fileNames.filter(name => name.endsWith('.md') || name.endsWith('.mdx'))
       
-      for (const fileName of mdxFiles) {
-        const slug = fileName.replace(/\.mdx$/, '')
+      for (const fileName of mdFiles) {
+        const slug = fileName.replace(/\.(md|mdx)$/, '')
         const fullPath = path.join(articlesDirectory, fileName)
         const fileContents = fs.readFileSync(fullPath, 'utf8')
         const { data } = matter(fileContents)

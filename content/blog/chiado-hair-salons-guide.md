@@ -1,3 +1,15 @@
+---
+title: "Hair Salons in Chiado: Lisbon's Luxury Beauty Epicenter"
+slug: "chiado-hair-salons-guide"
+excerpt: "Discover Chiado's best hair salons where Art Nouveau facades meet cutting-edge style. European-trained stylists, boutique atmosphere, Portuguese expertise."
+author: "Good Hands Team"
+date: "2025-10-12"
+category: "Beauty Guides"
+tags: ["chiado", "hair salons", "luxury beauty", "lisbon neighborhoods"]
+featuredImage: "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200&q=80"
+lastUpdated: "2025-10-26"
+---
+
 # Hair Salons in Chiado
 
 Chiado isn't just historic—it's the epicenter of luxury beauty in Lisbon. Art Nouveau facades, sophisticated salons, Portuguese tradition meeting cutting-edge style.
