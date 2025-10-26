@@ -234,9 +234,9 @@ export function usePerformanceMonitor(componentName: string) {
 // Memo wrapper for expensive components
 export function withMemo<T extends React.ComponentType<any>>(
   Component: T,
-  areEqual?: (prevProps: React.ComponentProps<T>, nextProps: React.ComponentProps<T>) => boolean
+  areEqual?: (prevProps: Readonly<React.ComponentProps<T>>, nextProps: Readonly<React.ComponentProps<T>>) => boolean
 ) {
-  return React.memo(Component, areEqual)
+  return React.memo(Component, areEqual as any)
 }
 
 // Debounced input hook
