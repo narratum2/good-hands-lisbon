@@ -3,17 +3,18 @@
 import ReactMarkdown from 'react-markdown'
 import Link from 'next/link'
 import { ReactNode } from 'react'
+import { BodyText, TitleText, SubtitleText } from './ui/DesignSystem'
 
 interface ArticleContentProps {
   content: string
 }
 
-// Type-safe markdown components with proper accessibility
+// Enhanced markdown components with improved typography
 const markdownComponents: any = {
   h1: ({ children }: { children: ReactNode }) => (
-    <h1 className="text-4xl font-serif text-ink mt-16 mb-6 scroll-mt-20" id="article-heading">
+    <TitleText className="mt-16 mb-6 scroll-mt-20" id="article-heading">
       {children}
-    </h1>
+    </TitleText>
   ),
   h2: ({ children }: { children: ReactNode }) => (
     <h2 className="text-3xl md:text-4xl font-serif font-light mt-16 mb-6 scroll-mt-20" style={{ letterSpacing: '-0.01em', color: 'var(--black)' }} id={`heading-${String(children).toLowerCase().replace(/\s+/g, '-')}`}>
@@ -26,7 +27,7 @@ const markdownComponents: any = {
     </h3>
   ),
   p: ({ children }: { children: ReactNode }) => (
-    <p className="text-lg leading-relaxed mb-6" style={{ lineHeight: '1.8', color: 'var(--gray-dark)', maxWidth: '65ch' }}>{children}</p>
+    <BodyText className="mb-6">{children}</BodyText>
   ),
   blockquote: ({ children }: { children: ReactNode }) => (
     <blockquote 

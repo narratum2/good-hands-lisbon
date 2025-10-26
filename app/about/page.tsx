@@ -2,6 +2,8 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Sparkles, Heart, Shield, Users } from 'lucide-react'
+import Button from '@/components/ui/Button'
+import { OptimizedImage } from '@/components/ui/OptimizedImage'
 
 export const metadata: Metadata = {
   title: 'About Good Hands — Lisbon\'s Premier Beauty Concierge Service',
@@ -23,9 +25,9 @@ export default function AboutPage() {
             We built Good Hands because finding exceptional beauty services in Lisbon 
             shouldn&apos;t be a challenge.
           </p>
-          <Link href="/book" className="btn-gold text-lg">
+          <Button href="/book" variant="gold" size="lg">
             Experience the Difference
-          </Link>
+          </Button>
         </div>
         
         {/* Scroll Indicator */}
@@ -65,15 +67,12 @@ export default function AboutPage() {
               </div>
             </div>
             <div>
-              <div className="relative h-96 rounded-lg overflow-hidden shadow-2xl">
-                <Image
-                  src="/brand-images/hero-salon-interior.png"
-                  alt="Frustrated person researching beauty services"
-                  fill
-                  className="object-cover grayscale"
-                />
-                <div className="absolute inset-0 bg-ink/20" />
-              </div>
+              <OptimizedImage
+                src="/brand-images/hero-salon-interior.png"
+                alt="Frustrated person researching beauty services"
+                aspectRatio="landscape"
+                className="h-96 rounded-lg shadow-2xl grayscale"
+              />
             </div>
           </div>
         </div>
@@ -354,9 +353,9 @@ export default function AboutPage() {
             Join hundreds of clients who&apos;ve stopped gambling with their beauty 
             and started trusting Good Hands
           </p>
-          <Link href="/book" className="inline-block bg-white text-gold px-12 py-4 text-lg font-semibold rounded hover:bg-white/90 transition-colors">
+          <Button href="/book" variant="outline" size="lg" className="bg-white text-gold hover:bg-white/90">
             Book Your First Experience
-          </Link>
+          </Button>
           <p className="text-sm text-white/70 mt-6">
             First-time clients: Share your preferences, we&apos;ll match you perfectly
           </p>

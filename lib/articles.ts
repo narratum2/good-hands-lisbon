@@ -3,7 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import { Article, ArticleMetadata, RelatedArticle } from '@/types/article'
 
-const articlesDirectory = path.join(process.cwd(), 'content/articles')
+const articlesDirectory = path.join(process.cwd(), 'content/blog')
 
 // Fallback articles data (to be migrated to MDX files)
 const fallbackArticles: Record<string, Article> = {
@@ -54,8 +54,11 @@ function calculateReadingTime(content: string): string {
 // Get article by slug with fallback
 export function getArticle(slug: string): Article | null {
   try {
-    // Try to load from MDX file first
-    const fullPath = path.join(articlesDirectory, `${slug}.mdx`)
+    // Try to load from MD/MDX file first
+    let fullPath = path.join(articlesDirectory, `${slug}.md`)
+    if (!fs.existsSync(fullPath)) {
+      fullPath = path.join(articlesDirectory, `${slug}.mdx`)
+    }
     if (fs.existsSync(fullPath)) {
       const fileContents = fs.readFileSync(fullPath, 'utf8')
       const { data, content } = matter(fileContents)
