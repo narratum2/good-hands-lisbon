@@ -105,9 +105,15 @@ export async function createCustomerRecord(data: {
       },
     })
 
+    console.log('✅ Customer created in Notion:', response.id)
     return response
-  } catch (error) {
-    console.error('Error creating customer record in Notion:', error)
+  } catch (error: any) {
+    console.error('❌ Error creating customer record in Notion:', {
+      message: error?.message,
+      code: error?.code,
+      status: error?.status,
+      body: error?.body,
+    })
     return null
   }
 }
@@ -209,9 +215,15 @@ export async function createBookingRecord(data: {
       },
     })
 
+    console.log('✅ Booking created in Notion:', response.id)
     return response
-  } catch (error) {
-    console.error('Error creating booking record in Notion:', error)
+  } catch (error: any) {
+    console.error('❌ Error creating booking record in Notion:', {
+      message: error?.message,
+      code: error?.code,
+      status: error?.status,
+      body: error?.body,
+    })
     return null
   }
 }
