@@ -80,29 +80,43 @@ export default function TrustSignals() {
           ))}
         </motion.div>
 
-        {/* Partner Badges - PROMINENT DISPLAY */}
+        {/* Partner Badges - ULTRA-MINIMAL LUXURY DESIGN */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-center pt-12 mt-12 border-t-2"
-          style={{ borderColor: 'var(--gold)/20' }}
+          className="text-center pt-16 mt-16 border-t"
+          style={{ borderColor: 'var(--gold)/10' }}
         >
-          <h3 className="text-2xl md:text-3xl font-serif font-light mb-12" style={{ letterSpacing: '-0.01em', color: 'var(--black)' }}>
+          {/* Eyebrow */}
+          <p className="text-xs uppercase tracking-[0.3em] mb-10 font-semibold" style={{ color: 'var(--gray-medium)' }}>
             Trusted by Leading Hotels
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 max-w-4xl mx-auto">
+          </p>
+          
+          {/* Hotel Names - Single Elegant Line */}
+          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 max-w-5xl mx-auto">
             {partners.map((partner, index) => (
-              <div
+              <motion.div
                 key={index}
-                className="text-center p-6 border border-gray-light hover:border-gold transition-all duration-300 hover:shadow-lg"
-                style={{ backgroundColor: 'var(--off-white)' }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="flex items-center gap-6 md:gap-10"
               >
-                <p className="text-xl md:text-2xl font-serif font-light" style={{ color: 'var(--black)' }}>
+                <span 
+                  className="text-2xl md:text-3xl font-serif font-light hover:text-gold transition-colors duration-300 cursor-default" 
+                  style={{ color: 'var(--black)', letterSpacing: '-0.01em' }}
+                >
                   {partner}
-                </p>
-              </div>
+                </span>
+                {index < partners.length - 1 && (
+                  <span className="text-2xl md:text-3xl hidden md:inline" style={{ color: 'var(--gold)' }}>
+                    ·
+                  </span>
+                )}
+              </motion.div>
             ))}
           </div>
         </motion.div>
