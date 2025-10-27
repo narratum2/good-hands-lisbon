@@ -223,17 +223,35 @@ export default function JournalPage() {
             ))}
           </div>
 
-          {/* Load More Button */}
+          {/* Load More Button - Editorial Design */}
           {visibleArticles < articles.length && (
-            <div className="text-center mt-12">
+            <div className="text-center mt-16">
               <button
                 onClick={loadMore}
-                className="btn-gold text-lg"
+                className="group relative inline-block"
               >
-                Continue Reading — Load More Articles
+                <span 
+                  className="block text-sm uppercase tracking-[0.2em] font-semibold mb-4 transition-colors duration-300"
+                  style={{ color: 'var(--gray-medium)' }}
+                >
+                  Continue Reading
+                </span>
+                <span 
+                  className="block text-2xl md:text-3xl font-serif font-light group-hover:text-gold transition-colors duration-300"
+                  style={{ color: 'var(--black)', letterSpacing: '-0.01em' }}
+                >
+                  More Articles
+                </span>
+                <span 
+                  className="block w-16 h-px mx-auto mt-6 transition-all duration-300 group-hover:w-24"
+                  style={{ backgroundColor: 'var(--gold)' }}
+                />
               </button>
-              <p className="text-sm text-harbor mt-4">
-                Showing {visibleArticles} of {articles.length} articles
+              <p 
+                className="text-xs uppercase tracking-[0.15em] mt-8"
+                style={{ color: 'var(--gray-medium)' }}
+              >
+                {visibleArticles} of {articles.length}
               </p>
             </div>
           )}
