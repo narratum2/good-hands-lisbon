@@ -21,6 +21,7 @@ export default function IntelligentChat({
   primaryColor = '#8B7355' 
 }: ChatWidgetProps) {
   const [isOpen, setIsOpen] = useState(false)
+  const [hasBeenClosed, setHasBeenClosed] = useState(false) // Track if user closed chat
   const [messages, setMessages] = useState<Message[]>([])
   const [inputValue, setInputValue] = useState('')
   const [isTyping, setIsTyping] = useState(false)
@@ -157,7 +158,10 @@ export default function IntelligentChat({
                 </div>
               </div>
               <button
-                onClick={() => setIsOpen(false)}
+                onClick={() => {
+                  setIsOpen(false)
+                  setHasBeenClosed(true) // Remember user closed it
+                }}
                 className="text-white hover:text-white/80 transition-colors"
               >
                 <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -262,22 +266,25 @@ export default function IntelligentChat({
         )}
       </AnimatePresence>
 
-      {/* Chat Toggle Button */}
+      {/* Chat Toggle Button - Only show notification if user hasn't closed it */}
       <motion.button
         onClick={() => setIsOpen(!isOpen)}
         className="bg-gradient-to-r from-sand to-gold text-white rounded-full w-16 h-16 flex items-center justify-center shadow-xl hover:shadow-2xl transition-shadow relative"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
+        aria-label={isOpen ? "Close chat" : "Open chat"}
       >
         {!isOpen ? (
           <>
             <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
             </svg>
-            {/* Notification badge */}
-            <span className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 rounded-full text-xs flex items-center justify-center font-bold">
-              !
-            </span>
+            {/* Notification badge - Only show if user hasn't interacted */}
+            {!hasBeenClosed && (
+              <span className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 rounded-full text-xs flex items-center justify-center font-bold">
+                !
+              </span>
+            )}
           </>
         ) : (
           <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">

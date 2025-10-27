@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { staggerContainer, staggerItem } from '@/lib/motion-variants'
+import TrustedByPartners from './TrustedByPartners'
 
 export default function TrustSignals() {
   const signals = [
@@ -43,13 +44,6 @@ export default function TrustSignals() {
     },
   ]
 
-  const partners = [
-    'Four Seasons',
-    'Tivoli Hotels',
-    'Pestana Hotels',
-    'Memmo Hotels',
-  ]
-
   return (
     <section className="section-padding bg-white border-y border-harbor/10">
       <div className="container-custom">
@@ -59,7 +53,7 @@ export default function TrustSignals() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12"
+          className="grid grid-cols-2 md:grid-cols-4 gap-8"
         >
           {signals.map((signal, index) => (
             <motion.div
@@ -80,46 +74,8 @@ export default function TrustSignals() {
           ))}
         </motion.div>
 
-        {/* Partner Badges - ULTRA-MINIMAL LUXURY DESIGN */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-center pt-16 mt-16 border-t"
-          style={{ borderColor: 'var(--gold)/10' }}
-        >
-          {/* Eyebrow */}
-          <p className="text-xs uppercase tracking-[0.3em] mb-10 font-semibold" style={{ color: 'var(--gray-medium)' }}>
-            Trusted by Leading Hotels
-          </p>
-          
-          {/* Hotel Names - Single Elegant Line */}
-          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 max-w-5xl mx-auto">
-            {partners.map((partner, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="flex items-center gap-6 md:gap-10"
-              >
-                <span 
-                  className="text-2xl md:text-3xl font-serif font-light hover:text-gold transition-colors duration-300 cursor-default" 
-                  style={{ color: 'var(--black)', letterSpacing: '-0.01em' }}
-                >
-                  {partner}
-                </span>
-                {index < partners.length - 1 && (
-                  <span className="text-2xl md:text-3xl hidden md:inline" style={{ color: 'var(--gold)' }}>
-                    ·
-                  </span>
-                )}
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
+        {/* Partner Badges - Use centralized component */}
+        <TrustedByPartners />
       </div>
     </section>
   )

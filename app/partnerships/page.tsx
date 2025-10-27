@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
+import TrustedByPartners from '@/components/TrustedByPartners'
 
 export const metadata: Metadata = {
   title: 'Hotel Partnerships | Good Hands Beauty Concierge',
@@ -52,16 +53,10 @@ export default function PartnershipsPage() {
         </div>
       </section>
 
-      {/* Trusted By Section */}
+      {/* Trusted By Section - Standardized */}
       <section className="py-16 bg-white">
-        <div className="container-custom text-center">
-          <p className="text-harbor text-sm uppercase tracking-wider mb-8">Trusted By</p>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-            <div className="text-2xl font-serif text-harbor/60">Four Seasons Ritz</div>
-            <div className="text-2xl font-serif text-harbor/60">Tivoli Avenida Liberdade</div>
-            <div className="text-2xl font-serif text-harbor/60">Memmo Alfama</div>
-            <div className="text-2xl font-serif text-harbor/60">The Lumiares</div>
-          </div>
+        <div className="container-custom">
+          <TrustedByPartners variant="compact" />
         </div>
       </section>
 

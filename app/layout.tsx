@@ -4,7 +4,7 @@ import Script from 'next/script'
 import { Analytics } from '@vercel/analytics/react'
 import './globals.css'
 import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
+import ConditionalFooter from '@/components/ConditionalFooter'
 import Grain from '@/components/Grain'
 import AIDiscoveryTracker from '@/components/AIDiscoveryTracker'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
@@ -171,7 +171,7 @@ export default function RootLayout({
           <Grain />
           <Navbar />
           <main id="main-content" className="min-h-screen">{children}</main>
-          <Footer />
+          <ConditionalFooter />
           <Analytics />
         </BookingModalProvider>
         {process.env.NEXT_PUBLIC_INTERCOM_APP_ID && (
