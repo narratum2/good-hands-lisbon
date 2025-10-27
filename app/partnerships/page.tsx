@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import TrustedByPartners from '@/components/TrustedByPartners'
+import { AlertCircleIcon, DiceIcon, ClockIcon, SearchIcon } from '@/components/icons/CustomIcons'
 
 export const metadata: Metadata = {
   title: 'Hotel Partnerships | Good Hands Beauty Concierge',

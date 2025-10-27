@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import FullWidthImageBreak from '@/components/FullWidthImageBreak'
+import { CheckIcon } from '@/components/icons/CustomIcons'
 
 const articles = [
   {
@@ -130,15 +131,15 @@ export default function JournalPage() {
           {/* Quick scannable highlights */}
           <div className="flex flex-wrap justify-center gap-6 mt-8 text-sm">
             <div className="flex items-center gap-2">
-              <span className="text-gold text-xl">✓</span>
+              <CheckIcon size={20} className="text-gold" />
               <span>Expert beauty advice</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-gold text-xl">✓</span>
+              <CheckIcon size={20} className="text-gold" />
               <span>Local Lisbon guides</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-gold text-xl">✓</span>
+              <CheckIcon size={20} className="text-gold" />
               <span>Global beauty exploration</span>
             </div>
           </div>
