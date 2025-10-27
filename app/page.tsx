@@ -38,20 +38,56 @@ export default function Home() {
       
       <FAQExpanded />
       
-      {/* Final Booking CTA - VOGUE SOPHISTICATION */}
-      <section className="section-padding bg-black text-white">
-        <div className="container-custom max-w-4xl text-center">
-          <h2 className="text-4xl md:text-6xl font-serif mb-8 font-light" style={{ letterSpacing: '-0.02em' }}>
+      {/* Final CTA - Fixed High Contrast Design */}
+      <section className="section-padding text-center" style={{ backgroundColor: 'var(--black)' }}>
+        <div className="container-custom max-w-4xl">
+          {/* Eyebrow */}
+          <p 
+            className="text-xs uppercase tracking-[0.3em] mb-10 font-semibold"
+            style={{ color: 'var(--gold)' }}
+          >
+            Ready to Book
+          </p>
+          
+          {/* High Contrast Headline */}
+          <h2 
+            className="text-5xl md:text-7xl font-serif mb-10 font-light"
+            style={{ 
+              letterSpacing: '-0.02em',
+              color: 'var(--off-white)'
+            }}
+          >
             Book Your Appointment
           </h2>
-          <p className="text-lg md:text-xl text-white/80 mb-14 leading-relaxed font-light max-w-2xl mx-auto">
-            Let us connect you with the perfect professional. 
+          
+          {/* High Contrast Subheading */}
+          <p 
+            className="text-lg md:text-xl mb-16 leading-relaxed font-light max-w-2xl mx-auto"
+            style={{ color: 'rgba(250, 250, 248, 0.85)' }}
+          >
+            Let us connect you with the perfect professional.
+            <br />
             Seamless booking. Exceptional results.
           </p>
-          <Link href="/book" className="btn-gold inline-block">
+          
+          {/* High Visibility CTA Button */}
+          <Link 
+            href="/book" 
+            className="inline-block px-12 py-5 text-sm uppercase tracking-[0.15em] font-semibold transition-all duration-300 hover:scale-105"
+            style={{
+              backgroundColor: 'var(--gold)',
+              color: 'var(--black)',
+              letterSpacing: '0.2em'
+            }}
+          >
             Reserve Your Time
           </Link>
-          <p className="text-sm text-white/50 mt-8 uppercase tracking-wider" style={{ letterSpacing: '0.15em' }}>
+          
+          {/* High Contrast Footer Text */}
+          <p 
+            className="text-xs mt-10 uppercase tracking-[0.2em] font-semibold"
+            style={{ color: 'rgba(250, 250, 248, 0.5)' }}
+          >
             Confirmation within 2 hours
           </p>
         </div>
