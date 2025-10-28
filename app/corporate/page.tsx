@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Briefcase, Users, Calendar, Shield, TrendingUp } from 'lucide-react'
+import { Briefcase, Users, Calendar, Shield, TrendingUp, Sparkles } from 'lucide-react'
 import { BuildingIcon, CelebrationIcon, TargetIcon, TrophyIcon, CameraIcon, GiftIcon, BriefcaseIcon, ChartIcon, ClockIcon, Handshake, LocationIcon } from '@/components/icons/CustomIcons'
 
 export const metadata: Metadata = {

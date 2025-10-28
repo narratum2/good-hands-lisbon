@@ -877,7 +877,7 @@ export const CustomIcons = {
   Handshake: Handshake,
   Brush: BrushIcon,
   TrendingUp: TrendingUp,
-  Sparkles: Sparkles,
+  SparklesCustom: Sparkles,
   Camera: CameraIcon,
   Briefcase: BriefcaseIcon,
   Target: TargetIcon,
