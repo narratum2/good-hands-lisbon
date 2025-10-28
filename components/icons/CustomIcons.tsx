@@ -715,6 +715,128 @@ export const Sparkles = ({ className = '', size = 24, color = 'currentColor' }: 
   </svg>
 )
 
+export const CameraIcon = ({ className = '', size = 24, color = 'currentColor' }: IconProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+  >
+    <path d="M23 19C23 19.5304 22.7893 20.0391 22.4142 20.4142C22.0391 20.7893 21.5304 21 21 21H3C2.46957 21 1.96086 20.7893 1.58579 20.4142C1.21071 20.0391 1 19.5304 1 19V8C1 7.46957 1.21071 6.96086 1.58579 6.58579C1.96086 6.21071 2.46957 6 3 6H7L9 3H15L17 6H21C21.5304 6 22.0391 6.21071 22.4142 6.58579C22.7893 6.96086 23 7.46957 23 8V19Z" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <circle cx="12" cy="13" r="4" stroke={color} strokeWidth="2" />
+  </svg>
+)
+
+export const BriefcaseIcon = ({ className = '', size = 24, color = 'currentColor' }: IconProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+  >
+    <rect x="2" y="7" width="20" height="14" rx="2" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M16 21V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V21" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+)
+
+export const TargetIcon = ({ className = '', size = 24, color = 'currentColor' }: IconProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+  >
+    <circle cx="12" cy="12" r="10" stroke={color} strokeWidth="2" />
+    <circle cx="12" cy="12" r="6" stroke={color} strokeWidth="2" />
+    <circle cx="12" cy="12" r="2" fill={color} />
+  </svg>
+)
+
+export const ChartIcon = ({ className = '', size = 24, color = 'currentColor' }: IconProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+  >
+    <path d="M3 3V21H21" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M7 16L12 11L16 15L21 7" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+)
+
+export const BuildingIcon = ({ className = '', size = 24, color = 'currentColor' }: IconProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+  >
+    <rect x="4" y="2" width="16" height="20" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M9 22V18H15V22" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M8 6H10M8 10H10M8 14H10M14 6H16M14 10H16M14 14H16" stroke={color} strokeWidth="2" strokeLinecap="round" />
+  </svg>
+)
+
+export const TrophyIcon = ({ className = '', size = 24, color = 'currentColor' }: IconProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+  >
+    <path d="M6 9H4.5C3.67157 9 3 9.67157 3 10.5V11.5C3 12.3284 3.67157 13 4.5 13H6" stroke={color} strokeWidth="2" />
+    <path d="M18 9H19.5C20.3284 9 21 9.67157 21 10.5V11.5C21 12.3284 20.3284 13 19.5 13H18" stroke={color} strokeWidth="2" />
+    <path d="M6 3H18V12C18 15.3137 15.3137 18 12 18C8.68629 18 6 15.3137 6 12V3Z" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M12 18V21M9 21H15" stroke={color} strokeWidth="2" strokeLinecap="round" />
+  </svg>
+)
+
+export const GiftIcon = ({ className = '', size = 24, color = 'currentColor' }: IconProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+  >
+    <rect x="3" y="8" width="18" height="4" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <rect x="3" y="12" width="18" height="9" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M12 8V21" stroke={color} strokeWidth="2" strokeLinecap="round" />
+    <path d="M7 8C5.89543 8 5 7.10457 5 6C5 4.89543 5.89543 4 7 4C8.10457 4 9 4.89543 9 6" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M17 8C18.1046 8 19 7.10457 19 6C19 4.89543 18.1046 4 17 4C15.8954 4 15 4.89543 15 6" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+)
+
+export const CelebrationIcon = ({ className = '', size = 24, color = 'currentColor' }: IconProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+  >
+    <path d="M5 3L7 5L9 3L7 1L5 3Z" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill={color} fillOpacity="0.1" />
+    <path d="M15 3L17 5L19 3L17 1L15 3Z" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill={color} fillOpacity="0.1" />
+    <path d="M10 21L12 23L14 21L12 19L10 21Z" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill={color} fillOpacity="0.1" />
+    <circle cx="12" cy="12" r="5" stroke={color} strokeWidth="2" />
+    <path d="M12 7V12L15 15" stroke={color} strokeWidth="2" strokeLinecap="round" />
+  </svg>
+)
+
 // EXPORT ALL ICONS
 export const CustomIcons = {
   // Services
@@ -756,6 +878,14 @@ export const CustomIcons = {
   Brush: BrushIcon,
   TrendingUp: TrendingUp,
   Sparkles: Sparkles,
+  Camera: CameraIcon,
+  Briefcase: BriefcaseIcon,
+  Target: TargetIcon,
+  Chart: ChartIcon,
+  Building: BuildingIcon,
+  Trophy: TrophyIcon,
+  Gift: GiftIcon,
+  Celebration: CelebrationIcon,
 }
 
 export default CustomIcons
