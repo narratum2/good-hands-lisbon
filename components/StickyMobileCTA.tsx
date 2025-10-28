@@ -41,7 +41,7 @@ export default function StickyMobileCTA() {
               onClick={handleClick}
               className="btn-gold w-full text-center block py-4 text-base font-medium"
             >
-              Book Your Experience
+              Request Consultation
             </Link>
           </div>
         </motion.div>

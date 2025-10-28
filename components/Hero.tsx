@@ -39,7 +39,7 @@ export default function Hero() {
               Explore Services
             </a>
             <a href="/book" className="btn-secondary w-full sm:w-auto" style={{ borderColor: 'white', color: 'white' }}>
-              Book Now
+              Request Consultation
             </a>
           </div>
         </motion.div>

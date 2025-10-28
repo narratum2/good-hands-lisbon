@@ -657,6 +657,64 @@ export const DiceIcon = ({ className = '', size = 24, color = 'currentColor' }: 
   </svg>
 )
 
+export const Handshake = ({ className = '', size = 24, color = 'currentColor' }: IconProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+  >
+    <path d="M11 5H17C18.1046 5 19 5.89543 19 7V11L15 15L11 11V5Z" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M13 5H7C5.89543 5 5 5.89543 5 7V11L9 15L13 11V5Z" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M9 15L7 17C6.44772 17.5523 6.44772 18.4477 7 19C7.55228 19.5523 8.44772 19.5523 9 19L15 13" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M15 15L17 17C17.5523 17.5523 17.5523 18.4477 17 19C16.4477 19.5523 15.5523 19.5523 15 19L9 13" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+)
+
+export const BrushIcon = ({ className = '', size = 24, color = 'currentColor' }: IconProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+  >
+    <path d="M3 21C5 19 7 17 10 16C11 17 13 17 14 16C17 17 19 19 21 21" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M12 16C12 13.5 14 12 14 9C14 6 12 3 12 3C12 3 10 6 10 9C10 12 12 13.5 12 16Z" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+)
+
+export const TrendingUp = ({ className = '', size = 24, color = 'currentColor' }: IconProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+  >
+    <path d="M23 6L13.5 15.5L8.5 10.5L1 18" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M17 6H23V12" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+)
+
+export const Sparkles = ({ className = '', size = 24, color = 'currentColor' }: IconProps) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+  >
+    <path d="M12 3L14 8L19 10L14 12L12 17L10 12L5 10L10 8L12 3Z" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill={color} fillOpacity="0.1" />
+    <path d="M19 3L20 5L22 6L20 7L19 9L18 7L16 6L18 5L19 3Z" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill={color} fillOpacity="0.1" />
+  </svg>
+)
+
 // EXPORT ALL ICONS
 export const CustomIcons = {
   // Services
@@ -694,6 +752,10 @@ export const CustomIcons = {
   User: UserIcon,
   AlertCircle: AlertCircleIcon,
   Dice: DiceIcon,
+  Handshake: Handshake,
+  Brush: BrushIcon,
+  TrendingUp: TrendingUp,
+  Sparkles: Sparkles,
 }
 
 export default CustomIcons

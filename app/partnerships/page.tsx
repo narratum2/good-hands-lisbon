@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import TrustedByPartners from '@/components/TrustedByPartners'
-import { AlertCircleIcon, DiceIcon, ClockIcon, SearchIcon } from '@/components/icons/CustomIcons'
+import { AlertCircleIcon, DiceIcon, ClockIcon, SearchIcon, Handshake, Sparkles, TrendingUp, BrushIcon } from '@/components/icons/CustomIcons'
 
 export const metadata: Metadata = {
   title: 'Hotel Partnerships | Good Hands Beauty Concierge',
@@ -71,7 +71,7 @@ export default function PartnershipsPage() {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="p-6 bg-white rounded-lg text-center">
                 <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-5xl">😰</span>
+                  <AlertCircleIcon className="w-10 h-10 text-gold" />
                 </div>
                 <h3 className="text-xl font-semibold text-ink mb-3">Language Barriers</h3>
                 <p className="text-harbor text-left">
@@ -80,7 +80,7 @@ export default function PartnershipsPage() {
               </div>
               <div className="p-6 bg-white rounded-lg text-center">
                 <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-5xl">🎲</span>
+                  <DiceIcon className="w-10 h-10 text-gold" />
                 </div>
                 <h3 className="text-xl font-semibold text-ink mb-3">Trial & Error</h3>
                 <p className="text-harbor text-left">
@@ -89,7 +89,7 @@ export default function PartnershipsPage() {
               </div>
               <div className="p-6 bg-white rounded-lg text-center">
                 <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-5xl">⏰</span>
+                  <ClockIcon className="w-10 h-10 text-gold" />
                 </div>
                 <h3 className="text-xl font-semibold text-ink mb-3">Valuable Time Wasted</h3>
                 <p className="text-harbor text-left">
@@ -98,7 +98,7 @@ export default function PartnershipsPage() {
               </div>
               <div className="p-6 bg-white rounded-lg text-center">
                 <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-5xl">💼</span>
+                  <SearchIcon className="w-10 h-10 text-gold" />
                 </div>
                 <h3 className="text-xl font-semibold text-ink mb-3">Your Team's Burden</h3>
                 <p className="text-harbor text-left">
@@ -126,7 +126,7 @@ export default function PartnershipsPage() {
               <div className="flex flex-col md:flex-row gap-8 items-start">
                 <div className="md:w-1/3">
                   <div className="w-16 h-16 bg-sand/20 rounded-full flex items-center justify-center mb-4">
-                    <span className="text-3xl">🤝</span>
+                    <Handshake className="w-8 h-8 text-gold" />
                   </div>
                   <h3 className="text-2xl font-serif text-ink mb-3">Seamless Integration</h3>
                 </div>
@@ -155,7 +155,7 @@ export default function PartnershipsPage() {
               <div className="flex flex-col md:flex-row gap-8 items-start">
                 <div className="md:w-1/3">
                   <div className="w-16 h-16 bg-sand/20 rounded-full flex items-center justify-center mb-4">
-                    <span className="text-3xl">💎</span>
+                    <Sparkles className="w-8 h-8 text-gold" />
                   </div>
                   <h3 className="text-2xl font-serif text-ink mb-3">Curated Excellence</h3>
                 </div>
@@ -184,7 +184,7 @@ export default function PartnershipsPage() {
               <div className="flex flex-col md:flex-row gap-8 items-start">
                 <div className="md:w-1/3">
                   <div className="w-16 h-16 bg-sand/20 rounded-full flex items-center justify-center mb-4">
-                    <span className="text-3xl">💰</span>
+                    <TrendingUp className="w-8 h-8 text-gold" />
                   </div>
                   <h3 className="text-2xl font-serif text-ink mb-3">Zero Upfront Investment</h3>
                 </div>
@@ -213,7 +213,7 @@ export default function PartnershipsPage() {
               <div className="flex flex-col md:flex-row gap-8 items-start">
                 <div className="md:w-1/3">
                   <div className="w-16 h-16 bg-sand/20 rounded-full flex items-center justify-center mb-4">
-                    <span className="text-3xl">🎨</span>
+                    <BrushIcon className="w-8 h-8 text-gold" />
                   </div>
                   <h3 className="text-2xl font-serif text-ink mb-3">White-Label Options</h3>
                 </div>
@@ -409,7 +409,7 @@ export default function PartnershipsPage() {
                 Call: +351 XXX XXX XXX
               </a>
             </div>
-            <p className="text-white/70 text-sm">
+            <p className="text-white/70 text-sm text-center">
               Or use the chat widget to speak with our Partnership Director immediately
             </p>
           </div>

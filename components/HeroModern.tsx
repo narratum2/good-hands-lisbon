@@ -54,7 +54,7 @@ export default function HeroModern() {
           {/* Minimal, Sophisticated CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md sm:max-w-none mx-auto">
             <a href="/book" className="btn-gold w-full sm:w-auto">
-              Book Your Experience
+              Request Your Experience
             </a>
             <a href="/services" className="btn-secondary-light w-full sm:w-auto">
               Explore Services

@@ -60,7 +60,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
             <div className="p-8 md:p-12">
               <div className="mb-8">
                 <h2 className="text-3xl md:text-4xl font-serif text-ink mb-3">
-                  Book Your Experience
+                  Request Your Experience
                 </h2>
                 <p className="text-harbor text-lg">
                   Tell us what you need. We'll match you with the perfect professional.
