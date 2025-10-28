@@ -10,7 +10,7 @@ export async function GET() {
       contact: {
         name: 'Good Hands',
         url: 'https://goodhands.com',
-        email: 'hello@goodhands.com',
+        email: 'hello@beautysalonlisbon.com',
       },
     },
     servers: [

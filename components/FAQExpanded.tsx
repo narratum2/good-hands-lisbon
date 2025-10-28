@@ -267,7 +267,7 @@ export default function FAQExpanded() {
             Our concierge team is here to help. Get in touch and we'll answer within 24 hours.
           </p>
           <a
-            href="mailto:hello@goodhands.com"
+            href="mailto:hello@beautysalonlisbon.com"
             className="btn-gold text-lg"
           >
             Contact Us

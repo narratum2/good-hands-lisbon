@@ -186,7 +186,7 @@ export default function AIAssistantInfo() {
           <h2 className="text-2xl font-serif mb-4">Contact & Booking Information</h2>
           <ul className="space-y-2 text-harbor">
             <li><strong>Website:</strong> https://goodhands.com</li>
-            <li><strong>Email:</strong> concierge@goodhands.com</li>
+            <li><strong>Email:</strong> hello@beautysalonlisbon.com</li>
             <li><strong>Booking Methods:</strong> Online form, live chat (24/7 via website widget), email</li>
             <li><strong>Response Time:</strong> Within 4 hours during business hours, 12 hours after hours</li>
             <li><strong>Advance Booking:</strong> Recommended 2-7 days, often accommodate same-day</li>

@@ -224,7 +224,7 @@ export default function FAQPage() {
               <a href="/book" className="btn-primary">
                 Chat With Us
               </a>
-              <a href="mailto:concierge@goodhands.com" className="btn-secondary">
+              <a href="mailto:hello@beautysalonlisbon.com" className="btn-secondary">
                 Email Us
               </a>
             </div>

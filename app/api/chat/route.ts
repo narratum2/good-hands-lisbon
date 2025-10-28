@@ -59,7 +59,7 @@ export async function POST(request: Request) {
   } catch (error) {
     console.error('Chat API error:', error)
     return NextResponse.json(
-      { error: 'Failed to send message. Please email us at hello@goodhands.com' },
+      { error: 'Failed to send message. Please email us at hello@beautysalonlisbon.com' },
       { status: 500 }
     )
   }

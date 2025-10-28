@@ -322,7 +322,7 @@ export default function RetreatsPage() {
                   <div className="text-right">
                     <p className="text-sm text-harbor mb-2">5 spots remaining</p>
                     <Link href="/book" className="btn-primary inline-block">
-                      Reserve Your Spot
+                      Request Information
                     </Link>
                   </div>
                 </div>
@@ -338,7 +338,7 @@ export default function RetreatsPage() {
                   <div className="text-right">
                     <p className="text-sm text-harbor mb-2">3 spots remaining</p>
                     <Link href="/book" className="btn-primary inline-block">
-                      Reserve Your Spot
+                      Request Information
                     </Link>
                   </div>
                 </div>

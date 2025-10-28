@@ -736,8 +736,8 @@ END:VCALENDAR`)}`}
 
                 <p className="text-xs text-harbor/60 mt-8">
                   Questions? Contact us at{' '}
-                  <a href="mailto:hello@goodhands.com" className="text-gold hover:underline">
-                    hello@goodhands.com
+                  <a href="mailto:hello@beautysalonlisbon.com" className="text-gold hover:underline">
+                    hello@beautysalonlisbon.com
                   </a>
                 </p>
               </motion.div>

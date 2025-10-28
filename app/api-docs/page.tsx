@@ -231,7 +231,7 @@ Content-Type: application/json
                 Questions about integrating with Good Hands?
               </p>
               <div className="space-y-2">
-                <p><strong>Email:</strong> <a href="mailto:hello@goodhands.com" className="text-gold hover:underline">hello@goodhands.com</a></p>
+                <p><strong>Email:</strong> <a href="mailto:hello@beautysalonlisbon.com" className="text-gold hover:underline">hello@beautysalonlisbon.com</a></p>
                 <p><strong>Documentation:</strong> <a href="/ai-info" className="text-gold hover:underline">goodhands.com/ai-info</a></p>
               </div>
             </div>

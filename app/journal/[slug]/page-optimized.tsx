@@ -198,7 +198,7 @@ export default function ArticlePage({ params }: PageProps) {
             href="/book" 
             className="btn-gold"
           >
-            Book Your Experience
+            Request Your Experience
           </Link>
         </div>
       </section>

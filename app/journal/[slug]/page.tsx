@@ -287,7 +287,7 @@ export default function ArticlePage({ params }: PageProps) {
             href="/book" 
             className="inline-block bg-gold hover:bg-gold/90 text-ink font-semibold px-8 py-4 rounded-sm transition-colors focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-ink"
           >
-            Book Your Experience
+            Request Your Experience
           </Link>
         </div>
       </section>

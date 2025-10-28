@@ -136,7 +136,7 @@ export default function SmartAssistant() {
       const errorMessage: Message = {
         id: Date.now() + 1,
         type: 'assistant',
-        content: "Sorry, I'm having trouble connecting. Please email us at hello@goodhands.com or use our booking page."
+        content: "Sorry, I'm having trouble connecting. Please email us at hello@beautysalonlisbon.com or use our booking page."
       }
       setMessages(prev => [...prev, errorMessage])
     } finally {

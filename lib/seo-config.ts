@@ -19,7 +19,7 @@ export const BUSINESS_INFO = {
   foundedYear: 2024,
   
   // Contact
-  email: 'concierge@goodhands.com',
+  email: 'hello@beautysalonlisbon.com',
   phone: '+351-XXX-XXX-XXX', // TODO: Add real phone
   
   // URLs

@@ -33,7 +33,7 @@ export default function IntelligentChat({
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
   }, [messages])
 
-  // Initial greeting when chat opens
+  // Initial greeting when chat opens (ONLY when user opens it)
   useEffect(() => {
     if (isOpen && messages.length === 0) {
       setTimeout(() => {
@@ -46,7 +46,7 @@ export default function IntelligentChat({
         }])
       }, 500)
     }
-  }, [isOpen])
+  }, [isOpen, messages.length])
 
   const handleSendMessage = async () => {
     if (!inputValue.trim()) return
@@ -95,7 +95,7 @@ export default function IntelligentChat({
       const errorMessage: Message = {
         id: (Date.now() + 1).toString(),
         role: 'assistant',
-        content: "I apologize, but I'm having trouble connecting right now. Please try again in a moment, or feel free to email us at concierge@goodhands.com.",
+        content: "I apologize, but I'm having trouble connecting right now. Please try again in a moment, or feel free to email us at hello@beautysalonlisbon.com.",
         timestamp: new Date(),
         expert: currentExpert
       }

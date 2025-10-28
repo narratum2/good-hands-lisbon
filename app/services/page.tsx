@@ -423,7 +423,7 @@ export default function ServicesPage() {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Services',
-                item: 'https://good-hands-apualr0k5-narratums-projects.vercel.app/services',
+                item: 'https://goodhands.com/services',
               },
             ],
           }),

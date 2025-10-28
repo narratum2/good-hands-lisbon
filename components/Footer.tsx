@@ -43,9 +43,15 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-serif mb-4">Good Hands</h3>
-            <p className="text-porcelain/70 text-sm leading-relaxed">
+            <p className="text-porcelain/70 text-sm leading-relaxed mb-4">
               Where discerning clients meet exceptional professionals.
             </p>
+            <a 
+              href="mailto:hello@beautysalonlisbon.com" 
+              className="text-gold hover:text-gold-light text-sm transition-colors inline-block"
+            >
+              hello@beautysalonlisbon.com
+            </a>
           </div>
 
           {/* Services */}
