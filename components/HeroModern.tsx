@@ -28,25 +28,25 @@ export default function HeroModern() {
           transition={{ duration: 1, ease: [0.4, 0, 0.2, 1] }}
           className="max-w-5xl mx-auto"
         >
-          {/* Eyebrow - Editorial Detail */}
+          {/* Eyebrow - Editorial Detail - CENTERED */}
           <motion.p 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="text-xs md:text-sm uppercase tracking-[0.2em] text-white/80 mb-6 md:mb-8 font-semibold"
+            className="text-xs md:text-sm uppercase tracking-[0.2em] text-white/80 mb-6 md:mb-8 font-semibold text-center"
           >
             Lisbon's Premier Beauty Concierge
           </motion.p>
           
-          {/* Large, Confident Headline */}
-          <h1 className="font-serif font-light mb-8 md:mb-12 text-white" style={{ fontSize: 'clamp(2.5rem, 8vw, 5.5rem)', lineHeight: '1.05', letterSpacing: '-0.02em' }}>
+          {/* Large, Confident Headline - CENTERED */}
+          <h1 className="font-serif font-light mb-8 md:mb-12 text-white text-center" style={{ fontSize: 'clamp(2.5rem, 8vw, 5.5rem)', lineHeight: '1.05', letterSpacing: '-0.02em' }}>
             The Beauty Concierge
             <br />
             Lisbon Trusts
           </h1>
           
-          {/* Refined Subheading */}
-          <p className="text-base md:text-lg mb-12 md:mb-16 text-white/90 max-w-2xl mx-auto font-light" style={{ lineHeight: '1.7', letterSpacing: '0.01em' }}>
+          {/* Refined Subheading - CENTERED */}
+          <p className="text-base md:text-lg mb-12 md:mb-16 text-white/90 max-w-2xl mx-auto font-light text-center" style={{ lineHeight: '1.7', letterSpacing: '0.01em' }}>
             Lisbon's most exceptional beauty professionals. 
             Proven expertise. Flawless results. Every time.
           </p>

@@ -1,160 +1,158 @@
+/**
+ * API Route: /api/services
+ * 
+ * Returns all available beauty services for Good Hands
+ * AI-accessible endpoint for service discovery
+ * 
+ * Implements OpenAPI spec: GET /api/services
+ */
+
 import { NextResponse } from 'next/server'
-
-// Services data for AI agents and external queries
-const services = [
-  {
-    id: 'premium-hair-styling',
-    name: 'Premium Hair Styling',
-    category: 'hair',
-    description: 'Expert hair colorists and stylists in Lisbon. We match you with professionals based on your hair type, desired style, and preferences.',
-    price: 'From €105',
-    basePrice: 105,
-    duration: '90 min',
-    includedServices: ['Consultation', 'Styling', 'Concierge coordination'],
-    neighborhoods: ['Chiado', 'Principe Real', 'Avenida', 'Alfama', 'Belem'],
-  },
-  {
-    id: 'luxury-nail-care',
-    name: 'Luxury Nail Care',
-    category: 'nails',
-    description: 'Premium manicure and pedicure services in Lisbon. Vetted nail technicians using high-quality products and techniques.',
-    price: 'From €65',
-    basePrice: 65,
-    duration: '60 min',
-    includedServices: ['Manicure or Pedicure', 'Polish application', 'Concierge coordination'],
-    neighborhoods: ['Chiado', 'Principe Real', 'Baixa', 'Cascais'],
-  },
-  {
-    id: 'skincare-treatments',
-    name: 'Skincare Treatments',
-    category: 'skincare',
-    description: 'Professional facial treatments and skincare consultations in Lisbon. Customized to your skin type and concerns.',
-    price: 'From €95',
-    basePrice: 95,
-    duration: '75 min',
-    includedServices: ['Skin analysis', 'Facial treatment', 'Product recommendations', 'Concierge coordination'],
-    neighborhoods: ['Chiado', 'Principe Real', 'Avenida', 'Cascais'],
-  },
-  {
-    id: 'professional-makeup',
-    name: 'Professional Makeup',
-    category: 'makeup',
-    description: 'Expert makeup artists in Lisbon for special events, weddings, photoshoots, or everyday looks.',
-    price: 'From €85',
-    basePrice: 85,
-    duration: '45 min',
-    includedServices: ['Makeup application', 'Style consultation', 'Concierge coordination'],
-    neighborhoods: ['Chiado', 'Principe Real', 'Avenida', 'Alfama', 'Belem', 'Sintra'],
-  },
-  {
-    id: 'wellness-massage',
-    name: 'Wellness & Massage',
-    category: 'wellness',
-    description: 'Relaxation and therapeutic massage services in Lisbon. Certified massage therapists for stress relief and body wellness.',
-    price: 'From €80',
-    basePrice: 80,
-    duration: '60 min',
-    includedServices: ['Massage therapy', 'Aromatherapy', 'Concierge coordination'],
-    neighborhoods: ['Principe Real', 'Avenida', 'Cascais', 'Sintra'],
-  },
-]
-
-const neighborhoods = [
-  {
-    id: 'chiado',
-    name: 'Chiado',
-    description: 'Historic upscale neighborhood known for luxury shopping and sophisticated culture',
-    serviceCategories: ['hair', 'nails', 'skincare', 'makeup'],
-  },
-  {
-    id: 'principe-real',
-    name: 'Principe Real',
-    description: 'Trendy, upscale area with boutique shops and artistic vibe',
-    serviceCategories: ['hair', 'nails', 'skincare', 'makeup', 'wellness'],
-  },
-  {
-    id: 'alfama',
-    name: 'Alfama',
-    description: 'Historic old town with traditional charm and cobblestone streets',
-    serviceCategories: ['hair', 'makeup'],
-  },
-  {
-    id: 'baixa',
-    name: 'Baixa',
-    description: 'Central downtown district with grand architecture',
-    serviceCategories: ['hair', 'nails'],
-  },
-  {
-    id: 'avenida',
-    name: 'Avenida',
-    description: 'Main avenue with luxury hotels and high-end services',
-    serviceCategories: ['hair', 'skincare', 'makeup', 'wellness'],
-  },
-  {
-    id: 'belem',
-    name: 'Belem',
-    description: 'Riverside area known for monuments and cultural attractions',
-    serviceCategories: ['hair', 'makeup'],
-  },
-  {
-    id: 'cascais',
-    name: 'Cascais',
-    description: 'Coastal resort town near Lisbon with beach and luxury living',
-    serviceCategories: ['nails', 'skincare', 'wellness'],
-  },
-  {
-    id: 'sintra',
-    name: 'Sintra',
-    description: 'UNESCO World Heritage town with palaces and natural beauty',
-    serviceCategories: ['makeup', 'wellness'],
-  },
-]
+import { SERVICE_CATEGORIES } from '@/lib/seo-config'
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url)
+  
   const category = searchParams.get('category')
+  const priceRange = searchParams.get('priceRange')
   const neighborhood = searchParams.get('neighborhood')
-  const maxPrice = searchParams.get('maxPrice')
 
-  let filteredServices = [...services]
+  // Transform SERVICE_CATEGORIES into API response format
+  let services = SERVICE_CATEGORIES.flatMap(cat => 
+    cat.services.map(service => ({
+      id: `${cat.slug}-${service.toLowerCase().replace(/\s+/g, '-')}`,
+      name: service,
+      category: cat.slug,
+      categoryName: cat.name,
+      description: cat.description,
+      price: `${cat.priceFrom}+`,
+      currency: 'EUR',
+      duration: getDurationForService(service),
+      includes: getIncludesForService(service),
+      neighborhoods: getNeighborhoodsForCategory(cat.slug),
+      popularFor: getPopularForService(service)
+    }))
+  )
 
-  // Filter by category
+  // Apply filters
   if (category && category !== 'all') {
-    filteredServices = filteredServices.filter(s => s.category === category)
+    services = services.filter(s => s.category === category)
   }
 
-  // Filter by neighborhood
+  if (priceRange) {
+    services = services.filter(s => matchesPriceRange(s.price, priceRange))
+  }
+
   if (neighborhood) {
-    filteredServices = filteredServices.filter(s =>
-      s.neighborhoods.some(n => n.toLowerCase() === neighborhood.toLowerCase())
-    )
-  }
-
-  // Filter by max price
-  if (maxPrice) {
-    const max = parseInt(maxPrice)
-    filteredServices = filteredServices.filter(s => s.basePrice <= max)
+    services = services.filter(s => s.neighborhoods.includes(neighborhood))
   }
 
   return NextResponse.json({
-    success: true,
-    count: filteredServices.length,
-    services: filteredServices,
-    neighborhoods: neighborhoods,
-    categories: ['hair', 'nails', 'skincare', 'makeup', 'wellness'],
-    meta: {
-      description: 'Good Hands beauty concierge services in Lisbon, Portugal',
-      totalServices: services.length,
-      conciergeIncluded: true,
-      areaServed: 'Lisbon, Portugal',
+    lastUpdated: new Date().toISOString(),
+    totalResults: services.length,
+    filters: {
+      category: category || 'all',
+      priceRange: priceRange || 'all',
+      neighborhood: neighborhood || 'all'
     },
+    services
   })
 }
 
-export async function POST() {
-  return NextResponse.json(
-    { error: 'Method not allowed. Use GET to retrieve services.' },
-    { status: 405 }
-  )
+// Helper functions for service details
+function getDurationForService(service: string): string {
+  const durations: Record<string, string> = {
+    'Precision Cut': '60-90 minutes',
+    'Color & Highlights': '2-3 hours',
+    'Balayage': '2.5-3 hours',
+    'Blowout & Styling': '45-60 minutes',
+    'Swedish Massage': '60-90 minutes',
+    'Deep Tissue': '60-90 minutes',
+    'Aromatherapy': '60-90 minutes',
+    'Hot Stone': '90 minutes',
+    'Event Makeup': '60-90 minutes',
+    'Bridal Makeup': '90-120 minutes',
+    'Makeup Lesson': '60 minutes',
+    'Gel Manicure': '45-60 minutes',
+    'Luxury Pedicure': '60-75 minutes',
+    'Nail Art': '60-90 minutes',
+    'Signature Facial': '60-75 minutes',
+    'Anti-Aging Treatment': '75-90 minutes',
+    'Deep Cleanse': '60 minutes'
+  }
+  return durations[service] || '60-90 minutes'
 }
 
+function getIncludesForService(service: string): string[] {
+  const includes: Record<string, string[]> = {
+    'Precision Cut': ['Consultation', 'Wash & condition', 'Style'],
+    'Color & Highlights': ['Color consultation', 'Treatment mask', 'Blowout styling'],
+    'Balayage': ['Color consultation', 'Hand-painted highlights', 'Toner', 'Style'],
+    'Blowout & Styling': ['Wash', 'Heat protection', 'Professional styling'],
+    'Swedish Massage': ['Full-body massage', 'Essential oils', 'Relaxation'],
+    'Deep Tissue': ['Therapeutic massage', 'Targeted pressure', 'Muscle relief'],
+    'Aromatherapy': ['Custom oil blend', 'Full-body massage', 'Relaxation'],
+    'Hot Stone': ['Heated stones', 'Full-body massage', 'Deep relaxation'],
+    'Event Makeup': ['Consultation', 'Application', 'Touch-up kit'],
+    'Bridal Makeup': ['Trial session', 'Wedding day application', 'Touch-up kit', 'Lashes'],
+    'Makeup Lesson': ['Personalized tutorial', 'Product recommendations', 'Take-home guide'],
+    'Gel Manicure': ['Nail shaping', 'Cuticle care', 'Gel polish', '2-3 week wear'],
+    'Luxury Pedicure': ['Foot soak', 'Exfoliation', 'Massage', 'Polish'],
+    'Nail Art': ['Design consultation', 'Custom art', 'Gel top coat'],
+    'Signature Facial': ['Cleanse', 'Exfoliation', 'Mask', 'Massage', 'Moisturize'],
+    'Anti-Aging Treatment': ['Deep cleanse', 'Serum', 'Anti-aging mask', 'LED therapy'],
+    'Deep Cleanse': ['Double cleanse', 'Steam', 'Extraction', 'Purifying mask']
+  }
+  return includes[service] || ['Professional service', 'Expert consultation']
+}
+
+function getNeighborhoodsForCategory(category: string): string[] {
+  const neighborhoods: Record<string, string[]> = {
+    'hair': ['chiado', 'principe-real', 'avenida', 'baixa'],
+    'spa': ['chiado', 'principe-real', 'belem', 'cascais', 'sintra'],
+    'makeup': ['chiado', 'principe-real', 'avenida'],
+    'nails': ['chiado', 'principe-real', 'baixa', 'avenida'],
+    'skincare': ['chiado', 'principe-real', 'avenida', 'cascais']
+  }
+  return neighborhoods[category] || ['chiado', 'principe-real']
+}
+
+function getPopularForService(service: string): string[] {
+  const popular: Record<string, string[]> = {
+    'Precision Cut': ['European techniques', 'Face-framing', 'Texture specialists'],
+    'Color & Highlights': ['Blonde specialists', 'Balayage experts', 'Color correction'],
+    'Balayage': ['Natural dimension', 'Low maintenance', 'Sun-kissed looks'],
+    'Blowout & Styling': ['Special occasions', 'Professional meetings', 'Smooth finish'],
+    'Swedish Massage': ['Relaxation', 'Stress relief', 'Full-body'],
+    'Deep Tissue': ['Athletic recovery', 'Chronic pain', 'Laptop posture'],
+    'Aromatherapy': ['Holistic wellness', 'Mental relaxation', 'Custom blends'],
+    'Hot Stone': ['Deep relaxation', 'Muscle tension', 'Luxury experience'],
+    'Event Makeup': ['Weddings', 'Photo shoots', 'Special occasions'],
+    'Bridal Makeup': ['Destination weddings', 'Long-lasting', 'Photography-ready'],
+    'Makeup Lesson': ['Skill building', 'Product knowledge', 'Personalized'],
+    'Gel Manicure': ['Long-lasting', 'Professional appearance', 'Low maintenance'],
+    'Luxury Pedicure': ['Relaxation', 'Foot health', 'Summer prep'],
+    'Nail Art': ['Custom designs', 'Fashion-forward', 'Special occasions'],
+    'Signature Facial': ['Skin health', 'Anti-aging', 'Glow'],
+    'Anti-Aging Treatment': ['Fine lines', 'Firmness', 'Collagen boost'],
+    'Deep Cleanse': ['Acne-prone skin', 'Pore refinement', 'Clarifying']
+  }
+  return popular[service] || ['Expert service', 'Professional results']
+}
+
+function matchesPriceRange(price: string, range: string): boolean {
+  const priceNum = parseInt(price.replace('+', ''))
+  
+  switch (range) {
+    case 'budget':
+      return priceNum >= 50 && priceNum <= 80
+    case 'moderate':
+      return priceNum > 80 && priceNum <= 150
+    case 'luxury':
+      return priceNum > 150 && priceNum <= 250
+    case 'ultra':
+      return priceNum > 250
+    default:
+      return true
+  }
+}

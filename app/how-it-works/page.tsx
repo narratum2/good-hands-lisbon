@@ -235,7 +235,7 @@ export default function HowItWorksPage() {
                 <ul className="space-y-2 text-harbor ml-6">
                   <li className="flex items-start gap-2">
                     <span className="text-gold mt-1">•</span>
-                    <span>Book your appointment with the professional</span>
+                    <span>We coordinate your appointment with your chosen professional</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-gold mt-1">•</span>
@@ -444,7 +444,7 @@ export default function HowItWorksPage() {
             Tell us what you need, and we'll handle the rest. It's that simple.
           </p>
           <Link href="/book" className="btn-gold text-lg px-10 py-4 inline-block">
-            Book Your First Experience
+            Request Your First Experience
           </Link>
           <p className="text-sm text-porcelain/60 mt-6">
             Response time: 3-6 hours • No commitment until you confirm

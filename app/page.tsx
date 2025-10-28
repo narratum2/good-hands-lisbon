@@ -80,7 +80,7 @@ export default function Home() {
               letterSpacing: '0.2em'
             }}
           >
-            Reserve Your Time
+            Request Consultation
           </Link>
           
           {/* High Contrast Footer Text */}

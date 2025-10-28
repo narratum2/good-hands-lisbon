@@ -23,7 +23,7 @@ export const BUSINESS_INFO = {
   phone: '+351-XXX-XXX-XXX', // TODO: Add real phone
   
   // URLs
-  baseUrl: 'https://good-hands-apualr0k5-narratums-projects.vercel.app',
+  baseUrl: 'https://goodhands.com', // PRODUCTION: Updated from staging URL
   domain: 'goodhands.com',
   
   // Location

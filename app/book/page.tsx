@@ -204,7 +204,7 @@ export default function BookingPage() {
       }
     } catch (error) {
       console.error('Booking error:', error)
-      setSubmitError('We couldn\'t process your booking right now. Please try again or contact us directly.')
+      setSubmitError('We couldn\'t process your request right now. Please try again or contact us directly.')
       
       // Track error
       if (typeof window !== 'undefined' && window.gtag) {
@@ -229,10 +229,10 @@ export default function BookingPage() {
             Back to home
           </Link>
           <h1 className="text-3xl md:text-4xl font-serif text-ink mb-2">
-            Book Your Experience
+            Request Your Experience
           </h1>
           <p className="text-harbor text-lg">
-            Let&apos;s find your perfect match in just 4 quick steps
+            Tell us your preferences and we&apos;ll curate the perfect match for you
           </p>
         </div>
       </div>
@@ -371,7 +371,7 @@ export default function BookingPage() {
                     ))}
                   </div>
                   <p className="text-xs text-harbor mt-4">
-                    ⏰ Subject to availability. We&apos;ll confirm your exact time within 2 hours.
+                    ⏰ These are preferences, not confirmed times. We&apos;ll match you with the perfect professional and confirm details within 24 hours.
                   </p>
                 </div>
 
@@ -464,7 +464,7 @@ export default function BookingPage() {
               >
                 <div className="text-center mb-12">
                   <h2 className="text-3xl font-serif mb-4">Almost there!</h2>
-                  <p className="text-harbor text-lg">Just need a few details to confirm your booking</p>
+                  <p className="text-harbor text-lg">Just need a few details to send your request</p>
                 </div>
 
                 {/* Error Message */}
@@ -472,7 +472,7 @@ export default function BookingPage() {
                   <div className="bg-red-50 border-2 border-red-200 rounded-lg p-4 mb-6 flex items-start gap-3">
                     <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-red-900 font-medium mb-1">Booking Error</p>
+                      <p className="text-red-900 font-medium mb-1">Request Error</p>
                       <p className="text-red-700 text-sm">{submitError}</p>
                     </div>
                   </div>
@@ -584,11 +584,11 @@ export default function BookingPage() {
                     {isSubmitting ? (
                       <>
                         <Loader2 className="w-4 h-4 animate-spin" />
-                        Finding your match...
+                        Submitting request...
                       </>
                     ) : (
                       <>
-                        Confirm Booking
+                        Submit Request
                         <CheckCircle className="w-4 h-4" />
                       </>
                     )}
@@ -626,12 +626,15 @@ export default function BookingPage() {
                   <CheckCircle className="w-12 h-12 text-white" />
                 </motion.div>
 
-                <h2 className="text-4xl font-serif mb-2">Booking Confirmed!</h2>
-                <p className="text-gold font-medium text-lg mb-8">Booking #{bookingRef}</p>
+                <h2 className="text-4xl font-serif mb-2">Request Submitted!</h2>
+                <p className="text-gold font-medium text-lg mb-2">Request #{bookingRef}</p>
+                <p className="text-harbor text-sm mb-8 max-w-lg mx-auto">
+                  Your request is being reviewed by our concierge team. We&apos;re curating the perfect match for you and will respond within 24 hours.
+                </p>
 
-                {/* Booking Summary */}
+                {/* Request Summary */}
                 <div className="bg-shell rounded-lg p-8 max-w-md mx-auto mb-8 text-left">
-                  <h3 className="font-serif text-xl mb-4 text-center">Your Booking Details</h3>
+                  <h3 className="font-serif text-xl mb-4 text-center">Your Preferences</h3>
                   <div className="space-y-3 text-sm">
                     <div className="flex justify-between">
                       <span className="text-harbor">Service:</span>
@@ -654,21 +657,30 @@ export default function BookingPage() {
 
                 {/* What's Next */}
                 <div className="bg-white rounded-lg p-6 max-w-md mx-auto mb-8 border border-gray-light/20">
-                  <h3 className="font-serif text-lg mb-4">What&apos;s Next?</h3>
+                  <h3 className="font-serif text-lg mb-4">What Happens Next?</h3>
                   <ul className="text-left space-y-3 text-sm text-harbor">
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
-                      <span>Confirmation email sent to {bookingData.email}</span>
+                      <span>Request confirmation sent to {bookingData.email}</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
-                      <span>We&apos;re matching you with the perfect professional (within 2 hours)</span>
+                      <span>Our concierge team reviews your preferences and curates 2-3 perfect professional matches</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
-                      <span>You&apos;ll receive their details and final confirmation</span>
+                      <span>We&apos;ll send you their profiles with availability and pricing within 24 hours</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
+                      <span>You choose your preferred match and we coordinate everything</span>
                     </li>
                   </ul>
+                  <div className="mt-4 pt-4 border-t border-gray-light/20">
+                    <p className="text-xs text-harbor italic">
+                      💎 This is curation, not instant booking. Quality matches take time, but are worth it.
+                    </p>
+                  </div>
                 </div>
 
                 {/* Next Actions - Beautiful Loop Closure */}
@@ -709,7 +721,7 @@ END:VCALENDAR`)}`}
                     }}
                     className="btn-secondary flex items-center justify-center gap-2"
                   >
-                    Book Another Service
+                    Request Another Service
                   </Link>
                 </div>
 

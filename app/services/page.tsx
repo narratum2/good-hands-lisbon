@@ -363,13 +363,13 @@ export default function ServicesPage() {
       <section className="section-padding bg-ink text-white text-center">
         <div className="container-custom">
           <h2 className="text-4xl md:text-5xl font-serif mb-6">
-            Ready to Reserve Your Session?
+            Ready to Find Your Perfect Match?
           </h2>
           <p className="text-xl text-porcelain/80 mb-8 max-w-2xl mx-auto">
-            We'll match you with the perfect professional for your needs
+            Tell us your preferences and we&apos;ll curate the perfect professional for you within 24 hours
           </p>
           <Link href="/book" className="btn-gold">
-            Reserve Your Experience
+            Request Consultation
           </Link>
         </div>
       </section>
@@ -417,7 +417,7 @@ export default function ServicesPage() {
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://good-hands-apualr0k5-narratums-projects.vercel.app',
+                item: 'https://goodhands.com',
               },
               {
                 '@type': 'ListItem',
