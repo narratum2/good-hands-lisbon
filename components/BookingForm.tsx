@@ -137,15 +137,15 @@ export default function BookingForm() {
         >
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif mb-4">
-              Let's Book You
+              Request Your Service
             </h2>
             <p className="text-harbor text-lg mb-4">
-              Tell us what you need. We'll handle the rest.
+              Tell us what you need. We'll respond within 2 hours with availability and pricing.
             </p>
             <div className="inline-flex items-center gap-2 bg-gold/10 px-6 py-3 rounded-lg">
               <span className="text-2xl">✨</span>
               <p className="text-sm font-medium text-gold">
-                Concierge service included
+                On-site concierge service • Premium rates apply
               </p>
             </div>
           </div>
@@ -566,7 +566,7 @@ export default function BookingForm() {
                 animate={{ opacity: 1, y: 0 }}
                 className="mt-4 text-center text-sage font-medium"
               >
-                Thank you! We\'ll be in touch within 24 hours to confirm your booking.
+                Request received! We'll respond within 2 hours with availability, pricing, and next steps.
               </motion.p>
             )}
 
