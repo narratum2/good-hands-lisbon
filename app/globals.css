@@ -29,7 +29,7 @@
     --white: #ffffff;      /* Pure white */
     --off-white: #fafaf8;  /* Warmer, softer off-white */
     --gold: #b8985f;       /* Muted, refined gold */
-    --gold-light: #d4c4a0; /* Lighter gold for backgrounds */
+    --gold-light: #e5c76b; /* Better contrast on dark backgrounds (5.8:1) */
     --gold-dark: #9a7d4a;  /* Darker gold for contrast */
     --gray-light: #e8e8e6; /* Warmer gray for borders */
     --gray-medium: #8a8a8a;/* Refined secondary text */

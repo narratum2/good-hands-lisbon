@@ -42,13 +42,23 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-serif mb-4">Good Hands</h3>
+            {/* Enhanced Logo - Matches Navbar */}
+            <Link href="/" className="inline-block group mb-6 focus-visible-ring" aria-label="Good Hands Home">
+              <span className="text-3xl md:text-4xl font-serif font-light transition-colors duration-300" 
+                    style={{ color: 'var(--off-white)', letterSpacing: '-0.02em' }}>
+                <span className="group-hover:text-gold transition-colors">Good</span>
+                <span className="mx-2" style={{ color: 'var(--gold)' }}>·</span>
+                <span className="group-hover:text-gold transition-colors">Hands</span>
+              </span>
+            </Link>
+            
             <p className="text-porcelain/70 text-sm leading-relaxed mb-4">
               Where discerning clients meet exceptional professionals.
             </p>
+            
             <a 
               href="mailto:hello@beautysalonlisbon.com" 
-              className="text-gold hover:text-gold-light text-sm transition-colors inline-block"
+              className="text-gold hover:text-gold-light text-sm transition-colors inline-block font-medium"
             >
               hello@beautysalonlisbon.com
             </a>
@@ -144,22 +154,22 @@ export default function Footer() {
               © {new Date().getFullYear()} Good Hands. All rights reserved.
             </p>
             
-            {/* Social Media Icons */}
+            {/* Social Media Icons - Subtle Outline Style */}
             <div className="flex items-center gap-4">
               <a
                 href="https://instagram.com/goodhands"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-gold flex items-center justify-center text-ink hover:bg-gold/80 transition-all"
+                className="w-10 h-10 rounded-full bg-transparent border-2 border-gold text-gold hover:bg-gold hover:text-ink transition-all duration-300 flex items-center justify-center"
                 aria-label="Follow us on Instagram"
               >
-                <Instagram className="w-5 h-5" />
+                <Instagram className="w-4 h-4" />
               </a>
               <a
                 href="https://x.com/goodhands"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-gold flex items-center justify-center text-ink hover:bg-gold/80 transition-all"
+                className="w-10 h-10 rounded-full bg-transparent border-2 border-gold text-gold hover:bg-gold hover:text-ink transition-all duration-300 flex items-center justify-center"
                 aria-label="Follow us on X (Twitter)"
               >
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
@@ -170,7 +180,7 @@ export default function Footer() {
                 href="https://t.me/goodhands"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-gold flex items-center justify-center text-ink hover:bg-gold/80 transition-all"
+                className="w-10 h-10 rounded-full bg-transparent border-2 border-gold text-gold hover:bg-gold hover:text-ink transition-all duration-300 flex items-center justify-center"
                 aria-label="Join us on Telegram"
               >
                 <Send className="w-4 h-4" />
