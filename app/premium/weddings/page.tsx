@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
+import { BrushIcon, SparklesIcon, CalendarIcon, LocationIcon } from '@/components/icons/CustomIcons'
 
 export const metadata: Metadata = {
   title: 'Wedding Beauty Services | Good Hands Lisbon',
@@ -39,29 +40,41 @@ export default function WeddingsPage() {
               Planning a wedding in Lisbon? We handle all beauty coordination so you can focus on your special day.
             </p>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="p-6 bg-porcelain rounded-lg">
-                <h3 className="text-xl font-semibold text-ink mb-3">🎨 Complete Coordination</h3>
-                <p className="text-harbor">
-                  One point of contact for bride, bridesmaids, mothers, and flower girls. We manage everything.
-                </p>
+              <div className="p-6 bg-porcelain rounded-lg flex items-start gap-4">
+                <BrushIcon className="w-8 h-8 text-gold flex-shrink-0" />
+                <div>
+                  <h3 className="text-xl font-semibold text-ink mb-3">Complete Coordination</h3>
+                  <p className="text-harbor">
+                    One point of contact for bride, bridesmaids, mothers, and flower girls. We manage everything.
+                  </p>
+                </div>
               </div>
-              <div className="p-6 bg-porcelain rounded-lg">
-                <h3 className="text-xl font-semibold text-ink mb-3">✨ Trial Sessions</h3>
-                <p className="text-harbor">
-                  Complete hair and makeup trials so you're confident and beautiful on your wedding day.
-                </p>
+              <div className="p-6 bg-porcelain rounded-lg flex items-start gap-4">
+                <SparklesIcon className="w-8 h-8 text-gold flex-shrink-0" />
+                <div>
+                  <h3 className="text-xl font-semibold text-ink mb-3">Trial Sessions</h3>
+                  <p className="text-harbor">
+                    Complete hair and makeup trials so you're confident and beautiful on your wedding day.
+                  </p>
+                </div>
               </div>
-              <div className="p-6 bg-porcelain rounded-lg">
-                <h3 className="text-xl font-semibold text-ink mb-3">📅 Timeline Management</h3>
-                <p className="text-harbor">
-                  We create a detailed timeline ensuring everyone is ready on schedule—no stress, no delays.
-                </p>
+              <div className="p-6 bg-porcelain rounded-lg flex items-start gap-4">
+                <CalendarIcon className="w-8 h-8 text-gold flex-shrink-0" />
+                <div>
+                  <h3 className="text-xl font-semibold text-ink mb-3">Timeline Management</h3>
+                  <p className="text-harbor">
+                    We create a detailed timeline ensuring everyone is ready on schedule—no stress, no delays.
+                  </p>
+                </div>
               </div>
-              <div className="p-6 bg-porcelain rounded-lg">
-                <h3 className="text-xl font-semibold text-ink mb-3">🏨 On-Location Services</h3>
-                <p className="text-harbor">
-                  Our professionals come to your hotel, villa, or venue. Getting ready happens where you want.
-                </p>
+              <div className="p-6 bg-porcelain rounded-lg flex items-start gap-4">
+                <LocationIcon className="w-8 h-8 text-gold flex-shrink-0" />
+                <div>
+                  <h3 className="text-xl font-semibold text-ink mb-3">On-Location Services</h3>
+                  <p className="text-harbor">
+                    Our professionals come to your hotel, villa, or venue. Getting ready happens where you want.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
