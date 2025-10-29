@@ -285,46 +285,64 @@ export default function CorporatePage() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white p-6 rounded-lg">
-              <h3 className="text-lg font-semibold mb-2">🎯 Employee Retention</h3>
-              <p className="text-harbor text-sm">
-                Wellness benefits increase employee satisfaction and reduce turnover
-              </p>
+            <div className="bg-white p-6 rounded-lg flex items-start gap-3">
+              <TargetIcon className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="text-lg font-semibold mb-2">Employee Retention</h3>
+                <p className="text-harbor text-sm">
+                  Wellness benefits increase employee satisfaction and reduce turnover
+                </p>
+              </div>
             </div>
 
-            <div className="bg-white p-6 rounded-lg">
-              <h3 className="text-lg font-semibold mb-2">💼 Professional Image</h3>
-              <p className="text-harbor text-sm">
-                Ensure your team always looks polished for client meetings
-              </p>
+            <div className="bg-white p-6 rounded-lg flex items-start gap-3">
+              <BriefcaseIcon className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="text-lg font-semibold mb-2">Professional Image</h3>
+                <p className="text-harbor text-sm">
+                  Ensure your team always looks polished for client meetings
+                </p>
+              </div>
             </div>
 
-            <div className="bg-white p-6 rounded-lg">
-              <h3 className="text-lg font-semibold mb-2">⏰ Time Savings</h3>
-              <p className="text-harbor text-sm">
-                We handle all coordination. Your team just shows up.
-              </p>
+            <div className="bg-white p-6 rounded-lg flex items-start gap-3">
+              <ClockIcon className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="text-lg font-semibold mb-2">Time Savings</h3>
+                <p className="text-harbor text-sm">
+                  We handle all coordination. Your team just shows up.
+                </p>
+              </div>
             </div>
 
-            <div className="bg-white p-6 rounded-lg">
-              <h3 className="text-lg font-semibold mb-2">📊 Usage Analytics</h3>
-              <p className="text-harbor text-sm">
-                Track utilization, spending, and employee satisfaction
-              </p>
+            <div className="bg-white p-6 rounded-lg flex items-start gap-3">
+              <ChartIcon className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="text-lg font-semibold mb-2">Usage Analytics</h3>
+                <p className="text-harbor text-sm">
+                  Track utilization, spending, and employee satisfaction
+                </p>
+              </div>
             </div>
 
-            <div className="bg-white p-6 rounded-lg">
-              <h3 className="text-lg font-semibold mb-2">🤝 No Contracts</h3>
-              <p className="text-harbor text-sm">
-                Flexible month-to-month arrangements. Scale up or down anytime.
-              </p>
+            <div className="bg-white p-6 rounded-lg flex items-start gap-3">
+              <Handshake className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="text-lg font-semibold mb-2">No Contracts</h3>
+                <p className="text-harbor text-sm">
+                  Flexible month-to-month arrangements. Scale up or down anytime.
+                </p>
+              </div>
             </div>
 
-            <div className="bg-white p-6 rounded-lg">
-              <h3 className="text-lg font-semibold mb-2">🌍 Multi-Location</h3>
-              <p className="text-harbor text-sm">
-                Services available across all Lisbon neighborhoods
-              </p>
+            <div className="bg-white p-6 rounded-lg flex items-start gap-3">
+              <LocationIcon className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="text-lg font-semibold mb-2">Multi-Location</h3>
+                <p className="text-harbor text-sm">
+                  Services available across all Lisbon neighborhoods
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { BriefcaseIcon, TargetIcon, ClockIcon, ChartIcon } from '@/components/icons/CustomIcons'
 
 export const metadata: Metadata = {
   title: 'Corporate Beauty Services | Good Hands Lisbon',
@@ -38,29 +39,41 @@ export default function CorporatePage() {
               From tech startups to Fortune 500 companies, we provide beauty and grooming services that enhance company culture and employee satisfaction.
             </p>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="p-6 bg-porcelain rounded-lg">
-                <h3 className="text-xl font-semibold text-ink mb-3">💼 Professional On-Site Service</h3>
-                <p className="text-harbor">
-                  Our professionals come to your office, co-working space, or event venue. No time wasted traveling—your team stays productive.
-                </p>
+              <div className="p-6 bg-porcelain rounded-lg flex items-start gap-4">
+                <BriefcaseIcon className="w-8 h-8 text-gold flex-shrink-0" />
+                <div>
+                  <h3 className="text-xl font-semibold text-ink mb-3">Professional On-Site Service</h3>
+                  <p className="text-harbor">
+                    Our professionals come to your office, co-working space, or event venue. No time wasted traveling—your team stays productive.
+                  </p>
+                </div>
               </div>
-              <div className="p-6 bg-porcelain rounded-lg">
-                <h3 className="text-xl font-semibold text-ink mb-3">🎯 Boosts Employee Morale</h3>
-                <p className="text-harbor">
-                  Beauty services as employee perks show you care about well-being. Happier teams are more engaged and productive.
-                </p>
+              <div className="p-6 bg-porcelain rounded-lg flex items-start gap-4">
+                <TargetIcon className="w-8 h-8 text-gold flex-shrink-0" />
+                <div>
+                  <h3 className="text-xl font-semibold text-ink mb-3">Boosts Employee Morale</h3>
+                  <p className="text-harbor">
+                    Beauty services as employee perks show you care about well-being. Happier teams are more engaged and productive.
+                  </p>
+                </div>
               </div>
-              <div className="p-6 bg-porcelain rounded-lg">
-                <h3 className="text-xl font-semibold text-ink mb-3">⚡ Quick & Convenient</h3>
-                <p className="text-harbor">
-                  Express services during lunch breaks, or full pampering for special events. Flexible scheduling fits your company's needs.
-                </p>
+              <div className="p-6 bg-porcelain rounded-lg flex items-start gap-4">
+                <ClockIcon className="w-8 h-8 text-gold flex-shrink-0" />
+                <div>
+                  <h3 className="text-xl font-semibold text-ink mb-3">Quick & Convenient</h3>
+                  <p className="text-harbor">
+                    Express services during lunch breaks, or full pampering for special events. Flexible scheduling fits your company's needs.
+                  </p>
+                </div>
               </div>
-              <div className="p-6 bg-porcelain rounded-lg">
-                <h3 className="text-xl font-semibold text-ink mb-3">📊 Easy Administration</h3>
-                <p className="text-harbor">
-                  One invoice, one coordinator. We handle scheduling, logistics, and payment processing. You just approve and enjoy.
-                </p>
+              <div className="p-6 bg-porcelain rounded-lg flex items-start gap-4">
+                <ChartIcon className="w-8 h-8 text-gold flex-shrink-0" />
+                <div>
+                  <h3 className="text-xl font-semibold text-ink mb-3">Easy Administration</h3>
+                  <p className="text-harbor">
+                    One invoice, one coordinator. We handle scheduling, logistics, and payment processing. You just approve and enjoy.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

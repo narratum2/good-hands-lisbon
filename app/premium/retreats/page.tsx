@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { BrushIcon, SparklesIcon, UserIcon, BuildingIcon } from '@/components/icons/CustomIcons'
 
 export const metadata: Metadata = {
   title: 'Beauty Retreats | Good Hands Lisbon',
@@ -38,29 +39,41 @@ export default function RetreatsPage() {
               This isn't about relaxation—it's about transformation. Learn from Lisbon's top beauty professionals and discover techniques you'll use for life.
             </p>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="p-6 bg-porcelain rounded-lg">
-                <h3 className="text-xl font-semibold text-ink mb-3">💄 Hands-On Learning</h3>
-                <p className="text-harbor">
-                  Master makeup techniques, hair styling, and skincare routines taught by professionals. Leave with skills, not just memories.
-                </p>
+              <div className="p-6 bg-porcelain rounded-lg flex items-start gap-4">
+                <BrushIcon className="w-8 h-8 text-gold flex-shrink-0" />
+                <div>
+                  <h3 className="text-xl font-semibold text-ink mb-3">Hands-On Learning</h3>
+                  <p className="text-harbor">
+                    Master makeup techniques, hair styling, and skincare routines taught by professionals. Leave with skills, not just memories.
+                  </p>
+                </div>
               </div>
-              <div className="p-6 bg-porcelain rounded-lg">
-                <h3 className="text-xl font-semibold text-ink mb-3">✨ Personal Transformation</h3>
-                <p className="text-harbor">
-                  Discover your signature look, understand your features, and learn what truly works for you—not generic trends.
-                </p>
+              <div className="p-6 bg-porcelain rounded-lg flex items-start gap-4">
+                <SparklesIcon className="w-8 h-8 text-gold flex-shrink-0" />
+                <div>
+                  <h3 className="text-xl font-semibold text-ink mb-3">Personal Transformation</h3>
+                  <p className="text-harbor">
+                    Discover your signature look, understand your features, and learn what truly works for you—not generic trends.
+                  </p>
+                </div>
               </div>
-              <div className="p-6 bg-porcelain rounded-lg">
-                <h3 className="text-xl font-semibold text-ink mb-3">👥 Small Group Intimacy</h3>
-                <p className="text-harbor">
-                  Maximum 8 participants. Every session is personalized, with individual attention from master stylists.
-                </p>
+              <div className="p-6 bg-porcelain rounded-lg flex items-start gap-4">
+                <UserIcon className="w-8 h-8 text-gold flex-shrink-0" />
+                <div>
+                  <h3 className="text-xl font-semibold text-ink mb-3">Small Group Intimacy</h3>
+                  <p className="text-harbor">
+                    Maximum 8 participants. Every session is personalized, with individual attention from master stylists.
+                  </p>
+                </div>
               </div>
-              <div className="p-6 bg-porcelain rounded-lg">
-                <h3 className="text-xl font-semibold text-ink mb-3">🏰 Stunning Locations</h3>
-                <p className="text-harbor">
-                  Historic palaces in Sintra, coastal villas in Cascais, boutique studios in Chiado—each retreat is unforgettable.
-                </p>
+              <div className="p-6 bg-porcelain rounded-lg flex items-start gap-4">
+                <BuildingIcon className="w-8 h-8 text-gold flex-shrink-0" />
+                <div>
+                  <h3 className="text-xl font-semibold text-ink mb-3">Stunning Locations</h3>
+                  <p className="text-harbor">
+                    Historic palaces in Sintra, coastal villas in Cascais, boutique studios in Chiado—each retreat is unforgettable.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

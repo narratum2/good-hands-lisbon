@@ -47,7 +47,9 @@ export default function HowItWorksPage() {
 
           <div className="grid md:grid-cols-3 gap-8 text-left">
             <div className="bg-shell p-8 rounded-lg">
-              <div className="text-5xl mb-4">1️⃣</div>
+              <div className="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mb-4">
+                <span className="text-3xl font-serif font-light text-gold">1</span>
+              </div>
               <h3 className="text-2xl font-serif mb-3">Tell Us What You Want</h3>
               <p className="text-harbor">
                 Fill out our simple booking form or chat with us. Share your preferences, concerns, budget, location.
@@ -55,7 +57,9 @@ export default function HowItWorksPage() {
             </div>
 
             <div className="bg-shell p-8 rounded-lg">
-              <div className="text-5xl mb-4">2️⃣</div>
+              <div className="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mb-4">
+                <span className="text-3xl font-serif font-light text-gold">2</span>
+              </div>
               <h3 className="text-2xl font-serif mb-3">We Match You Perfectly</h3>
               <p className="text-harbor">
                 Our team reviews your request and matches you with a vetted professional who's perfect for your needs.
@@ -63,7 +67,9 @@ export default function HowItWorksPage() {
             </div>
 
             <div className="bg-shell p-8 rounded-lg">
-              <div className="text-5xl mb-4">3️⃣</div>
+              <div className="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mb-4">
+                <span className="text-3xl font-serif font-light text-gold">3</span>
+              </div>
               <h3 className="text-2xl font-serif mb-3">Show Up & Enjoy</h3>
               <p className="text-harbor">
                 We handle all communication, booking, and coordination. You just show up at the right time and place.
