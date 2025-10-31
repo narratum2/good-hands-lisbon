@@ -8,6 +8,33 @@ export const metadata: Metadata = {
   title: 'Professional Makeup Artists Lisbon — Bridal, Events, Lessons | Good Hands',
   description: 'Top makeup artists in Lisbon for weddings (€150+), special events (€70+), editorial shoots, and personalized lessons. Portfolio-vetted professionals with premium products. On-location available.',
   keywords: ['makeup artist lisbon', 'bridal makeup lisbon', 'event makeup lisbon', 'makeup lesson lisbon', 'wedding makeup artist', 'mua lisbon', 'makeup artist portugal'],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://goodhands.com/services/makeup',
+    siteName: 'Good Hands',
+    title: 'Professional Makeup Artists Lisbon — Bridal, Events, Lessons',
+    description: 'Top makeup artists in Lisbon for weddings, special events, editorial shoots, and personalized lessons. Portfolio-vetted professionals.',
+    images: [
+      {
+        url: '/brand-images/category-makeup.png',
+        width: 1200,
+        height: 630,
+        alt: 'Professional Makeup Services Lisbon',
+      },
+    ],
+  },
 }
 
 const makeupServices = [
@@ -439,6 +466,179 @@ export default function MakeupServicesPage() {
                 name: 'Makeup Services',
                 item: 'https://goodhands.com/services/makeup',
               },
+            ],
+          }),
+        }}
+      />
+
+      {/* Service Schema for Each Makeup Service Type */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'ItemList',
+            name: 'Professional Makeup Services in Lisbon',
+            description: 'Complete range of professional makeup services offered by Good Hands in Lisbon, Portugal',
+            itemListElement: makeupServices.map((service, index) => ({
+              '@type': 'ListItem',
+              position: index + 1,
+              item: {
+                '@type': 'Service',
+                '@id': `https://goodhands.com/services/makeup#${service.name.toLowerCase().replace(/\s+/g, '-')}`,
+                name: service.name,
+                description: service.description,
+                provider: {
+                  '@type': 'Organization',
+                  name: 'Good Hands',
+                  url: 'https://goodhands.com',
+                },
+                areaServed: {
+                  '@type': 'City',
+                  name: 'Lisbon',
+                  '@id': 'https://www.wikidata.org/wiki/Q597',
+                },
+                serviceType: 'Professional Makeup Service',
+                category: 'Beauty Services',
+                offers: {
+                  '@type': 'Offer',
+                  price: service.price,
+                  priceCurrency: 'EUR',
+                  availability: 'https://schema.org/InStock',
+                  url: 'https://goodhands.com/book',
+                },
+                duration: {
+                  '@type': 'Duration',
+                  name: service.duration,
+                },
+                availableChannel: {
+                  '@type': 'ServiceChannel',
+                  serviceType: 'On-site Service',
+                  availableLanguage: ['en', 'pt'],
+                },
+                audience: {
+                  '@type': 'Audience',
+                  audienceType: 'General Public',
+                },
+              },
+            })),
+          }),
+        }}
+      />
+
+      {/* ProfessionalService Schema for Makeup Artist Services */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'ProfessionalService',
+            name: 'Professional Makeup Artist Services',
+            description: 'Portfolio-vetted professional makeup artists in Lisbon offering bridal, event, editorial, and lesson services',
+            provider: {
+              '@type': 'Organization',
+              name: 'Good Hands',
+              url: 'https://goodhands.com',
+              logo: 'https://goodhands.com/brand-assets/logo/logo-primary.svg',
+              sameAs: [
+                'https://instagram.com/goodhandslisbon',
+              ],
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Lisbon',
+                addressCountry: 'PT',
+              },
+            },
+            serviceType: 'Makeup Artist Services',
+            areaServed: [
+              {
+                '@type': 'City',
+                name: 'Lisbon',
+              },
+              {
+                '@type': 'AdministrativeArea',
+                name: 'Lisboa',
+              },
+            ],
+            hasOfferCatalog: {
+              '@type': 'OfferCatalog',
+              name: 'Makeup Services',
+              itemListElement: makeupServices.map((service) => ({
+                '@type': 'Offer',
+                itemOffered: {
+                  '@type': 'Service',
+                  name: service.name,
+                  description: service.description,
+                },
+                price: service.price,
+                priceCurrency: 'EUR',
+              })),
+            },
+            audience: {
+              '@type': 'Audience',
+              audienceType: 'Brides, Event Attendees, Models, Photography Clients',
+            },
+          }),
+        }}
+      />
+
+      {/* LocalBusiness Schema for Makeup Services */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BeautySalon',
+            name: 'Good Hands Makeup Services',
+            description: 'Professional makeup artists in Lisbon for weddings, events, photoshoots, and lessons',
+            url: 'https://goodhands.com/services/makeup',
+            telephone: '+351-XXX-XXX-XXX',
+            email: 'hello@beautysalonlisbon.com',
+            address: {
+              '@type': 'PostalAddress',
+              addressLocality: 'Lisbon',
+              addressCountry: 'PT',
+            },
+            geo: {
+              '@type': 'GeoCoordinates',
+              latitude: '38.7223',
+              longitude: '-9.1393',
+            },
+            priceRange: '€€€',
+            openingHoursSpecification: {
+              '@type': 'OpeningHoursSpecification',
+              dayOfWeek: [
+                'Monday',
+                'Tuesday',
+                'Wednesday',
+                'Thursday',
+                'Friday',
+                'Saturday',
+                'Sunday',
+              ],
+              opens: '09:00',
+              closes: '20:00',
+            },
+            makesOffer: makeupServices.map((service) => ({
+              '@type': 'Offer',
+              itemOffered: {
+                '@type': 'Service',
+                name: service.name,
+                description: service.description,
+              },
+              price: service.price,
+              priceCurrency: 'EUR',
+            })),
+            knowsAbout: [
+              'Bridal Makeup',
+              'Event Makeup',
+              'Editorial Makeup',
+              'Makeup Lessons',
+              'Color Correction',
+              'Contouring',
+              'Makeup for Photography',
+              'Long-wear Makeup',
+              'Professional Makeup Techniques',
             ],
           }),
         }}

@@ -46,7 +46,7 @@ export default function Home() {
             className="text-xs uppercase tracking-[0.3em] mb-10 font-semibold"
             style={{ color: 'var(--gold)' }}
           >
-            Ready to Book
+            Ready to Request
           </p>
           
           {/* High Contrast Headline */}
@@ -57,7 +57,7 @@ export default function Home() {
               color: 'var(--off-white)'
             }}
           >
-            Book Your Appointment
+            Request Your Service
           </h2>
           
           {/* High Contrast Subheading */}
@@ -65,9 +65,9 @@ export default function Home() {
             className="text-lg md:text-xl mb-16 leading-relaxed font-light max-w-2xl mx-auto"
             style={{ color: 'rgba(250, 250, 248, 0.85)' }}
           >
-            Let us connect you with the perfect professional.
+            Tell us what you need. We'll respond within 2 hours.
             <br />
-            Seamless booking. Exceptional results.
+            Premium on-site service. Exceptional results.
           </p>
           
           {/* High Visibility CTA Button */}
@@ -80,7 +80,7 @@ export default function Home() {
               letterSpacing: '0.2em'
             }}
           >
-            Request Consultation
+            Request Service
           </Link>
           
           {/* High Contrast Footer Text */}
@@ -88,7 +88,7 @@ export default function Home() {
             className="text-xs mt-10 uppercase tracking-[0.2em] font-semibold"
             style={{ color: 'rgba(250, 250, 248, 0.5)' }}
           >
-            Confirmation within 2 hours
+            Response within 2 hours
           </p>
         </div>
       </section>

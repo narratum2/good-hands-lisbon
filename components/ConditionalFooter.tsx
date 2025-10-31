@@ -23,6 +23,8 @@ export default function ConditionalFooter() {
     '/book',
     '/checkout',
     '/payment',
+    '/narratum',
+    '/admin',
   ]
   
   const shouldHideFooter = hideFooterPaths.some(path => 

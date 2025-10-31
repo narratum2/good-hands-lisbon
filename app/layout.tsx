@@ -3,13 +3,13 @@ import { Inter, Playfair_Display } from 'next/font/google'
 import Script from 'next/script'
 import { Analytics } from '@vercel/analytics/react'
 import './globals.css'
-import Navbar from '@/components/Navbar'
+import ConditionalNavbar from '@/components/ConditionalNavbar'
 import ConditionalFooter from '@/components/ConditionalFooter'
-import Grain from '@/components/Grain'
-import AIDiscoveryTracker from '@/components/AIDiscoveryTracker'
+import ConditionalGrain from '@/components/ConditionalGrain'
+import ConditionalAIDiscovery from '@/components/ConditionalAIDiscovery'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
 import { BookingModalProvider } from '@/components/BookingModalProvider'
-import SmartAssistant from '@/components/SmartAssistant'
+import ConditionalSmartAssistant from '@/components/ConditionalSmartAssistant'
 import OptimizationProvider from '@/components/OptimizationProvider'
 import { getOrganizationSchema, SEO_TEMPLATES } from '@/lib/seo-config'
 
@@ -166,10 +166,10 @@ export default function RootLayout({
           >
             Skip to main content
           </a>
-          <AIDiscoveryTracker />
-          <SmartAssistant />
-          <Grain />
-          <Navbar />
+          <ConditionalAIDiscovery />
+          <ConditionalSmartAssistant />
+          <ConditionalGrain />
+          <ConditionalNavbar />
           <main id="main-content" className="min-h-screen">{children}</main>
           <ConditionalFooter />
           <Analytics />
