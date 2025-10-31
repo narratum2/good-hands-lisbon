@@ -131,21 +131,11 @@ export default function RootLayout({
         />
       </head>
       <body>
-        {/* Google Analytics - G-ZGDMVGP040 */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-ZGDMVGP040"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-ZGDMVGP040', {
-              page_path: window.location.pathname,
-            });
-          `}
-        </Script>
+        {/* Google Analytics - G-ZGDMVGP040
+            Enhanced Measurement: Enabled
+            Stream: Good-Hands (12289898409)
+            Property: beautysalonlisbon.com
+        */}
         {/* Microsoft Clarity for heatmaps and session recordings */}
         <Script id="microsoft-clarity" strategy="afterInteractive">
           {`
