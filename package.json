@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "aoe:setup": "cd autonomous && npm install && tsx scripts/setup.ts",
+    "aoe:start": "cd autonomous && npm start",
+    "aoe:status": "cd autonomous && npm run status",
+    "aoe:stop": "cd autonomous && npm run stop"
   },
   "dependencies": {
     "@notionhq/client": "^2.2.15",
