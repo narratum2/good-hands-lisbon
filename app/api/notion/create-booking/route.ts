@@ -1,7 +1,8 @@
 import { NextResponse } from 'next/server'
 
 const NOTION_API_KEY = process.env.NOTION_API_KEY || ''
-const NOTION_BOOKINGS_DB_ID = process.env.NOTION_BOOKINGS_DB_ID || ''
+// Support both naming conventions for backwards compatibility
+const NOTION_BOOKINGS_DB_ID = process.env.NOTION_BOOKING_DATABASE_ID || process.env.NOTION_BOOKINGS_DB_ID || ''
 
 // This endpoint creates a booking record in Notion
 // Called when a booking form is submitted

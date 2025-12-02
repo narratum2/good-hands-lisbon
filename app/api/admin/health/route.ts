@@ -18,18 +18,20 @@ export async function GET() {
     status: process.env.STRIPE_SECRET_KEY ? 'configured' : 'missing',
   }
 
-  // Check Notion
+  // Check Notion - support both variable naming conventions
+  const notionApiKey = process.env.NOTION_API_KEY
+  const notionBookingsDb = process.env.NOTION_BOOKING_DATABASE_ID || process.env.NOTION_BOOKINGS_DB_ID
+  const notionCustomersDb = process.env.NOTION_CUSTOMERS_DATABASE_ID || process.env.NOTION_CUSTOMERS_DB_ID
+  const notionMembershipsDb = process.env.NOTION_MEMBERSHIPS_DB_ID
+  
   checks.integrations.notion = {
-    configured: !!(
-      process.env.NOTION_API_KEY &&
-      process.env.NOTION_BOOKINGS_DB_ID &&
-      process.env.NOTION_CUSTOMERS_DB_ID &&
-      process.env.NOTION_MEMBERSHIPS_DB_ID
-    ),
+    configured: !!(notionApiKey && notionBookingsDb && notionCustomersDb),
     status:
-      process.env.NOTION_API_KEY && process.env.NOTION_BOOKINGS_DB_ID
+      notionApiKey && notionBookingsDb
         ? 'configured'
-        : 'partial',
+        : notionApiKey 
+          ? 'partial'
+          : 'missing',
   }
 
   // Check Make.com

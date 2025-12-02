@@ -43,46 +43,11 @@ export default function SmartAssistant() {
   ])
   const [hasInteracted, setHasInteracted] = useState(false)
 
-  // Show assistant after 3 seconds if user hasn't interacted
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      if (!hasInteracted) {
-        setIsOpen(true)
-      }
-    }, 3000)
+  // Removed auto-open after 3 seconds - better UX to let users initiate
+  // The assistant button is visible and accessible when needed
 
-    return () => clearTimeout(timer)
-  }, [hasInteracted])
-
-  // Track scroll depth and offer help
-  useEffect(() => {
-    let scrollThreshold = 0.5
-    const handleScroll = () => {
-      const scrolled = window.scrollY
-      const height = document.documentElement.scrollHeight - window.innerHeight
-      const scrollPercent = scrolled / height
-
-      if (scrollPercent > scrollThreshold && !hasInteracted) {
-        scrollThreshold = 1 // Don't trigger again
-        setMessages((prev) => [
-          ...prev,
-          {
-            id: Date.now(),
-            type: 'assistant',
-            content: "Still browsing? Let me help you find the perfect service! 🎯",
-            actions: [
-              { label: '📅 Book Now', href: '/book' },
-              { label: '💬 Chat with Us', href: '/contact' },
-            ],
-          },
-        ])
-        setIsOpen(true)
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [hasInteracted])
+  // Removed scroll-triggered popup - intrusive UX
+  // Users can click the assistant button when they need help
 
   const handleOpen = () => {
     setIsOpen(true)

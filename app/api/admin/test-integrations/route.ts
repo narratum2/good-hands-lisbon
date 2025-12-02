@@ -128,8 +128,8 @@ async function testNotionIntegration() {
       message: 'Notion connection successful',
       databasesFound: databases.length,
       configured: {
-        bookings: !!process.env.NOTION_BOOKINGS_DB_ID,
-        customers: !!process.env.NOTION_CUSTOMERS_DB_ID,
+        bookings: !!(process.env.NOTION_BOOKING_DATABASE_ID || process.env.NOTION_BOOKINGS_DB_ID),
+        customers: !!(process.env.NOTION_CUSTOMERS_DATABASE_ID || process.env.NOTION_CUSTOMERS_DB_ID),
         memberships: !!process.env.NOTION_MEMBERSHIPS_DB_ID,
       },
     }
