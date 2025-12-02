@@ -33,6 +33,9 @@ export const metadata: Metadata = {
   title: SEO_TEMPLATES.home.title,
   description: SEO_TEMPLATES.home.description,
   keywords: SEO_TEMPLATES.home.keywords,
+  verification: {
+    google: 'saJIT9Mt8gKXpi-hAQjMVDMxV5_kqdn8_z6YUqZ-ZrY',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
