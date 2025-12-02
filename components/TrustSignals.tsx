@@ -45,29 +45,54 @@ export default function TrustSignals() {
   ]
 
   return (
-    <section className="section-padding bg-white border-y border-harbor/10">
+    <section 
+      className="py-12 md:py-16"
+      style={{ 
+        backgroundColor: 'var(--white)',
+        borderTop: '1px solid var(--gray-light)',
+        borderBottom: '1px solid var(--gray-light)'
+      }}
+    >
       <div className="container-custom">
-        {/* Trust Stats */}
+        {/* Trust Stats - Centered Grid */}
         <motion.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-8"
+          className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 max-w-5xl mx-auto"
         >
           {signals.map((signal, index) => (
             <motion.div
               key={index}
               variants={staggerItem}
-              className="text-center"
+              className="text-center flex flex-col items-center"
             >
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full mb-4" style={{ backgroundColor: 'var(--gold)/10', color: 'var(--gold)' }}>
+              {/* Icon Circle */}
+              <div 
+                className="inline-flex items-center justify-center w-11 h-11 rounded-full mb-3"
+                style={{ 
+                  backgroundColor: 'rgba(184, 152, 95, 0.12)',
+                  color: 'var(--gold)'
+                }}
+              >
                 {signal.icon}
               </div>
-              <div className="text-3xl md:text-4xl font-serif font-light mb-2" style={{ color: 'var(--black)' }}>
+              {/* Stat Number */}
+              <div 
+                className="text-2xl md:text-3xl lg:text-4xl font-serif font-light mb-1.5"
+                style={{ color: 'var(--black)' }}
+              >
                 {signal.stat}
               </div>
-              <div className="text-xs uppercase tracking-[0.15em] font-semibold" style={{ color: 'var(--gray-medium)' }}>
+              {/* Label */}
+              <div 
+                className="text-xs uppercase tracking-wider font-semibold"
+                style={{ 
+                  color: 'var(--gray-medium)',
+                  letterSpacing: '0.12em'
+                }}
+              >
                 {signal.label}
               </div>
             </motion.div>

@@ -32,62 +32,112 @@ const reviews = [
 
 export default function TestimonialsEnhanced() {
   return (
-    <section className="section-padding bg-off-white">
+    <section className="section-padding" style={{ backgroundColor: 'var(--off-white)' }}>
       <div className="container-custom">
+        {/* Header - Perfectly Centered */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-20"
+          className="text-center mb-16 md:mb-20"
         >
-          <p className="text-xs uppercase tracking-[0.2em] text-gray-medium font-semibold mb-6">
+          <p 
+            className="text-xs uppercase tracking-[0.25em] font-semibold mb-4"
+            style={{ color: 'var(--gold)' }}
+          >
             Client Stories
           </p>
-          <h2 className="text-4xl md:text-6xl font-serif mb-6 font-light" style={{ letterSpacing: '-0.02em' }}>
+          <h2 
+            className="text-4xl md:text-5xl lg:text-6xl font-serif mb-6 font-light"
+            style={{ 
+              letterSpacing: '-0.02em',
+              color: 'var(--black)'
+            }}
+          >
             What Our Clients Say
           </h2>
-          <p className="text-gray-dark text-lg md:text-xl max-w-2xl mx-auto font-light" style={{ lineHeight: '1.7' }}>
+          <p 
+            className="text-lg md:text-xl max-w-2xl mx-auto font-light"
+            style={{ 
+              lineHeight: '1.7',
+              color: 'var(--gray-dark)'
+            }}
+          >
             Real experiences from people who trust Good Hands
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
+        {/* Cards Grid - Centered with Equal Heights */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 lg:gap-12 max-w-6xl mx-auto">
           {reviews.map((review, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
-              className="bg-white p-10 md:p-12 border border-gray-light hover:border-black transition-all duration-500 relative group"
+              transition={{ duration: 0.8, delay: index * 0.15 }}
+              className="bg-white p-8 md:p-10 border border-gray-light hover:border-black transition-all duration-500 relative group flex flex-col h-full"
+              style={{ minHeight: '320px' }}
             >
-              {/* Quote Mark */}
-              <div className="absolute top-8 left-8 text-7xl md:text-8xl text-gold/15 font-serif leading-none">
+              {/* Quote Mark - Positioned Consistently */}
+              <div 
+                className="absolute top-6 left-6 text-6xl md:text-7xl font-serif leading-none select-none"
+                style={{ color: 'rgba(184, 152, 95, 0.15)' }}
+                aria-hidden="true"
+              >
                 "
               </div>
               
-              {/* Review Text */}
-              <p className="text-gray-dark mb-8 leading-relaxed relative z-10 text-lg md:text-xl font-light" style={{ lineHeight: '1.7' }}>
-                {review.text}
+              {/* Review Text - Consistent Spacing */}
+              <p 
+                className="mb-6 leading-relaxed relative z-10 text-base md:text-lg font-light flex-grow pt-8"
+                style={{ 
+                  lineHeight: '1.75',
+                  color: 'var(--gray-dark)'
+                }}
+              >
+                "{review.text}"
               </p>
               
-              {/* Rating Stars */}
-              <div className="flex gap-1 mb-6">
+              {/* Rating Stars - Centered Alignment */}
+              <div className="flex gap-1 mb-5">
                 {[...Array(review.rating)].map((_, i) => (
                   <StarIcon key={i} size={16} color="var(--gold)" filled />
                 ))}
               </div>
               
-              {/* Author Info */}
-              <div className="border-t border-gray-light pt-6 flex items-center gap-4">
-                {/* Avatar Circle with Initials - NO EMOJIS */}
-                <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0">
-                  <span className="text-gold font-semibold text-sm">{review.initials}</span>
+              {/* Author Info - Clean Alignment */}
+              <div 
+                className="pt-5 flex items-center gap-4 mt-auto"
+                style={{ borderTop: '1px solid var(--gray-light)' }}
+              >
+                {/* Avatar Circle */}
+                <div 
+                  className="w-11 h-11 rounded-full flex items-center justify-center flex-shrink-0"
+                  style={{ backgroundColor: 'rgba(184, 152, 95, 0.12)' }}
+                >
+                  <span 
+                    className="font-semibold text-sm"
+                    style={{ color: 'var(--gold)' }}
+                  >
+                    {review.initials}
+                  </span>
                 </div>
                 <div>
-                  <p className="font-semibold text-black text-base mb-1">{review.name}</p>
-                  <p className="text-gray-medium text-sm uppercase tracking-wider" style={{ letterSpacing: '0.1em' }}>
+                  <p 
+                    className="font-semibold text-base mb-0.5"
+                    style={{ color: 'var(--black)' }}
+                  >
+                    {review.name}
+                  </p>
+                  <p 
+                    className="text-xs uppercase tracking-wider"
+                    style={{ 
+                      letterSpacing: '0.1em',
+                      color: 'var(--gray-medium)'
+                    }}
+                  >
                     {review.serviceType}
                   </p>
                 </div>
@@ -96,18 +146,24 @@ export default function TestimonialsEnhanced() {
           ))}
         </div>
 
-        {/* CTA */}
+        {/* CTA - Centered */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-center mt-20"
+          transition={{ duration: 0.8, delay: 0.5 }}
+          className="text-center mt-16 md:mt-20"
         >
-          <p className="text-gray-dark mb-8 text-lg font-light">
+          <p 
+            className="mb-8 text-lg font-light"
+            style={{ color: 'var(--gray-dark)' }}
+          >
             Join hundreds of satisfied clients
           </p>
-          <a href="/book" className="btn-primary">
+          <a 
+            href="/book" 
+            className="btn-primary inline-block"
+          >
             Book Your Experience
           </a>
         </motion.div>
