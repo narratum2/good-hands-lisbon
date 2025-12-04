@@ -19,7 +19,7 @@ const services = [
       { name: 'Treatment & Repair', price: 'From €85', duration: '60 min' },
       { name: 'Photoshoot Hair Styling', price: 'From €135', duration: '75 min' },
     ],
-    image: '/brand-images/category-hair-styling.png',
+    image: '/brand-images/ai-generated/service-hair-styling.jpg',
   },
   {
     category: 'Nail Care',
@@ -31,7 +31,7 @@ const services = [
       { name: 'Nail Art', price: 'From €30', duration: '30 min' },
       { name: 'Extensions', price: 'From €95', duration: '90 min' },
     ],
-    image: '/brand-images/salon-detail.png',
+    image: '/brand-images/ai-generated/service-nails.jpg',
   },
   {
     category: 'Skincare',
@@ -43,7 +43,7 @@ const services = [
       { name: 'Microdermabrasion', price: 'From €165', duration: '60 min' },
       { name: 'LED Light Therapy', price: 'From €135', duration: '45 min' },
     ],
-    image: '/brand-images/service-facial-treatment.png',
+    image: '/brand-images/ai-generated/service-facial-spa.jpg',
   },
   {
     category: 'Makeup',
@@ -55,7 +55,7 @@ const services = [
       { name: 'Beauty Consultation', price: 'From €110', duration: '60 min' },
       { name: 'Photoshoot & Editorial Makeup', price: 'From €200', duration: '60 min' },
     ],
-    image: '/brand-images/service-makeup-application.png',
+    image: '/brand-images/ai-generated/service-makeup.jpg',
   },
   {
     category: 'Wellness',
@@ -66,7 +66,7 @@ const services = [
       { name: 'Aromatherapy', price: 'From €130', duration: '60 min' },
       { name: 'Hot Stone', price: 'From €150', duration: '90 min' },
     ],
-    image: '/brand-images/category-wellness.png',
+    image: '/brand-images/ai-generated/service-wellness.jpg',
   },
 ]
 
@@ -125,7 +125,7 @@ export default function ServicesPage() {
       <section className="relative h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image
-            src="/brand-images/salon-detail.png"
+            src="/brand-images/ai-generated/hero-salon-interior.jpg"
             alt="Beauty services"
             fill
             className="object-cover"

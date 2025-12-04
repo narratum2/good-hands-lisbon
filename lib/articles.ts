@@ -36,7 +36,7 @@ The Atlantic coast provides Lisbon with mineral-rich sea salt, perfect for exfol
 ## The Modern Take
 
 Today's Portuguese beauty professionals honor these traditions while incorporating modern science. At Good Hands, we connect you with experts who understand both—the wisdom of generations and the innovations of today.`,
-    image: '/brand-images/blog-portuguese-beauty.png',
+    image: '/brand-images/ai-generated/blog-portuguese-beauty.jpg',
     date: '2025-10-01',
     category: 'Traditions',
     author: {
@@ -83,7 +83,7 @@ We started in Lisbon because we knew it intimately. Every salon, every professio
 Our vision is simple: wherever discerning travelers go, they should have access to vetted local beauty professionals. Mexico City, Barcelona, and beyond. Each expansion starts with months of local research and relationship-building.
 
 The future of beauty travel isn't about finding the same experience everywhere. It's about discovering the best each place has to offer.`,
-    image: '/brand-images/blog-global-beauty.png',
+    image: '/brand-images/ai-generated/blog-global-beauty.jpg',
     date: '2025-10-12',
     category: 'Global Exploration',
     author: {
@@ -146,7 +146,7 @@ The temazcal is a traditional sweat lodge ceremony. More than a spa treatment, i
 Today's Yucatan wellness practitioners blend ancient wisdom with modern understanding. The best experiences honor tradition while ensuring safety and comfort.
 
 At Good Hands, we're exploring partnerships with authentic Yucatan wellness providers—those who respect the traditions while welcoming visitors to experience them.`,
-    image: '/brand-images/blog-yucatan-wellness.png',
+    image: '/brand-images/ai-generated/blog-yucatan-wellness.jpg',
     date: '2025-10-11',
     category: 'Global Exploration',
     author: {
@@ -215,7 +215,7 @@ Beauty and wellness aren't separate in Mexico City. Salons often include massage
 ## Good Hands in Mexico City
 
 We're building relationships with CDMX's best beauty professionals. The same vetting process we use in Lisbon—personal testing, quality verification, ongoing relationship management. Coming soon.`,
-    image: '/brand-images/blog-mexico-city.png',
+    image: '/brand-images/ai-generated/blog-mexico-city.jpg',
     date: '2025-10-10',
     category: 'Global Exploration',
     author: {
@@ -314,7 +314,7 @@ Bohemian and garden weddings. Brides who want something a bit different.
 Whatever trend speaks to you, the trial appointment is crucial. Good Hands connects you with bridal specialists who understand both current trends and timeless elegance.
 
 Book your bridal consultation at least 3 months before your wedding day.`,
-    image: '/brand-images/blog-bridal-hair.png',
+    image: '/brand-images/ai-generated/blog-bridal-hair.jpg',
     date: '2025-10-08',
     category: 'Weddings',
     author: {
@@ -400,7 +400,7 @@ You don't need to move to Lisbon to adopt these practices:
 - Natural beauty over heavy products
 
 The Lisbon approach isn't about perfection. It's about integration—wellness as life, not as separate practice.`,
-    image: '/brand-images/hero-wellness-scene.png',
+    image: '/brand-images/ai-generated/blog-wellness-lisbon.jpg',
     date: '2025-10-05',
     category: 'Wellness',
     author: {
@@ -562,7 +562,7 @@ You've done the trials. You've made the decisions. Now relax and let your profes
 We coordinate your entire bridal beauty experience—from first consultation to wedding day. One point of contact, vetted professionals, flawless execution.
 
 Book your bridal consultation today.`,
-    image: '/brand-images/blog-wedding-timeline.png',
+    image: '/brand-images/ai-generated/blog-bridal-hair.jpg',
     date: '2025-09-28',
     category: 'Weddings',
     author: {
@@ -627,7 +627,7 @@ We handle the booking, the communication (many speak limited English), and the f
 Part of what makes hidden gems special is their intimacy. We're careful about how many clients we send. We want to enhance these businesses, not overwhelm them.
 
 When you book through Good Hands, you're not just getting great service—you're supporting the preservation of Lisbon's authentic beauty culture.`,
-    image: '/brand-images/hero-salon-interior.png',
+    image: '/brand-images/ai-generated/hero-salon-interior.jpg',
     date: '2025-09-25',
     category: 'City Guide',
     author: {
@@ -730,7 +730,7 @@ Even on cloudy days. Even if you're "just running out for coffee." The Lisbon su
 A mid-summer facial with a local esthetician can address specific concerns. They understand the local climate and can adjust treatments accordingly.
 
 At Good Hands, we connect you with skincare professionals who specialize in Mediterranean skin concerns. Because your skin deserves expert care, especially in summer.`,
-    image: '/brand-images/service-facial-treatment.png',
+    image: '/brand-images/ai-generated/service-facial-spa.jpg',
     date: '2025-09-20',
     category: 'Skincare',
     author: {
@@ -808,7 +808,7 @@ The best nail artists don't advertise. They're found through recommendations and
 Portuguese nail art isn't cheap. Expect €60-150 depending on complexity. But you're not paying for a manicure—you're paying for wearable art.
 
 And in a city as photogenic as Lisbon, your nails will be in every picture.`,
-    image: '/brand-images/service-nails-professional.png',
+    image: '/brand-images/ai-generated/service-nails.jpg',
     date: '2025-09-15',
     category: 'Nail Art',
     author: {

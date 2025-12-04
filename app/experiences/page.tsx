@@ -20,7 +20,7 @@ const experiences = [
       'Touch-up kit included',
       'On-location service available',
     ],
-    image: '/brand-images/experience-bridal-beauty.png',
+    image: '/brand-images/ai-generated/experience-bridal.jpg',
     priceFrom: '€800',
   },
   {
@@ -35,7 +35,7 @@ const experiences = [
       'Curated accommodations',
       'Nutrition guidance',
     ],
-    image: '/brand-images/experience-wellness-retreat.png',
+    image: '/brand-images/ai-generated/service-wellness.jpg',
     priceFrom: '€1,200',
   },
   {
@@ -50,7 +50,7 @@ const experiences = [
       'Stress relief treatments',
       'Corporate gifting options',
     ],
-    image: '/brand-images/experience-corporate-wellness.png',
+    image: '/brand-images/ai-generated/service-facial-spa.jpg',
     priceFrom: '€500',
   },
   {
@@ -65,7 +65,7 @@ const experiences = [
       'Waterproof, camera-ready products',
       'Coordination with photographer',
     ],
-    image: '/brand-images/experience-bridal-beauty.png', // Using bridal image as fallback - both are styled beauty looks
+    image: '/brand-images/ai-generated/service-makeup.jpg',
     priceFrom: '€300',
   },
   {
@@ -80,7 +80,7 @@ const experiences = [
       'Personal beauty concierge',
       'Birthday gift package',
     ],
-    image: '/brand-images/hero-salon-interior.png', // Using luxury salon interior as fallback - represents premium experience
+    image: '/brand-images/ai-generated/hero-salon-interior.jpg',
     priceFrom: '€200/month',
   },
 ]
