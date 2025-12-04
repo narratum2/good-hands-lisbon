@@ -12,56 +12,56 @@ const neighborhoods = [
     name: 'Chiado',
     slug: 'chiado',
     description: 'Historic elegance meets modern luxury in Lisbon\'s most refined district',
-    image: '/brand-images/hero-salon-interior.png',
+    image: '/brand-images/ai-generated/hero-salon-interior.jpg',
     highlights: ['Luxury salons', 'Historic spas', 'Art galleries'],
   },
   {
     name: 'Príncipe Real',
     slug: 'principe-real',
     description: 'Bohemian charm and cutting-edge style in the heart of the city',
-    image: '/brand-images/category-hair-styling.png',
+    image: '/brand-images/ai-generated/service-hair-styling.jpg',
     highlights: ['Boutique studios', 'Garden cafés', 'Design shops'],
   },
   {
     name: 'Baixa',
     slug: 'baixa',
     description: 'Grand boulevards and timeless beauty in downtown Lisbon',
-    image: '/brand-images/blog-lisbon-guide.png',
+    image: '/brand-images/ai-generated/lisbon-cityscape.jpg',
     highlights: ['Classic salons', 'Shopping districts', 'Historic venues'],
   },
   {
     name: 'Avenida da Liberdade',
     slug: 'avenida',
     description: 'Lisbon\'s Champs-Élysées with premium beauty destinations',
-    image: '/brand-images/salon-detail.png',
+    image: '/brand-images/ai-generated/hero-salon-interior.jpg',
     highlights: ['High-end spas', 'Luxury brands', 'Tree-lined avenues'],
   },
   {
     name: 'Alfama',
     slug: 'alfama',
     description: 'Ancient streets and authentic experiences in Lisbon\'s oldest quarter',
-    image: '/brand-images/beauty-moment.png',
+    image: '/brand-images/ai-generated/blog-portuguese-beauty.jpg',
     highlights: ['Traditional treatments', 'Fado music', 'Hidden gems'],
   },
   {
     name: 'Belém',
     slug: 'belem',
     description: 'Riverside beauty and historic grandeur by the Tagus',
-    image: '/brand-images/category-wellness.png',
+    image: '/brand-images/ai-generated/service-wellness.jpg',
     highlights: ['Waterfront spas', 'Cultural sites', 'Pastéis de Belém'],
   },
   {
     name: 'Sintra',
     slug: 'sintra',
     description: 'Romantic escapes and wellness retreats in the enchanted hills',
-    image: '/brand-images/experience-wellness-retreat.png',
+    image: '/brand-images/ai-generated/blog-wellness-lisbon.jpg',
     highlights: ['Mountain retreats', 'Palace views', 'Natural beauty'],
   },
   {
     name: 'Cascais',
     slug: 'cascais',
     description: 'Coastal elegance and resort-style pampering by the Atlantic',
-    image: '/brand-images/category-skincare.png',
+    image: '/brand-images/ai-generated/service-facial-spa.jpg',
     highlights: ['Beach clubs', 'Marina life', 'Seafood dining'],
   },
 ]
@@ -73,7 +73,7 @@ export default function GuidesPage() {
       <section className="relative h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image
-            src="/brand-images/blog-lisbon-guide.png"
+            src="/brand-images/ai-generated/lisbon-cityscape.jpg"
             alt="Lisbon neighborhood beauty guides - discover the best areas for luxury services"
             fill
             className="object-cover"

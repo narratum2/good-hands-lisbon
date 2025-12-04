@@ -8,7 +8,7 @@ const articles = [
   {
     title: 'The Art of Portuguese Beauty Rituals',
     excerpt: 'Discover centuries-old beauty traditions from Portugal that modern experts still swear by...',
-    image: '/brand-images/blog-portuguese-beauty.png',
+    image: '/brand-images/ai-generated/blog-portuguese-beauty.jpg',
     date: 'October 1, 2025',
     category: 'Traditions',
     href: '/journal/portuguese-beauty-rituals',
@@ -16,7 +16,7 @@ const articles = [
   {
     title: 'Wedding Beauty Timeline: 6 Months to I Do',
     excerpt: 'A comprehensive guide to preparing your beauty routine for the big day...',
-    image: '/brand-images/blog-wedding-timeline.png',
+    image: '/brand-images/ai-generated/blog-bridal-hair.jpg',
     date: 'September 28, 2025',
     category: 'Weddings',
     href: '/journal/wedding-beauty-timeline',
@@ -24,7 +24,7 @@ const articles = [
   {
     title: 'Lisbon\'s Hidden Beauty Gems',
     excerpt: 'Our editors share their favorite under-the-radar salons and spas across the city...',
-    image: '/brand-images/hero-salon-interior.png',
+    image: '/brand-images/ai-generated/hero-salon-interior.jpg',
     date: 'September 25, 2025',
     category: 'City Guide',
     href: '/journal/lisbon-hidden-gems',

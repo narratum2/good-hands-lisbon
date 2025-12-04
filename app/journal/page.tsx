@@ -10,7 +10,7 @@ const articles = [
   {
     title: 'Global Beauty Exploration: Why Local Matters',
     excerpt: 'The case for seeking authentic beauty experiences while traveling and how Good Hands is expanding worldwide.',
-    image: '/brand-images/blog-global-beauty.png',
+    image: '/brand-images/ai-generated/blog-global-beauty.jpg',
     date: 'October 12, 2025',
     category: 'Global Exploration',
     author: 'Good Hands Editorial Team',
@@ -19,7 +19,7 @@ const articles = [
   {
     title: 'Yucatan Wellness: Ancient Mayan Beauty Secrets',
     excerpt: 'Discovering holistic beauty practices in the Yucatan Peninsula, from cenote rituals to Mayan herbal medicine.',
-    image: '/brand-images/blog-yucatan-wellness.png',
+    image: '/brand-images/ai-generated/blog-yucatan-wellness.jpg',
     date: 'October 11, 2025',
     category: 'Global Exploration',
     author: 'Isabella Torres',
@@ -28,7 +28,7 @@ const articles = [
   {
     title: 'Mexico City Beauty Scene: Where Tradition Meets Innovation',
     excerpt: 'Exploring the vibrant beauty culture of CDMX, from pre-Hispanic rituals to cutting-edge aesthetics.',
-    image: '/brand-images/blog-mexico-city.png',
+    image: '/brand-images/ai-generated/blog-mexico-city.jpg',
     date: 'October 10, 2025',
     category: 'Global Exploration',
     author: 'Isabella Torres',
@@ -37,7 +37,7 @@ const articles = [
   {
     title: 'Bridal Hair Trends 2026: What Lisbon Brides Are Choosing',
     excerpt: 'From modern updos to romantic waves, the hairstyles dominating Portuguese weddings.',
-    image: '/brand-images/blog-bridal-hair.png',
+    image: '/brand-images/ai-generated/blog-bridal-hair.jpg',
     date: 'October 8, 2025',
     category: 'Weddings',
     author: 'Sofia Martins',
@@ -46,7 +46,7 @@ const articles = [
   {
     title: 'Wellness Rituals: How Lisbon Lives Well',
     excerpt: 'The daily practices that keep Lisboetas balanced, beautiful, and centered.',
-    image: '/brand-images/hero-wellness-scene.png',
+    image: '/brand-images/ai-generated/blog-wellness-lisbon.jpg',
     date: 'October 5, 2025',
     category: 'Wellness',
     author: 'Teresa Alves',
@@ -55,7 +55,7 @@ const articles = [
   {
     title: 'The Art of Portuguese Beauty Rituals',
     excerpt: 'Discover centuries-old beauty traditions from Portugal that modern experts still swear by.',
-    image: '/brand-images/service-makeup-application.png',
+    image: '/brand-images/ai-generated/service-makeup.jpg',
     date: 'October 1, 2025',
     category: 'Traditions',
     author: 'Maria Silva',
@@ -64,7 +64,7 @@ const articles = [
   {
     title: 'Wedding Beauty Timeline: 6 Months to I Do',
     excerpt: 'A comprehensive guide to preparing your beauty routine for the big day.',
-    image: '/brand-images/blog-wedding-timeline.png',
+    image: '/brand-images/ai-generated/blog-bridal-hair.jpg',
     date: 'September 28, 2025',
     category: 'Weddings',
     author: 'Sofia Martins',
@@ -73,7 +73,7 @@ const articles = [
   {
     title: "Lisbon\'s Hidden Beauty Gems",
     excerpt: "Under-the-radar salons and spas that locals treasure.",
-    image: '/brand-images/hero-salon-interior.png',
+    image: '/brand-images/ai-generated/hero-salon-interior.jpg',
     date: 'September 25, 2025',
     category: 'City Guide',
     author: 'Good Hands Team',
@@ -82,7 +82,7 @@ const articles = [
   {
     title: 'Summer Skincare in Mediterranean Climate',
     excerpt: 'How to adjust your skincare routine for Lisbon summers with expert tips from dermatologists.',
-    image: '/brand-images/service-facial-treatment.png',
+    image: '/brand-images/ai-generated/service-facial-spa.jpg',
     date: 'September 20, 2025',
     category: 'Skincare',
     author: 'Dr. Ana Costa',
@@ -91,7 +91,7 @@ const articles = [
   {
     title: 'The New Wave of Portuguese Nail Art',
     excerpt: 'Meet the artists bringing contemporary Portuguese design to nails.',
-    image: '/brand-images/service-nails-professional.png',
+    image: '/brand-images/ai-generated/service-nails.jpg',
     date: 'September 15, 2025',
     category: 'Nail Art',
     author: 'Catarina Silva',
@@ -114,7 +114,7 @@ export default function JournalPage() {
       <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/brand-images/blog-portuguese-beauty.png"
+            src="/brand-images/ai-generated/blog-portuguese-beauty.jpg"
             alt="Good Hands Journal - beauty insights, Lisbon guides, and expert tips"
             fill
             className="object-cover object-center"
@@ -182,7 +182,7 @@ export default function JournalPage() {
 
       {/* Visual Break - Full Width Image */}
       <FullWidthImageBreak
-        image="/brand-images/blog-portuguese-beauty.png"
+        image="/brand-images/ai-generated/blog-portuguese-beauty.jpg"
         alt="Exploring beauty culture around the world"
         height="medium"
         parallax={true}

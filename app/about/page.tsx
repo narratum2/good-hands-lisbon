@@ -68,8 +68,8 @@ export default function AboutPage() {
             </div>
             <div>
               <OptimizedImage
-                src="/brand-images/hero-salon-interior.png"
-                alt="Frustrated person researching beauty services"
+                src="/brand-images/ai-generated/hero-salon-interior.jpg"
+                alt="Luxury beauty salon interior"
                 aspectRatio="landscape"
                 className="h-96 rounded-lg shadow-2xl grayscale"
               />
@@ -120,7 +120,7 @@ export default function AboutPage() {
       <section className="relative min-h-screen flex items-center justify-center bg-ink text-white">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/brand-images/hero-salon-interior.png"
+            src="/brand-images/ai-generated/hero-salon-interior.jpg"
             alt="Good Hands story"
             fill
             className="object-cover opacity-20"
