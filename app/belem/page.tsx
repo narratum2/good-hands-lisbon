@@ -16,7 +16,7 @@ export default function BelemPage() {
       <section className="relative h-[70vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image 
-            src="/brand-images/category-wellness.png" 
+            src="/brand-images/ai-generated/service-wellness.jpg" 
             alt="Belém riverside Lisbon - serene beauty and wellness experiences" 
             fill 
             className="object-cover" 

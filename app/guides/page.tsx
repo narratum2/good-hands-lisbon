@@ -83,7 +83,7 @@ export default function GuidesPage() {
         <div className="relative z-10 text-center text-white container-custom">
           <h1 className="text-5xl md:text-6xl font-serif mb-4">Neighborhood Guides</h1>
           <p className="text-xl md:text-2xl text-porcelain/90 max-w-2xl mx-auto">
-            Discover beauty across Lisbon\'s most distinctive districts
+            Discover beauty across Lisbon&apos;s most distinctive districts
           </p>
         </div>
       </section>

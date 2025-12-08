@@ -742,6 +742,306 @@ At Good Hands, we connect you with skincare professionals who specialize in Medi
     featured: false,
     published: true,
   },
+  'best-hair-salons-lisbon': {
+    slug: 'best-hair-salons-lisbon',
+    title: 'Best Hair Salons in Lisbon 2025: Expert Guide',
+    excerpt: 'Discover the top-rated hair salons in Lisbon for cuts, color, balayage, and styling. Our expert guide to finding the perfect stylist in every neighborhood.',
+    content: `Finding the best hair salon in Lisbon can be overwhelming. With hundreds of options across the city, how do you know which ones are truly worth your time and money? We've done the research so you don't have to.
+
+## What Makes a Great Lisbon Hair Salon?
+
+### Expert Colorists Who Understand Mediterranean Hair
+
+Lisbon's best salons employ colorists who understand how the Portuguese sun, Atlantic humidity, and local water quality affect hair color. They know that balayage needs different placement here than in London or New York.
+
+### Bilingual Service
+
+For expats and visitors, communication is crucial. The top salons offer English-speaking stylists without compromising on skill.
+
+### Quality Products
+
+Look for salons using professional-grade products like Oribe, Kerastase, or Davines. Portuguese salons often feature excellent local brands too.
+
+## Top Hair Salons by Neighborhood
+
+### Chiado: Luxury & Heritage
+
+Chiado's historic setting hosts some of Lisbon's most prestigious salons. Expect:
+- Higher prices (€80-200 for cuts)
+- Elegant, traditional interiors
+- Experienced senior stylists
+- Celebrity clientele
+
+### Príncipe Real: Creative & Trendy
+
+The creative hub attracts innovative stylists. Perfect for:
+- Fashion-forward cuts
+- Vivid color work
+- Younger, trend-aware stylists
+- Instagram-worthy results
+
+### Avenida da Liberdade: International Standards
+
+Lisbon's Champs-Élysées features salons matching international luxury standards:
+- Multi-lingual staff
+- Extended hours
+- Full-service experiences
+- Corporate accounts welcome
+
+## What to Expect Price-Wise
+
+| Service | Budget | Mid-Range | Luxury |
+|---------|--------|-----------|--------|
+| Women's Cut | €25-40 | €50-80 | €100-150 |
+| Men's Cut | €15-25 | €30-50 | €60-90 |
+| Full Color | €50-80 | €100-150 | €180-250 |
+| Balayage | €80-120 | €150-200 | €250-350 |
+
+## How Good Hands Helps
+
+Instead of gambling on Google reviews, let us match you with the perfect stylist based on:
+- Your hair type and concerns
+- Style preferences
+- Budget
+- Location preference
+- Language needs
+
+We've personally vetted every professional in our network. No trial and error—just great hair, every time.
+
+**Book your consultation today and let us find your perfect Lisbon hair salon.**`,
+    image: '/brand-images/ai-generated/service-hair-styling.jpg',
+    date: '2025-10-15',
+    category: 'City Guide',
+    author: {
+      name: 'Good Hands Editorial',
+      bio: 'Expert guides to Lisbon\'s beauty scene.',
+    },
+    readTime: '7 min read',
+    tags: ['Hair Salons', 'Lisbon', 'Best Of', 'Hair Color', 'Balayage'],
+    featured: true,
+    published: true,
+  },
+  'luxury-spa-treatments-lisbon': {
+    slug: 'luxury-spa-treatments-lisbon',
+    title: 'Luxury Spa Treatments in Lisbon: Complete Guide 2025',
+    excerpt: 'From traditional hammams to cutting-edge facials, discover Lisbon\'s best spa experiences. Insider tips on booking, pricing, and what to expect.',
+    content: `Lisbon has quietly become one of Europe's premier spa destinations. The combination of traditional thermal bathing culture, modern wellness innovation, and exceptional value makes it irresistible for spa lovers.
+
+## The Lisbon Spa Scene
+
+### Historical Foundations
+
+Portugal's spa culture dates back to Roman times. The tradition of thermal bathing never disappeared—it evolved. Today's Lisbon spas blend this heritage with contemporary techniques.
+
+### What Makes Lisbon Spas Special
+
+**Climate Integration**: Treatments designed for the Mediterranean climate. Summer facials focus on sun repair; winter treatments emphasize deep hydration.
+
+**Portuguese Ingredients**: Local olive oil, sea salt, cork extracts, and Atlantic seaweed feature in signature treatments.
+
+**Value**: Luxury spa experiences at 30-50% less than Paris or London.
+
+## Types of Spa Experiences
+
+### Hotel Spas
+
+Lisbon's luxury hotels feature world-class spas:
+- Four Seasons Spa: Ultimate luxury, extensive menu
+- Tivoli Avenida: Central location, excellent therapists
+- Pestana Palace: Historic setting, royal treatment
+
+**Best For**: Special occasions, comprehensive experiences
+**Price Range**: €150-400 for treatments
+
+### Day Spas
+
+Standalone spas offering focused experiences:
+- More affordable than hotel spas
+- Specialized treatments
+- Local, authentic atmosphere
+
+**Best For**: Regular wellness maintenance
+**Price Range**: €80-200 for treatments
+
+### Hammams
+
+Traditional Moorish bathing experiences:
+- Steam rooms
+- Body scrubs
+- Massage on heated marble
+- Tea ceremony
+
+**Best For**: Cultural experience, deep relaxation
+**Price Range**: €60-150 for full circuit
+
+## Most Popular Treatments
+
+### Signature Facials (€80-180)
+
+Portuguese facials often incorporate:
+- Olive oil cleansing
+- Sea salt exfoliation
+- Local botanical serums
+- Manual lymphatic drainage
+
+### Deep Tissue Massage (€90-150)
+
+Lisbon therapists are known for effective pressure work. Many trained in both Western and Eastern techniques.
+
+### Body Treatments (€100-200)
+
+Popular options:
+- Atlantic seaweed wraps
+- Portuguese honey rituals
+- Cork-based exfoliation
+- Wine therapy (yes, really)
+
+## Booking Tips
+
+### Timing
+
+- Book 1-2 weeks ahead for weekends
+- Weekday mornings offer best availability
+- Many spas close Mondays
+
+### What to Ask
+
+- Treatment duration (varies widely)
+- What's included (robe, sandals, tea)
+- Cancellation policy
+- Gratuity expectations (10-15% is standard)
+
+### Language
+
+Most luxury spas have English-speaking therapists. For neighborhood day spas, basic Portuguese or our concierge service helps.
+
+## The Good Hands Approach
+
+We've tested dozens of Lisbon spas personally. Our network includes only those meeting our standards for:
+- Technical excellence
+- Hygiene and facilities
+- Customer service
+- Value for money
+
+Let us match you with your perfect spa experience—whether it's a quick facial between meetings or a full day of indulgence.
+
+**Ready to relax? Book your Lisbon spa experience through Good Hands.**`,
+    image: '/brand-images/ai-generated/service-wellness.jpg',
+    date: '2025-10-14',
+    category: 'Wellness',
+    author: {
+      name: 'Teresa Alves',
+      bio: 'Teresa writes about wellness and lifestyle in Portugal.',
+    },
+    readTime: '8 min read',
+    tags: ['Spa', 'Wellness', 'Luxury', 'Lisbon', 'Massage', 'Facials'],
+    featured: true,
+    published: true,
+  },
+  'makeup-artist-lisbon-wedding': {
+    slug: 'makeup-artist-lisbon-wedding',
+    title: 'How to Find the Perfect Wedding Makeup Artist in Lisbon',
+    excerpt: 'Planning a destination wedding in Portugal? Our guide to finding, vetting, and booking the ideal bridal makeup artist in Lisbon.',
+    content: `Your destination wedding in Lisbon deserves flawless makeup that lasts from the first photo to the last dance. Here's how to find the perfect makeup artist.
+
+## Why Lisbon for Your Wedding?
+
+Lisbon has become one of Europe's most sought-after wedding destinations. The light is legendary—golden, soft, perfect for photography. The venues are extraordinary—from palaces to quintas to oceanfront settings. And the beauty professionals? World-class.
+
+## What to Look for in a Bridal Makeup Artist
+
+### Portfolio Review
+
+Look for:
+- **Consistency**: Every bride should look polished
+- **Variety**: Can they do natural AND glamorous?
+- **Photography quality**: How does the makeup photograph?
+- **Diverse skin tones**: Experience with your complexion
+
+### Experience with Destination Weddings
+
+Lisbon specialists understand:
+- How makeup behaves in Portuguese heat
+- Golden hour timing for Portuguese light
+- Venue logistics (some require hours of travel)
+- Working with international clients remotely
+
+### Trial Policies
+
+A trial is non-negotiable. Ask about:
+- Trial pricing (€100-200 typically)
+- Location (their studio or your venue)
+- How far in advance to book
+- What to bring (dress color, hair trial photos)
+
+## Pricing Guide
+
+| Service | Price Range |
+|---------|-------------|
+| Bridal Makeup Trial | €100-200 |
+| Wedding Day Makeup | €200-400 |
+| Bridesmaid Makeup | €80-150 each |
+| Touch-up Kit | €50-100 |
+| On-site Artist (full day) | €400-800 |
+
+## Red Flags to Avoid
+
+❌ No trial offered
+❌ Unable to provide references
+❌ Unclear about products used
+❌ No contract or deposit policy
+❌ Poor communication response time
+
+## Green Flags to Look For
+
+✅ Professional portfolio website
+✅ Clear pricing structure
+✅ Wedding-specific experience
+✅ References from recent brides
+✅ Backup artist policy
+✅ Products disclosed upfront
+
+## Timeline for Booking
+
+**12+ Months Before**: Start researching
+**9-10 Months**: Book your artist
+**3-4 Months**: Schedule trial
+**1 Month**: Final consultation
+**1 Week**: Confirm all details
+
+## Questions to Ask
+
+1. How many weddings have you done?
+2. Are you familiar with my venue?
+3. What brands do you use?
+4. What's your backup plan if you're ill?
+5. Do you provide touch-up services?
+6. How do you handle bridal party makeup?
+
+## The Good Hands Advantage
+
+We've pre-vetted Lisbon's best bridal makeup artists. Our bridal concierge service handles:
+- Artist matching based on your style
+- Contract review
+- Trial coordination
+- Wedding day logistics
+- Backup coverage
+
+Planning from abroad? We're your local expert, ensuring nothing falls through the cracks.
+
+**Start planning your Lisbon wedding beauty. Contact Good Hands today.**`,
+    image: '/brand-images/ai-generated/service-makeup.jpg',
+    date: '2025-10-13',
+    category: 'Weddings',
+    author: {
+      name: 'Sofia Martins',
+      bio: 'Sofia is a bridal beauty specialist with 15 years of experience in Portuguese weddings.',
+    },
+    readTime: '7 min read',
+    tags: ['Wedding', 'Makeup Artist', 'Bridal', 'Destination Wedding', 'Lisbon'],
+    featured: false,
+    published: true,
+  },
   'portuguese-nail-art': {
     slug: 'portuguese-nail-art',
     title: 'The New Wave of Portuguese Nail Art',

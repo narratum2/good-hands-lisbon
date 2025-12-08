@@ -62,7 +62,7 @@ export default function HairServicesPage() {
       <section className="relative h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image
-            src="/brand-images/category-hair-styling.png"
+            src="/brand-images/ai-generated/service-hair-styling.jpg"
             alt="Professional hair styling and color treatments in Lisbon - Good Hands concierge"
             fill
             className="object-cover"

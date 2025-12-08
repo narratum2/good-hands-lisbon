@@ -16,7 +16,7 @@ export default function BaixaPage() {
       <section className="relative h-[70vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image 
-            src="/brand-images/blog-lisbon-guide.png" 
+            src="/brand-images/ai-generated/lisbon-cityscape.jpg" 
             alt="Baixa district Lisbon - central beauty services in historic downtown" 
             fill 
             className="object-cover" 

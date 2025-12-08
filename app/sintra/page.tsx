@@ -16,7 +16,7 @@ export default function SintraPage() {
       <section className="relative h-[70vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image 
-            src="/brand-images/experience-wellness-retreat.png" 
+            src="/brand-images/ai-generated/blog-wellness-lisbon.jpg" 
             alt="Sintra magical beauty - romantic wellness experiences in palace setting" 
             fill 
             className="object-cover" 

@@ -16,7 +16,7 @@ export default function ChiadoPage() {
       <section className="relative h-[70vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image 
-            src="/brand-images/hero-salon-interior.png" 
+            src="/brand-images/ai-generated/hero-salon-interior.jpg" 
             alt="Chiado Lisbon - bohemian chic beauty services in cultural heart" 
             fill 
             className="object-cover" 

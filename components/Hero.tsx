@@ -16,7 +16,7 @@ export default function Hero() {
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/15 to-black/45" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/35 to-black/55" />
       </div>
 
       {/* Content */}
@@ -35,11 +35,11 @@ export default function Hero() {
             <span className="inline sm:hidden"> </span>Expert matching. Perfect results. Every time.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4 max-w-md sm:max-w-none mx-auto">
-            <a href="#services" className="btn-gold w-full sm:w-auto">
-              Explore Services
+            <a href="/book" className="btn-gold w-full sm:w-auto">
+              Request Your Experience
             </a>
-            <a href="/book" className="btn-secondary w-full sm:w-auto" style={{ borderColor: 'white', color: 'white' }}>
-              Request Consultation
+            <a href="/services" className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 border-2 border-white text-white font-semibold text-sm uppercase tracking-wider rounded-sm hover:bg-white hover:text-black transition-all duration-300">
+              Explore Services
             </a>
           </div>
         </motion.div>

@@ -16,7 +16,7 @@ export default function CascaisPage() {
       <section className="relative h-[70vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image 
-            src="/brand-images/category-skincare.png" 
+            src="/brand-images/ai-generated/service-facial-spa.jpg" 
             alt="Cascais coastal beauty - luxury seaside spa and wellness services" 
             fill 
             className="object-cover" 

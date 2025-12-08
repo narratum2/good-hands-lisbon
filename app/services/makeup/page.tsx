@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     description: 'Top makeup artists in Lisbon for weddings, special events, editorial shoots, and personalized lessons. Portfolio-vetted professionals.',
     images: [
       {
-        url: '/brand-images/category-makeup.png',
+        url: '/brand-images/ai-generated/service-makeup.jpg',
         width: 1200,
         height: 630,
         alt: 'Professional Makeup Services Lisbon',
@@ -89,7 +89,7 @@ export default function MakeupServicesPage() {
       <section className="relative h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image
-            src="/brand-images/category-makeup.png"
+            src="/brand-images/ai-generated/service-makeup.jpg"
             alt="Professional makeup artists for events and weddings in Lisbon - Good Hands"
             fill
             className="object-cover"
