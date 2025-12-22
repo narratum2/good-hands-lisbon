@@ -35,7 +35,7 @@ export default function APIDocsPage() {
               Access our complete API specification for AI agents, ChatGPT, Claude, and other assistants.
             </p>
             <div className="bg-ink text-white p-4 rounded-md font-mono text-sm mb-6">
-              https://goodhands.com/api/openapi.json
+              https://beautysalonlisbon.com/api/openapi.json
             </div>
             <a
               href="/api/openapi.json"
@@ -77,7 +77,7 @@ export default function APIDocsPage() {
               <div className="mt-4">
                 <p className="font-medium mb-2">Example Request:</p>
                 <div className="bg-ink text-white p-4 rounded-md font-mono text-sm overflow-x-auto">
-                  GET https://goodhands.com/api/services?category=hair&neighborhood=Chiado
+                  GET https://beautysalonlisbon.com/api/services?category=hair&neighborhood=Chiado
                 </div>
               </div>
             </div>
@@ -103,7 +103,7 @@ export default function APIDocsPage() {
               <div className="mt-4">
                 <p className="font-medium mb-2">Example Request:</p>
                 <div className="bg-ink text-white p-4 rounded-md font-mono text-sm overflow-x-auto">
-                  GET https://goodhands.com/api/neighborhoods?slug=chiado
+                  GET https://beautysalonlisbon.com/api/neighborhoods?slug=chiado
                 </div>
               </div>
             </div>
@@ -133,7 +133,7 @@ export default function APIDocsPage() {
               <div className="mt-4">
                 <p className="font-medium mb-2">Example Request:</p>
                 <div className="bg-ink text-white p-4 rounded-md font-mono text-xs overflow-x-auto">
-{`POST https://goodhands.com/api/bookings
+{`POST https://beautysalonlisbon.com/api/bookings
 Content-Type: application/json
 
 {
@@ -248,11 +248,11 @@ Content-Type: application/json
             '@type': 'APIReference',
             name: 'Good Hands API',
             description: 'RESTful API for beauty service discovery and booking in Lisbon, Portugal',
-            url: 'https://goodhands.com/api-docs',
+            url: 'https://beautysalonlisbon.com/api-docs',
             provider: {
               '@type': 'Organization',
               name: 'Good Hands',
-              url: 'https://goodhands.com',
+              url: 'https://beautysalonlisbon.com',
             },
           }),
         }}

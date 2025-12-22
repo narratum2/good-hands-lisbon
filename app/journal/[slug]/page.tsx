@@ -27,8 +27,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     }
   }
 
-  const url = `https://goodhands.com/journal/${article.slug}`
-  const ogImage = article.image?.startsWith('http') ? article.image : `https://goodhands.com${article.image || '/images/default-blog.jpg'}`
+  const url = `https://beautysalonlisbon.com/journal/${article.slug}`
+  const ogImage = article.image?.startsWith('http') ? article.image : `https://beautysalonlisbon.com${article.image || '/images/default-blog.jpg'}`
 
   return {
     title: `${article.title} — Good Hands Journal`,
@@ -90,7 +90,7 @@ export default function ArticlePage({ params }: PageProps) {
     '@type': 'Article',
     headline: article.title,
     description: article.excerpt,
-    image: article.image?.startsWith('http') ? article.image : `https://goodhands.com${article.image || '/images/default-blog.jpg'}`,
+    image: article.image?.startsWith('http') ? article.image : `https://beautysalonlisbon.com${article.image || '/images/default-blog.jpg'}`,
     datePublished: article.date,
     author: {
       '@type': 'Person',
@@ -103,15 +103,15 @@ export default function ArticlePage({ params }: PageProps) {
     publisher: {
       '@type': 'Organization',
       name: 'Good Hands',
-      url: 'https://goodhands.com',
+      url: 'https://beautysalonlisbon.com',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://goodhands.com/brand-assets/logo/logo-primary.svg',
+        url: 'https://beautysalonlisbon.com/brand-assets/logo/logo-primary.svg',
       },
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://goodhands.com/journal/${article.slug}`,
+      '@id': `https://beautysalonlisbon.com/journal/${article.slug}`,
     },
     ...(article.tags && {
       keywords: article.tags.join(', '),

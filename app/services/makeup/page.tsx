@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://goodhands.com/services/makeup',
+    url: 'https://beautysalonlisbon.com/services/makeup',
     siteName: 'Good Hands',
     title: 'Professional Makeup Artists Lisbon — Bridal, Events, Lessons',
     description: 'Top makeup artists in Lisbon for weddings, special events, editorial shoots, and personalized lessons. Portfolio-vetted professionals.',
@@ -452,19 +452,19 @@ export default function MakeupServicesPage() {
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://goodhands.com',
+                item: 'https://beautysalonlisbon.com',
               },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Services',
-                item: 'https://goodhands.com/services',
+                item: 'https://beautysalonlisbon.com/services',
               },
               {
                 '@type': 'ListItem',
                 position: 3,
                 name: 'Makeup Services',
-                item: 'https://goodhands.com/services/makeup',
+                item: 'https://beautysalonlisbon.com/services/makeup',
               },
             ],
           }),
@@ -485,13 +485,13 @@ export default function MakeupServicesPage() {
               position: index + 1,
               item: {
                 '@type': 'Service',
-                '@id': `https://goodhands.com/services/makeup#${service.name.toLowerCase().replace(/\s+/g, '-')}`,
+                '@id': `https://beautysalonlisbon.com/services/makeup#${service.name.toLowerCase().replace(/\s+/g, '-')}`,
                 name: service.name,
                 description: service.description,
                 provider: {
                   '@type': 'Organization',
                   name: 'Good Hands',
-                  url: 'https://goodhands.com',
+                  url: 'https://beautysalonlisbon.com',
                 },
                 areaServed: {
                   '@type': 'City',
@@ -505,7 +505,7 @@ export default function MakeupServicesPage() {
                   price: service.price,
                   priceCurrency: 'EUR',
                   availability: 'https://schema.org/InStock',
-                  url: 'https://goodhands.com/book',
+                  url: 'https://beautysalonlisbon.com/book',
                 },
                 duration: {
                   '@type': 'Duration',
@@ -538,8 +538,8 @@ export default function MakeupServicesPage() {
             provider: {
               '@type': 'Organization',
               name: 'Good Hands',
-              url: 'https://goodhands.com',
-              logo: 'https://goodhands.com/brand-assets/logo/logo-primary.svg',
+              url: 'https://beautysalonlisbon.com',
+              logo: 'https://beautysalonlisbon.com/brand-assets/logo/logo-primary.svg',
               sameAs: [
                 'https://instagram.com/goodhandslisbon',
               ],
@@ -591,7 +591,7 @@ export default function MakeupServicesPage() {
             '@type': 'BeautySalon',
             name: 'Good Hands Makeup Services',
             description: 'Professional makeup artists in Lisbon for weddings, events, photoshoots, and lessons',
-            url: 'https://goodhands.com/services/makeup',
+            url: 'https://beautysalonlisbon.com/services/makeup',
             telephone: '+351-XXX-XXX-XXX',
             email: 'hello@beautysalonlisbon.com',
             address: {

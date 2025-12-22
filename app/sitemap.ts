@@ -12,7 +12,7 @@ import { SERVICE_AREAS, SERVICE_CATEGORIES, PREMIUM_EXPERIENCES } from '@/lib/se
 import { getAllArticles } from '@/lib/articles'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://goodhands.com'
+  const baseUrl = 'https://beautysalonlisbon.com'
   const now = new Date()
   
   // Core pages

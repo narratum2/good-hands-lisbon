@@ -256,23 +256,6 @@ export default function ChiadoPage() {
         </div>
       </section>
 
-      {/* Map */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
-          <h2 className="text-3xl md:text-4xl font-serif mb-8 text-center">Explore Chiado</h2>
-          
-          <div className="bg-shell rounded-lg p-4">
-            <div className="aspect-video w-full bg-harbor/10 rounded flex items-center justify-center">
-              <div className="text-center text-harbor">
-                <p className="text-lg mb-2">📍 Interactive Map</p>
-                <p className="text-sm">Google Maps integration showing Good Hands partner locations in Chiado</p>
-                <p className="text-xs mt-2 text-harbor/60">(Map embed coming in production)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* FAQ */}
       <section className="section-padding bg-shell">
         <div className="container-custom max-w-3xl">
@@ -339,19 +322,19 @@ export default function ChiadoPage() {
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://goodhands.com',
+                item: 'https://beautysalonlisbon.com',
               },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Neighborhoods',
-                item: 'https://goodhands.com/#neighborhoods',
+                item: 'https://beautysalonlisbon.com/#neighborhoods',
               },
               {
                 '@type': 'ListItem',
                 position: 3,
                 name: 'Chiado',
-                item: 'https://goodhands.com/chiado',
+                item: 'https://beautysalonlisbon.com/chiado',
               },
             ],
           }),

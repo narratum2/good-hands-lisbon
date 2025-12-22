@@ -22,7 +22,7 @@ export function generateSEOMetadata(config: SEOConfig): Metadata {
     description,
     keywords = [],
     image = '/api/og',
-    url = 'https://goodhands.com',
+    url = 'https://beautysalonlisbon.com',
     type = 'website',
     publishedTime,
     modifiedTime,
@@ -91,8 +91,8 @@ export function generateOrganizationSchema() {
     '@type': 'Organization',
     name: 'Good Hands',
     description: 'AI-first beauty concierge for Lisbon and beyond',
-    url: 'https://goodhands.com',
-    logo: 'https://goodhands.com/brand-assets/logo/logo-primary.svg',
+    url: 'https://beautysalonlisbon.com',
+    logo: 'https://beautysalonlisbon.com/brand-assets/logo/logo-primary.svg',
     sameAs: [
       'https://instagram.com/goodhandslisbon',
       'https://x.com/goodhandslisbon',
@@ -173,7 +173,7 @@ export function generateArticleSchema(article: {
       name: 'Good Hands',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://goodhands.com/brand-assets/logo/logo-primary.svg',
+        url: 'https://beautysalonlisbon.com/brand-assets/logo/logo-primary.svg',
       },
     },
     mainEntityOfPage: {
@@ -218,7 +218,7 @@ export function generateLocalBusinessSchema() {
     '@type': 'LocalBusiness',
     name: 'Good Hands',
     description: 'Premium beauty concierge service in Lisbon',
-    url: 'https://goodhands.com',
+    url: 'https://beautysalonlisbon.com',
     telephone: '+351-XXX-XXX-XXX',
     address: {
       '@type': 'PostalAddress',
@@ -275,7 +275,7 @@ export function generateLocalBusinessSchema() {
 
 // SEO utility functions
 export function generateCanonicalUrl(path: string): string {
-  const baseUrl = 'https://goodhands.com'
+  const baseUrl = 'https://beautysalonlisbon.com'
   return `${baseUrl}${path}`
 }
 
@@ -288,7 +288,7 @@ export function generateOGImageUrl(title: string, description?: string): string 
 }
 
 export function generateSitemapUrl(): string {
-  return 'https://goodhands.com/sitemap.xml'
+  return 'https://beautysalonlisbon.com/sitemap.xml'
 }
 
 export function generateRobotsTxt(): string {

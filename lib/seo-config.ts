@@ -22,9 +22,9 @@ export const BUSINESS_INFO = {
   email: 'hello@beautysalonlisbon.com',
   phone: '+351-XXX-XXX-XXX', // TODO: Add real phone
   
-  // URLs
-  baseUrl: 'https://goodhands.com', // PRODUCTION: Updated from staging URL
-  domain: 'goodhands.com',
+  // URLs - PRODUCTION DOMAIN
+  baseUrl: 'https://beautysalonlisbon.com',
+  domain: 'beautysalonlisbon.com',
   
   // Location
   city: 'Lisbon',

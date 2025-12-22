@@ -80,19 +80,19 @@ export default function Navbar() {
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-10">
+          {/* Desktop Navigation - Extended breakpoint to lg (1024px) for better tablet experience */}
+          <div className="hidden lg:flex items-center gap-8 xl:gap-10">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium uppercase tracking-wider text-black hover:text-gold transition-colors duration-300"
+                className="text-xs xl:text-sm font-medium uppercase tracking-wider text-black hover:text-gold transition-colors duration-300 whitespace-nowrap"
                 style={{ letterSpacing: '0.08em' }}
               >
                 {link.label}
               </Link>
             ))}
-            <Link href="/book" className="btn-primary">
+            <Link href="/book" className="btn-primary text-xs xl:text-sm px-6 xl:px-10">
               Book Now
             </Link>
           </div>
@@ -101,7 +101,7 @@ export default function Navbar() {
           <button
             ref={menuButtonRef}
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-3 text-black min-w-[44px] min-h-[44px] flex items-center justify-center"
+            className="lg:hidden p-3 text-black min-w-[44px] min-h-[44px] flex items-center justify-center focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 rounded-sm"
             aria-label="Toggle navigation menu"
             aria-expanded={isOpen}
             aria-controls="mobile-menu"
@@ -134,7 +134,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-t border-gray-light"
+            className="lg:hidden bg-white border-t border-gray-light"
             role="dialog"
             aria-label="Mobile navigation menu"
           >

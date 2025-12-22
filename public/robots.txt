@@ -41,6 +41,6 @@ User-agent: Bingbot
 Allow: /
 
 # Sitemaps
-Sitemap: https://goodhands.com/sitemap.xml
-Sitemap: https://goodhands.com/api/openapi.json
+Sitemap: https://beautysalonlisbon.com/sitemap.xml
+Sitemap: https://beautysalonlisbon.com/api/openapi.json
 

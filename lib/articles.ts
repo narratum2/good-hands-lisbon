@@ -1042,6 +1042,250 @@ Planning from abroad? We're your local expert, ensuring nothing falls through th
     featured: false,
     published: true,
   },
+  'todos-santos-baja-beauty': {
+    slug: 'todos-santos-baja-beauty',
+    title: 'Todos Santos: Baja\'s Best-Kept Beauty Secret',
+    excerpt: 'Where surf culture meets artisanal wellness in Mexico\'s most enchanting desert oasis.',
+    content: `Todos Santos sits at the edge of the Baja peninsula like a beautiful secret. Artists, surfers, and seekers have been drawn here for decades—but the town's wellness and beauty scene is just now catching the world's attention.
+
+## The Magic of Todos Santos
+
+### Desert Meets Ocean
+
+Imagine this: morning yoga overlooking the Pacific, followed by a facial using locally-harvested cactus. Afternoon surf, evening mezcal. The desert light here is unlike anywhere else—golden, warm, endlessly flattering.
+
+> "I came for a weekend and stayed three years. There's something about this light, this pace." — Expat artist in Todos Santos
+
+### The Art Colony Effect
+
+Since the 1980s, Todos Santos has attracted artists from around the world. This creative energy infuses everything—including the beauty scene. Spa experiences here aren't cookie-cutter; they're designed by people who understand aesthetics.
+
+## Wellness Traditions
+
+### Desert Botanicals
+
+The Baja desert isn't empty—it's pharmacy. Local practitioners use:
+
+**Jojoba Oil**: Native to the Sonoran desert, jojoba closely mimics human sebum. It's the ultimate natural moisturizer for sun-exposed skin.
+
+**Prickly Pear (Nopal)**: Rich in vitamins and antioxidants. Used in masks, serums, and even hair treatments. Incredibly hydrating in the dry desert climate.
+
+**Damiana**: An herb native to Baja used for centuries. Applied topically, it's believed to improve circulation and skin tone. Consumed as tea, it's an adaptogen for stress.
+
+**Blue Agave**: Not just for tequila. Agave nectar is deeply moisturizing and antibacterial—perfect for after-sun care.
+
+### The Temazcal Experience
+
+Traditional sweat lodge ceremonies are available throughout Todos Santos. Led by local healers, these experiences combine:
+- Volcanic stone heat
+- Herbal steam infusions
+- Guided meditation and breathwork
+- Deep spiritual cleansing
+
+Post-ceremony, your skin glows from the inside out.
+
+## The Beauty Scene
+
+### Surf and Skin
+
+Todos Santos is a surf town. The beauty professionals here understand what salt, sun, and sand do to hair and skin. They've developed treatments specifically for the surf lifestyle:
+
+**Salt-Stripped Hair Treatments**: Deep conditioning with local oils to restore moisture after ocean sessions.
+
+**Sun Repair Facials**: Using aloe, cactus, and local honey to repair UV damage.
+
+**Surfer's Scalp Treatment**: Addressing the dryness and irritation that come with daily salt water exposure.
+
+### Artisan Skincare
+
+Small-batch beauty products are everywhere. Local makers craft:
+- Cactus-based moisturizers
+- Desert sage body oils
+- Handmade soaps with local botanicals
+- Sun care using traditional recipes
+
+### Hair Styling for the Climate
+
+Humidity near the coast, dryness inland. Todos Santos stylists understand this unique climate. Natural, effortless looks rule—because anything too styled won't survive.
+
+## The Experience
+
+### Where to Stay
+
+**Hotel San Cristóbal**: Surf lodge meets design hotel. Ocean views, excellent restaurant, wellness offerings.
+
+**Paradero**: Minimalist luxury in the desert. Full spa, wellness programming, architectural marvel.
+
+**The Hotelito**: Boutique charm in the historic center. Walking distance to galleries and restaurants.
+
+### What to Expect
+
+- Slower pace (this is not Cabo)
+- Cash still preferred many places
+- Spanish helpful but not required
+- Reservations recommended for top spots
+- Prices lower than you'd expect for this quality
+
+## The Good Hands Vision
+
+We're actively exploring partnerships in Todos Santos. The wellness practitioners here—especially those blending traditional Baja knowledge with contemporary techniques—represent exactly what Good Hands seeks: authentic expertise, personal service, extraordinary experiences.
+
+**Coming 2026**: Good Hands Todos Santos. Desert wellness, curated.`,
+    image: '/brand-images/ai-generated/blog-yucatan-wellness.jpg',
+    date: '2025-12-20',
+    category: 'Global Exploration',
+    author: {
+      name: 'Isabella Torres',
+      bio: 'Isabella explores wellness traditions across Latin America.',
+    },
+    readTime: '8 min read',
+    tags: ['Todos Santos', 'Baja', 'Mexico', 'Surf Culture', 'Desert Wellness', 'Holistic Beauty'],
+    featured: true,
+    published: true,
+  },
+  'miami-beauty-scene': {
+    slug: 'miami-beauty-scene',
+    title: 'Miami Beauty: Where Latin Glamour Meets Ocean Luxury',
+    excerpt: 'Inside Miami\'s explosive beauty scene - from South Beach glam to Coconut Grove wellness sanctuaries.',
+    content: `Miami isn't just a city—it's a lifestyle laboratory. Where else can you find Venezuelan blowout queens, Cuban-trained nail artists, Brazilian waxing legends, and cutting-edge aestheticians all within a few miles? Welcome to the beauty capital of the Americas.
+
+## The Miami Difference
+
+### Cultural Fusion
+
+Miami's beauty scene is powered by Latin America. Techniques, products, and philosophies from across the hemisphere converge here:
+
+- **Colombian hair specialists** bringing Medellín's famous styling expertise
+- **Brazilian aestheticians** with advanced skincare training
+- **Cuban manicurists** whose precision is legendary
+- **Venezuelan colorists** known for bold, sun-kissed looks
+- **Argentine facialists** with European training and Latin warmth
+
+> "In Miami, we don't follow trends—we create them. What starts here spreads north." — Miami salon owner
+
+### The Climate Factor
+
+85% humidity. Intense sun. Ocean salt. Miami beauty professionals are masters of making beauty last in impossible conditions. If it survives a Miami summer, it survives anything.
+
+## Neighborhoods & Their Vibes
+
+### South Beach: Maximum Glamour
+
+This is where you come for:
+- Camera-ready makeup
+- Statement hair color
+- Body contouring treatments
+- Pre-event blowouts
+- Celebrity-level service (and prices)
+
+The aesthetic: High-impact. Photography-perfect. Unapologetically dramatic.
+
+### Brickell: Power Beauty
+
+Miami's financial district demands polished professionals. Here you'll find:
+- Executive grooming services
+- Lunchtime facials
+- Subtle but sophisticated styling
+- Express services that respect your schedule
+- Luxury without the Beach scene
+
+### Coconut Grove: Wellness Focus
+
+The Grove attracts those seeking balance. Expect:
+- Holistic spa treatments
+- Organic and natural-focused services
+- Yoga-beauty integrations
+- Ayurvedic influences
+- A more relaxed, residential vibe
+
+### Wynwood: Creative Edge
+
+Miami's art district brings experimental beauty:
+- Avant-garde hair color
+- Nail art installations
+- Gender-fluid styling
+- Young, trend-forward professionals
+- Affordable prices, maximum creativity
+
+### Coral Gables: Classic Elegance
+
+Old-money Miami means timeless beauty:
+- Traditional barbershops
+- Society blowouts
+- Mother-daughter appointments
+- Multi-generational relationships with stylists
+- Understated luxury
+
+## Signature Miami Treatments
+
+### The Brazilian Blowout
+
+Born in Brazil, perfected in Miami. Smoothing treatments here are next-level. Stylists understand how to balance sleekness with volume—essential for Miami's humidity.
+
+### Latin Facial Massage
+
+Cuban and Venezuelan aestheticians bring hands-on techniques that American spas lack. Less product, more skilled touch. Visible lifting without technology.
+
+### Nail Art Paradise
+
+Miami nail salons are museums. Swarovski crystals, hand-painted designs, geometric precision—artists who've trained for years create wearable art.
+
+### Body Treatments
+
+In a city where everyone shows skin, body treatments are essential:
+- Wood therapy (maderoterapia) from Colombia
+- Ultrasonic contouring
+- Radio frequency tightening
+- Lymphatic drainage
+- Pre-beach glow treatments
+
+## The Scene
+
+### Who You'll Meet
+
+Miami attracts an international clientele:
+- Latin American high-society escaping winter
+- European tourists seeking sun and style
+- New York fashion industry on location
+- Tech entrepreneurs relocated from SF
+- Models, influencers, entertainers
+
+### Pricing Reality
+
+Miami isn't cheap. South Beach commands New York prices. But venture into Coral Gables or the Grove and value emerges. Many top professionals work in unexpected locations—strip mall gems with loyal clientele and lower overhead.
+
+### Language
+
+Spanish is an asset but not required. Most establishments are bilingual. However, some of the best-kept secrets operate primarily in Spanish—insider knowledge helps.
+
+## Art Basel Effect
+
+Every December, Art Basel transforms Miami. The beauty scene responds with:
+- Extended hours at top salons
+- Pop-up services at hotels
+- Event-ready specialists
+- Art-inspired treatments
+- VIP booking well in advance required
+
+## The Good Hands Approach
+
+Miami's abundance is both opportunity and challenge. With thousands of options, finding excellence requires navigation. We're mapping Miami's true experts—the professionals whose skill matches the city's ambition.
+
+**Good Hands Miami: Coming Summer 2026**
+
+From South Beach glamour to Coconut Grove serenity, we'll connect you with the best of what Miami's extraordinary beauty scene offers.`,
+    image: '/brand-images/ai-generated/blog-global-beauty.jpg',
+    date: '2025-12-18',
+    category: 'Global Exploration',
+    author: {
+      name: 'Isabella Torres',
+      bio: 'Isabella explores wellness traditions across Latin America.',
+    },
+    readTime: '9 min read',
+    tags: ['Miami', 'South Beach', 'Latin Beauty', 'Urban Beauty', 'Wellness', 'Hair Styling'],
+    featured: true,
+    published: true,
+  },
   'portuguese-nail-art': {
     slug: 'portuguese-nail-art',
     title: 'The New Wave of Portuguese Nail Art',

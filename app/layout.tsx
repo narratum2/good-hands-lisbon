@@ -36,16 +36,20 @@ export const metadata: Metadata = {
   verification: {
     google: 'saJIT9Mt8gKXpi-hAQjMVDMxV5_kqdn8_z6YUqZ-ZrY',
   },
+  metadataBase: new URL('https://beautysalonlisbon.com'),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://goodhands.com',
+    url: 'https://beautysalonlisbon.com',
     siteName: 'Good Hands',
     title: SEO_TEMPLATES.home.title,
     description: SEO_TEMPLATES.home.description,
     images: [
       {
-        url: '/api/og',
+        url: 'https://beautysalonlisbon.com/api/og',
         width: 1200,
         height: 630,
         alt: 'Good Hands Luxury Beauty Concierge Lisbon',
@@ -106,21 +110,21 @@ export default function RootLayout({
                   position: 1,
                   name: 'Describe Your Needs',
                   text: 'Tell us about your desired service, style preferences, location, and any specific requirements',
-                  url: 'https://goodhands.com#search',
+                  url: 'https://beautysalonlisbon.com#search',
                 },
                 {
                   '@type': 'HowToStep',
                   position: 2,
                   name: 'Get Personalized Match',
                   text: 'Our concierge reviews your preferences and matches you with the perfect professional from our vetted network of 150+ specialists',
-                  url: 'https://goodhands.com/about',
+                  url: 'https://beautysalonlisbon.com/about',
                 },
                 {
                   '@type': 'HowToStep',
                   position: 3,
                   name: 'Book & Confirm',
                   text: 'Choose your preferred date and time. We handle all coordination and send you confirmation details',
-                  url: 'https://goodhands.com/services',
+                  url: 'https://beautysalonlisbon.com/services',
                 },
                 {
                   '@type': 'HowToStep',

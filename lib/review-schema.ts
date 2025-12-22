@@ -81,7 +81,7 @@ export function getReviewsSchemaMarkup(reviews: Review[]) {
       ...reviews.map(review => getReviewSchema(review)),
       ...(reviews.length > 0 ? [{
         '@type': 'Organization',
-        '@id': 'https://goodhands.com/#organization',
+        '@id': 'https://beautysalonlisbon.com/#organization',
         name: 'Good Hands',
         aggregateRating: getAggregateRatingSchema(reviews)
       }] : [])

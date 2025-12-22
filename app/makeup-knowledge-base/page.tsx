@@ -316,21 +316,21 @@ export default function MakeupKnowledgeBasePage() {
               author: {
                 '@type': 'Organization',
                 name: 'Good Hands',
-                url: 'https://goodhands.com',
+                url: 'https://beautysalonlisbon.com',
               },
               publisher: {
                 '@type': 'Organization',
                 name: 'Good Hands',
                 logo: {
                   '@type': 'ImageObject',
-                  url: 'https://goodhands.com/brand-assets/logo/logo-primary.svg',
+                  url: 'https://beautysalonlisbon.com/brand-assets/logo/logo-primary.svg',
                 },
               },
               datePublished: new Date().toISOString(),
               dateModified: new Date().toISOString(),
               mainEntityOfPage: {
                 '@type': 'WebPage',
-                '@id': 'https://goodhands.com/makeup-knowledge-base',
+                '@id': 'https://beautysalonlisbon.com/makeup-knowledge-base',
               },
             }),
           }}
