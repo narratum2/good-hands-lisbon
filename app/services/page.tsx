@@ -12,24 +12,37 @@ const services = [
     category: 'Hair Styling',
     slug: 'hair',
     services: [
-      { name: 'Precision Cut', price: 'From €110', duration: '60 min' },
-      { name: 'Color & Highlights', price: 'From €165', duration: '120 min' },
-      { name: 'Balayage', price: 'From €245', duration: '180 min' },
-      { name: 'Blowout & Styling', price: 'From €65', duration: '45 min' },
-      { name: 'Treatment & Repair', price: 'From €85', duration: '60 min' },
-      { name: 'Photoshoot Hair Styling', price: 'From €135', duration: '75 min' },
+      { name: 'Precision Cut', price: 'On Request', duration: '60 min' },
+      { name: 'Color & Highlights', price: 'On Request', duration: '120 min' },
+      { name: 'Balayage', price: 'On Request', duration: '180 min' },
+      { name: 'Blowout & Styling', price: 'On Request', duration: '45 min' },
+      { name: 'Treatment & Repair', price: 'On Request', duration: '60 min' },
+      { name: 'Photoshoot Hair Styling', price: 'On Request', duration: '75 min' },
     ],
     image: '/brand-images/ai-generated/service-hair-styling.jpg',
+  },
+  {
+    category: 'Eyebrows & Lashes',
+    slug: 'eyebrows',
+    services: [
+      { name: 'Brow Shaping & Design', price: 'On Request', duration: '30 min' },
+      { name: 'Brow Lamination', price: 'On Request', duration: '60 min' },
+      { name: 'Brow Tinting', price: 'On Request', duration: '20 min' },
+      { name: 'Lash Lift & Tint', price: 'On Request', duration: '60 min' },
+      { name: 'Lash Extensions', price: 'On Request', duration: '90 min' },
+      { name: 'Microblading Consultation', price: 'On Request', duration: '30 min' },
+    ],
+    image: '/brand-images/ai-generated/service-makeup.jpg',
   },
   {
     category: 'Nail Care',
     slug: 'nails',
     services: [
-      { name: 'Classic Manicure', price: 'From €50', duration: '45 min' },
-      { name: 'Gel Manicure', price: 'From €65', duration: '60 min' },
-      { name: 'Luxury Pedicure', price: 'From €75', duration: '75 min' },
-      { name: 'Nail Art', price: 'From €30', duration: '30 min' },
-      { name: 'Extensions', price: 'From €95', duration: '90 min' },
+      { name: 'Classic Manicure', price: 'On Request', duration: '45 min' },
+      { name: 'Gel Manicure', price: 'On Request', duration: '60 min' },
+      { name: 'Luxury Pedicure', price: 'On Request', duration: '75 min' },
+      { name: 'Nail Art', price: 'On Request', duration: '30 min' },
+      { name: 'Extensions', price: 'On Request', duration: '90 min' },
     ],
     image: '/brand-images/ai-generated/service-nails.jpg',
   },
@@ -37,11 +50,11 @@ const services = [
     category: 'Skincare',
     slug: 'skincare',
     services: [
-      { name: 'Signature Facial', price: 'From €130', duration: '75 min' },
-      { name: 'Anti-Aging Treatment', price: 'From €190', duration: '90 min' },
-      { name: 'Deep Cleanse', price: 'From €115', duration: '60 min' },
-      { name: 'Microdermabrasion', price: 'From €165', duration: '60 min' },
-      { name: 'LED Light Therapy', price: 'From €135', duration: '45 min' },
+      { name: 'Signature Facial', price: 'On Request', duration: '75 min' },
+      { name: 'Anti-Aging Treatment', price: 'On Request', duration: '90 min' },
+      { name: 'Deep Cleanse', price: 'On Request', duration: '60 min' },
+      { name: 'Microdermabrasion', price: 'On Request', duration: '60 min' },
+      { name: 'LED Light Therapy', price: 'On Request', duration: '45 min' },
     ],
     image: '/brand-images/ai-generated/service-facial-spa.jpg',
   },
@@ -49,11 +62,11 @@ const services = [
     category: 'Makeup',
     slug: 'makeup',
     services: [
-      { name: 'Event Makeup', price: 'From €95', duration: '45 min' },
-      { name: 'Bridal Makeup', price: 'From €200', duration: '90 min' },
-      { name: 'Makeup Lesson', price: 'From €165', duration: '90 min' },
-      { name: 'Beauty Consultation', price: 'From €110', duration: '60 min' },
-      { name: 'Photoshoot & Editorial Makeup', price: 'From €200', duration: '60 min' },
+      { name: 'Event Makeup', price: 'On Request', duration: '45 min' },
+      { name: 'Bridal Makeup', price: 'On Request', duration: '90 min' },
+      { name: 'Makeup Lesson', price: 'On Request', duration: '90 min' },
+      { name: 'Beauty Consultation', price: 'On Request', duration: '60 min' },
+      { name: 'Photoshoot & Editorial Makeup', price: 'On Request', duration: '60 min' },
     ],
     image: '/brand-images/ai-generated/service-makeup.jpg',
   },
@@ -61,12 +74,24 @@ const services = [
     category: 'Wellness',
     slug: 'wellness',
     services: [
-      { name: 'Swedish Massage', price: 'From €120', duration: '60 min' },
-      { name: 'Deep Tissue', price: 'From €135', duration: '75 min' },
-      { name: 'Aromatherapy', price: 'From €130', duration: '60 min' },
-      { name: 'Hot Stone', price: 'From €150', duration: '90 min' },
+      { name: 'Swedish Massage', price: 'On Request', duration: '60 min' },
+      { name: 'Deep Tissue', price: 'On Request', duration: '75 min' },
+      { name: 'Aromatherapy', price: 'On Request', duration: '60 min' },
+      { name: 'Hot Stone', price: 'On Request', duration: '90 min' },
     ],
     image: '/brand-images/ai-generated/service-wellness.jpg',
+  },
+  {
+    category: 'Education & Workshops',
+    slug: 'education',
+    services: [
+      { name: 'Personal Makeup Masterclass', price: 'On Request', duration: '2-3 hours' },
+      { name: 'Skincare Routine Workshop', price: 'On Request', duration: '90 min' },
+      { name: 'Bridal Beauty Workshop', price: 'On Request', duration: '3 hours' },
+      { name: 'Group Beauty Class', price: 'On Request', duration: '2 hours' },
+      { name: 'One-on-One Tutorial', price: 'On Request', duration: '60-90 min' },
+    ],
+    image: '/brand-images/ai-generated/service-makeup.jpg',
   },
 ]
 
@@ -181,10 +206,12 @@ export default function ServicesPage() {
               >
                 <option value="all">All Categories</option>
                 <option value="hair">Hair Styling</option>
+                <option value="eyebrows">Eyebrows & Lashes</option>
                 <option value="nails">Nail Care</option>
                 <option value="skincare">Skincare</option>
                 <option value="makeup">Makeup</option>
                 <option value="wellness">Wellness</option>
+                <option value="education">Education & Workshops</option>
               </select>
 
               {/* Clear Filters */}
@@ -279,78 +306,165 @@ export default function ServicesPage() {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 text-gold mb-4">
               <span className="text-2xl">📸</span>
-              <span className="text-sm uppercase tracking-wider font-medium">Special Services</span>
+              <span className="text-sm uppercase tracking-wider font-medium">Creative Productions</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-serif mb-6">
-              Professional Photoshoot Beauty Services
+              Professional Photoshoot Services
             </h2>
             <p className="text-xl text-harbor max-w-2xl mx-auto">
-              Organized beauty sessions for brand campaigns, editorial content, influencer shoots, and personal branding
+              From intimate portraits to spectacular editorial productions — we coordinate beauty, styling, and logistics for your vision
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h3 className="text-2xl font-serif mb-4">For Content Creators & Influencers</h3>
-              <p className="text-harbor mb-4">
-                Our vetted makeup artists and hairstylists specialize in photo-ready looks that translate beautifully on camera.
-                Perfect for Instagram, TikTok, YouTube, and editorial shoots in Lisbon's stunning design hotels and iconic locations.
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-xl font-serif mb-3">Editorial & Fashion</h3>
+              <p className="text-harbor text-sm mb-4">
+                High-fashion editorial shoots with professional hair and makeup artists experienced in magazine-quality production.
               </p>
-              <ul className="space-y-2 text-sm text-harbor">
+              <ul className="space-y-2 text-xs text-harbor">
                 <li className="flex items-start gap-2">
-                  <span className="text-gold mt-1">✓</span>
-                  <span>Camera-ready hair and makeup</span>
+                  <span className="text-gold">✓</span>
+                  <span>Magazine & lookbook shoots</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-gold mt-1">✓</span>
-                  <span>On-location services at design hotels</span>
+                  <span className="text-gold">✓</span>
+                  <span>Fashion brand campaigns</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-gold mt-1">✓</span>
-                  <span>Touch-ups throughout your shoot</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-gold mt-1">✓</span>
-                  <span>Coordination with photographers</span>
+                  <span className="text-gold">✓</span>
+                  <span>Runway show preparation</span>
                 </li>
               </ul>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h3 className="text-2xl font-serif mb-4">For Brands & Editorial</h3>
-              <p className="text-harbor mb-4">
-                Professional beauty services for brand campaigns, marketing materials, e-commerce product photography with models,
-                and hotel/hospitality brand imagery.
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-xl font-serif mb-3">Lifestyle & Equestrian</h3>
+              <p className="text-harbor text-sm mb-4">
+                Unique outdoor productions including equestrian shoots with models on horseback in Portugal's stunning countryside.
               </p>
-              <ul className="space-y-2 text-sm text-harbor">
+              <ul className="space-y-2 text-xs text-harbor">
                 <li className="flex items-start gap-2">
-                  <span className="text-gold mt-1">✓</span>
-                  <span>Editorial fashion & beauty content</span>
+                  <span className="text-gold">✓</span>
+                  <span>Model + horse productions</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-gold mt-1">✓</span>
-                  <span>Brand campaigns & marketing</span>
+                  <span className="text-gold">✓</span>
+                  <span>Vineyard & estate shoots</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-gold mt-1">✓</span>
-                  <span>Professional headshots & personal branding</span>
+                  <span className="text-gold">✓</span>
+                  <span>Beach & coastal locations</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-xl font-serif mb-3">Content Creation</h3>
+              <p className="text-harbor text-sm mb-4">
+                For influencers, creators, and brands — camera-ready beauty that translates perfectly to digital platforms.
+              </p>
+              <ul className="space-y-2 text-xs text-harbor">
+                <li className="flex items-start gap-2">
+                  <span className="text-gold">✓</span>
+                  <span>Instagram & TikTok content</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-gold mt-1">✓</span>
-                  <span>Full logistics and coordination</span>
+                  <span className="text-gold">✓</span>
+                  <span>Personal branding sessions</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-gold">✓</span>
+                  <span>Professional headshots</span>
                 </li>
               </ul>
             </div>
           </div>
 
           <div className="text-center bg-white p-8 rounded-lg shadow-sm">
-            <h3 className="text-2xl font-serif mb-4">How It Works</h3>
+            <h3 className="text-2xl font-serif mb-4">Tell Us Your Vision</h3>
             <p className="text-harbor mb-6">
-              Contact our concierge team to coordinate hair, makeup, styling, and photography services for your shoot.
-              We handle all logistics and professional coordination so you can focus on creating amazing content.
+              We coordinate complete productions — from beauty professionals to location logistics.
+              Describe your creative vision and we'll make it happen.
             </p>
             <Link href="/book" className="btn-gold inline-block">
-              Book Your Photoshoot Session
+              Request a Consultation
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Makeup Education Section */}
+      <section className="section-padding bg-white">
+        <div className="container-custom max-w-5xl">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 text-gold mb-4">
+              <span className="text-2xl">✨</span>
+              <span className="text-sm uppercase tracking-wider font-medium">Learn & Grow</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-serif mb-6">
+              Makeup Education & Workshops
+            </h2>
+            <p className="text-xl text-harbor max-w-2xl mx-auto">
+              Master the art of makeup with personalized learning experiences from Lisbon's top beauty professionals
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-shell p-8 rounded-lg">
+              <h3 className="text-2xl font-serif mb-4">One-on-One Masterclasses</h3>
+              <p className="text-harbor mb-4">
+                Personalized makeup education tailored to your skill level, face shape, and lifestyle. Learn techniques you'll use every day.
+              </p>
+              <ul className="space-y-3 text-sm text-harbor">
+                <li className="flex items-start gap-2">
+                  <span className="text-gold mt-1">✓</span>
+                  <span><strong>Everyday Essentials:</strong> Master your daily routine</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-gold mt-1">✓</span>
+                  <span><strong>Special Occasions:</strong> Evening & event looks</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-gold mt-1">✓</span>
+                  <span><strong>Skincare + Makeup:</strong> Complete beauty education</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-gold mt-1">✓</span>
+                  <span><strong>Product Guidance:</strong> Build your perfect kit</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-shell p-8 rounded-lg">
+              <h3 className="text-2xl font-serif mb-4">Group Workshops</h3>
+              <p className="text-harbor mb-4">
+                Perfect for bridal parties, corporate teams, or friends who want to learn together in a fun, social setting.
+              </p>
+              <ul className="space-y-3 text-sm text-harbor">
+                <li className="flex items-start gap-2">
+                  <span className="text-gold mt-1">✓</span>
+                  <span><strong>Bridal Party Workshop:</strong> Get wedding-ready together</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-gold mt-1">✓</span>
+                  <span><strong>Corporate Events:</strong> Team bonding with beauty</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-gold mt-1">✓</span>
+                  <span><strong>Friends Day Out:</strong> Learn and celebrate</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-gold mt-1">✓</span>
+                  <span><strong>Hen Parties:</strong> Memorable pre-wedding fun</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <Link href="/book" className="btn-gold inline-block">
+              Request Your Learning Experience
             </Link>
           </div>
         </div>

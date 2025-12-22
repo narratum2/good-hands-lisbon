@@ -74,15 +74,15 @@ export default function ProductTile({
             </footer>
           </blockquote>
 
-          {/* Price & CTA */}
+          {/* Inquiry CTA */}
           <div className="flex items-center justify-between mb-4">
-            <span className="text-lg font-medium text-ink">{price}</span>
-            <span className="text-xs text-harbor uppercase tracking-wide">In Stock</span>
+            <span className="text-sm font-medium text-gold">{price}</span>
+            <span className="text-xs text-harbor uppercase tracking-wide">Available</span>
           </div>
           
-          {/* Shop Now Button */}
+          {/* Inquire Button */}
           <button className="btn-gold w-full">
-            Shop Now
+            Ask Your Stylist
           </button>
         </div>
       </Link>
