@@ -41,8 +41,8 @@ export default function TrustedByPartners({
     >
       {/* Eyebrow - Perfectly Centered */}
       <p 
-        className="text-xs uppercase tracking-[0.25em] mb-8 font-semibold text-center w-full" 
-        style={{ color: 'var(--gray-medium)' }}
+        className="text-xs uppercase tracking-[0.25em] mb-8 font-semibold w-full text-center mx-auto" 
+        style={{ color: 'var(--gray-medium)', textAlign: 'center' }}
       >
         Trusted by Leading Hotels
       </p>
