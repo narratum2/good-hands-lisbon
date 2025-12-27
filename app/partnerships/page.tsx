@@ -397,10 +397,10 @@ export default function PartnershipsPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <a
-                href="mailto:partnerships@goodhands.com"
+                href="mailto:partnerships@beautysalonlisbon.com"
                 className="btn-primary bg-gold hover:bg-gold/90"
               >
-                Email: partnerships@goodhands.com
+                Email: partnerships@beautysalonlisbon.com
               </a>
               <a
                 href="tel:+351XXXXXXXXX"

@@ -414,7 +414,7 @@ export default function MembershipPage() {
             '@type': 'MemberProgram',
             name: 'Good Hands Membership',
             description: 'VIP beauty concierge membership with exclusive discounts and priority access',
-            url: 'https://goodhands.com/premium/membership',
+            url: 'https://beautysalonlisbon.com/premium/membership',
             provider: {
               '@type': 'Organization',
               name: 'Good Hands',

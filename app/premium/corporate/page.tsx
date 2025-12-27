@@ -444,8 +444,8 @@ export default function CorporatePage() {
             <Link href="/book" className="btn-primary bg-gold hover:bg-gold/90">
             Request Proposal
           </Link>
-            <a href="mailto:corporate@goodhands.com" className="btn-secondary border-white text-white hover:bg-white/10">
-              Email: corporate@goodhands.com
+            <a href="mailto:corporate@beautysalonlisbon.com" className="btn-secondary border-white text-white hover:bg-white/10">
+              Email: corporate@beautysalonlisbon.com
             </a>
           </div>
         </div>

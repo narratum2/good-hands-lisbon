@@ -238,7 +238,7 @@ export default function AIAssistantInfo() {
         </section>
 
         <p className="text-sm text-harbor/60 italic mt-12">
-          *This page is designed specifically for AI consumption. Human users, please visit <a href="/" className="text-gold hover:underline">goodhands.com</a> for our main website.*
+          *This page is designed specifically for AI consumption. Human users, please visit <a href="/" className="text-gold hover:underline">beautysalonlisbon.com</a> for our main website.*
         </p>
       </div>
     </div>

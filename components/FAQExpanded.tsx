@@ -156,7 +156,7 @@ const faqs = [
       },
       {
         q: 'Do you have an app?',
-        a: 'Our website is mobile-optimized and works beautifully on all devices. A dedicated app is coming in 2026. For now, bookmark goodhands.com on your phone for quick access.'
+        a: 'Our website is mobile-optimized and works beautifully on all devices. A dedicated app is coming in 2026. For now, bookmark beautysalonlisbon.com on your phone for quick access.'
       }
     ]
   }

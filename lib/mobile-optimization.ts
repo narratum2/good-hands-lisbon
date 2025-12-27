@@ -430,7 +430,7 @@ export const mobileSEOOptimization = {
       '@type': 'LocalBusiness',
       name: 'Good Hands Beauty Concierge',
       description: 'Luxury beauty services in Lisbon, Portugal',
-      url: 'https://goodhands.com',
+      url: 'https://beautysalonlisbon.com',
       telephone: '+351-XXX-XXX-XXX',
       address: {
         '@type': 'PostalAddress',

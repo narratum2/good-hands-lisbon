@@ -50,11 +50,11 @@ export default function ProfessionalSignupForm() {
           })
         }, 100)
       } else {
-        alert('There was an error submitting your application. Please try again or email us directly at professionals@goodhands.com')
+        alert('There was an error submitting your application. Please try again or email us directly at professionals@beautysalonlisbon.com')
       }
     } catch (error) {
       console.error('Application submission error:', error)
-      alert('There was an error submitting your application. Please try again or email us directly at professionals@goodhands.com')
+      alert('There was an error submitting your application. Please try again or email us directly at professionals@beautysalonlisbon.com')
     } finally {
       setIsSubmitting(false)
     }
