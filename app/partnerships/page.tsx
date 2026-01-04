@@ -68,7 +68,7 @@ export default function PartnershipsPage() {
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-ink mb-6 md:mb-8 text-center">
               The Challenge Your Guests Face
             </h2>
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8">
               <div className="p-6 bg-white rounded-lg text-center">
                 <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                   <AlertCircleIcon className="w-10 h-10 text-gold" />
@@ -246,7 +246,7 @@ export default function PartnershipsPage() {
       <section className="py-20 bg-porcelain">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-serif text-ink mb-12 text-center">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-ink mb-8 md:mb-12 text-center px-4">
               How It Works
             </h2>
             <div className="space-y-8">
@@ -318,7 +318,7 @@ export default function PartnershipsPage() {
       <section className="py-20 bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-serif text-ink mb-12 text-center">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-ink mb-8 md:mb-12 text-center px-4">
               Service Categories
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
@@ -358,10 +358,10 @@ export default function PartnershipsPage() {
       <section className="py-20 bg-sand/10">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-serif text-ink mb-12 text-center">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-ink mb-8 md:mb-12 text-center px-4">
               What Partners Say
             </h2>
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8">
               <div className="bg-white p-8 rounded-lg">
                 <div className="flex gap-1 text-gold mb-4">
                   <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
@@ -389,7 +389,7 @@ export default function PartnershipsPage() {
       <section id="contact" className="py-20 bg-ink text-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-serif mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif mb-4 md:mb-6">
               Ready to Elevate Your Guest Experience?
             </h2>
             <p className="text-xl text-white/90 mb-8">
@@ -420,7 +420,7 @@ export default function PartnershipsPage() {
       <section className="py-20 bg-shell">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-serif text-ink mb-12 text-center">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-ink mb-8 md:mb-12 text-center px-4">
               Partnership FAQ
             </h2>
             <div className="space-y-4">
