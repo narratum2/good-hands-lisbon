@@ -184,12 +184,12 @@ export default function JournalPage() {
               {/* Image with elegant frame effect */}
               <div className="relative h-[400px] lg:h-[550px] overflow-hidden">
                 <div className="absolute inset-0 rounded-sm overflow-hidden">
-                  <Image
-                    src={articles[0].image}
-                    alt={articles[0].title}
-                    fill
+                <Image
+                  src={articles[0].image}
+                  alt={articles[0].title}
+                  fill
                     className="object-cover transition-all duration-700 ease-out group-hover:scale-105"
-                  />
+                />
                   {/* Subtle vignette */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>

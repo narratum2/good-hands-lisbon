@@ -14,15 +14,15 @@ export default function HeroModern() {
           transition={{ duration: 1.8, ease: [0.4, 0, 0.2, 1] }}
           className="absolute inset-0"
         >
-          <Image
-            src="/brand-images/hero-salon-interior.png"
-            alt="Luxury beauty salon in Lisbon with sage green arches"
-            fill
-            className="object-cover object-center"
-            priority
-            sizes="100vw"
+        <Image
+          src="/brand-images/hero-salon-interior.png"
+          alt="Luxury beauty salon in Lisbon with sage green arches"
+          fill
+          className="object-cover object-center"
+          priority
+          sizes="100vw"
             quality={90}
-          />
+        />
         </motion.div>
         {/* Multi-layer gradient for depth and drama */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/70" />
