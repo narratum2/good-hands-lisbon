@@ -89,7 +89,7 @@ export default function ExperiencesPage() {
   return (
     <div className="pt-20">
       {/* Hero */}
-      <section className="relative h-[60vh] flex items-center justify-center">
+      <section className="relative min-h-[400px] md:h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image
             src="/brand-images/category-weddings.png"
@@ -99,9 +99,9 @@ export default function ExperiencesPage() {
           />
           <div className="absolute inset-0 bg-ink/50" />
         </div>
-        <div className="relative z-10 text-center text-white container-custom">
-          <h1 className="text-5xl md:text-6xl font-serif mb-4">Premium Experiences</h1>
-          <p className="text-xl md:text-2xl text-porcelain/90 max-w-2xl mx-auto">
+        <div className="relative z-10 text-center text-white container-custom px-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif mb-4">Premium Experiences</h1>
+          <p className="text-lg sm:text-xl md:text-2xl text-porcelain/90 max-w-2xl mx-auto px-4">
             Elevated packages for life\'s most important moments
           </p>
         </div>
@@ -113,10 +113,10 @@ export default function ExperiencesPage() {
           key={exp.slug}
           className={`section-padding ${idx % 2 === 0 ? 'bg-white' : 'bg-shell'}`}
         >
-          <div className="container-custom">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="container-custom px-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
               <div className={idx % 2 === 0 ? 'order-1' : 'order-1 lg:order-2'}>
-                <div className="relative h-96 rounded-lg overflow-hidden">
+                <div className="relative h-64 sm:h-80 md:h-96 rounded-lg overflow-hidden">
                   <Image
                     src={exp.image}
                     alt={exp.title}
@@ -126,20 +126,20 @@ export default function ExperiencesPage() {
                 </div>
               </div>
               <div className={idx % 2 === 0 ? 'order-2' : 'order-2 lg:order-1'}>
-                <h2 className="text-4xl font-serif mb-4">{exp.title}</h2>
-                <p className="text-harbor text-lg mb-6">{exp.description}</p>
-                <p className="text-2xl font-serif text-gold mb-6">{exp.priceFrom}</p>
-                <ul className="space-y-3 mb-8">
+                <h2 className="text-3xl md:text-4xl font-serif mb-4">{exp.title}</h2>
+                <p className="text-harbor text-base md:text-lg mb-6">{exp.description}</p>
+                <p className="text-xl md:text-2xl font-serif text-gold mb-6">{exp.priceFrom}</p>
+                <ul className="space-y-2 md:space-y-3 mb-6 md:mb-8">
                   {exp.features.map((feature) => (
                     <li key={feature} className="flex items-start gap-3">
-                      <span className="text-gold mt-1">✓</span>
-                      <span>{feature}</span>
+                      <span className="text-gold mt-1 flex-shrink-0">✓</span>
+                      <span className="text-sm md:text-base">{feature}</span>
                     </li>
                   ))}
                 </ul>
                 <Link
                   href={`/premium/${exp.slug}`}
-                  className="btn-primary inline-block"
+                  className="btn-primary inline-block w-full sm:w-auto text-center"
                 >
                   Learn More
                 </Link>
@@ -151,14 +151,14 @@ export default function ExperiencesPage() {
 
       {/* CTA */}
       <section className="section-padding bg-ink text-white text-center">
-        <div className="container-custom">
-          <h2 className="text-4xl md:text-5xl font-serif mb-6">
+        <div className="container-custom px-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif mb-4 md:mb-6">
             Create Your Custom Experience
           </h2>
-          <p className="text-xl text-porcelain/80 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-porcelain/80 mb-6 md:mb-8 max-w-2xl mx-auto">
             Not sure which package is right for you? Let\'s design something perfect together.
           </p>
-          <Link href="/book" className="btn-gold">
+          <Link href="/book" className="btn-gold inline-block w-full sm:w-auto">
             Schedule a Consultation
           </Link>
         </div>
