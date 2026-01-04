@@ -40,12 +40,14 @@ export default function TrustedByPartners({
       style={!isCompact ? { borderColor: 'var(--gold)/10' } : {}}
     >
       {/* Eyebrow - Perfectly Centered */}
-      <p 
-        className="text-xs uppercase tracking-[0.25em] mb-8 font-semibold w-full text-center mx-auto" 
-        style={{ color: 'var(--gray-medium)', textAlign: 'center' }}
-      >
-        Trusted by Leading Hotels
-      </p>
+      <div className="w-full flex justify-center mb-8">
+        <p 
+          className="text-xs uppercase tracking-[0.25em] font-semibold" 
+          style={{ color: 'var(--gray-medium)', textAlign: 'center' }}
+        >
+          Trusted by Leading Hotels
+        </p>
+      </div>
       
       {/* Hotel Names - Centered Single Line */}
       <div className="w-full flex justify-center">
