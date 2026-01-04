@@ -14,7 +14,7 @@ export default function PartnershipsPage() {
   return (
     <div className="bg-porcelain pt-20">
       {/* Hero Section */}
-      <section className="relative h-[70vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[450px] md:h-[70vh] md:min-h-[600px] flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
@@ -28,24 +28,24 @@ export default function PartnershipsPage() {
         </div>
 
         {/* Content */}
-        <div className="container-custom relative z-10">
+        <div className="container-custom relative z-10 px-4">
           <div className="max-w-4xl mx-auto text-center text-white">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif mb-4 md:mb-6">
               Elevate Your Guest Experience
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/95 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl md:text-2xl mb-6 md:mb-8 text-white/95 max-w-2xl mx-auto px-2">
               Partner with Good Hands to offer your guests exclusive access to Lisbon's finest beauty professionals—without hiring additional staff.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <a
                 href="#contact"
-                className="btn-primary bg-white text-sand hover:bg-porcelain"
+                className="btn-primary bg-white text-sand hover:bg-porcelain w-full sm:w-auto text-center"
               >
                 Schedule a Call
               </a>
               <a
                 href="#benefits"
-                className="btn-secondary border-white text-white hover:bg-white/10"
+                className="btn-secondary border-white text-white hover:bg-white/10 w-full sm:w-auto text-center"
               >
                 Learn More
               </a>
@@ -65,7 +65,7 @@ export default function PartnershipsPage() {
       <section className="py-20 bg-porcelain">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-serif text-ink mb-8 text-center">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-ink mb-6 md:mb-8 text-center">
               The Challenge Your Guests Face
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
@@ -114,10 +114,10 @@ export default function PartnershipsPage() {
       <section id="benefits" className="py-20 bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-serif text-ink mb-4 text-center">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-ink mb-4 md:mb-6 text-center">
               Good Hands: Your Beauty Concierge Partner
             </h2>
-            <p className="text-xl text-harbor text-center mb-12 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-harbor text-center mb-8 md:mb-12 max-w-2xl mx-auto px-4">
               We become an extension of your concierge team, providing white-glove beauty services that reflect your property's standards.
             </p>
 
