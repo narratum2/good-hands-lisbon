@@ -30,3 +30,17 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# Sensitive files - never commit
+VERCEL_ENV_VARIABLES.txt
+VERCEL_ENV_VARIABLES_CHECKLIST.md
+NARRATUM_ACCESS_INFO.md
+SECURITY_REPORT.md
+env-variables-template.txt
+*.env
+*.env.*
+.env*.local
+credentials*
+*secret*
+*_KEY*
+auth-*.json
