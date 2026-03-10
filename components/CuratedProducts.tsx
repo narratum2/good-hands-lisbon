@@ -7,7 +7,7 @@ const products = [
   {
     title: 'Hair Cream',
     brand: 'Five Wits',
-    image: 'https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=800&q=80',
+    image: '/brand-images/service-facial-treatment.png',
     price: 'Ask Your Stylist',
     stylistName: 'Maria, Senior Stylist',
     quote: 'My go-to for texture without weight. Perfect for Lisbon\'s humidity—gives that lived-in, effortless look.',
@@ -16,7 +16,7 @@ const products = [
   {
     title: 'Gold Lust Shampoo',
     brand: 'Oribe',
-    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&q=80',
+    image: '/brand-images/category-hair-styling.png',
     price: 'Ask Your Stylist',
     stylistName: 'Ana, Color Specialist',
     quote: 'The scent alone is worth it—bergamot and jasmine. But it\'s perfect for Lisbon\'s hard water which can leave buildup.',
@@ -25,7 +25,7 @@ const products = [
   {
     title: 'Gentle Hydrating Cleanser',
     brand: 'Dr. Loretta',
-    image: 'https://images.unsplash.com/photo-1556228578-dd3a24bef846?w=800&q=80',
+    image: '/brand-images/service-makeup-application.png',
     price: 'Ask Your Stylist',
     stylistName: 'Sofia, Esthetician',
     quote: 'Works beautifully with Lisbon\'s sun. Cleanses without stripping—your skin will thank you after long summer days.',
@@ -34,7 +34,7 @@ const products = [
   {
     title: 'Nail Treatment Oil',
     brand: 'Dior',
-    image: 'https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=800&q=80',
+    image: '/brand-images/service-nails-professional.png',
     price: 'Ask Your Stylist',
     stylistName: 'Rita, Nail Artist',
     quote: 'Essential for anyone getting frequent manicures. Keeps cuticles soft and nails strong between appointments.',

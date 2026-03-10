@@ -21,7 +21,7 @@ export default function SummerBeautyGuideBlog() {
       <section className="relative h-[50vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80"
+            src="/brand-images/blog-lisbon-guide.png"
             alt="Summer beach in Lisbon, Portugal"
             fill
             className="object-cover"

@@ -21,7 +21,7 @@ export default function LisbonSpaWellnessGuideBlog() {
       <section className="relative h-[50vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1200&q=80"
+            src="/brand-images/experience-wellness-retreat.png"
             alt="Spa and wellness services in Lisbon"
             fill
             className="object-cover"
@@ -293,7 +293,7 @@ export default function LisbonSpaWellnessGuideBlog() {
               '@type': 'WebPage',
               '@id': 'https://beautysalonlisbon.com/blog/lisbon-spa-wellness-guide',
             },
-            image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1200&q=80',
+            image: '/brand-images/experience-wellness-retreat.png',
             keywords: ['spa lisbon', 'massage lisbon', 'wellness lisbon', 'aromatherapy', 'deep tissue massage', 'Swedish massage', 'hot stone therapy'],
             about: [
               { '@type': 'Thing', name: 'Spa Services' },

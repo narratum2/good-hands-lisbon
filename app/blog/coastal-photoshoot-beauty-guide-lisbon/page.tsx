@@ -21,7 +21,7 @@ export default function CoastalPhotoshootBlog() {
       <section className="relative h-[50vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1554048612-b6a482bc67e4?w=1200&q=80"
+            src="/brand-images/cascais-beach-promenade.png"
             alt="Coastal photoshoot in Lisbon"
             fill
             className="object-cover"
