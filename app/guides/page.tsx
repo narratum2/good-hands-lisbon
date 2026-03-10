@@ -132,11 +132,11 @@ export default function GuidesPage() {
                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                   />
                   {/* Gradient overlay - always visible for readability */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-black/10" />
                   
                   {/* Title on image */}
                   <div className="absolute bottom-0 left-0 right-0 p-5">
-                    <h3 className="text-2xl md:text-3xl font-serif text-white font-light tracking-tight">
+                    <h3 className="text-2xl md:text-3xl font-serif text-white font-normal tracking-tight drop-shadow-md">
                       {neighborhood.name}
                     </h3>
                   </div>
