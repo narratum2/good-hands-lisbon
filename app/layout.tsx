@@ -3,14 +3,14 @@ import { Inter, Playfair_Display } from 'next/font/google'
 import Script from 'next/script'
 import { Analytics } from '@vercel/analytics/react'
 import './globals.css'
-const ConditionalNavbar = dynamic(() => import('@/components/ConditionalNavbar'), { ssr: false })
-const ConditionalFooter = dynamic(() => import('@/components/ConditionalFooter'), { ssr: false })
-const ConditionalGrain = dynamic(() => import('@/components/ConditionalGrain'), { ssr: false })
-const ConditionalAIDiscovery = dynamic(() => import('@/components/ConditionalAIDiscovery'), { ssr: false })
 import dynamic from 'next/dynamic'
+import ConditionalNavbar from '@/components/ConditionalNavbar'
+import ConditionalFooter from '@/components/ConditionalFooter'
+import ConditionalGrain from '@/components/ConditionalGrain'
+import ConditionalAIDiscovery from '@/components/ConditionalAIDiscovery'
 const GoogleAnalytics = dynamic(() => import('@/components/GoogleAnalytics'), { ssr: false })
 import { BookingModalProvider } from '@/components/BookingModalProvider'
-const ConditionalSmartAssistant = dynamic(() => import('@/components/ConditionalSmartAssistant'), { ssr: false })
+import ConditionalSmartAssistant from '@/components/ConditionalSmartAssistant'
 import OptimizationProvider from '@/components/OptimizationProvider'
 import { getOrganizationSchema, SEO_TEMPLATES } from '@/lib/seo-config'
 
