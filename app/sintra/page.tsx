@@ -97,7 +97,7 @@ export default function SintraPage() {
               <p className="text-harbor mb-3">
                 Sintra&apos;s historic quintas and boutique hotels house intimate spas—Tivoli Palácio de Seteais, Penha Longa Resort, and independent wellness retreats. Expect full-day experiences: massage, facials, thermal circuits, forest walks, healthy meals. Treatments often incorporate local botanicals and mountain spring water.
               </p>
-              <p className="text-sm text-gold">From €150 (half-day) • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">Pricing on request • Includes expert concierge matching</p>
             </div>
 
             <div className="border-b border-harbor/10 pb-6">
@@ -105,7 +105,7 @@ export default function SintraPage() {
               <p className="text-harbor mb-3">
                 Side-by-side massage in rooms overlooking forest or palace gardens. Couples treatments designed for romantic occasions—honeymoons, anniversaries, proposals. Many spas offer champagne, private terraces, and extend treatment times for leisurely shared experiences.
               </p>
-              <p className="text-sm text-gold">From €300 (couples package) • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">Pricing on request • Includes expert concierge matching</p>
             </div>
 
             <div className="border-b border-harbor/10 pb-6">
@@ -113,7 +113,7 @@ export default function SintraPage() {
               <p className="text-harbor mb-3">
                 Destination wedding in Portugal? Sintra is where bridal parties retreat for pre-wedding spa days. Full-day packages combining treatments, lunch, champagne, and the magical Sintra setting. Popular for intimate wedding groups staying in the area.
               </p>
-              <p className="text-sm text-gold">From €200/person (group packages) • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">Pricing on request • Includes expert concierge matching</p>
             </div>
 
             <div className="pb-6">
@@ -339,11 +339,11 @@ export default function SintraPage() {
       {/* CTA */}
       <section className="section-padding bg-ink text-white text-center">
         <div className="container-custom">
-          <h2 className="text-4xl md:text-5xl font-serif mb-6">Book Your Sintra Experience</h2>
+          <h2 className="text-4xl md:text-5xl font-serif mb-6 text-white">Book Your Sintra Experience</h2>
           <p className="text-xl text-porcelain/80 mb-8 max-w-2xl mx-auto">
             Let us create a magical beauty escape in Portugal&apos;s most romantic destination
           </p>
-          <Link href="/book" className="btn-primary">Book Now</Link>
+          <Link href="/book" className="btn-gold">Book Now</Link>
           <p className="text-sm text-porcelain/60 mt-6">
             All prices include expert concierge matching & coordination
           </p>

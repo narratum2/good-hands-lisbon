@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     question: 'How much does the concierge service cost?',
-    answer: 'Our concierge fee is already included in all displayed prices—there are no hidden fees. You see one price, which covers both the service and our expert matching and coordination. Members save 15-25% on every booking.',
+    answer: 'Pricing is personalized based on your needs. We provide a customized quote after understanding what you\'re looking for — no surprises, no hidden fees. Concierge service is always included in every booking.',
   },
   {
     question: 'How far in advance should I book?',

@@ -132,11 +132,11 @@ export default function GuidesPage() {
                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                   />
                   {/* Gradient overlay - always visible for readability */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-black/10" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/50 to-transparent" />
                   
                   {/* Title on image */}
                   <div className="absolute bottom-0 left-0 right-0 p-5">
-                    <h3 className="text-2xl md:text-3xl font-serif text-white font-normal tracking-tight drop-shadow-md">
+                    <h3 className="text-2xl md:text-3xl font-serif text-white font-normal tracking-tight drop-shadow-lg">
                       {neighborhood.name}
                     </h3>
                   </div>
@@ -184,7 +184,7 @@ export default function GuidesPage() {
           </p>
           <Link 
             href="/book" 
-            className="inline-block px-10 py-4 bg-white text-black text-sm uppercase tracking-[0.15em] font-medium hover:bg-gold hover:text-white transition-all duration-300"
+            className="btn-gold"
           >
             Get Personalized Recommendations
           </Link>

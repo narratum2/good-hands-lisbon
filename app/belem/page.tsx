@@ -97,7 +97,7 @@ export default function BelemPage() {
               <p className="text-harbor mb-3">
                 Family-run establishments, many operating for decades. Stylists know traditional Portuguese techniques alongside modern trends. Expect warm personal service, unhurried appointments, and professionals who treat you like a neighbor, not a transaction.
               </p>
-              <p className="text-sm text-gold">From €65 • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">Pricing on request • Includes expert concierge matching</p>
             </div>
 
             <div className="border-b border-harbor/10 pb-6">
@@ -105,7 +105,7 @@ export default function BelemPage() {
               <p className="text-harbor mb-3">
                 Small, intimate nail studios with regular clientele. Perfect for relaxed manicures and pedicures while enjoying genuine conversation. Less polished than trendy downtown spots, but often more skilled and attentive.
               </p>
-              <p className="text-sm text-gold">From €35 • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">Pricing on request • Includes expert concierge matching</p>
             </div>
 
             <div className="border-b border-harbor/10 pb-6">
@@ -113,7 +113,7 @@ export default function BelemPage() {
               <p className="text-harbor mb-3">
                 Independent estheticians working in peaceful treatment rooms. Belém professionals often have long waiting lists of loyal clients who appreciate their skill and the neighborhood&apos;s tranquil setting for facials and treatments.
               </p>
-              <p className="text-sm text-gold">From €80 • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">Pricing on request • Includes expert concierge matching</p>
             </div>
 
             <div className="pb-6">
@@ -121,7 +121,7 @@ export default function BelemPage() {
               <p className="text-harbor mb-3">
                 Several wellness centers near the waterfront offer massage, body treatments, and holistic services. The riverside location enhances relaxation—many treatment rooms have river or garden views.
               </p>
-              <p className="text-sm text-gold">From €75 • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">Pricing on request • Includes expert concierge matching</p>
             </div>
           </div>
         </div>
@@ -324,11 +324,11 @@ export default function BelemPage() {
       {/* CTA */}
       <section className="section-padding bg-ink text-white text-center">
         <div className="container-custom">
-          <h2 className="text-4xl md:text-5xl font-serif mb-6">Book Your Belém Experience</h2>
+          <h2 className="text-4xl md:text-5xl font-serif mb-6 text-white">Book Your Belém Experience</h2>
           <p className="text-xl text-porcelain/80 mb-8 max-w-2xl mx-auto">
             Let us match you with trusted beauty professionals in Lisbon&apos;s most peaceful waterfront neighborhood
           </p>
-          <Link href="/book" className="btn-primary">Book Now</Link>
+          <Link href="/book" className="btn-gold">Book Now</Link>
           <p className="text-sm text-porcelain/60 mt-6">
             All prices include expert concierge matching & coordination
           </p>

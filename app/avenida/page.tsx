@@ -97,7 +97,7 @@ export default function AvenidaPage() {
               <p className="text-harbor mb-3">
                 Four Seasons Spa, Tivoli Avenida Spa, and other hotel wellness centers offering full spa experiences. Expect international product lines (La Prairie, Valmont), extensive facilities (saunas, pools, relaxation lounges), and therapists trained to global luxury standards. Day passes often available for non-guests.
               </p>
-              <p className="text-sm text-gold">From €150 • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">Pricing on request • Includes expert concierge matching</p>
             </div>
 
             <div className="border-b border-harbor/10 pb-6">
@@ -105,7 +105,7 @@ export default function AvenidaPage() {
               <p className="text-harbor mb-3">
                 Flagship locations of international brands with stylists trained in London, Paris, or Milan academies. Advanced color techniques, precision cutting, and brand-consistent service. Perfect if you want the same experience you had in another city.
               </p>
-              <p className="text-sm text-gold">From €110 • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">Pricing on request • Includes expert concierge matching</p>
             </div>
 
             <div className="border-b border-harbor/10 pb-6">
@@ -121,7 +121,7 @@ export default function AvenidaPage() {
               <p className="text-harbor mb-3">
                 High-end men&apos;s grooming spaces designed for business professionals—precision haircuts, hot towel shaves, express manicures, shoe shines. Leather chairs, whiskey bars, financial news on screens. Efficiency meets luxury.
               </p>
-              <p className="text-sm text-gold">From €60 • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">Pricing on request • Includes expert concierge matching</p>
             </div>
           </div>
         </div>
@@ -316,11 +316,11 @@ export default function AvenidaPage() {
       {/* CTA */}
       <section className="section-padding bg-ink text-white text-center">
         <div className="container-custom">
-          <h2 className="text-4xl md:text-5xl font-serif mb-6">Book Your Avenida Experience</h2>
+          <h2 className="text-4xl md:text-5xl font-serif mb-6 text-white">Book Your Avenida Experience</h2>
           <p className="text-xl text-porcelain/80 mb-8 max-w-2xl mx-auto">
             Let us match you with luxury beauty services on Lisbon&apos;s most prestigious boulevard
           </p>
-          <Link href="/book" className="btn-primary">Book Now</Link>
+          <Link href="/book" className="btn-gold">Book Now</Link>
           <p className="text-sm text-porcelain/60 mt-6">
             All prices include expert concierge matching & coordination
           </p>
