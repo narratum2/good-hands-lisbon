@@ -15,7 +15,7 @@ export default function HeroModern() {
           className="absolute inset-0"
         >
         <Image
-          src="/brand-images/hero-salon-interior.png"
+          src="/brand-images/homepage-hero-alternative.png"
           alt="Luxury beauty salon in Lisbon with sage green arches"
           fill
           className="object-cover object-center"
