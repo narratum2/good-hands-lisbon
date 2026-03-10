@@ -4,7 +4,6 @@ export async function POST(request: NextRequest) {
   try {
     const { priceId, membershipType } = await request.json()
 
-    // TODO: User needs to set up Stripe account and add STRIPE_SECRET_KEY to environment variables
     const stripeSecretKey = process.env.STRIPE_SECRET_KEY
 
     if (!stripeSecretKey) {
@@ -17,7 +16,23 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Dynamically import Stripe to avoid build errors if not configured
+    if (!priceId || typeof priceId !== 'string') {
+      return NextResponse.json({ error: 'Invalid price ID' }, { status: 400 })
+    }
+
+    if (!membershipType || !['Gold', 'Platinum'].includes(membershipType)) {
+      return NextResponse.json({ error: 'Invalid membership type' }, { status: 400 })
+    }
+
+    const allowedPriceIds = [
+      process.env.NEXT_PUBLIC_STRIPE_GOLD_PRICE_ID,
+      process.env.NEXT_PUBLIC_STRIPE_PLATINUM_PRICE_ID,
+    ].filter(Boolean)
+
+    if (allowedPriceIds.length > 0 && !allowedPriceIds.includes(priceId)) {
+      return NextResponse.json({ error: 'Unauthorized price ID' }, { status: 403 })
+    }
+
     const Stripe = (await import('stripe')).default
     const stripe = new Stripe(stripeSecretKey, {
       apiVersion: '2025-09-30.clover',
@@ -55,4 +70,3 @@ export async function POST(request: NextRequest) {
     )
   }
 }
-

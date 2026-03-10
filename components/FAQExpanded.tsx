@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { FULL_PRICING_SENTENCE } from '@/lib/pricing'
 
 const faqs = [
   {
@@ -30,7 +31,7 @@ const faqs = [
     questions: [
       {
         q: 'How much does it cost?',
-        a: 'Hair starts at €105. Nails at €65. Skincare at €95. Makeup at €85. Wellness at €80. That includes the service and our concierge fee. No hidden costs. What you see is what you pay.'
+        a: FULL_PRICING_SENTENCE
       },
       {
         q: 'Is the concierge fee worth it?',
@@ -274,26 +275,6 @@ export default function FAQExpanded() {
           </a>
         </motion.div>
 
-        {/* Schema markup for AI/SEO */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              mainEntity: faqs.flatMap(category =>
-                category.questions.map(faq => ({
-                  '@type': 'Question',
-                  name: faq.q,
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: faq.a,
-                  },
-                }))
-              ),
-            }),
-          }}
-        />
       </div>
     </section>
   )

@@ -57,7 +57,7 @@ export default function MembershipPage() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="#plans" className="btn-primary">
+            <a href="#plans" className="btn-gold">
               View Membership Plans
             </a>
             <Link href="/book" className="btn-secondary bg-white/10 hover:bg-white/20 text-white border-white/30">
@@ -385,14 +385,14 @@ export default function MembershipPage() {
       {/* CTA */}
       <section className="section-padding bg-ink text-white">
         <div className="container-custom text-center">
-          <h2 className="text-4xl md:text-5xl font-serif mb-6">
+          <h2 className="text-4xl md:text-5xl font-serif mb-6 text-white">
             Ready to Join?
           </h2>
           <p className="text-xl text-porcelain/80 mb-8 max-w-2xl mx-auto">
             Start saving today and enjoy VIP access to Lisbon's finest beauty professionals
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#plans" className="btn-primary">
+            <a href="#plans" className="btn-gold">
               Choose Your Plan
             </a>
             <Link href="/book" className="btn-secondary bg-white/10 hover:bg-white/20 text-white border-white/30">

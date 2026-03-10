@@ -22,7 +22,7 @@ export default function CorporatePage() {
             <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto">
               Elevate your corporate culture with professional beauty services for team events, employee wellness programs, and executive grooming
             </p>
-            <Link href="/book" className="btn-primary bg-gold hover:bg-gold/90">
+            <Link href="/book" className="btn-gold">
               Request Corporate Quote
             </Link>
           </div>
@@ -120,7 +120,7 @@ export default function CorporatePage() {
                     <span>Product sampling</span>
                   </li>
                 </ul>
-                <p className="text-sm font-semibold text-ink">From €35/person</p>
+                <p className="text-sm font-semibold text-ink">Pricing on request</p>
               </div>
 
               {/* Corporate Events */}
@@ -156,7 +156,7 @@ export default function CorporatePage() {
                     <span>Branded experience available</span>
                   </li>
                 </ul>
-                <p className="text-sm font-semibold text-ink">Custom pricing (typically €2,500+)</p>
+                <p className="text-sm font-semibold text-ink">Pricing on request</p>
               </div>
 
               {/* Executive Services */}
@@ -189,7 +189,7 @@ export default function CorporatePage() {
                     <span>Ongoing grooming maintenance</span>
                   </li>
                 </ul>
-                <p className="text-sm font-semibold text-ink">From €150/executive/session</p>
+                <p className="text-sm font-semibold text-ink">Pricing on request</p>
               </div>
             </div>
           </div>
@@ -359,7 +359,7 @@ export default function CorporatePage() {
                   <p className="text-harbor">Services delivered in 3 hours</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-4xl font-bold text-ink mb-2">€50</p>
+                  <p className="text-4xl font-bold text-ink mb-2">Low</p>
                   <p className="text-harbor">Cost per employee</p>
                 </div>
               </div>
@@ -435,14 +435,14 @@ export default function CorporatePage() {
       {/* CTA */}
       <section className="py-20 bg-ink text-white text-center">
         <div className="container-custom">
-          <h2 className="text-4xl md:text-5xl font-serif mb-6">
+          <h2 className="text-4xl md:text-5xl font-serif mb-6 text-white">
             Ready to Elevate Your Corporate Culture?
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Let's create a custom corporate beauty program for your team
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/book" className="btn-primary bg-gold hover:bg-gold/90">
+            <Link href="/book" className="btn-gold">
             Request Proposal
           </Link>
             <a href="mailto:corporate@beautysalonlisbon.com" className="btn-secondary border-white text-white hover:bg-white/10">

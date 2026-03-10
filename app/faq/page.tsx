@@ -37,7 +37,7 @@ const faqs = [
     questions: [
       {
         q: 'How much do services cost?',
-        a: 'Our pricing is transparent and includes our concierge service fee: Hair Styling from €105, Hair Color from €145, Spa Treatments from €95, Makeup from €85, Nails from €55, Wellness from €120. VIP members receive 15% off all services. Prices vary based on specific treatment, professional expertise level, and session duration.'
+        a: 'Pricing is personalized based on your needs. All prices include our concierge coordination and matching service. VIP members receive 15% off all services. Final pricing depends on the specific treatment, professional expertise level, and session duration. Contact us for a personalized quote.'
       },
       {
         q: 'What\'s included in the price?',
@@ -91,7 +91,7 @@ const faqs = [
     questions: [
       {
         q: 'Do you offer wedding beauty services?',
-        a: 'Yes! We specialize in wedding beauty. Our premium wedding packages include: Trial sessions 2-3 months before, day-of coordination for entire bridal party, timeline management, dedicated beauty teams, and touch-up services. Packages start at €500 depending on party size and services needed.'
+        a: 'Yes! We specialize in wedding beauty. Our premium wedding packages include: Trial sessions 2-3 months before, day-of coordination for entire bridal party, timeline management, dedicated beauty teams, and touch-up services. Pricing is personalized based on your needs—contact us for a custom quote.'
       },
       {
         q: 'Can you handle group bookings?',
@@ -103,7 +103,7 @@ const faqs = [
       },
       {
         q: 'Do you offer beauty retreats?',
-        a: 'Yes! Our multi-day beauty and wellness retreats in Sintra and Cascais include curated treatments, consultations, product packages, and wellness activities. Retreats range from 2-5 days and are fully customizable. Prices start at €800 per person.'
+        a: 'Yes! Our multi-day beauty and wellness retreats in Sintra and Cascais include curated treatments, consultations, product packages, and wellness activities. Retreats range from 2-5 days and are fully customizable. Pricing on request—contact us for details.'
       },
       {
         q: 'Can you coordinate corporate wellness events?',
@@ -116,7 +116,7 @@ const faqs = [
     questions: [
       {
         q: 'Do you offer a membership program?',
-        a: 'Yes! Our VIP Membership costs €299/year and includes: 15% off all services, priority booking with your favorite professionals, flexible cancellation policy, exclusive access to new professionals and special events, and a dedicated concierge contact. Membership pays for itself after 3-4 bookings.'
+        a: 'Yes! We offer Gold (€49/month) and Platinum (€99/month) memberships. Benefits include up to 25% off all services, priority booking with your favorite professionals, flexible cancellation policy, exclusive access to new professionals and special events, and a dedicated concierge contact. Membership pays for itself after just a few bookings.'
       },
       {
         q: 'Is membership worth it for locals?',

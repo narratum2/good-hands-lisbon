@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Send, CheckCircle, Sparkles } from 'lucide-react'
+import { Send, CheckCircle, Sparkles, CalendarDays, Award, ClipboardList, HeartHandshake } from 'lucide-react'
 
 export default function ProfessionalSignupForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -85,17 +85,17 @@ export default function ProfessionalSignupForm() {
         {/* Benefits */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <div className="bg-white p-6 rounded-lg text-center">
-            <div className="text-3xl mb-3">✨</div>
+            <div className="flex justify-center mb-3"><Sparkles className="w-6 h-6 text-gold" /></div>
             <h3 className="font-medium mb-2">Premium Clientele</h3>
             <p className="text-sm text-harbor">Access to luxury hotel guests and high-end clients</p>
           </div>
           <div className="bg-white p-6 rounded-lg text-center">
-            <div className="text-3xl mb-3">📅</div>
+            <div className="flex justify-center mb-3"><CalendarDays className="w-6 h-6 text-gold" /></div>
             <h3 className="font-medium mb-2">Flexible Scheduling</h3>
             <p className="text-sm text-harbor">Work on your terms with our concierge coordination</p>
           </div>
           <div className="bg-white p-6 rounded-lg text-center">
-            <div className="text-3xl mb-3">🌟</div>
+            <div className="flex justify-center mb-3"><Award className="w-6 h-6 text-gold" /></div>
             <h3 className="font-medium mb-2">Brand Prestige</h3>
             <p className="text-sm text-harbor">Join a trusted network recognized by Four Seasons & Tivoli</p>
           </div>
@@ -130,7 +130,7 @@ export default function ProfessionalSignupForm() {
               {/* Full Name */}
               <div>
                 <label htmlFor="fullName" className="block text-sm font-medium mb-2">
-                  Full Name <span className="text-coral">*</span>
+                  Full Name <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="text"
@@ -145,7 +145,7 @@ export default function ProfessionalSignupForm() {
               {/* Email */}
               <div>
                 <label htmlFor="email" className="block text-sm font-medium mb-2">
-                  Email Address <span className="text-coral">*</span>
+                  Email Address <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="email"
@@ -160,7 +160,7 @@ export default function ProfessionalSignupForm() {
               {/* Phone */}
               <div>
                 <label htmlFor="phone" className="block text-sm font-medium mb-2">
-                  Phone Number <span className="text-coral">*</span>
+                  Phone Number <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="tel"
@@ -175,7 +175,7 @@ export default function ProfessionalSignupForm() {
               {/* Specialty */}
               <div>
                 <label htmlFor="specialty" className="block text-sm font-medium mb-2">
-                  Primary Specialty <span className="text-coral">*</span>
+                  Primary Specialty <span className="text-red-500">*</span>
                 </label>
                 <select
                   id="specialty"
@@ -200,7 +200,7 @@ export default function ProfessionalSignupForm() {
               {/* Years of Experience */}
               <div>
                 <label htmlFor="experience" className="block text-sm font-medium mb-2">
-                  Years of Experience <span className="text-coral">*</span>
+                  Years of Experience <span className="text-red-500">*</span>
                 </label>
                 <select
                   id="experience"
@@ -220,7 +220,7 @@ export default function ProfessionalSignupForm() {
               {/* Location/Neighborhood */}
               <div>
                 <label htmlFor="location" className="block text-sm font-medium mb-2">
-                  Preferred Work Location <span className="text-coral">*</span>
+                  Preferred Work Location <span className="text-red-500">*</span>
                 </label>
                 <select
                   id="location"
@@ -246,7 +246,7 @@ export default function ProfessionalSignupForm() {
             {/* Certifications */}
             <div className="mb-6">
               <label htmlFor="certifications" className="block text-sm font-medium mb-2">
-                Certifications & Training <span className="text-coral">*</span>
+                Certifications & Training <span className="text-red-500">*</span>
               </label>
               <textarea
                 id="certifications"
@@ -275,7 +275,7 @@ export default function ProfessionalSignupForm() {
             {/* Instagram */}
             <div className="mb-6">
               <label htmlFor="instagram" className="block text-sm font-medium mb-2">
-                Instagram Handle <span className="text-coral">*</span>
+                Instagram Handle <span className="text-red-500">*</span>
               </label>
               <input
                 type="text"
@@ -293,7 +293,7 @@ export default function ProfessionalSignupForm() {
             {/* Availability */}
             <div className="mb-6">
               <label htmlFor="availability" className="block text-sm font-medium mb-2">
-                Current Availability <span className="text-coral">*</span>
+                Current Availability <span className="text-red-500">*</span>
               </label>
               <select
                 id="availability"
@@ -314,7 +314,7 @@ export default function ProfessionalSignupForm() {
             {/* Why Join */}
             <div className="mb-8">
               <label htmlFor="whyJoin" className="block text-sm font-medium mb-2">
-                Why do you want to join Good Hands? <span className="text-coral">*</span>
+                Why do you want to join Good Hands? <span className="text-red-500">*</span>
               </label>
               <textarea
                 id="whyJoin"
@@ -337,7 +337,7 @@ export default function ProfessionalSignupForm() {
                 <span className="text-sm text-harbor">
                   I understand that Good Hands personally vets all professionals and that this application 
                   does not guarantee acceptance. I agree to participate in an interview and trial service 
-                  evaluation if selected. <span className="text-coral">*</span>
+                  evaluation if selected. <span className="text-red-500">*</span>
                 </span>
               </label>
             </div>
@@ -374,17 +374,17 @@ export default function ProfessionalSignupForm() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-harbor">
             <div>
-              <div className="text-2xl mb-2">📋</div>
+              <div className="flex justify-center mb-2"><ClipboardList className="w-6 h-6 text-gold" /></div>
               <p className="font-medium mb-1">1. Application Review</p>
               <p>We review your experience, portfolio, and social presence</p>
             </div>
             <div>
-              <div className="text-2xl mb-2">🤝</div>
+              <div className="flex justify-center mb-2"><HeartHandshake className="w-6 h-6 text-gold" /></div>
               <p className="font-medium mb-1">2. Interview</p>
               <p>Selected candidates meet with our team for an in-depth interview</p>
             </div>
             <div>
-              <div className="text-2xl mb-2">✨</div>
+              <div className="flex justify-center mb-2"><Sparkles className="w-6 h-6 text-gold" /></div>
               <p className="font-medium mb-1">3. Trial Service</p>
               <p>We experience your services firsthand to ensure quality standards</p>
             </div>

@@ -97,7 +97,7 @@ export default function ChiadoPage() {
               <p className="text-harbor mb-3">
                 International-caliber stylists trained in Paris, London, and Milan. Specialties include precision cutting, complex color work, and European blow-dry techniques. Many salons offer champagne service and private styling suites.
               </p>
-              <p className="text-sm text-gold">From €95 • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">Pricing on request • Includes expert concierge matching</p>
             </div>
 
             <div className="border-b border-harbor/10 pb-6">
@@ -105,7 +105,7 @@ export default function ChiadoPage() {
               <p className="text-harbor mb-3">
                 Pristine manicure bars offering gel systems, luxury pedicures, and intricate nail art. Expect spacious stations, premium products (OPI, CND), and meticulous attention to hygiene and detail.
               </p>
-              <p className="text-sm text-gold">From €50 • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">Pricing on request • Includes expert concierge matching</p>
             </div>
 
             <div className="border-b border-harbor/10 pb-6">
@@ -113,7 +113,7 @@ export default function ChiadoPage() {
               <p className="text-harbor mb-3">
                 European skincare treatments using premium product lines (Biologique Recherche, Sodashi, Yon-Ka). Specialized facials address Lisbon&apos;s climate effects on skin.
               </p>
-              <p className="text-sm text-gold">From €110 • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">Pricing on request • Includes expert concierge matching</p>
             </div>
 
             <div className="pb-6">
@@ -121,7 +121,7 @@ export default function ChiadoPage() {
               <p className="text-harbor mb-3">
                 Professional makeup artists with fashion, film, and bridal expertise. Many have worked with Portuguese and international publications.
               </p>
-              <p className="text-sm text-gold">From €85 • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">Pricing on request • Includes expert concierge matching</p>
             </div>
           </div>
         </div>
@@ -299,11 +299,11 @@ export default function ChiadoPage() {
       {/* CTA */}
       <section className="section-padding bg-ink text-white text-center">
         <div className="container-custom">
-          <h2 className="text-4xl md:text-5xl font-serif mb-6">Book Your Chiado Experience</h2>
+          <h2 className="text-4xl md:text-5xl font-serif mb-6 text-white">Book Your Chiado Experience</h2>
           <p className="text-xl text-porcelain/80 mb-8 max-w-2xl mx-auto">
             Let us match you with Chiado&apos;s finest beauty professionals in this legendary neighborhood
           </p>
-          <Link href="/book" className="btn-primary">Book Now</Link>
+          <Link href="/book" className="btn-gold">Book Now</Link>
           <p className="text-sm text-porcelain/60 mt-6">
             All prices include expert concierge matching & coordination
           </p>
