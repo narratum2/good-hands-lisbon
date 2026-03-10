@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
+import { Suspense } from 'react'
 import { ArrowLeft, ArrowRight, CheckCircle, Calendar, MapPin, User, Mail, Phone, MessageSquare, Loader2, AlertCircle } from 'lucide-react'
 
 interface BookingData {
@@ -43,7 +44,7 @@ const timeSlots = [
   '09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00'
 ]
 
-export default function BookingPage() {
+function BookingPageInner() {
   const searchParams = useSearchParams()
   const [step, setStep] = useState(1)
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -746,5 +747,13 @@ END:VCALENDAR`)}`}
         </div>
       </div>
     </div>
+  )
+}
+
+export default function BookingPage() {
+  return (
+    <Suspense fallback={null}>
+      <BookingPageInner />
+    </Suspense>
   )
 }
