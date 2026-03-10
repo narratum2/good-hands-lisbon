@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { BrushIcon, SparklesIcon, CalendarIcon, LocationIcon } from '@/components/icons/CustomIcons'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/premium/weddings' },
   title: 'Wedding Beauty Services | Good Hands Lisbon',
   description: 'Comprehensive wedding beauty services in Lisbon. From bridal makeup and hair to full bridal party coordination. Make your special day perfect with our curated beauty professionals.',
   keywords: 'wedding beauty Lisbon, bridal makeup, bridal hair, wedding beauty services, Lisbon weddings',

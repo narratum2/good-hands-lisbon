@@ -5,6 +5,7 @@ import { Heart, Sparkles, Clock, MapPin } from 'lucide-react'
 import RelatedServices from '@/components/RelatedServices'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/services/wellness' },
   title: 'Best Massage & Spa Services in Lisbon — Swedish, Deep Tissue & More | Good Hands',
   description: 'Top massage therapists in Lisbon for Swedish (€90+), deep tissue (€100+), hot stone, aromatherapy & couples massage. Licensed therapists in luxury spas. Book your wellness escape.',
   keywords: ['massage lisbon', 'spa lisbon', 'wellness lisbon', 'swedish massage lisbon', 'deep tissue lisbon', 'couples massage lisbon', 'best spa lisbon', 'hot stone massage', 'massage therapist portugal'],

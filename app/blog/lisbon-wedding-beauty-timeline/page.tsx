@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/blog/lisbon-wedding-beauty-timeline' },
   title: 'Wedding Beauty Timeline for Lisbon — Complete Planning Guide | Good Hands',
   description: 'Complete 12-month wedding beauty timeline for destination weddings in Lisbon. From trials to the big day - your step-by-step guide to bridal beauty perfection.',
   keywords: 'lisbon wedding beauty, destination wedding timeline, bridal beauty lisbon, wedding hair makeup, wedding beauty planning',

@@ -2,7 +2,7 @@
 const nextConfig = {
   // Image optimization - Core Web Vitals (LCP)
   images: {
-    domains: ['images.unsplash.com', 'placehold.co'],
+    domains: ['placehold.co'],
     formats: ['image/avif', 'image/webp'],
     minimumCacheTTL: 31536000, // 1 year
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
@@ -49,11 +49,22 @@ const nextConfig = {
             key: 'Permissions-Policy',
             value: 'camera=(), microphone=(), geolocation=(self), interest-cohort=()'
           },
-          // HSTS (uncomment after SSL is confirmed)
-          // {
-          //   key: 'Strict-Transport-Security',
-          //   value: 'max-age=31536000; includeSubDomains; preload'
-          // },
+          {
+            key: 'Strict-Transport-Security',
+            value: 'max-age=31536000; includeSubDomains; preload'
+          },
+          {
+            key: 'Content-Security-Policy',
+            value: [
+              "default-src 'self'",
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.clarity.ms https://widget.intercom.io",
+              "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+              "font-src 'self' https://fonts.gstatic.com",
+              "img-src 'self' data: blob: https://www.google-analytics.com https://www.googletagmanager.com",
+              "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.clarity.ms https://api.intercom.io wss://nexus-websocket-a.intercom.io",
+              "frame-src 'self' https://www.openstreetmap.org",
+            ].join('; ')
+          },
         ],
       },
       // Cache static assets aggressively

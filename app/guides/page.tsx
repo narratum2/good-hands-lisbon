@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/guides' },
   title: 'Neighborhood Guides — Good Hands',
   description: 'Discover beauty experiences across Lisbon\'s most distinctive neighborhoods, from historic Chiado to coastal Cascais.',
 }

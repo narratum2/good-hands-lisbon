@@ -5,6 +5,7 @@ import { Scissors, Sparkles, Clock, MapPin } from 'lucide-react'
 import RelatedServices from '@/components/RelatedServices'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/services/hair' },
   title: 'Best Hair Salons in Lisbon — Cuts, Color, Balayage | Good Hands',
   description: 'Top hair stylists in Lisbon for precision cuts (€80+), balayage (€180+), color treatments, and bridal hair. English-speaking professionals in Chiado, Príncipe Real & more. Expert matching included.',
   keywords: ['hair salon lisbon', 'hair stylist lisbon', 'balayage lisbon', 'hair color lisbon', 'haircut lisbon', 'best hairdresser lisbon', 'hair salon chiado', 'bridal hair lisbon'],

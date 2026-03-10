@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/blog/summer-beauty-guide-lisbon' },
   title: 'Summer Beauty Guide for Lisbon 2025 — Heat-Proof Hair, Skin & Makeup Tips | Good Hands',
   description: 'Complete summer beauty survival guide for Lisbon: humidity-proof hair styling, sun protection skincare, waterproof makeup, beach-ready nails. Expert tips for Portugal\'s heat and coastal climate.',
   keywords: ['summer beauty lisbon', 'humidity proof hair', 'beach beauty portugal', 'summer skincare lisbon', 'waterproof makeup', 'lisbon heat beauty tips', 'coastal beauty guide'],

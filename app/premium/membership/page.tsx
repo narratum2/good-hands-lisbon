@@ -4,6 +4,7 @@ import { Check, Star, Crown, Sparkles } from 'lucide-react'
 import MembershipButton from '@/components/MembershipButton'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/premium/membership' },
   title: 'Membership — Good Hands',
   description: 'Join Good Hands membership for exclusive discounts, priority booking, and VIP beauty concierge services across Lisbon and beyond.',
   openGraph: {

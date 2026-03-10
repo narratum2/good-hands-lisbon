@@ -5,6 +5,7 @@ import { Palette, Sparkles, Clock, MapPin } from 'lucide-react'
 import RelatedServices from '@/components/RelatedServices'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/services/makeup' },
   title: 'Professional Makeup Artists Lisbon — Bridal, Events, Lessons | Good Hands',
   description: 'Top makeup artists in Lisbon for weddings (€150+), special events (€70+), editorial shoots, and personalized lessons. Portfolio-vetted professionals with premium products. On-location available.',
   keywords: ['makeup artist lisbon', 'bridal makeup lisbon', 'event makeup lisbon', 'makeup lesson lisbon', 'wedding makeup artist', 'mua lisbon', 'makeup artist portugal'],

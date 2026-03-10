@@ -5,6 +5,7 @@ import { Heart, Sparkles, Clock, MapPin } from 'lucide-react'
 import RelatedServices from '@/components/RelatedServices'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/services/nails' },
   title: 'Best Nail Salons in Lisbon — Manicures, Pedicures, Gel & Nail Art | Good Hands',
   description: 'Top nail salons in Lisbon for classic manicures (€35+), gel polish (€45+), luxury pedicures (€55+), nail art & extensions. Hygiene-certified technicians. Prime locations.',
   keywords: ['nail salon lisbon', 'manicure lisbon', 'pedicure lisbon', 'gel nails lisbon', 'nail art lisbon', 'best nail salon chiado', 'nail extensions lisbon', 'gel manicure portugal'],

@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/premium/photoshoots' },
   title: 'Coastal Photoshoot Beauty Services — Good Hands',
   description: 'Professional hair and makeup for your coastal photoshoot in Lisbon, Cascais, Sintra, and Cabo da Roca. Camera-ready styling that lasts.',
 }

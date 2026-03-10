@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/blog/lisbon-spa-wellness-guide' },
   title: 'Complete Spa & Wellness Guide for Lisbon — Best Massage & Treatments | Good Hands',
   description: 'Discover Lisbon\'s best spa and wellness services. Expert guide to massage therapy, holistic treatments, and luxury wellness experiences.',
   keywords: 'spa lisbon, massage lisbon, wellness lisbon, aromatherapy lisbon, deep tissue massage lisbon, holistic wellness',

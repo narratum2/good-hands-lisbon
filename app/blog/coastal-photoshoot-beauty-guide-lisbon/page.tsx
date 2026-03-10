@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/blog/coastal-photoshoot-beauty-guide-lisbon' },
   title: 'Coastal Photoshoot Beauty Guide: Hair & Makeup for Lisbon | Good Hands',
   description: 'Everything you need to know about hiring professional hair and makeup for coastal photoshoots in Cascais, Sintra, and Cabo da Roca.',
   keywords: 'photoshoot makeup lisbon, coastal photoshoot beauty, cascais photography, sintra photoshoot, cabo da roca, professional styling',

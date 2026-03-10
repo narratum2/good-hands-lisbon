@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/privacy' },
   title: 'Privacy Policy — Good Hands',
   description: 'Learn how Good Hands collects, uses, and protects your personal information.',
 }

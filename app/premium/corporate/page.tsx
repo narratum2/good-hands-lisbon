@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { BriefcaseIcon, TargetIcon, ClockIcon, ChartIcon } from '@/components/icons/CustomIcons'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/premium/corporate' },
   title: 'Corporate Beauty Services | Good Hands Lisbon',
   description: 'Professional beauty services for corporate events, team building, and employee wellness. On-site beauty treatments, executive grooming, and corporate packages in Lisbon.',
   keywords: 'corporate beauty services, company wellness, employee benefits, corporate events, team building beauty, executive grooming Lisbon',

@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/how-it-works' },
   title: 'How Good Hands Works — Lisbon Beauty Concierge Process',
   description: 'Discover how Good Hands connects you with vetted beauty professionals in Lisbon. From consultation to booking to your perfect experience.',
   keywords: 'how good hands works, lisbon beauty booking, concierge process, beauty matching service',

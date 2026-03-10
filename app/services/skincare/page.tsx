@@ -5,6 +5,7 @@ import { Sparkles, Heart, Clock, MapPin } from 'lucide-react'
 import RelatedServices from '@/components/RelatedServices'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/services/skincare' },
   title: 'Best Facials & Skincare in Lisbon — HydraFacial, Peels, LED Therapy | Good Hands',
   description: 'Top estheticians in Lisbon for signature facials (€95+), HydraFacials (€140+), chemical peels, anti-aging treatments & LED therapy. Licensed professionals, customized skincare.',
   keywords: ['facial lisbon', 'skincare lisbon', 'hydrafacial lisbon', 'chemical peel lisbon', 'esthetician lisbon', 'best facial lisbon', 'anti aging facial', 'led light therapy lisbon'],

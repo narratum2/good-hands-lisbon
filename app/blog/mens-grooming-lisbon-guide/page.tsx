@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/blog/mens-grooming-lisbon-guide' },
   title: 'Men\'s Grooming Services in Lisbon: Barbers, Spas & Skincare | Good Hands',
   description: 'Complete guide to men\'s grooming in Lisbon - traditional barbers, modern grooming lounges, spa treatments, and executive services.',
   keywords: 'mens grooming lisbon, barber lisbon, mens spa, executive grooming, mens skincare lisbon',

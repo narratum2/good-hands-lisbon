@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { BrushIcon, SparklesIcon, UserIcon, BuildingIcon } from '@/components/icons/CustomIcons'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/premium/retreats' },
   title: 'Beauty Retreats | Good Hands Lisbon',
   description: 'Transformative beauty retreats in Lisbon and beyond. Multi-day immersive experiences focused on personal beauty transformation, self-care, and confidence building.',
   keywords: 'beauty retreat Lisbon, beauty transformation, self-care retreat, beauty workshop, confidence retreat',
