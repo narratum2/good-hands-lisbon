@@ -89,6 +89,17 @@ const nextConfig = {
     ]
   },
   
+  // Redirects
+  async redirects() {
+    return [
+      {
+        source: '/contact',
+        destination: '/#booking',
+        permanent: true,
+      },
+    ]
+  },
+
   // Experimental optimizations
   experimental: {
     optimizeCss: true,
