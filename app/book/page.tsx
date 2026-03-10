@@ -21,12 +21,12 @@ interface BookingData {
 const STORAGE_KEY = 'goodhands_booking_draft'
 
 const services = [
-  { id: 'hair', name: 'Hair Styling', description: 'Color, cuts, styling', duration: '90 min', price: 'From €105' },
-  { id: 'nails', name: 'Nails', description: 'Manicures, pedicures, art', duration: '60 min', price: 'From €60' },
-  { id: 'skincare', name: 'Skincare', description: 'Facials, treatments', duration: '75 min', price: 'From €125' },
-  { id: 'makeup', name: 'Makeup', description: 'Events, weddings, lessons', duration: '45 min', price: 'From €92' },
-  { id: 'wellness', name: 'Wellness', description: 'Massage, spa, relaxation', duration: '60 min', price: 'From €120' },
-  { id: 'wedding', name: 'Wedding Package', description: 'Complete bridal experience', duration: 'Custom', price: 'From €800' },
+  { id: 'hair', name: 'Hair Styling', description: 'Color, cuts, styling', duration: '90 min', price: 'On Request' },
+  { id: 'nails', name: 'Nails', description: 'Manicures, pedicures, art', duration: '60 min', price: 'On Request' },
+  { id: 'skincare', name: 'Skincare', description: 'Facials, treatments', duration: '75 min', price: 'On Request' },
+  { id: 'makeup', name: 'Makeup', description: 'Events, weddings, lessons', duration: '45 min', price: 'On Request' },
+  { id: 'wellness', name: 'Wellness', description: 'Massage, spa, relaxation', duration: '60 min', price: 'On Request' },
+  { id: 'wedding', name: 'Wedding Package', description: 'Complete bridal experience', duration: 'Custom', price: 'On Request' },
 ]
 
 const neighborhoods = [
