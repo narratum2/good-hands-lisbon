@@ -31,7 +31,7 @@ export default function WeddingsPage() {
       </section>
 
       {/* The Challenge Section */}
-      <section className="py-20 bg-white">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-ink mb-8 text-center">
@@ -83,7 +83,7 @@ export default function WeddingsPage() {
       </section>
 
       {/* Services Included */}
-      <section className="py-20 bg-porcelain">
+      <section className="section-padding bg-porcelain">
         <div className="container-custom">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-ink mb-12 text-center">
@@ -185,7 +185,7 @@ export default function WeddingsPage() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-20 bg-white">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-serif text-ink mb-12 text-center">
@@ -195,7 +195,7 @@ export default function WeddingsPage() {
               <div className="border-2 border-harbor/20 rounded-lg p-8 hover:border-gold transition-colors">
                 <h3 className="text-2xl font-serif text-ink mb-2">Intimate</h3>
                 <p className="text-harbor mb-4">Perfect for small ceremonies</p>
-                <p className="text-4xl font-bold text-ink mb-6">€850</p>
+                <p className="text-4xl font-bold text-ink mb-6">Pricing on request</p>
                 <ul className="space-y-2 text-harbor mb-8">
                   <li className="flex items-start">
                     <span className="text-gold mr-2">✓</span>
@@ -227,7 +227,7 @@ export default function WeddingsPage() {
                 </div>
                 <h3 className="text-2xl font-serif text-ink mb-2">Classic</h3>
                 <p className="text-harbor mb-4">Full bridal party beauty</p>
-                <p className="text-4xl font-bold text-ink mb-6">€1,850</p>
+                <p className="text-4xl font-bold text-ink mb-6">Pricing on request</p>
                 <ul className="space-y-2 text-harbor mb-8">
                   <li className="flex items-start">
                     <span className="text-gold mr-2">✓</span>
@@ -258,7 +258,7 @@ export default function WeddingsPage() {
               <div className="border-2 border-harbor/20 rounded-lg p-8 hover:border-gold transition-colors">
                 <h3 className="text-2xl font-serif text-ink mb-2">Luxury</h3>
                 <p className="text-harbor mb-4">Complete multi-day coverage</p>
-                <p className="text-4xl font-bold text-ink mb-6">€3,500</p>
+                <p className="text-4xl font-bold text-ink mb-6">Pricing on request</p>
                 <ul className="space-y-2 text-harbor mb-8">
                   <li className="flex items-start">
                     <span className="text-gold mr-2">✓</span>
@@ -294,7 +294,7 @@ export default function WeddingsPage() {
       </section>
 
       {/* Timeline Example */}
-      <section className="py-20 bg-porcelain">
+      <section className="section-padding bg-porcelain">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-4xl font-serif text-ink mb-12 text-center">
@@ -369,7 +369,7 @@ export default function WeddingsPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 bg-white">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-serif text-ink mb-12 text-center">
@@ -402,15 +402,15 @@ export default function WeddingsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-ink text-white text-center">
+      <section className="section-padding bg-ink text-white text-center">
         <div className="container-custom">
-          <h2 className="text-4xl md:text-5xl font-serif mb-6">
+          <h2 className="text-4xl md:text-5xl font-serif mb-6 text-white">
             Ready to Plan Your Wedding Beauty?
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Let's create a custom package perfect for your special day
           </p>
-          <Link href="/book" className="btn-primary bg-gold hover:bg-gold/90">
+          <Link href="/book" className="btn-gold">
             Schedule Your Consultation
           </Link>
         </div>

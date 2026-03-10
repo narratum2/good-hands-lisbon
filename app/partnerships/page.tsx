@@ -55,14 +55,14 @@ export default function PartnershipsPage() {
       </section>
 
       {/* Trusted By Section - Standardized */}
-      <section className="py-16 bg-white">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <TrustedByPartners variant="compact" />
         </div>
       </section>
 
       {/* The Challenge Section */}
-      <section className="py-20 bg-porcelain">
+      <section className="section-padding bg-porcelain">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-ink mb-6 md:mb-8 text-center">
@@ -111,7 +111,7 @@ export default function PartnershipsPage() {
       </section>
 
       {/* The Solution Section */}
-      <section id="benefits" className="py-20 bg-white">
+      <section id="benefits" className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-ink mb-4 md:mb-6 text-center">
@@ -243,7 +243,7 @@ export default function PartnershipsPage() {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-20 bg-porcelain">
+      <section className="section-padding bg-porcelain">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-ink mb-8 md:mb-12 text-center px-4">
@@ -315,7 +315,7 @@ export default function PartnershipsPage() {
       </section>
 
       {/* Service Categories */}
-      <section className="py-20 bg-white">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-ink mb-8 md:mb-12 text-center px-4">
@@ -355,7 +355,7 @@ export default function PartnershipsPage() {
       </section>
 
       {/* Social Proof Section */}
-      <section className="py-20 bg-sand/10">
+      <section className="section-padding bg-sand/10">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-ink mb-8 md:mb-12 text-center px-4">
@@ -386,10 +386,10 @@ export default function PartnershipsPage() {
       </section>
 
       {/* CTA Section */}
-      <section id="contact" className="py-20 bg-ink text-white">
+      <section id="contact" className="section-padding bg-ink text-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif mb-4 md:mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif mb-4 md:mb-6 text-white">
               Ready to Elevate Your Guest Experience?
             </h2>
             <p className="text-xl text-white/90 mb-8">
@@ -398,7 +398,7 @@ export default function PartnershipsPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <a
                 href="mailto:partnerships@beautysalonlisbon.com"
-                className="btn-primary bg-gold hover:bg-gold/90"
+                className="btn-gold"
               >
                 Email: partnerships@beautysalonlisbon.com
               </a>
@@ -417,7 +417,7 @@ export default function PartnershipsPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-shell">
+      <section className="section-padding bg-shell">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-ink mb-8 md:mb-12 text-center px-4">

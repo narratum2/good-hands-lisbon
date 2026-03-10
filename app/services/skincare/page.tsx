@@ -331,13 +331,13 @@ export default function SkincareServicesPage() {
       {/* CTA */}
       <section className="section-padding bg-ink text-white text-center">
         <div className="container-custom">
-          <h2 className="text-4xl md:text-5xl font-serif mb-6">
+          <h2 className="text-4xl md:text-5xl font-serif mb-6 text-white">
             Ready for Healthier, Glowing Skin?
           </h2>
           <p className="text-xl text-porcelain/80 mb-8 max-w-2xl mx-auto">
             We&apos;ll match you with a licensed esthetician who specializes in your skin concerns
           </p>
-          <Link href="/book" className="btn-primary">
+          <Link href="/book" className="btn-gold">
             Book Skincare Service
           </Link>
           <p className="text-sm text-porcelain/60 mt-6">

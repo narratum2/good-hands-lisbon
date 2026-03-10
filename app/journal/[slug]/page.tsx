@@ -275,9 +275,9 @@ export default function ArticlePage({ params }: PageProps) {
       )}
 
       {/* CTA Section */}
-      <section className="bg-ink text-white py-16" aria-labelledby="cta-heading">
+      <section className="bg-ink text-white section-padding" aria-labelledby="cta-heading">
         <div className="container-custom max-w-4xl text-center">
-          <h2 id="cta-heading" className="text-3xl md:text-4xl font-serif mb-4">
+          <h2 id="cta-heading" className="text-3xl md:text-4xl font-serif mb-4 text-white">
             Ready to Experience Lisbon's Beauty Scene?
           </h2>
           <p className="text-xl text-white/90 mb-8">
@@ -285,7 +285,7 @@ export default function ArticlePage({ params }: PageProps) {
           </p>
           <Link 
             href="/book" 
-            className="inline-block bg-gold hover:bg-gold/90 text-ink font-semibold px-8 py-4 rounded-sm transition-colors focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-ink"
+            className="btn-gold"
           >
             Request Your Experience
           </Link>

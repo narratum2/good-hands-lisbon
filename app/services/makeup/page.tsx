@@ -374,13 +374,13 @@ export default function MakeupServicesPage() {
       {/* CTA */}
       <section className="section-padding bg-ink text-white text-center">
         <div className="container-custom">
-          <h2 className="text-4xl md:text-5xl font-serif mb-6">
+          <h2 className="text-4xl md:text-5xl font-serif mb-6 text-white">
             Ready to Look Your Best?
           </h2>
           <p className="text-xl text-porcelain/80 mb-8 max-w-2xl mx-auto">
             We&apos;ll match you with a makeup artist whose style aligns perfectly with your vision
           </p>
-          <Link href="/book" className="btn-primary">
+          <Link href="/book" className="btn-gold">
             Book Makeup Service
           </Link>
           <p className="text-sm text-porcelain/60 mt-6">

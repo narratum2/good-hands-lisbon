@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { Check, Star, Crown, Sparkles } from 'lucide-react'
+import { Check, Star, Crown, Sparkles, Percent, Zap } from 'lucide-react'
 import MembershipButton from '@/components/MembershipButton'
 
 export const metadata: Metadata = {
@@ -82,7 +82,7 @@ export default function MembershipPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">💰</span>
+                <Percent className="w-8 h-8 text-gold" />
               </div>
               <h3 className="text-xl font-serif mb-2">Save Significantly</h3>
               <p className="text-harbor">
@@ -92,7 +92,7 @@ export default function MembershipPage() {
 
             <div className="text-center">
               <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">⚡</span>
+                <Zap className="w-8 h-8 text-gold" />
               </div>
               <h3 className="text-xl font-serif mb-2">Priority Access</h3>
               <p className="text-harbor">
@@ -102,7 +102,7 @@ export default function MembershipPage() {
 
             <div className="text-center">
               <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">✨</span>
+                <Sparkles className="w-8 h-8 text-gold" />
               </div>
               <h3 className="text-xl font-serif mb-2">Exclusive Perks</h3>
               <p className="text-harbor">
