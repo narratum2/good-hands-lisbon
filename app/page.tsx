@@ -6,6 +6,7 @@ import CategoriesRow from '@/components/CategoriesRow'
 import ExperiencesPreview from '@/components/ExperiencesPreview'
 import GuidesPreview from '@/components/GuidesPreview'
 import JournalPreview from '@/components/JournalPreview'
+import Lookbook from '@/components/Lookbook'
 import FAQExpanded from '@/components/FAQExpanded'
 import TestimonialsEnhanced from '@/components/TestimonialsEnhanced'
 import TrustSignals from '@/components/TrustSignals'
@@ -31,6 +32,8 @@ export default function Home() {
       <ExperiencesPreview />
       
       <TestimonialsEnhanced />
+
+      <Lookbook />
       
       <GuidesPreview />
       
