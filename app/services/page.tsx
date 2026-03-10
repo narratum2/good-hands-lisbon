@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
+import { Suspense } from 'react'
 import { Search, X } from 'lucide-react'
 import CuratedProducts from '@/components/CuratedProducts'
 
@@ -95,7 +96,7 @@ const services = [
   },
 ]
 
-export default function ServicesPage() {
+function ServicesPageInner() {
   const searchParams = useSearchParams()
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedCategory, setSelectedCategory] = useState('all')
@@ -547,3 +548,10 @@ export default function ServicesPage() {
   )
 }
 
+export default function ServicesPage() {
+  return (
+    <Suspense fallback={null}>
+      <ServicesPageInner />
+    </Suspense>
+  )
+}
