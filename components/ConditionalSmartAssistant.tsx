@@ -7,7 +7,7 @@ import SmartAssistant from './SmartAssistant'
  * ConditionalSmartAssistant - Hides SmartAssistant on specific pages
  * 
  * Hidden on:
- * - /narratum (dashboard - password protected)
+ 
  * - /admin (admin pages)
  * 
  * Rationale:

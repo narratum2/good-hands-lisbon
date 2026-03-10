@@ -26,7 +26,7 @@ export default function LisbonWeddingBeautyTimelineBlog() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-ink/50" />
+          <div className="absolute inset-0 bg-ink/55" />
         </div>
         <div className="relative z-10 text-center text-white container-custom px-4">
           <p className="text-sm uppercase tracking-widest mb-2 text-gold">Wedding Beauty</p>

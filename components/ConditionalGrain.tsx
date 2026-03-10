@@ -7,7 +7,7 @@ import Grain from './Grain'
  * ConditionalGrain - Hides Grain overlay on specific pages
  * 
  * Hidden on:
- * - /narratum (dashboard - password protected)
+ 
  * - /admin (admin pages)
  * 
  * Rationale:

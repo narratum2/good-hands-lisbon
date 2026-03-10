@@ -98,11 +98,11 @@ export default function HeroModern() {
         transition={{ delay: 2, duration: 1 }}
         className="absolute bottom-8 md:bottom-12 left-1/2 transform -translate-x-1/2 z-10 flex flex-col items-center gap-3"
       >
-        <span className="text-xs uppercase tracking-[0.2em] text-white/50 hidden md:block">Scroll</span>
+        <span className="text-xs uppercase tracking-[0.2em] text-white/70 hidden md:block">Scroll</span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-          className="text-white/50 hover:text-white/80 transition-colors cursor-pointer"
+          className="text-white/70 hover:text-white/80 transition-colors cursor-pointer"
         >
           <svg
             className="w-5 h-5"

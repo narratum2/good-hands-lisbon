@@ -7,7 +7,7 @@ import Navbar from './Navbar'
  * ConditionalNavbar - Hides navbar on specific pages for better UX
  * 
  * Hidden on:
- * - /narratum (dashboard - password protected)
+ 
  * - /admin (admin pages)
  * 
  * Rationale:

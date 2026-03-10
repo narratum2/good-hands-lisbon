@@ -56,7 +56,7 @@ export default function FullWidthImageBreak({
       </motion.div>
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-ink/40 via-ink/20 to-ink/40" />
+      <div className="absolute inset-0 bg-gradient-to-b from-ink/40 via-ink/40 to-ink/40" />
 
       {/* Optional Text Overlay */}
       {(overlayText || overlaySubtext) && (
