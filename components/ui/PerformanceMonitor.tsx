@@ -22,9 +22,6 @@ export default function PerformanceMonitor() {
       const entries = list.getEntries()
       const lastEntry = entries[entries.length - 1] as PerformanceEntry & { element?: Element }
       metrics.lcp = lastEntry.startTime
-      
-      if (process.env.NODE_ENV === 'development') console.log('LCP:', metrics.lcp)
-      // Send to analytics service
       sendMetric('lcp', metrics.lcp)
     })
     lcpObserver.observe({ entryTypes: ['largest-contentful-paint'] })
@@ -35,8 +32,6 @@ export default function PerformanceMonitor() {
       entries.forEach((entry) => {
         const fid = (entry as any).processingStart - entry.startTime
         metrics.fid = fid
-        
-        if (process.env.NODE_ENV === 'development') console.log('FID:', metrics.fid)
         sendMetric('fid', metrics.fid)
       })
     })
@@ -50,8 +45,6 @@ export default function PerformanceMonitor() {
         if (!(entry as any).hadRecentInput) {
           clsValue += (entry as any).value
           metrics.cls = clsValue
-          
-          if (process.env.NODE_ENV === 'development') console.log('CLS:', metrics.cls)
           sendMetric('cls', metrics.cls)
         }
       })
@@ -62,7 +55,6 @@ export default function PerformanceMonitor() {
     const navigationEntry = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming
     if (navigationEntry) {
       metrics.ttfb = navigationEntry.responseStart - navigationEntry.requestStart
-      if (process.env.NODE_ENV === 'development') console.log('TTFB:', metrics.ttfb)
       sendMetric('ttfb', metrics.ttfb)
     }
 
@@ -72,7 +64,6 @@ export default function PerformanceMonitor() {
       entries.forEach((entry) => {
         if (entry.name === 'first-contentful-paint') {
           metrics.fcp = entry.startTime
-          if (process.env.NODE_ENV === 'development') console.log('FCP:', metrics.fcp)
           sendMetric('fcp', metrics.fcp)
         }
       })
