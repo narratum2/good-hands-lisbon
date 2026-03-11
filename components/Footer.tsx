@@ -11,6 +11,7 @@ const footerLinks = {
     { href: '/premium/weddings', label: 'Weddings' },
     { href: '/premium/retreats', label: 'Retreats' },
     { href: '/premium/corporate', label: 'Corporate' },
+    { href: '/for-photographers', label: 'For Photographers' },
     { href: '/premium/membership', label: 'Membership' },
   ],
   neighborhoods: [

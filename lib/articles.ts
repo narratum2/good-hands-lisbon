@@ -1438,6 +1438,123 @@ And in a city as photogenic as Lisbon, your nails will be in every picture.`,
     featured: false,
     published: true,
   },
+  'photographer-guide-finding-makeup-artist-lisbon': {
+    slug: 'photographer-guide-finding-makeup-artist-lisbon',
+    title: 'The Photographer\'s Guide to Finding a Makeup Artist in Lisbon',
+    excerpt: 'How to source, vet, and book reliable hair and makeup teams for your Lisbon shoots — without the usual scramble.',
+    content: `You booked a destination shoot in Lisbon. The locations are scouted, the model is confirmed, the schedule is tight. Now you need hair and makeup — in a city you may not know, with professionals who may not speak your language.
+
+This is the guide we wish someone had written for us.
+
+## The Real Challenge
+
+Finding a makeup artist in your home city is straightforward. You have referrals, you've seen their work in person, you know they understand set protocols. Lisbon is different.
+
+> "I spent three days DMing artists on Instagram before my Cascais shoot. Two never replied, one quoted triple the going rate, and the one I booked showed up 40 minutes late." — Editorial photographer, London
+
+### What Makes Lisbon Tricky
+
+- **Language barrier**: Many talented Portuguese MUAs have limited English. Great for local clients, challenging for creative direction on set.
+- **Instagram isn't reliable**: Portfolios can be heavily retouched. A beautiful feed doesn't guarantee the artist understands camera-specific techniques like flashback prevention or color theory for natural light.
+- **Location logistics**: Lisbon shoots often involve coastal locations — Cascais, Cabo da Roca, Guincho Beach. These are 30-45 minutes from the city center. Not every artist has transport or is willing to travel.
+- **Set experience varies**: Event and bridal MUAs work differently than editorial artists. You need someone who understands shot lists, look changes, and the pace of a production.
+
+## What to Look For
+
+### Camera-Ready Technical Skills
+
+The single most important differentiator. Ask specifically about:
+- **Flashback prevention**: Do they know which products contain SPF or silica that cause white-cast under flash?
+- **Color theory for lighting**: Can they adjust warmth/coolness based on whether you're shooting golden hour, overcast, or studio?
+- **Longevity products**: For a 4-hour coastal shoot, you need waterproof, humidity-resistant products. Not regular retail makeup.
+
+### Set Protocol Understanding
+
+Editorial and commercial shoots have a rhythm. Your MUA needs to understand:
+- Arriving early for prep (typically 90 minutes before first shot)
+- Staying on set for touch-ups between setups
+- Working quickly during look changes
+- Taking creative direction without ego
+- Staying out of the photographer's frame
+
+### Coastal Experience
+
+If you're shooting on the Portuguese coast (and you should — it's magnificent), the artist needs to know:
+- **Wind-proof styling**: Cabo da Roca and Guincho are notoriously windy. Hair techniques that hold versus ones that collapse in 10 minutes.
+- **Humidity-resistant products**: The Atlantic coast is humid. Standard setting spray won't cut it.
+- **Touch-up speed**: Between shots, you need someone who can fix flyaways and refresh lipstick in under 2 minutes.
+
+## Where Photographers Actually Find MUAs
+
+Based on conversations with editorial and wedding photographers who shoot regularly in Lisbon:
+
+### 1. Local Photographer Referrals
+The most reliable method. Portuguese photographers who shoot regularly know who delivers. Join Facebook groups like "Photographers in Lisbon" or ask in destination wedding photography communities.
+
+### 2. Instagram (With Caveats)
+Search hashtags: \`#makeupartistlisbon\`, \`#mualisboa\`, \`#editorialmakeuplisbon\`. But verify by:
+- Checking tagged photos (not just their grid)
+- Looking for behind-the-scenes content on real sets
+- Asking for photographer references you can contact
+
+### 3. Hotel Concierge Networks
+If you're working with a luxury hotel (Four Seasons Ritz, Tivoli, Bairro Alto Hotel), their concierge often has vetted beauty contacts. Quality varies.
+
+### 4. Concierge Services
+This is what Good Hands does. We maintain a vetted network of 150+ beauty professionals in Lisbon, specifically including artists with editorial and photoshoot experience. One request, and we match you with the right person for your specific shoot type.
+
+## The Good Hands Approach
+
+Here's how we work with photographers:
+
+**You tell us**: Date, location, number of people, style references (mood board helps), whether it's editorial/wedding/lifestyle/corporate.
+
+**We handle**: Artist matching based on your specific needs, schedule coordination, transport to remote locations, English-speaking artists, backup artist on standby for high-stakes shoots.
+
+**On set**: Your artist arrives at your location (hotel, Airbnb, or shoot site) 90 minutes before you start. They stay for the duration. Touch-ups between every setup.
+
+### What It Costs
+
+- **Single artist** (hair OR makeup): From €300, includes 90 minutes on-location with touch-ups
+- **Full team** (hair AND makeup): From €500, includes 2.5 hours, unlimited touch-ups, pre-shoot consultation
+- **Production scale** (multiple artists, multi-day): Custom rates — contact us
+
+Travel to Cascais, Sintra, or Cabo da Roca is included. Algarve shoots are available with 48 hours notice.
+
+## Quick Checklist Before You Book
+
+Whether you use Good Hands or find someone independently, verify these before committing:
+
+1. **Ask for photographer references** — not just client testimonials
+2. **Request unretouched set photos** — see how their work actually looks on camera
+3. **Confirm travel willingness** — especially for coastal or out-of-city locations
+4. **Discuss look changes** — how many, how fast, what's realistic
+5. **Agree on the timeline** — arrival time, prep duration, set availability
+6. **Clarify products** — professional, camera-ready, waterproof
+7. **Confirm communication** — English fluency if that's your working language
+8. **Get cancellation terms** — weather happens on the coast
+
+## The Bottom Line
+
+You're investing in professional photography. The location, the light, the equipment — it all costs money and effort. Don't let hair and makeup be the thing that lets you down.
+
+A reliable beauty team is the difference between photos that look polished and photos that look like a behind-the-scenes outtake. In a city as photogenic as Lisbon, you want the former.`,
+    image: '/brand-images/experience-bridal-beauty.png',
+    date: '2026-02-20',
+    category: 'City Guide',
+    author: {
+      name: 'The Good Hands Team',
+      bio: 'Lisbon\'s premier luxury beauty concierge service.',
+    },
+    readTime: '8 min read',
+    tags: ['Photographers', 'Makeup Artist', 'Lisbon', 'Photoshoot', 'Editorial', 'Beauty Team', 'Production'],
+    featured: true,
+    published: true,
+    seo: {
+      metaDescription: 'How photographers find reliable makeup artists in Lisbon for editorial, wedding, and brand shoots. Practical guide to sourcing, vetting, and booking beauty teams in Portugal.',
+      keywords: ['makeup artist Lisbon', 'photographer beauty team Portugal', 'MUA photoshoot Lisbon', 'editorial makeup artist Lisbon', 'find makeup artist Lisbon shoot', 'hair and makeup Cascais Sintra'],
+    },
+  },
 }
 
 // Calculate reading time based on content

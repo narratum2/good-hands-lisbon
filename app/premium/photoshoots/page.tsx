@@ -380,7 +380,7 @@ export default function PhotoshootsPage() {
               <div>
                 <h3 className="text-xl font-semibold text-ink mb-2">Do you work with fashion brands and editorial teams?</h3>
                 <p className="text-harbor">
-                  Yes. We regularly work with fashion shoots, brand campaigns, and editorial projects. We understand set protocols and work efficiently with creative teams. Contact us for commercial rates and multi-day bookings.
+                  Yes. We regularly work with fashion shoots, brand campaigns, and editorial projects. We understand set protocols and work efficiently with creative teams. Visit our <Link href="/for-photographers" className="text-gold hover:underline">photographer partnerships page</Link> for commercial rates and multi-day bookings.
                 </p>
               </div>
             </div>
