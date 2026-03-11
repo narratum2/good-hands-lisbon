@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Briefcase, Users, Calendar, Shield, TrendingUp, Sparkles } from 'lucide-react'
+import { Briefcase, Users, Calendar, Shield, TrendingUp, Sparkles, Building2 } from 'lucide-react'
 import { BuildingIcon, CelebrationIcon, TargetIcon, TrophyIcon, CameraIcon, GiftIcon, BriefcaseIcon, ChartIcon, ClockIcon, Handshake, LocationIcon } from '@/components/icons/CustomIcons'
 
 export const metadata: Metadata = {
@@ -251,7 +251,7 @@ export default function CorporatePage() {
             {useCases.map((useCase, index) => (
               <div key={index} className="bg-shell rounded-lg p-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-3xl">🏢</span>
+                  <Building2 className="w-6 h-6 text-gold" />
                   <h3 className="text-xl font-serif">{useCase.scenario}</h3>
                 </div>
                 

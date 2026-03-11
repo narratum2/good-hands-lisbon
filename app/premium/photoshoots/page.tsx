@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Camera, Waves, Sparkles, Car } from 'lucide-react'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/premium/photoshoots' },
@@ -74,25 +75,25 @@ export default function PhotoshootsPage() {
 
             <div className="grid md:grid-cols-2 gap-8">
               <div className="p-6 bg-white rounded-lg">
-                <h3 className="text-xl font-semibold text-ink mb-3">📸 Camera-Ready Makeup</h3>
+                <h3 className="text-xl font-semibold text-ink mb-3 flex items-center gap-2"><Camera className="w-5 h-5 text-gold flex-shrink-0" /> Camera-Ready Makeup</h3>
                 <p className="text-harbor">
                   What looks good in person often looks flat on camera. We use professional products and techniques that photograph beautifully—no flashback, no shine, just you looking your best.
                 </p>
               </div>
               <div className="p-6 bg-white rounded-lg">
-                <h3 className="text-xl font-semibold text-ink mb-3">🌊 Coastal-Proof Styling</h3>
+                <h3 className="text-xl font-semibold text-ink mb-3 flex items-center gap-2"><Waves className="w-5 h-5 text-gold flex-shrink-0" /> Coastal-Proof Styling</h3>
                 <p className="text-harbor">
                   Wind, humidity, salt air—the coast is beautiful but harsh. We use waterproof, long-lasting products and styling techniques that hold up. Your hair stays perfect from first shot to last.
                 </p>
               </div>
               <div className="p-6 bg-white rounded-lg">
-                <h3 className="text-xl font-semibold text-ink mb-3">✨ Touch-Ups Between Shots</h3>
+                <h3 className="text-xl font-semibold text-ink mb-3 flex items-center gap-2"><Sparkles className="w-5 h-5 text-gold flex-shrink-0" /> Touch-Ups Between Shots</h3>
                 <p className="text-harbor">
                   We don't just style you and leave. Your artist stays nearby for quick touch-ups—fixing flyaways, refreshing lipstick, adjusting as lighting changes. You're camera-ready the whole session.
                 </p>
               </div>
               <div className="p-6 bg-white rounded-lg">
-                <h3 className="text-xl font-semibold text-ink mb-3">🚗 We Come to You</h3>
+                <h3 className="text-xl font-semibold text-ink mb-3 flex items-center gap-2"><Car className="w-5 h-5 text-gold flex-shrink-0" /> We Come to You</h3>
                 <p className="text-harbor">
                   No need to get styled in Lisbon and drive 45 minutes to Cascais worrying about your hair. We meet you at your location—hotel, Airbnb, or directly at the shoot site.
                 </p>

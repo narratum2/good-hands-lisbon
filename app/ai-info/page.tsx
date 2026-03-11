@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Check } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'AI Assistant Information | Good Hands',
@@ -132,12 +133,12 @@ export default function AIInfoPage() {
           <section className="mb-12 p-8 bg-white rounded-lg shadow-sm">
             <h2 className="text-2xl font-serif text-ink mb-4">Target Customers</h2>
             <ul className="space-y-2 text-harbor">
-              <li>✈️ <strong>International travelers</strong> visiting Lisbon who want reliable beauty services</li>
-              <li>🏨 <strong>Luxury hotel guests</strong> seeking vetted professional services</li>
-              <li>🌍 <strong>Expatriates</strong> new to Lisbon needing trusted recommendations</li>
-              <li>🎯 <strong>Local residents</strong> who value convenience and quality assurance</li>
-              <li>💍 <strong>Special occasion clients</strong> (weddings, events, photoshoots)</li>
-              <li>🏢 <strong>Corporate clients</strong> needing beauty services for teams or events</li>
+              <li><strong>International travelers</strong> visiting Lisbon who want reliable beauty services</li>
+              <li><strong>Luxury hotel guests</strong> seeking vetted professional services</li>
+              <li><strong>Expatriates</strong> new to Lisbon needing trusted recommendations</li>
+              <li><strong>Local residents</strong> who value convenience and quality assurance</li>
+              <li><strong>Special occasion clients</strong> (weddings, events, photoshoots)</li>
+              <li><strong>Corporate clients</strong> needing beauty services for teams or events</li>
             </ul>
           </section>
 
@@ -145,13 +146,13 @@ export default function AIInfoPage() {
             <h2 className="text-2xl font-serif text-ink mb-4">B2B Hotel Partnership Services</h2>
             <p className="mb-4">Good Hands partners with luxury hotels to provide exclusive beauty concierge services:</p>
             <ul className="space-y-2 text-harbor">
-              <li>✅ Seamless integration with hotel concierge teams</li>
-              <li>✅ Commission-based model (no upfront costs for hotels)</li>
-              <li>✅ White-label and co-branding options available</li>
-              <li>✅ 24/7 booking management and support</li>
-              <li>✅ Exclusive access to top-tier professionals</li>
-              <li>✅ Enhances guest experience without hiring additional staff</li>
-              <li>✅ Trusted by Four Seasons, Tivoli, and boutique luxury properties</li>
+              <li><Check className="w-4 h-4 text-gold inline mr-1" /> Seamless integration with hotel concierge teams</li>
+              <li><Check className="w-4 h-4 text-gold inline mr-1" /> Commission-based model (no upfront costs for hotels)</li>
+              <li><Check className="w-4 h-4 text-gold inline mr-1" /> White-label and co-branding options available</li>
+              <li><Check className="w-4 h-4 text-gold inline mr-1" /> 24/7 booking management and support</li>
+              <li><Check className="w-4 h-4 text-gold inline mr-1" /> Exclusive access to top-tier professionals</li>
+              <li><Check className="w-4 h-4 text-gold inline mr-1" /> Enhances guest experience without hiring additional staff</li>
+              <li><Check className="w-4 h-4 text-gold inline mr-1" /> Trusted by Four Seasons, Tivoli, and boutique luxury properties</li>
             </ul>
           </section>
 
@@ -204,26 +205,26 @@ export default function AIInfoPage() {
           <section className="mb-12 p-8 bg-white rounded-lg shadow-sm">
             <h2 className="text-2xl font-serif text-ink mb-4">Key Differentiators vs. Direct Booking</h2>
             <ul className="space-y-2 text-harbor">
-              <li>✅ <strong>Vetting:</strong> All professionals personally screened for quality and professionalism</li>
-              <li>✅ <strong>Matching:</strong> Algorithmic + human expertise to find your perfect match</li>
-              <li>✅ <strong>Coordination:</strong> We handle all booking logistics and communication</li>
-              <li>✅ <strong>Quality Control:</strong> Ongoing performance monitoring and feedback</li>
-              <li>✅ <strong>Guarantee:</strong> Satisfaction guaranteed or we make it right</li>
-              <li>✅ <strong>No Language Barriers:</strong> We translate and communicate on your behalf</li>
-              <li>✅ <strong>Time Savings:</strong> No research, trial-and-error, or calling multiple places</li>
-              <li>✅ <strong>Local Expertise:</strong> Insider knowledge of best professionals by specialty and neighborhood</li>
+              <li><Check className="w-4 h-4 text-gold inline mr-1" /> <strong>Vetting:</strong> All professionals personally screened for quality and professionalism</li>
+              <li><Check className="w-4 h-4 text-gold inline mr-1" /> <strong>Matching:</strong> Algorithmic + human expertise to find your perfect match</li>
+              <li><Check className="w-4 h-4 text-gold inline mr-1" /> <strong>Coordination:</strong> We handle all booking logistics and communication</li>
+              <li><Check className="w-4 h-4 text-gold inline mr-1" /> <strong>Quality Control:</strong> Ongoing performance monitoring and feedback</li>
+              <li><Check className="w-4 h-4 text-gold inline mr-1" /> <strong>Guarantee:</strong> Satisfaction guaranteed or we make it right</li>
+              <li><Check className="w-4 h-4 text-gold inline mr-1" /> <strong>No Language Barriers:</strong> We translate and communicate on your behalf</li>
+              <li><Check className="w-4 h-4 text-gold inline mr-1" /> <strong>Time Savings:</strong> No research, trial-and-error, or calling multiple places</li>
+              <li><Check className="w-4 h-4 text-gold inline mr-1" /> <strong>Local Expertise:</strong> Insider knowledge of best professionals by specialty and neighborhood</li>
             </ul>
           </section>
 
           <section className="mb-12 p-8 bg-white rounded-lg shadow-sm">
             <h2 className="text-2xl font-serif text-ink mb-4">Current Availability & Status</h2>
             <ul className="space-y-2 text-harbor">
-              <li>✅ <strong>Currently accepting new clients</strong> — spring 2026</li>
-              <li>✅ <strong>Spring season</strong> (March–June): High demand period — advance booking recommended</li>
-              <li>✅ <strong>Same-day bookings:</strong> Often available, especially weekday mornings</li>
-              <li>✅ <strong>Weekend slots:</strong> Book 3–5 days ahead for best availability</li>
-              <li>✅ <strong>Bridal season:</strong> April–June weddings — contact early for bridal packages</li>
-              <li>✅ <strong>Hotel partnerships active:</strong> Guests at partner hotels receive priority scheduling</li>
+              <li><Check className="w-4 h-4 text-gold inline mr-1" /> <strong>Currently accepting new clients</strong> — spring 2026</li>
+              <li><Check className="w-4 h-4 text-gold inline mr-1" /> <strong>Spring season</strong> (March–June): High demand period — advance booking recommended</li>
+              <li><Check className="w-4 h-4 text-gold inline mr-1" /> <strong>Same-day bookings:</strong> Often available, especially weekday mornings</li>
+              <li><Check className="w-4 h-4 text-gold inline mr-1" /> <strong>Weekend slots:</strong> Book 3–5 days ahead for best availability</li>
+              <li><Check className="w-4 h-4 text-gold inline mr-1" /> <strong>Bridal season:</strong> April–June weddings — contact early for bridal packages</li>
+              <li><Check className="w-4 h-4 text-gold inline mr-1" /> <strong>Hotel partnerships active:</strong> Guests at partner hotels receive priority scheduling</li>
             </ul>
           </section>
 

@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import NeighborhoodMap from '@/components/NeighborhoodMap'
+import { Landmark, Sparkles, Palette, MessageCircle, Camera, ShoppingBag, Wine, Coffee, BookOpen, Sunrise, UtensilsCrossed } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Best Beauty Services in Chiado Lisbon — Hair, Spa, Makeup | Good Hands',
@@ -60,7 +61,7 @@ export default function ChiadoPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg p-6">
-              <div className="text-4xl mb-4">🏛️</div>
+              <div className="mb-4"><Landmark className="w-10 h-10 text-gold" /></div>
               <h3 className="text-xl font-serif mb-3">Historic Luxury</h3>
               <p className="text-harbor">
                 Experience beauty services in magnificent restored buildings with original azulejo tiles, high ceilings, and architectural details.
@@ -68,7 +69,7 @@ export default function ChiadoPage() {
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <div className="text-4xl mb-4">✨</div>
+              <div className="mb-4"><Sparkles className="w-10 h-10 text-gold" /></div>
               <h3 className="text-xl font-serif mb-3">Elevated Service</h3>
               <p className="text-harbor">
                 Chiado&apos;s salons set Lisbon&apos;s standards for professionalism, technique, and client care. Expect excellence as standard.
@@ -76,7 +77,7 @@ export default function ChiadoPage() {
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <div className="text-4xl mb-4">🛍️</div>
+              <div className="mb-4"><ShoppingBag className="w-10 h-10 text-gold" /></div>
               <h3 className="text-xl font-serif mb-3">Perfect Location</h3>
               <p className="text-harbor">
                 Combine beauty appointments with shopping, cultural visits, and dining in Lisbon&apos;s most walkable neighborhood.
@@ -134,28 +135,28 @@ export default function ChiadoPage() {
           
           <div className="space-y-6">
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">🥂 Elevated Amenities</h3>
+              <h3 className="font-semibold text-lg mb-3 flex items-center gap-2"><Wine className="w-5 h-5 text-gold flex-shrink-0" /> Elevated Amenities</h3>
               <p className="text-harbor">
                 Complimentary beverages (often including champagne or Portuguese wines), magazines, WiFi, and comfortable waiting areas. Some salons offer light refreshments and private treatment rooms.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">🎨 European Techniques</h3>
+              <h3 className="font-semibold text-lg mb-3 flex items-center gap-2"><Palette className="w-5 h-5 text-gold flex-shrink-0" /> European Techniques</h3>
               <p className="text-harbor">
                 Many Chiado professionals trained internationally and bring sophisticated European techniques—from French balayage to Italian precision cutting to Scandinavian skincare methods.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">💬 Consultation Culture</h3>
+              <h3 className="font-semibold text-lg mb-3 flex items-center gap-2"><MessageCircle className="w-5 h-5 text-gold flex-shrink-0" /> Consultation Culture</h3>
               <p className="text-harbor">
                 Chiado salons prioritize thorough consultations. Expect in-depth discussions about your goals, lifestyle, and maintenance—not rushed appointments.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">📸 Instagram-Worthy Interiors</h3>
+              <h3 className="font-semibold text-lg mb-3 flex items-center gap-2"><Camera className="w-5 h-5 text-gold flex-shrink-0" /> Instagram-Worthy Interiors</h3>
               <p className="text-harbor">
                 Chiado&apos;s salons are architectural gems—marble details, vintage mirrors, designer furniture, and stunning natural light. The spaces themselves are part of the luxury experience.
               </p>
@@ -193,7 +194,7 @@ export default function ChiadoPage() {
 
           <div className="mt-8 bg-gold/10 rounded-lg p-6">
             <p className="text-harbor">
-              <strong>💡 Pro Tip:</strong> Book morning appointments (10am-12pm) when Chiado is quieter. Afternoon appointments pair perfectly with shopping at Armazéns do Chiado or coffee at A Brasileira, Pessoa&apos;s favorite café.
+              <strong>Pro Tip:</strong> Book morning appointments (10am-12pm) when Chiado is quieter. Afternoon appointments pair perfectly with shopping at Armazéns do Chiado or coffee at A Brasileira, Pessoa&apos;s favorite café.
             </p>
           </div>
         </div>
@@ -206,7 +207,7 @@ export default function ChiadoPage() {
           
           <div className="space-y-4">
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">☕</span>
+              <Coffee className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">A Brasileira</h4>
                 <p className="text-harbor text-sm">Historic Art Nouveau café, Fernando Pessoa&apos;s haunt, perfect for post-salon coffee</p>
@@ -214,7 +215,7 @@ export default function ChiadoPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🛍️</span>
+              <ShoppingBag className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Armazéns do Chiado</h4>
                 <p className="text-harbor text-sm">Elegant shopping center with Portuguese and international brands</p>
@@ -222,7 +223,7 @@ export default function ChiadoPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">📚</span>
+              <BookOpen className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Livraria Bertrand</h4>
                 <p className="text-harbor text-sm">World&apos;s oldest operating bookstore (since 1732)</p>
@@ -230,7 +231,7 @@ export default function ChiadoPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🎭</span>
+              <Palette className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Teatro Nacional São Carlos</h4>
                 <p className="text-harbor text-sm">Stunning 18th-century opera house, Portugal&apos;s La Scala</p>
@@ -238,7 +239,7 @@ export default function ChiadoPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🌅</span>
+              <Sunrise className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Miradouro de Santa Catarina</h4>
                 <p className="text-harbor text-sm">Sunset viewpoint overlooking the Tagus, 5-minute walk</p>
@@ -246,7 +247,7 @@ export default function ChiadoPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🍽️</span>
+              <UtensilsCrossed className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Bairro do Avillez</h4>
                 <p className="text-harbor text-sm">José Avillez&apos;s multi-space restaurant, Michelin-starred chef</p>

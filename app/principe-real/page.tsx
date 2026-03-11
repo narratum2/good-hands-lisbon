@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import NeighborhoodMap from '@/components/NeighborhoodMap'
+import { Palette, TreePine, MessageCircle, Landmark, MapPin, Heart, Smartphone, Coffee, ShoppingBag, UtensilsCrossed, Wine } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Best Beauty Services in Príncipe Real Lisbon — Salons, Spas & Wellness | Good Hands',
@@ -60,7 +61,7 @@ export default function PrincipeRealPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg p-6">
-              <div className="text-4xl mb-4">🎨</div>
+              <div className="mb-4"><Palette className="w-10 h-10 text-gold" /></div>
               <h3 className="text-xl font-serif mb-3">Actually Good Colorists</h3>
               <p className="text-harbor">
                 The stylists here trained in Paris, London, Seoul. They know what's happening before it shows up on Instagram. If you want cutting-edge color or a bold cut, this is your neighborhood.
@@ -68,7 +69,7 @@ export default function PrincipeRealPage() {
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <div className="text-4xl mb-4">🌿</div>
+              <div className="mb-4"><TreePine className="w-10 h-10 text-gold" /></div>
               <h3 className="text-xl font-serif mb-3">Wellness That Works</h3>
               <p className="text-harbor">
                 Reiki, acupuncture, aromatherapy, natural facials. The practitioners here know their stuff and don't make ridiculous claims. Holistic beauty without the nonsense.
@@ -76,7 +77,7 @@ export default function PrincipeRealPage() {
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <div className="text-4xl mb-4">🏳️‍🌈</div>
+              <div className="mb-4"><Heart className="w-10 h-10 text-gold" /></div>
               <h3 className="text-xl font-serif mb-3">Everyone's Welcome</h3>
               <p className="text-harbor">
                 Gender-neutral salons. LGBTQ+-owned businesses. A neighborhood that figured out inclusivity years ago. Show up as yourself.
@@ -134,28 +135,28 @@ export default function PrincipeRealPage() {
           
           <div className="space-y-6">
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">🎭 Creative Consultations</h3>
+              <h3 className="font-semibold text-lg mb-3 flex items-center gap-2"><Palette className="w-5 h-5 text-gold flex-shrink-0" /> Creative Consultations</h3>
               <p className="text-harbor">
                 Príncipe Real professionals view beauty as art. Consultations involve inspiration boards, mood discussions, and creative exploration—not just "a little shorter." They want to understand your aesthetic vision.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">🌈 Gender-Neutral Spaces</h3>
+              <h3 className="font-semibold text-lg mb-3 flex items-center gap-2"><Heart className="w-5 h-5 text-gold flex-shrink-0" /> Gender-Neutral Spaces</h3>
               <p className="text-harbor">
                 Many salons explicitly market themselves as gender-neutral, with pricing based on time/complexity rather than gender. Non-binary friendly, with inclusive language and truly welcoming atmospheres.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">💬 English-Friendly</h3>
+              <h3 className="font-semibold text-lg mb-3 flex items-center gap-2"><MessageCircle className="w-5 h-5 text-gold flex-shrink-0" /> English-Friendly</h3>
               <p className="text-harbor">
                 Príncipe Real&apos;s international clientele means English is standard. Many stylists are multilingual, having worked abroad or trained internationally.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">📱 Instagram-First</h3>
+              <h3 className="font-semibold text-lg mb-3 flex items-center gap-2"><Smartphone className="w-5 h-5 text-gold flex-shrink-0" /> Instagram-First</h3>
               <p className="text-harbor">
                 These professionals understand social media aesthetics. They&apos;ll photograph your transformation (with permission) and ensure it looks stunning in photos—not just in person.
               </p>
@@ -193,7 +194,7 @@ export default function PrincipeRealPage() {
 
           <div className="mt-8 bg-gold/10 rounded-lg p-6">
             <p className="text-harbor">
-              <strong>💡 Pro Tip:</strong> Book afternoon appointments (2pm-5pm) to enjoy Príncipe Real&apos;s vibrant energy. Post-appointment, explore the neighborhood&apos;s rooftop bars (PARK, Topo Chiado nearby) or browse independent boutiques on Rua Dom Pedro V.
+              <strong>Pro Tip:</strong> Book afternoon appointments (2pm-5pm) to enjoy Príncipe Real&apos;s vibrant energy. Post-appointment, explore the neighborhood&apos;s rooftop bars (PARK, Topo Chiado nearby) or browse independent boutiques on Rua Dom Pedro V.
             </p>
           </div>
         </div>
@@ -206,7 +207,7 @@ export default function PrincipeRealPage() {
           
           <div className="space-y-4">
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🌳</span>
+              <TreePine className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Jardim do Príncipe Real</h4>
                 <p className="text-harbor text-sm">Beautiful garden with 100-year-old cedar tree, perfect for pre-appointment relaxation</p>
@@ -214,7 +215,7 @@ export default function PrincipeRealPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">☕</span>
+              <Coffee className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Café Príncipe Real</h4>
                 <p className="text-harbor text-sm">Traditional kiosk café in the garden, local favorite for bica and pastéis</p>
@@ -222,7 +223,7 @@ export default function PrincipeRealPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🛍️</span>
+              <ShoppingBag className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Embaixada</h4>
                 <p className="text-harbor text-sm">Concept store in a 19th-century palace, Portuguese designers and artisans</p>
@@ -230,7 +231,7 @@ export default function PrincipeRealPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🍸</span>
+              <Wine className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">PARK Rooftop Bar</h4>
                 <p className="text-harbor text-sm">Hidden rooftop with 360° city views, perfect sunset spot</p>
@@ -238,7 +239,7 @@ export default function PrincipeRealPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🏛️</span>
+              <Landmark className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Museu Nacional de História Natural</h4>
                 <p className="text-harbor text-sm">Natural history museum in beautiful Escola Politécnica building</p>
@@ -246,7 +247,7 @@ export default function PrincipeRealPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🍽️</span>
+              <UtensilsCrossed className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Pavilhão Chinês</h4>
                 <p className="text-harbor text-sm">Eclectic cocktail bar filled with curiosities, Lisbon institution</p>
@@ -264,7 +265,7 @@ export default function PrincipeRealPage() {
           <div className="bg-shell rounded-lg p-4">
             <div className="aspect-video w-full bg-harbor/10 rounded flex items-center justify-center">
               <div className="text-center text-harbor">
-                <p className="text-lg mb-2">📍 Interactive Map</p>
+                <p className="text-lg mb-2"><MapPin className="w-5 h-5 inline mr-1" /> Interactive Map</p>
                 <p className="text-sm">Google Maps integration showing Good Hands partner locations in Príncipe Real</p>
                 <p className="text-xs mt-2 text-harbor/60">(Map embed coming in production)</p>
               </div>

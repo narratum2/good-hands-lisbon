@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import TrustedByPartners from '@/components/TrustedByPartners'
-import { AlertCircleIcon, DiceIcon, ClockIcon, SearchIcon, Handshake, Sparkles, TrendingUp, BrushIcon } from '@/components/icons/CustomIcons'
+import { AlertCircleIcon, DiceIcon, ClockIcon, SearchIcon, Handshake, Sparkles, TrendingUp, BrushIcon, StarIcon } from '@/components/icons/CustomIcons'
 
 export const metadata: Metadata = {
   title: 'Hotel Partnerships | Good Hands Beauty Concierge',
@@ -364,7 +364,7 @@ export default function PartnershipsPage() {
             <div className="grid md:grid-cols-2 gap-6 md:gap-8">
               <div className="bg-white p-8 rounded-lg">
                 <div className="flex gap-1 text-gold mb-4">
-                  <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                  {[...Array(5)].map((_, i) => <StarIcon key={i} size={16} color="var(--gold)" filled />)}
                 </div>
                 <p className="text-harbor text-lg mb-4 italic">
                   "Good Hands has become an invaluable extension of our concierge team. Our guests consistently rave about the quality of services, and the seamless coordination saves us hours every week."
@@ -373,7 +373,7 @@ export default function PartnershipsPage() {
               </div>
               <div className="bg-white p-8 rounded-lg">
                 <div className="flex gap-1 text-gold mb-4">
-                  <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                  {[...Array(5)].map((_, i) => <StarIcon key={i} size={16} color="var(--gold)" filled />)}
                 </div>
                 <p className="text-harbor text-lg mb-4 italic">
                   "As a boutique property, we can't afford to have beauty professionals on staff. Good Hands allows us to offer luxury-level beauty services that match our brand, with zero overhead."

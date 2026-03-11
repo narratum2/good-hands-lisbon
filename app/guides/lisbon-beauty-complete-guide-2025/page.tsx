@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import { X } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Complete Guide to Beauty Services in Lisbon (2025) — Good Hands',
@@ -360,13 +361,13 @@ export default function CompleteBeautyGuideLisbon() {
 
             <h3 className="text-2xl font-serif mb-4">Red Flags to Avoid</h3>
             <ul>
-              <li>❌ No visible licensing or certifications</li>
-              <li>❌ Dirty facilities or unsanitized tools</li>
-              <li>❌ Pushing expensive products or services aggressively</li>
-              <li>❌ No consultation before service begins</li>
-              <li>❌ Prices significantly below market rate (quality usually reflects price)</li>
-              <li>❌ No portfolio or before/after photos</li>
-              <li>❌ Negative reviews mentioning hygiene or communication issues</li>
+              <li><X className="w-4 h-4 text-red-400 inline mr-1" /> No visible licensing or certifications</li>
+              <li><X className="w-4 h-4 text-red-400 inline mr-1" /> Dirty facilities or unsanitized tools</li>
+              <li><X className="w-4 h-4 text-red-400 inline mr-1" /> Pushing expensive products or services aggressively</li>
+              <li><X className="w-4 h-4 text-red-400 inline mr-1" /> No consultation before service begins</li>
+              <li><X className="w-4 h-4 text-red-400 inline mr-1" /> Prices significantly below market rate (quality usually reflects price)</li>
+              <li><X className="w-4 h-4 text-red-400 inline mr-1" /> No portfolio or before/after photos</li>
+              <li><X className="w-4 h-4 text-red-400 inline mr-1" /> Negative reviews mentioning hygiene or communication issues</li>
             </ul>
 
             <h3 className="text-2xl font-serif mb-4">Questions to Ask Before Booking</h3>

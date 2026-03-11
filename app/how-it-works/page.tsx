@@ -129,7 +129,7 @@ export default function HowItWorksPage() {
                   </li>
                 </ul>
                 <div className="bg-white p-4 rounded-lg mt-4 text-sm text-harbor">
-                  <strong>💡 Pro Tip:</strong> The more detail you share, the better we can match you. Don't hold back—we've heard it all!
+                  <strong>Pro Tip:</strong> The more detail you share, the better we can match you. Don't hold back—we've heard it all!
                 </div>
               </div>
             </div>
@@ -170,7 +170,7 @@ export default function HowItWorksPage() {
                   We typically shortlist 2-3 perfect matches from our vetted network. If none are ideal, we'll tell you honestly and suggest alternatives.
                 </p>
                 <div className="bg-white p-4 rounded-lg mt-4 text-sm text-harbor">
-                  <strong>⏱️ Response Time:</strong> Usually within 3-6 hours during business hours, 12-24 hours maximum
+                  <strong>Response Time:</strong> Usually within 3-6 hours during business hours, 12-24 hours maximum
                 </div>
               </div>
             </div>

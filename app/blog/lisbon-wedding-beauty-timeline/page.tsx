@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Check } from 'lucide-react'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/blog/lisbon-wedding-beauty-timeline' },
@@ -192,7 +193,7 @@ export default function LisbonWeddingBeautyTimelineBlog() {
           </ul>
 
           <p><strong>4:00 PM - Ceremony Time</strong></p>
-          <p className="text-2xl font-serif text-gold">✨ You look absolutely perfect ✨</p>
+          <p className="text-2xl font-serif text-gold">You look absolutely perfect</p>
 
           <h2>Lisbon-Specific Beauty Considerations</h2>
 
@@ -240,7 +241,7 @@ export default function LisbonWeddingBeautyTimelineBlog() {
 
           <h2>Common Wedding Beauty Mistakes to Avoid</h2>
 
-          <h3>❌ DON'T:</h3>
+          <h3>DON&apos;T:</h3>
           <ol>
             <li><strong>Try new products the week before</strong> - Risk of breakouts/reactions</li>
             <li><strong>Over-pluck eyebrows</strong> - They need time to grow</li>
@@ -252,7 +253,7 @@ export default function LisbonWeddingBeautyTimelineBlog() {
             <li><strong>Rush the morning</strong> - Start early, allow buffer time</li>
           </ol>
 
-          <h3>✅ DO:</h3>
+          <h3>DO:</h3>
           <ol>
             <li><strong>Bring reference photos</strong> - But trust your team's expertise</li>
             <li><strong>Test everything thoroughly</strong> - Including in different lighting</li>
@@ -270,15 +271,15 @@ export default function LisbonWeddingBeautyTimelineBlog() {
 
           <p><strong>What we provide:</strong></p>
           <ul>
-            <li>✅ Personal beauty team matching</li>
-            <li>✅ Coordinated trial sessions</li>
-            <li>✅ Day-of timeline management</li>
-            <li>✅ Quality guarantee</li>
-            <li>✅ Multilingual support</li>
-            <li>✅ Emergency backup plans</li>
-            <li>✅ Local expert advice</li>
-            <li>✅ Price transparency</li>
-            <li>✅ One point of contact</li>
+            <li><Check className="w-4 h-4 text-gold inline mr-1" /> Personal beauty team matching</li>
+            <li><Check className="w-4 h-4 text-gold inline mr-1" /> Coordinated trial sessions</li>
+            <li><Check className="w-4 h-4 text-gold inline mr-1" /> Day-of timeline management</li>
+            <li><Check className="w-4 h-4 text-gold inline mr-1" /> Quality guarantee</li>
+            <li><Check className="w-4 h-4 text-gold inline mr-1" /> Multilingual support</li>
+            <li><Check className="w-4 h-4 text-gold inline mr-1" /> Emergency backup plans</li>
+            <li><Check className="w-4 h-4 text-gold inline mr-1" /> Local expert advice</li>
+            <li><Check className="w-4 h-4 text-gold inline mr-1" /> Price transparency</li>
+            <li><Check className="w-4 h-4 text-gold inline mr-1" /> One point of contact</li>
           </ul>
 
           <p className="text-xl font-serif">We've coordinated 100+ Lisbon weddings. Your beauty is in expert hands.</p>
