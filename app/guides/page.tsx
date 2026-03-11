@@ -165,7 +165,7 @@ export default function GuidesPage() {
       </section>
 
       {/* CTA - Boutique-inspired elegant section */}
-      <section className="py-32 bg-[#0a0a0a] text-white text-center relative overflow-hidden">
+      <section className="py-32 bg-ink text-white text-center relative overflow-hidden">
         {/* Subtle decorative element */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border border-white/20 rounded-full" />
