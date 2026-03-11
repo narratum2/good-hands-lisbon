@@ -98,6 +98,36 @@ Always prefix your commit messages so Pascal can tell who did what:
 
 ## Background Tasks — What You Should Be Doing
 
+### PRIORITY — Spacing & Typography Audit (do this first)
+
+Bax stripped the aggressive global base heading/paragraph styles from `globals.css`.
+Before, every `<h4>` was forced to 18px/black/uppercase and every `<p>` had
+`max-width: 65ch` and `margin-bottom: 32px` — this was breaking component layouts.
+
+Now base styles only set font-family and weight. Components must handle their own
+sizing via Tailwind classes. Go through every page and verify:
+
+1. **Headings look correct** — especially h3/h4/h5 in cards, lists, FAQ accordions.
+   If a heading lost its size/color, add the appropriate Tailwind classes directly.
+2. **Paragraphs flow properly** — no stray `max-width: 65ch` effects. Paragraphs
+   inside grid columns, cards, and footers should fill their container.
+3. **Section spacing** — `section-padding` is now 96px desktop / 72px tablet / 56px mobile
+   (was 160/128/96). Check that sections don't feel cramped. If a specific section
+   needs more breathing room, add custom padding directly.
+4. **Mobile responsive** — test all pages at 375px width. Look for overflows,
+   text clipping, columns that don't stack properly.
+
+Files most likely to need attention:
+- `app/services/page.tsx` (many h3/h4 headings in service cards)
+- `app/premium/*/page.tsx` (feature cards with h3 headings)
+- `app/*/page.tsx` (neighborhood pages with attraction lists)
+- `components/FAQExpanded.tsx`, `components/FAQ.tsx` (accordion headings)
+- `app/how-it-works/page.tsx` (step cards)
+- `app/book/page.tsx` (form labels, step headers)
+
+For each file, the fix is: add explicit Tailwind size/color classes where
+the heading or paragraph previously relied on the global base styles.
+
 ### Weekly: Content & Blog
 - Write 1-2 new blog posts in `content/blog/` as markdown files
 - Register them in `lib/articles.ts`
@@ -146,9 +176,10 @@ When making visual changes, use these tokens consistently:
 - No emojis in UI — use Lucide React icons only
 
 **Spacing:**
-- Sections: `section-padding` class
-- Containers: `container-custom` class
+- Sections: `section-padding` class (96px desktop, 72px tablet, 56px mobile)
+- Containers: `container-custom` class (max-width 1280px, 64px side padding)
 - Max widths: `max-w-6xl` (wide), `max-w-4xl` (content), `max-w-3xl` (narrow)
+- No global heading/paragraph margins — add `mb-X` via Tailwind on each element
 
 **Components:**
 - No rounded corners on editorial content (cards, images)
