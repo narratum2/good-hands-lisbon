@@ -42,7 +42,7 @@ export default function ExperiencesPreview() {
           <h2 className="text-4xl md:text-5xl font-serif mb-4">
             Special Occasions
           </h2>
-          <p className="text-harbor text-lg max-w-2xl mx-auto">
+          <p className="text-center text-harbor text-lg max-w-2xl mx-auto">
             Weddings, photoshoots, retreats. We handle all the beauty coordination.
           </p>
         </motion.div>
