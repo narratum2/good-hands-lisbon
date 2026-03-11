@@ -32,7 +32,7 @@ export default function HeroModern() {
       </div>
 
       {/* Content - Editorial Layout with staggered animations */}
-      <div className="relative z-10 container-custom text-center text-white px-6 md:px-8">
+      <div className="relative z-10 w-full max-w-6xl mx-auto text-center text-white px-6 md:px-8">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

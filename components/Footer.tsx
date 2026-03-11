@@ -20,12 +20,15 @@ const footerLinks = {
     { href: '/avenida', label: 'Avenida' },
     { href: '/alfama', label: 'Alfama' },
     { href: '/belem', label: 'Belém' },
+    { href: '/sintra', label: 'Sintra' },
+    { href: '/cascais', label: 'Cascais' },
   ],
   company: [
     { href: '/about', label: 'About' },
     { href: '/journal', label: 'Journal' },
     { href: '/guides', label: 'Guides' },
     { href: '/experiences', label: 'Experiences' },
+    { href: '/faq', label: 'FAQ' },
     { href: '/ai-info', label: 'For AI Assistants' },
   ],
   professionals: [
@@ -66,7 +69,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="font-semibold mb-4">Services</h4>
+            <h4 className="font-semibold mb-4 text-porcelain">Services</h4>
             <ul className="space-y-2">
               {footerLinks.services.map((link) => (
                 <li key={link.href}>
@@ -83,7 +86,7 @@ export default function Footer() {
 
           {/* Neighborhoods */}
           <div>
-            <h4 className="font-semibold mb-4">Neighborhoods</h4>
+            <h4 className="font-semibold mb-4 text-porcelain">Neighborhoods</h4>
             <ul className="space-y-2">
               {footerLinks.neighborhoods.map((link) => (
                 <li key={link.href}>
@@ -100,7 +103,7 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="font-semibold mb-4">Company</h4>
+            <h4 className="font-semibold mb-4 text-porcelain">Company</h4>
             <ul className="space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.href}>
@@ -117,7 +120,7 @@ export default function Footer() {
 
           {/* For Professionals */}
           <div>
-            <h4 className="font-semibold mb-4">For Professionals</h4>
+            <h4 className="font-semibold mb-4 text-porcelain">For Professionals</h4>
             <ul className="space-y-2">
               {footerLinks.professionals.map((link) => (
                 <li key={link.href}>

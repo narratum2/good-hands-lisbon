@@ -16,6 +16,7 @@ export type ArticleCategory =
   | 'Skincare'
   | 'Nail Art'
   | 'Wellness'
+  | 'Lifestyle'
   | 'Global Exploration'
 
 export interface Article {

@@ -14,6 +14,7 @@ interface BookingFormData {
   date: string
   time: string
   message: string
+  website: string
 }
 
 export default function BookingForm() {
@@ -26,6 +27,7 @@ export default function BookingForm() {
     date: '',
     time: '',
     message: '',
+    website: '',
   })
   const [currentStep, setCurrentStep] = useState(1)
   const [isMobile, setIsMobile] = useState(false)
@@ -113,6 +115,7 @@ export default function BookingForm() {
           date: '',
           time: '',
           message: '',
+          website: '',
         })
       } else {
         setSubmitStatus('error')
@@ -518,56 +521,83 @@ export default function BookingForm() {
               </>
             )}
 
+            {/* Honeypot field for spam prevention */}
+            <input
+              type="text"
+              name="website"
+              value={formData.website || ''}
+              onChange={handleChange}
+              className="absolute -left-[9999px]"
+              tabIndex={-1}
+              autoComplete="off"
+              aria-hidden="true"
+            />
+
             {/* Mobile: Navigation buttons */}
             {isMobile ? (
-              <div className="mt-8 flex gap-3">
-                {currentStep > 1 && (
-                  <button
-                    type="button"
-                    onClick={prevStep}
-                    className="flex-1 btn-secondary"
-                  >
-                    ← Back
-                  </button>
+              <div className="mt-8">
+                {currentStep === 3 && (
+                  <p className="text-harbor/70 text-xs text-center mb-4">This is a request, not a final booking. We will personally confirm availability and get back to you within a few hours.</p>
                 )}
-                {currentStep < 3 ? (
-                  <button
-                    type="button"
-                    onClick={nextStep}
-                    disabled={!validateStep(currentStep)}
-                    className="flex-1 btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
-                  >
-                    Continue →
-                  </button>
-                ) : (
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="flex-1 btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
-                  >
-                    {isSubmitting ? 'Submitting...' : 'Submit Request'}
-                  </button>
-                )}
+                <div className="flex gap-3">
+                  {currentStep > 1 && (
+                    <button
+                      type="button"
+                      onClick={prevStep}
+                      className="flex-1 btn-secondary"
+                    >
+                      ← Back
+                    </button>
+                  )}
+                  {currentStep < 3 ? (
+                    <button
+                      type="button"
+                      onClick={nextStep}
+                      disabled={!validateStep(currentStep)}
+                      className="flex-1 btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      Continue →
+                    </button>
+                  ) : (
+                    <button
+                      type="submit"
+                      disabled={isSubmitting}
+                      className="flex-1 btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      {isSubmitting ? 'Submitting...' : 'Submit Request'}
+                    </button>
+                  )}
+                </div>
               </div>
             ) : (
               /* Desktop: Single submit button */
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                {isSubmitting ? 'Submitting...' : 'Submit Booking Request'}
-              </button>
+              <>
+                <p className="text-harbor/70 text-xs text-center mb-4">This is a request, not a final booking. We will personally confirm availability and get back to you within a few hours.</p>
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {isSubmitting ? 'Submitting...' : 'Submit Booking Request'}
+                </button>
+              </>
             )}
 
             {submitStatus === 'success' && (
-              <motion.p
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="mt-4 text-center text-sage font-medium"
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                className="mt-6 bg-white rounded-xl p-8 text-center border border-gold/20"
               >
-                Request received! We'll respond within 2 hours with availability, pricing, and next steps.
-              </motion.p>
+                <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                </div>
+                <h3 className="text-2xl font-serif mb-2">Request Received</h3>
+                <p className="text-harbor leading-relaxed">
+                  We have your booking request and will get back to you <strong>within a few hours</strong> to confirm availability and finalize your appointment.
+                </p>
+                <p className="text-harbor/60 text-sm mt-3">Check your email (including spam) for our confirmation.</p>
+              </motion.div>
             )}
 
             {submitStatus === 'error' && (

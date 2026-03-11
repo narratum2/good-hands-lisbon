@@ -16,7 +16,7 @@ export default function BaixaPage() {
       <section className="relative h-[70vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image 
-            src="/brand-images/ai-generated/lisbon-cityscape.jpg" 
+            src="/brand-images/neighborhood-guide-baixa-hero.png" 
             alt="Baixa district Lisbon - central beauty services in historic downtown" 
             fill 
             className="object-cover" 
@@ -97,7 +97,7 @@ export default function BaixaPage() {
               <p className="text-harbor mb-3">
                 Baixa excels at efficiency without sacrificing quality. Many salons offer express cuts, same-day color, and blowouts for professionals and travelers on tight schedules. Booking systems are streamlined, and most accept walk-ins during off-peak hours.
               </p>
-              <p className="text-sm text-gold">From €70 • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">Pricing on request • Includes expert concierge matching</p>
             </div>
 
             <div className="border-b border-harbor/10 pb-6">
@@ -105,7 +105,7 @@ export default function BaixaPage() {
               <p className="text-harbor mb-3">
                 Express manicures, eyebrow shaping, and quick facials designed for 45-60 minute lunch breaks. Baixa&apos;s salons understand the downtown professional clientele and offer services that fit business schedules.
               </p>
-              <p className="text-sm text-gold">From €40 • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">Pricing on request • Includes expert concierge matching</p>
             </div>
 
             <div className="border-b border-harbor/10 pb-6">
@@ -113,7 +113,7 @@ export default function BaixaPage() {
               <p className="text-harbor mb-3">
                 Several high-quality spas operate near Baixa&apos;s luxury hotels. If you&apos;re staying downtown, you can walk to treatments without navigating Lisbon&apos;s hills. Many offer couples packages and pre-dinner beautification.
               </p>
-              <p className="text-sm text-gold">From €85 • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">Pricing on request • Includes expert concierge matching</p>
             </div>
 
             <div className="pb-6">
@@ -121,7 +121,7 @@ export default function BaixaPage() {
               <p className="text-harbor mb-3">
                 Traditional barbershops alongside modern grooming lounges. Baixa&apos;s business district means strong demand for professional men&apos;s services—sharp haircuts, beard trims, and executive grooming.
               </p>
-              <p className="text-sm text-gold">From €30 • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">Pricing on request • Includes expert concierge matching</p>
             </div>
           </div>
         </div>
@@ -317,11 +317,11 @@ export default function BaixaPage() {
       {/* CTA */}
       <section className="section-padding bg-ink text-white text-center">
         <div className="container-custom">
-          <h2 className="text-4xl md:text-5xl font-serif mb-6">Book Your Baixa Experience</h2>
+          <h2 className="text-4xl md:text-5xl font-serif mb-6 text-white">Book Your Baixa Experience</h2>
           <p className="text-xl text-porcelain/80 mb-8 max-w-2xl mx-auto">
             Let us match you with the perfect beauty professional in Lisbon&apos;s most accessible neighborhood
           </p>
-          <Link href="/book" className="btn-primary">Book Now</Link>
+          <Link href="/book" className="btn-gold">Book Now</Link>
           <p className="text-sm text-porcelain/60 mt-6">
             All prices include expert concierge matching & coordination
           </p>

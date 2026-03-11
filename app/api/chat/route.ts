@@ -67,36 +67,39 @@ export async function POST(request: Request) {
 
 // Smart auto-replies based on message content
 function getAutoReply(message: string): string {
-  // Booking related
-  if (message.includes('book') || message.includes('appointment') || message.includes('schedule')) {
-    return "I can help you book right away! Click 'Book Now' below or visit our booking page. We'll match you with the perfect professional. 📅"
+  if (message.includes('book') || message.includes('appointment') || message.includes('schedule') || message.includes('reserve')) {
+    return "I'd love to help you book! You can click 'Book Now' or visit our booking page. We'll match you with the perfect professional and get back to you within a few hours."
   }
   
-  // Service questions
-  if (message.includes('hair') || message.includes('color') || message.includes('cut')) {
-    return "We have amazing hair stylists in Lisbon! From €105. Would you like to book a hair service? 💇"
+  if (message.includes('hair') || message.includes('color') || message.includes('cut') || message.includes('balayage')) {
+    return "We work with exceptional hair stylists across Lisbon. Pricing is personalized based on the service and stylist match. Would you like to tell us what you're looking for?"
   }
   
-  if (message.includes('nail') || message.includes('manicure') || message.includes('pedicure')) {
-    return "Our nail specialists are excellent! Services from €60. Ready to book? 💅"
+  if (message.includes('nail') || message.includes('manicure') || message.includes('pedicure') || message.includes('gel')) {
+    return "Our nail specialists are wonderful. From classic manicures to luxury pedicures and nail art. Want to book a nail service?"
   }
   
-  if (message.includes('spa') || message.includes('massage') || message.includes('facial')) {
-    return "We offer luxurious spa treatments and facials from €125. Interested in booking? ✨"
+  if (message.includes('spa') || message.includes('massage') || message.includes('facial') || message.includes('skin')) {
+    return "We offer curated spa treatments and facials with vetted professionals. From Swedish massage to anti-aging facials. Interested in booking?"
   }
   
-  // Pricing questions
-  if (message.includes('price') || message.includes('cost') || message.includes('how much')) {
-    return "Our services range from €60 (nails) to €800 (wedding packages). All prices include our concierge service. Want to see specific pricing? 💰"
+  if (message.includes('price') || message.includes('cost') || message.includes('how much') || message.includes('expensive')) {
+    return "Our pricing is personalized based on the service and professional match. We provide a quote after understanding your needs — no surprises, no hidden fees. Concierge service is always included."
   }
   
-  // Location questions
-  if (message.includes('where') || message.includes('location') || message.includes('neighborhood')) {
-    return "We serve 8 neighborhoods in Lisbon: Chiado, Príncipe Real, Baixa, Alfama, Belém, Cascais, Sintra, and Avenida. Which area works for you? 📍"
+  if (message.includes('where') || message.includes('location') || message.includes('neighborhood') || message.includes('area')) {
+    return "We serve 8 neighborhoods in Lisbon: Chiado, Príncipe Real, Baixa, Alfama, Belém, Avenida, plus Cascais and Sintra. Which area works best for you?"
   }
   
-  // General inquiry
-  return "Thanks for reaching out! A member of our team will respond within 2 hours. In the meantime, you can book instantly or browse our services. How can I help you today? 😊"
+  if (message.includes('wedding') || message.includes('bridal') || message.includes('bride')) {
+    return "We coordinate complete bridal beauty packages — from trials to the big day. Hair, makeup, skincare, everything. Tell us about your wedding and we'll create a custom package."
+  }
+
+  if (message.includes('corporate') || message.includes('team') || message.includes('company') || message.includes('event')) {
+    return "We offer corporate wellness and beauty packages for teams and events. From retreat coordination to on-site services. What kind of event are you planning?"
+  }
+  
+  return "Thanks for reaching out! A member of our team will respond within a few hours. In the meantime, you can book directly or browse our services. How can I help you today?"
 }
 
 // GET endpoint to retrieve chat history (for admin or returning users)

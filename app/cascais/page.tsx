@@ -16,7 +16,7 @@ export default function CascaisPage() {
       <section className="relative h-[70vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image 
-            src="/brand-images/ai-generated/service-facial-spa.jpg" 
+            src="/brand-images/neighborhood-guide-cascais-hero.png" 
             alt="Cascais coastal beauty - luxury seaside spa and wellness services" 
             fill 
             className="object-cover" 
@@ -97,7 +97,7 @@ export default function CascaisPage() {
               <p className="text-harbor mb-3">
                 Cascais hotels (Grande Real Villa Italia, Farol Design Hotel, Pestana Cidadela) house world-class spas offering thalassotherapy (seawater treatments), outdoor massage pavilions, and sunset spa rituals. Many offer day passes or membership programs for non-guests.
               </p>
-              <p className="text-sm text-gold">From €120 • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">Pricing on request • Includes expert concierge matching</p>
             </div>
 
             <div className="border-b border-harbor/10 pb-6">
@@ -105,7 +105,7 @@ export default function CascaisPage() {
               <p className="text-harbor mb-3">
                 Salons specializing in beach-appropriate styles—beachy waves, salt spray textures, protective treatments for sun and sea exposure. Many clients are expats living here year-round, so quality is consistently high and international standards apply.
               </p>
-              <p className="text-sm text-gold">From €75 • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">Pricing on request • Includes expert concierge matching</p>
             </div>
 
             <div className="border-b border-harbor/10 pb-6">
@@ -113,7 +113,7 @@ export default function CascaisPage() {
               <p className="text-harbor mb-3">
                 Pre-beach body prep services: spray tans, bikini waxing, body scrubs, cellulite treatments, and summer skin prep. Cascais excels at beach-body treatments with professionals who understand maintaining results in sun, sand, and saltwater.
               </p>
-              <p className="text-sm text-gold">From €50 • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">Pricing on request • Includes expert concierge matching</p>
             </div>
 
             <div className="pb-6">
@@ -121,7 +121,7 @@ export default function CascaisPage() {
               <p className="text-harbor mb-3">
                 Coastal lifestyle demands long-lasting nail services. Cascais nail technicians excel at gel systems that survive pool, beach, and active lifestyles. Expect 3+ weeks of perfect wear, even with daily swimming.
               </p>
-              <p className="text-sm text-gold">From €45 • Includes expert concierge matching</p>
+              <p className="text-sm text-gold">Pricing on request • Includes expert concierge matching</p>
             </div>
           </div>
         </div>
@@ -331,11 +331,11 @@ export default function CascaisPage() {
       {/* CTA */}
       <section className="section-padding bg-ink text-white text-center">
         <div className="container-custom">
-          <h2 className="text-4xl md:text-5xl font-serif mb-6">Book Your Cascais Experience</h2>
+          <h2 className="text-4xl md:text-5xl font-serif mb-6 text-white">Book Your Cascais Experience</h2>
           <p className="text-xl text-porcelain/80 mb-8 max-w-2xl mx-auto">
             Let us match you with beauty professionals in Portugal&apos;s premier coastal resort
           </p>
-          <Link href="/book" className="btn-primary">Book Now</Link>
+          <Link href="/book" className="btn-gold">Book Now</Link>
           <p className="text-sm text-porcelain/60 mt-6">
             All prices include expert concierge matching & coordination
           </p>

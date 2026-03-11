@@ -355,6 +355,45 @@ export function getServiceSchema(service: {
   }
 }
 
+/**
+ * Generate LocalBusiness Schema for neighborhood pages
+ */
+export function getLocalBusinessSchema(neighborhood: {
+  name: string
+  slug: string
+  description: string
+  lat: string
+  lng: string
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    '@id': `${BUSINESS_INFO.baseUrl}/${neighborhood.slug}#localbusiness`,
+    name: `Good Hands — ${neighborhood.name}`,
+    description: neighborhood.description,
+    url: getFullUrl(`/${neighborhood.slug}`),
+    parentOrganization: {
+      '@type': 'BeautySalon',
+      '@id': `${BUSINESS_INFO.baseUrl}/#organization`,
+      name: BUSINESS_INFO.name,
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: neighborhood.lat,
+      longitude: neighborhood.lng,
+    },
+    areaServed: {
+      '@type': 'Neighborhood',
+      name: neighborhood.name,
+      containedInPlace: {
+        '@type': 'City',
+        name: 'Lisbon',
+      },
+    },
+    priceRange: '€€€',
+  }
+}
+
 // ===== EXPORT EVERYTHING =====
 export default {
   BUSINESS_INFO,
@@ -367,5 +406,6 @@ export default {
   getBreadcrumbSchema,
   getArticleSchema,
   getServiceSchema,
+  getLocalBusinessSchema,
 }
 

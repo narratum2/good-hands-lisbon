@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { FULL_PRICING_SENTENCE } from '@/lib/pricing'
 
 const faqs = [
   {
@@ -30,7 +31,7 @@ const faqs = [
     questions: [
       {
         q: 'How much does it cost?',
-        a: 'Hair starts at €105. Nails at €65. Skincare at €95. Makeup at €85. Wellness at €80. That includes the service and our concierge fee. No hidden costs. What you see is what you pay.'
+        a: FULL_PRICING_SENTENCE
       },
       {
         q: 'Is the concierge fee worth it?',
@@ -173,7 +174,7 @@ export default function FAQExpanded() {
           <h2 className="text-4xl md:text-5xl font-serif mb-4">
             Frequently Asked Questions
           </h2>
-          <p className="text-harbor text-lg">
+          <p className="text-harbor text-lg text-center">
             Everything you need to know about Good Hands
           </p>
         </div>
@@ -262,7 +263,7 @@ export default function FAQExpanded() {
           transition={{ duration: 0.6 }}
           className="mt-16 text-center bg-gradient-to-br from-ink to-harbor text-white rounded-lg p-12 md:p-16"
         >
-          <h3 className="text-3xl md:text-4xl font-serif mb-4">Still have questions?</h3>
+          <h3 className="text-3xl md:text-4xl font-serif mb-4 text-white">Still have questions?</h3>
           <p className="text-porcelain/90 text-lg mb-8 max-w-2xl mx-auto">
             Our concierge team is here to help. Get in touch and we'll answer within 24 hours.
           </p>
@@ -274,26 +275,6 @@ export default function FAQExpanded() {
           </a>
         </motion.div>
 
-        {/* Schema markup for AI/SEO */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'FAQPage',
-              mainEntity: faqs.flatMap(category =>
-                category.questions.map(faq => ({
-                  '@type': 'Question',
-                  name: faq.q,
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: faq.a,
-                  },
-                }))
-              ),
-            }),
-          }}
-        />
       </div>
     </section>
   )

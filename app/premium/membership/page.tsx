@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { Check, Star, Crown, Sparkles } from 'lucide-react'
+import { Check, Star, Crown, Sparkles, Percent, Zap } from 'lucide-react'
 import MembershipButton from '@/components/MembershipButton'
 
 export const metadata: Metadata = {
@@ -57,7 +57,7 @@ export default function MembershipPage() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="#plans" className="btn-primary">
+            <a href="#plans" className="btn-gold">
               View Membership Plans
             </a>
             <Link href="/book" className="btn-secondary bg-white/10 hover:bg-white/20 text-white border-white/30">
@@ -82,7 +82,7 @@ export default function MembershipPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">💰</span>
+                <Percent className="w-8 h-8 text-gold" />
               </div>
               <h3 className="text-xl font-serif mb-2">Save Significantly</h3>
               <p className="text-harbor">
@@ -92,7 +92,7 @@ export default function MembershipPage() {
 
             <div className="text-center">
               <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">⚡</span>
+                <Zap className="w-8 h-8 text-gold" />
               </div>
               <h3 className="text-xl font-serif mb-2">Priority Access</h3>
               <p className="text-harbor">
@@ -102,7 +102,7 @@ export default function MembershipPage() {
 
             <div className="text-center">
               <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">✨</span>
+                <Sparkles className="w-8 h-8 text-gold" />
               </div>
               <h3 className="text-xl font-serif mb-2">Exclusive Perks</h3>
               <p className="text-harbor">
@@ -385,14 +385,14 @@ export default function MembershipPage() {
       {/* CTA */}
       <section className="section-padding bg-ink text-white">
         <div className="container-custom text-center">
-          <h2 className="text-4xl md:text-5xl font-serif mb-6">
+          <h2 className="text-4xl md:text-5xl font-serif mb-6 text-white">
             Ready to Join?
           </h2>
           <p className="text-xl text-porcelain/80 mb-8 max-w-2xl mx-auto">
             Start saving today and enjoy VIP access to Lisbon's finest beauty professionals
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#plans" className="btn-primary">
+            <a href="#plans" className="btn-gold">
               Choose Your Plan
             </a>
             <Link href="/book" className="btn-secondary bg-white/10 hover:bg-white/20 text-white border-white/30">

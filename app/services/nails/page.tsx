@@ -301,13 +301,13 @@ export default function NailServicesPage() {
       {/* CTA */}
       <section className="section-padding bg-ink text-white text-center">
         <div className="container-custom">
-          <h2 className="text-4xl md:text-5xl font-serif mb-6">
+          <h2 className="text-4xl md:text-5xl font-serif mb-6 text-white">
             Ready for Perfect Nails?
           </h2>
           <p className="text-xl text-porcelain/80 mb-8 max-w-2xl mx-auto">
             We&apos;ll match you with a vetted nail technician in a pristine salon
           </p>
-          <Link href="/book" className="btn-primary">
+          <Link href="/book" className="btn-gold">
             Book Nail Service
           </Link>
           <p className="text-sm text-porcelain/60 mt-6">
