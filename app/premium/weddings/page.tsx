@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
-import { BrushIcon, SparklesIcon, CalendarIcon, LocationIcon } from '@/components/icons/CustomIcons'
+import { BrushIcon, SparklesIcon, CalendarIcon, LocationIcon, StarIcon } from '@/components/icons/CustomIcons'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/premium/weddings' },
@@ -378,7 +378,7 @@ export default function WeddingsPage() {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-porcelain p-8 rounded-lg">
                 <div className="flex gap-1 text-gold mb-4">
-                  <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                  {[...Array(5)].map((_, i) => <StarIcon key={i} size={16} color="var(--gold)" filled />)}
                 </div>
                 <p className="text-harbor text-lg mb-4 italic">
                   "Good Hands made my wedding day stress-free. The team was punctual, professional, and my makeup lasted through tears, dancing, and everything in between. I felt like the most beautiful version of myself."
@@ -388,7 +388,7 @@ export default function WeddingsPage() {
               </div>
               <div className="bg-porcelain p-8 rounded-lg">
                 <div className="flex gap-1 text-gold mb-4">
-                  <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                  {[...Array(5)].map((_, i) => <StarIcon key={i} size={16} color="var(--gold)" filled />)}
                 </div>
                 <p className="text-harbor text-lg mb-4 italic">
                   "Having one coordinator for all 8 bridesmaids was a lifesaver. Everyone looked stunning and we finished on schedule. The trial sessions gave me complete confidence."

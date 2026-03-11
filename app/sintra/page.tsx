@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import NeighborhoodMap from '@/components/NeighborhoodMap'
+import { Castle, Sparkles, Landmark, Waves, MapPin, Banknote, Palette, Clock, TreePine, Heart, Cloud, Leaf, UtensilsCrossed } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Best Beauty & Wellness in Sintra Portugal — Romantic Spas & Mountain Retreats | Good Hands',
@@ -60,7 +61,7 @@ export default function SintraPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg p-6">
-              <div className="text-4xl mb-4">🏰</div>
+              <div className="mb-4"><Castle className="w-10 h-10 text-gold" /></div>
               <h3 className="text-xl font-serif mb-3">Romantic Atmosphere</h3>
               <p className="text-harbor">
                 Treatments in historic quintas, forest-view spas, and settings straight from fairy tales. The location elevates every experience.
@@ -68,7 +69,7 @@ export default function SintraPage() {
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <div className="text-4xl mb-4">🌳</div>
+              <div className="mb-4"><TreePine className="w-10 h-10 text-gold" /></div>
               <h3 className="text-xl font-serif mb-3">Nature Integration</h3>
               <p className="text-harbor">
                 Forest air, mountain water, herbal gardens—Sintra&apos;s natural environment is woven into wellness treatments and products.
@@ -76,7 +77,7 @@ export default function SintraPage() {
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <div className="text-4xl mb-4">💑</div>
+              <div className="mb-4"><Heart className="w-10 h-10 text-gold" /></div>
               <h3 className="text-xl font-serif mb-3">Couples & Retreats</h3>
               <p className="text-harbor">
                 Perfect for romantic getaways, honeymoons, anniversary celebrations, or pre-wedding pampering. Escape-focused experiences.
@@ -134,28 +135,28 @@ export default function SintraPage() {
           
           <div className="space-y-6">
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">🌫️ Microclimate Considerations</h3>
+              <h3 className="font-semibold text-lg mb-3 flex items-center gap-2"><Cloud className="w-5 h-5 text-gold flex-shrink-0" /> Microclimate Considerations</h3>
               <p className="text-harbor">
                 Sintra is 5-10°C cooler than Lisbon, with frequent mist and unpredictable weather. Bring layers even in summer. Indoor spa facilities are climate-controlled, but outdoor gardens and terraces can be chilly. Check weather before outdoor treatments.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">⏰ Slow, Leisurely Pace</h3>
+              <h3 className="font-semibold text-lg mb-3 flex items-center gap-2"><Clock className="w-5 h-5 text-gold flex-shrink-0" /> Slow, Leisurely Pace</h3>
               <p className="text-harbor">
                 Nothing in Sintra moves quickly. Treatments are longer, transitions unhurried, and the philosophy is about disconnecting from modern life&apos;s rush. Don&apos;t book back-to-back activities—Sintra demands you slow down.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">🍃 Natural & Organic Focus</h3>
+              <h3 className="font-semibold text-lg mb-3 flex items-center gap-2"><Leaf className="w-5 h-5 text-gold flex-shrink-0" /> Natural & Organic Focus</h3>
               <p className="text-harbor">
                 Sintra wellness centers emphasize natural, often locally-sourced products. Expect herbal treatments, botanical ingredients from Sintra&apos;s gardens, and holistic approaches prioritizing natural healing over aggressive interventions.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">💰 Premium Pricing, Worth It</h3>
+              <h3 className="font-semibold text-lg mb-3"><Banknote className="w-5 h-5 inline mr-1" /> Premium Pricing, Worth It</h3>
               <p className="text-harbor">
                 Sintra beauty services cost 30-40% more than Lisbon due to location, settings, and experience design. But you&apos;re paying for an unforgettable setting and escape, not just a treatment. Consider it part of a romantic weekend investment.
               </p>
@@ -193,7 +194,7 @@ export default function SintraPage() {
 
           <div className="mt-8 bg-gold/10 rounded-lg p-6">
             <p className="text-harbor">
-              <strong>💡 Pro Tip:</strong> Book spa appointments for mid-afternoon (2-5pm), arrive early for lunch, then stay for dinner after your treatment. Sintra&apos;s magic intensifies as day-trippers leave and mist settles over the mountains. Make it an overnight experience if possible.
+              <strong>Pro Tip:</strong> Book spa appointments for mid-afternoon (2-5pm), arrive early for lunch, then stay for dinner after your treatment. Sintra&apos;s magic intensifies as day-trippers leave and mist settles over the mountains. Make it an overnight experience if possible.
             </p>
           </div>
         </div>
@@ -206,7 +207,7 @@ export default function SintraPage() {
           
           <div className="space-y-4">
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🎨</span>
+              <Palette className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Pena Palace</h4>
                 <p className="text-harbor text-sm">Colorful Romantic palace, UNESCO site, most Instagram-famous Portuguese landmark</p>
@@ -214,7 +215,7 @@ export default function SintraPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🌟</span>
+              <Sparkles className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Quinta da Regaleira</h4>
                 <p className="text-harbor text-sm">Mystical estate with initiation well, underground tunnels, symbolic gardens</p>
@@ -222,7 +223,7 @@ export default function SintraPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🏰</span>
+              <Castle className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Moorish Castle</h4>
                 <p className="text-harbor text-sm">8th-century fortress ruins with panoramic mountain views, atmospheric in mist</p>
@@ -230,7 +231,7 @@ export default function SintraPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🏛️</span>
+              <Landmark className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">National Palace of Sintra</h4>
                 <p className="text-harbor text-sm">Royal palace in town center, distinctive twin chimneys, medieval and Manueline architecture</p>
@@ -238,7 +239,7 @@ export default function SintraPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🌳</span>
+              <TreePine className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Monserrate Palace & Gardens</h4>
                 <p className="text-harbor text-sm">Exotic botanical gardens surrounding Romantic palace, less crowded than Pena</p>
@@ -246,7 +247,7 @@ export default function SintraPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🥐</span>
+              <Sparkles className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Piriquita Pastry Shop</h4>
                 <p className="text-harbor text-sm">Since 1862, original travesseiros (almond pillows) and queijadas (cheese tarts)</p>
@@ -254,7 +255,7 @@ export default function SintraPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🍽️</span>
+              <UtensilsCrossed className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Tascantiga</h4>
                 <p className="text-harbor text-sm">Cozy restaurant serving traditional Portuguese petiscos (tapas) in historic setting</p>
@@ -262,7 +263,7 @@ export default function SintraPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🌊</span>
+              <Waves className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Praia das Maçãs</h4>
                 <p className="text-harbor text-sm">Beach at Sintra&apos;s edge, historic tram connection, seafood restaurants</p>
@@ -280,7 +281,7 @@ export default function SintraPage() {
           <div className="bg-shell rounded-lg p-4">
             <div className="aspect-video w-full bg-harbor/10 rounded flex items-center justify-center">
               <div className="text-center text-harbor">
-                <p className="text-lg mb-2">📍 Interactive Map</p>
+                <p className="text-lg mb-2"><MapPin className="w-5 h-5 inline mr-1" /> Interactive Map</p>
                 <p className="text-sm">Google Maps integration showing Good Hands partner locations in Sintra</p>
                 <p className="text-xs mt-2 text-harbor/60">(Map embed coming in production)</p>
               </div>

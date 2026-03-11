@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import NeighborhoodMap from '@/components/NeighborhoodMap'
+import { Waves, Banknote, Castle, Palette, MapPin, Clock, MessageCircle, Home, Users, Heart, Landmark, Sparkles, TreePine, Ship } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Best Beauty Services in Belém Lisbon — Waterfront Salons & Local Spas | Good Hands',
@@ -60,7 +61,7 @@ export default function BelemPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg p-6">
-              <div className="text-4xl mb-4">🌊</div>
+              <div className="mb-4"><Waves className="w-10 h-10 text-gold" /></div>
               <h3 className="text-xl font-serif mb-3">Peaceful Atmosphere</h3>
               <p className="text-harbor">
                 Escape central Lisbon&apos;s crowds. Belém&apos;s residential streets offer calm, unhurried beauty experiences with river breeze ambiance.
@@ -68,7 +69,7 @@ export default function BelemPage() {
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <div className="text-4xl mb-4">🏡</div>
+              <div className="mb-4"><Home className="w-10 h-10 text-gold" /></div>
               <h3 className="text-xl font-serif mb-3">Authentic & Local</h3>
               <p className="text-harbor">
                 Salons serve neighborhood residents, not tourists. You&apos;ll experience genuine Portuguese hospitality and local salon culture.
@@ -76,7 +77,7 @@ export default function BelemPage() {
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <div className="text-4xl mb-4">💰</div>
+              <div className="mb-4"><Banknote className="w-10 h-10 text-gold" /></div>
               <h3 className="text-xl font-serif mb-3">Better Value</h3>
               <p className="text-harbor">
                 Typically 10-20% less expensive than Chiado or Príncipe Real while maintaining excellent quality and service standards.
@@ -134,28 +135,28 @@ export default function BelemPage() {
           
           <div className="space-y-6">
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">👵 Generational Expertise</h3>
+              <h3 className="font-semibold text-lg mb-3 flex items-center gap-2"><Users className="w-5 h-5 text-gold flex-shrink-0" /> Generational Expertise</h3>
               <p className="text-harbor">
                 Many Belém professionals learned from their mothers or mentors who&apos;ve worked in the neighborhood for 30+ years. They bring accumulated knowledge and traditional Portuguese beauty wisdom.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">⏰ Unhurried Service</h3>
+              <h3 className="font-semibold text-lg mb-3 flex items-center gap-2"><Clock className="w-5 h-5 text-gold flex-shrink-0" /> Unhurried Service</h3>
               <p className="text-harbor">
                 Belém&apos;s pace is slower than central Lisbon. Appointments aren&apos;t rushed, conversation flows naturally, and there&apos;s time for coffee and genuine connection. European salon culture as it used to be everywhere.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">🗣️ Portuguese Atmosphere</h3>
+              <h3 className="font-semibold text-lg mb-3 flex items-center gap-2"><MessageCircle className="w-5 h-5 text-gold flex-shrink-0" /> Portuguese Atmosphere</h3>
               <p className="text-harbor">
                 While professionals speak English, the salon atmosphere is authentically Portuguese. You might hear fado playing softly, smell traditional soap, and witness the warmth of neighborhood relationships.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">💚 Neighborhood Loyalty</h3>
+              <h3 className="font-semibold text-lg mb-3 flex items-center gap-2"><Heart className="w-5 h-5 text-gold flex-shrink-0" /> Neighborhood Loyalty</h3>
               <p className="text-harbor">
                 Belém clients are loyal—they&apos;ve been seeing the same stylist for years. This creates a referral-based business model where quality matters more than marketing. If you&apos;re accepted, you&apos;re in good hands.
               </p>
@@ -193,7 +194,7 @@ export default function BelemPage() {
 
           <div className="mt-8 bg-gold/10 rounded-lg p-6">
             <p className="text-harbor">
-              <strong>💡 Pro Tip:</strong> Combine your beauty appointment with a morning at Belém&apos;s monuments, then have lunch at one of the riverside restaurants. Make a full day of it—the neighborhood rewards slower exploration.
+              <strong>Pro Tip:</strong> Combine your beauty appointment with a morning at Belém&apos;s monuments, then have lunch at one of the riverside restaurants. Make a full day of it—the neighborhood rewards slower exploration.
             </p>
           </div>
         </div>
@@ -206,7 +207,7 @@ export default function BelemPage() {
           
           <div className="space-y-4">
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🏰</span>
+              <Castle className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Jerónimos Monastery</h4>
                 <p className="text-harbor text-sm">UNESCO World Heritage Site, magnificent Manueline architecture, Vasco da Gama&apos;s tomb</p>
@@ -214,7 +215,7 @@ export default function BelemPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🗼</span>
+              <Landmark className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Belém Tower (Torre de Belém)</h4>
                 <p className="text-harbor text-sm">Iconic 16th-century fortress, symbol of Portugal&apos;s Age of Discovery</p>
@@ -222,7 +223,7 @@ export default function BelemPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🥐</span>
+              <Sparkles className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Pastéis de Belém</h4>
                 <p className="text-harbor text-sm">Original pastéis de nata since 1837, secret recipe, long lines but worth it</p>
@@ -230,7 +231,7 @@ export default function BelemPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🎨</span>
+              <Palette className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">MAAT - Museum of Art, Architecture and Technology</h4>
                 <p className="text-harbor text-sm">Stunning contemporary museum with riverside location and innovative exhibitions</p>
@@ -238,7 +239,7 @@ export default function BelemPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">⛲</span>
+              <Landmark className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Padrão dos Descobrimentos</h4>
                 <p className="text-harbor text-sm">Monument to Portuguese discoveries, rooftop viewing platform</p>
@@ -246,7 +247,7 @@ export default function BelemPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🌳</span>
+              <TreePine className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Jardim da Praça do Império</h4>
                 <p className="text-harbor text-sm">Beautiful formal gardens with fountain, perfect for post-salon relaxation</p>
@@ -254,7 +255,7 @@ export default function BelemPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🚢</span>
+              <Ship className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Doca de Santo Amaro</h4>
                 <p className="text-harbor text-sm">Marina with restaurants, bars, and waterfront dining with sunset views</p>
@@ -272,7 +273,7 @@ export default function BelemPage() {
           <div className="bg-shell rounded-lg p-4">
             <div className="aspect-video w-full bg-harbor/10 rounded flex items-center justify-center">
               <div className="text-center text-harbor">
-                <p className="text-lg mb-2">📍 Interactive Map</p>
+                <p className="text-lg mb-2"><MapPin className="w-5 h-5 inline mr-1" /> Interactive Map</p>
                 <p className="text-sm">Google Maps integration showing Good Hands partner locations in Belém</p>
                 <p className="text-xs mt-2 text-harbor/60">(Map embed coming in production)</p>
               </div>

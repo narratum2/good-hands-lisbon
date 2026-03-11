@@ -69,7 +69,7 @@ export default function GuidesPreview() {
           <h2 className="text-4xl md:text-5xl font-serif mb-4">
             Neighborhood Guides
           </h2>
-          <p className="text-harbor text-lg max-w-2xl mx-auto">
+          <p className="text-center text-harbor text-lg max-w-2xl mx-auto">
             Discover beauty experiences across Lisbon\'s most distinctive neighborhoods
           </p>
         </motion.div>

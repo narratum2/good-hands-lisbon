@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Sparkles, Heart, Shield, Users } from 'lucide-react'
+import { Sparkles, Heart, Shield, Users, Home, Star, Globe } from 'lucide-react'
 import Button from '@/components/ui/Button'
 import OptimizedImage from '@/components/ui/OptimizedImage'
 
@@ -314,7 +314,7 @@ export default function AboutPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center group">
-              <div className="text-6xl mb-6 group-hover:scale-110 transition-transform">🌍</div>
+              <div className="mb-6 group-hover:scale-110 transition-transform"><Globe className="w-16 h-16 text-gold mx-auto" /></div>
               <h3 className="text-2xl font-serif mb-4">Travelers</h3>
               <p className="text-harbor leading-relaxed">
                 In Lisbon for a week or month? Want a great experience, not a research project. 
@@ -323,7 +323,7 @@ export default function AboutPage() {
             </div>
 
             <div className="text-center group">
-              <div className="text-6xl mb-6 group-hover:scale-110 transition-transform">🏠</div>
+              <div className="mb-6 group-hover:scale-110 transition-transform"><Home className="w-16 h-16 text-gold mx-auto" /></div>
               <h3 className="text-2xl font-serif mb-4">New Residents</h3>
               <p className="text-harbor leading-relaxed">
                 Just moved here? Finding trusted professionals shouldn&apos;t take six months 
@@ -332,7 +332,7 @@ export default function AboutPage() {
             </div>
 
             <div className="text-center group">
-              <div className="text-6xl mb-6 group-hover:scale-110 transition-transform">⭐</div>
+              <div className="mb-6 group-hover:scale-110 transition-transform"><Star className="w-16 h-16 text-gold mx-auto" /></div>
               <h3 className="text-2xl font-serif mb-4">Lisbon Locals</h3>
               <p className="text-harbor leading-relaxed">
                 Even locals don&apos;t know every great salon in every neighborhood. 

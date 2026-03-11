@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import NeighborhoodMap from '@/components/NeighborhoodMap'
+import { Sparkles, Briefcase, MapPin, Microscope, Globe, Building2, Zap, CreditCard, Hotel, ShoppingBag, TreePine, UtensilsCrossed, Palette, Coffee } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Best Luxury Beauty on Avenida da Liberdade Lisbon — Flagship Salons & Spas | Good Hands',
@@ -60,7 +61,7 @@ export default function AvenidaPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg p-6">
-              <div className="text-4xl mb-4">🌟</div>
+              <div className="mb-4"><Sparkles className="w-10 h-10 text-gold" /></div>
               <h3 className="text-xl font-serif mb-3">International Standards</h3>
               <p className="text-harbor">
                 Flagship locations of brands you know from London, Paris, New York. Consistent quality wherever you&apos;ve experienced them before.
@@ -68,7 +69,7 @@ export default function AvenidaPage() {
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <div className="text-4xl mb-4">💼</div>
+              <div className="mb-4"><Briefcase className="w-10 h-10 text-gold" /></div>
               <h3 className="text-xl font-serif mb-3">Executive Convenience</h3>
               <p className="text-harbor">
                 Perfect for business travelers staying at Avenida&apos;s luxury hotels or professionals working in nearby offices. Premium efficiency.
@@ -76,7 +77,7 @@ export default function AvenidaPage() {
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <div className="text-4xl mb-4">🔬</div>
+              <div className="mb-4"><Microscope className="w-10 h-10 text-gold" /></div>
               <h3 className="text-xl font-serif mb-3">Latest Technology</h3>
               <p className="text-harbor">
                 First to offer new treatments—RF microneedling, cutting-edge lasers, advanced skincare technology. Investment in latest equipment.
@@ -134,28 +135,28 @@ export default function AvenidaPage() {
           
           <div className="space-y-6">
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">🏢 Corporate-Level Professionalism</h3>
+              <h3 className="font-semibold text-lg mb-3 flex items-center gap-2"><Building2 className="w-5 h-5 text-gold flex-shrink-0" /> Corporate-Level Professionalism</h3>
               <p className="text-harbor">
                 Avenida beauty businesses operate like international corporations—consistent standards, quality control, staff training programs, and accountability. You&apos;re a valued client, not just a neighborhood regular.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">⚡ Premium Efficiency</h3>
+              <h3 className="font-semibold text-lg mb-3 flex items-center gap-2"><Zap className="w-5 h-5 text-gold flex-shrink-0" /> Premium Efficiency</h3>
               <p className="text-harbor">
                 Time is money on Avenida. Appointments start precisely on schedule, services move efficiently without feeling rushed, and booking systems are digital and streamlined. Perfect for business travelers.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">🌍 Multicultural Clientele</h3>
+              <h3 className="font-semibold text-lg mb-3 flex items-center gap-2"><Globe className="w-5 h-5 text-gold flex-shrink-0" /> Multicultural Clientele</h3>
               <p className="text-harbor">
                 International business travelers, expats, diplomats, and wealthy tourists. Staff speak multiple languages fluently and understand diverse beauty standards and preferences.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">💳 Transparent Luxury Pricing</h3>
+              <h3 className="font-semibold text-lg mb-3 flex items-center gap-2"><CreditCard className="w-5 h-5 text-gold flex-shrink-0" /> Transparent Luxury Pricing</h3>
               <p className="text-harbor">
                 Expensive, yes—but prices are clearly listed, include everything, and match what you&apos;d pay at the same brand in London or Paris. No surprises, no ambiguity, full transparency.
               </p>
@@ -193,7 +194,7 @@ export default function AvenidaPage() {
 
           <div className="mt-8 bg-gold/10 rounded-lg p-6">
             <p className="text-harbor">
-              <strong>💡 Pro Tip:</strong> Book morning appointments (9-11am) before the avenue gets busy. Combine with breakfast at one of the grand hotel cafés—turn your beauty appointment into a luxurious morning ritual.
+              <strong>Pro Tip:</strong> Book morning appointments (9-11am) before the avenue gets busy. Combine with breakfast at one of the grand hotel cafés—turn your beauty appointment into a luxurious morning ritual.
             </p>
           </div>
         </div>
@@ -206,7 +207,7 @@ export default function AvenidaPage() {
           
           <div className="space-y-4">
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🏨</span>
+              <Hotel className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Four Seasons Hotel Ritz</h4>
                 <p className="text-harbor text-sm">Afternoon tea, Michelin-starred dining, luxury shopping arcade</p>
@@ -214,7 +215,7 @@ export default function AvenidaPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🛍️</span>
+              <ShoppingBag className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Designer Boutiques</h4>
                 <p className="text-harbor text-sm">Louis Vuitton, Prada, Gucci flagship stores lining the avenue</p>
@@ -222,7 +223,7 @@ export default function AvenidaPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🌳</span>
+              <TreePine className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Eduardo VII Park</h4>
                 <p className="text-harbor text-sm">Formal gardens at avenue&apos;s north end, panoramic city views from top</p>
@@ -230,7 +231,7 @@ export default function AvenidaPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🍽️</span>
+              <UtensilsCrossed className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Cervejaria Ribadouro</h4>
                 <p className="text-harbor text-sm">Traditional seafood restaurant, Lisbon institution since 1947</p>
@@ -238,7 +239,7 @@ export default function AvenidaPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🎭</span>
+              <Palette className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Teatro Tivoli BBVA</h4>
                 <p className="text-harbor text-sm">Major theater hosting musicals, concerts, and performances</p>
@@ -246,7 +247,7 @@ export default function AvenidaPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">☕</span>
+              <Coffee className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Café Versailles</h4>
                 <p className="text-harbor text-sm">Art Deco café serving traditional Portuguese pastries since 1922</p>
@@ -264,7 +265,7 @@ export default function AvenidaPage() {
           <div className="bg-shell rounded-lg p-4">
             <div className="aspect-video w-full bg-harbor/10 rounded flex items-center justify-center">
               <div className="text-center text-harbor">
-                <p className="text-lg mb-2">📍 Interactive Map</p>
+                <p className="text-lg mb-2"><MapPin className="w-5 h-5 inline mr-1" /> Interactive Map</p>
                 <p className="text-sm">Google Maps integration showing Good Hands partner locations on Avenida</p>
                 <p className="text-xs mt-2 text-harbor/60">(Map embed coming in production)</p>
               </div>

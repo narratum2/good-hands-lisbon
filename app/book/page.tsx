@@ -372,7 +372,7 @@ function BookingPageInner() {
                     ))}
                   </div>
                   <p className="text-xs text-harbor mt-4">
-                    ⏰ These are preferences, not confirmed times. We&apos;ll match you with the perfect professional and confirm details within 24 hours.
+                    These are preferences, not confirmed times. We&apos;ll match you with the perfect professional and confirm details within 24 hours.
                   </p>
                 </div>
 
@@ -679,7 +679,7 @@ function BookingPageInner() {
                   </ul>
                   <div className="mt-4 pt-4 border-t border-gray-light/20">
                     <p className="text-xs text-harbor italic">
-                      💎 This is curation, not instant booking. Quality matches take time, but are worth it.
+                      This is curation, not instant booking. Quality matches take time, but are worth it.
                     </p>
                   </div>
                 </div>

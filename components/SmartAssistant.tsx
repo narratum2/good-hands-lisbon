@@ -33,11 +33,11 @@ export default function SmartAssistant() {
     {
       id: 1,
       type: 'assistant',
-      content: "👋 Hi! I'm your Good Hands beauty concierge. How can I help you today?",
+      content: "Hi! I'm your Good Hands beauty concierge. How can I help you today?",
       actions: [
-        { label: '📅 Book Now', href: '/book' },
-        { label: '💬 Ask a Question', href: '#' },
-        { label: '📞 Contact Us', href: '/about' },
+        { label: 'Book Now', href: '/book' },
+        { label: 'Ask a Question', href: '#' },
+        { label: 'Contact Us', href: '/about' },
       ],
     },
   ])
@@ -113,24 +113,24 @@ export default function SmartAssistant() {
     const lowerMessage = message.toLowerCase()
     
     if (lowerMessage.includes('book') || lowerMessage.includes('appointment')) {
-      return [{ label: '📅 Book Now', href: '/book' }]
+      return [{ label: 'Book Now', href: '/book' }]
     }
     
     if (lowerMessage.includes('hair')) {
-      return [{ label: '💇 Book Hair Service', href: '/book?service=hair' }]
+      return [{ label: 'Book Hair Service', href: '/book?service=hair' }]
     }
     
     if (lowerMessage.includes('nail')) {
-      return [{ label: '💅 Book Nail Service', href: '/book?service=nails' }]
+      return [{ label: 'Book Nail Service', href: '/book?service=nails' }]
     }
     
     if (lowerMessage.includes('spa') || lowerMessage.includes('massage')) {
-      return [{ label: '✨ Book Spa Service', href: '/book?service=wellness' }]
+      return [{ label: 'Book Spa Service', href: '/book?service=wellness' }]
     }
     
     return [
-      { label: '📅 Book Service', href: '/book' },
-      { label: '📞 Contact Us', href: '/about' }
+      { label: 'Book Service', href: '/book' },
+      { label: 'Contact Us', href: '/about' }
     ]
   }
 

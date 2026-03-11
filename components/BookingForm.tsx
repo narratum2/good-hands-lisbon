@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import TrustBadges from './TrustBadges'
 import LoadingSpinner from './ui/LoadingSpinner'
+import { Sparkles } from 'lucide-react'
 
 interface BookingFormData {
   name: string
@@ -146,7 +147,7 @@ export default function BookingForm() {
               Tell us what you need. We'll respond within 2 hours with availability and pricing.
             </p>
             <div className="inline-flex items-center gap-2 bg-gold/10 px-6 py-3 rounded-lg">
-              <span className="text-2xl">✨</span>
+              <Sparkles className="w-6 h-6 text-gold" />
               <p className="text-sm font-medium text-gold">
                 On-site concierge service • Premium rates apply
               </p>

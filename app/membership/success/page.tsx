@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { CheckCircle, Sparkles } from 'lucide-react'
+import { CheckCircle, Sparkles, PartyPopper } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Welcome to Good Hands Membership!',
@@ -17,7 +17,7 @@ export default function MembershipSuccessPage() {
           </div>
 
           <h1 className="text-4xl md:text-5xl font-serif mb-4">
-            Welcome to Good Hands! 🎉
+            Welcome to Good Hands! <PartyPopper className="w-8 h-8 text-gold inline" />
           </h1>
 
           <p className="text-xl text-harbor mb-8">

@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Scissors, Sparkles, Clock, MapPin } from 'lucide-react'
+import { Scissors, Sparkles, Clock, MapPin, Check } from 'lucide-react'
 import RelatedServices from '@/components/RelatedServices'
 
 export const metadata: Metadata = {
@@ -160,8 +160,8 @@ export default function HairServicesPage() {
                   </ul>
                 </div>
 
-                <div className="mt-4 text-xs text-gold">
-                  ✓ Concierge matching & coordination included
+                <div className="mt-4 text-xs text-gold flex items-center gap-1">
+                  <Check className="w-4 h-4 text-gold inline mr-1" /> Concierge matching &amp; coordination included
                 </div>
               </div>
             ))}
