@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import { X } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Complete Guide to Beauty Services in Lisbon (2025) — Good Hands',
@@ -360,13 +361,13 @@ export default function CompleteBeautyGuideLisbon() {
 
             <h3 className="text-2xl font-serif mb-4">Red Flags to Avoid</h3>
             <ul>
-              <li>❌ No visible licensing or certifications</li>
-              <li>❌ Dirty facilities or unsanitized tools</li>
-              <li>❌ Pushing expensive products or services aggressively</li>
-              <li>❌ No consultation before service begins</li>
-              <li>❌ Prices significantly below market rate (quality usually reflects price)</li>
-              <li>❌ No portfolio or before/after photos</li>
-              <li>❌ Negative reviews mentioning hygiene or communication issues</li>
+              <li><X className="w-4 h-4 text-red-400 inline mr-1" /> No visible licensing or certifications</li>
+              <li><X className="w-4 h-4 text-red-400 inline mr-1" /> Dirty facilities or unsanitized tools</li>
+              <li><X className="w-4 h-4 text-red-400 inline mr-1" /> Pushing expensive products or services aggressively</li>
+              <li><X className="w-4 h-4 text-red-400 inline mr-1" /> No consultation before service begins</li>
+              <li><X className="w-4 h-4 text-red-400 inline mr-1" /> Prices significantly below market rate (quality usually reflects price)</li>
+              <li><X className="w-4 h-4 text-red-400 inline mr-1" /> No portfolio or before/after photos</li>
+              <li><X className="w-4 h-4 text-red-400 inline mr-1" /> Negative reviews mentioning hygiene or communication issues</li>
             </ul>
 
             <h3 className="text-2xl font-serif mb-4">Questions to Ask Before Booking</h3>
@@ -415,14 +416,9 @@ export default function CompleteBeautyGuideLisbon() {
               <li>VIP members receive 15% off, making services cost-neutral or cheaper than direct booking</li>
             </ul>
 
-            <div className="bg-sand/10 p-6 rounded-lg not-prose my-6">
-              <p className="font-bold mb-2">Value Calculation Example:</p>
-              <p className="text-sm">
-                Direct booking: €120 (30% chance of disappointment requiring re-do at €120 = expected cost €156)<br/>
-                Good Hands: €135 (guaranteed satisfaction, saved time/stress = expected cost €135)<br/>
-                <strong>Net savings: €21 + peace of mind</strong>
-              </p>
-            </div>
+            <p>
+              We handle the research so you don't waste time on trial and error. One request, one matched professional, one great experience.
+            </p>
           </section>
 
           <section id="recommendations" className="mb-12">
@@ -527,16 +523,6 @@ export default function CompleteBeautyGuideLisbon() {
             </div>
           </div>
 
-          {/* Sources */}
-          <footer className="mt-12 pt-8 border-t border-harbor/20">
-            <h3 className="text-lg font-serif mb-4">Sources & References</h3>
-            <ol className="text-sm text-harbor space-y-2">
-              <li>1. Turismo de Lisboa. (2024). "Annual Tourism Report 2024." Official Tourism Board Statistics.</li>
-              <li>2. Portuguese Beauty Industry Association. (2024). "Industry Standards and Market Analysis."</li>
-              <li>3. Good Hands Internal Data. (2024). "Client Satisfaction Survey Results from 1,200+ Services."</li>
-              <li>4. Expatica Portugal. (2024). "Cost of Living in Lisbon: Beauty and Personal Care."</li>
-            </ol>
-          </footer>
         </article>
       </div>
     </>

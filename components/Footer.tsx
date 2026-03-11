@@ -1,16 +1,16 @@
 'use client'
 
 import Link from 'next/link'
-import { Instagram, Send } from 'lucide-react'
+import { Instagram, Send, ArrowUpRight } from 'lucide-react'
 import EmailCaptureWidget from './EmailCaptureWidget'
 
 const footerLinks = {
   services: [
     { href: '/services', label: 'All Services' },
-    { href: '/partnerships', label: 'Hotel Partnerships' },
     { href: '/premium/weddings', label: 'Weddings' },
     { href: '/premium/retreats', label: 'Retreats' },
     { href: '/premium/corporate', label: 'Corporate' },
+    { href: '/premium/photoshoots', label: 'Photoshoots' },
     { href: '/premium/membership', label: 'Membership' },
   ],
   neighborhoods: [
@@ -29,153 +29,162 @@ const footerLinks = {
     { href: '/guides', label: 'Guides' },
     { href: '/experiences', label: 'Experiences' },
     { href: '/faq', label: 'FAQ' },
-    { href: '/ai-info', label: 'For AI Assistants' },
   ],
-  professionals: [
+  partnerships: [
+    { href: '/partnerships', label: 'Hotel Partnerships' },
+    { href: '/for-photographers', label: 'For Photographers' },
     { href: '/join-our-team', label: 'Join Our Network' },
-    { href: '/join-our-team#benefits', label: 'Benefits' },
-    { href: '/join-our-team#application', label: 'Apply Now' },
+    { href: '/ai-info', label: 'For AI Assistants' },
   ],
 }
 
 export default function Footer() {
   return (
-    <footer className="bg-ink text-porcelain">
-      <div className="container-custom py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
-          {/* Brand */}
-          <div>
-            {/* Enhanced Logo - Matches Navbar */}
-            <Link href="/" className="inline-block group mb-6 focus-visible-ring" aria-label="Good Hands Home">
-              <span className="text-3xl md:text-4xl font-serif font-light transition-colors duration-300" 
-                    style={{ color: 'var(--off-white)', letterSpacing: '-0.02em' }}>
-                <span className="group-hover:text-gold transition-colors">Good</span>
-                <span className="mx-2" style={{ color: 'var(--gold)' }}>·</span>
-                <span className="group-hover:text-gold transition-colors">Hands</span>
-              </span>
-            </Link>
-            
-            <p className="text-porcelain/70 text-sm leading-relaxed mb-4">
-              Where discerning clients meet exceptional professionals.
-            </p>
-            
-            <a 
-              href="mailto:hello@beautysalonlisbon.com" 
-              className="text-gold hover:text-gold-light text-sm transition-colors inline-block font-medium"
-            >
-              hello@beautysalonlisbon.com
-            </a>
-          </div>
+    <footer className="bg-ink">
+      {/* Top accent line */}
+      <div className="h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
 
-          {/* Services */}
-          <div>
-            <h4 className="font-semibold mb-4 text-porcelain">Services</h4>
-            <ul className="space-y-2">
-              {footerLinks.services.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-porcelain/70 hover:text-gold transition-colors focus-visible-ring"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Neighborhoods */}
-          <div>
-            <h4 className="font-semibold mb-4 text-porcelain">Neighborhoods</h4>
-            <ul className="space-y-2">
-              {footerLinks.neighborhoods.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-porcelain/70 hover:text-gold transition-colors focus-visible-ring"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Company */}
-          <div>
-            <h4 className="font-semibold mb-4 text-porcelain">Company</h4>
-            <ul className="space-y-2">
-              {footerLinks.company.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-porcelain/70 hover:text-gold transition-colors focus-visible-ring"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* For Professionals */}
-          <div>
-            <h4 className="font-semibold mb-4 text-porcelain">For Professionals</h4>
-            <ul className="space-y-2">
-              {footerLinks.professionals.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-porcelain/70 hover:text-gold transition-colors focus-visible-ring"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <div className="mt-4 pt-4 border-t border-porcelain/10">
-              <p className="text-xs text-porcelain/60 mb-2">Are you a beauty professional?</p>
-              <Link 
-                href="/join-our-team#application"
-                className="inline-block text-sm font-medium text-gold hover:text-gold/80 transition-colors"
-              >
-                Apply to Join →
+      <div className="container-custom">
+        {/* Upper section: Brand + Newsletter */}
+        <div className="pt-20 pb-16 md:pt-24 md:pb-20 border-b border-white/8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            {/* Brand block */}
+            <div className="max-w-md">
+              <Link href="/" className="inline-block group mb-8" aria-label="Good Hands Home">
+                <span className="text-4xl md:text-5xl font-serif font-light tracking-tight">
+                  <span className="text-white group-hover:text-gold transition-colors duration-300">Good</span>
+                  <span className="mx-2 text-gold">·</span>
+                  <span className="text-white group-hover:text-gold transition-colors duration-300">Hands</span>
+                </span>
               </Link>
+              <p className="text-white/50 text-base leading-relaxed mb-0 max-w-sm">
+                Lisbon&apos;s luxury beauty concierge. We match you with
+                personally vetted professionals for hair, makeup, spa,
+                and wellness.
+              </p>
+            </div>
+
+            {/* Newsletter */}
+            <div className="lg:justify-self-end w-full max-w-md">
+              <EmailCaptureWidget />
             </div>
           </div>
         </div>
 
-        {/* Email Newsletter Widget */}
-        <div className="mt-12 max-w-md mx-auto">
-          <EmailCaptureWidget />
+        {/* Middle section: Link columns */}
+        <div className="py-16 md:py-20 border-b border-white/8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-12">
+            <div>
+              <h4 className="text-xs font-semibold uppercase tracking-[0.15em] text-white/40 mb-6">Services</h4>
+              <ul className="space-y-3">
+                {footerLinks.services.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className="text-sm text-white/60 hover:text-white transition-colors duration-200"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="text-xs font-semibold uppercase tracking-[0.15em] text-white/40 mb-6">Neighborhoods</h4>
+              <ul className="space-y-3">
+                {footerLinks.neighborhoods.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className="text-sm text-white/60 hover:text-white transition-colors duration-200"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="text-xs font-semibold uppercase tracking-[0.15em] text-white/40 mb-6">Company</h4>
+              <ul className="space-y-3">
+                {footerLinks.company.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className="text-sm text-white/60 hover:text-white transition-colors duration-200"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="text-xs font-semibold uppercase tracking-[0.15em] text-white/40 mb-6">Work With Us</h4>
+              <ul className="space-y-3">
+                {footerLinks.partnerships.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className="text-sm text-white/60 hover:text-white transition-colors duration-200 inline-flex items-center gap-1"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="mt-8 pt-6 border-t border-white/8">
+                <Link
+                  href="/book"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-gold hover:text-gold-light transition-colors duration-200"
+                >
+                  Book a Service <ArrowUpRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="pt-8 border-t border-porcelain/10 mt-12">
+        {/* Bottom bar */}
+        <div className="py-8 md:py-10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <p className="text-sm text-porcelain/60">
-              © {new Date().getFullYear()} Good Hands. All rights reserved.
-            </p>
-            
-            {/* Social Media Icons - Subtle Outline Style */}
-            <div className="flex items-center gap-4">
+            {/* Contact + Copyright */}
+            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8">
+              <a
+                href="mailto:hello@beautysalonlisbon.com"
+                className="text-sm text-white/40 hover:text-gold transition-colors duration-200"
+              >
+                hello@beautysalonlisbon.com
+              </a>
+              <span className="hidden sm:block text-white/20">|</span>
+              <p className="text-sm text-white/30">
+                © {new Date().getFullYear()} Good Hands
+              </p>
+            </div>
+
+            {/* Social icons */}
+            <div className="flex items-center gap-5">
               <a
                 href="https://instagram.com/goodhands"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-transparent border-2 border-gold text-gold hover:bg-gold hover:text-ink transition-all duration-300 flex items-center justify-center"
+                className="text-white/30 hover:text-white transition-colors duration-200"
                 aria-label="Follow us on Instagram"
               >
-                <Instagram className="w-4 h-4" />
+                <Instagram className="w-[18px] h-[18px]" />
               </a>
               <a
                 href="https://x.com/goodhands"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-transparent border-2 border-gold text-gold hover:bg-gold hover:text-ink transition-all duration-300 flex items-center justify-center"
-                aria-label="Follow us on X (Twitter)"
+                className="text-white/30 hover:text-white transition-colors duration-200"
+                aria-label="Follow us on X"
               >
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                <svg className="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                 </svg>
               </a>
@@ -183,25 +192,26 @@ export default function Footer() {
                 href="https://t.me/goodhands"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-transparent border-2 border-gold text-gold hover:bg-gold hover:text-ink transition-all duration-300 flex items-center justify-center"
+                className="text-white/30 hover:text-white transition-colors duration-200"
                 aria-label="Join us on Telegram"
               >
-                <Send className="w-4 h-4" />
+                <Send className="w-[18px] h-[18px]" />
               </a>
             </div>
 
-            <div className="flex gap-6">
+            {/* Legal */}
+            <div className="flex items-center gap-6">
               <Link
                 href="/privacy"
-                className="text-sm text-porcelain/60 hover:text-gold transition-colors focus-visible-ring"
+                className="text-xs text-white/30 hover:text-white/60 transition-colors duration-200"
               >
-                Privacy Policy
+                Privacy
               </Link>
               <Link
                 href="/terms"
-                className="text-sm text-porcelain/60 hover:text-gold transition-colors focus-visible-ring"
+                className="text-xs text-white/30 hover:text-white/60 transition-colors duration-200"
               >
-                Terms of Service
+                Terms
               </Link>
             </div>
           </div>
@@ -210,4 +220,3 @@ export default function Footer() {
     </footer>
   )
 }
-

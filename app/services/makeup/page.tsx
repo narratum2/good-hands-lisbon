@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Palette, Sparkles, Clock, MapPin } from 'lucide-react'
+import { Palette, Sparkles, Clock, MapPin, Camera, Check } from 'lucide-react'
 import RelatedServices from '@/components/RelatedServices'
 
 export const metadata: Metadata = {
@@ -187,8 +187,8 @@ export default function MakeupServicesPage() {
                   </ul>
                 </div>
 
-                <div className="mt-4 text-xs text-gold">
-                  ✓ Concierge matching & coordination included
+                <div className="mt-4 text-xs text-gold flex items-center gap-1">
+                  <Check className="w-4 h-4 text-gold inline mr-1" /> Concierge matching &amp; coordination included
                 </div>
               </div>
             ))}
@@ -247,28 +247,28 @@ export default function MakeupServicesPage() {
           
           <div className="space-y-6">
             <div className="bg-white rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-3">🎨 Portfolio-Vetted Artists</h3>
+              <h3 className="text-xl font-semibold mb-3 flex items-center gap-2"><Palette className="w-5 h-5 text-gold flex-shrink-0" /> Portfolio-Vetted Artists</h3>
               <p className="text-harbor">
                 We show you each artist&apos;s Instagram or portfolio BEFORE you book. See their actual work, not just descriptions. If you don&apos;t love their style, we match you with someone else.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-3">📸 Photography Understanding</h3>
+              <h3 className="text-xl font-semibold mb-3 flex items-center gap-2"><Camera className="w-5 h-5 text-gold flex-shrink-0" /> Photography Understanding</h3>
               <p className="text-harbor">
                 Our artists understand the difference between makeup that looks good in person vs. in photos. They adapt application based on lighting, camera type, and whether you&apos;re being photographed.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-3">🧴 Premium Products</h3>
+              <h3 className="text-xl font-semibold mb-3 flex items-center gap-2"><Sparkles className="w-5 h-5 text-gold flex-shrink-0" /> Premium Products</h3>
               <p className="text-harbor">
                 Professional-grade brands (MAC, NARS, Charlotte Tilbury, Bobbi Brown), not drugstore makeup. High-pigment formulas, better staying power, superior results.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-3">⏰ Reliable & Punctual</h3>
+              <h3 className="text-xl font-semibold mb-3 flex items-center gap-2"><Clock className="w-5 h-5 text-gold flex-shrink-0" /> Reliable &amp; Punctual</h3>
               <p className="text-harbor">
                 Artists arrive on time with all necessary products. No last-minute cancellations, no showing up unprepared. We guarantee reliability for important occasions.
               </p>
@@ -307,7 +307,7 @@ export default function MakeupServicesPage() {
 
             <div className="bg-gold/10 rounded-lg p-6">
               <p className="text-harbor">
-                <strong>💡 Pro Tip:</strong> For bridal or important events, book a trial session 2-4 weeks before. This lets you see the final look, make adjustments, and eliminate day-of anxiety. Most brides who skip trials regret it.
+                <strong>Pro Tip:</strong> For bridal or important events, book a trial session 2-4 weeks before. This lets you see the final look, make adjustments, and eliminate day-of anxiety. Most brides who skip trials regret it.
               </p>
             </div>
           </div>

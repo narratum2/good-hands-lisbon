@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { BrushIcon, SparklesIcon, UserIcon, BuildingIcon } from '@/components/icons/CustomIcons'
-import { Palette, Camera, Briefcase, ClipboardList, Users, UtensilsCrossed } from 'lucide-react'
+import { BrushIcon, SparklesIcon, UserIcon, BuildingIcon, StarIcon } from '@/components/icons/CustomIcons'
+import { Palette, Camera, Briefcase, ClipboardList, Users, UtensilsCrossed, MapPin, Calendar } from 'lucide-react'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/premium/retreats' },
@@ -331,8 +331,8 @@ export default function RetreatsPage() {
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                   <div>
                     <h3 className="text-2xl font-serif text-ink mb-2">Spring Transformation</h3>
-                    <p className="text-harbor mb-1">📍 Historic Palace, Sintra</p>
-                    <p className="text-harbor">📅 March 15-17, 2025 (3-Day)</p>
+                    <p className="text-harbor mb-1 flex items-center gap-1"><MapPin className="w-4 h-4 flex-shrink-0" /> Historic Palace, Sintra</p>
+                    <p className="text-harbor flex items-center gap-1"><Calendar className="w-4 h-4 flex-shrink-0" /> March 15-17, 2025 (3-Day)</p>
                   </div>
                   <div className="text-right">
                     <p className="text-sm text-harbor mb-2">5 spots remaining</p>
@@ -347,8 +347,8 @@ export default function RetreatsPage() {
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                   <div>
                     <h3 className="text-2xl font-serif text-ink mb-2">Summer Glow Intensive</h3>
-                    <p className="text-harbor mb-1">📍 Coastal Villa, Cascais</p>
-                    <p className="text-harbor">📅 June 5-9, 2025 (5-Day All-Inclusive)</p>
+                    <p className="text-harbor mb-1 flex items-center gap-1"><MapPin className="w-4 h-4 flex-shrink-0" /> Coastal Villa, Cascais</p>
+                    <p className="text-harbor flex items-center gap-1"><Calendar className="w-4 h-4 flex-shrink-0" /> June 5-9, 2025 (5-Day All-Inclusive)</p>
                   </div>
                   <div className="text-right">
                     <p className="text-sm text-harbor mb-2">3 spots remaining</p>
@@ -363,8 +363,8 @@ export default function RetreatsPage() {
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                   <div>
                     <h3 className="text-2xl font-serif text-ink mb-2">Autumn Beauty Reset</h3>
-                    <p className="text-harbor mb-1">📍 Boutique Studio, Chiado</p>
-                    <p className="text-harbor">📅 September 20-22, 2025 (3-Day)</p>
+                    <p className="text-harbor mb-1 flex items-center gap-1"><MapPin className="w-4 h-4 flex-shrink-0" /> Boutique Studio, Chiado</p>
+                    <p className="text-harbor flex items-center gap-1"><Calendar className="w-4 h-4 flex-shrink-0" /> September 20-22, 2025 (3-Day)</p>
                   </div>
                   <div className="text-right">
                     <p className="text-sm text-harbor mb-2">8 spots available</p>
@@ -389,7 +389,7 @@ export default function RetreatsPage() {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white p-8 rounded-lg">
                 <div className="flex gap-1 text-gold mb-4">
-                  <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                  {[...Array(5)].map((_, i) => <StarIcon key={i} size={16} color="var(--gold)" filled />)}
                 </div>
                 <p className="text-harbor text-lg mb-4 italic">
                   "I came feeling invisible. I left feeling radiant. The techniques I learned completely changed how I approach my morning routine. Three months later, I still get compliments daily."
@@ -399,7 +399,7 @@ export default function RetreatsPage() {
               </div>
               <div className="bg-white p-8 rounded-lg">
                 <div className="flex gap-1 text-gold mb-4">
-                  <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                  {[...Array(5)].map((_, i) => <StarIcon key={i} size={16} color="var(--gold)" filled />)}
                 </div>
                 <p className="text-harbor text-lg mb-4 italic">
                   "This wasn't just about makeup—it was about understanding myself. The personalized approach meant everything I learned actually works for MY face, MY hair, MY lifestyle."

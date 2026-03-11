@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 import { Suspense } from 'react'
-import { Search, X } from 'lucide-react'
+import { Search, X, Camera, Sparkles } from 'lucide-react'
 import CuratedProducts from '@/components/CuratedProducts'
 
 const services = [
@@ -250,7 +250,7 @@ function ServicesPageInner() {
       {filteredServices.length === 0 ? (
         <section className="section-padding bg-white">
           <div className="container-custom text-center py-16">
-            <div className="text-6xl mb-4">🔍</div>
+            <div className="mb-4"><Search className="w-16 h-16 text-gold mx-auto" /></div>
             <h2 className="text-3xl font-serif mb-4">No Services Found</h2>
             <p className="text-harbor mb-6">
               We couldn't find any services matching your search. Try different keywords or browse all services.
@@ -306,7 +306,7 @@ function ServicesPageInner() {
         <div className="container-custom max-w-5xl">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 text-gold mb-4">
-              <span className="text-2xl">📸</span>
+              <Camera className="w-6 h-6 text-gold" />
               <span className="text-sm uppercase tracking-wider font-medium">Creative Productions</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-serif mb-6">
@@ -400,7 +400,7 @@ function ServicesPageInner() {
         <div className="container-custom max-w-5xl">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 text-gold mb-4">
-              <span className="text-2xl">✨</span>
+              <Sparkles className="w-6 h-6 text-gold" />
               <span className="text-sm uppercase tracking-wider font-medium">Learn & Grow</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-serif mb-6">

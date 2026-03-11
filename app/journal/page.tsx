@@ -3,14 +3,12 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import FullWidthImageBreak from '@/components/FullWidthImageBreak'
-import { CheckIcon } from '@/components/icons/CustomIcons'
 
 const articles = [
   {
     title: 'Todos Santos: Baja\'s Best-Kept Beauty Secret',
     excerpt: 'Where surf culture meets artisanal wellness in Mexico\'s most enchanting desert oasis.',
-    image: '/brand-images/ai-generated/service-wellness.jpg', // Desert wellness vibes
+    image: '/brand-images/ai-generated/service-wellness.jpg',
     date: 'December 20, 2025',
     category: 'Global Exploration',
     author: 'Isabella Torres',
@@ -18,8 +16,8 @@ const articles = [
   },
   {
     title: 'Miami Beauty: Where Latin Glamour Meets Ocean Luxury',
-    excerpt: 'Inside Miami\'s explosive beauty scene—from South Beach glam to Coconut Grove wellness sanctuaries.',
-    image: '/brand-images/ai-generated/service-makeup.jpg', // Glamour vibes
+    excerpt: 'Inside Miami\'s explosive beauty scene — from South Beach glam to Coconut Grove wellness sanctuaries.',
+    image: '/brand-images/ai-generated/service-makeup.jpg',
     date: 'December 18, 2025',
     category: 'Global Exploration',
     author: 'Isabella Torres',
@@ -117,189 +115,175 @@ const articles = [
   },
 ]
 
+const categories = ['All', ...Array.from(new Set(articles.map(a => a.category)))]
+
 export default function JournalPage() {
-  const [visibleArticles, setVisibleArticles] = useState(6) // Show 6 articles initially (1 featured + 5 in grid)
+  const [visibleCount, setVisibleCount] = useState(9)
+  const [activeCategory, setActiveCategory] = useState('All')
 
-  const loadMore = () => {
-    setVisibleArticles(prev => Math.min(prev + 6, articles.length))
-  }
+  const filtered = activeCategory === 'All'
+    ? articles
+    : articles.filter(a => a.category === activeCategory)
 
-  const articlesToShow = articles.slice(1, visibleArticles) // Skip first (featured) and show up to visibleArticles
+  const featured = articles[0]
+  const gridArticles = filtered.slice(activeCategory === 'All' ? 1 : 0, visibleCount)
 
   return (
     <div className="pt-20">
-      {/* Hero */}
-      <section className="relative h-[70vh] min-h-[550px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src="/brand-images/ai-generated/service-hair-styling.jpg"
-            alt="Good Hands Journal - beauty insights, Lisbon guides, and expert tips"
-            fill
-            className="object-cover object-center scale-105"
-            priority
-            sizes="100vw"
-          />
-          {/* More dramatic cinematic gradient */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80" />
-        </div>
-        <div className="relative z-10 text-center text-white container-custom px-4">
-          {/* Eyebrow text */}
-          <p className="text-xs md:text-sm uppercase tracking-[0.25em] text-white/70 mb-6 font-medium animate-fade-in">
-            Stories & Insights
-          </p>
-          
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif mb-6 tracking-tight font-light" style={{ lineHeight: '0.95' }}>
-            The Journal
-          </h1>
-          <p className="text-lg md:text-xl lg:text-2xl text-white/85 max-w-2xl mx-auto leading-relaxed font-light">
-            Beauty insights, city guides, and stories from around the world
-          </p>
-          
-          {/* Quick scannable highlights */}
-          <div className="flex flex-wrap justify-center gap-8 md:gap-12 mt-10 md:mt-14 text-sm">
-            <div className="flex items-center gap-2.5 group">
-              <CheckIcon size={18} className="text-gold" />
-              <span className="text-white/90 tracking-wide">Expert beauty advice</span>
-            </div>
-            <div className="flex items-center gap-2.5 group">
-              <CheckIcon size={18} className="text-gold" />
-              <span className="text-white/90 tracking-wide">Local Lisbon guides</span>
-            </div>
-            <div className="flex items-center gap-2.5 group">
-              <CheckIcon size={18} className="text-gold" />
-              <span className="text-white/90 tracking-wide">Global beauty exploration</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Featured Article - Editorial Design */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
-          <Link
-            href={`/journal/${articles[0].slug}`}
-            className="group block max-w-6xl mx-auto"
+      {/* Masthead — typographic, no hero image */}
+      <header className="bg-white border-b" style={{ borderColor: 'var(--gray-light)' }}>
+        <div className="container-custom max-w-6xl py-16 md:py-24">
+          <p
+            className="text-xs uppercase tracking-[0.3em] mb-5 font-medium"
+            style={{ color: 'var(--gold)' }}
           >
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-              {/* Image with elegant frame effect */}
-              <div className="relative h-[400px] lg:h-[550px] overflow-hidden">
-                <div className="absolute inset-0 rounded-sm overflow-hidden">
-                <Image
-                  src={articles[0].image}
-                  alt={articles[0].title}
-                  fill
-                    className="object-cover transition-all duration-700 ease-out group-hover:scale-105"
-                />
-                  {/* Subtle vignette */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                </div>
-              </div>
-              
-              {/* Content with refined typography */}
-              <div className="flex flex-col justify-center py-6 lg:py-0">
-                <div className="flex items-center gap-4 mb-6">
-                  <span className="text-xs uppercase tracking-[0.2em] text-gold font-semibold px-3 py-1.5 bg-gold/10 rounded-full">
-                    Featured
-                  </span>
-                  <span className="text-xs text-harbor tracking-wide">{articles[0].date}</span>
-                </div>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif mb-6 group-hover:text-gold transition-colors duration-300 leading-tight">
-                  {articles[0].title}
-                </h2>
-                <p className="text-harbor text-lg lg:text-xl mb-6 leading-relaxed font-light">{articles[0].excerpt}</p>
-                <div className="flex items-center gap-4">
-                  <p className="text-sm text-harbor font-medium">By {articles[0].author}</p>
-                  <span className="w-12 h-px bg-gold group-hover:w-20 transition-all duration-300" />
-                </div>
-              </div>
-            </div>
-          </Link>
+            Good Hands Journal
+          </p>
+          <h1
+            className="font-serif font-light mb-6"
+            style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', lineHeight: 1, letterSpacing: '-0.02em', color: 'var(--black)' }}
+          >
+            Stories &amp; Insights
+          </h1>
+          <p
+            className="max-w-xl text-lg font-light leading-relaxed"
+            style={{ color: 'var(--harbor)' }}
+          >
+            Beauty, travel, and culture — reported from Lisbon and beyond.
+          </p>
+
+          {/* Category filter — understated pill nav */}
+          <nav className="flex flex-wrap gap-2 mt-10" aria-label="Filter articles">
+            {categories.map(cat => (
+              <button
+                key={cat}
+                onClick={() => { setActiveCategory(cat); setVisibleCount(9) }}
+                className="px-4 py-1.5 text-xs uppercase tracking-[0.15em] font-medium transition-colors duration-200"
+                style={{
+                  color: activeCategory === cat ? 'var(--white)' : 'var(--harbor)',
+                  backgroundColor: activeCategory === cat ? 'var(--black)' : 'transparent',
+                  border: activeCategory === cat ? 'none' : '1px solid var(--gray-light)',
+                }}
+              >
+                {cat}
+              </button>
+            ))}
+          </nav>
         </div>
-      </section>
+      </header>
 
-      {/* Visual Break - Full Width Image */}
-      <FullWidthImageBreak
-        image="/brand-images/ai-generated/service-hair-styling.jpg"
-        alt="Expert hair styling and beauty treatments"
-        height="medium"
-        parallax={true}
-      />
+      {/* Featured article — editorial lead */}
+      {activeCategory === 'All' && (
+        <section className="bg-white">
+          <div className="container-custom max-w-6xl py-12 md:py-20">
+            <Link
+              href={`/journal/${featured.slug}`}
+              className="group grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12"
+            >
+              <div className="lg:col-span-7 relative aspect-[3/2] overflow-hidden">
+                <Image
+                  src={featured.image}
+                  alt={featured.title}
+                  fill
+                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                  priority
+                  sizes="(max-width: 1024px) 100vw, 58vw"
+                />
+                {/* Tonal overlay for brand consistency */}
+                <div className="absolute inset-0 bg-ink/5 mix-blend-multiply" />
+              </div>
 
-      {/* Articles Grid */}
-      <section className="section-padding bg-shell">
-        <div className="container-custom">
-          <h2 className="text-3xl md:text-4xl font-serif mb-12 md:mb-16">Latest Articles</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
-            {articlesToShow.map((article, index) => (
+              <div className="lg:col-span-5 flex flex-col justify-center">
+                <span
+                  className="text-xs uppercase tracking-[0.2em] font-medium mb-4 block"
+                  style={{ color: 'var(--gold)' }}
+                >
+                  {featured.category}
+                </span>
+                <h2
+                  className="font-serif font-light mb-4 group-hover:text-gold transition-colors duration-300"
+                  style={{ fontSize: 'clamp(1.75rem, 3vw, 2.75rem)', lineHeight: 1.15, letterSpacing: '-0.01em', color: 'var(--black)' }}
+                >
+                  {featured.title}
+                </h2>
+                <p className="text-harbor text-base lg:text-lg leading-relaxed mb-6 font-light">
+                  {featured.excerpt}
+                </p>
+                <div className="flex items-center gap-3 text-xs" style={{ color: 'var(--gray-medium)' }}>
+                  <span className="font-medium" style={{ color: 'var(--black)' }}>{featured.author}</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>{featured.date}</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+
+          {/* Thin rule divider */}
+          <div className="container-custom max-w-6xl">
+            <div className="h-px" style={{ backgroundColor: 'var(--gray-light)' }} />
+          </div>
+        </section>
+      )}
+
+      {/* Article grid — Monocle-inspired dense, clean layout */}
+      <section className="bg-white">
+        <div className="container-custom max-w-6xl py-12 md:py-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+            {gridArticles.map((article) => (
               <Link
                 key={article.slug}
                 href={`/journal/${article.slug}`}
-                className="group block bg-white overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-1"
-                style={{ animationDelay: `${index * 100}ms` }}
+                className="group block"
               >
-                <div className="relative h-72 lg:h-80 overflow-hidden">
+                {/* Consistent 3:2 aspect ratio */}
+                <div className="relative aspect-[3/2] overflow-hidden mb-5">
                   <Image
                     src={article.image}
                     alt={article.title}
                     fill
-                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                    className="object-cover transition-transform duration-600 ease-out group-hover:scale-[1.04]"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
-                  {/* Hover overlay with gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  
-                  {/* Category badge overlay */}
-                  <div className="absolute top-4 left-4">
-                    <span className="text-xs uppercase tracking-[0.15em] text-white font-medium px-3 py-1.5 bg-black/50 backdrop-blur-sm rounded-sm">
-                      {article.category}
-                    </span>
-                  </div>
+                  {/* Subtle tonal overlay — every image gets the same warm treatment */}
+                  <div className="absolute inset-0 bg-ink/5 mix-blend-multiply" />
                 </div>
-                <div className="p-6 lg:p-8">
-                  <div className="flex items-center gap-3 mb-3">
-                    <span className="text-xs text-harbor/70 tracking-wide">{article.date}</span>
-                  </div>
-                  <h3 className="text-xl lg:text-2xl font-serif mb-3 group-hover:text-gold transition-colors duration-300 leading-snug">
-                    {article.title}
-                  </h3>
-                  <p className="text-harbor text-sm mb-4 leading-relaxed line-clamp-2">{article.excerpt}</p>
-                  <div className="flex items-center justify-between">
-                    <p className="text-xs text-harbor font-medium">By {article.author}</p>
-                    <span className="text-gold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">Read →</span>
-                  </div>
+
+                <span
+                  className="text-[10px] uppercase tracking-[0.2em] font-medium block mb-2"
+                  style={{ color: 'var(--gold)' }}
+                >
+                  {article.category}
+                </span>
+                <h3
+                  className="font-serif font-normal mb-2 group-hover:text-gold transition-colors duration-200 leading-snug"
+                  style={{ fontSize: 'clamp(1.1rem, 1.5vw, 1.35rem)', color: 'var(--black)' }}
+                >
+                  {article.title}
+                </h3>
+                <p className="text-sm leading-relaxed mb-3 line-clamp-2" style={{ color: 'var(--harbor)' }}>
+                  {article.excerpt}
+                </p>
+                <div className="flex items-center gap-2 text-xs" style={{ color: 'var(--gray-medium)' }}>
+                  <span className="font-medium" style={{ color: 'var(--black)' }}>{article.author}</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>{article.date}</span>
                 </div>
               </Link>
             ))}
           </div>
 
-          {/* Load More Button - Editorial Design */}
-          {visibleArticles < articles.length && (
-            <div className="text-center mt-16">
+          {/* Load more — minimal */}
+          {gridArticles.length < (activeCategory === 'All' ? filtered.length - 1 : filtered.length) && (
+            <div className="text-center mt-16 pt-12 border-t" style={{ borderColor: 'var(--gray-light)' }}>
               <button
-                onClick={loadMore}
-                className="group relative inline-block"
+                onClick={() => setVisibleCount(prev => prev + 6)}
+                className="text-xs uppercase tracking-[0.2em] font-medium px-8 py-3 transition-colors duration-200 hover:text-white hover:bg-ink"
+                style={{ color: 'var(--black)', border: '1px solid var(--black)' }}
               >
-                <span 
-                  className="block text-sm uppercase tracking-[0.2em] font-semibold mb-4 transition-colors duration-300"
-                  style={{ color: 'var(--gray-medium)' }}
-                >
-                  Continue Reading
-                </span>
-                <span 
-                  className="block text-2xl md:text-3xl font-serif font-light group-hover:text-gold transition-colors duration-300"
-                  style={{ color: 'var(--black)', letterSpacing: '-0.01em' }}
-                >
-                  More Articles
-                </span>
-                <span 
-                  className="block w-16 h-px mx-auto mt-6 transition-all duration-300 group-hover:w-24"
-                  style={{ backgroundColor: 'var(--gold)' }}
-                />
+                Load more
               </button>
-              <p 
-                className="text-xs uppercase tracking-[0.15em] mt-8"
-                style={{ color: 'var(--gray-medium)' }}
-              >
-                {visibleArticles} of {articles.length}
+              <p className="text-xs mt-4" style={{ color: 'var(--gray-medium)' }}>
+                Showing {gridArticles.length + (activeCategory === 'All' ? 1 : 0)} of {filtered.length}
               </p>
             </div>
           )}

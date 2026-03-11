@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import NeighborhoodMap from '@/components/NeighborhoodMap'
+import { Waves, Umbrella, Landmark, MapPin, Sun, Globe, MessageCircle, Clock, Sailboat, UtensilsCrossed, Flag, Sunrise } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Best Beauty Services in Cascais Portugal — Resort Spas & Beach Beauty | Good Hands',
@@ -60,7 +61,7 @@ export default function CascaisPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg p-6">
-              <div className="text-4xl mb-4">🌊</div>
+              <div className="mb-4"><Waves className="w-10 h-10 text-gold" /></div>
               <h3 className="text-xl font-serif mb-3">Resort Spa Experience</h3>
               <p className="text-harbor">
                 Full resort spas with extensive facilities, ocean-view treatment rooms, and therapists trained in international resort standards.
@@ -68,7 +69,7 @@ export default function CascaisPage() {
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <div className="text-4xl mb-4">☀️</div>
+              <div className="mb-4"><Sun className="w-10 h-10 text-gold" /></div>
               <h3 className="text-xl font-serif mb-3">Beach-Ready Expertise</h3>
               <p className="text-harbor">
                 Professionals who understand coastal beauty needs—sun protection, humidity-proof styling, beach-to-dinner transformations.
@@ -76,7 +77,7 @@ export default function CascaisPage() {
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <div className="text-4xl mb-4">🌍</div>
+              <div className="mb-4"><Globe className="w-10 h-10 text-gold" /></div>
               <h3 className="text-xl font-serif mb-3">International Vibe</h3>
               <p className="text-harbor">
                 Cosmopolitan clientele of expats, tourists, and wealthy Portuguese. Services cater to diverse beauty standards and preferences.
@@ -134,28 +135,28 @@ export default function CascaisPage() {
           
           <div className="space-y-6">
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">🏖️ Relaxed Resort Atmosphere</h3>
+              <h3 className="font-semibold text-lg mb-3 flex items-center gap-2"><Umbrella className="w-5 h-5 text-gold flex-shrink-0" /> Relaxed Resort Atmosphere</h3>
               <p className="text-harbor">
                 Even high-end services have a relaxed, vacation vibe. Appointments feel less rushed than Lisbon, dress codes are casual (beach chic totally acceptable), and the overall energy is "we&apos;re all on holiday here."
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">☀️ Sun-Protective Focus</h3>
+              <h3 className="font-semibold text-lg mb-3 flex items-center gap-2"><Sun className="w-5 h-5 text-gold flex-shrink-0" /> Sun-Protective Focus</h3>
               <p className="text-harbor">
                 Every esthetician emphasizes SPF, stylists recommend UV-protective hair products, and professionals understand that clients spend significant time outdoors. Sun damage prevention is woven into every consultation.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">🗣️ Fluent English</h3>
+              <h3 className="font-semibold text-lg mb-3 flex items-center gap-2"><MessageCircle className="w-5 h-5 text-gold flex-shrink-0" /> Fluent English</h3>
               <p className="text-harbor">
                 High concentration of British, French, and American expats means excellent English proficiency across all beauty businesses. Many professionals have worked internationally or trained abroad.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-semibold text-lg mb-3">⏰ Seasonal Considerations</h3>
+              <h3 className="font-semibold text-lg mb-3 flex items-center gap-2"><Clock className="w-5 h-5 text-gold flex-shrink-0" /> Seasonal Considerations</h3>
               <p className="text-harbor">
                 Summer (June-September): Book well ahead—Cascais fills with tourists and second-home owners. Winter (October-May): Quieter, easier bookings, better for locals and long-term visitors. Consider seasonality when planning.
               </p>
@@ -193,7 +194,7 @@ export default function CascaisPage() {
 
           <div className="mt-8 bg-gold/10 rounded-lg p-6">
             <p className="text-harbor">
-              <strong>💡 Pro Tip:</strong> Take the scenic coastal train from Lisbon—it&apos;s the most enjoyable journey. Book a late afternoon appointment, then stay for dinner by the marina. Make a full evening of it rather than rushing back to Lisbon.
+              <strong>Pro Tip:</strong> Take the scenic coastal train from Lisbon—it&apos;s the most enjoyable journey. Book a late afternoon appointment, then stay for dinner by the marina. Make a full evening of it rather than rushing back to Lisbon.
             </p>
           </div>
         </div>
@@ -206,7 +207,7 @@ export default function CascaisPage() {
           
           <div className="space-y-4">
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🏖️</span>
+              <Umbrella className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Praia da Conceição</h4>
                 <p className="text-harbor text-sm">Main beach, steps from historic center, beach clubs and restaurants</p>
@@ -214,7 +215,7 @@ export default function CascaisPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🌊</span>
+              <Waves className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Boca do Inferno</h4>
                 <p className="text-harbor text-sm">Dramatic coastal cliffs where waves crash into cave formations</p>
@@ -222,7 +223,7 @@ export default function CascaisPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">⛵</span>
+              <Sailboat className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Cascais Marina</h4>
                 <p className="text-harbor text-sm">Luxury yacht harbor with waterfront restaurants and bars</p>
@@ -230,7 +231,7 @@ export default function CascaisPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🏛️</span>
+              <Landmark className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Casa das Histórias Paula Rego</h4>
                 <p className="text-harbor text-sm">Contemporary art museum dedicated to Portuguese artist Paula Rego</p>
@@ -238,7 +239,7 @@ export default function CascaisPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🍽️</span>
+              <UtensilsCrossed className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Fortaleza do Guincho</h4>
                 <p className="text-harbor text-sm">Michelin-starred restaurant in 17th-century fortress overlooking Atlantic</p>
@@ -246,7 +247,7 @@ export default function CascaisPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">⛳</span>
+              <Flag className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Oitavos Dunes Golf Course</h4>
                 <p className="text-harbor text-sm">Championship links course, regularly ranked Europe&apos;s best</p>
@@ -254,7 +255,7 @@ export default function CascaisPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🌅</span>
+              <Sunrise className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Cabo da Roca</h4>
                 <p className="text-harbor text-sm">Westernmost point of continental Europe, 15 min drive, spectacular views</p>
@@ -272,7 +273,7 @@ export default function CascaisPage() {
           <div className="bg-shell rounded-lg p-4">
             <div className="aspect-video w-full bg-harbor/10 rounded flex items-center justify-center">
               <div className="text-center text-harbor">
-                <p className="text-lg mb-2">📍 Interactive Map</p>
+                <p className="text-lg mb-2"><MapPin className="w-5 h-5 inline mr-1" /> Interactive Map</p>
                 <p className="text-sm">Google Maps integration showing Good Hands partner locations in Cascais</p>
                 <p className="text-xs mt-2 text-harbor/60">(Map embed coming in production)</p>
               </div>

@@ -154,7 +154,7 @@ export const SEO_TEMPLATES = {
   home: {
     title: 'Good Hands — Luxury Beauty Concierge Lisbon | Vetted Professionals',
     description: 'Lisbon\'s premier luxury beauty concierge service. We match you with personally vetted hair stylists, spa therapists, and beauty professionals. Trusted by Four Seasons, Tivoli, and luxury hotels.',
-    keywords: 'luxury beauty concierge Lisbon, beauty services Lisbon, hair stylist Lisbon, spa treatments Lisbon',
+    keywords: 'luxury beauty concierge Lisbon, beauty services Lisbon, hair stylist Lisbon, spa treatments Lisbon, makeup artist Lisbon photoshoot, beauty team for photographers Lisbon, editorial makeup artist Portugal',
   },
   
   // Service pages
@@ -190,6 +190,13 @@ export const SEO_TEMPLATES = {
     title: 'Beauty Journal — Expert Guides & Insights | Good Hands Lisbon',
     description: 'Expert beauty guides, neighborhood reviews, and insider tips for experiencing Lisbon\'s best hair, spa, and wellness services.',
     keywords: 'lisbon beauty blog, beauty guides, spa guides lisbon',
+  },
+
+  // For Photographers
+  forPhotographers: {
+    title: 'For Photographers — Beauty Teams On-Demand in Lisbon | Good Hands',
+    description: 'Photographers: get vetted hair and makeup artists for your shoots in Lisbon, Cascais, and Sintra. We coordinate your beauty team so you can focus on shooting.',
+    keywords: 'makeup artist Lisbon photoshoot, beauty team photographer Lisbon, MUA wedding photographer Portugal, editorial makeup artist Lisbon, hair makeup team photoshoot Portugal, find makeup artist Lisbon, photoshoot hair stylist Cascais Sintra',
   },
 } as const
 
@@ -267,6 +274,10 @@ export function getOrganizationSchema() {
       'Concierge Services',
       'Luxury Hospitality',
       'Lisbon Tourism',
+      'Photoshoot Styling',
+      'Editorial Beauty',
+      'Wedding Beauty Teams',
+      'Photographer Partnerships',
     ],
     slogan: BUSINESS_INFO.slogan,
   }

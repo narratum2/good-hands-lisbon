@@ -18,7 +18,7 @@ interface ChatWidgetProps {
 
 export default function IntelligentChat({ 
   position = 'bottom-right',
-  primaryColor = '#8B7355' 
+  primaryColor = 'var(--gold)' 
 }: ChatWidgetProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [hasBeenClosed, setHasBeenClosed] = useState(false) // Track if user closed chat

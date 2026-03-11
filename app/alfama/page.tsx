@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import NeighborhoodMap from '@/components/NeighborhoodMap'
+import { Landmark, Castle, MapPin, Heart, Palette, Church, Music, Sunrise, UtensilsCrossed } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Best Beauty Services in Alfama Lisbon — Historic Salons & Traditional Spas | Good Hands',
@@ -54,7 +55,7 @@ export default function AlfamaPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg p-6">
-              <div className="text-4xl mb-4">🏛️</div>
+              <div className="mb-4"><Landmark className="w-10 h-10 text-gold" /></div>
               <h3 className="text-xl font-serif mb-3">Authentic Atmosphere</h3>
               <p className="text-harbor">
                 Experience beauty services in historic buildings with original architecture, offering a unique and memorable setting.
@@ -62,7 +63,7 @@ export default function AlfamaPage() {
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <div className="text-4xl mb-4">🤲</div>
+              <div className="mb-4"><Heart className="w-10 h-10 text-gold" /></div>
               <h3 className="text-xl font-serif mb-3">Personal Touch</h3>
               <p className="text-harbor">
                 Smaller, family-run establishments provide exceptional personal attention and traditional Portuguese hospitality.
@@ -70,7 +71,7 @@ export default function AlfamaPage() {
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <div className="text-4xl mb-4">🎭</div>
+              <div className="mb-4"><Palette className="w-10 h-10 text-gold" /></div>
               <h3 className="text-xl font-serif mb-3">Cultural Experience</h3>
               <p className="text-harbor">
                 Combine your beauty appointment with fado music, traditional restaurants, and stunning viewpoints throughout the neighborhood.
@@ -150,7 +151,7 @@ export default function AlfamaPage() {
 
           <div className="mt-8 bg-gold/10 rounded-lg p-6">
             <p className="text-harbor">
-              <strong>💡 Pro Tip:</strong> Schedule your beauty appointment for late morning or early afternoon, then spend the evening exploring Alfama&apos;s fado houses and miradouros (viewpoints). The neighborhood is magical at sunset.
+              <strong>Pro Tip:</strong> Schedule your beauty appointment for late morning or early afternoon, then spend the evening exploring Alfama&apos;s fado houses and miradouros (viewpoints). The neighborhood is magical at sunset.
             </p>
           </div>
         </div>
@@ -163,7 +164,7 @@ export default function AlfamaPage() {
           
           <div className="space-y-4">
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🏰</span>
+              <Castle className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">São Jorge Castle</h4>
                 <p className="text-harbor text-sm">Medieval fortress with panoramic city views, 10-minute walk uphill</p>
@@ -171,7 +172,7 @@ export default function AlfamaPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">⛪</span>
+              <Church className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Lisbon Cathedral (Sé)</h4>
                 <p className="text-harbor text-sm">12th-century Romanesque cathedral, architectural marvel</p>
@@ -179,7 +180,7 @@ export default function AlfamaPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🎵</span>
+              <Music className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Fado Museum</h4>
                 <p className="text-harbor text-sm">Learn about Portugal&apos;s soulful music tradition</p>
@@ -187,7 +188,7 @@ export default function AlfamaPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🌅</span>
+              <Sunrise className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Miradouro de Santa Luzia</h4>
                 <p className="text-harbor text-sm">Stunning terrace overlooking the Tagus, perfect photo spot</p>
@@ -195,7 +196,7 @@ export default function AlfamaPage() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <span className="text-2xl">🍽️</span>
+              <UtensilsCrossed className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Traditional Tascas</h4>
                 <p className="text-harbor text-sm">Authentic Portuguese restaurants serving grilled sardines and bacalhau</p>
@@ -213,7 +214,7 @@ export default function AlfamaPage() {
           <div className="bg-white rounded-lg p-4 shadow-md">
             <div className="aspect-video w-full bg-harbor/10 rounded flex items-center justify-center">
               <div className="text-center text-harbor">
-                <p className="text-lg mb-2">📍 Interactive Map</p>
+                <p className="text-lg mb-2"><MapPin className="w-5 h-5 inline mr-1" /> Interactive Map</p>
                 <p className="text-sm">Google Maps integration will show Good Hands partner locations in Alfama</p>
                 <p className="text-xs mt-2 text-harbor/60">(Map embed coming in production)</p>
               </div>

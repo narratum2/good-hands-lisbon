@@ -28,7 +28,7 @@ export default function AIDiscoveryTracker() {
     // Log AI agent detection for debugging
     const aiAgent = detectAIAgent()
     if (aiAgent) {
-      console.log(`🤖 Good Hands: AI Agent detected - ${aiAgent}`)
+      if (process.env.NODE_ENV === 'development') console.log(`Good Hands: AI Agent detected - ${aiAgent}`)
       
       // Track AI agent visit with Google Analytics if available
       if (typeof window !== 'undefined' && window.gtag) {

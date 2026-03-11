@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Sparkles, Heart, Clock, MapPin } from 'lucide-react'
+import { Sparkles, Heart, Clock, MapPin, Target, MessageCircle, Check } from 'lucide-react'
 import RelatedServices from '@/components/RelatedServices'
 
 export const metadata: Metadata = {
@@ -160,8 +160,8 @@ export default function SkincareServicesPage() {
                   </ul>
                 </div>
 
-                <div className="mt-4 text-xs text-gold">
-                  ✓ Concierge matching & coordination included
+                <div className="mt-4 text-xs text-gold flex items-center gap-1">
+                  <Check className="w-4 h-4 text-gold inline mr-1" /> Concierge matching &amp; coordination included
                 </div>
               </div>
             ))}
@@ -181,7 +181,7 @@ export default function SkincareServicesPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <h3 className="font-semibold mb-3">☀️ Sun Damage Concerns</h3>
+                <h3 className="font-semibold mb-3">Sun Damage Concerns</h3>
                 <ul className="space-y-2 text-sm text-harbor">
                   <li>• Hyperpigmentation from year-round UV</li>
                   <li>• Premature aging (fine lines, texture changes)</li>
@@ -191,7 +191,7 @@ export default function SkincareServicesPage() {
               </div>
 
               <div>
-                <h3 className="font-semibold mb-3">💨 Wind & Humidity Effects</h3>
+                <h3 className="font-semibold mb-3">Wind &amp; Humidity Effects</h3>
                 <ul className="space-y-2 text-sm text-harbor">
                   <li>• Dehydration despite humid air</li>
                   <li>• Compromised skin barrier from wind</li>
@@ -211,28 +211,28 @@ export default function SkincareServicesPage() {
           
           <div className="space-y-6">
             <div className="bg-white rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-3">🔬 Licensed & Certified</h3>
+              <h3 className="text-xl font-semibold mb-3 flex items-center gap-2"><Heart className="w-5 h-5 text-gold flex-shrink-0" /> Licensed &amp; Certified</h3>
               <p className="text-harbor">
                 All estheticians hold professional licenses and certification from recognized institutions. We verify credentials, not just portfolios.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-3">🧴 Premium Products</h3>
+              <h3 className="text-xl font-semibold mb-3 flex items-center gap-2"><Sparkles className="w-5 h-5 text-gold flex-shrink-0" /> Premium Products</h3>
               <p className="text-harbor">
                 Our partners use professional-grade product lines (Biologique Recherche, Dermalogica, SkinCeuticals) unavailable in retail. You get treatment-strength formulations.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-3">🎯 Matched to Your Needs</h3>
+              <h3 className="text-xl font-semibold mb-3 flex items-center gap-2"><Target className="w-5 h-5 text-gold flex-shrink-0" /> Matched to Your Needs</h3>
               <p className="text-harbor">
                 Acne-prone skin? We match you with estheticians specializing in acne. Anti-aging focus? We connect you with professionals trained in advanced technologies. No guesswork.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-3">💬 Clear Communication</h3>
+              <h3 className="text-xl font-semibold mb-3 flex items-center gap-2"><MessageCircle className="w-5 h-5 text-gold flex-shrink-0" /> Clear Communication</h3>
               <p className="text-harbor">
                 All our estheticians speak English fluently. Describe your concerns clearly, understand treatment plans, and get product recommendations you can actually follow.
               </p>

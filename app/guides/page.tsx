@@ -12,56 +12,56 @@ const neighborhoods = [
   {
     name: 'Chiado',
     slug: 'chiado',
-    description: 'Historic elegance meets modern luxury in Lisbon\'s most refined district',
+    description: 'Lisbon\'s salon district. High-end stylists, editorial makeup artists, and the city\'s best blowout bars.',
     image: '/brand-images/neighborhood-guide-chiado-hero.png',
     highlights: ['Luxury salons', 'Historic spas', 'Art galleries'],
   },
   {
     name: 'Príncipe Real',
     slug: 'principe-real',
-    description: 'Bohemian charm and cutting-edge style in the heart of the city',
+    description: 'Creative professionals, gender-neutral spaces, and the best skincare specialists in the city.',
     image: '/brand-images/neighborhood-guide-principe-real-hero.png',
     highlights: ['Boutique studios', 'Garden cafés', 'Design shops'],
   },
   {
     name: 'Baixa',
     slug: 'baixa',
-    description: 'Grand boulevards and timeless beauty in downtown Lisbon',
+    description: 'Central, easy to reach, and full of reliable mid-range salons. A good default if you\'re staying nearby.',
     image: '/brand-images/neighborhood-guide-baixa-hero.png',
     highlights: ['Classic salons', 'Shopping districts', 'Historic venues'],
   },
   {
     name: 'Avenida da Liberdade',
     slug: 'avenida',
-    description: 'Lisbon\'s Champs-Élysées with premium beauty destinations',
+    description: 'The luxury strip. International brands, executive grooming, and hotel spas with serious product lines.',
     image: '/brand-images/neighborhood-guide-avenida-hero.png',
     highlights: ['High-end spas', 'Luxury brands', 'Tree-lined avenues'],
   },
   {
     name: 'Alfama',
     slug: 'alfama',
-    description: 'Ancient streets and authentic experiences in Lisbon\'s oldest quarter',
+    description: 'Traditional Portuguese beauty. Intimate studios, fado-district atmosphere, neighborhood pricing.',
     image: '/brand-images/neighborhood-guide-alfama-hero.png',
     highlights: ['Traditional treatments', 'Fado music', 'Hidden gems'],
   },
   {
     name: 'Belém',
     slug: 'belem',
-    description: 'Riverside beauty and historic grandeur by the Tagus',
+    description: 'Spa territory. Riverside wellness spaces, couples\' treatments, and full-day relaxation by the Tagus.',
     image: '/brand-images/neighborhood-guide-belem-hero.png',
     highlights: ['Waterfront spas', 'Cultural sites', 'Pastéis de Belém'],
   },
   {
     name: 'Sintra',
     slug: 'sintra',
-    description: 'Romantic escapes and wellness retreats in the enchanted hills',
+    description: 'Wellness retreats and destination spas outside the city. Worth the trip for a half-day or longer.',
     image: '/brand-images/neighborhood-guide-sintra-hero.png',
     highlights: ['Mountain retreats', 'Palace views', 'Natural beauty'],
   },
   {
     name: 'Cascais',
     slug: 'cascais',
-    description: 'Coastal elegance and resort-style pampering by the Atlantic',
+    description: 'Beach-town beauty. Resort spas, sun-damage repair specialists, and a slower coastal pace.',
     image: '/brand-images/neighborhood-guide-cascais-hero.png',
     highlights: ['Beach clubs', 'Marina life', 'Seafood dining'],
   },
@@ -91,7 +91,7 @@ export default function GuidesPage() {
             Neighborhood Guides
           </h1>
           <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto font-light">
-            Discover beauty across Lisbon&apos;s most distinctive districts
+            Where to go, what to expect, and who we recommend — neighborhood by neighborhood.
           </p>
         </div>
         {/* Scroll indicator */}
@@ -111,7 +111,7 @@ export default function GuidesPage() {
               Our Favorite Destinations
             </p>
             <h2 className="text-4xl md:text-5xl font-serif font-light">
-              Handpicked neighborhoods for exceptional beauty
+              Every neighborhood has its own scene
             </h2>
           </div>
           
@@ -165,7 +165,7 @@ export default function GuidesPage() {
       </section>
 
       {/* CTA - Boutique-inspired elegant section */}
-      <section className="py-32 bg-[#0a0a0a] text-white text-center relative overflow-hidden">
+      <section className="py-32 bg-ink text-white text-center relative overflow-hidden">
         {/* Subtle decorative element */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border border-white/20 rounded-full" />

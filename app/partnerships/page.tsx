@@ -2,12 +2,13 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import TrustedByPartners from '@/components/TrustedByPartners'
-import { AlertCircleIcon, DiceIcon, ClockIcon, SearchIcon, Handshake, Sparkles, TrendingUp, BrushIcon } from '@/components/icons/CustomIcons'
+import { Camera, MapPin, Zap } from 'lucide-react'
+import { AlertCircleIcon, DiceIcon, ClockIcon, SearchIcon, Handshake, Sparkles, TrendingUp, BrushIcon, StarIcon } from '@/components/icons/CustomIcons'
 
 export const metadata: Metadata = {
   title: 'Hotel Partnerships | Good Hands Beauty Concierge',
   description: 'Partner with Good Hands to offer your guests exclusive access to Lisbon\'s top beauty professionals. Commission-based, seamless integration, white-glove service. Trusted by Four Seasons, Tivoli, and luxury boutique properties.',
-  keywords: 'hotel beauty services, hotel partnerships, luxury hotel amenities, guest services, hotel concierge partnerships, Lisbon hotels',
+  keywords: 'hotel beauty services, hotel partnerships, luxury hotel amenities, guest services, hotel concierge partnerships, Lisbon hotels, photographer beauty team Lisbon, editorial makeup artist, photoshoot hair and makeup Portugal',
 }
 
 export default function PartnershipsPage() {
@@ -364,7 +365,7 @@ export default function PartnershipsPage() {
             <div className="grid md:grid-cols-2 gap-6 md:gap-8">
               <div className="bg-white p-8 rounded-lg">
                 <div className="flex gap-1 text-gold mb-4">
-                  <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                  {[...Array(5)].map((_, i) => <StarIcon key={i} size={16} color="var(--gold)" filled />)}
                 </div>
                 <p className="text-harbor text-lg mb-4 italic">
                   "Good Hands has become an invaluable extension of our concierge team. Our guests consistently rave about the quality of services, and the seamless coordination saves us hours every week."
@@ -373,7 +374,7 @@ export default function PartnershipsPage() {
               </div>
               <div className="bg-white p-8 rounded-lg">
                 <div className="flex gap-1 text-gold mb-4">
-                  <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                  {[...Array(5)].map((_, i) => <StarIcon key={i} size={16} color="var(--gold)" filled />)}
                 </div>
                 <p className="text-harbor text-lg mb-4 italic">
                   "As a boutique property, we can't afford to have beauty professionals on staff. Good Hands allows us to offer luxury-level beauty services that match our brand, with zero overhead."
@@ -381,6 +382,49 @@ export default function PartnershipsPage() {
                 <p className="text-ink font-semibold">— General Manager, Boutique Hotel Chiado</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* For Photographers & Creative Teams */}
+      <section className="section-padding bg-white">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <p className="text-gold uppercase tracking-widest text-sm mb-4">For Creative Professionals</p>
+            <h2 className="text-4xl md:text-5xl font-serif text-ink mb-6">
+              Photographers & Production Teams
+            </h2>
+            <p className="text-xl text-harbor max-w-2xl mx-auto">
+              Planning a shoot in Lisbon? We provide vetted, camera-experienced beauty teams for editorial, wedding, lifestyle, and brand photography.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-12">
+            <div className="text-center">
+              <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Camera className="w-6 h-6 text-gold" />
+              </div>
+              <h3 className="font-semibold text-ink mb-2">Camera-Trained Artists</h3>
+              <p className="text-harbor text-sm">Every artist understands color theory, flash-safe products, and on-set protocols.</p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <MapPin className="w-6 h-6 text-gold" />
+              </div>
+              <h3 className="font-semibold text-ink mb-2">All Locations Covered</h3>
+              <p className="text-harbor text-sm">Lisbon, Cascais, Sintra, Cabo da Roca, Ericeira — we come to your set.</p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Zap className="w-6 h-6 text-gold" />
+              </div>
+              <h3 className="font-semibold text-ink mb-2">Production-Ready</h3>
+              <p className="text-harbor text-sm">Multi-day bookings, multi-artist teams, editorial and commercial rates available.</p>
+            </div>
+          </div>
+          <div className="text-center">
+            <Link href="/for-photographers" className="btn-gold">
+              Learn More — For Photographers
+            </Link>
           </div>
         </div>
       </section>

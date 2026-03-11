@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import { AlertTriangle, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/cookies' },
@@ -153,19 +154,19 @@ export default function CookiesPage() {
             <div className="bg-gold/10 border border-gold rounded-lg p-6">
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
-                  <span className="text-gold text-xl">⚠️</span>
+                  <AlertTriangle className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
                   <span className="text-harbor">You may need to re-enter information when booking</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-gold text-xl">⚠️</span>
+                  <AlertTriangle className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
                   <span className="text-harbor">Preference settings won't be remembered</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-gold text-xl">⚠️</span>
+                  <AlertTriangle className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
                   <span className="text-harbor">Some pages may not display correctly</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-gold text-xl">✓</span>
+                  <CheckCircle className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
                   <span className="text-harbor">You can still browse and make bookings</span>
                 </li>
               </ul>
