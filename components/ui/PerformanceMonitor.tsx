@@ -23,7 +23,7 @@ export default function PerformanceMonitor() {
       const lastEntry = entries[entries.length - 1] as PerformanceEntry & { element?: Element }
       metrics.lcp = lastEntry.startTime
       
-      console.log('LCP:', metrics.lcp)
+      if (process.env.NODE_ENV === 'development') console.log('LCP:', metrics.lcp)
       // Send to analytics service
       sendMetric('lcp', metrics.lcp)
     })
@@ -36,7 +36,7 @@ export default function PerformanceMonitor() {
         const fid = (entry as any).processingStart - entry.startTime
         metrics.fid = fid
         
-        console.log('FID:', metrics.fid)
+        if (process.env.NODE_ENV === 'development') console.log('FID:', metrics.fid)
         sendMetric('fid', metrics.fid)
       })
     })
@@ -51,7 +51,7 @@ export default function PerformanceMonitor() {
           clsValue += (entry as any).value
           metrics.cls = clsValue
           
-          console.log('CLS:', metrics.cls)
+          if (process.env.NODE_ENV === 'development') console.log('CLS:', metrics.cls)
           sendMetric('cls', metrics.cls)
         }
       })
@@ -62,7 +62,7 @@ export default function PerformanceMonitor() {
     const navigationEntry = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming
     if (navigationEntry) {
       metrics.ttfb = navigationEntry.responseStart - navigationEntry.requestStart
-      console.log('TTFB:', metrics.ttfb)
+      if (process.env.NODE_ENV === 'development') console.log('TTFB:', metrics.ttfb)
       sendMetric('ttfb', metrics.ttfb)
     }
 
@@ -72,7 +72,7 @@ export default function PerformanceMonitor() {
       entries.forEach((entry) => {
         if (entry.name === 'first-contentful-paint') {
           metrics.fcp = entry.startTime
-          console.log('FCP:', metrics.fcp)
+          if (process.env.NODE_ENV === 'development') console.log('FCP:', metrics.fcp)
           sendMetric('fcp', metrics.fcp)
         }
       })
@@ -138,13 +138,13 @@ export function measurePerformance(name: string, fn: () => void | Promise<void>)
     return result.finally(() => {
       const end = performance.now()
       const duration = end - start
-      console.log(`${name} took ${duration.toFixed(2)}ms`)
+      if (process.env.NODE_ENV === 'development') console.log(`${name} took ${duration.toFixed(2)}ms`)
       sendMetric(`custom_${name.toLowerCase()}`, duration)
     })
   } else {
     const end = performance.now()
     const duration = end - start
-    console.log(`${name} took ${duration.toFixed(2)}ms`)
+    if (process.env.NODE_ENV === 'development') console.log(`${name} took ${duration.toFixed(2)}ms`)
     sendMetric(`custom_${name.toLowerCase()}`, duration)
     return result
   }
@@ -158,7 +158,7 @@ export function useRenderPerformance(componentName: string) {
     return () => {
       const end = performance.now()
       const duration = end - start
-      console.log(`${componentName} render took ${duration.toFixed(2)}ms`)
+      if (process.env.NODE_ENV === 'development') console.log(`${componentName} render took ${duration.toFixed(2)}ms`)
       sendMetric(`render_${componentName.toLowerCase()}`, duration)
     }
   })

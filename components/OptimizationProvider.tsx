@@ -15,7 +15,7 @@ export default function OptimizationProvider() {
     // Initialize all optimization systems
     const init = async () => {
       try {
-        console.log('[OptimizationProvider] Starting initialization...')
+        if (process.env.NODE_ENV === 'development') console.log('[OptimizationProvider] Starting initialization...')
         const manager = await initializeOptimizations()
         
         // Get status
@@ -23,19 +23,19 @@ export default function OptimizationProvider() {
         setSystemStatus(status)
         setIsInitialized(true)
 
-        console.log('[OptimizationProvider] ✅ Initialization complete')
+        if (process.env.NODE_ENV === 'development') console.log('[OptimizationProvider] Initialization complete')
 
         // Run health check after 5 seconds
         setTimeout(async () => {
           const healthCheck = await manager?.runHealthCheck()
-          console.log('[OptimizationProvider] Health Check:', healthCheck)
+          if (process.env.NODE_ENV === 'development') console.log('[OptimizationProvider] Health Check:', healthCheck)
           
           if (healthCheck && !healthCheck.healthy) {
-            console.warn('[OptimizationProvider] ⚠️ Health check failed:', healthCheck.issues)
+            if (process.env.NODE_ENV === 'development') console.warn('[OptimizationProvider] Health check failed:', healthCheck.issues)
           }
         }, 5000)
       } catch (error) {
-        console.error('[OptimizationProvider] ❌ Initialization failed:', error)
+        if (process.env.NODE_ENV === 'development') console.error('[OptimizationProvider] Initialization failed:', error)
       }
     }
 
@@ -66,7 +66,7 @@ export function OptimizationStatusBadge() {
         const currentStatus = manager.getStatus()
         setStatus(currentStatus)
       } catch (error) {
-        console.error('[OptimizationStatusBadge] Error getting status:', error)
+        if (process.env.NODE_ENV === 'development') console.error('[OptimizationStatusBadge] Error getting status:', error)
       }
     }, 5000)
 
@@ -81,7 +81,7 @@ export function OptimizationStatusBadge() {
         onClick={() => setIsVisible(!isVisible)}
         className="bg-gold text-white px-4 py-2 rounded-lg shadow-lg hover:bg-gold-dark transition-colors text-sm font-semibold"
       >
-        🚀 Optimizations {status.isInitialized ? '✅' : '⏳'}
+        Optimizations {status.isInitialized ? 'Ready' : 'Loading'}
       </button>
       
       {isVisible && (
@@ -89,7 +89,7 @@ export function OptimizationStatusBadge() {
           <h3 className="font-bold mb-2 text-lg">Optimization Systems</h3>
           <div className="space-y-2 text-sm">
             <div>
-              <strong>Status:</strong> {status.isInitialized ? 'Initialized ✅' : 'Loading ⏳'}
+              <strong>Status:</strong> {status.isInitialized ? 'Initialized' : 'Loading'}
             </div>
             <div>
               <strong>Active:</strong> {status.activeCount}/{status.totalCount}
@@ -100,7 +100,7 @@ export function OptimizationStatusBadge() {
                 <div key={system} className="flex justify-between items-center py-1">
                   <span className="capitalize">{system}</span>
                   <span className={state === 'active' ? 'text-green-600' : state === 'error' ? 'text-red-600' : 'text-gray-500'}>
-                    {state === 'active' ? '✅' : state === 'error' ? '❌' : '⏸️'}
+                    {state === 'active' ? 'Ready' : state === 'error' ? 'Error' : 'Paused'}
                   </span>
                 </div>
               ))}
