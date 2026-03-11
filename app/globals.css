@@ -117,107 +117,29 @@
   text-decoration-color: var(--gold-dark);
 }
 
-  /* Typography Hierarchy - VOGUE EDITORIAL */
-  h1 {
-    @apply font-serif;
-    color: var(--black);
-    font-size: clamp(3rem, 7vw, 5rem); /* Mobile: 48px → Desktop: 80px - LARGER */
-    font-weight: 400; /* Lighter for elegance */
-    line-height: 1.1; /* Tighter for impact */
-    letter-spacing: -0.02em; /* Tighter for sophistication */
-    margin-bottom: var(--spacing-2xl); /* More space */
-  }
-
-  @media (max-width: 768px) {
-    h1 {
-      line-height: 1.15;
-      margin-bottom: var(--spacing-xl);
-    }
-  }
-
-  h2 {
-    @apply font-serif; /* Changed to serif for editorial feel */
-    color: var(--black);
-    font-size: clamp(2rem, 5vw, 3.5rem); /* Mobile: 32px → Desktop: 56px - LARGER */
+  /*
+   * Base typography — minimal resets only.
+   * All sizing, color, spacing is handled by Tailwind utilities
+   * at the component level. These rules set font-family defaults
+   * so headings are serif and body is sans without forcing
+   * colors, sizes, or margins that fight component classes.
+   */
+  h1, h2 {
+    font-family: var(--font-serif);
     font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: -0.015em;
-    margin-bottom: var(--spacing-xl);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
   }
 
-  @media (max-width: 768px) {
-    h2 {
-      line-height: 1.25;
-      margin-bottom: var(--spacing-lg);
-    }
-  }
-
-  h3 {
-    @apply font-sans;
-    color: var(--black);
-    font-size: clamp(1.5rem, 3.5vw, 2rem); /* Mobile: 24px → Desktop: 32px - LARGER */
-    font-weight: 500;
-    line-height: 1.3;
-    letter-spacing: -0.01em;
-    margin-bottom: var(--spacing-lg);
-  }
-
-  @media (max-width: 768px) {
-    h3 {
-      margin-bottom: var(--spacing-md);
-    }
-  }
-
-  h4 {
-    @apply font-sans text-black uppercase;
-    font-size: 1.125rem; /* 18px */
+  h3, h4, h5, h6 {
+    font-family: var(--font-sans);
     font-weight: 600;
     line-height: 1.4;
-    letter-spacing: 0.05em;
-    margin-bottom: var(--spacing-md);
-  }
-
-  h5 {
-    @apply font-sans text-gray-dark;
-    font-size: 1rem; /* 16px */
-    font-weight: 500;
-    line-height: 1.5;
-    margin-bottom: var(--spacing-sm);
-  }
-
-  h6 {
-    @apply font-sans text-gray-dark uppercase;
-    font-size: 0.875rem; /* 14px */
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    margin-bottom: var(--spacing-sm);
-  }
-
-  p {
-    font-size: 17px; /* Slightly larger for luxury feel */
-    font-weight: 400;
-    line-height: 1.8; /* More generous line-height */
-    color: var(--gray-dark);
-    margin-bottom: var(--spacing-xl); /* More space between paragraphs */
-    max-width: 65ch; /* Slightly narrower for better readability */
-  }
-  
-  @media (max-width: 768px) {
-    p {
-      font-size: 16px;
-      line-height: 1.7;
-      margin-bottom: var(--spacing-lg);
-    }
   }
 
   a {
     @apply transition-colors;
     transition-duration: 300ms;
-    color: var(--black);
-  }
-
-  a:hover {
-    color: var(--gold);
   }
 }
 
@@ -531,23 +453,23 @@
     border-color: var(--black);
   }
 
-  /* Layout System - LUXURY BREATHING ROOM */
+  /* Layout System */
   .section-padding {
-    padding-top: var(--spacing-6xl); /* 160px desktop - INCREASED */
-    padding-bottom: var(--spacing-6xl);
+    padding-top: var(--spacing-4xl);   /* 96px desktop */
+    padding-bottom: var(--spacing-4xl);
   }
 
   @media (max-width: 1024px) {
     .section-padding {
-      padding-top: var(--spacing-5xl); /* 128px tablet */
-      padding-bottom: var(--spacing-5xl);
+      padding-top: 72px;
+      padding-bottom: 72px;
     }
   }
 
   @media (max-width: 768px) {
     .section-padding {
-      padding-top: var(--spacing-4xl); /* 96px mobile */
-      padding-bottom: var(--spacing-4xl);
+      padding-top: 56px;
+      padding-bottom: 56px;
     }
   }
 
