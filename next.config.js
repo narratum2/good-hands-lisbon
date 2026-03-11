@@ -92,6 +92,13 @@ const nextConfig = {
   // Redirects
   async redirects() {
     return [
+      // www → non-www (permanent 301 for full SEO link equity)
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.beautysalonlisbon.com' }],
+        destination: 'https://beautysalonlisbon.com/:path*',
+        permanent: true,
+      },
       {
         source: '/contact',
         destination: '/#booking',
