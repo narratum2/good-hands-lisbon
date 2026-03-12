@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'Corporate Beauty Services Lisbon — Team Wellness, Executive Grooming | Good Hands',
   description: 'Professional beauty services for corporate teams in Lisbon. Executive grooming, team wellness packages, on-site services, employee benefits. Trusted by leading companies.',
   keywords: 'corporate beauty services, executive grooming, team wellness, company benefits, professional appearance, corporate packages lisbon',
+  alternates: {
+    canonical: 'https://beautysalonlisbon.com/corporate',
+  },
 }
 
 const services = [

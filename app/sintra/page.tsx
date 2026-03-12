@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'Best Beauty & Wellness in Sintra Portugal — Romantic Spas & Mountain Retreats | Good Hands',
   description: 'Sintra\'s enchanting beauty: boutique spas in historic palaces, holistic wellness retreats, romantic couple treatments. Portugal\'s magical mountain town for rejuvenation, meditation & pampering.',
   keywords: ['sintra beauty', 'sintra spa', 'sintra wellness', 'romantic beauty portugal', 'sintra retreat', 'palace spa sintra', 'couples massage sintra', 'wellness retreat portugal'],
+  alternates: {
+    canonical: 'https://beautysalonlisbon.com/sintra',
+  },
 }
 
 export default function SintraPage() {

@@ -8,6 +8,9 @@ import OptimizedImage from '@/components/ui/OptimizedImage'
 export const metadata: Metadata = {
   title: 'About Good Hands — Lisbon\'s Premier Beauty Concierge Service',
   description: 'Meet the team behind Lisbon\'s most trusted beauty concierge. We match you with vetted professionals for hair, spa, makeup, and wellness. No trial-and-error—just perfect experiences every time.',
+  alternates: {
+    canonical: 'https://beautysalonlisbon.com/about',
+  },
 }
 
 export default function AboutPage() {

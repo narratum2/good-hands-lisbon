@@ -5,6 +5,9 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Premium Beauty Experiences Lisbon — Weddings, Retreats, Corporate | Good Hands',
   description: 'Exclusive beauty packages for destination weddings, wellness retreats, corporate events, and photoshoots in Lisbon. Complete coordination, vetted professionals, perfect results guaranteed.',
+  alternates: {
+    canonical: 'https://beautysalonlisbon.com/experiences',
+  },
 }
 
 const experiences = [

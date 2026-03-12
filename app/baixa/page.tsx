@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'Best Beauty Services in Baixa Lisbon — Central Hair & Spa Salons | Good Hands',
   description: 'Downtown Baixa beauty salons perfect for tourists and business professionals. Convenient central location for haircuts, express spa treatments, manicures. English-speaking professionals.',
   keywords: ['baixa beauty', 'downtown lisbon salon', 'baixa spa', 'central lisbon beauty', 'tourist beauty services lisbon', 'business beauty lisbon', 'express salon baixa'],
+  alternates: {
+    canonical: 'https://beautysalonlisbon.com/baixa',
+  },
 }
 
 export default function BaixaPage() {

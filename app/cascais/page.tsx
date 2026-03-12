@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'Best Beauty Services in Cascais Portugal — Resort Spas & Beach Beauty | Good Hands',
   description: 'Cascais & Estoril resort beauty: luxury spas, beach-ready treatments, pre-wedding services. Portugal\'s coastal chic destination for hair, nails, wellness & photoshoot-ready beauty.',
   keywords: ['cascais beauty', 'cascais salon', 'estoril spa', 'beach beauty portugal', 'resort spa cascais', 'wedding beauty cascais', 'luxury spa estoril', 'photoshoot makeup cascais'],
+  alternates: {
+    canonical: 'https://beautysalonlisbon.com/cascais',
+  },
 }
 
 export default function CascaisPage() {

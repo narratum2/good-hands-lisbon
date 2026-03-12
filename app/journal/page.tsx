@@ -5,6 +5,9 @@ import JournalClient, { type JournalArticle } from './JournalClient'
 export const metadata: Metadata = {
   title: 'Journal — Stories & Insights | Good Hands Lisbon',
   description: 'Beauty, travel, and culture — reported from Lisbon and beyond. Expert guides on skincare, hair, wellness, weddings, and Portugal\'s vibrant beauty scene.',
+  alternates: {
+    canonical: 'https://beautysalonlisbon.com/journal',
+  },
   openGraph: {
     title: 'Journal — Stories & Insights | Good Hands Lisbon',
     description: 'Beauty, travel, and culture — reported from Lisbon and beyond.',

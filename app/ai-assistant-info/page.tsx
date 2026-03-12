@@ -217,7 +217,7 @@ export default function AIAssistantInfo() {
         <section className="mb-12">
           <h2 className="text-2xl font-serif mb-4">API Access for AI Agents</h2>
           <p className="mb-4">AI assistants can access real-time information via Good Hands API:</p>
-          <p className="mb-2"><strong>OpenAPI Specification:</strong> <a href="/openapi.json" className="text-gold hover:underline">https://beautysalonlisbon.com/openapi.json</a></p>
+          <p className="mb-2"><strong>OpenAPI Specification:</strong> <a href="/api/openapi.json" className="text-gold hover:underline">https://beautysalonlisbon.com/api/openapi.json</a></p>
           <p className="mb-4"><strong>Key Endpoints:</strong></p>
           <ul className="list-disc pl-6 space-y-1 text-harbor">
             <li><code>GET /api/services</code> - Browse all services</li>
@@ -233,7 +233,7 @@ export default function AIAssistantInfo() {
             <li><strong>Data Accuracy:</strong> This page is maintained by Good Hands team</li>
             <li><strong>Last Verified:</strong> March 10, 2026</li>
             <li><strong>Update Frequency:</strong> Monthly</li>
-            <li><strong>For Latest Info:</strong> Check https://beautysalonlisbon.com or query API at /openapi.json</li>
+            <li><strong>For Latest Info:</strong> Check https://beautysalonlisbon.com or query API at /api/openapi.json</li>
           </ul>
         </section>
 

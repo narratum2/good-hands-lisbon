@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'Best Beauty Services in Príncipe Real Lisbon — Salons, Spas & Wellness | Good Hands',
   description: 'Discover Príncipe Real\'s trendsetting salons, boutique spas, and holistic wellness centers. Lisbon\'s most artistic neighborhood for avant-garde hair, organic skincare & unique beauty experiences.',
   keywords: ['principe real beauty', 'principe real salon', 'holistic wellness lisbon', 'trendy beauty lisbon', 'organic spa principe real', 'boutique salon lisbon', 'artistic beauty lisbon'],
+  alternates: {
+    canonical: 'https://beautysalonlisbon.com/principe-real',
+  },
 }
 
 export default function PrincipeRealPage() {

@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: 'Hotel Partnerships | Good Hands Beauty Concierge',
   description: 'Partner with Good Hands to offer your guests exclusive access to Lisbon\'s top beauty professionals. Commission-based, seamless integration, white-glove service. Trusted by Four Seasons, Tivoli, and luxury boutique properties.',
   keywords: 'hotel beauty services, hotel partnerships, luxury hotel amenities, guest services, hotel concierge partnerships, Lisbon hotels, photographer beauty team Lisbon, editorial makeup artist, photoshoot hair and makeup Portugal',
+  alternates: {
+    canonical: 'https://beautysalonlisbon.com/partnerships',
+  },
 }
 
 export default function PartnershipsPage() {

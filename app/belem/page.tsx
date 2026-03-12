@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'Best Beauty Services in Belém Lisbon — Waterfront Salons & Local Spas | Good Hands',
   description: 'Belém beauty near Lisbon\'s iconic waterfront monuments. Peaceful salons, authentic Portuguese atmosphere, family-run businesses. Perfect before/after visiting Tower of Belém & Jerónimos Monastery.',
   keywords: ['belem beauty', 'belem salon', 'waterfront beauty lisbon', 'belem spa', 'torre de belem beauty', 'jeronimos beauty', 'peaceful salon lisbon'],
+  alternates: {
+    canonical: 'https://beautysalonlisbon.com/belem',
+  },
 }
 
 export default function BelemPage() {

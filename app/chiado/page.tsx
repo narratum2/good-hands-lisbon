@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'Best Beauty Services in Chiado Lisbon — Hair, Spa, Makeup | Good Hands',
   description: 'Discover Chiado\'s top-rated beauty salons, spas, and makeup artists. Lisbon\'s most elegant neighborhood for luxury hair styling, facials, and wellness. Vetted professionals, perfect matching.',
   keywords: ['chiado beauty', 'chiado salon', 'chiado spa', 'luxury beauty lisbon', 'chiado hair salon', 'chiado makeup artist'],
+  alternates: {
+    canonical: 'https://beautysalonlisbon.com/chiado',
+  },
 }
 
 export default function ChiadoPage() {

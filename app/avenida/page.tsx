@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'Best Luxury Beauty on Avenida da Liberdade Lisbon — Flagship Salons & Spas | Good Hands',
   description: 'Avenida da Liberdade\'s luxury beauty: flagship salons, international brands, executive grooming & VIP spa experiences. Lisbon\'s grandest boulevard for premium hair, skincare & wellness.',
   keywords: ['avenida beauty', 'luxury salon lisbon', 'avenida da liberdade spa', 'executive grooming lisbon', 'flagship salon lisbon', 'vip beauty lisbon', 'premium spa avenida'],
+  alternates: {
+    canonical: 'https://beautysalonlisbon.com/avenida',
+  },
 }
 
 export default function AvenidaPage() {

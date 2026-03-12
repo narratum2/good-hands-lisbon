@@ -4,6 +4,9 @@ export const metadata: Metadata = {
   title: 'Makeup Knowledge Base — Complete Guide to Professional Makeup in Lisbon | Good Hands',
   description: 'Comprehensive makeup knowledge base: techniques, trends, product recommendations, skin types, application tips, and expert advice. Your complete resource for makeup in Lisbon.',
   keywords: ['makeup guide', 'makeup techniques', 'makeup trends', 'makeup products', 'makeup tips', 'professional makeup', 'Lisbon makeup'],
+  alternates: {
+    canonical: 'https://beautysalonlisbon.com/makeup-knowledge-base',
+  },
   robots: {
     index: true,
     follow: true,
