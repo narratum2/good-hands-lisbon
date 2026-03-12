@@ -4,6 +4,7 @@ import Script from 'next/script'
 import { Analytics } from '@vercel/analytics/react'
 import './globals.css'
 import dynamic from 'next/dynamic'
+const OptimizationProvider = dynamic(() => import('@/components/OptimizationProvider'), { ssr: false })
 import ConditionalNavbar from '@/components/ConditionalNavbar'
 import ConditionalFooter from '@/components/ConditionalFooter'
 import ConditionalGrain from '@/components/ConditionalGrain'
@@ -11,7 +12,7 @@ import ConditionalAIDiscovery from '@/components/ConditionalAIDiscovery'
 const GoogleAnalytics = dynamic(() => import('@/components/GoogleAnalytics'), { ssr: false })
 import { BookingModalProvider } from '@/components/BookingModalProvider'
 import ConditionalSmartAssistant from '@/components/ConditionalSmartAssistant'
-import OptimizationProvider from '@/components/OptimizationProvider'
+
 import { getOrganizationSchema, SEO_TEMPLATES } from '@/lib/seo-config'
 
 // Configure Inter font
