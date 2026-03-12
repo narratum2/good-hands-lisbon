@@ -120,7 +120,7 @@ export default function AboutPage() {
       <section className="relative min-h-screen flex items-center justify-center bg-ink text-white">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/brand-images/homepage-hero-interior.png"
+            src="/brand-images/homepage-hero-interior.webp"
             alt="Good Hands salon interior"
             fill
             className="object-cover opacity-20"

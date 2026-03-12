@@ -933,7 +933,7 @@ We've pre-vetted Lisbon's best bridal makeup artists. Our bridal concierge servi
 Planning from abroad? We're your local expert, so nothing gets missed.
 
 **Start planning your Lisbon wedding beauty. Contact Good Hands today.**`,
-    image: '/brand-images/ai-generated/service-makeup.jpg',
+    image: '/brand-images/experience-bridal-beauty.png',
     date: '2025-10-13',
     category: 'Weddings',
     author: {
@@ -1214,7 +1214,7 @@ The biggest challenge for nomads isn't finding a salon—it's finding the right 
 ## Wellness Routines for Screen-Heavy Lifestyles
 
 Remote work means screens. Hours of them. And that takes a toll—eye strain headaches that tighten your scalp, posture-related tension that shows in your face, blue light exposure that disrupts sleep and dulls skin. Lisbon's wellness scene has answers. Regular facial massage and lymphatic drainage counter the puffiness that comes with late-night laptop sessions. Scalp treatments address the tension headaches. Hammam sessions offer deep relaxation that no meditation app can match. And the city's outdoor lifestyle—morning walks along the Tagus, weekend hikes in Sintra—provides the balance that keeps everything working. The best beauty routine for a digital nomad isn't just products and appointments; it's integrating movement, light, and human connection into a life that could otherwise become entirely screen-based. Lisbon makes that integration effortless.`,
-    image: '/brand-images/ai-generated/blog-wellness-lisbon.jpg',
+    image: '/brand-images/ai-generated/blog-digital-nomad-beauty.jpg',
     date: '2025-11-15',
     category: 'Lifestyle',
     author: {

@@ -33,7 +33,7 @@ const services = [
       { name: 'Lash Extensions', price: 'On Request', duration: '90 min' },
       { name: 'Microblading Consultation', price: 'On Request', duration: '30 min' },
     ],
-    image: '/brand-images/ai-generated/service-makeup.jpg',
+    image: '/brand-images/ai-generated/service-eyebrows.jpg',
   },
   {
     category: 'Nail Care',
@@ -92,7 +92,7 @@ const services = [
       { name: 'Group Beauty Class', price: 'On Request', duration: '2 hours' },
       { name: 'One-on-One Tutorial', price: 'On Request', duration: '60-90 min' },
     ],
-    image: '/brand-images/ai-generated/service-makeup.jpg',
+    image: '/brand-images/ai-generated/service-education.jpg',
   },
 ]
 

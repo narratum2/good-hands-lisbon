@@ -65,7 +65,7 @@ const experiences = [
       'Waterproof, camera-ready products',
       'Coordination with photographer',
     ],
-    image: '/brand-images/ai-generated/service-makeup.jpg',
+    image: '/brand-images/hero-photoshoots.png',
     priceFrom: '€300',
   },
   {

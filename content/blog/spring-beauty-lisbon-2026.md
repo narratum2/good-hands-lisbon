@@ -7,8 +7,8 @@ date: "2026-03-12"
 lastUpdated: "2026-03-12"
 category: "Seasonal Guides"
 tags: ["lisbon", "spring beauty", "skincare", "hair", "seasonal", "2026", "treatments"]
-featuredImage: "/brand-images/ai-generated/service-wellness.jpg"
-image: "/brand-images/ai-generated/service-wellness.jpg"
+featuredImage: "/brand-images/ai-generated/blog-spring-beauty-lisbon.jpg"
+image: "/brand-images/ai-generated/blog-spring-beauty-lisbon.jpg"
 readTime: "8 min read"
 featured: true
 published: true
