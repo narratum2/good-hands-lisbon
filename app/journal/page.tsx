@@ -8,7 +8,7 @@ const articles = [
   {
     title: 'Todos Santos: Baja\'s Best-Kept Beauty Secret',
     excerpt: 'Where surf culture meets artisanal wellness in Mexico\'s most enchanting desert oasis.',
-    image: '/brand-images/ai-generated/service-wellness.jpg',
+    image: '/brand-images/ai-generated/blog-todos-santos.jpg',
     date: 'December 20, 2025',
     category: 'Global Exploration',
     author: 'Isabella Torres',
@@ -17,7 +17,7 @@ const articles = [
   {
     title: 'Miami Beauty: Where Latin Glamour Meets Ocean Luxury',
     excerpt: 'Inside Miami\'s explosive beauty scene — from South Beach glam to Coconut Grove wellness sanctuaries.',
-    image: '/brand-images/ai-generated/service-makeup.jpg',
+    image: '/brand-images/ai-generated/blog-miami-beauty.jpg',
     date: 'December 18, 2025',
     category: 'Global Exploration',
     author: 'Isabella Torres',
@@ -71,7 +71,7 @@ const articles = [
   {
     title: 'The Art of Portuguese Beauty Rituals',
     excerpt: 'Discover centuries-old beauty traditions from Portugal that modern experts still swear by.',
-    image: '/brand-images/ai-generated/service-makeup.jpg',
+    image: '/brand-images/ai-generated/blog-portuguese-rituals.jpg',
     date: 'October 1, 2025',
     category: 'Traditions',
     author: 'Maria Silva',
@@ -80,7 +80,7 @@ const articles = [
   {
     title: 'Wedding Beauty Timeline: 6 Months to I Do',
     excerpt: 'A comprehensive guide to preparing your beauty routine for the big day.',
-    image: '/brand-images/ai-generated/blog-bridal-hair.jpg',
+    image: '/brand-images/ai-generated/blog-wedding-timeline.jpg',
     date: 'September 28, 2025',
     category: 'Weddings',
     author: 'Sofia Martins',
@@ -98,7 +98,7 @@ const articles = [
   {
     title: 'Summer Skincare in Mediterranean Climate',
     excerpt: 'How to adjust your skincare routine for Lisbon summers with expert tips from dermatologists.',
-    image: '/brand-images/ai-generated/service-facial-spa.jpg',
+    image: '/brand-images/ai-generated/blog-summer-skincare.jpg',
     date: 'September 20, 2025',
     category: 'Skincare',
     author: 'Dr. Ana Costa',

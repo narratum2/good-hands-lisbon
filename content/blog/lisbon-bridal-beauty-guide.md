@@ -5,7 +5,7 @@ date: "2025-01-11"
 excerpt: "Everything you need to know about planning bridal beauty services in Lisbon and Portugal—from trials to wedding day coordination, timelines, and expert recommendations."
 author: "Good Hands Team"
 category: "Bridal Beauty"
-image: "/images/blog/bridal-beauty-lisbon.jpg"
+image: "/brand-images/ai-generated/blog-bridal-hair.jpg"
 tags: ["bridal beauty", "wedding lisbon", "bridal makeup", "wedding hair", "portugal wedding", "destination wedding"]
 ---
 

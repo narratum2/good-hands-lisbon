@@ -22,8 +22,8 @@ export default function MensGroomingBlog() {
       <section className="relative h-[50vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image
-            src="/brand-images/hero-salon-interior.png"
-            alt="Men's grooming in Lisbon"
+            src="/brand-images/hero-mens-grooming.png"
+            alt="Classic men's grooming essentials on walnut surface"
             fill
             className="object-cover"
           />

@@ -5,7 +5,7 @@ date: "2025-01-11"
 excerpt: "Detailed comparison of Lisbon's neighborhoods for beauty services—Chiado vs Príncipe Real vs Alfama vs Avenida and more. Find the perfect area for your needs and style."
 author: "Good Hands Team"
 category: "Neighborhood Guides"
-image: "/images/blog/lisbon-neighborhoods-beauty.jpg"
+image: "/brand-images/neighborhood-guide-chiado-hero.png"
 tags: ["lisbon neighborhoods", "where to go lisbon", "best area lisbon", "chiado beauty", "principe real spa", "alfama salon"]
 ---
 

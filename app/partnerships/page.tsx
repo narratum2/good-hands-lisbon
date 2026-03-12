@@ -19,8 +19,8 @@ export default function PartnershipsPage() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/brand-images/service-makeup-application.png"
-            alt="Luxury hotel beauty concierge services - Professional makeup in design hotel room - Good Hands partnerships in Lisbon"
+            src="/brand-images/hero-partnerships.png"
+            alt="Hotel concierge and beauty professional reviewing portfolio in luxury hotel lobby"
             fill
             className="object-cover object-center"
             priority

@@ -36,7 +36,7 @@ The Atlantic coast provides Lisbon with mineral-rich sea salt, perfect for exfol
 ## The Modern Take
 
 The best clinics in Lisbon still use olive oil in scalp treatments and rose water as a toner base. They just pair them with LED therapy and clinical-grade retinoids now. The tradition isn't decorative — it's the foundation.`,
-    image: '/brand-images/ai-generated/blog-portuguese-beauty.jpg',
+    image: '/brand-images/ai-generated/blog-portuguese-rituals.jpg',
     date: '2025-10-01',
     category: 'Traditions',
     author: {
@@ -556,7 +556,7 @@ You've done the trials. You've made the decisions. Now relax and let your profes
 We coordinate your entire bridal beauty experience—from first consultation to wedding day. One point of contact, vetted professionals, clean execution.
 
 Start with the trial. Everything else follows from that.`,
-    image: '/brand-images/ai-generated/blog-bridal-hair.jpg',
+    image: '/brand-images/ai-generated/blog-wedding-timeline.jpg',
     date: '2025-09-28',
     category: 'Weddings',
     author: {
@@ -709,7 +709,7 @@ Even on cloudy days. Even if you're "just running out for coffee." The Lisbon su
 A mid-summer facial with a local esthetician can address specific concerns. They understand the local climate and can adjust treatments accordingly.
 
 At Good Hands, we connect you with skincare professionals who specialize in Mediterranean skin concerns. Summer in Lisbon is the hardest season on your skin. Plan accordingly.`,
-    image: '/brand-images/ai-generated/service-facial-spa.jpg',
+    image: '/brand-images/ai-generated/blog-summer-skincare.jpg',
     date: '2025-09-20',
     category: 'Skincare',
     author: {
@@ -1034,7 +1034,7 @@ Humidity near the coast, dryness inland. Todos Santos stylists understand this u
 We're actively exploring partnerships in Todos Santos. The wellness practitioners here—especially those blending traditional Baja knowledge with contemporary techniques—represent exactly what Good Hands seeks: authentic expertise, personal service, extraordinary experiences.
 
 **Coming 2026**: Good Hands Todos Santos.`,
-    image: '/brand-images/ai-generated/blog-yucatan-wellness.jpg',
+    image: '/brand-images/ai-generated/blog-todos-santos.jpg',
     date: '2025-12-20',
     category: 'Global Exploration',
     author: {
@@ -1177,7 +1177,7 @@ Miami's abundance is both opportunity and challenge. With thousands of options, 
 **Good Hands Miami: Coming Summer 2026**
 
 From South Beach glamour to Coconut Grove serenity, we'll connect you with the best of what Miami's extraordinary beauty scene offers.`,
-    image: '/brand-images/ai-generated/blog-global-beauty.jpg',
+    image: '/brand-images/ai-generated/blog-miami-beauty.jpg',
     date: '2025-12-18',
     category: 'Global Exploration',
     author: {

@@ -16,8 +16,8 @@ export default function PhotoshootsPage() {
       <section className="relative h-[70vh] flex items-center">
         <div className="absolute inset-0">
           <Image
-            src="/brand-images/experience-bridal-beauty.png"
-            alt="Coastal photoshoot hair and makeup Lisbon"
+            src="/brand-images/hero-photoshoots.png"
+            alt="Coastal photoshoot makeup station overlooking Portuguese cliffs at golden hour"
             fill
             className="object-cover"
           />

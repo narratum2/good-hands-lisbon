@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const url = `https://beautysalonlisbon.com/journal/${article.slug}`
-  const ogImage = article.image?.startsWith('http') ? article.image : `https://beautysalonlisbon.com${article.image || '/images/default-blog.jpg'}`
+  const ogImage = article.image?.startsWith('http') ? article.image : `https://beautysalonlisbon.com${article.image || '/brand-images/beauty-moment.png'}`
 
   return {
     title: `${article.title} — Good Hands Journal`,
@@ -90,7 +90,7 @@ export default function ArticlePage({ params }: PageProps) {
     '@type': 'Article',
     headline: article.title,
     description: article.excerpt,
-    image: article.image?.startsWith('http') ? article.image : `https://beautysalonlisbon.com${article.image || '/images/default-blog.jpg'}`,
+    image: article.image?.startsWith('http') ? article.image : `https://beautysalonlisbon.com${article.image || '/brand-images/beauty-moment.png'}`,
     datePublished: article.date,
     author: {
       '@type': 'Person',

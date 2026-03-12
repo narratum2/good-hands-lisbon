@@ -22,7 +22,7 @@ const aspectRatioClasses = {
 export default function OptimizedImage({
   src,
   alt,
-  fallbackSrc = '/brand-images/placeholder.jpg',
+  fallbackSrc = '/brand-images/beauty-moment.png',
   showSkeleton = true,
   aspectRatio = 'auto',
   priority = false,
