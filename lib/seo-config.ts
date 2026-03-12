@@ -56,7 +56,7 @@ export const BUSINESS_INFO = {
   // Logo & Images
   logo: '/brand-assets/logo/logo-icon.svg',
   heroImage: '/brand-images/hero-salon-interior.png',
-  ogImage: '/brand-assets/social/og-image.jpg',
+  ogImage: '/api/og',
 } as const
 
 // ===== SERVICE AREAS =====

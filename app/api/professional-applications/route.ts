@@ -27,14 +27,6 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Log the application (in production, this would go to Notion)
-    console.log('Professional Application Received:', {
-      name: body.fullName,
-      email: body.email,
-      specialty: body.specialty,
-      timestamp: new Date().toISOString(),
-    })
-
     // Option 1: Send to Make.com webhook (which forwards to Notion)
     // This is the recommended approach as Make.com is already set up
     if (process.env.MAKE_PROFESSIONAL_APPLICATIONS_WEBHOOK_URL) {
@@ -57,8 +49,6 @@ export async function POST(request: NextRequest) {
 
         if (!makeResponse.ok) {
           console.error('Make.com webhook failed:', await makeResponse.text())
-        } else {
-          console.log('Application forwarded to Make.com successfully')
         }
       } catch (makeError) {
         console.error('Error sending to Make.com:', makeError)

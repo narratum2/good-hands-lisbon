@@ -39,7 +39,7 @@ export const imageOptimizationConfig: ImageOptimizationConfig = {
   lazyLoading: true,
   blurPlaceholder: true,
   priorityLoading: [
-    '/brand-images/hero-beauty-lisbon.jpg',
+    '/brand-images/homepage-hero-interior.webp',
     '/brand-images/experience-bridal-beauty.png',
     '/brand-assets/logo/logo-full.svg'
   ]

@@ -196,8 +196,6 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Please provide your full name' }, { status: 400 })
     }
 
-    console.log('New booking request:', { name, email, service, date, time })
-
     const results = await Promise.allSettled([
       createBookingRecord({
         customerName: name,
@@ -276,8 +274,6 @@ export async function POST(request: NextRequest) {
       emailNotification: emailNotification.status === 'fulfilled',
     }
 
-    console.log('Booking created:', successSummary)
-
     if (successSummary.notion) {
       return NextResponse.json(
         {
@@ -307,7 +303,6 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    console.log('Booking created in mock mode (Notion not configured - dev only)')
     return NextResponse.json(
       {
         success: true,
