@@ -239,7 +239,7 @@ If you're spending money on a professional photographer and taking time to shoot
 
 We handle hair and makeup for photoshoots all over Lisbon's coast. We coordinate with your photographer. We come to your location. You look incredible on camera.
 
-**Ready to book?** [Contact Good Hands](#booking) and tell us about your shoot.
+**Ready to book?** [Contact Good Hands](/book) and tell us about your shoot.
 
 ---
 

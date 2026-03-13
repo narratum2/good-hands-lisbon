@@ -259,7 +259,7 @@ Ready for gorgeous nails in Lisbon? Let Good Hands match you with the perfect sa
 
 **Pricing:** From €65 (includes concierge service)
 
-[Book Your Nail Appointment →](#booking)
+[Book Your Nail Appointment →](/book)
 
 ---
 

@@ -447,7 +447,7 @@ Ready to find your ideal makeup artist in Lisbon? Let Good Hands match you with 
 
 **Pricing:** From €85 (includes concierge service)
 
-[Book Your Makeup Artist →](#booking)
+[Book Your Makeup Artist →](/book)
 
 ---
 

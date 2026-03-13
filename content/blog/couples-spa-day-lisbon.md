@@ -745,7 +745,7 @@ Whether you're celebrating a milestone, reconnecting after busy months, or simpl
 - Budget €200-€800 depending on venue and services
 - It's okay if one partner is hesitant—start simple
 
-Ready to design your perfect couples' spa day in Lisbon? [Contact Good Hands](#booking) and we'll create a personalized experience that reflects your relationship and ensures everything flows perfectly.
+Ready to design your perfect couples' spa day in Lisbon? [Contact Good Hands](/book) and we'll create a personalized experience that reflects your relationship and ensures everything flows perfectly.
 
 ---
 

@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import NeighborhoodMap from '@/components/NeighborhoodMap'
-import { Landmark, Castle, MapPin, Heart, Palette, Church, Music, Sunrise, UtensilsCrossed } from 'lucide-react'
+import { Landmark, Castle, Heart, Palette, Church, Music, Sunrise, UtensilsCrossed } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Best Beauty Services in Alfama Lisbon — Historic Salons & Traditional Spas | Good Hands',
@@ -203,23 +203,6 @@ export default function AlfamaPage() {
               <div>
                 <h4 className="font-semibold mb-1">Traditional Tascas</h4>
                 <p className="text-harbor text-sm">Authentic Portuguese restaurants serving grilled sardines and bacalhau</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Map Section */}
-      <section className="section-padding bg-shell">
-        <div className="container-custom">
-          <h2 className="text-3xl md:text-4xl font-serif mb-8 text-center">Explore Alfama</h2>
-          
-          <div className="bg-white rounded-lg p-4 shadow-md">
-            <div className="aspect-video w-full bg-harbor/10 rounded flex items-center justify-center">
-              <div className="text-center text-harbor">
-                <p className="text-lg mb-2"><MapPin className="w-5 h-5 inline mr-1" /> Interactive Map</p>
-                <p className="text-sm">Google Maps integration will show Good Hands partner locations in Alfama</p>
-                <p className="text-xs mt-2 text-harbor/60">(Map embed coming in production)</p>
               </div>
             </div>
           </div>

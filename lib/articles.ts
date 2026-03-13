@@ -406,168 +406,6 @@ The Lisbon approach isn't about perfection. It's about integration—wellness as
     featured: false,
     published: true,
   },
-  'wedding-beauty-timeline': {
-    slug: 'wedding-beauty-timeline',
-    title: 'Wedding Beauty Timeline: 6 Months to I Do',
-    excerpt: 'A comprehensive guide to preparing your beauty routine for the big day.',
-    content: `Six months out is when the smart brides start. Here's the timeline.
-
-## 6 Months Before
-
-### Start Your Skincare Journey
-
-This is when real skin transformation happens. Book a consultation with an esthetician to address any concerns—acne, hyperpigmentation, texture.
-
-**Do:**
-- Start a consistent routine (cleanser, treatment, moisturizer, SPF)
-- Consider professional treatments (chemical peels, microneedling)
-- Drink more water
-
-**Don't:**
-- Try trendy new products without patch testing
-- Start retinol if you've never used it (save that for after the wedding)
-
-### Hair Health Check
-
-If you're planning to grow your hair, this is your window. See a stylist for a trim and treatment plan.
-
-**Consider:**
-- Scalp treatments to promote growth
-- Protein treatments if hair is damaged
-- Supplements (biotin, collagen) with your doctor's approval
-
-## 4 Months Before
-
-### Book Your Trials
-
-This is non-negotiable. You need time to try different looks and adjust.
-
-**Hair Trial:**
-- Bring photos of your dress, venue, and inspiration
-- Wear a top similar to your neckline
-- Take photos from all angles
-
-**Makeup Trial:**
-- Wear your trial makeup for several hours
-- Take photos in different lighting
-- Note what you love and what needs adjustment
-
-### Teeth Whitening
-
-If you want whiter teeth, start now. Professional whitening takes time and may cause temporary sensitivity.
-
-## 3 Months Before
-
-### Finalize Your Team
-
-By now, you should have booked:
-- Hair stylist
-- Makeup artist
-- Anyone else (lash technician, spray tan artist)
-
-### Body Treatments
-
-If you're planning body treatments (massage, body scrubs, spray tan trial), start now to find what works.
-
-## 2 Months Before
-
-### Final Adjustments
-
-Based on your trials, make any changes to your look. This is your last chance for major adjustments.
-
-### Brow Shaping
-
-If you're changing your brow shape, do it now. You want time for them to grow back if anything goes wrong.
-
-## 1 Month Before
-
-### Maintenance Mode
-
-No new products. No drastic changes. Just maintain what's working.
-
-**Continue:**
-- Your established skincare routine
-- Regular facials (but nothing aggressive)
-- Hair treatments
-
-**Avoid:**
-- New products
-- Aggressive treatments
-- Anything that could cause a reaction
-
-### Final Hair Color
-
-If you're coloring your hair, do it 2-3 weeks before the wedding. This allows time for the color to settle and any adjustments.
-
-## 2 Weeks Before
-
-### The Final Facial
-
-A gentle, hydrating facial. Nothing that could cause breakouts or redness.
-
-### Lash Appointment
-
-If you're getting lash extensions, now is the time. They'll look natural by wedding day.
-
-## 1 Week Before
-
-### Final Waxing/Hair Removal
-
-Allow a few days for any redness to subside.
-
-### Mani-Pedi
-
-Get your nails done 2-3 days before. This allows time for any chips to be fixed.
-
-## The Day Before
-
-### Rest
-
-The best beauty treatment is sleep. Aim for 8 hours.
-
-### Hydrate
-
-Water, water, water. Avoid alcohol and salty foods (they cause puffiness).
-
-### Prep
-
-- Lay out everything you need for the morning
-- Confirm times with your beauty team
-- Do a gentle cleanse and your regular nighttime routine
-
-## Wedding Morning
-
-### Start Early
-
-Give yourself more time than you think you need. Rushing shows on your face.
-
-### Eat
-
-You need energy. Have protein and complex carbs. Avoid anything that causes bloating.
-
-### Trust Your Team
-
-You've done the trials. You've made the decisions. Now relax and let your professionals work.
-
----
-
-**Good Hands Bridal Services**
-
-We coordinate your entire bridal beauty experience—from first consultation to wedding day. One point of contact, vetted professionals, clean execution.
-
-Start with the trial. Everything else follows from that.`,
-    image: '/brand-images/ai-generated/blog-wedding-timeline.jpg',
-    date: '2025-09-28',
-    category: 'Weddings',
-    author: {
-      name: 'Sofia Martins',
-      bio: 'Sofia is a bridal beauty specialist with 15 years of experience in Portuguese weddings.',
-    },
-    readTime: '8 min read',
-    tags: ['Bridal', 'Wedding Planning', 'Beauty Timeline', 'Preparation'],
-    featured: false,
-    published: true,
-  },
   'lisbon-hidden-gems': {
     slug: 'lisbon-hidden-gems',
     title: "Why 'Hidden Gems' Lists Don't Work (And What Does)",
@@ -1189,43 +1027,6 @@ From South Beach glamour to Coconut Grove serenity, we'll connect you with the b
     featured: true,
     published: true,
   },
-  'beauty-wellness-digital-nomads-lisbon': {
-    slug: 'beauty-wellness-digital-nomads-lisbon',
-    title: 'Beauty & Wellness for Digital Nomads in Lisbon',
-    excerpt: 'How Lisbon became the beauty capital for location-independent professionals',
-    content: `Lisbon has quietly become the European capital for digital nomads—and not just because of the weather, the Wi-Fi, and the cost of living. For beauty-conscious remote workers, the city offers something rare: world-class grooming and wellness at prices that won't wreck a freelancer's budget, all wrapped in a culture that genuinely values looking and feeling good.
-
-## Why Lisbon Is Perfect for Beauty-Conscious Nomads
-
-The digital nomad visa brought thousands of location-independent professionals to Portugal, but it's the lifestyle that keeps them here. Lisbon runs on a rhythm that makes self-care not just possible but natural. You finish work at a coworking space in Príncipe Real and your favorite salon is a three-minute walk away. You grab a galão at the corner café while your color processes. The city is compact enough that beauty appointments fit seamlessly between Zoom calls and co-working sessions. Unlike London or Berlin, where a haircut feels like a logistical operation, Lisbon lets you maintain high standards without high friction.
-
-## The Coworking-to-Salon Pipeline
-
-Lisbon's most popular nomad neighborhoods have developed an unofficial ecosystem: coworking space, specialty coffee, salon, repeat. In Príncipe Real, you'll find creative professionals bouncing between laptops and styling chairs with the same ease. Chiado's mix of heritage and modernity means you can get a cutting-edge balayage in a building that's been standing since the 1700s. Santos and Cais do Sodré cater to the younger, more experimental crowd—think bold color work and gender-fluid styling in converted warehouse spaces. The proximity of everything means a lunchtime blowout or a between-meetings facial isn't aspirational; it's Tuesday.
-
-## Neighborhoods for the Nomad Beauty Routine
-
-**Príncipe Real** is ground zero for the stylish nomad. The neighborhood attracts creatives, and its salons reflect that—trend-forward cuts, natural-leaning skincare studios, and boutique wellness spaces tucked behind garden walls. **Chiado** offers more polish: established salons with senior stylists, luxury product lines, and the kind of expertise that comes from decades of serving Lisbon's most discerning residents. For something rawer, **Santos** and **LX Factory** deliver experimental energy at friendlier price points. And if wellness is your priority, **Estrela** and the area around Jardim da Estrela host yoga studios, holistic therapists, and quiet spa spaces that feel miles from the city.
-
-## How Good Hands Solves the Discovery Problem
-
-The biggest challenge for nomads isn't finding a salon—it's finding the right one. Google reviews skew toward tourist traps. Instagram favors marketing over skill. And unless you speak Portuguese, communicating exactly what you want can turn a simple trim into an anxious guessing game. Good Hands exists to eliminate that friction. We've personally vetted every professional in our network, we handle the booking and communication in Portuguese, and we match you based on your specific needs—hair type, style preferences, budget, even neighborhood. We've already done the trial and error. That's the service.
-
-## Wellness Routines for Screen-Heavy Lifestyles
-
-Remote work means screens. Hours of them. And that takes a toll—eye strain headaches that tighten your scalp, posture-related tension that shows in your face, blue light exposure that disrupts sleep and dulls skin. Lisbon's wellness scene has answers. Regular facial massage and lymphatic drainage counter the puffiness that comes with late-night laptop sessions. Scalp treatments address the tension headaches. Hammam sessions offer deep relaxation that no meditation app can match. And the city's outdoor lifestyle—morning walks along the Tagus, weekend hikes in Sintra—provides the balance that keeps everything working. The best beauty routine for a digital nomad isn't just products and appointments; it's integrating movement, light, and human connection into a life that could otherwise become entirely screen-based. Lisbon makes that integration effortless.`,
-    image: '/brand-images/ai-generated/blog-digital-nomad-beauty.jpg',
-    date: '2025-11-15',
-    category: 'Lifestyle',
-    author: {
-      name: 'Good Hands Editorial Team',
-      bio: 'The Good Hands team shares insights on beauty culture worldwide.',
-    },
-    readTime: '6 min read',
-    tags: ['digital nomads', 'lisbon lifestyle', 'wellness', 'remote work'],
-    featured: false,
-    published: true,
-  },
   'seasonal-beauty-guide-lisbon-climate-skin': {
     slug: 'seasonal-beauty-guide-lisbon-climate-skin',
     title: "Seasonal Beauty Guide: What Lisbon's Climate Does to Your Skin",
@@ -1462,7 +1263,13 @@ A reliable beauty team is the difference between photos that look polished and p
     slug: 'finding-calm-in-chiado',
     title: 'Finding Calm in Chiado',
     excerpt: 'Discover Lisbon\'s hidden wellness sanctuaries in Chiado — where locals go for authentic, unhurried beauty experiences.',
-    content: '',
+    content: `In the heart of Lisbon, tucked between the grand facades of Chiado's theatres and boutiques, lies a collection of wellness sanctuaries that most tourists never find. These aren't the places shouting from Instagram feeds — they're the quiet refuges that locals whisper about, the kind where you book three months ahead because word travels slowly but surely.
+
+What makes Chiado different from other Lisbon neighborhoods for wellness is the density of quality within walking distance. You can start your morning with a facial at a studio hidden behind an unassuming door on Rua Garrett, walk five minutes to a hair appointment at a salon that's been operating since the 1960s, and finish with a massage in a space where the only sound is the distant clatter of Tram 28.
+
+The practitioners here tend to be experienced — many have trained in Paris or London and returned to Lisbon because the quality of life allows them to focus on craft rather than volume. They take fewer clients, spend more time per appointment, and build relationships that last years. It's the opposite of the revolving-door model.
+
+Good Hands works with several of these Chiado-based professionals. If you're looking for wellness in Lisbon that feels unhurried and genuine, this neighborhood is where to start.`,
     image: '/brand-images/hero-wellness-scene.png',
     date: '2024-10-11',
     category: 'Wellness',

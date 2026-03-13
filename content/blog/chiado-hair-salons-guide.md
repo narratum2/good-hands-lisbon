@@ -168,7 +168,7 @@ Finding the right stylist in Chiado can be overwhelming. That's where we come in
 
 Ready to discover why Chiado is Lisbon's beauty capital? Let us match you with the perfect stylist for your needs.
 
-**[Book Now →](/#booking)**
+**[Book Now →](/book)**
 
 ---
 

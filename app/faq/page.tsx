@@ -116,7 +116,7 @@ const faqs = [
     questions: [
       {
         q: 'Do you offer a membership program?',
-        a: 'Yes! We offer Gold (€49/month) and Platinum (€99/month) memberships. Benefits include up to 25% off all services, priority booking with your favorite professionals, flexible cancellation policy, exclusive access to new professionals and special events, and a dedicated concierge contact. Membership pays for itself after just a few bookings.'
+        a: 'Yes! We offer Gold (€49/month) and Platinum (€129/month) memberships. Benefits include up to 25% off all services, priority booking with your favorite professionals, flexible cancellation policy, exclusive access to new professionals and special events, and a dedicated concierge contact. Membership pays for itself after just a few bookings.'
       },
       {
         q: 'Is membership worth it for locals?',

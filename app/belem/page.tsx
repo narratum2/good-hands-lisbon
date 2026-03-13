@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import NeighborhoodMap from '@/components/NeighborhoodMap'
-import { Waves, Banknote, Castle, Palette, MapPin, Clock, MessageCircle, Home, Users, Heart, Landmark, Sparkles, TreePine, Ship } from 'lucide-react'
+import { Waves, Banknote, Castle, Palette, Clock, MessageCircle, Home, Users, Heart, Landmark, Sparkles, TreePine, Ship } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Best Beauty Services in Belém Lisbon — Waterfront Salons & Local Spas | Good Hands',
@@ -262,23 +262,6 @@ export default function BelemPage() {
               <div>
                 <h4 className="font-semibold mb-1">Doca de Santo Amaro</h4>
                 <p className="text-harbor text-sm">Marina with restaurants, bars, and waterfront dining with sunset views</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Map */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
-          <h2 className="text-3xl md:text-4xl font-serif mb-8 text-center">Explore Belém</h2>
-          
-          <div className="bg-shell rounded-lg p-4">
-            <div className="aspect-video w-full bg-harbor/10 rounded flex items-center justify-center">
-              <div className="text-center text-harbor">
-                <p className="text-lg mb-2"><MapPin className="w-5 h-5 inline mr-1" /> Interactive Map</p>
-                <p className="text-sm">Google Maps integration showing Good Hands partner locations in Belém</p>
-                <p className="text-xs mt-2 text-harbor/60">(Map embed coming in production)</p>
               </div>
             </div>
           </div>

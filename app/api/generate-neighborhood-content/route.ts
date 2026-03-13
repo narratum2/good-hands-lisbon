@@ -271,7 +271,7 @@ Format as JSON:
         you're seeking. No trial and error. No disappointments. Just perfect matches, every time.
       </p>
       <div class="mt-6">
-        <a href="/#booking" class="btn-primary">Book Your ${neighborhood.name} Experience</a>
+        <a href="/book" class="btn-primary">Book Your ${neighborhood.name} Experience</a>
       </div>
     `,
     recommendedServices: [

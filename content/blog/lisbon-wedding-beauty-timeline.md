@@ -377,7 +377,7 @@ Planning beauty from abroad is stressful. We eliminate that stress.
 
 Ready to look absolutely stunning on your Lisbon wedding day?
 
-**[Start Planning →](/#booking)**
+**[Start Planning →](/book)**
 
 ---
 

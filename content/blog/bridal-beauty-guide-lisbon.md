@@ -569,7 +569,7 @@ Your wedding day beauty should enhance who you already are, not transform you in
 - Take care of your skin starting 6 months out
 - Remember: you should look like YOU
 
-Ready to plan your Lisbon wedding beauty? [Contact Good Hands](#booking) and we'll handle every detail, from trials to day-of coordination.
+Ready to plan your Lisbon wedding beauty? [Contact Good Hands](/book) and we'll handle every detail, from trials to day-of coordination.
 
 ---
 

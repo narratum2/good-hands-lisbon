@@ -704,7 +704,7 @@ Lisbon offers world-class services at prices that make regular self-care accessi
 - Connect with nomad community for recommendations
 - Invest in yourself—you're worth it
 
-Ready to build your Lisbon beauty routine? [Contact Good Hands](#booking) and we'll match you with nomad-friendly professionals who understand your lifestyle and needs.
+Ready to build your Lisbon beauty routine? [Contact Good Hands](/book) and we'll match you with nomad-friendly professionals who understand your lifestyle and needs.
 
 ---
 

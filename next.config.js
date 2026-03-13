@@ -114,6 +114,26 @@ const nextConfig = {
         destination: '/journal/:slug*',
         permanent: true,
       },
+      {
+        source: '/journal/wedding-beauty-timeline',
+        destination: '/journal/lisbon-wedding-beauty-timeline',
+        permanent: true,
+      },
+      {
+        source: '/journal/beauty-wellness-digital-nomads-lisbon',
+        destination: '/journal/beauty-services-digital-nomads-lisbon',
+        permanent: true,
+      },
+      {
+        source: '/journal/mens-grooming-services-lisbon',
+        destination: '/journal/mens-grooming-lisbon-guide',
+        permanent: true,
+      },
+      {
+        source: '/journal/lisbon-bridal-beauty-guide',
+        destination: '/journal/bridal-beauty-guide-lisbon',
+        permanent: true,
+      },
     ]
   },
 

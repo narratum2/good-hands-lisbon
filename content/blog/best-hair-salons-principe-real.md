@@ -366,7 +366,7 @@ Príncipe Real's hair salons represent the sweet spot between artistic innovatio
 - Maintenance matters—budget for home care products
 - Trust is earned—it's okay to switch if unhappy
 
-Ready to find your perfect stylist? [Book a consultation](#booking) with Good Hands, and we'll match you with the ideal Príncipe Real salon for your needs.
+Ready to find your perfect stylist? [Book a consultation](/book) with Good Hands, and we'll match you with the ideal Príncipe Real salon for your needs.
 
 ---
 

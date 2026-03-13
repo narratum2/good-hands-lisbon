@@ -94,7 +94,7 @@ const faqs = [
     questions: [
       {
         q: 'What are the membership benefits?',
-        a: 'Gold Members (€49/month) get 15% off all services, priority booking, exclusive events, and free cancellations. Platinum Members (€99/month) get 25% off, first access to new professionals, quarterly beauty consultations, and VIP concierge support. Both tiers pay for themselves in 2-3 bookings per month.'
+        a: 'Gold Members (€49/month) get 15% off all services, priority booking, exclusive events, and free cancellations. Platinum Members (€129/month) get 25% off, first access to new professionals, quarterly beauty consultations, and VIP concierge support. Both tiers pay for themselves in 2-3 bookings per month.'
       },
       {
         q: 'Can I cancel my membership anytime?',

@@ -404,7 +404,7 @@ Ready for your best skin in Lisbon? Let us match you with the perfect estheticia
 
 **Pricing:** From €95 (includes concierge service)
 
-[Book Your Facial Treatment →](#booking)
+[Book Your Facial Treatment →](/book)
 
 ---
 

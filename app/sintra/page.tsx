@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import NeighborhoodMap from '@/components/NeighborhoodMap'
-import { Castle, Sparkles, Landmark, Waves, MapPin, Banknote, Palette, Clock, TreePine, Heart, Cloud, Leaf, UtensilsCrossed } from 'lucide-react'
+import { Castle, Sparkles, Landmark, Waves, Banknote, Palette, Clock, TreePine, Heart, Cloud, Leaf, UtensilsCrossed } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Best Beauty & Wellness in Sintra Portugal — Romantic Spas & Mountain Retreats | Good Hands',
@@ -270,23 +270,6 @@ export default function SintraPage() {
               <div>
                 <h4 className="font-semibold mb-1">Praia das Maçãs</h4>
                 <p className="text-harbor text-sm">Beach at Sintra&apos;s edge, historic tram connection, seafood restaurants</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Map */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
-          <h2 className="text-3xl md:text-4xl font-serif mb-8 text-center">Explore Sintra</h2>
-          
-          <div className="bg-shell rounded-lg p-4">
-            <div className="aspect-video w-full bg-harbor/10 rounded flex items-center justify-center">
-              <div className="text-center text-harbor">
-                <p className="text-lg mb-2"><MapPin className="w-5 h-5 inline mr-1" /> Interactive Map</p>
-                <p className="text-sm">Google Maps integration showing Good Hands partner locations in Sintra</p>
-                <p className="text-xs mt-2 text-harbor/60">(Map embed coming in production)</p>
               </div>
             </div>
           </div>
