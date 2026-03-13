@@ -7,49 +7,49 @@ import RelatedServices from '@/components/RelatedServices'
 export const metadata: Metadata = {
   alternates: { canonical: '/services/wellness' },
   title: 'Best Massage & Spa Services in Lisbon — Swedish, Deep Tissue & More | Good Hands',
-  description: 'Top massage therapists in Lisbon for Swedish (€90+), deep tissue (€100+), hot stone, aromatherapy & couples massage. Licensed therapists in luxury spas. Book your wellness escape.',
+  description: 'Top massage therapists in Lisbon for Swedish, deep tissue, hot stone, aromatherapy & couples massage. Licensed therapists in luxury spas. Pricing on request. Book your wellness escape.',
   keywords: ['massage lisbon', 'spa lisbon', 'wellness lisbon', 'swedish massage lisbon', 'deep tissue lisbon', 'couples massage lisbon', 'best spa lisbon', 'hot stone massage', 'massage therapist portugal'],
 }
 
 const wellnessServices = [
   {
     name: 'Swedish Massage',
-    price: 'From €90',
+    price: 'On Request',
     duration: '60 min',
     description: 'Classic relaxation massage using long, flowing strokes, kneading, and circular movements. Perfect for stress relief and improving circulation.',
     features: ['Full body', 'Adjustable pressure', 'Relaxation focus', 'Aromatherapy option', 'Improves circulation'],
   },
   {
     name: 'Deep Tissue Massage',
-    price: 'From €100',
+    price: 'On Request',
     duration: '75 min',
     description: 'Focused therapeutic massage targeting chronic muscle tension and knots. Uses slower, deeper strokes to reach sublayer muscles and fascia.',
     features: ['Targets problem areas', 'Chronic pain relief', 'Intense pressure', 'Post-session soreness possible', 'Injury recovery support'],
   },
   {
     name: 'Aromatherapy Massage',
-    price: 'From €95',
+    price: 'On Request',
     duration: '60 min',
     description: 'Swedish-style massage enhanced with essential oils chosen for therapeutic properties. Lavender for relaxation, eucalyptus for respiratory, citrus for energy.',
     features: ['Custom oil blend', 'Holistic benefits', 'Mood enhancement', 'Stress reduction', 'Sensory experience'],
   },
   {
     name: 'Hot Stone Massage',
-    price: 'From €110',
+    price: 'On Request',
     duration: '90 min',
     description: 'Heated basalt stones placed on key points and used during massage. Deep heat penetrates muscles, releasing tension more effectively.',
     features: ['Smooth heated stones', 'Deep relaxation', 'Muscle tension release', 'Improved circulation', 'Winter favorite'],
   },
   {
     name: 'Pregnancy Massage',
-    price: 'From €90',
+    price: 'On Request',
     duration: '60 min',
     description: 'Specialized massage adapted for pregnant women. Focuses on back pain, leg swelling, and stress relief with safe positioning and techniques.',
     features: ['Certified prenatal therapists', 'Side-lying position', 'Back & leg focus', 'Second & third trimester safe', 'Pregnancy cushions'],
   },
   {
     name: 'Couples Massage',
-    price: 'From €180',
+    price: 'On Request',
     duration: '60 min',
     description: 'Side-by-side massage in the same room. Choose Swedish, deep tissue, or aromatherapy. Perfect for anniversaries, honeymoons, or shared relaxation.',
     features: ['Private room', 'Two therapists', 'Synchronized session', 'Champagne option', 'Romantic experience'],
@@ -80,7 +80,7 @@ export default function WellnessServicesPage() {
             Professional massage therapy matched to your needs
           </p>
           <p className="text-lg text-gold mt-3">
-            All prices include expert concierge matching & coordination
+            Expert concierge matching & coordination included
           </p>
         </div>
       </section>

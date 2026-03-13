@@ -7,49 +7,49 @@ import RelatedServices from '@/components/RelatedServices'
 export const metadata: Metadata = {
   alternates: { canonical: '/services/skincare' },
   title: 'Best Facials & Skincare in Lisbon — HydraFacial, Peels, LED Therapy | Good Hands',
-  description: 'Top estheticians in Lisbon for signature facials (€95+), HydraFacials (€140+), chemical peels, anti-aging treatments & LED therapy. Licensed professionals, customized skincare.',
+  description: 'Top estheticians in Lisbon for signature facials, HydraFacials, chemical peels, anti-aging treatments & LED therapy. Licensed professionals, customized skincare. Pricing on request.',
   keywords: ['facial lisbon', 'skincare lisbon', 'hydrafacial lisbon', 'chemical peel lisbon', 'esthetician lisbon', 'best facial lisbon', 'anti aging facial', 'led light therapy lisbon'],
 }
 
 const skincareServices = [
   {
     name: 'Signature Facial',
-    price: 'From €95',
+    price: 'On Request',
     duration: '75 min',
     description: 'Customized facial treatment adapted to your skin type and concerns. Includes cleansing, exfoliation, extractions, massage, mask, and serums.',
     features: ['Skin analysis', 'Double cleanse', 'Gentle extractions', 'Face & neck massage', 'Custom mask', 'Serums & SPF'],
   },
   {
     name: 'HydraFacial',
-    price: 'From €140',
+    price: 'On Request',
     duration: '60 min',
     description: 'Medical-grade hydradermabrasion treatment that cleanses, exfoliates, extracts, and hydrates using patented Vortex technology.',
     features: ['Deep cleansing & exfoliation', 'Painless extractions', 'Intense hydration', 'Immediate glow', 'No downtime', 'Customizable boosters'],
   },
   {
     name: 'Chemical Peel',
-    price: 'From €120',
+    price: 'On Request',
     duration: '45-60 min',
     description: 'Professional-grade acid exfoliation to resurface skin, reduce pigmentation, and improve texture. Multiple strength options available.',
     features: ['Skin assessment', 'Appropriate peel strength', 'Neutralization', 'Soothing treatment', 'Home care instructions', '3-7 day healing'],
   },
   {
     name: 'Anti-Aging Treatment',
-    price: 'From €150',
+    price: 'On Request',
     duration: '90 min',
     description: 'Advanced facial targeting fine lines, loss of firmness, and age spots. Often includes LED therapy, microcurrent, or radio frequency.',
     features: ['Technology-enhanced', 'Collagen stimulation', 'Firming massage', 'Peptide serums', 'Long-lasting results'],
   },
   {
     name: 'Acne Treatment Facial',
-    price: 'From €110',
+    price: 'On Request',
     duration: '75 min',
     description: 'Specialized treatment for acne-prone skin with deep cleansing, gentle extractions, antibacterial treatments, and oil control.',
     features: ['Deep pore cleansing', 'Safe extractions', 'High-frequency treatment', 'Salicylic acid', 'Oil-free products', 'Prevention focus'],
   },
   {
     name: 'LED Light Therapy',
-    price: 'From €80',
+    price: 'On Request',
     duration: '30-45 min',
     description: 'Non-invasive treatment using specific light wavelengths to treat acne (blue), stimulate collagen (red), or reduce inflammation.',
     features: ['No pain', 'No downtime', 'Multiple wavelengths', 'Cumulative results', 'Add-on to facials'],
@@ -80,7 +80,7 @@ export default function SkincareServicesPage() {
             Expert estheticians matched to your unique skin needs
           </p>
           <p className="text-lg text-gold mt-3">
-            All prices include expert concierge matching & coordination
+            Expert concierge matching & coordination included
           </p>
         </div>
       </section>

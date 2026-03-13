@@ -7,49 +7,49 @@ import RelatedServices from '@/components/RelatedServices'
 export const metadata: Metadata = {
   alternates: { canonical: '/services/hair' },
   title: 'Best Hair Salons in Lisbon — Cuts, Color, Balayage | Good Hands',
-  description: 'Top hair stylists in Lisbon for precision cuts (€80+), balayage (€180+), color treatments, and bridal hair. English-speaking professionals in Chiado, Príncipe Real & more. Expert matching included.',
+  description: 'Top hair stylists in Lisbon for precision cuts, balayage, color treatments, and bridal hair. English-speaking professionals in Chiado, Príncipe Real & more. Pricing on request. Expert matching included.',
   keywords: ['hair salon lisbon', 'hair stylist lisbon', 'balayage lisbon', 'hair color lisbon', 'haircut lisbon', 'best hairdresser lisbon', 'hair salon chiado', 'bridal hair lisbon'],
 }
 
 const hairServices = [
   {
     name: 'Precision Cut',
-    price: 'From €80',
+    price: 'On Request',
     duration: '60 min',
     description: 'Expert cutting techniques tailored to your hair type, face shape, and lifestyle. Includes wash, cut, and styling.',
     features: ['Consultation included', 'Wash & blow-dry', 'Styling tips'],
   },
   {
     name: 'Color & Highlights',
-    price: 'From €120',
+    price: 'On Request',
     duration: '120 min',
     description: 'Professional color services from root touch-ups to full transformations. Premium color products for lasting results.',
     features: ['Color consultation', 'Premium products', 'Toner application', 'Styling'],
   },
   {
     name: 'Balayage',
-    price: 'From €180',
+    price: 'On Request',
     duration: '180 min',
     description: 'Hand-painted highlights for natural, sun-kissed dimension. Perfect for low-maintenance color with maximum impact.',
     features: ['Customized placement', 'Toner & gloss', 'Styling', 'Maintenance tips'],
   },
   {
     name: 'Blowout & Styling',
-    price: 'From €45',
+    price: 'On Request',
     duration: '45 min',
     description: 'Professional blow-dry and styling for any occasion. From sleek and smooth to voluminous and textured.',
     features: ['Wash included', 'Heat protection', 'Long-lasting results'],
   },
   {
     name: 'Treatment & Repair',
-    price: 'From €60',
+    price: 'On Request',
     duration: '60 min',
     description: 'Deep conditioning treatments to restore moisture, repair damage, and enhance shine. Perfect for Lisbon\'s humid climate.',
     features: ['Damage assessment', 'Keratin or protein treatment', 'Take-home care advice'],
   },
   {
     name: 'Bridal Hair',
-    price: 'From €150',
+    price: 'On Request',
     duration: '90-120 min',
     description: 'Wedding day hair artistry with trial session. Updos, half-up styles, or flowing waves designed to last all day.',
     features: ['Trial session included', 'On-location available', 'Touch-up kit provided'],
@@ -80,7 +80,7 @@ export default function HairServicesPage() {
             Expert hair stylists matched to your unique needs
           </p>
           <p className="text-lg text-gold mt-3">
-            All prices include expert concierge matching & coordination
+            Expert concierge matching & coordination included
           </p>
         </div>
       </section>
@@ -197,9 +197,9 @@ export default function HairServicesPage() {
             </div>
 
             <div className="border-l-4 border-gold pl-6">
-              <h3 className="text-xl font-semibold mb-2">Transparent Pricing</h3>
+              <h3 className="text-xl font-semibold mb-2">Transparent Process</h3>
               <p className="text-harbor">
-                The price you see is the price you pay. No surprise charges, hidden fees, or awkward conversations about costs.
+                We provide a personalized quote before you commit. No surprise charges, hidden fees, or awkward conversations about costs.
               </p>
             </div>
           </div>

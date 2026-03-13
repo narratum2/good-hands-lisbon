@@ -37,11 +37,8 @@ export class OptimizationManager {
    */
   async initialize(): Promise<void> {
     if (this.isInitialized) {
-      console.log('[OptimizationManager] Already initialized')
       return
     }
-
-    console.log('[OptimizationManager] Starting initialization...')
 
     try {
       // Initialize monitoring system first
@@ -60,10 +57,6 @@ export class OptimizationManager {
       await this.initializeImageOptimization()
 
       this.isInitialized = true
-      console.log('[OptimizationManager] ✅ All systems initialized successfully')
-
-      // Report status
-      this.reportSystemStatus()
     } catch (error) {
       console.error('[OptimizationManager] ❌ Initialization failed:', error)
       throw error
@@ -85,7 +78,6 @@ export class OptimizationManager {
       performanceMonitoring.monitorPageLoad()
 
       this.systemStatus['monitoring'] = 'active'
-      console.log('[OptimizationManager] ✅ Monitoring system active')
     } catch (error) {
       this.systemStatus['monitoring'] = 'error'
       console.error('[OptimizationManager] ❌ Monitoring initialization failed:', error)
@@ -107,7 +99,6 @@ export class OptimizationManager {
       // console.log('[OptimizationManager] Lighthouse plan generated:', plan.prioritizedOptimizations.length, 'optimizations')
 
       this.systemStatus['performance'] = 'active'
-      console.log('[OptimizationManager] ✅ Performance system active')
     } catch (error) {
       this.systemStatus['performance'] = 'error'
       console.error('[OptimizationManager] ❌ Performance initialization failed:', error)
@@ -126,12 +117,7 @@ export class OptimizationManager {
       // console.log('[OptimizationManager] Accessibility plan generated:', plan.priorityOrder.length, 'optimizations')
 
       // Initialize WCAG compliance monitoring
-      if (wcagComplianceStrategies) {
-        console.log('[OptimizationManager] WCAG 2.1 AA compliance strategies loaded')
-      }
-
       this.systemStatus['accessibility'] = 'active'
-      console.log('[OptimizationManager] ✅ Accessibility system active')
     } catch (error) {
       this.systemStatus['accessibility'] = 'error'
       console.error('[OptimizationManager] ❌ Accessibility initialization failed:', error)
@@ -149,7 +135,6 @@ export class OptimizationManager {
       mobilePerformanceMonitoring.monitorMobilePerformance()
 
       this.systemStatus['mobile'] = 'active'
-      console.log('[OptimizationManager] ✅ Mobile optimization system active')
     } catch (error) {
       this.systemStatus['mobile'] = 'error'
       console.error('[OptimizationManager] ❌ Mobile initialization failed:', error)
@@ -163,13 +148,7 @@ export class OptimizationManager {
     try {
       if (typeof window === 'undefined') return
 
-      // Log image optimization config
-      console.log('[OptimizationManager] Image optimization configured:', {
-        formats: imageOptimizationConfig.formats
-      })
-
       this.systemStatus['images'] = 'active'
-      console.log('[OptimizationManager] ✅ Image optimization system active')
     } catch (error) {
       this.systemStatus['images'] = 'error'
       console.error('[OptimizationManager] ❌ Image optimization initialization failed:', error)
@@ -184,14 +163,6 @@ export class OptimizationManager {
     const totalCount = Object.keys(this.systemStatus).length
     const errorCount = Object.values(this.systemStatus).filter(s => s === 'error').length
 
-    console.log('[OptimizationManager] 📊 System Status Report:')
-    console.log(`  ✅ Active: ${activeCount}/${totalCount}`)
-    if (errorCount > 0) {
-      console.log(`  ❌ Errors: ${errorCount}`)
-    }
-    console.log('  Systems:', this.systemStatus)
-
-    // Send to analytics if available
     if (typeof window !== 'undefined' && (window as any).gtag) {
       (window as any).gtag('event', 'optimization_systems_initialized', {
         event_category: 'Performance',

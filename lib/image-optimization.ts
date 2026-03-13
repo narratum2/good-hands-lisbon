@@ -203,19 +203,7 @@ export const imagePerformanceMonitoring = {
    */
   monitorImageLCP: () => {
     if (typeof window !== 'undefined' && 'PerformanceObserver' in window) {
-      const observer = new PerformanceObserver((list) => {
-        list.getEntries().forEach((entry) => {
-          if ((entry as any).element && ((entry as any).element as any).tagName === 'IMG') {
-            const img = (entry as any).element as HTMLImageElement
-            console.log('LCP Image:', {
-              src: img.src,
-              loadTime: entry.startTime,
-              size: (entry as any).transferSize
-            })
-          }
-        })
-      })
-      
+      const observer = new PerformanceObserver(() => {})
       observer.observe({ entryTypes: ['largest-contentful-paint'] })
     }
   }

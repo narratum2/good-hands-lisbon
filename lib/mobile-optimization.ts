@@ -229,8 +229,6 @@ export const mobilePerformanceMonitoring = {
       const touchResponseTime = touchEndTime - touchStartTime
       
       if (touchResponseTime > 100) { // More than 100ms
-        console.warn(`Slow touch response: ${touchResponseTime.toFixed(0)}ms`)
-        
         if ((window as any).gtag) {
           (window as any).gtag('event', 'mobile_performance', {
             event_category: 'Performance',
@@ -326,7 +324,6 @@ export const mobilePerformanceMonitoring = {
       img.setAttribute('loading', 'lazy')
     })
     
-    console.log('📱 Low bandwidth mode enabled for mobile')
   }
 }
 

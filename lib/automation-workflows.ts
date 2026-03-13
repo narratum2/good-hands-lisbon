@@ -581,15 +581,11 @@ export const workflowManagement = {
       throw new Error(`Workflow ${workflowId} not found`)
     }
     
-    console.log(`🚀 Executing workflow: ${workflow.name}`)
-    
     let currentStep: WorkflowStep | null = workflow.steps[0]
     let executionData = triggerData
     
     while (currentStep) {
       try {
-        console.log(`⚡ Executing step: ${currentStep.name}`)
-        
         const result = await workflowManagement.executeStep(currentStep, executionData)
         executionData = { ...executionData, ...result }
         
@@ -620,7 +616,6 @@ export const workflowManagement = {
       }
     }
     
-    console.log(`✅ Workflow ${workflow.name} completed`)
     return executionData
   },
   
@@ -652,7 +647,6 @@ export const workflowManagement = {
       case 'trigger_workflow':
         return await workflowManagement.triggerWorkflow(config, data)
       default:
-        console.log(`Action ${config.action} not implemented`)
         return {}
     }
   },
@@ -661,8 +655,6 @@ export const workflowManagement = {
    * Send email action
    */
   sendEmail: async (config: any, data: any) => {
-    // Implement email sending logic
-    console.log(`📧 Sending email: ${config.template} to ${config.recipient}`)
     return { emailSent: true }
   },
   
@@ -670,8 +662,6 @@ export const workflowManagement = {
    * Send SMS action
    */
   sendSMS: async (config: any, data: any) => {
-    // Implement SMS sending logic
-    console.log(`📱 Sending SMS to ${config.recipient}`)
     return { smsSent: true }
   },
   
@@ -686,8 +676,6 @@ export const workflowManagement = {
    * Execute condition step
    */
   executeCondition: async (config: any, data: any) => {
-    // Implement condition evaluation logic
-    console.log(`🔍 Evaluating condition: ${config.condition}`)
     return { conditionResult: true }
   },
   
@@ -695,8 +683,6 @@ export const workflowManagement = {
    * Execute delay step
    */
   executeDelay: async (config: any, data: any) => {
-    // Implement delay logic (in real implementation, this would be queued)
-    console.log(`⏰ Delay: ${config.delay}`)
     return { delayed: true }
   }
 }

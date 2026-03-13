@@ -7,7 +7,7 @@ import RelatedServices from '@/components/RelatedServices'
 export const metadata: Metadata = {
   alternates: { canonical: '/services/makeup' },
   title: 'Professional Makeup Artists Lisbon — Bridal, Events, Lessons | Good Hands',
-  description: 'Top makeup artists in Lisbon for weddings (€150+), special events (€70+), editorial shoots, and personalized lessons. Portfolio-vetted professionals with premium products. On-location available.',
+  description: 'Top makeup artists in Lisbon for weddings, special events, editorial shoots, and personalized lessons. Portfolio-vetted professionals with premium products. Pricing on request. On-location available.',
   keywords: ['makeup artist lisbon', 'bridal makeup lisbon', 'event makeup lisbon', 'makeup lesson lisbon', 'wedding makeup artist', 'mua lisbon', 'makeup artist portugal'],
   robots: {
     index: true,
@@ -41,42 +41,42 @@ export const metadata: Metadata = {
 const makeupServices = [
   {
     name: 'Event Makeup',
-    price: 'From €70',
+    price: 'On Request',
     duration: '45-60 min',
     description: 'Professional makeup for any occasion—dinners, parties, photoshoots, or nights out. Tailored to your style, event type, and outfit.',
     features: ['Skin prep & primer', 'Full face application', 'Lashes included', 'Touch-up kit provided', 'Photos for reference'],
   },
   {
     name: 'Bridal Makeup',
-    price: 'From €150',
+    price: 'On Request',
     duration: '90 min + trial',
     description: 'Wedding day perfection with trial session included. Long-lasting formulas designed to photograph beautifully and withstand emotional moments.',
     features: ['Trial session (60 min)', 'Wedding day application', 'Lash application', 'Touch-up kit', 'On-location available', 'Photography-tested products'],
   },
   {
     name: 'Makeup Lesson',
-    price: 'From €120',
+    price: 'On Request',
     duration: '90 min',
     description: 'Learn techniques customized to your face, skill level, and goals. Hands-on instruction, product recommendations, and take-home guide.',
     features: ['Personalized instruction', 'Use your products or ours', 'Face chart to take home', 'Product recommendations', 'Video recording option'],
   },
   {
     name: 'Editorial Makeup',
-    price: 'From €100',
+    price: 'On Request',
     duration: '60-90 min',
     description: 'Fashion-forward, creative makeup for photoshoots, magazines, or artistic projects. Collaboration with your vision or photographer\'s direction.',
     features: ['Concept discussion', 'Creative application', 'Bold or avant-garde looks', 'Photography optimization', 'Portfolio photos'],
   },
   {
     name: 'Beauty Consultation',
-    price: 'From €80',
+    price: 'On Request',
     duration: '60 min',
     description: 'Personalized beauty analysis covering makeup techniques, color palette, product recommendations, and application tips for your features.',
     features: ['Face shape analysis', 'Color matching', 'Product recommendations', 'Technique demonstration', 'Shopping list provided'],
   },
   {
     name: 'Group Makeup (Bridal Party)',
-    price: 'From €60/person',
+    price: 'On Request',
     duration: '45 min each',
     description: 'Makeup for bridesmaids, mothers of bride/groom, or any group event. Coordinated looks that complement without matching exactly.',
     features: ['Coordinated styling', 'Volume discounts', 'On-location service', 'Group timing coordination', 'Touch-up kits for all'],
@@ -107,7 +107,7 @@ export default function MakeupServicesPage() {
             Professional makeup artists matched to your style and occasion
           </p>
           <p className="text-lg text-gold mt-3">
-            All prices include expert concierge matching & coordination
+            Expert concierge matching & coordination included
           </p>
         </div>
       </section>

@@ -148,8 +148,6 @@ export async function POST(request: NextRequest) {
 
         if (!notionResponse.ok) {
           console.error('Notion API failed:', await notionResponse.text())
-        } else {
-          console.log('Application added to Notion successfully')
         }
       } catch (notionError) {
         console.error('Error sending to Notion:', notionError)
@@ -169,8 +167,6 @@ export async function POST(request: NextRequest) {
 
         if (!filloutResponse.ok) {
           console.error('Fillout webhook failed:', await filloutResponse.text())
-        } else {
-          console.log('Application forwarded to Fillout successfully')
         }
       } catch (filloutError) {
         console.error('Error sending to Fillout:', filloutError)
@@ -178,15 +174,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Send email notification to Good Hands team
-    if (process.env.RESEND_API_KEY) {
-      try {
-        // You can add Resend email integration here
-        // For now, we'll just log it
-        console.log('Email notification would be sent to team about new application')
-      } catch (emailError) {
-        console.error('Error sending email notification:', emailError)
-      }
-    }
+    // RESEND_API_KEY: add Resend email integration here when ready
 
     // Return success regardless of webhook status
     // The application was received even if integrations failed

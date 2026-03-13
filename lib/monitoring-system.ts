@@ -447,8 +447,6 @@ export const monitoringSystem = {
     
     // Initialize technical monitoring
     technicalMonitoring.monitorApiPerformance('/api/health')
-    
-    console.log('🔍 Monitoring system initialized')
   }
 }
 

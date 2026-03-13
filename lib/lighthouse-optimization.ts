@@ -350,8 +350,6 @@ export const lighthouseMonitoring = {
     new PerformanceObserver((list) => {
       list.getEntries().forEach((entry) => {
         if (entry.entryType === 'largest-contentful-paint') {
-          console.log('LCP:', entry.startTime)
-          
           // Send to analytics
           if ((window as any).gtag) {
             (window as any).gtag('event', 'core_web_vital', {
@@ -369,7 +367,6 @@ export const lighthouseMonitoring = {
       list.getEntries().forEach((entry) => {
         if (entry.entryType === 'first-input') {
           const fid = (entry as any).processingStart - entry.startTime
-          console.log('FID:', fid)
           
           // Send to analytics
           if ((window as any).gtag) {
@@ -389,7 +386,6 @@ export const lighthouseMonitoring = {
       list.getEntries().forEach((entry) => {
         if (!(entry as any).hadRecentInput) {
           clsValue += (entry as any).value
-          console.log('CLS:', clsValue)
           
           // Send to analytics
           if ((window as any).gtag) {

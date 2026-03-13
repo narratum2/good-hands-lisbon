@@ -134,6 +134,16 @@ const nextConfig = {
         destination: '/journal/bridal-beauty-guide-lisbon',
         permanent: true,
       },
+      {
+        source: '/journal/summer-skincare-mediterranean',
+        destination: '/journal/seasonal-beauty-guide-lisbon-climate-skin',
+        permanent: true,
+      },
+      {
+        source: '/journal/seasonal-beauty-lisbon-guide',
+        destination: '/journal/seasonal-beauty-guide-lisbon-climate-skin',
+        permanent: true,
+      },
     ]
   },
 

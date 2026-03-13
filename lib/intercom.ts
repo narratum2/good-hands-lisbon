@@ -199,7 +199,6 @@ export async function logBookingToIntercom(booking: {
       amount: booking.amount,
     })
     
-    console.log('✅ Booking logged to Intercom')
   } catch (error) {
     console.error('❌ Failed to log booking to Intercom:', error)
   }
@@ -223,7 +222,6 @@ export async function updateMembershipInIntercom(
       },
     })
     
-    console.log(`✅ Membership updated in Intercom: ${email} → ${membershipTier}`)
   } catch (error) {
     console.error('❌ Failed to update membership in Intercom:', error)
   }
@@ -240,7 +238,6 @@ export async function sendAbandonedBookingMessage(email: string, name?: string) 
     
     await intercom.sendMessage({ email }, message)
     
-    console.log('✅ Abandoned booking message sent via Intercom')
   } catch (error) {
     console.error('❌ Failed to send abandoned booking message:', error)
   }

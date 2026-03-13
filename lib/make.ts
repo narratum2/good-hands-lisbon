@@ -38,17 +38,11 @@ export async function sendToMake(
   const makeWebhookUrl = process.env.MAKE_WEBHOOK_URL
 
   if (!makeWebhookUrl) {
-    console.warn('⚠️  Make.com webhook URL not configured')
     return null
   }
 
   try {
     const url = `${makeWebhookUrl}/${scenario}`
-    
-    console.log(`📤 Sending to Make.com [${scenario}]:`, {
-      url: url.replace(/https:\/\/hook\..+?\//g, 'https://hook.****/'),
-      dataKeys: Object.keys(data),
-    })
 
     const response = await fetch(url, {
       method: 'POST',
@@ -72,7 +66,6 @@ export async function sendToMake(
     }
 
     const result = await response.json()
-    console.log(`✅ Make.com [${scenario}] succeeded`)
     
     return result
   } catch (error) {

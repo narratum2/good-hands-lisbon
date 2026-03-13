@@ -156,7 +156,7 @@ export default function MembershipPage() {
                 </ul>
               </div>
 
-              <MembershipButton tier="gold" />
+              <MembershipButton tier="gold" priceId={process.env.NEXT_PUBLIC_STRIPE_GOLD_PRICE_ID!} />
 
               <p className="text-center text-sm text-harbor mt-4">
                 Save €180+ per year on regular services
@@ -197,7 +197,7 @@ export default function MembershipPage() {
                 </ul>
               </div>
 
-              <MembershipButton tier="platinum" />
+              <MembershipButton tier="platinum" priceId={process.env.NEXT_PUBLIC_STRIPE_PLATINUM_PRICE_ID!} />
 
               <p className="text-center text-sm text-porcelain/70 mt-4">
                 Save €500+ per year + exclusive perks worth €1000+

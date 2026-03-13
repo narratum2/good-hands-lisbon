@@ -8,7 +8,6 @@ async function sendToMake(scenario: string, data: any) {
   const makeWebhookUrl = process.env.MAKE_WEBHOOK_URL
   
   if (!makeWebhookUrl) {
-    console.warn('Make.com webhook URL not configured')
     return null
   }
 
@@ -59,8 +58,7 @@ export async function POST(request: NextRequest) {
     switch (event.type) {
       case 'checkout.session.completed': {
         const session = event.data.object as Stripe.Checkout.Session
-        console.log('✅ Checkout completed:', session.id)
-        
+
         // Get customer details
         const customerEmail = session.customer_details?.email
         const customerId = session.customer as string
@@ -77,9 +75,7 @@ export async function POST(request: NextRequest) {
             status: 'active',
             price: membershipType === 'Gold' ? 49 : 129,
           })
-          
-          console.log('📝 Notion membership record created:', notionResult?.id)
-          
+
           // Send to Make.com for email automation
           await sendToMake('membership-created', {
             email: customerEmail,
@@ -95,8 +91,7 @@ export async function POST(request: NextRequest) {
 
       case 'customer.subscription.created': {
         const subscription = event.data.object as any
-        console.log('🆕 Subscription created:', subscription.id)
-        
+
         // Get customer details
         const customer = await stripe.customers.retrieve(subscription.customer as string)
         const customerEmail = (customer as Stripe.Customer).email
@@ -115,8 +110,7 @@ export async function POST(request: NextRequest) {
 
       case 'customer.subscription.updated': {
         const subscription = event.data.object as any
-        console.log('🔄 Subscription updated:', subscription.id)
-        
+
         // Send update to Make.com to update Notion
         await sendToMake('subscription-updated', {
           subscriptionId: subscription.id,
@@ -130,8 +124,7 @@ export async function POST(request: NextRequest) {
 
       case 'customer.subscription.deleted': {
         const subscription = event.data.object as any
-        console.log('❌ Subscription cancelled:', subscription.id)
-        
+
         // Send to Make.com to update Notion and send cancellation email
         await sendToMake('subscription-cancelled', {
           subscriptionId: subscription.id,
@@ -143,8 +136,7 @@ export async function POST(request: NextRequest) {
 
       case 'invoice.payment_failed': {
         const invoice = event.data.object as Stripe.Invoice
-        console.log('💳 Payment failed:', invoice.id)
-        
+
         const customer = await stripe.customers.retrieve(invoice.customer as string)
         const customerEmail = (customer as Stripe.Customer).email
         
@@ -164,8 +156,7 @@ export async function POST(request: NextRequest) {
 
       case 'invoice.payment_succeeded': {
         const invoice = event.data.object as Stripe.Invoice
-        console.log('✅ Payment succeeded:', invoice.id)
-        
+
         const customer = await stripe.customers.retrieve(invoice.customer as string)
         const customerEmail = (customer as Stripe.Customer).email
         
@@ -184,7 +175,7 @@ export async function POST(request: NextRequest) {
       }
 
       default:
-        console.log(`ℹ️  Unhandled event type: ${event.type}`)
+        break
     }
 
     return NextResponse.json({ received: true })

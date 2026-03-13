@@ -205,7 +205,6 @@ export async function sendBookingConfirmation(booking: {
       }
     )
 
-    console.log('✅ Booking confirmation sent via Customer.io')
   } catch (error) {
     console.error('❌ Failed to send booking confirmation:', error)
   }
@@ -240,7 +239,6 @@ export async function sendMembershipWelcome(membership: {
       }
     )
 
-    console.log(`✅ Membership welcome sent: ${membership.tier}`)
   } catch (error) {
     console.error('❌ Failed to send membership welcome:', error)
   }
@@ -269,7 +267,6 @@ export async function sendPaymentFailed(payment: {
       }
     )
 
-    console.log('✅ Payment failed notification sent')
   } catch (error) {
     console.error('❌ Failed to send payment failed notification:', error)
   }
@@ -302,7 +299,6 @@ export async function sendBookingReminder(booking: {
       }
     )
 
-    console.log('✅ Booking reminder sent')
   } catch (error) {
     console.error('❌ Failed to send booking reminder:', error)
   }
@@ -329,7 +325,6 @@ export async function sendReviewRequest(booking: {
       }
     )
 
-    console.log('✅ Review request sent')
   } catch (error) {
     console.error('❌ Failed to send review request:', error)
   }
@@ -358,7 +353,6 @@ export async function sendMembershipRenewal(membership: {
       }
     )
 
-    console.log('✅ Membership renewal reminder sent')
   } catch (error) {
     console.error('❌ Failed to send membership renewal reminder:', error)
   }
@@ -388,7 +382,6 @@ export async function sendAbandonedBookingEmail(booking: {
       }
     )
 
-    console.log('✅ Abandoned booking email sent')
   } catch (error) {
     console.error('❌ Failed to send abandoned booking email:', error)
   }
@@ -416,7 +409,6 @@ export async function batchIdentifyCustomers(
   )
 
   const successful = results.filter((r) => r.status === 'fulfilled').length
-  console.log(`✅ Batch identified ${successful}/${customers.length} customers`)
 }
 
 /**
@@ -439,7 +431,6 @@ export async function testCustomerIOConnection(): Promise<boolean> {
       test: true,
     })
 
-    console.log('✅ Customer.io connection test succeeded')
     return true
   } catch (error) {
     console.error('❌ Customer.io connection test failed:', error)

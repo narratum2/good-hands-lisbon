@@ -37,7 +37,6 @@ export async function createCustomerRecord(data: {
     const customersDbId = process.env.NOTION_CUSTOMERS_DATABASE_ID
 
     if (!customersDbId) {
-      console.warn('NOTION_CUSTOMERS_DATABASE_ID not configured')
       return null
     }
 
@@ -105,7 +104,6 @@ export async function createCustomerRecord(data: {
       },
     })
 
-    console.log('✅ Customer created in Notion:', response.id)
     return response
   } catch (error: any) {
     console.error('❌ Error creating customer record in Notion:', {
@@ -135,7 +133,6 @@ export async function createBookingRecord(data: {
     const bookingsDbId = process.env.NOTION_BOOKING_DATABASE_ID
 
     if (!bookingsDbId) {
-      console.warn('NOTION_BOOKING_DATABASE_ID not configured')
       return null
     }
 
@@ -215,7 +212,6 @@ export async function createBookingRecord(data: {
       },
     })
 
-    console.log('✅ Booking created in Notion:', response.id)
     return response
   } catch (error: any) {
     console.error('❌ Error creating booking record in Notion:', {
@@ -241,7 +237,6 @@ export async function createMembershipRecord(data: {
     const membershipsDbId = process.env.NOTION_MEMBERSHIPS_DB_ID
 
     if (!membershipsDbId) {
-      console.warn('NOTION_MEMBERSHIPS_DB_ID not configured')
       return null
     }
 
@@ -308,7 +303,6 @@ export async function logConversation(data: {
     const conversationsDbId = process.env.NOTION_CONVERSATIONS_DB_ID
 
     if (!conversationsDbId) {
-      console.warn('NOTION_CONVERSATIONS_DB_ID not configured')
       return null
     }
 

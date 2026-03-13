@@ -7,49 +7,49 @@ import RelatedServices from '@/components/RelatedServices'
 export const metadata: Metadata = {
   alternates: { canonical: '/services/nails' },
   title: 'Best Nail Salons in Lisbon — Manicures, Pedicures, Gel & Nail Art | Good Hands',
-  description: 'Top nail salons in Lisbon for classic manicures (€35+), gel polish (€45+), luxury pedicures (€55+), nail art & extensions. Hygiene-certified technicians. Prime locations.',
+  description: 'Top nail salons in Lisbon for classic manicures, gel polish, luxury pedicures, nail art & extensions. Hygiene-certified technicians. Pricing on request. Prime locations.',
   keywords: ['nail salon lisbon', 'manicure lisbon', 'pedicure lisbon', 'gel nails lisbon', 'nail art lisbon', 'best nail salon chiado', 'nail extensions lisbon', 'gel manicure portugal'],
 }
 
 const nailServices = [
   {
     name: 'Classic Manicure',
-    price: 'From €35',
+    price: 'On Request',
     duration: '45 min',
     description: 'Traditional manicure with nail shaping, cuticle care, hand massage, and polish. Relaxing and perfectly polished.',
     features: ['Nail shaping', 'Cuticle care', 'Hand massage', 'Classic polish'],
   },
   {
     name: 'Gel Manicure',
-    price: 'From €45',
+    price: 'On Request',
     duration: '60 min',
     description: 'Long-lasting gel polish that stays chip-free for 2-3 weeks. Perfect for Lisbon\'s active lifestyle.',
     features: ['Premium gel polish', '2-3 week wear', 'UV light cured', 'No chip guarantee'],
   },
   {
     name: 'Luxury Pedicure',
-    price: 'From €55',
+    price: 'On Request',
     duration: '75 min',
     description: 'Complete foot transformation including soak, exfoliation, nail care, massage, and polish. Pure indulgence.',
     features: ['Warm foot soak', 'Exfoliation & scrub', 'Callus removal', 'Leg & foot massage', 'Polish'],
   },
   {
     name: 'Nail Art',
-    price: 'From €20',
+    price: 'On Request',
     duration: '30 min',
     description: 'Custom nail art designs from minimalist accents to intricate patterns. Express your style.',
     features: ['Custom designs', 'Hand-painted details', 'Trendy techniques', 'Photo consultation'],
   },
   {
     name: 'Gel Extensions',
-    price: 'From €70',
+    price: 'On Request',
     duration: '90 min',
     description: 'Natural-looking gel extensions for length and strength. Customized to your preferred shape and length.',
     features: ['Custom length', 'Shape customization', 'Gel overlay', 'Natural finish'],
   },
   {
     name: 'Spa Manicure & Pedicure',
-    price: 'From €85',
+    price: 'On Request',
     duration: '120 min',
     description: 'Ultimate pampering package combining luxury manicure and pedicure with extended massage and treatments.',
     features: ['Extended treatments', 'Premium products', 'Longer massage', 'Paraffin wax option'],
@@ -80,7 +80,7 @@ export default function NailServicesPage() {
             Immaculate nails and ultimate relaxation in Lisbon&apos;s finest salons
           </p>
           <p className="text-lg text-gold mt-3">
-            All prices include expert concierge matching & coordination
+            Expert concierge matching & coordination included
           </p>
         </div>
       </section>
