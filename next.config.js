@@ -104,6 +104,16 @@ const nextConfig = {
         destination: '/#booking',
         permanent: true,
       },
+      {
+        source: '/blog/summer-beauty-guide-lisbon',
+        destination: '/journal/seasonal-beauty-guide-lisbon-climate-skin',
+        permanent: true,
+      },
+      {
+        source: '/blog/:slug*',
+        destination: '/journal/:slug*',
+        permanent: true,
+      },
     ]
   },
 

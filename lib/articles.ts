@@ -1458,6 +1458,23 @@ A reliable beauty team is the difference between photos that look polished and p
       keywords: ['makeup artist Lisbon', 'photographer beauty team Portugal', 'MUA photoshoot Lisbon', 'editorial makeup artist Lisbon', 'find makeup artist Lisbon shoot', 'hair and makeup Cascais Sintra'],
     },
   },
+  'finding-calm-in-chiado': {
+    slug: 'finding-calm-in-chiado',
+    title: 'Finding Calm in Chiado',
+    excerpt: 'Discover Lisbon\'s hidden wellness sanctuaries in Chiado — where locals go for authentic, unhurried beauty experiences.',
+    content: '',
+    image: '/brand-images/hero-wellness-scene.png',
+    date: '2024-10-11',
+    category: 'Wellness',
+    author: {
+      name: 'Maria Santos',
+      bio: 'Maria explores Lisbon\'s wellness culture and beauty traditions.',
+    },
+    readTime: '8 min read',
+    tags: ['Chiado', 'Wellness', 'Lisbon', 'Spa', 'Local Guide'],
+    featured: false,
+    published: true,
+  },
 }
 
 // Calculate reading time based on content

@@ -144,7 +144,7 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="block py-3 text-sm font-medium uppercase tracking-wider text-black hover:text-gold transition-colors"
+                  className="block py-4 text-sm font-medium uppercase tracking-wider text-black hover:text-gold transition-colors"
                   style={{ letterSpacing: '0.08em' }}
                 >
                   {link.label}
