@@ -26,7 +26,7 @@ export default function Home() {
 
       <TestimonialsEnhanced />
 
-      <Lookbook />
+      {/* <Lookbook /> — hidden until content is ready */}
 
       <GuidesPreview />
 

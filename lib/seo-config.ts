@@ -20,7 +20,7 @@ export const BUSINESS_INFO = {
   
   // Contact
   email: 'hello@beautysalonlisbon.com',
-  phone: '+351-XXX-XXX-XXX', // TODO: Add real phone
+  phone: '',
   
   // URLs - PRODUCTION DOMAIN
   baseUrl: 'https://beautysalonlisbon.com',

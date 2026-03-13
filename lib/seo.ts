@@ -219,7 +219,7 @@ export function generateLocalBusinessSchema() {
     name: 'Good Hands',
     description: 'Premium beauty concierge service in Lisbon',
     url: 'https://beautysalonlisbon.com',
-    telephone: '+351-XXX-XXX-XXX',
+    // telephone: removed until real number available
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Lisbon',
